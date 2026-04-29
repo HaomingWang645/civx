@@ -456,4 +456,16 @@ window.TECH_NAMES_ZH = {
   "antimatter-production": "反物质生产",
   "warp-drive": "曲速引擎",
   "kardashev-type-ii": "卡尔达肖夫II型文明",
+
+  // ─── Far Future (civilizational) ───
+  "existential-risk-hedge": "生存风险对冲",
+  "universal-sentient-rights": "普遍知觉者权利宣言",
+  "pleistocene-restored": "更新世生态复原",
+  "lingua-galactica": "银河通用语",
+  "post-human-aesthetics": "后人类美学",
+  "engineered-planetary-biosphere": "工程化行星生物圈",
+  "interstellar-treaty": "星际条约",
+  "time-dilation-cultures": "时间膨胀文化",
+  "end-time-philosophy": "终末哲学",
+  "galactic-ecology": "银河生态学",
 };

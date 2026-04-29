@@ -412,7 +412,17 @@ window.TECH_IMAGES = {
   "substrate-independent-humanity": "images/substrate-independent-humanity.jpg",
   "antimatter-production": "images/antimatter-production.png",
   "warp-drive": "images/warp-drive.png",
-  "kardashev-type-ii": "images/kardashev-type-ii.png"
+  "kardashev-type-ii": "images/kardashev-type-ii.png",
+  "existential-risk-hedge": "images/existential-risk-hedge.jpg",
+  "universal-sentient-rights": "images/universal-sentient-rights.jpg",
+  "pleistocene-restored": "images/pleistocene-restored.jpg",
+  "lingua-galactica": "images/lingua-galactica.png",
+  "post-human-aesthetics": "images/post-human-aesthetics.jpg",
+  "engineered-planetary-biosphere": "images/engineered-planetary-biosphere.png",
+  "interstellar-treaty": "images/interstellar-treaty.png",
+  "time-dilation-cultures": "images/time-dilation-cultures.jpg",
+  "end-time-philosophy": "images/end-time-philosophy.png",
+  "galactic-ecology": "images/galactic-ecology.png"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -2062,5 +2072,45 @@ window.TECH_IMAGE_CREDITS = {
   "kardashev-type-ii": {
     "article": "Kardashev scale",
     "url": "https://en.wikipedia.org/wiki/Kardashev_scale"
+  },
+  "existential-risk-hedge": {
+    "article": "Global catastrophic risk",
+    "url": "https://en.wikipedia.org/wiki/Global_catastrophic_risk"
+  },
+  "universal-sentient-rights": {
+    "article": "Universal Declaration of Human Rights",
+    "url": "https://en.wikipedia.org/wiki/Universal_Declaration_of_Human_Rights"
+  },
+  "pleistocene-restored": {
+    "article": "Pleistocene Park",
+    "url": "https://en.wikipedia.org/wiki/Pleistocene_Park"
+  },
+  "lingua-galactica": {
+    "article": "Esperanto",
+    "url": "https://en.wikipedia.org/wiki/Esperanto"
+  },
+  "post-human-aesthetics": {
+    "article": "Posthumanism",
+    "url": "https://en.wikipedia.org/wiki/Posthumanism"
+  },
+  "engineered-planetary-biosphere": {
+    "article": "Geoengineering",
+    "url": "https://en.wikipedia.org/wiki/Geoengineering"
+  },
+  "interstellar-treaty": {
+    "article": "Outer Space Treaty",
+    "url": "https://en.wikipedia.org/wiki/Outer_Space_Treaty"
+  },
+  "time-dilation-cultures": {
+    "article": "The Age of Em",
+    "url": "https://en.wikipedia.org/wiki/The_Age_of_Em"
+  },
+  "end-time-philosophy": {
+    "article": "Heat death of the universe",
+    "url": "https://en.wikipedia.org/wiki/Heat_death_of_the_universe"
+  },
+  "galactic-ecology": {
+    "article": "Panspermia",
+    "url": "https://en.wikipedia.org/wiki/Panspermia"
   }
 };

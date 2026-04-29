@@ -4878,5 +4878,115 @@
     "status": "ok",
     "score": 0.9,
     "reason": "manual override"
+  },
+  "existential-risk-hedge": {
+    "name": "Existential-Risk Hedge",
+    "article": "Global catastrophic risk",
+    "page": "https://en.wikipedia.org/wiki/Global_catastrophic_risk",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Impact_event.jpg/330px-Impact_event.jpg",
+    "image_path": "images/existential-risk-hedge.jpg",
+    "extract": "A global catastrophic risk or a doomsday scenario is a hypothetical event that could damage human well-being on a global scale, endangering or even destroying modern civilization. Existential risk is a related term limited to events that could cause full-blown human extinction or",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "universal-sentient-rights": {
+    "name": "Universal Declaration of Sentient Rights",
+    "article": "Universal Declaration of Human Rights",
+    "page": "https://en.wikipedia.org/wiki/Universal_Declaration_of_Human_Rights",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Eleanor_Roosevelt_UDHR.jpg/330px-Eleanor_Roosevelt_UDHR.jpg",
+    "image_path": "images/universal-sentient-rights.jpg",
+    "extract": "The Universal Declaration of Human Rights (UDHR) is a document adopted by the United Nations General Assembly that codifies some of the rights and freedoms of all human beings. Drafted by a United Nations (UN) committee chaired by Eleanor Roosevelt, it was accepted by the General",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "pleistocene-restored": {
+    "name": "Pleistocene Restored",
+    "article": "Pleistocene Park",
+    "page": "https://en.wikipedia.org/wiki/Pleistocene_Park",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Ice_age_fauna_of_northern_Spain_-_Mauricio_Ant%C3%B3n.jpg/330px-Ice_age_fauna_of_northern_Spain_-_Mauricio_Ant%C3%B3n.jpg",
+    "image_path": "images/pleistocene-restored.jpg",
+    "extract": "Pleistocene Park is a nature reserve on the Kolyma River south of Chersky in the Sakha Republic, Russia, in northeastern Siberia, where an attempt is being made to re-create the northern subarctic steppe grassland ecosystem that flourished in the area during the last glacial peri",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "lingua-galactica": {
+    "name": "Lingua Galactica",
+    "article": "Esperanto",
+    "page": "https://en.wikipedia.org/wiki/Esperanto",
+    "status": "ok",
+    "reason": "alternate",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Esperanto.svg/330px-Flag_of_Esperanto.svg.png",
+    "image_path": "images/lingua-galactica.png",
+    "extract": "Esperanto is the world's most widely spoken constructed auxiliary language. Created by L. L. Zamenhof in 1887 as \"the International Language\", it is intended to be a universal second language for international communication. He described the language in Dr. Esperanto's Internatio",
+    "score": 0.85
+  },
+  "post-human-aesthetics": {
+    "name": "Post-Human Aesthetics",
+    "article": "Posthumanism",
+    "page": "https://en.wikipedia.org/wiki/Posthumanism",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Manhattan%2C_N.Y.C._1997_51.jpg/330px-Manhattan%2C_N.Y.C._1997_51.jpg",
+    "image_path": "images/post-human-aesthetics.jpg",
+    "extract": "Posthumanism or post-humanism is an idea in continental philosophy and critical theory responding to the presence of anthropocentrism in 21st-century thought.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "engineered-planetary-biosphere": {
+    "name": "Engineered Planetary Biosphere",
+    "article": "Geoengineering",
+    "page": "https://en.wikipedia.org/wiki/Geoengineering",
+    "status": "ok",
+    "reason": "alternate",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Illustration_different_solar_climate_intervention_techniques.png/330px-Illustration_different_solar_climate_intervention_techniques.png",
+    "image_path": "images/engineered-planetary-biosphere.png",
+    "extract": "Geoengineering is the deliberate large-scale interventions in the Earth’s climate system intended to counteract human-caused climate change. The term commonly encompasses two broad categories: large-scale carbon dioxide removal (CDR) and solar radiation modification (SRM). CDR in",
+    "score": 0.85
+  },
+  "interstellar-treaty": {
+    "name": "Interstellar Treaty",
+    "article": "Outer Space Treaty",
+    "page": "https://en.wikipedia.org/wiki/Outer_Space_Treaty",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Outer_Space_Treaty_parties.svg/330px-Outer_Space_Treaty_parties.svg.png",
+    "image_path": "images/interstellar-treaty.png",
+    "extract": "The Outer Space Treaty, formally called the Treaty on Principles Governing the Activities of States in the Exploration and Use of Outer Space, including the Moon and Other Celestial Bodies, is a multilateral treaty that forms the basis of international space law.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "time-dilation-cultures": {
+    "name": "Time-Dilation Cultures",
+    "article": "The Age of Em",
+    "page": "https://en.wikipedia.org/wiki/The_Age_of_Em",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/2/24/The_Age_of_Em.jpg",
+    "image_path": "images/time-dilation-cultures.jpg",
+    "extract": "The Age of Em: Work, Love and Life when Robots Rule the Earth is a 2016 nonfiction book by Robin Hanson.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "end-time-philosophy": {
+    "name": "End-Time Philosophy",
+    "article": "Heat death of the universe",
+    "page": "https://en.wikipedia.org/wiki/Heat_death_of_the_universe",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/WMAP_2012.png/330px-WMAP_2012.png",
+    "image_path": "images/end-time-philosophy.png",
+    "extract": "The heat death of the universe is a scientific hypothesis regarding the ultimate fate of the universe which posits the universe will evolve to a state of no thermodynamic free energy and, having reached maximum entropy, will therefore be unable to sustain any further thermodynami",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "galactic-ecology": {
+    "name": "Galactic Ecology",
+    "article": "Panspermia",
+    "page": "https://en.wikipedia.org/wiki/Panspermia",
+    "status": "ok",
+    "reason": "alternate",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Panspermie.svg/330px-Panspermie.svg.png",
+    "image_path": "images/galactic-ecology.png",
+    "extract": "Panspermia is the hypothesis that life exists throughout the universe, distributed by cosmic dust, meteoroids, asteroids, comets, and planetoids, as well as by spacecraft carrying unintended contamination by microorganisms, known as directed panspermia. The theory argues that lif",
+    "score": 0.85
   }
 }
