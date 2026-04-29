@@ -1346,14 +1346,14 @@
   "university": {
     "name": "University",
     "query": "University of Bologna",
-    "article": "University of Bologna",
-    "page": "https://en.wikipedia.org/wiki/University_of_Bologna",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Seal_of_the_University_of_Bologna.svg/330px-Seal_of_the_University_of_Bologna.svg.png",
+    "article": "Sapienza University of Rome",
+    "page": "https://en.wikipedia.org/wiki/Sapienza_University_of_Rome",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/4/45/Sapienza_University_of_Rome.png",
     "image_path": "images/university.png",
-    "extract": "The University of Bologna is a public research university in Bologna, Italy. It is the oldest university in continuous operation in the world, and the first degree-awarding institution of higher learning. Teaching began around 1088, with the university becoming organised as unive",
+    "extract": "The Sapienza University of Rome, also known as La Sapienza, is a public research university located in Rome, Italy. It was founded in 1303 and is one of the world's oldest universities. With over 110,000 students, it is also the largest university in Europe. Due to its size, fund",
     "status": "ok",
-    "score": 1.0,
-    "reason": "title=1.00 body=1.00 override"
+    "score": 0.85,
+    "reason": "logo-replacement override"
   },
   "scholasticism": {
     "name": "Scholasticism",
@@ -2642,14 +2642,14 @@
   "programming-language": {
     "name": "Programming Languages",
     "query": "Fortran",
-    "article": "Fortran",
-    "page": "https://en.wikipedia.org/wiki/Fortran",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Fortran_logo.svg/330px-Fortran_logo.svg.png",
+    "article": "Programming language",
+    "page": "https://en.wikipedia.org/wiki/Programming_language",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/C_Hello_World_Program.png/330px-C_Hello_World_Program.png",
     "image_path": "images/programming-language.png",
-    "extract": "Fortran is a third-generation, compiled, imperative programming language designed for numeric computation and scientific computing.",
+    "extract": "A programming language is an engineered language for expressing computer programs, typically allowing software to be written in a human readable manner.",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=0.50 override"
+    "score": 0.85,
+    "reason": "logo-replacement override"
   },
   "mainframe": {
     "name": "Mainframe",
@@ -2774,14 +2774,14 @@
   "united-nations": {
     "name": "International Order",
     "query": "United Nations",
-    "article": "United Nations",
-    "page": "https://en.wikipedia.org/wiki/United_Nations",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_the_United_Nations.svg/330px-Flag_of_the_United_Nations.svg.png",
-    "image_path": "images/united-nations.png",
-    "extract": "The United Nations (UN) is a global intergovernmental organization established by the signing of the UN Charter on 26 June 1945 with the articulated mission of maintaining international peace and security, to develop friendly relations among states, to promote international coope",
+    "article": "Headquarters of the United Nations",
+    "page": "https://en.wikipedia.org/wiki/Headquarters_of_the_United_Nations",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Midtown_Manhattan_Skyline_004_%28cropped%29.jpg/330px-Midtown_Manhattan_Skyline_004_%28cropped%29.jpg",
+    "image_path": "images/united-nations.jpg",
+    "extract": "The headquarters of the United Nations (UN) is on 17 to 18 acres of grounds in the Turtle Bay neighborhood of Midtown Manhattan in New York City, United States. It borders First Avenue to the west, 42nd Street to the south, 48th Street to the north, and the East River to the east",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=0.50 override"
+    "score": 0.85,
+    "reason": "logo-replacement override"
   },
   "birth-control": {
     "name": "Hormonal Contraception",
@@ -2978,14 +2978,14 @@
   "gene-sequencing": {
     "name": "Genome Sequencing",
     "query": "Human Genome Project",
-    "article": "Human Genome Project",
-    "page": "https://en.wikipedia.org/wiki/Human_Genome_Project",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Logo_HGP.jpg/330px-Logo_HGP.jpg",
+    "article": "Frederick Sanger",
+    "page": "https://en.wikipedia.org/wiki/Frederick_Sanger",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Frederick_Sanger2.jpg/330px-Frederick_Sanger2.jpg",
     "image_path": "images/gene-sequencing.jpg",
-    "extract": "The Human Genome Project (HGP) was an international scientific research project with the goal of determining the base pairs that make up human DNA, and of identifying, mapping and sequencing all of the genes of the human genome from both a physical and a functional standpoint. It",
+    "extract": "Frederick Sanger was a British biochemist who received the Nobel Prize in Chemistry twice.",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.50 body=1.00 override"
+    "score": 0.85,
+    "reason": "logo-replacement override"
   },
   "genetic-engineering": {
     "name": "Recombinant DNA",
@@ -3134,14 +3134,14 @@
   "reusable-rocket": {
     "name": "Reusable Rocket",
     "query": "Falcon 9",
-    "article": "Falcon 9",
-    "page": "https://en.wikipedia.org/wiki/Falcon_9",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Falcon_9_logo.svg/330px-Falcon_9_logo.svg.png",
-    "image_path": "images/reusable-rocket.png",
-    "extract": "Falcon 9 is a partially reusable, two-stage-to-orbit, medium-lift launch vehicle designed and manufactured in the United States by SpaceX. The first Falcon 9 launch was on June 4, 2010, and the first commercial resupply mission to the International Space Station (ISS) launched on",
+    "article": "Crew Dragon Demo-2",
+    "page": "https://en.wikipedia.org/wiki/Crew_Dragon_Demo-2",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/SpaceX_Demo-2_Launch_%28NHQ202005300044%29.jpg/330px-SpaceX_Demo-2_Launch_%28NHQ202005300044%29.jpg",
+    "image_path": "images/reusable-rocket.jpg",
+    "extract": "Crew Dragon Demo-2 was the first crewed test flight of the Crew Dragon spacecraft. The spacecraft, named Endeavour, launched on May 30, 2020 on a Falcon 9 rocket, and carried NASA astronauts Doug Hurley and Bob Behnken to the International Space Station in the first crewed orbita",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=1.00 override"
+    "score": 0.85,
+    "reason": "logo-replacement override"
   },
   "3d-printing": {
     "name": "3D Printing",
@@ -3422,26 +3422,26 @@
   "large-language-model": {
     "name": "Large Language Model",
     "query": "ChatGPT",
-    "article": "ChatGPT",
-    "page": "https://en.wikipedia.org/wiki/ChatGPT",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/OpenAI_logo_2025_%28symbol%29.svg/330px-OpenAI_logo_2025_%28symbol%29.svg.png",
+    "article": "Transformer (deep learning)",
+    "page": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Transformer%2C_full_architecture.png/330px-Transformer%2C_full_architecture.png",
     "image_path": "images/large-language-model.png",
-    "extract": "ChatGPT is a generative artificial intelligence chatbot developed by OpenAI. It was released in November 2022. It uses large language models—specifically generative pre-trained transformers (GPTs)—to generate text, speech, and images in response to user prompts. It is credited wi",
+    "extract": "In deep learning, the transformer is a family of artificial neural network architectures based on the multi-head attention mechanism, in which text is converted to numerical representations called tokens, and each token is converted into a vector via lookup from a word embedding ",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=1.00 override"
+    "score": 0.85,
+    "reason": "logo-replacement override"
   },
   "autonomous-vehicle": {
     "name": "Autonomous Vehicle",
     "query": "Waymo",
-    "article": "Waymo",
-    "page": "https://en.wikipedia.org/wiki/Waymo",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Waymo_logo.svg/330px-Waymo_logo.svg.png",
-    "image_path": "images/autonomous-vehicle.png",
-    "extract": "Waymo LLC is an American autonomous driving technology company headquartered in Mountain View, California. It is a subsidiary of Alphabet Inc., Google's parent company. As of March 2026, Waymo operates public commercial robotaxi services in 10 US metropolitan areas, has 3,000 rob",
+    "article": "Tesla Autopilot",
+    "page": "https://en.wikipedia.org/wiki/Tesla_Autopilot",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Tesla_Autopilot_Engaged_in_Model_X.jpg/330px-Tesla_Autopilot_Engaged_in_Model_X.jpg",
+    "image_path": "images/autonomous-vehicle.jpg",
+    "extract": "Tesla Autopilot is an advanced driver-assistance system (ADAS) developed by Tesla, Inc. that provides partial vehicle automation, corresponding to Level 2 automation as defined by SAE International. All Tesla vehicles produced after April 2019 include Autopilot, which provides au",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=0.50 override"
+    "score": 0.85,
+    "reason": "logo-replacement override"
   },
   "scavenging": {
     "name": "Organized Scavenging",
@@ -3986,14 +3986,14 @@
   "machine-learning": {
     "name": "Machine Learning",
     "query": "TensorFlow",
-    "article": "TensorFlow",
-    "page": "https://en.wikipedia.org/wiki/TensorFlow",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/TensorFlow_logo.svg/330px-TensorFlow_logo.svg.png",
-    "image_path": "images/machine-learning.png",
-    "extract": "TensorFlow is a software library for machine learning and artificial intelligence. It can be used across a range of tasks, but is used mainly for training and inference of neural networks. It is one of the most popular deep learning frameworks, alongside others such as PyTorch. I",
+    "article": "Geoffrey Hinton",
+    "page": "https://en.wikipedia.org/wiki/Geoffrey_Hinton",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Geoffrey_E._Hinton%2C_2024_Nobel_Prize_Laureate_in_Physics_%28cropped1%29.jpg/330px-Geoffrey_E._Hinton%2C_2024_Nobel_Prize_Laureate_in_Physics_%28cropped1%29.jpg",
+    "image_path": "images/machine-learning.jpg",
+    "extract": "Geoffrey Everest Hinton is a British-Canadian computer scientist, cognitive scientist, cognitive psychologist and Nobel Prize laureate known for his work on artificial neural networks, which earned him the title \"the Godfather of AI\". He is University Professor Emeritus at the Un",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=1.00 override"
+    "score": 0.85,
+    "reason": "logo-replacement override"
   },
   "advanced-chip-manufacturing": {
     "name": "Advanced Chip Manufacturing",
@@ -4185,14 +4185,14 @@
   },
   "gene-therapy": {
     "name": "Gene Therapy",
-    "article": "Gene therapy",
-    "page": "https://en.wikipedia.org/wiki/Gene_therapy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Genetic_engineering_logo.png/330px-Genetic_engineering_logo.png",
-    "image_path": "images/gene-therapy.png",
-    "extract": "Gene therapy is medical technology that aims to produce a therapeutic effect through the manipulation of gene expression or through altering the biological properties of living cells.",
+    "article": "Adeno-associated virus",
+    "page": "https://en.wikipedia.org/wiki/Adeno-associated_virus",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Adeno-associated_virus_serotype_AAV2.jpg/330px-Adeno-associated_virus_serotype_AAV2.jpg",
+    "image_path": "images/gene-therapy.jpg",
+    "extract": "Adeno-associated viruses (AAV) are small viruses that infect humans and some other primate species. They belong to the genus Dependoparvovirus, which in turn belongs to the family Parvoviridae. They are small replication-defective, non-enveloped viruses and have linear single-str",
     "status": "ok",
-    "score": 0.9,
-    "reason": "manual override"
+    "score": 0.85,
+    "reason": "logo-replacement override"
   },
   "tissue-engineering": {
     "name": "Tissue Engineering",
@@ -4240,14 +4240,14 @@
   },
   "agi": {
     "name": "Artificial General Intelligence",
-    "article": "ChatGPT",
-    "page": "https://en.wikipedia.org/wiki/ChatGPT",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/OpenAI_logo_2025_%28symbol%29.svg/330px-OpenAI_logo_2025_%28symbol%29.svg.png",
-    "image_path": "images/agi.png",
-    "extract": "ChatGPT is a generative artificial intelligence chatbot developed by OpenAI. It was released in November 2022. It uses large language models—specifically generative pre-trained transformers (GPTs)—to generate text, speech, and images in response to user prompts. It is credited wi",
+    "article": "Robot",
+    "page": "https://en.wikipedia.org/wiki/Robot",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/HONDA_ASIMO.jpg/330px-HONDA_ASIMO.jpg",
+    "image_path": "images/agi.jpg",
+    "extract": "A robot is a machine, especially one programmable via a computer, capable of automatically carrying out a complex series of actions. A robot can be guided by an external or internal control device. Robots may be humanoid, but most are task-performing machines prioritizing functio",
     "status": "ok",
     "score": 0.85,
-    "reason": "alternate article (no image on primary)"
+    "reason": "logo-replacement override"
   },
   "brain-computer-interface": {
     "name": "Brain-Computer Interface",

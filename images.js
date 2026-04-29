@@ -232,7 +232,7 @@ window.TECH_IMAGES = {
   "container-shipping": "images/container-shipping.jpg",
   "highway-system": "images/highway-system.png",
   "welfare-state": "images/welfare-state.png",
-  "united-nations": "images/united-nations.png",
+  "united-nations": "images/united-nations.jpg",
   "birth-control": "images/birth-control.jpg",
   "air-conditioning": "images/air-conditioning.jpg",
   "microprocessor": "images/microprocessor.jpg",
@@ -262,7 +262,7 @@ window.TECH_IMAGES = {
   "renewable-grid": "images/renewable-grid.jpg",
   "deep-learning": "images/deep-learning.png",
   "cryptocurrency": "images/cryptocurrency.png",
-  "reusable-rocket": "images/reusable-rocket.png",
+  "reusable-rocket": "images/reusable-rocket.jpg",
   "3d-printing": "images/3d-printing.jpg",
   "robotics": "images/robotics.jpg",
   "quantum-computing": "images/quantum-computing.png",
@@ -287,7 +287,7 @@ window.TECH_IMAGES = {
   "dna-structure": "images/dna-structure.png",
   "ecommerce": "images/ecommerce.jpg",
   "large-language-model": "images/large-language-model.png",
-  "autonomous-vehicle": "images/autonomous-vehicle.png",
+  "autonomous-vehicle": "images/autonomous-vehicle.jpg",
   "scavenging": "images/scavenging.jpg",
   "composite-spear": "images/composite-spear.jpg",
   "tally-bones": "images/tally-bones.jpg",
@@ -333,7 +333,7 @@ window.TECH_IMAGES = {
   "packet-switching": "images/packet-switching.jpg",
   "polished-stone": "images/polished-stone.png",
   "newspaper-mass": "images/newspaper-mass.jpg",
-  "machine-learning": "images/machine-learning.png",
+  "machine-learning": "images/machine-learning.jpg",
   "advanced-chip-manufacturing": "images/advanced-chip-manufacturing.jpg",
   "tank": "images/tank.jpg",
   "aircraft-carrier": "images/aircraft-carrier.jpg",
@@ -351,12 +351,12 @@ window.TECH_IMAGES = {
   "hypersonic-weapon": "images/hypersonic-weapon.jpg",
   "plasma-physics": "images/plasma-physics.jpg",
   "neuroscience": "images/neuroscience.jpg",
-  "gene-therapy": "images/gene-therapy.png",
+  "gene-therapy": "images/gene-therapy.jpg",
   "tissue-engineering": "images/tissue-engineering.png",
   "closed-loop-life-support": "images/closed-loop-life-support.jpg",
   "fusion-power": "images/fusion-power.jpg",
   "humanoid-robot": "images/humanoid-robot.jpg",
-  "agi": "images/agi.png",
+  "agi": "images/agi.jpg",
   "brain-computer-interface": "images/brain-computer-interface.jpg",
   "moon-base": "images/moon-base.jpg",
   "mars-colony": "images/mars-colony.jpg",
@@ -843,8 +843,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Three-field_system"
   },
   "university": {
-    "article": "University of Bologna",
-    "url": "https://en.wikipedia.org/wiki/University_of_Bologna"
+    "article": "Sapienza University of Rome",
+    "url": "https://en.wikipedia.org/wiki/Sapienza_University_of_Rome"
   },
   "scholasticism": {
     "article": "Scholasticism",
@@ -1275,8 +1275,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/ENIAC"
   },
   "programming-language": {
-    "article": "Fortran",
-    "url": "https://en.wikipedia.org/wiki/Fortran"
+    "article": "Programming language",
+    "url": "https://en.wikipedia.org/wiki/Programming_language"
   },
   "mainframe": {
     "article": "IBM System/360",
@@ -1319,8 +1319,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Welfare_state"
   },
   "united-nations": {
-    "article": "United Nations",
-    "url": "https://en.wikipedia.org/wiki/United_Nations"
+    "article": "Headquarters of the United Nations",
+    "url": "https://en.wikipedia.org/wiki/Headquarters_of_the_United_Nations"
   },
   "birth-control": {
     "article": "Combined oral contraceptive pill",
@@ -1387,8 +1387,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Global_Positioning_System"
   },
   "gene-sequencing": {
-    "article": "Human Genome Project",
-    "url": "https://en.wikipedia.org/wiki/Human_Genome_Project"
+    "article": "Frederick Sanger",
+    "url": "https://en.wikipedia.org/wiki/Frederick_Sanger"
   },
   "genetic-engineering": {
     "article": "Recombinant DNA",
@@ -1439,8 +1439,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Bitcoin"
   },
   "reusable-rocket": {
-    "article": "Falcon 9",
-    "url": "https://en.wikipedia.org/wiki/Falcon_9"
+    "article": "Crew Dragon Demo-2",
+    "url": "https://en.wikipedia.org/wiki/Crew_Dragon_Demo-2"
   },
   "3d-printing": {
     "article": "3D printing",
@@ -1535,12 +1535,12 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Amazon_(company)"
   },
   "large-language-model": {
-    "article": "ChatGPT",
-    "url": "https://en.wikipedia.org/wiki/ChatGPT"
+    "article": "Transformer (deep learning)",
+    "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)"
   },
   "autonomous-vehicle": {
-    "article": "Waymo",
-    "url": "https://en.wikipedia.org/wiki/Waymo"
+    "article": "Tesla Autopilot",
+    "url": "https://en.wikipedia.org/wiki/Tesla_Autopilot"
   },
   "scavenging": {
     "article": "Scavenger",
@@ -1723,8 +1723,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/New-York_Tribune"
   },
   "machine-learning": {
-    "article": "TensorFlow",
-    "url": "https://en.wikipedia.org/wiki/TensorFlow"
+    "article": "Geoffrey Hinton",
+    "url": "https://en.wikipedia.org/wiki/Geoffrey_Hinton"
   },
   "advanced-chip-manufacturing": {
     "article": "Photolithography",
@@ -1795,8 +1795,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Neuroscience"
   },
   "gene-therapy": {
-    "article": "Gene therapy",
-    "url": "https://en.wikipedia.org/wiki/Gene_therapy"
+    "article": "Adeno-associated virus",
+    "url": "https://en.wikipedia.org/wiki/Adeno-associated_virus"
   },
   "tissue-engineering": {
     "article": "Tissue engineering",
@@ -1815,8 +1815,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Humanoid_robot"
   },
   "agi": {
-    "article": "ChatGPT",
-    "url": "https://en.wikipedia.org/wiki/ChatGPT"
+    "article": "Robot",
+    "url": "https://en.wikipedia.org/wiki/Robot"
   },
   "brain-computer-interface": {
     "article": "Brain–computer interface",
