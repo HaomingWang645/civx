@@ -181,8 +181,12 @@ html, body {
 /* Era columns */
 .era-band {
   fill: rgba(255,255,255,0.015);
-  stroke: rgba(255,255,255,0.05);
-  stroke-dasharray: 2 6;
+  stroke: none;
+}
+.era-divider {
+  stroke: rgba(255,255,255,0.18);
+  stroke-width: 1;
+  stroke-dasharray: 4 6;
 }
 .era-label {
   font-size: 11px;
@@ -372,8 +376,17 @@ html, body {
 .detail-title {
   font-size: 22px;
   font-weight: 700;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   letter-spacing: -0.2px;
+}
+
+.detail-title-zh {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-1);
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+  font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
 .detail-year {
@@ -444,6 +457,77 @@ html, body {
   transition: background .15s, color .15s;
 }
 .ctrl-btn:hover { background: rgba(255,255,255,0.06); color: var(--text-0); }
+
+/* Horizontal scrollbar at the bottom of the canvas. Thumb width reflects
+   the visible fraction of the canvas; dragging it pans state.tx proportionally. */
+.scrollbar-h {
+  position: absolute;
+  bottom: 22px;
+  left: 132px;     /* clear of zoom controls */
+  right: 80px;     /* clear of zoom-level pill */
+  height: 14px;
+  display: flex; align-items: center;
+  z-index: 4;
+  pointer-events: auto;
+}
+.scrollbar-track {
+  flex: 1;
+  height: 6px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+}
+.scrollbar-thumb {
+  position: absolute;
+  top: -4px;
+  height: 14px;
+  background: rgba(255,255,255,0.22);
+  border-radius: 7px;
+  cursor: grab;
+  min-width: 30px;
+  transition: background .15s;
+  user-select: none;
+}
+.scrollbar-thumb:hover { background: rgba(255,255,255,0.36); }
+.scrollbar-thumb.dragging { background: var(--accent); cursor: grabbing; }
+.scrollbar-h.hidden { display: none; }
+
+/* Era marks above the scrollbar track — click to pan to that era. */
+.scrollbar-era-tick {
+  position: absolute;
+  bottom: 14px;        /* sits above the track */
+  width: 1.5px;
+  height: 8px;
+  background: rgba(255,255,255,0.4);
+  cursor: pointer;
+  z-index: 2;
+  transition: background .15s, transform .15s;
+}
+.scrollbar-era-tick:hover {
+  background: var(--accent);
+  transform: scaleY(1.3);
+}
+.scrollbar-era-tick::after {
+  content: attr(data-name);
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 9px;
+  color: var(--text-2);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .15s;
+  background: rgba(15,20,36,0.95);
+  padding: 2px 6px;
+  border-radius: 3px;
+  border: 1px solid var(--line-strong);
+}
+.scrollbar-era-tick:hover::after { opacity: 1; }
 
 .zoom-level {
   position: absolute;

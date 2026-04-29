@@ -163,32 +163,76 @@ const ERA_HEADER_H = 60;
 const PADDING_X = 60;
 const PADDING_Y = 100;
 
-// ───────────── Layout: assign each tech an (eraIdx, rowIdx) ─────────────
+// ───────────── Layout: assign each tech an (eraSubcol, rowIdx) ─────────────
+// Each era splits into sub-columns by *in-era prereq depth*: a tech sits in
+// sub-column N+1 iff at least one of its prereqs in the same era is in N.
+// This makes "scavenging → cooking" inside Lower Paleolithic show as left→right
+// rather than stacked. Era widths now vary with depth.
 function layoutTechs() {
   const eraIdx = Object.fromEntries(ERAS.map((e, i) => [e.id, i]));
   const techById = Object.fromEntries(TECHS.map(t => [t.id, t]));
 
-  // Group techs by era
-  const byEra = ERAS.map(() => []);
-  for (const t of TECHS) byEra[eraIdx[t.era]].push(t);
+  // Compute in-era topological level for each tech
+  const inEraLevel = {};
+  for (const t of TECHS) inEraLevel[t.id] = -1;
+  let changed = true, iter = 0;
+  while (changed && iter < 50) {
+    changed = false; iter++;
+    for (const t of TECHS) {
+      if (inEraLevel[t.id] >= 0) continue;
+      const inEraPrereqs = t.prereqs.filter(p => techById[p] && techById[p].era === t.era);
+      if (inEraPrereqs.length === 0) {
+        inEraLevel[t.id] = 0; changed = true;
+      } else if (inEraPrereqs.every(p => inEraLevel[p] >= 0)) {
+        inEraLevel[t.id] = Math.max(...inEraPrereqs.map(p => inEraLevel[p])) + 1;
+        changed = true;
+      }
+    }
+  }
+  // Anything unresolved (shouldn't happen on a DAG) gets level 0
+  for (const t of TECHS) if (inEraLevel[t.id] < 0) inEraLevel[t.id] = 0;
 
-  // Within an era, sort by category then by name for deterministic layout,
-  // but reorder iteratively to minimize crossings with the previous era.
+  // Group by (era, level) into buckets, track each era's max level
+  const buckets = {}; // key "era|level" -> [techs]
+  const eraLevels = {}; // era_id -> max level
+  for (const t of TECHS) {
+    const key = t.era + "|" + inEraLevel[t.id];
+    (buckets[key] ||= []).push(t);
+    eraLevels[t.era] = Math.max(eraLevels[t.era] ?? 0, inEraLevel[t.id]);
+  }
+  for (const era of ERAS) eraLevels[era.id] = eraLevels[era.id] ?? 0;
+
+  // Era pixel start (variable widths now)
+  const eraXStart = {};
+  let xCursor = PADDING_X;
+  for (const era of ERAS) {
+    eraXStart[era.id] = xCursor;
+    xCursor += (eraLevels[era.id] + 1) * COL_WIDTH;
+  }
+  const totalW = xCursor + PADDING_X;
+
+  // Process buckets left-to-right (era, then level) for barycenter sweeps
+  const sortedKeys = Object.keys(buckets).sort((a, b) => {
+    const [ae, al] = a.split("|"); const [be, bl] = b.split("|");
+    return (eraIdx[ae] - eraIdx[be]) || (parseInt(al) - parseInt(bl));
+  });
+
+  // Initial in-bucket order: by category, then name
   const catOrder = Object.keys(CATEGORIES);
-  for (const list of byEra) {
-    list.sort((a, b) => {
+  for (const key of sortedKeys) {
+    buckets[key].sort((a, b) => {
       const c = catOrder.indexOf(a.category) - catOrder.indexOf(b.category);
       return c !== 0 ? c : a.name.localeCompare(b.name);
     });
   }
+  const positions = {};
+  for (const key of sortedKeys) buckets[key].forEach((t, ri) => positions[t.id] = ri);
 
-  // Crossing-reduction: barycenter heuristic over a few sweeps.
-  const positions = {}; // id -> rowIdx
-  byEra.forEach((list, ei) => list.forEach((t, ri) => positions[t.id] = ri));
-
+  // Barycenter sweeps to reduce crossings
   for (let sweep = 0; sweep < 4; sweep++) {
-    for (let ei = 1; ei < byEra.length; ei++) {
-      const list = byEra[ei];
+    for (const key of sortedKeys) {
+      const list = buckets[key];
+      if (list.length <= 1) continue;
       list.sort((a, b) => {
         const aBary = barycenter(a, positions, techById);
         const bBary = barycenter(b, positions, techById);
@@ -199,25 +243,24 @@ function layoutTechs() {
     }
   }
 
-  // Compute pixel positions
+  // Pixel positions
   const placed = {};
-  byEra.forEach((list, ei) => {
-    list.forEach((t, ri) => {
-      placed[t.id] = {
-        ...t,
-        col: ei,
-        row: ri,
-        x: PADDING_X + ei * COL_WIDTH,
-        y: PADDING_Y + ri * ROW_HEIGHT,
-      };
-    });
-  });
+  for (const t of TECHS) {
+    placed[t.id] = {
+      ...t,
+      eraIdx: eraIdx[t.era],
+      level: inEraLevel[t.id],
+      row: positions[t.id],
+      x: eraXStart[t.era] + inEraLevel[t.id] * COL_WIDTH,
+      y: PADDING_Y + positions[t.id] * ROW_HEIGHT,
+    };
+  }
 
-  const maxRow = Math.max(...byEra.map(l => l.length));
-  const totalW = PADDING_X * 2 + ERAS.length * COL_WIDTH;
+  let maxRow = 0;
+  for (const key of sortedKeys) maxRow = Math.max(maxRow, buckets[key].length);
   const totalH = PADDING_Y + maxRow * ROW_HEIGHT + 80;
 
-  return { placed, byEra, totalW, totalH };
+  return { placed, eraXStart, eraLevels, totalW, totalH };
 }
 
 function barycenter(tech, positions, techById) {
@@ -253,8 +296,10 @@ function render() {
   const eraGroup = document.getElementById("eras");
   eraGroup.innerHTML = "";
   ERAS.forEach((era, i) => {
-    const x = PADDING_X + i * COL_WIDTH - 20;
-    const w = COL_WIDTH;
+    const xStart = layout.eraXStart[era.id];
+    const nLevels = layout.eraLevels[era.id] + 1;
+    const x = xStart - 20;
+    const w = nLevels * COL_WIDTH;
 
     const band = document.createElementNS("http://www.w3.org/2000/svg", "rect");
     band.setAttribute("class", "era-band");
@@ -263,6 +308,17 @@ function render() {
     band.setAttribute("width", w);
     band.setAttribute("height", layout.totalH - 30);
     eraGroup.appendChild(band);
+
+    // Vertical divider at the era's left edge (skip the first era).
+    if (i > 0) {
+      const divider = document.createElementNS("http://www.w3.org/2000/svg", "line");
+      divider.setAttribute("class", "era-divider");
+      divider.setAttribute("x1", x);
+      divider.setAttribute("y1", 30);
+      divider.setAttribute("x2", x);
+      divider.setAttribute("y2", layout.totalH);
+      eraGroup.appendChild(divider);
+    }
 
     const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
     label.setAttribute("class", "era-label");
@@ -366,9 +422,12 @@ function render() {
     nodeGroup.appendChild(g);
   }
 
-  // Set viewBox to fit content with margin
-  svg.setAttribute("viewBox", `0 0 ${layout.totalW} ${layout.totalH}`);
-  fitToView();
+  // No viewBox: SVG user units = CSS pixels 1:1, so state.scale is the
+  // only zoom factor in play. (With a fitting viewBox, max zoom was clamped
+  // to ~0.4× because two scale layers were multiplying.)
+  svg.removeAttribute("viewBox");
+  buildEraTicks();
+  initialView();
   applyHighlights();
 }
 
@@ -470,6 +529,7 @@ function showDetail(id) {
       ${cat.name}
     </div>
     <div class="detail-title">${t.name}</div>
+    ${(window.TECH_NAMES_ZH && window.TECH_NAMES_ZH[t.id]) ? `<div class="detail-title-zh">${window.TECH_NAMES_ZH[t.id]}</div>` : ""}
     <div class="detail-year">${t.year} · ${ERAS.find(e => e.id === t.era).name}</div>
     <div class="detail-desc">${t.desc}</div>
     ${prereqs.length ? `
@@ -505,6 +565,7 @@ function showDetail(id) {
 function applyTransform() {
   viewport.setAttribute("transform", `translate(${state.tx}, ${state.ty}) scale(${state.scale})`);
   zoomLevelEl.textContent = `${Math.round(state.scale * 100)}%`;
+  if (typeof updateScrollbar === "function") updateScrollbar();
 }
 
 function fitToView() {
@@ -514,6 +575,15 @@ function fitToView() {
   state.scale = Math.min(scaleX, scaleY, 1) * 0.95;
   state.tx = (rect.width - layout.totalW * state.scale) / 2;
   state.ty = (rect.height - layout.totalH * state.scale) / 2;
+  applyTransform();
+}
+
+// Initial view on first load: native scale, anchored at the left/top of the canvas.
+// Lets nodes render at full readable size; user can pan/scroll/zoom from there.
+function initialView() {
+  state.scale = 1.0;
+  state.tx = 0;
+  state.ty = 0;
   applyTransform();
 }
 
@@ -559,6 +629,108 @@ svg.addEventListener("click", (e) => {
 document.getElementById("zoom-in").onclick = () => zoomBy(1.2);
 document.getElementById("zoom-out").onclick = () => zoomBy(1 / 1.2);
 document.getElementById("zoom-fit").onclick = () => fitToView();
+
+// Smooth horizontal pan helper (used by arrow keys)
+function panBy(dx, ms = 280) {
+  const t0 = performance.now();
+  const startTx = state.tx;
+  function step(t) {
+    const e = Math.min(1, (t - t0) / ms);
+    const eased = 1 - Math.pow(1 - e, 3);
+    state.tx = startTx + dx * eased;
+    applyTransform();
+    if (e < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+// ───────────── Horizontal scrollbar ─────────────
+const scrollbarEl = document.getElementById("scrollbar-h");
+const scrollTrackEl = document.getElementById("scrollbar-track");
+const scrollThumbEl = document.getElementById("scrollbar-thumb");
+
+function updateScrollbar() {
+  const vw = svg.getBoundingClientRect().width;
+  const cw = layout.totalW * state.scale;
+  if (cw <= vw + 1) { scrollbarEl.classList.add("hidden"); return; }
+  scrollbarEl.classList.remove("hidden");
+
+  const trackW = scrollTrackEl.getBoundingClientRect().width;
+  const visibleFrac = vw / cw;
+  const thumbW = Math.max(40, trackW * visibleFrac);
+  // tx = 0  → content's x=0 at viewport's x=0
+  // tx = -(cw - vw) → content's right edge at viewport's right edge
+  const sf = Math.max(0, Math.min(1, -state.tx / (cw - vw)));
+  const thumbX = sf * (trackW - thumbW);
+  scrollThumbEl.style.width = thumbW + "px";
+  scrollThumbEl.style.left = thumbX + "px";
+}
+
+// Build era tick marks on the scrollbar (positions are in canvas units, so
+// scale-invariant — render once after layout).
+function buildEraTicks() {
+  scrollTrackEl.querySelectorAll(".scrollbar-era-tick").forEach(el => el.remove());
+  for (let i = 0; i < ERAS.length; i++) {
+    const era = ERAS[i];
+    const tick = document.createElement("div");
+    tick.className = "scrollbar-era-tick";
+    tick.dataset.name = era.name;
+    tick.style.left = ((layout.eraXStart[era.id] / layout.totalW) * 100) + "%";
+    tick.title = era.name + " · " + era.range;
+    tick.addEventListener("mousedown", (e) => e.stopPropagation()); // don't trigger track-click
+    tick.addEventListener("click", (e) => { e.stopPropagation(); panToEra(i); });
+    scrollTrackEl.appendChild(tick);
+  }
+}
+
+let scrollDragging = false;
+let scrollDragStart = { mx: 0, txAtStart: 0, factor: 1 };
+
+scrollThumbEl.addEventListener("mousedown", (e) => {
+  e.preventDefault(); e.stopPropagation();
+  const vw = svg.getBoundingClientRect().width;
+  const cw = layout.totalW * state.scale;
+  if (cw <= vw) return;
+  const trackW = scrollTrackEl.getBoundingClientRect().width;
+  const visibleFrac = vw / cw;
+  const thumbW = Math.max(40, trackW * visibleFrac);
+  scrollDragging = true;
+  scrollDragStart = {
+    mx: e.clientX,
+    txAtStart: state.tx,
+    factor: (cw - vw) / Math.max(1, trackW - thumbW),
+  };
+  scrollThumbEl.classList.add("dragging");
+});
+window.addEventListener("mousemove", (e) => {
+  if (!scrollDragging) return;
+  const dx = e.clientX - scrollDragStart.mx;
+  const cw = layout.totalW * state.scale;
+  const vw = svg.getBoundingClientRect().width;
+  state.tx = Math.max(-(cw - vw), Math.min(0, scrollDragStart.txAtStart - dx * scrollDragStart.factor));
+  applyTransform();
+});
+window.addEventListener("mouseup", () => {
+  if (scrollDragging) {
+    scrollDragging = false;
+    scrollThumbEl.classList.remove("dragging");
+  }
+});
+// Click on track outside thumb: jump there
+scrollTrackEl.addEventListener("mousedown", (e) => {
+  if (e.target === scrollThumbEl) return;
+  const vw = svg.getBoundingClientRect().width;
+  const cw = layout.totalW * state.scale;
+  if (cw <= vw) return;
+  const rect = scrollTrackEl.getBoundingClientRect();
+  const trackW = rect.width;
+  const visibleFrac = vw / cw;
+  const thumbW = Math.max(40, trackW * visibleFrac);
+  const clickX = e.clientX - rect.left - thumbW / 2;
+  const sf = Math.max(0, Math.min(1, clickX / Math.max(1, trackW - thumbW)));
+  state.tx = -sf * (cw - vw);
+  applyTransform();
+});
 
 function zoomBy(factor) {
   const rect = svg.getBoundingClientRect();
@@ -606,8 +778,11 @@ function renderSidebar() {
 }
 
 function panToEra(i) {
+  const era = ERAS[i];
   const rect = svg.getBoundingClientRect();
-  const targetX = PADDING_X + i * COL_WIDTH + COL_WIDTH / 2;
+  const xStart = layout.eraXStart[era.id];
+  const nLevels = layout.eraLevels[era.id] + 1;
+  const targetX = xStart + (nLevels * COL_WIDTH) / 2;
   state.tx = rect.width / 2 - targetX * state.scale;
   applyTransform();
 }
@@ -622,9 +797,12 @@ document.getElementById("search-input").addEventListener("input", (e) => {
 window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") clearSelection();
   if (e.key === "0" && (e.metaKey || e.ctrlKey)) { e.preventDefault(); fitToView(); }
+  if (e.target.tagName === "INPUT") return;
+  if (e.key === "ArrowLeft")  { e.preventDefault(); panStep(+1); }
+  if (e.key === "ArrowRight") { e.preventDefault(); panStep(-1); }
 });
 
-window.addEventListener("resize", () => fitToView());
+window.addEventListener("resize", () => updateScrollbar());
 
 // ───────────── Boot ─────────────
 renderSidebar();

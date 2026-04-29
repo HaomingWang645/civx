@@ -43,7 +43,7 @@
           </pattern>
         </defs>
         <g id="viewport">
-          <rect class="grid-bg" x="-2000" y="-2000" width="6000" height="6000" fill="url(#grid)" />
+          <rect class="grid-bg" x="-5000" y="-3000" width="30000" height="10000" fill="url(#grid)" />
           <g id="eras"></g>
           <g id="edges"></g>
           <g id="nodes"></g>
@@ -57,12 +57,18 @@
         <button class="ctrl-btn" id="zoom-fit" title="Fit to view">⊡</button>
         <button class="ctrl-btn" id="zoom-in" title="Zoom in">+</button>
       </div>
+      <div class="scrollbar-h" id="scrollbar-h">
+        <div class="scrollbar-track" id="scrollbar-track">
+          <div class="scrollbar-thumb" id="scrollbar-thumb"></div>
+        </div>
+      </div>
       <div class="zoom-level" id="zoom-level">100%</div>
     </main>
   </div>
 
   <script src="data.js"></script>
   <script src="images.js"></script>
+  <script src="translations.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
