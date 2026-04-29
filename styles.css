@@ -374,11 +374,16 @@ html, body {
 }
 
 .detail-title {
+  display: block;
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 2px;
   letter-spacing: -0.2px;
+  color: var(--text-0);
+  text-decoration: none;
+  transition: color .15s;
 }
+.detail-title:hover { color: var(--accent); }
 
 .detail-title-zh {
   font-size: 15px;
@@ -449,8 +454,9 @@ html, body {
   font-size: 12px;
   line-height: 1.3;
   color: var(--text-1);
+  text-decoration: none;
   transition: background .15s, border-color .15s, color .15s;
-  cursor: default;
+  cursor: pointer;
 }
 .unlock-chip:hover {
   background: rgba(255,255,255,0.08);

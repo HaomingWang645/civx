@@ -429,4 +429,31 @@ window.TECH_NAMES_ZH = {
   "programmable-matter": "可编程物质",
   "interstellar-probe": "星际探测器",
   "terraforming-mars": "火星地球化",
+
+  // ─── Future Age (physics & math) ───
+  "formal-mathematics": "形式化数学",
+  "gravitational-wave-spectroscopy": "引力波光谱学",
+  "dark-sector-physics": "暗物质与暗能量物理",
+  "quantum-gravity": "量子引力",
+  "p-vs-np-resolved": "P/NP问题解决",
+
+  // ─── Future Age (mid-century) ───
+  "space-habitat": "太空居住舱",
+  "artificial-photosynthesis": "人工光合作用",
+  "genetic-disease-eradication": "遗传病根除",
+  "self-replicating-machines": "自我复制机器",
+  "superintelligence": "超级智能",
+  "seti-first-contact": "地外文明探测",
+
+  // ─── Far Future ───
+  "dyson-swarm": "戴森球",
+  "matrioshka-brain": "套娃式大脑",
+  "stellar-engineering": "恒星工程",
+  "generation-ship-colony": "世代飞船殖民",
+  "galactic-civilization": "银河文明",
+  "speciation": "物种分化",
+  "substrate-independent-humanity": "基底无关人类",
+  "antimatter-production": "反物质生产",
+  "warp-drive": "曲速引擎",
+  "kardashev-type-ii": "卡尔达肖夫II型文明",
 };

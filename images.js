@@ -270,7 +270,7 @@ window.TECH_IMAGES = {
   "gestural-communication": "images/gestural-communication.jpg",
   "hide-clothing": "images/hide-clothing.jpg",
   "water-flask": "images/water-flask.jpg",
-  "proto-language": "images/proto-language.png",
+  "proto-language": "images/proto-language.jpg",
   "alphabet-phoenician": "images/alphabet-phoenician.jpg",
   "iron-tools": "images/iron-tools.png",
   "philosophy": "images/philosophy.png",
@@ -391,7 +391,28 @@ window.TECH_IMAGES = {
   "metamaterials": "images/metamaterials.jpg",
   "programmable-matter": "images/programmable-matter.jpg",
   "interstellar-probe": "images/interstellar-probe.png",
-  "terraforming-mars": "images/terraforming-mars.png"
+  "terraforming-mars": "images/terraforming-mars.png",
+  "formal-mathematics": "images/formal-mathematics.jpg",
+  "gravitational-wave-spectroscopy": "images/gravitational-wave-spectroscopy.png",
+  "dark-sector-physics": "images/dark-sector-physics.png",
+  "quantum-gravity": "images/quantum-gravity.png",
+  "p-vs-np-resolved": "images/p-vs-np-resolved.jpg",
+  "space-habitat": "images/space-habitat.jpg",
+  "artificial-photosynthesis": "images/artificial-photosynthesis.png",
+  "genetic-disease-eradication": "images/genetic-disease-eradication.jpg",
+  "self-replicating-machines": "images/self-replicating-machines.png",
+  "superintelligence": "images/superintelligence.jpg",
+  "seti-first-contact": "images/seti-first-contact.jpg",
+  "dyson-swarm": "images/dyson-swarm.jpg",
+  "matrioshka-brain": "images/matrioshka-brain.jpg",
+  "stellar-engineering": "images/stellar-engineering.jpg",
+  "generation-ship-colony": "images/generation-ship-colony.png",
+  "galactic-civilization": "images/galactic-civilization.png",
+  "speciation": "images/speciation.jpg",
+  "substrate-independent-humanity": "images/substrate-independent-humanity.jpg",
+  "antimatter-production": "images/antimatter-production.png",
+  "warp-drive": "images/warp-drive.png",
+  "kardashev-type-ii": "images/kardashev-type-ii.png"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -1459,8 +1480,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Climatology"
   },
   "gestural-communication": {
-    "article": "Sign language",
-    "url": "https://en.wikipedia.org/wiki/Sign_language"
+    "article": "Australopithecus afarensis",
+    "url": "https://en.wikipedia.org/wiki/Australopithecus_afarensis"
   },
   "hide-clothing": {
     "article": "Buckskin (leather)",
@@ -1471,8 +1492,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Diepkloof_Rock_Shelter"
   },
   "proto-language": {
-    "article": "Origin of speech",
-    "url": "https://en.wikipedia.org/wiki/Origin_of_speech"
+    "article": "Hyoid bone",
+    "url": "https://en.wikipedia.org/wiki/Hyoid_bone"
   },
   "alphabet-phoenician": {
     "article": "Mesha Stele",
@@ -1957,5 +1978,89 @@ window.TECH_IMAGE_CREDITS = {
   "terraforming-mars": {
     "article": "Terraforming of Mars",
     "url": "https://en.wikipedia.org/wiki/Terraforming_of_Mars"
+  },
+  "formal-mathematics": {
+    "article": "Terence Tao",
+    "url": "https://en.wikipedia.org/wiki/Terence_Tao"
+  },
+  "gravitational-wave-spectroscopy": {
+    "article": "Gravitational-wave astronomy",
+    "url": "https://en.wikipedia.org/wiki/Gravitational-wave_astronomy"
+  },
+  "dark-sector-physics": {
+    "article": "Dark matter",
+    "url": "https://en.wikipedia.org/wiki/Dark_matter"
+  },
+  "quantum-gravity": {
+    "article": "Quantum gravity",
+    "url": "https://en.wikipedia.org/wiki/Quantum_gravity"
+  },
+  "p-vs-np-resolved": {
+    "article": "Stephen Cook",
+    "url": "https://en.wikipedia.org/wiki/Stephen_Cook"
+  },
+  "space-habitat": {
+    "article": "O'Neill cylinder",
+    "url": "https://en.wikipedia.org/wiki/O'Neill_cylinder"
+  },
+  "artificial-photosynthesis": {
+    "article": "Photosynthesis",
+    "url": "https://en.wikipedia.org/wiki/Photosynthesis"
+  },
+  "genetic-disease-eradication": {
+    "article": "Sickle cell disease",
+    "url": "https://en.wikipedia.org/wiki/Sickle_cell_disease"
+  },
+  "self-replicating-machines": {
+    "article": "John von Neumann",
+    "url": "https://en.wikipedia.org/wiki/John_von_Neumann"
+  },
+  "superintelligence": {
+    "article": "Nick Bostrom",
+    "url": "https://en.wikipedia.org/wiki/Nick_Bostrom"
+  },
+  "seti-first-contact": {
+    "article": "Search for extraterrestrial intelligence",
+    "url": "https://en.wikipedia.org/wiki/Search_for_extraterrestrial_intelligence"
+  },
+  "dyson-swarm": {
+    "article": "Dyson sphere",
+    "url": "https://en.wikipedia.org/wiki/Dyson_sphere"
+  },
+  "matrioshka-brain": {
+    "article": "Megastructure",
+    "url": "https://en.wikipedia.org/wiki/Megastructure"
+  },
+  "stellar-engineering": {
+    "article": "Stellar engine",
+    "url": "https://en.wikipedia.org/wiki/Stellar_engine"
+  },
+  "generation-ship-colony": {
+    "article": "Generation ship",
+    "url": "https://en.wikipedia.org/wiki/Generation_ship"
+  },
+  "galactic-civilization": {
+    "article": "Kardashev scale",
+    "url": "https://en.wikipedia.org/wiki/Kardashev_scale"
+  },
+  "speciation": {
+    "article": "Adaptive radiation",
+    "url": "https://en.wikipedia.org/wiki/Adaptive_radiation"
+  },
+  "substrate-independent-humanity": {
+    "article": "Ray Kurzweil",
+    "url": "https://en.wikipedia.org/wiki/Ray_Kurzweil"
+  },
+  "antimatter-production": {
+    "article": "Antimatter",
+    "url": "https://en.wikipedia.org/wiki/Antimatter"
+  },
+  "warp-drive": {
+    "article": "Alcubierre drive",
+    "url": "https://en.wikipedia.org/wiki/Alcubierre_drive"
+  },
+  "kardashev-type-ii": {
+    "article": "Kardashev scale",
+    "url": "https://en.wikipedia.org/wiki/Kardashev_scale"
   }
 };

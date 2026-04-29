@@ -221,7 +221,7 @@ function layoutTechs() {
   // Per-era minimum sub-column count (overrides auto-derived). Used to spread
   // densely-clustered eras (e.g. Future) across more columns so a single year
   // bucket doesn't pile up into one tall stack.
-  const ERA_MIN_LEVELS = { classical: 13, future: 13 };
+  const ERA_MIN_LEVELS = { classical: 13, future: 13, "far-future": 8 };
   for (const eraId in ERA_MIN_LEVELS) {
     eraLevels[eraId] = Math.max(eraLevels[eraId] ?? 0, ERA_MIN_LEVELS[eraId]);
   }
@@ -581,7 +581,7 @@ function showDetail(id) {
       <span class="detail-cat-dot" style="background: ${cat.color}"></span>
       ${cat.name}
     </div>
-    <div class="detail-title">${t.name}</div>
+    <a class="detail-title" href="${imgCredit?.url || `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(t.name)}&go=Go`}" target="_blank" rel="noopener" title="Open source on Wikipedia">${t.name}</a>
     ${(window.TECH_NAMES_ZH && window.TECH_NAMES_ZH[t.id]) ? `<div class="detail-title-zh">${window.TECH_NAMES_ZH[t.id]}</div>` : ""}
     <div class="detail-year">${t.year} · ${ERAS.find(e => e.id === t.era).name}</div>
     <div class="detail-desc">${t.desc}</div>
@@ -606,10 +606,11 @@ function showDetail(id) {
             ${unlocks.map(u => {
               const c = cats[u.type] || { icon: "•", label: u.type };
               const zh = u.name_zh ? ` <span class="unlock-zh">(${u.name_zh})</span>` : "";
-              return `<span class="unlock-chip" title="${c.label}">
+              const wikiUrl = `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(u.name)}&go=Go`;
+              return `<a class="unlock-chip" href="${wikiUrl}" target="_blank" rel="noopener" title="${c.label} · open Wikipedia">
                 <span class="unlock-icon">${c.icon}</span>
                 <span class="unlock-name">${u.name}${zh}</span>
-              </span>`;
+              </a>`;
             }).join("")}
           </div>
         </div>`;
