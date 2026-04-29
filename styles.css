@@ -776,9 +776,9 @@ body.theme-renaissance .node-meta {
   fill: #6b4a26;
 }
 body.theme-renaissance .node-title {
-  font-family: "Cinzel", "EB Garamond", serif;
+  font-family: "EB Garamond", Georgia, serif;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14px;
   fill: #3b2614;
 }
 body.theme-renaissance .node-year {
@@ -840,11 +840,11 @@ body.theme-renaissance .detail-cat {
   letter-spacing: 1.8px;
 }
 body.theme-renaissance .detail-title {
-  font-family: "Cinzel", serif;
+  font-family: "EB Garamond", Georgia, serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 26px;
   color: #3b2614;
-  letter-spacing: 0.5px;
+  letter-spacing: 0;
 }
 /* Illuminated dropcap on the first letter of the detail title. */
 body.theme-renaissance .detail-title::first-letter {
