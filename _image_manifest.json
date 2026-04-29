@@ -4988,5 +4988,137 @@
     "image_path": "images/galactic-ecology.png",
     "extract": "Panspermia is the hypothesis that life exists throughout the universe, distributed by cosmic dust, meteoroids, asteroids, comets, and planetoids, as well as by spacecraft carrying unintended contamination by microorganisms, known as directed panspermia. The theory argues that lif",
     "score": 0.85
+  },
+  "artificial-womb": {
+    "name": "Artificial Womb",
+    "article": "Artificial womb",
+    "page": "https://en.wikipedia.org/wiki/Artificial_womb",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Nature_Communications_Biobag_system_design.jpg/330px-Nature_Communications_Biobag_system_design.jpg",
+    "image_path": "images/artificial-womb.jpg",
+    "extract": "An artificial womb or artificial uterus is a device that allows for extracorporeal pregnancy, by growing a fetus outside the body of an organism that would normally carry the fetus to term. An artificial uterus, as a replacement organ, could have many applications. It could be us",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "closed-cycle-cities": {
+    "name": "Closed-Cycle Cities",
+    "article": "Sustainable city",
+    "page": "https://en.wikipedia.org/wiki/Sustainable_city",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tram_in_front_of_the_Taschenbergpalais_Hotel%2C_Dresden_-_1448.jpg/330px-Tram_in_front_of_the_Taschenbergpalais_Hotel%2C_Dresden_-_1448.jpg",
+    "image_path": "images/closed-cycle-cities.jpg",
+    "extract": "A sustainable city, eco-city, or green city is a city designed with consideration for the social, economic, and environmental impact, as well as a resilient habitat for existing populations. The UN Sustainable Development Goal 11 defines as one that is dedicated to achieving gree",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "personalized-medicine": {
+    "name": "Personalized Medicine",
+    "article": "Personalized medicine",
+    "page": "https://en.wikipedia.org/wiki/Personalized_medicine",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Hybridogenesis_in_water_frogs_gametes.svg/330px-Hybridogenesis_in_water_frogs_gametes.svg.png",
+    "image_path": "images/personalized-medicine.png",
+    "extract": "Personalized medicine, also referred to as precision medicine or systems medicine, is a medical model that separates people into different groups—with medical decisions, practices, interventions and/or products being tailored to the individual patient based on their predicted res",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "printable-organs-on-demand": {
+    "name": "Printable Organs on Demand",
+    "article": "3D bioprinting",
+    "page": "https://en.wikipedia.org/wiki/3D_bioprinting",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Advs2797-fig-0001-m.jpg/330px-Advs2797-fig-0001-m.jpg",
+    "image_path": "images/printable-organs-on-demand.jpg",
+    "extract": "Three-dimensional (3D) bioprinting is the use of 3D printing–like techniques to combine cells, growth factors, bio-inks, and biomaterials to fabricate functional structures that were traditionally used for tissue engineering applications but in recent times have seen increased in",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "ai-coordination-treaty": {
+    "name": "AI Coordination Treaty",
+    "article": "AI Safety Summit 2023",
+    "page": "https://en.wikipedia.org/wiki/AI_Safety_Summit_2023",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bletchley_Park_Mansion.jpg/330px-Bletchley_Park_Mansion.jpg",
+    "image_path": "images/ai-coordination-treaty.jpg",
+    "extract": "The AI Safety Summit 2023 was an international conference on the safety and regulation of artificial intelligence. Organized by the British government, it was held in November 2023 at Bletchley Park, Milton Keynes, England.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "direct-ai-democracy": {
+    "name": "Direct AI-Mediated Democracy",
+    "article": "Audrey Tang",
+    "page": "https://en.wikipedia.org/wiki/Audrey_Tang",
+    "status": "ok",
+    "reason": "alternate",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Portrait_Audrey_Tang_%2825915794061%2C_cropped%29.jpg/330px-Portrait_Audrey_Tang_%2825915794061%2C_cropped%29.jpg",
+    "image_path": "images/direct-ai-democracy.jpg",
+    "extract": "Tang Feng, also known by her English name Audrey, is a Taiwanese politician and free software programmer who served as the first Minister of Digital Affairs of Taiwan from August 2022 to May 2024. She has been described as one of the \"ten greatest Taiwanese computing personalitie",
+    "score": 0.85
+  },
+  "lunar-industrial-base": {
+    "name": "Lunar Industrial Base",
+    "article": "Colonization of the Moon",
+    "page": "https://en.wikipedia.org/wiki/Colonization_of_the_Moon",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Mooncolony.jpg/330px-Mooncolony.jpg",
+    "image_path": "images/lunar-industrial-base.jpg",
+    "extract": "The colonization of the Moon is a process or concept employed by some proposals for robotic or human exploitation and settlement endeavours on the Moon. Often used as a synonym for its more specific element of settling the Moon, lunar or space colonization as a whole has become c",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "asteroid-belt-settlement": {
+    "name": "Asteroid Belt Settlement",
+    "article": "Colonization of the asteroid belt",
+    "page": "https://en.wikipedia.org/wiki/Colonization_of_the_asteroid_belt",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Main_Asteroid_Belt_Asteroids.jpg/330px-Main_Asteroid_Belt_Asteroids.jpg",
+    "image_path": "images/asteroid-belt-settlement.jpg",
+    "extract": "Asteroids, including those in the asteroid belt, have been suggested as possible sites of space colonization. Motives include the survival of humanity, and the specific economic opportunity for asteroid mining. Obstacles include transportation distance, temperature, radiation, la",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "memory-editing": {
+    "name": "Memory Editing",
+    "article": "Susumu Tonegawa",
+    "page": "https://en.wikipedia.org/wiki/Susumu_Tonegawa",
+    "status": "ok",
+    "reason": "alternate",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Susumu_Tonegawa_Photo.jpg/330px-Susumu_Tonegawa_Photo.jpg",
+    "image_path": "images/memory-editing.jpg",
+    "extract": "Susumu Tonegawa  is a Japanese scientist who was the sole recipient of the Nobel Prize for Physiology or Medicine in 1987 for his discovery of V(D)J recombination, the genetic mechanism which produces antibody diversity. Although he won the Nobel Prize for his work in immunology,",
+    "score": 0.85
+  },
+  "cybernetic-enhancement": {
+    "name": "Cybernetic Enhancement",
+    "article": "Cyborg",
+    "page": "https://en.wikipedia.org/wiki/Cyborg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Serengeti_Cyborg%2C_by_Fanuel_Leul.jpg/330px-Serengeti_Cyborg%2C_by_Fanuel_Leul.jpg",
+    "image_path": "images/cybernetic-enhancement.jpg",
+    "extract": "A cyborg is a being with both organic and biomechatronic body parts. It is a portmanteau of cybernetic and organism. The term was coined in 1960 by Manfred Clynes and Nathan S. Kline. In contrast to biorobots and androids, the term cyborg applies to a living organism that has und",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "orbital-ring": {
+    "name": "Orbital Ring",
+    "article": "Orbital ring",
+    "page": "https://en.wikipedia.org/wiki/Orbital_ring",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Lunar_orbital_rings.webp/330px-Lunar_orbital_rings.webp.png",
+    "image_path": "images/orbital-ring.png",
+    "extract": "An orbital ring is a concept of an artificial ring placed around a body and set rotating at such a rate that the apparent centrifugal force is large enough to counteract the force of gravity. For the Earth, the required speed is on the order of 10 km/sec, compared to a typical lo",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "universal-disease-eradication": {
+    "name": "Universal Disease Eradication",
+    "article": "Eradication of infectious diseases",
+    "page": "https://en.wikipedia.org/wiki/Eradication_of_infectious_diseases",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Gloucester_smallpox_epidemic%2C_1896%3B_Henry_Wicklin%2C_aged_6_Wellcome_V0031456.jpg/330px-Gloucester_smallpox_epidemic%2C_1896%3B_Henry_Wicklin%2C_aged_6_Wellcome_V0031456.jpg",
+    "image_path": "images/universal-disease-eradication.jpg",
+    "extract": "The eradication of infectious diseases is the reduction of the prevalence of an infectious disease in the global host population to zero.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
   }
 }

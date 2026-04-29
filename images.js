@@ -422,7 +422,19 @@ window.TECH_IMAGES = {
   "interstellar-treaty": "images/interstellar-treaty.png",
   "time-dilation-cultures": "images/time-dilation-cultures.jpg",
   "end-time-philosophy": "images/end-time-philosophy.png",
-  "galactic-ecology": "images/galactic-ecology.png"
+  "galactic-ecology": "images/galactic-ecology.png",
+  "artificial-womb": "images/artificial-womb.jpg",
+  "closed-cycle-cities": "images/closed-cycle-cities.jpg",
+  "personalized-medicine": "images/personalized-medicine.png",
+  "printable-organs-on-demand": "images/printable-organs-on-demand.jpg",
+  "ai-coordination-treaty": "images/ai-coordination-treaty.jpg",
+  "direct-ai-democracy": "images/direct-ai-democracy.jpg",
+  "lunar-industrial-base": "images/lunar-industrial-base.jpg",
+  "asteroid-belt-settlement": "images/asteroid-belt-settlement.jpg",
+  "memory-editing": "images/memory-editing.jpg",
+  "cybernetic-enhancement": "images/cybernetic-enhancement.jpg",
+  "orbital-ring": "images/orbital-ring.png",
+  "universal-disease-eradication": "images/universal-disease-eradication.jpg"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -2112,5 +2124,53 @@ window.TECH_IMAGE_CREDITS = {
   "galactic-ecology": {
     "article": "Panspermia",
     "url": "https://en.wikipedia.org/wiki/Panspermia"
+  },
+  "artificial-womb": {
+    "article": "Artificial womb",
+    "url": "https://en.wikipedia.org/wiki/Artificial_womb"
+  },
+  "closed-cycle-cities": {
+    "article": "Sustainable city",
+    "url": "https://en.wikipedia.org/wiki/Sustainable_city"
+  },
+  "personalized-medicine": {
+    "article": "Personalized medicine",
+    "url": "https://en.wikipedia.org/wiki/Personalized_medicine"
+  },
+  "printable-organs-on-demand": {
+    "article": "3D bioprinting",
+    "url": "https://en.wikipedia.org/wiki/3D_bioprinting"
+  },
+  "ai-coordination-treaty": {
+    "article": "AI Safety Summit 2023",
+    "url": "https://en.wikipedia.org/wiki/AI_Safety_Summit_2023"
+  },
+  "direct-ai-democracy": {
+    "article": "Audrey Tang",
+    "url": "https://en.wikipedia.org/wiki/Audrey_Tang"
+  },
+  "lunar-industrial-base": {
+    "article": "Colonization of the Moon",
+    "url": "https://en.wikipedia.org/wiki/Colonization_of_the_Moon"
+  },
+  "asteroid-belt-settlement": {
+    "article": "Colonization of the asteroid belt",
+    "url": "https://en.wikipedia.org/wiki/Colonization_of_the_asteroid_belt"
+  },
+  "memory-editing": {
+    "article": "Susumu Tonegawa",
+    "url": "https://en.wikipedia.org/wiki/Susumu_Tonegawa"
+  },
+  "cybernetic-enhancement": {
+    "article": "Cyborg",
+    "url": "https://en.wikipedia.org/wiki/Cyborg"
+  },
+  "orbital-ring": {
+    "article": "Orbital ring",
+    "url": "https://en.wikipedia.org/wiki/Orbital_ring"
+  },
+  "universal-disease-eradication": {
+    "article": "Eradication of infectious diseases",
+    "url": "https://en.wikipedia.org/wiki/Eradication_of_infectious_diseases"
   }
 };

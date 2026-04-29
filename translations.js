@@ -468,4 +468,18 @@ window.TECH_NAMES_ZH = {
   "time-dilation-cultures": "时间膨胀文化",
   "end-time-philosophy": "终末哲学",
   "galactic-ecology": "银河生态学",
+
+  // ─── Future Age (late) ───
+  "artificial-womb": "人工子宫",
+  "closed-cycle-cities": "闭环循环城市",
+  "personalized-medicine": "个性化医疗",
+  "printable-organs-on-demand": "按需打印器官",
+  "ai-coordination-treaty": "人工智能协调条约",
+  "direct-ai-democracy": "AI辅助直接民主",
+  "lunar-industrial-base": "月球工业基地",
+  "asteroid-belt-settlement": "小行星带定居",
+  "memory-editing": "记忆编辑",
+  "cybernetic-enhancement": "赛博格增强",
+  "orbital-ring": "轨道环",
+  "universal-disease-eradication": "普遍疾病根除",
 };
