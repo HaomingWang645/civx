@@ -325,6 +325,7 @@ window.TECH_NAMES_ZH = {
 
   // ─── Information ─────────────────────────────────────────────
   "microprocessor": "微处理器",
+  "advanced-chip-manufacturing": "先进芯片制造",
   "personal-computer": "个人计算机",
   "gui-mouse": "图形用户界面",
   "packet-switching": "分组交换",

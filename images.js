@@ -333,7 +333,8 @@ window.TECH_IMAGES = {
   "packet-switching": "images/packet-switching.jpg",
   "polished-stone": "images/polished-stone.png",
   "newspaper-mass": "images/newspaper-mass.jpg",
-  "machine-learning": "images/machine-learning.png"
+  "machine-learning": "images/machine-learning.png",
+  "advanced-chip-manufacturing": "images/advanced-chip-manufacturing.jpg"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -1667,5 +1668,9 @@ window.TECH_IMAGE_CREDITS = {
   "machine-learning": {
     "article": "TensorFlow",
     "url": "https://en.wikipedia.org/wiki/TensorFlow"
+  },
+  "advanced-chip-manufacturing": {
+    "article": "Photolithography",
+    "url": "https://en.wikipedia.org/wiki/Photolithography"
   }
 };

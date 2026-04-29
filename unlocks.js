@@ -1046,6 +1046,18 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "Ted Hoff", name_zh: "泰德·霍夫" },
     { type: "org", name: "Intel", name_zh: "英特尔" },
   ],
+  "advanced-chip-manufacturing": [
+    { type: "org", name: "TSMC", name_zh: "台积电" },
+    { type: "org", name: "ASML", name_zh: "阿斯麦" },
+    { type: "org", name: "Samsung Foundry", name_zh: "三星代工" },
+    { type: "org", name: "NVIDIA", name_zh: "英伟达" },
+    { type: "person", name: "Morris Chang", name_zh: "张忠谋" },
+    { type: "person", name: "Jensen Huang", name_zh: "黄仁勋" },
+    { type: "unit", name: "EUV scanner (ASML NXE/EXE)", name_zh: "极紫外光刻机(ASML NXE/EXE)" },
+    { type: "unit", name: "FinFET transistor", name_zh: "鳍式场效应晶体管(FinFET)" },
+    { type: "unit", name: "Apple M-series chip", name_zh: "苹果M系列芯片" },
+    { type: "unit", name: "NVIDIA H100 / Blackwell GPU", name_zh: "英伟达 H100 / Blackwell GPU" },
+  ],
   "personal-computer": [
     { type: "unit", name: "Apple II", name_zh: "Apple II" },
     { type: "unit", name: "IBM PC", name_zh: "IBM PC" },

@@ -3994,5 +3994,17 @@
     "status": "ok",
     "score": 0.7,
     "reason": "title=0.00 body=1.00 override"
+  },
+  "advanced-chip-manufacturing": {
+    "name": "Advanced Chip Manufacturing",
+    "query": "Photolithography",
+    "article": "Photolithography",
+    "page": "https://en.wikipedia.org/wiki/Photolithography",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/5C2A5953R_-_49913961083_%E2%80%93_Silicon_Wafer_20200519.jpg/330px-5C2A5953R_-_49913961083_%E2%80%93_Silicon_Wafer_20200519.jpg",
+    "image_path": "images/advanced-chip-manufacturing.jpg",
+    "extract": "Photolithography is a process that involves using light to transfer a pattern onto a photoresist layer deposited on a sample, typically a silicon wafer. It is used in the manufacturing of integrated circuits.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
   }
 }
