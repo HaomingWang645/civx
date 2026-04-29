@@ -371,7 +371,16 @@ window.TECH_IMAGES = {
   "fusion-rocket": "images/fusion-rocket.png",
   "space-elevator": "images/space-elevator.jpg",
   "post-scarcity": "images/post-scarcity.jpg",
-  "digital-immortality": "images/digital-immortality.png"
+  "digital-immortality": "images/digital-immortality.png",
+  "universal-basic-income": "images/universal-basic-income.jpg",
+  "liquid-democracy": "images/liquid-democracy.png",
+  "network-state": "images/network-state.png",
+  "ai-governance": "images/ai-governance.jpg",
+  "transhumanism": "images/transhumanism.jpg",
+  "longtermism": "images/longtermism.png",
+  "generative-art": "images/generative-art.jpg",
+  "metaverse": "images/metaverse.jpg",
+  "decentralized-autonomous-org": "images/decentralized-autonomous-org.jpg"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -1857,5 +1866,41 @@ window.TECH_IMAGE_CREDITS = {
   "digital-immortality": {
     "article": "Mind uploading",
     "url": "https://en.wikipedia.org/wiki/Mind_uploading"
+  },
+  "universal-basic-income": {
+    "article": "Universal basic income",
+    "url": "https://en.wikipedia.org/wiki/Universal_basic_income"
+  },
+  "liquid-democracy": {
+    "article": "Liquid democracy",
+    "url": "https://en.wikipedia.org/wiki/Liquid_democracy"
+  },
+  "network-state": {
+    "article": "Balaji Srinivasan",
+    "url": "https://en.wikipedia.org/wiki/Balaji_Srinivasan"
+  },
+  "ai-governance": {
+    "article": "Smart city",
+    "url": "https://en.wikipedia.org/wiki/Smart_city"
+  },
+  "transhumanism": {
+    "article": "Transhumanism",
+    "url": "https://en.wikipedia.org/wiki/Transhumanism"
+  },
+  "longtermism": {
+    "article": "Longtermism",
+    "url": "https://en.wikipedia.org/wiki/Longtermism"
+  },
+  "generative-art": {
+    "article": "Generative art",
+    "url": "https://en.wikipedia.org/wiki/Generative_art"
+  },
+  "metaverse": {
+    "article": "Metaverse",
+    "url": "https://en.wikipedia.org/wiki/Metaverse"
+  },
+  "decentralized-autonomous-org": {
+    "article": "Vitalik Buterin",
+    "url": "https://en.wikipedia.org/wiki/Vitalik_Buterin"
   }
 };

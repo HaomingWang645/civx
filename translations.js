@@ -403,4 +403,15 @@ window.TECH_NAMES_ZH = {
   "space-elevator": "太空电梯",
   "post-scarcity": "后稀缺经济",
   "digital-immortality": "意识上传",
+
+  // ─── Future Age (social) ───
+  "universal-basic-income": "全民基本收入",
+  "liquid-democracy": "流动民主",
+  "network-state": "网络国家",
+  "ai-governance": "算法治理",
+  "transhumanism": "超人类主义",
+  "longtermism": "长期主义",
+  "generative-art": "生成艺术",
+  "metaverse": "元宇宙",
+  "decentralized-autonomous-org": "去中心化自治组织",
 };

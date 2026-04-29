@@ -4413,5 +4413,104 @@
     "status": "ok",
     "score": 0.9,
     "reason": "manual override"
+  },
+  "universal-basic-income": {
+    "name": "Universal Basic Income",
+    "article": "Universal basic income",
+    "page": "https://en.wikipedia.org/wiki/Universal_basic_income",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Basic_Income%2C_a_new_human_right.webm/330px--Basic_Income%2C_a_new_human_right.webm.jpg",
+    "image_path": "images/universal-basic-income.jpg",
+    "extract": "Universal basic income (UBI) is a social welfare proposal in which all members of a given population regularly receive a minimum income in the form of an unconditional transfer payment, i.e., without a means test or need to perform work. In contrast, a guaranteed minimum income (",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "liquid-democracy": {
+    "name": "Liquid Democracy",
+    "article": "Liquid democracy",
+    "page": "https://en.wikipedia.org/wiki/Liquid_democracy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Democracy.svg/330px-Democracy.svg.png",
+    "image_path": "images/liquid-democracy.png",
+    "extract": "Liquid democracy is a form of proxy voting, whereby an electorate engages in collective decision-making through direct participation and dynamic representation. This democratic system utilizes elements of both direct and representative democracy. Voters in a liquid democracy have",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "network-state": {
+    "name": "Network State",
+    "article": "Balaji Srinivasan",
+    "page": "https://en.wikipedia.org/wiki/Balaji_Srinivasan",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Balaji_Srinivasan_%28cropped%29.png/330px-Balaji_Srinivasan_%28cropped%29.png",
+    "image_path": "images/network-state.png",
+    "extract": "Balaji S. Srinivasan is an American entrepreneur, scientist, and investor. He is the author of The Network State: How to Start a New Country and the founder of the Network School, a retreat for entrepreneurs and technicians in Malaysia. Previously, he was the co-founder of the ge",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "ai-governance": {
+    "name": "Algorithmic Governance",
+    "article": "Smart city",
+    "page": "https://en.wikipedia.org/wiki/Smart_city",
+    "status": "ok",
+    "reason": "alternate article",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Clean_mobility_instead_of_dirty_traffic.jpg/330px-Clean_mobility_instead_of_dirty_traffic.jpg",
+    "image_path": "images/ai-governance.jpg",
+    "extract": "A smart city is an urban model that leverages technology, human capital, and governance to improve sustainability, efficiency, and social inclusion, which are considered goals for cities of the future. Smart cities use digital technology to collect data and operate services. Data",
+    "score": 0.8
+  },
+  "transhumanism": {
+    "name": "Transhumanism",
+    "article": "Transhumanism",
+    "page": "https://en.wikipedia.org/wiki/Transhumanism",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Manhattan%2C_N.Y.C._1997_51.jpg/330px-Manhattan%2C_N.Y.C._1997_51.jpg",
+    "image_path": "images/transhumanism.jpg",
+    "extract": "Transhumanism is a philosophical movement that advocates the enhancement of the human condition by developing and making widely available new and future technologies to enhance longevity, cognition, and well-being. Influenced by seminal works of science fiction, the transhumanist",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "longtermism": {
+    "name": "Longtermism",
+    "article": "Longtermism",
+    "page": "https://en.wikipedia.org/wiki/Longtermism",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Illustration_of_past%2C_present_and_future_population_sizes_%28Our_World_in_Data%29.png/330px-Illustration_of_past%2C_present_and_future_population_sizes_%28Our_World_in_Data%29.png",
+    "image_path": "images/longtermism.png",
+    "extract": "Longtermism is the ethical view that positively influencing the long-term future is a key moral priority. It is an important concept in effective altruism and a primary motivation for efforts that aim to reduce existential risks to humanity.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "generative-art": {
+    "name": "Generative Art",
+    "article": "Generative art",
+    "page": "https://en.wikipedia.org/wiki/Generative_art",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a0/Condensation_Cube_of_Haacke.jpg/330px-Condensation_Cube_of_Haacke.jpg",
+    "image_path": "images/generative-art.jpg",
+    "extract": "Generative art is post-conceptual art that has been created with the use of an autonomous system. An autonomous system in this context is generally one that is non-human and can independently determine features of an artwork that would otherwise require decisions made directly by",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "metaverse": {
+    "name": "Metaverse",
+    "article": "Metaverse",
+    "page": "https://en.wikipedia.org/wiki/Metaverse",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Second_Life_11th_Birthday_Live_Drax_Files_Radio_Hour.jpg/330px-Second_Life_11th_Birthday_Live_Drax_Files_Radio_Hour.jpg",
+    "image_path": "images/metaverse.jpg",
+    "extract": "A metaverse is a virtual world in which users interact while represented by avatars, typically in a 3D display, with the experience focused on social and economic connection.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "decentralized-autonomous-org": {
+    "name": "Decentralized Autonomous Organization",
+    "article": "Vitalik Buterin",
+    "page": "https://en.wikipedia.org/wiki/Vitalik_Buterin",
+    "status": "ok",
+    "reason": "alternate article",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Vitalik_Buterin_TechCrunch_London_2015_%28cropped%29.jpg/330px-Vitalik_Buterin_TechCrunch_London_2015_%28cropped%29.jpg",
+    "image_path": "images/decentralized-autonomous-org.jpg",
+    "extract": "Vitaly Dmitrievich Buterin, better known as Vitalik Buterin, is a Russian-Canadian computer programmer best known for co-founding Ethereum. Buterin became involved with cryptocurrency early in its inception, co-founding Bitcoin Magazine in 2011. In 2015, Buterin deployed the Ethe",
+    "score": 0.8
   }
 }
