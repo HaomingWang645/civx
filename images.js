@@ -334,7 +334,44 @@ window.TECH_IMAGES = {
   "polished-stone": "images/polished-stone.png",
   "newspaper-mass": "images/newspaper-mass.jpg",
   "machine-learning": "images/machine-learning.png",
-  "advanced-chip-manufacturing": "images/advanced-chip-manufacturing.jpg"
+  "advanced-chip-manufacturing": "images/advanced-chip-manufacturing.jpg",
+  "tank": "images/tank.jpg",
+  "aircraft-carrier": "images/aircraft-carrier.jpg",
+  "submarine-warfare": "images/submarine-warfare.jpg",
+  "thermonuclear-weapon": "images/thermonuclear-weapon.png",
+  "icbm": "images/icbm.jpg",
+  "nuclear-submarine": "images/nuclear-submarine.jpg",
+  "nuclear-aircraft-carrier": "images/nuclear-aircraft-carrier.jpg",
+  "guided-missile": "images/guided-missile.jpg",
+  "precision-guided-munition": "images/precision-guided-munition.jpg",
+  "stealth-aircraft": "images/stealth-aircraft.jpg",
+  "drone-uav": "images/drone-uav.jpg",
+  "fifth-gen-fighter": "images/fifth-gen-fighter.jpg",
+  "cyber-warfare": "images/cyber-warfare.jpg",
+  "hypersonic-weapon": "images/hypersonic-weapon.jpg",
+  "plasma-physics": "images/plasma-physics.jpg",
+  "neuroscience": "images/neuroscience.jpg",
+  "gene-therapy": "images/gene-therapy.png",
+  "tissue-engineering": "images/tissue-engineering.png",
+  "closed-loop-life-support": "images/closed-loop-life-support.jpg",
+  "fusion-power": "images/fusion-power.jpg",
+  "humanoid-robot": "images/humanoid-robot.jpg",
+  "agi": "images/agi.png",
+  "brain-computer-interface": "images/brain-computer-interface.jpg",
+  "moon-base": "images/moon-base.jpg",
+  "mars-colony": "images/mars-colony.jpg",
+  "asteroid-mining": "images/asteroid-mining.png",
+  "anti-aging": "images/anti-aging.jpg",
+  "lab-grown-meat": "images/lab-grown-meat.jpg",
+  "synthetic-biology": "images/synthetic-biology.jpg",
+  "room-temp-superconductor": "images/room-temp-superconductor.jpg",
+  "nanotechnology": "images/nanotechnology.png",
+  "quantum-applications": "images/quantum-applications.png",
+  "carbon-capture-scale": "images/carbon-capture-scale.jpg",
+  "fusion-rocket": "images/fusion-rocket.png",
+  "space-elevator": "images/space-elevator.jpg",
+  "post-scarcity": "images/post-scarcity.jpg",
+  "digital-immortality": "images/digital-immortality.png"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -1672,5 +1709,153 @@ window.TECH_IMAGE_CREDITS = {
   "advanced-chip-manufacturing": {
     "article": "Photolithography",
     "url": "https://en.wikipedia.org/wiki/Photolithography"
+  },
+  "tank": {
+    "article": "Tank",
+    "url": "https://en.wikipedia.org/wiki/Tank"
+  },
+  "aircraft-carrier": {
+    "article": "Aircraft carrier",
+    "url": "https://en.wikipedia.org/wiki/Aircraft_carrier"
+  },
+  "submarine-warfare": {
+    "article": "Submarine warfare",
+    "url": "https://en.wikipedia.org/wiki/Submarine_warfare"
+  },
+  "thermonuclear-weapon": {
+    "article": "Thermonuclear weapon",
+    "url": "https://en.wikipedia.org/wiki/Thermonuclear_weapon"
+  },
+  "icbm": {
+    "article": "Intercontinental ballistic missile",
+    "url": "https://en.wikipedia.org/wiki/Intercontinental_ballistic_missile"
+  },
+  "nuclear-submarine": {
+    "article": "Nuclear submarine",
+    "url": "https://en.wikipedia.org/wiki/Nuclear_submarine"
+  },
+  "nuclear-aircraft-carrier": {
+    "article": "Nuclear marine propulsion",
+    "url": "https://en.wikipedia.org/wiki/Nuclear_marine_propulsion"
+  },
+  "guided-missile": {
+    "article": "Missile",
+    "url": "https://en.wikipedia.org/wiki/Missile"
+  },
+  "precision-guided-munition": {
+    "article": "Precision-guided munition",
+    "url": "https://en.wikipedia.org/wiki/Precision-guided_munition"
+  },
+  "stealth-aircraft": {
+    "article": "Stealth aircraft",
+    "url": "https://en.wikipedia.org/wiki/Stealth_aircraft"
+  },
+  "drone-uav": {
+    "article": "Unmanned aerial vehicle",
+    "url": "https://en.wikipedia.org/wiki/Unmanned_aerial_vehicle"
+  },
+  "fifth-gen-fighter": {
+    "article": "Fifth-generation fighter",
+    "url": "https://en.wikipedia.org/wiki/Fifth-generation_fighter"
+  },
+  "cyber-warfare": {
+    "article": "Cyberwarfare",
+    "url": "https://en.wikipedia.org/wiki/Cyberwarfare"
+  },
+  "hypersonic-weapon": {
+    "article": "Hypersonic flight",
+    "url": "https://en.wikipedia.org/wiki/Hypersonic_flight"
+  },
+  "plasma-physics": {
+    "article": "Plasma (physics)",
+    "url": "https://en.wikipedia.org/wiki/Plasma_(physics)"
+  },
+  "neuroscience": {
+    "article": "Neuroscience",
+    "url": "https://en.wikipedia.org/wiki/Neuroscience"
+  },
+  "gene-therapy": {
+    "article": "Gene therapy",
+    "url": "https://en.wikipedia.org/wiki/Gene_therapy"
+  },
+  "tissue-engineering": {
+    "article": "Tissue engineering",
+    "url": "https://en.wikipedia.org/wiki/Tissue_engineering"
+  },
+  "closed-loop-life-support": {
+    "article": "Biosphere 2",
+    "url": "https://en.wikipedia.org/wiki/Biosphere_2"
+  },
+  "fusion-power": {
+    "article": "Fusion power",
+    "url": "https://en.wikipedia.org/wiki/Fusion_power"
+  },
+  "humanoid-robot": {
+    "article": "Humanoid robot",
+    "url": "https://en.wikipedia.org/wiki/Humanoid_robot"
+  },
+  "agi": {
+    "article": "ChatGPT",
+    "url": "https://en.wikipedia.org/wiki/ChatGPT"
+  },
+  "brain-computer-interface": {
+    "article": "Brain–computer interface",
+    "url": "https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface"
+  },
+  "moon-base": {
+    "article": "Moonbase",
+    "url": "https://en.wikipedia.org/wiki/Moonbase"
+  },
+  "mars-colony": {
+    "article": "Colonization of Mars",
+    "url": "https://en.wikipedia.org/wiki/Colonization_of_Mars"
+  },
+  "asteroid-mining": {
+    "article": "Asteroid mining",
+    "url": "https://en.wikipedia.org/wiki/Asteroid_mining"
+  },
+  "anti-aging": {
+    "article": "Life extension",
+    "url": "https://en.wikipedia.org/wiki/Life_extension"
+  },
+  "lab-grown-meat": {
+    "article": "Cultured meat",
+    "url": "https://en.wikipedia.org/wiki/Cultured_meat"
+  },
+  "synthetic-biology": {
+    "article": "Synthetic biology",
+    "url": "https://en.wikipedia.org/wiki/Synthetic_biology"
+  },
+  "room-temp-superconductor": {
+    "article": "High-temperature superconductivity",
+    "url": "https://en.wikipedia.org/wiki/High-temperature_superconductivity"
+  },
+  "nanotechnology": {
+    "article": "Molecular nanotechnology",
+    "url": "https://en.wikipedia.org/wiki/Molecular_nanotechnology"
+  },
+  "quantum-applications": {
+    "article": "Quantum computing",
+    "url": "https://en.wikipedia.org/wiki/Quantum_computing"
+  },
+  "carbon-capture-scale": {
+    "article": "Direct air capture",
+    "url": "https://en.wikipedia.org/wiki/Direct_air_capture"
+  },
+  "fusion-rocket": {
+    "article": "Fusion rocket",
+    "url": "https://en.wikipedia.org/wiki/Fusion_rocket"
+  },
+  "space-elevator": {
+    "article": "Space elevator",
+    "url": "https://en.wikipedia.org/wiki/Space_elevator"
+  },
+  "post-scarcity": {
+    "article": "Universal basic income",
+    "url": "https://en.wikipedia.org/wiki/Universal_basic_income"
+  },
+  "digital-immortality": {
+    "article": "Mind uploading",
+    "url": "https://en.wikipedia.org/wiki/Mind_uploading"
   }
 };
