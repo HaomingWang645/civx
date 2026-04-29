@@ -178,16 +178,25 @@ html, body {
   fill: rgba(255,255,255,0.02);
 }
 
-/* Era columns */
-.era-band {
-  fill: rgba(255,255,255,0.015);
-  stroke: none;
-}
+/* Era columns — zebra stripe + stronger boundary */
+.era-band { stroke: none; }
+.era-band.era-even { fill: rgba(255,255,255,0.018); }
+.era-band.era-odd  { fill: rgba(255,255,255,0.055); }
+
 .era-divider {
-  stroke: rgba(255,255,255,0.18);
-  stroke-width: 1;
-  stroke-dasharray: 4 6;
+  stroke: rgba(139, 159, 255, 0.45);  /* accent color, more visible */
+  stroke-width: 1.8;
+  stroke-dasharray: 0;
+  filter: drop-shadow(0 0 4px rgba(139, 159, 255, 0.25));
 }
+
+.era-label-pill {
+  fill: rgba(255,255,255,0.05);
+  stroke: rgba(255,255,255,0.10);
+  stroke-width: 1;
+}
+.era-label-pill.era-even { fill: rgba(255,255,255,0.04); }
+.era-label-pill.era-odd  { fill: rgba(255,255,255,0.08); }
 .era-label {
   font-size: 11px;
   font-weight: 600;
@@ -750,15 +759,23 @@ body.theme-renaissance .era-range {
 }
 body.theme-renaissance .legend-swatch { box-shadow: 0 0 6px currentColor; }
 
-/* Era bands and dividers — solid sepia rule + ornate label */
-body.theme-renaissance .era-band {
-  fill: rgba(184, 134, 43, 0.05);
-}
+/* Era bands and dividers — zebra parchment + bold sepia rule */
+body.theme-renaissance .era-band { stroke: none; }
+body.theme-renaissance .era-band.era-even { fill: rgba(184, 134, 43, 0.04); }
+body.theme-renaissance .era-band.era-odd  { fill: rgba(184, 134, 43, 0.12); }
 body.theme-renaissance .era-divider {
-  stroke: rgba(140, 100, 50, 0.50);
-  stroke-width: 1.2;
+  stroke: rgba(140, 90, 30, 0.75);   /* deeper sepia */
+  stroke-width: 2.2;
   stroke-dasharray: 0;
+  filter: drop-shadow(0 0 3px rgba(184, 134, 43, 0.35));
 }
+body.theme-renaissance .era-label-pill {
+  fill: rgba(245, 233, 201, 0.7);
+  stroke: rgba(140, 90, 30, 0.5);
+  stroke-width: 1.2;
+}
+body.theme-renaissance .era-label-pill.era-even { fill: rgba(245, 233, 201, 0.55); }
+body.theme-renaissance .era-label-pill.era-odd  { fill: rgba(245, 233, 201, 0.85); }
 body.theme-renaissance .era-label {
   font-family: "Cinzel", serif;
   font-weight: 700;
@@ -1002,3 +1019,480 @@ body.theme-renaissance ::-webkit-scrollbar-thumb {
 body.theme-renaissance ::-webkit-scrollbar-thumb:hover {
   background: rgba(80, 50, 20, 0.45);
 }
+
+/* ════════════════════════════════════════════════════════════════════════
+   ERA-NATIVE THEME
+   Each era's column gets its own palette + typography pulled from that
+   period's visual culture. Backdrop is neutral charcoal so era bands stand
+   out as distinct bands of color.
+   ════════════════════════════════════════════════════════════════════════ */
+body.theme-eras {
+  --bg-0: #1a1815;
+  --bg-1: #211e1a;
+  --bg-2: #2a2620;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.16);
+  --text-0: #ece6d8;
+  --text-1: #b6ad9a;
+  --text-2: #7a7466;
+  --accent: #d4af37;
+  --glow: 0 0 18px rgba(212, 175, 55, 0.35);
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+}
+
+/* Backdrop reads as a gradient *across the timeline*: warm earth on the
+   left (ancient), neutral charcoal in the middle (industrial/modern), and
+   cool violet/cyan on the right (futuristic). Reinforces the macro arc. */
+body.theme-eras .canvas-wrap,
+body.theme-eras {
+  background:
+    linear-gradient(90deg,
+      rgba(80, 45, 20, 0.35) 0%,
+      rgba(60, 40, 25, 0.18) 18%,
+      rgba(15, 18, 24, 0.0) 50%,
+      rgba(40, 25, 80, 0.20) 82%,
+      rgba(70, 35, 130, 0.40) 100%),
+    radial-gradient(1400px 900px at 8% 6%, rgba(180, 100, 40, 0.18), transparent 55%),
+    radial-gradient(1400px 900px at 92% 94%, rgba(160, 100, 255, 0.20), transparent 55%),
+    var(--bg-0);
+}
+
+body.theme-eras .topbar {
+  background: linear-gradient(180deg, #2a2620 0%, #1a1815 100%);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.30);
+  backdrop-filter: none;
+}
+body.theme-eras .topbar-title {
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+body.theme-eras .brand-dot { background: var(--accent); }
+body.theme-eras .theme-toggle {
+  background: rgba(212, 175, 55, 0.10);
+  border: 1px solid rgba(212, 175, 55, 0.40);
+  color: var(--text-1);
+}
+body.theme-eras .theme-toggle:hover {
+  background: rgba(212, 175, 55, 0.22);
+  color: var(--text-0);
+}
+
+body.theme-eras .sidebar {
+  background: linear-gradient(180deg, #211e1a, #1a1815);
+  border-right: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+/* Edges: faint, era-neutral. */
+body.theme-eras .edge { stroke: rgba(255, 255, 255, 0.14); }
+body.theme-eras .edge.highlighted {
+  stroke: var(--accent);
+  filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.55));
+}
+
+/* ── Default node look (overridden per era below) ── */
+body.theme-eras .node-rect {
+  fill: rgba(0, 0, 0, 0.35);
+  stroke: rgba(255, 255, 255, 0.20);
+}
+body.theme-eras .node:hover .node-rect {
+  filter: drop-shadow(0 0 10px currentColor);
+}
+
+/* ────────────────────────────────────────────────────────────────────────
+   Group-level shape language. Three macro periods, each with a distinct
+   silhouette so even at low zoom the eye can tell ancient from modern from
+   futuristic at a glance.
+
+     Ancient (Stone → Bronze):  squared corners, thick chiseled strokes
+     Classical → Industrial:    soft rounded corners, period accent stroke
+     Modern → Information:      crisp 10px radius, thin lines
+     Future / Far-Future:       pill-shape, translucent fill, neon glow
+   ──────────────────────────────────────────────────────────────────────── */
+
+/* Ancient — chiseled stone-tablet silhouette */
+body.theme-eras .node.era-lower-paleo  .node-rect,
+body.theme-eras .node.era-middle-paleo .node-rect,
+body.theme-eras .node.era-upper-paleo  .node-rect,
+body.theme-eras .node.era-mesolithic   .node-rect,
+body.theme-eras .node.era-neolithic    .node-rect,
+body.theme-eras .node.era-bronze       .node-rect {
+  rx: 1; ry: 1;
+  stroke-width: 2.5;
+}
+
+/* Classical → Industrial — period-soft corners */
+body.theme-eras .node.era-classical     .node-rect,
+body.theme-eras .node.era-medieval      .node-rect,
+body.theme-eras .node.era-renaissance   .node-rect,
+body.theme-eras .node.era-enlightenment .node-rect,
+body.theme-eras .node.era-industrial    .node-rect {
+  rx: 4; ry: 4;
+  stroke-width: 1.6;
+}
+
+/* Modern transition — crisp, current radius */
+body.theme-eras .node.era-modern      .node-rect,
+body.theme-eras .node.era-atomic      .node-rect,
+body.theme-eras .node.era-information .node-rect {
+  rx: 10; ry: 10;
+  stroke-width: 1.2;
+}
+
+/* Future / Far-Future — pill silhouette + always-on glow */
+body.theme-eras .node.era-future     .node-rect,
+body.theme-eras .node.era-far-future .node-rect {
+  rx: 22; ry: 22;
+  stroke-width: 1.1;
+}
+body.theme-eras .node.era-future,
+body.theme-eras .node.era-far-future {
+  filter: drop-shadow(0 0 6px currentColor);
+}
+body.theme-eras .node.era-future .node-rect     { color: #a0d8ff; }
+body.theme-eras .node.era-far-future .node-rect { color: #c896ff; }
+
+/* ════════════════════════════════════════════════════════════════════════
+   Per-era styling. For each era we set:
+     • era-band fill (the column wash)
+     • era-label fill + font feel
+     • era-divider stroke
+     • era-label-pill fill
+     • node-rect fill / stroke / title font + color
+   ════════════════════════════════════════════════════════════════════════ */
+
+/* ── Stone Age (Lower / Middle / Upper Paleolithic + Mesolithic):
+      cave-painting palette — deep umber, ochre, charcoal, bone. */
+body.theme-eras .era-band.era-lower-paleo,
+body.theme-eras .era-band.era-middle-paleo,
+body.theme-eras .era-band.era-upper-paleo,
+body.theme-eras .era-band.era-mesolithic {
+  fill: rgba(70, 35, 18, 0.85);
+}
+body.theme-eras .era-divider.era-lower-paleo,
+body.theme-eras .era-divider.era-middle-paleo,
+body.theme-eras .era-divider.era-upper-paleo,
+body.theme-eras .era-divider.era-mesolithic {
+  stroke: #b5651d; stroke-width: 2;
+}
+body.theme-eras .era-label-pill.era-lower-paleo,
+body.theme-eras .era-label-pill.era-middle-paleo,
+body.theme-eras .era-label-pill.era-upper-paleo,
+body.theme-eras .era-label-pill.era-mesolithic {
+  fill: rgba(50, 28, 15, 0.85); stroke: #b5651d;
+}
+body.theme-eras .era-label.era-lower-paleo,
+body.theme-eras .era-label.era-middle-paleo,
+body.theme-eras .era-label.era-upper-paleo,
+body.theme-eras .era-label.era-mesolithic {
+  fill: #f0c878;
+  font-family: "Papyrus", "Marker Felt", fantasy;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+body.theme-eras .node.era-lower-paleo .node-rect,
+body.theme-eras .node.era-middle-paleo .node-rect,
+body.theme-eras .node.era-upper-paleo .node-rect,
+body.theme-eras .node.era-mesolithic .node-rect {
+  fill: #2a1810; stroke: #8b5a2b;
+}
+body.theme-eras .node.era-lower-paleo .node-title,
+body.theme-eras .node.era-middle-paleo .node-title,
+body.theme-eras .node.era-upper-paleo .node-title,
+body.theme-eras .node.era-mesolithic .node-title {
+  fill: #f0d9a8;
+  font-family: "Papyrus", "Marker Felt", fantasy;
+  letter-spacing: 0.5px;
+}
+body.theme-eras .node.era-lower-paleo .node-year,
+body.theme-eras .node.era-middle-paleo .node-year,
+body.theme-eras .node.era-upper-paleo .node-year,
+body.theme-eras .node.era-mesolithic .node-year { fill: #c9a062; }
+
+/* ── Neolithic: terracotta / pottery, painted clay. */
+body.theme-eras .era-band.era-neolithic { fill: rgba(160, 70, 30, 0.55); }
+body.theme-eras .era-divider.era-neolithic { stroke: #c14d2a; stroke-width: 2; }
+body.theme-eras .era-label-pill.era-neolithic { fill: rgba(120, 50, 28, 0.80); stroke: #c14d2a; }
+body.theme-eras .era-label.era-neolithic {
+  fill: #f4d2a8;
+  font-family: "Papyrus", Georgia, serif;
+  letter-spacing: 2.5px;
+}
+body.theme-eras .node.era-neolithic .node-rect { fill: #3d1f12; stroke: #c14d2a; }
+body.theme-eras .node.era-neolithic .node-title {
+  fill: #f7dab1; font-family: Georgia, serif;
+}
+body.theme-eras .node.era-neolithic .node-year { fill: #e0a070; }
+
+/* ── Bronze Age: dark bronze + gold accents (Mesopotamian/Egyptian). */
+body.theme-eras .era-band.era-bronze { fill: rgba(110, 80, 28, 0.65); }
+body.theme-eras .era-divider.era-bronze { stroke: #d4a042; stroke-width: 2.2; }
+body.theme-eras .era-label-pill.era-bronze { fill: rgba(70, 55, 22, 0.85); stroke: #d4a042; }
+body.theme-eras .era-label.era-bronze {
+  fill: #f0d27a;
+  font-family: "Trajan Pro", "Cinzel", Georgia, serif;
+  letter-spacing: 3px;
+}
+body.theme-eras .node.era-bronze .node-rect { fill: #2c2412; stroke: #b8862b; }
+body.theme-eras .node.era-bronze .node-title {
+  fill: #f4d676; font-family: "Trajan Pro", "Cinzel", Georgia, serif;
+  font-weight: 700; letter-spacing: 0.6px;
+}
+body.theme-eras .node.era-bronze .node-year { fill: #c8a050; font-style: italic; }
+
+/* ── Classical Antiquity: white marble with engraved Roman lettering.
+      Light cream panels, dark sepia text, weathered marble band. */
+body.theme-eras .era-band.era-classical { fill: rgba(232, 222, 196, 0.30); }
+body.theme-eras .era-divider.era-classical { stroke: #6b3e1f; stroke-width: 2.4; }
+body.theme-eras .era-label-pill.era-classical {
+  fill: rgba(238, 230, 208, 0.92); stroke: #6b3e1f; stroke-width: 1.4;
+}
+body.theme-eras .era-label.era-classical {
+  fill: #2a1a0a;
+  font-family: "Cinzel", "Trajan Pro", Georgia, serif;
+  font-weight: 700; letter-spacing: 4.5px;
+}
+body.theme-eras .era-range-label.era-classical { fill: #6b4a26; opacity: 0.95; }
+body.theme-eras .node.era-classical .node-rect {
+  fill: #ece4cd; stroke: #6b3e1f; stroke-width: 1.4;
+}
+body.theme-eras .node.era-classical .node-title {
+  fill: #2a1808;
+  font-family: "Cinzel", "Trajan Pro", Georgia, serif;
+  font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase;
+  font-size: 12.5px;
+}
+body.theme-eras .node.era-classical .node-meta {
+  fill: #6b3e1f !important;
+  font-family: "Cinzel", Georgia, serif; font-weight: 600;
+}
+body.theme-eras .node.era-classical .node-year {
+  fill: #6b3e1f; font-family: "Cinzel", Georgia, serif; font-style: normal;
+}
+
+/* ── Medieval: illuminated manuscript — warm vellum panels, deep crimson
+      script, gold leaf rule. Like opening a Book of Hours. */
+body.theme-eras .era-band.era-medieval { fill: rgba(220, 175, 95, 0.18); }
+body.theme-eras .era-divider.era-medieval { stroke: #8a1a1a; stroke-width: 2.5; }
+body.theme-eras .era-label-pill.era-medieval {
+  fill: rgba(60, 18, 22, 0.94); stroke: #d4a042; stroke-width: 1.6;
+}
+body.theme-eras .era-label.era-medieval {
+  fill: #f0d27a;
+  font-family: "UnifrakturMaguntia", "Luminari", "Blackadder ITC", fantasy;
+  font-size: 14px; letter-spacing: 1.5px;
+}
+body.theme-eras .node.era-medieval .node-rect {
+  fill: #ecd9a4; stroke: #8a1a1a; stroke-width: 1.6;
+}
+body.theme-eras .node.era-medieval .node-title {
+  fill: #5a0e10;
+  font-family: "UnifrakturMaguntia", "Luminari", "Blackadder ITC", Georgia, serif;
+  font-weight: 700; font-size: 14px; letter-spacing: 0.4px;
+}
+body.theme-eras .node.era-medieval .node-meta {
+  fill: #6b4a16 !important;
+  font-family: "EB Garamond", Georgia, serif; font-style: italic;
+}
+body.theme-eras .node.era-medieval .node-year {
+  fill: #6b4a16; font-family: "EB Garamond", Georgia, serif; font-style: italic;
+}
+
+/* ── Renaissance: parchment cream + sepia + gold leaf — open vellum page. */
+body.theme-eras .era-band.era-renaissance { fill: rgba(220, 188, 128, 0.28); }
+body.theme-eras .era-divider.era-renaissance { stroke: #8a4a18; stroke-width: 2.2; }
+body.theme-eras .era-label-pill.era-renaissance {
+  fill: rgba(246, 236, 202, 0.92); stroke: #8a4a18; stroke-width: 1.4;
+}
+body.theme-eras .era-label.era-renaissance {
+  fill: #3b2614;
+  font-family: "Cinzel", "EB Garamond", Georgia, serif;
+  font-weight: 700; letter-spacing: 3.5px;
+}
+body.theme-eras .era-range-label.era-renaissance { fill: #6b4a26; opacity: 0.95; }
+body.theme-eras .node.era-renaissance .node-rect {
+  fill: #f3e6c1; stroke: #8a4a18; stroke-width: 1.5;
+}
+body.theme-eras .node.era-renaissance .node-title {
+  fill: #2e1a06;
+  font-family: "EB Garamond", Georgia, serif;
+  font-weight: 700; font-size: 14.5px;
+}
+body.theme-eras .node.era-renaissance .node-meta {
+  fill: #6b4a26 !important;
+  font-family: "EB Garamond", Georgia, serif; font-style: italic;
+}
+body.theme-eras .node.era-renaissance .node-year {
+  fill: #8c1a1a; font-family: "EB Garamond", Georgia, serif; font-style: italic;
+}
+
+/* ── Enlightenment: ivory + iron-gall ink — encyclopedia-plate feel. */
+body.theme-eras .era-band.era-enlightenment { fill: rgba(232, 224, 198, 0.30); }
+body.theme-eras .era-divider.era-enlightenment { stroke: #1a2540; stroke-width: 1.8; }
+body.theme-eras .era-label-pill.era-enlightenment {
+  fill: rgba(238, 230, 208, 0.92); stroke: #1a2540; stroke-width: 1.4;
+}
+body.theme-eras .era-label.era-enlightenment {
+  fill: #1a2540;
+  font-family: "Baskerville", "Didot", Georgia, serif;
+  font-weight: 700; letter-spacing: 3px;
+}
+body.theme-eras .era-range-label.era-enlightenment { fill: #1a2540; opacity: 0.7; }
+body.theme-eras .node.era-enlightenment .node-rect {
+  fill: #ece4cc; stroke: #1a2540; stroke-width: 1.4;
+}
+body.theme-eras .node.era-enlightenment .node-title {
+  fill: #0e1830;
+  font-family: "Baskerville", "Didot", Georgia, serif;
+  font-weight: 600; font-size: 14px; letter-spacing: 0.3px;
+}
+body.theme-eras .node.era-enlightenment .node-meta {
+  fill: #4a5878 !important;
+  font-family: "Baskerville", Georgia, serif; font-style: italic;
+}
+body.theme-eras .node.era-enlightenment .node-year {
+  fill: #4a5878; font-family: "Baskerville", Georgia, serif; font-style: italic;
+}
+
+/* ── Industrial: brass / steampunk — dark iron with copper rivets. */
+body.theme-eras .era-band.era-industrial { fill: rgba(90, 55, 25, 0.40); }
+body.theme-eras .era-divider.era-industrial { stroke: #c4793a; stroke-width: 2.5; }
+body.theme-eras .era-label-pill.era-industrial { fill: rgba(45, 30, 18, 0.92); stroke: #c4793a; }
+body.theme-eras .era-label.era-industrial {
+  fill: #e8a87c;
+  font-family: "Rockwell", "Courier New", monospace;
+  font-weight: 700; letter-spacing: 2px;
+}
+body.theme-eras .node.era-industrial .node-rect {
+  fill: #261b12; stroke: #c4793a;
+}
+body.theme-eras .node.era-industrial .node-title {
+  fill: #f0c898;
+  font-family: "Rockwell", "Courier New", monospace;
+  font-weight: 700;
+}
+body.theme-eras .node.era-industrial .node-year { fill: #b87650; }
+
+/* ── Modern (early-20th c.): art deco navy + cream + scarlet accent. */
+body.theme-eras .era-band.era-modern { fill: rgba(20, 35, 70, 0.45); }
+body.theme-eras .era-divider.era-modern { stroke: #d4af37; stroke-width: 2.2; }
+body.theme-eras .era-label-pill.era-modern { fill: rgba(15, 25, 50, 0.92); stroke: #d4af37; }
+body.theme-eras .era-label.era-modern {
+  fill: #f0d870;
+  font-family: "Futura", "Century Gothic", sans-serif;
+  font-weight: 700; letter-spacing: 4px;
+}
+body.theme-eras .node.era-modern .node-rect {
+  fill: #0e1a36; stroke: #d4af37;
+}
+body.theme-eras .node.era-modern .node-title {
+  fill: #f4e8cc;
+  font-family: "Futura", "Century Gothic", sans-serif;
+  font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase;
+  font-size: 12px;
+}
+body.theme-eras .node.era-modern .node-year { fill: #d4af37; }
+
+/* ── Atomic Age: googie / mid-century — dark teal with atomic red+yellow. */
+body.theme-eras .era-band.era-atomic { fill: rgba(20, 60, 70, 0.45); }
+body.theme-eras .era-divider.era-atomic { stroke: #ff6b3d; stroke-width: 2.2; }
+body.theme-eras .era-label-pill.era-atomic { fill: rgba(15, 40, 50, 0.92); stroke: #ff6b3d; }
+body.theme-eras .era-label.era-atomic {
+  fill: #ffd24d;
+  font-family: "Futura", "Bahnschrift", sans-serif;
+  font-weight: 700; letter-spacing: 3.5px;
+}
+body.theme-eras .node.era-atomic .node-rect {
+  fill: #0e2d34; stroke: #ff6b3d;
+}
+body.theme-eras .node.era-atomic .node-title {
+  fill: #ffe8a8;
+  font-family: "Futura", "Bahnschrift", sans-serif;
+  font-weight: 700; letter-spacing: 0.5px;
+}
+body.theme-eras .node.era-atomic .node-year { fill: #ffb070; }
+
+/* ── Information: terminal-cyan cyber dark. */
+body.theme-eras .era-band.era-information { fill: rgba(20, 50, 60, 0.40); }
+body.theme-eras .era-divider.era-information { stroke: #4be0d4; stroke-width: 1.8; }
+body.theme-eras .era-label-pill.era-information { fill: rgba(10, 25, 35, 0.92); stroke: #4be0d4; }
+body.theme-eras .era-label.era-information {
+  fill: #8feee0;
+  font-family: "JetBrains Mono", "SF Mono", Menlo, monospace;
+  font-weight: 600; letter-spacing: 2.5px;
+}
+body.theme-eras .node.era-information .node-rect {
+  fill: #0a1820; stroke: #4be0d4;
+}
+body.theme-eras .node.era-information .node-title {
+  fill: #cdf3ee;
+  font-family: "JetBrains Mono", "SF Mono", Menlo, monospace;
+  font-weight: 600; letter-spacing: 0.2px;
+}
+body.theme-eras .node.era-information .node-year { fill: #4be0d4; }
+
+/* ── Future: minimal glass / soft cyan, near-white panels on dark.
+      Heavy glow + translucent fills give the "holographic" feel. */
+body.theme-eras .era-band.era-future {
+  fill: rgba(80, 180, 240, 0.16);
+  filter: drop-shadow(0 0 18px rgba(120, 200, 255, 0.25));
+}
+body.theme-eras .era-divider.era-future {
+  stroke: #5fc8ff; stroke-width: 1.6;
+  filter: drop-shadow(0 0 6px rgba(95, 200, 255, 0.85));
+}
+body.theme-eras .era-label-pill.era-future {
+  fill: rgba(40, 80, 120, 0.55); stroke: #5fc8ff; stroke-width: 1.2;
+}
+body.theme-eras .era-label.era-future {
+  fill: #e4f4ff;
+  font-family: "Orbitron", "Inter", "Helvetica Neue", sans-serif;
+  font-weight: 400; letter-spacing: 6px;
+}
+body.theme-eras .node.era-future .node-rect {
+  fill: rgba(40, 90, 130, 0.40); stroke: #5fc8ff;
+}
+body.theme-eras .node.era-future .node-title {
+  fill: #f0f8ff;
+  font-family: "Orbitron", "Inter", "Helvetica Neue", sans-serif;
+  font-weight: 400; letter-spacing: 1px;
+}
+body.theme-eras .node.era-future .node-year { fill: #5fc8ff; font-weight: 400; }
+
+/* ── Far Future: cosmic — deep violet wash with lavender + electric magenta. */
+body.theme-eras .era-band.era-far-future {
+  fill: rgba(90, 35, 145, 0.55);
+  filter: drop-shadow(0 0 22px rgba(180, 100, 255, 0.30));
+}
+body.theme-eras .era-divider.era-far-future {
+  stroke: #d8a8ff; stroke-width: 1.8;
+  filter: drop-shadow(0 0 8px rgba(216, 168, 255, 0.85));
+}
+body.theme-eras .era-label-pill.era-far-future {
+  fill: rgba(50, 22, 90, 0.92); stroke: #d8a8ff; stroke-width: 1.2;
+}
+body.theme-eras .era-label.era-far-future {
+  fill: #f4e4ff;
+  font-family: "Orbitron", "Inter", sans-serif;
+  font-weight: 500; letter-spacing: 5px;
+  text-transform: uppercase;
+}
+body.theme-eras .node.era-far-future .node-rect {
+  fill: rgba(50, 24, 90, 0.55); stroke: #d8a8ff;
+}
+body.theme-eras .node.era-far-future .node-title {
+  fill: #f4e4ff;
+  font-family: "Orbitron", "Inter", sans-serif;
+  font-weight: 500; letter-spacing: 1.2px;
+}
+body.theme-eras .node.era-far-future .node-year { fill: #d8a8ff; }
+
+/* ── Selected/hovered glow uses each era's accent via currentColor on stroke ── */
+body.theme-eras .node:hover .node-rect,
+body.theme-eras .node.selected .node-rect {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.25));
+}
+
+/* Range labels stay subtle in every era. */
+body.theme-eras .era-range-label { fill: var(--text-2); opacity: 0.85; }

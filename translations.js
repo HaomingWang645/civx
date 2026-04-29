@@ -322,6 +322,18 @@ window.TECH_NAMES_ZH = {
   "united-nations": "国际秩序",
   "birth-control": "口服避孕药",
   "air-conditioning": "空调",
+  "insulin-therapy": "胰岛素疗法",
+  "continental-drift": "大陆漂移说",
+  "radio-broadcasting": "广播电台",
+  "sound-film": "有声电影",
+  "big-bang-cosmology": "大爆炸宇宙学",
+  "federal-reserve": "现代中央银行制度",
+  "russian-revolution": "共产主义国家",
+  "fascism": "法西斯主义",
+  "womens-suffrage": "妇女选举权",
+  "keynesian-economics": "凯恩斯主义经济学",
+  "cryptanalysis-bombe": "密码分析与炸弹机",
+  "strategic-bombing": "战略轰炸",
 
   // ─── Information ─────────────────────────────────────────────
   "microprocessor": "微处理器",

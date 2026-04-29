@@ -2172,5 +2172,53 @@ window.TECH_IMAGE_CREDITS = {
   "universal-disease-eradication": {
     "article": "Eradication of infectious diseases",
     "url": "https://en.wikipedia.org/wiki/Eradication_of_infectious_diseases"
+  },
+  "insulin-therapy": {
+    "article": "Insulin (medication)",
+    "url": "https://en.wikipedia.org/wiki/Insulin_(medication)"
+  },
+  "continental-drift": {
+    "article": "Continental drift",
+    "url": "https://en.wikipedia.org/wiki/Continental_drift"
+  },
+  "radio-broadcasting": {
+    "article": "Radio broadcasting",
+    "url": "https://en.wikipedia.org/wiki/Radio_broadcasting"
+  },
+  "sound-film": {
+    "article": "Sound film",
+    "url": "https://en.wikipedia.org/wiki/Sound_film"
+  },
+  "big-bang-cosmology": {
+    "article": "Big Bang",
+    "url": "https://en.wikipedia.org/wiki/Big_Bang"
+  },
+  "federal-reserve": {
+    "article": "Federal Reserve",
+    "url": "https://en.wikipedia.org/wiki/Federal_Reserve"
+  },
+  "russian-revolution": {
+    "article": "October Revolution",
+    "url": "https://en.wikipedia.org/wiki/October_Revolution"
+  },
+  "fascism": {
+    "article": "Fascism",
+    "url": "https://en.wikipedia.org/wiki/Fascism"
+  },
+  "womens-suffrage": {
+    "article": "Women's suffrage",
+    "url": "https://en.wikipedia.org/wiki/Women%27s_suffrage"
+  },
+  "keynesian-economics": {
+    "article": "Keynesian economics",
+    "url": "https://en.wikipedia.org/wiki/Keynesian_economics"
+  },
+  "cryptanalysis-bombe": {
+    "article": "Bombe",
+    "url": "https://en.wikipedia.org/wiki/Bombe"
+  },
+  "strategic-bombing": {
+    "article": "Strategic bombing",
+    "url": "https://en.wikipedia.org/wiki/Strategic_bombing"
   }
 };

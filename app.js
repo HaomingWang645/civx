@@ -354,8 +354,10 @@ function render() {
     const x = xStart - 20;
     const w = nLevels * COL_WIDTH;
 
+    const eraCls = "era-" + era.id;
     const band = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-    band.setAttribute("class", "era-band");
+    // Zebra-stripe even/odd eras for clearer visual separation.
+    band.setAttribute("class", "era-band " + (i % 2 === 0 ? "era-even" : "era-odd") + " " + eraCls);
     band.setAttribute("x", x);
     band.setAttribute("y", 30);
     band.setAttribute("width", w);
@@ -365,7 +367,7 @@ function render() {
     // Vertical divider at the era's left edge (skip the first era).
     if (i > 0) {
       const divider = document.createElementNS("http://www.w3.org/2000/svg", "line");
-      divider.setAttribute("class", "era-divider");
+      divider.setAttribute("class", "era-divider " + eraCls);
       divider.setAttribute("x1", x);
       divider.setAttribute("y1", 30);
       divider.setAttribute("x2", x);
@@ -373,8 +375,19 @@ function render() {
       eraGroup.appendChild(divider);
     }
 
+    // Label background pill — stronger era-header presence.
+    const labelW = Math.min(220, w - 40);
+    const labelBg = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    labelBg.setAttribute("class", "era-label-pill " + (i % 2 === 0 ? "era-even" : "era-odd") + " " + eraCls);
+    labelBg.setAttribute("x", x + (w - labelW) / 2);
+    labelBg.setAttribute("y", 38);
+    labelBg.setAttribute("width", labelW);
+    labelBg.setAttribute("height", 38);
+    labelBg.setAttribute("rx", 6);
+    eraGroup.appendChild(labelBg);
+
     const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    label.setAttribute("class", "era-label");
+    label.setAttribute("class", "era-label " + eraCls);
     label.setAttribute("x", x + w / 2);
     label.setAttribute("y", 56);
     label.setAttribute("text-anchor", "middle");
@@ -382,7 +395,7 @@ function render() {
     eraGroup.appendChild(label);
 
     const range = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    range.setAttribute("class", "era-range-label");
+    range.setAttribute("class", "era-range-label " + eraCls);
     range.setAttribute("x", x + w / 2);
     range.setAttribute("y", 72);
     range.setAttribute("text-anchor", "middle");
@@ -415,7 +428,7 @@ function render() {
     const cat = CATEGORIES[t.category];
 
     const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
-    g.setAttribute("class", "node");
+    g.setAttribute("class", "node era-" + t.era);
     g.setAttribute("transform", `translate(${p.x}, ${p.y})`);
     g.dataset.id = t.id;
 
@@ -913,21 +926,31 @@ const CATEGORY_COLORS_RENAISSANCE = {
   economy:       "#6a3a6a",
 };
 
+// 3-theme cycle: Modern → Renaissance → Era-Native → ...
+const THEMES = ["modern", "renaissance", "eras"];
+const THEME_LABELS = { modern: "Modern", renaissance: "Renaissance", eras: "Era-Native" };
+
 function applyTheme(name) {
+  if (!THEMES.includes(name)) name = "modern";
   document.body.className = "theme-" + name;
+  // Modern palette is the default; Renaissance overrides; Eras keeps modern as base.
   const palette = name === "renaissance" ? CATEGORY_COLORS_RENAISSANCE : CATEGORY_COLORS_MODERN;
   for (const id in CATEGORIES) {
     if (palette[id]) CATEGORIES[id].color = palette[id];
   }
   try { localStorage.setItem("techtree-theme", name); } catch(e) {}
   const btn = document.getElementById("theme-toggle");
-  if (btn) btn.textContent = name === "modern" ? "Renaissance" : "Modern";
+  if (btn) {
+    const next = THEMES[(THEMES.indexOf(name) + 1) % THEMES.length];
+    btn.textContent = THEME_LABELS[next];
+  }
 }
 
 const themeBtn = document.getElementById("theme-toggle");
 themeBtn.addEventListener("click", () => {
-  const cur = document.body.classList.contains("theme-renaissance") ? "renaissance" : "modern";
-  const next = cur === "modern" ? "renaissance" : "modern";
+  let cur = "modern";
+  for (const t of THEMES) if (document.body.classList.contains("theme-" + t)) cur = t;
+  const next = THEMES[(THEMES.indexOf(cur) + 1) % THEMES.length];
   applyTheme(next);
   // Re-render so node sigils / category bars pick up the new palette,
   // preserving the user's current pan + zoom.
