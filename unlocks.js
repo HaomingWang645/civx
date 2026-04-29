@@ -1396,7 +1396,7 @@ window.TECH_UNLOCKS = {
     { type: "unit", name: "MQ-1 Predator", name_zh: "MQ-1捕食者无人机" },
     { type: "unit", name: "MQ-9 Reaper", name_zh: "MQ-9死神无人机" },
     { type: "unit", name: "RQ-4 Global Hawk", name_zh: "RQ-4全球鹰无人机" },
-    { type: "unit", name: "Bayraktar TB2", name_zh: "拜拉克塔尔TB2无人机" },
+    { type: "unit", name: "Bayraktar TB2", name_zh: "拜拉克塔尔TB2无人机" , wiki: "Bayraktar TB2" },
     { type: "org", name: "General Atomics", name_zh: "通用原子能公司" },
   ],
   "fifth-gen-fighter": [
@@ -1405,8 +1405,8 @@ window.TECH_UNLOCKS = {
     { type: "unit", name: "Sukhoi Su-57", name_zh: "苏-57战斗机" },
   ],
   "cyber-warfare": [
-    { type: "unit", name: "Stuxnet", name_zh: "震网病毒" },
-    { type: "unit", name: "NotPetya", name_zh: "NotPetya勒索软件" },
+    { type: "unit", name: "Stuxnet", name_zh: "震网病毒" , wiki: "Stuxnet" },
+    { type: "unit", name: "NotPetya", name_zh: "NotPetya勒索软件" , wiki: "Petya and NotPetya" },
     { type: "org", name: "NSA TAO", name_zh: "美国国安局特定入侵行动办公室" },
     { type: "org", name: "Unit 8200", name_zh: "以色列8200部队" },
   ],
@@ -2024,5 +2024,109 @@ window.TECH_UNLOCKS = {
     { type: "work", name: "Gene drive (Anopheles)", name_zh: "基因驱动(按蚊)" },
     { type: "org", name: "Bill & Melinda Gates Foundation", name_zh: "比尔及梅琳达·盖茨基金会" },
     { type: "org", name: "World Health Organization (WHO)", name_zh: "世界卫生组织" },
+  ],
+
+  // ─── Future / Far-Future weapons ───
+  "cyber-kinetic-warfare": [
+    { type: "unit", name: "Stuxnet", name_zh: "震网病毒" , wiki: "Stuxnet" },
+    { type: "unit", name: "NotPetya", name_zh: "NotPetya 蠕虫" , wiki: "Petya and NotPetya" },
+    { type: "org", name: "U.S. Cyber Command", name_zh: "美国网络司令部" , wiki: "United States Cyber Command" },
+    { type: "work", name: "Tallinn Manual", name_zh: "《塔林手册》" , wiki: "Tallinn Manual" },
+  ],
+  "directed-energy-weapons": [
+    { type: "unit", name: "HELIOS Laser", name_zh: "HELIOS 高能激光" , wiki: "AN/SEQ-3 Laser Weapon System" },
+    { type: "unit", name: "DragonFire", name_zh: "龙火激光武器" , wiki: false },
+    { type: "unit", name: "Iron Beam", name_zh: "铁束激光" , wiki: "Iron Beam" },
+    { type: "org", name: "U.S. Naval Research Laboratory", name_zh: "美国海军研究实验室" , wiki: "United States Naval Research Laboratory" },
+  ],
+  "drone-swarms": [
+    { type: "unit", name: "Bayraktar TB2", name_zh: "拜拉克塔尔 TB2" , wiki: "Bayraktar TB2" },
+    { type: "unit", name: "Switchblade 600", name_zh: "弹簧刀 600 巡飞弹" , wiki: "AeroVironment Switchblade" },
+    { type: "org", name: "Pentagon Replicator Initiative", name_zh: "五角大楼复制者计划" , wiki: false },
+    { type: "org", name: "Anduril Industries", name_zh: "Anduril 工业" , wiki: "Anduril Industries" },
+  ],
+  "anti-satellite-warfare": [
+    { type: "unit", name: "Fengyun-1C ASAT Test", name_zh: "风云一号 C 反卫星试验" , wiki: "2007 Chinese anti-satellite missile test" },
+    { type: "unit", name: "Mission Shakti", name_zh: "印度沙克提行动" , wiki: "Mission Shakti" },
+    { type: "org", name: "U.S. Space Force", name_zh: "美国太空军" , wiki: "United States Space Force" },
+    { type: "org", name: "China PLA Strategic Support Force", name_zh: "中国人民解放军战略支援部队" , wiki: "People's Liberation Army Strategic Support Force" },
+  ],
+  "engineered-pathogen-defense": [
+    { type: "org", name: "BARDA", name_zh: "美国生物医学高级研究开发管理局" , wiki: "Biomedical Advanced Research and Development Authority" },
+    { type: "org", name: "DARPA Pandemic Prevention Platform", name_zh: "DARPA 大流行病预防平台" , wiki: false },
+    { type: "resource", name: "Metagenomic biosurveillance", name_zh: "宏基因组生物监测" , wiki: "Metagenomics" },
+    { type: "work", name: "Biological Weapons Convention", name_zh: "《禁止生物武器公约》" , wiki: "Biological Weapons Convention" },
+  ],
+  "strategic-memetic-warfare": [
+    { type: "unit", name: "AI persuasion campaign", name_zh: "AI 说服运动" , wiki: false },
+    { type: "org", name: "Internet Research Agency", name_zh: "互联网研究机构" , wiki: "Internet Research Agency" },
+    { type: "resource", name: "Synthetic media saturation", name_zh: "合成媒体饱和攻击" , wiki: "Synthetic media" },
+    { type: "work", name: "Active Measures doctrine", name_zh: "积极措施学说" , wiki: "Active measures" },
+  ],
+  "self-replicating-combat-drones": [
+    { type: "unit", name: "Von Neumann combat probe", name_zh: "冯·诺依曼战斗探测器" , wiki: "Von Neumann probe" },
+    { type: "resource", name: "Autonomous weapons accord", name_zh: "自主武器公约" , wiki: false },
+    { type: "work", name: "Convention on Self-Replicating Systems", name_zh: "《自复制系统公约》" , wiki: false },
+  ],
+  "planetary-defense-system": [
+    { type: "unit", name: "DART Spacecraft", name_zh: "DART 双小行星撞击试验" , wiki: "Double Asteroid Redirection Test" },
+    { type: "unit", name: "NEO Surveyor", name_zh: "近地天体测量探测器" , wiki: "NEO Surveyor" },
+    { type: "org", name: "UN Office for Outer Space Affairs", name_zh: "联合国外层空间事务厅" , wiki: "United Nations Office for Outer Space Affairs" },
+    { type: "wonder", name: "Solar System Defense Grid", name_zh: "太阳系防御网格" , wiki: false },
+  ],
+  "relativistic-kinetic-weapon": [
+    { type: "unit", name: "Casaba-Howitzer", name_zh: "卡萨巴榴弹炮" , wiki: "Casaba-Howitzer" },
+    { type: "unit", name: "Project Longshot", name_zh: "长射计划" , wiki: "Project Longshot" },
+    { type: "resource", name: "Interstellar deterrence", name_zh: "星际威慑" , wiki: false },
+  ],
+  "antimatter-weapon": [
+    { type: "resource", name: "Positron annihilation device", name_zh: "正电子湮灭装置" , wiki: "Positron annihilation" },
+    { type: "resource", name: "Antiproton arsenal", name_zh: "反质子军火库" , wiki: "Antiproton" },
+    { type: "org", name: "Air Force Research Laboratory", name_zh: "美国空军研究实验室" , wiki: "Air Force Research Laboratory" },
+  ],
+
+  // ─── Far Future (2500-2700 fill) ───
+  "black-hole-engineering": [
+    { type: "resource", name: "Penrose process", name_zh: "彭罗斯过程" , wiki: "Penrose process" },
+    { type: "resource", name: "Hawking-radiation harvester", name_zh: "霍金辐射收集器" , wiki: "Hawking radiation" },
+    { type: "unit", name: "Kerr power plant", name_zh: "克尔黑洞电站" , wiki: "Kerr metric" },
+    { type: "work", name: "Black-hole bomb", name_zh: "黑洞炸弹理论" , wiki: "Black hole bomb" },
+  ],
+  "galactic-communication-network": [
+    { type: "unit", name: "Neutrino relay station", name_zh: "中微子中继站" , wiki: false },
+    { type: "resource", name: "Long-baseline laser link", name_zh: "长基线激光通信" , wiki: "Free-space optical communication" },
+    { type: "work", name: "Galactic Asynchronous Protocol", name_zh: "《银河异步协议》" , wiki: false },
+    { type: "wonder", name: "Sagittarius A* relay hub", name_zh: "人马座 A* 中继枢纽" , wiki: "Sagittarius A*" },
+  ],
+  "pre-warp-interstellar-trade": [
+    { type: "resource", name: "Slow-trade contract", name_zh: "慢速贸易合约" , wiki: false },
+    { type: "resource", name: "Light-lag arbitrage", name_zh: "光速延迟套利" , wiki: false },
+    { type: "org", name: "Interstellar Mercantile Consortium", name_zh: "星际商业联合体" , wiki: false },
+    { type: "unit", name: "Sub-light freighter", name_zh: "亚光速货船" , wiki: false },
+  ],
+  "pan-galactic-coordination-ai": [
+    { type: "unit", name: "Galactic Mind substrate", name_zh: "银河心智基质" , wiki: false },
+    { type: "resource", name: "Inter-instance value reconciliation", name_zh: "实例间价值校准" , wiki: false },
+    { type: "work", name: "Pan-Galactic Coordination Treaty", name_zh: "《泛银河协调条约》" , wiki: false },
+  ],
+  "femto-engineering": [
+    { type: "resource", name: "Designer atomic nucleus", name_zh: "定制原子核" , wiki: "Synthetic element" },
+    { type: "resource", name: "Nuclear-isomer battery", name_zh: "核同质异能素电池" , wiki: "Nuclear isomer" },
+    { type: "unit", name: "Femto-fabricator", name_zh: "飞米制造机" , wiki: "Femtotechnology" },
+  ],
+  "vacuum-energy-extraction": [
+    { type: "unit", name: "Casimir-cavity generator", name_zh: "卡西米尔腔发电机" , wiki: "Casimir effect" },
+    { type: "resource", name: "Zero-point energy cell", name_zh: "零点能电池" , wiki: "Zero-point energy" },
+    { type: "resource", name: "Dynamical Casimir emitter", name_zh: "动态卡西米尔发射器" , wiki: false },
+  ],
+  "strange-quark-matter": [
+    { type: "resource", name: "Strange-matter ingot", name_zh: "奇异物质锭" , wiki: "Strange matter" },
+    { type: "resource", name: "Color-flavor-locked phase", name_zh: "色味锁定相" , wiki: "Color–flavor locking" },
+    { type: "unit", name: "Quark-matter hull", name_zh: "夸克物质船体" , wiki: "Quark star" },
+  ],
+  "dark-energy-engineering": [
+    { type: "resource", name: "Negative-energy field", name_zh: "负能量场" , wiki: "Negative energy" },
+    { type: "resource", name: "Cosmological-constant modulator", name_zh: "宇宙学常数调制器" , wiki: "Cosmological constant" },
+    { type: "unit", name: "Alcubierre precursor coil", name_zh: "阿尔库别雷前驱线圈" , wiki: "Alcubierre drive" },
   ],
 };

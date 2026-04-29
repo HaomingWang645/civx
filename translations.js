@@ -494,4 +494,26 @@ window.TECH_NAMES_ZH = {
   "cybernetic-enhancement": "赛博格增强",
   "orbital-ring": "轨道环",
   "universal-disease-eradication": "普遍疾病根除",
+
+  // ─── Future / Far-Future weapons ───
+  "cyber-kinetic-warfare": "网络-动能战争",
+  "directed-energy-weapons": "定向能武器",
+  "drone-swarms": "无人机蜂群",
+  "anti-satellite-warfare": "反卫星战",
+  "engineered-pathogen-defense": "工程病原体防御",
+  "strategic-memetic-warfare": "战略迷因战",
+  "self-replicating-combat-drones": "自我复制战斗无人机",
+  "planetary-defense-system": "行星防御系统",
+  "relativistic-kinetic-weapon": "相对论性动能武器",
+  "antimatter-weapon": "反物质武器",
+
+  // ─── Far Future (2500-2700 fill) ───
+  "black-hole-engineering": "黑洞工程",
+  "galactic-communication-network": "银河通信网络",
+  "pre-warp-interstellar-trade": "亚光速星际贸易",
+  "pan-galactic-coordination-ai": "泛银河协调智能",
+  "femto-engineering": "飞米工程",
+  "vacuum-energy-extraction": "真空能提取",
+  "strange-quark-matter": "奇异夸克物质",
+  "dark-energy-engineering": "暗能量工程",
 };

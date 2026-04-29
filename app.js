@@ -619,11 +619,19 @@ function showDetail(id) {
             ${unlocks.map(u => {
               const c = cats[u.type] || { icon: "•", label: u.type };
               const zh = u.name_zh ? ` <span class="unlock-zh">(${u.name_zh})</span>` : "";
-              const wikiUrl = `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(u.name)}&go=Go`;
-              return `<a class="unlock-chip" href="${wikiUrl}" target="_blank" rel="noopener" title="${c.label} · open Wikipedia">
-                <span class="unlock-icon">${c.icon}</span>
-                <span class="unlock-name">${u.name}${zh}</span>
-              </a>`;
+              const inner = `<span class="unlock-icon">${c.icon}</span><span class="unlock-name">${u.name}${zh}</span>`;
+              // u.wiki controls linking:
+              //   false                 → render as a flat (non-link) chip
+              //   "Article Title"       → link directly to that Wikipedia article
+              //   absent / true         → link via Wikipedia search (legacy default)
+              if (u.wiki === false) {
+                return `<span class="unlock-chip unlock-chip-flat" title="${c.label}">${inner}</span>`;
+              }
+              const article = (typeof u.wiki === "string" && u.wiki) ? u.wiki : u.name;
+              const wikiUrl = (typeof u.wiki === "string" && u.wiki)
+                ? `https://en.wikipedia.org/wiki/${encodeURIComponent(article.replace(/ /g, "_"))}`
+                : `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(article)}&go=Go`;
+              return `<a class="unlock-chip" href="${wikiUrl}" target="_blank" rel="noopener" title="${c.label} · open Wikipedia">${inner}</a>`;
             }).join("")}
           </div>
         </div>`;

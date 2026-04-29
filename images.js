@@ -446,7 +446,25 @@ window.TECH_IMAGES = {
   "womens-suffrage": "images/womens-suffrage.png",
   "keynesian-economics": "images/keynesian-economics.jpg",
   "cryptanalysis-bombe": "images/cryptanalysis-bombe.jpg",
-  "strategic-bombing": "images/strategic-bombing.jpg"
+  "strategic-bombing": "images/strategic-bombing.jpg",
+  "cyber-kinetic-warfare": "images/cyber-kinetic-warfare.jpg",
+  "directed-energy-weapons": "images/directed-energy-weapons.jpg",
+  "drone-swarms": "images/drone-swarms.jpg",
+  "anti-satellite-warfare": "images/anti-satellite-warfare.jpg",
+  "engineered-pathogen-defense": "images/engineered-pathogen-defense.jpg",
+  "strategic-memetic-warfare": "images/strategic-memetic-warfare.jpg",
+  "self-replicating-combat-drones": "images/self-replicating-combat-drones.jpg",
+  "planetary-defense-system": "images/planetary-defense-system.jpg",
+  "relativistic-kinetic-weapon": "images/relativistic-kinetic-weapon.jpg",
+  "antimatter-weapon": "images/antimatter-weapon.png",
+  "black-hole-engineering": "images/black-hole-engineering.png",
+  "galactic-communication-network": "images/galactic-communication-network.png",
+  "pre-warp-interstellar-trade": "images/pre-warp-interstellar-trade.png",
+  "pan-galactic-coordination-ai": "images/pan-galactic-coordination-ai.png",
+  "femto-engineering": "images/femto-engineering.png",
+  "vacuum-energy-extraction": "images/vacuum-energy-extraction.png",
+  "strange-quark-matter": "images/strange-quark-matter.jpg",
+  "dark-energy-engineering": "images/dark-energy-engineering.png"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -2232,5 +2250,77 @@ window.TECH_IMAGE_CREDITS = {
   "strategic-bombing": {
     "article": "Boeing B-29 Superfortress",
     "url": "https://en.wikipedia.org/wiki/Boeing_B-29_Superfortress"
+  },
+  "cyber-kinetic-warfare": {
+    "article": "Cyberwarfare",
+    "url": "https://en.wikipedia.org/wiki/Cyberwarfare"
+  },
+  "directed-energy-weapons": {
+    "article": "Laser weapon",
+    "url": "https://en.wikipedia.org/wiki/Laser_weapon"
+  },
+  "drone-swarms": {
+    "article": "Baykar Bayraktar TB2",
+    "url": "https://en.wikipedia.org/wiki/Baykar_Bayraktar_TB2"
+  },
+  "anti-satellite-warfare": {
+    "article": "Anti-satellite weapon",
+    "url": "https://en.wikipedia.org/wiki/Anti-satellite_weapon"
+  },
+  "engineered-pathogen-defense": {
+    "article": "Biosafety level",
+    "url": "https://en.wikipedia.org/wiki/Biosafety_level"
+  },
+  "strategic-memetic-warfare": {
+    "article": "Disinformation",
+    "url": "https://en.wikipedia.org/wiki/Disinformation"
+  },
+  "self-replicating-combat-drones": {
+    "article": "Lethal autonomous weapon",
+    "url": "https://en.wikipedia.org/wiki/Lethal_autonomous_weapon"
+  },
+  "planetary-defense-system": {
+    "article": "Double Asteroid Redirection Test",
+    "url": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test"
+  },
+  "relativistic-kinetic-weapon": {
+    "article": "Project Orion (nuclear propulsion)",
+    "url": "https://en.wikipedia.org/wiki/Project_Orion_(nuclear_propulsion)"
+  },
+  "antimatter-weapon": {
+    "article": "Antimatter weapon",
+    "url": "https://en.wikipedia.org/wiki/Antimatter_weapon"
+  },
+  "black-hole-engineering": {
+    "article": "Penrose process",
+    "url": "https://en.wikipedia.org/wiki/Penrose_process"
+  },
+  "galactic-communication-network": {
+    "article": "NASA Deep Space Network",
+    "url": "https://en.wikipedia.org/wiki/NASA_Deep_Space_Network"
+  },
+  "pre-warp-interstellar-trade": {
+    "article": "Generation ship",
+    "url": "https://en.wikipedia.org/wiki/Generation_ship"
+  },
+  "pan-galactic-coordination-ai": {
+    "article": "Multi-agent system",
+    "url": "https://en.wikipedia.org/wiki/Multi-agent_system"
+  },
+  "femto-engineering": {
+    "article": "Nuclear isomer",
+    "url": "https://en.wikipedia.org/wiki/Nuclear_isomer"
+  },
+  "vacuum-energy-extraction": {
+    "article": "Casimir effect",
+    "url": "https://en.wikipedia.org/wiki/Casimir_effect"
+  },
+  "strange-quark-matter": {
+    "article": "Neutron star",
+    "url": "https://en.wikipedia.org/wiki/Neutron_star"
+  },
+  "dark-energy-engineering": {
+    "article": "Alcubierre drive",
+    "url": "https://en.wikipedia.org/wiki/Alcubierre_drive"
   }
 };

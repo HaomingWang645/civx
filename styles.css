@@ -472,6 +472,16 @@ html, body {
   border-color: var(--line-strong);
   color: var(--text-0);
 }
+/* Flat (non-link) chip for speculative entries with no Wikipedia article. */
+.unlock-chip-flat {
+  cursor: default;
+  opacity: 0.85;
+}
+.unlock-chip-flat:hover {
+  background: rgba(255,255,255,0.04);
+  border-color: var(--line);
+  color: var(--text-1);
+}
 .unlock-chip .unlock-icon {
   font-size: 14px;
   line-height: 1;
