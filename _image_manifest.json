@@ -1488,16 +1488,16 @@
     "reason": "title=0.50 body=1.00 override"
   },
   "spectacles": {
-    "name": "Spectacles",
+    "name": "spectacles",
     "query": "Glasses",
-    "article": "Tommaso da Modena",
-    "page": "https://en.wikipedia.org/wiki/Tommaso_da_Modena",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/AlbertusMagnus.jpg",
+    "article": "Glasses",
+    "page": "https://en.wikipedia.org/wiki/Glasses",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/2023_Okulary_korekcyjne.jpg/330px-2023_Okulary_korekcyjne.jpg",
     "image_path": "images/spectacles.jpg",
-    "extract": "Tomaso Barisini, better known as Tommaso da Modena and sometimes called Tomaso Baffini was an Italian painter of the mid-14th century.",
+    "extract": "Glasses, also known as eyeglasses, spectacles, or colloquially as specs, are vision eyewear with clear or tinted lenses mounted in a frame that holds them in front of a person's eyes, typically utilizing a bridge over the nose and hinged arms, known as temples or temple pieces, t",
     "status": "ok",
-    "score": 0.85,
-    "reason": "era-appropriate replacement"
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "distillation": {
     "name": "Distillation",
@@ -1620,16 +1620,16 @@
     "reason": "title=1.00 body=1.00 override"
   },
   "algebra-symbolic": {
-    "name": "Symbolic Algebra",
-    "query": "François Viète",
-    "article": "François Viète",
-    "page": "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Vi%C3%A8te",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Francois_Viete.jpg/330px-Francois_Viete.jpg",
+    "name": "algebra-symbolic",
+    "query": "Ars Magna (Cardano book)",
+    "article": "Ars Magna (Cardano book)",
+    "page": "https://en.wikipedia.org/wiki/Ars_Magna_(Cardano_book)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/ArsMagna.jpg/330px-ArsMagna.jpg",
     "image_path": "images/algebra-symbolic.jpg",
-    "extract": "François Viète, known in Latin as Franciscus Vieta, was a French mathematician whose work on new algebra was an important step towards modern algebra, due to his innovative use of letters as parameters in equations. Because of this, Viète is sometimes called \"the father of modern",
+    "extract": "The Ars Magna is an important Latin-language book on algebra written by Gerolamo Cardano. It was first published in 1545 under the title Artis Magnae, Sive de Regulis Algebraicis, Lib. unus. There was a second edition in Cardano's lifetime, published in 1570. It is considered one",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=0.50 override"
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "anatomy-vesalius": {
     "name": "Modern Anatomy",
@@ -1848,28 +1848,28 @@
     "reason": "title=1.00 body=1.00 override"
   },
   "vaccination": {
-    "name": "Vaccination",
-    "query": "Edward Jenner",
-    "article": "Edward Jenner",
-    "page": "https://en.wikipedia.org/wiki/Edward_Jenner",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Edward_Jenner.jpg/330px-Edward_Jenner.jpg",
+    "name": "vaccination",
+    "query": "Smallpox vaccine",
+    "article": "Smallpox vaccine",
+    "page": "https://en.wikipedia.org/wiki/Smallpox_vaccine",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Smallpox_vaccine.jpg/330px-Smallpox_vaccine.jpg",
     "image_path": "images/vaccination.jpg",
-    "extract": "Edward Jenner was an English physician and scientist who pioneered the concept of vaccines and created the smallpox vaccine, the world's first vaccine. The terms vaccine and vaccination are derived from Variolae vaccinae, the term devised by Jenner to denote cowpox. He used it in",
+    "extract": "The smallpox vaccine is used to prevent smallpox infection caused by the variola virus. It is the first vaccine to have been developed against a contagious disease. In 1796, British physician Edward Jenner demonstrated that an infection with the relatively mild cowpox virus confe",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=1.00 override"
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "chemistry-modern": {
-    "name": "Modern Chemistry",
-    "query": "Antoine Lavoisier",
-    "article": "Antoine Lavoisier",
-    "page": "https://en.wikipedia.org/wiki/Antoine_Lavoisier",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/David_-_Portrait_of_Monsieur_Lavoisier_%28cropped%292.jpg/330px-David_-_Portrait_of_Monsieur_Lavoisier_%28cropped%292.jpg",
+    "name": "chemistry-modern",
+    "query": "Traité élémentaire de chimie",
+    "article": "Traité Élémentaire de Chimie",
+    "page": "https://en.wikipedia.org/wiki/Trait%C3%A9_%C3%89l%C3%A9mentaire_de_Chimie",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Lavoisier-7.jpg/330px-Lavoisier-7.jpg",
     "image_path": "images/chemistry-modern.jpg",
-    "extract": "Antoine-Laurent de Lavoisier, also Antoine Lavoisier after the French Revolution, was a French nobleman and chemist who was central to the 18th-century chemical revolution and who had a large influence on both the history of chemistry and the history of biology.",
+    "extract": "Traité élémentaire de chimie is a textbook written by Antoine Lavoisier published in 1789 and translated into English by Robert Kerr in 1790 under the title Elements of Chemistry in a New Systematic Order containing All the Modern Discoveries. It is considered to be the first mod",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=0.50 override"
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "steam-pump": {
     "name": "Atmospheric Steam Engine",
@@ -1896,16 +1896,16 @@
     "reason": "title=1.00 body=1.00 override"
   },
   "coke-iron": {
-    "name": "Coke-Smelted Iron",
-    "query": "Abraham Darby I",
-    "article": "Abraham Darby I",
-    "page": "https://en.wikipedia.org/wiki/Abraham_Darby_I",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Koks_Brennstoff.jpg/330px-Koks_Brennstoff.jpg",
+    "name": "coke-iron",
+    "query": "The Iron Bridge",
+    "article": "The Iron Bridge",
+    "page": "https://en.wikipedia.org/wiki/The_Iron_Bridge",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Iron_Bridge_east_side_in_February_2019_%28cropped%29.jpg/330px-Iron_Bridge_east_side_in_February_2019_%28cropped%29.jpg",
     "image_path": "images/coke-iron.jpg",
-    "extract": "Abraham Darby, in his later life called Abraham Darby the Elder, now sometimes known for convenience as Abraham Darby I, was an English ironmaster and foundryman. Born into an English Quaker family that played an important role in the Industrial Revolution, Darby developed a meth",
+    "extract": "The Iron Bridge is a cast iron arch bridge that crosses the River Severn in Shropshire, England. Opened in 1781, it was the first major bridge in the world to be made of cast iron. Its success inspired the widespread use of cast iron as a structural material, and today the bridge",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=0.67 override"
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "canal-system": {
     "name": "Canal Network",
@@ -2268,16 +2268,16 @@
     "reason": "title=1.00 body=1.00 override"
   },
   "antiseptic-surgery": {
-    "name": "Antiseptic Surgery",
-    "query": "Joseph Lister",
-    "article": "Joseph Lister",
-    "page": "https://en.wikipedia.org/wiki/Joseph_Lister",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Joseph_Lister_1902.jpg/330px-Joseph_Lister_1902.jpg",
+    "name": "antiseptic-surgery",
+    "query": "Antiseptic",
+    "article": "Antiseptic",
+    "page": "https://en.wikipedia.org/wiki/Antiseptic",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Peroxid_vod%C3%ADku.jpg/330px-Peroxid_vod%C3%ADku.jpg",
     "image_path": "images/antiseptic-surgery.jpg",
-    "extract": "Joseph Lister, 1st Baron Lister, was an English surgeon, medical scientist, experimental pathologist and pioneer of antiseptic surgery and preventive healthcare. Lister revolutionised the craft of surgery by the use of close anatomical observation, in the same manner that John Hu",
+    "extract": "An antiseptic is an antimicrobial substance or compound that is applied to living tissue to reduce the possibility of sepsis, infection, or putrefaction. Antiseptics are generally distinguished from antibiotics by the latter's ability to safely destroy bacteria within the body, a",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=1.00 override"
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "anesthesia": {
     "name": "Anesthesia",
@@ -2292,16 +2292,16 @@
     "reason": "title=1.00 body=1.00 override"
   },
   "vaccination-mass": {
-    "name": "Mass Vaccination",
-    "query": "Louis Pasteur",
-    "article": "Louis Pasteur",
-    "page": "https://en.wikipedia.org/wiki/Louis_Pasteur",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Louis_Pasteur%2C_foto_av_Paul_Nadar%2C_Crisco_edit.jpg/330px-Louis_Pasteur%2C_foto_av_Paul_Nadar%2C_Crisco_edit.jpg",
+    "name": "vaccination-mass",
+    "query": "Pasteurization",
+    "article": "Pasteurization",
+    "page": "https://en.wikipedia.org/wiki/Pasteurization",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Give_The_Bottle-Fed_Baby_a_Chance_For_It%27s_Life_poster.jpg/330px-Give_The_Bottle-Fed_Baby_a_Chance_For_It%27s_Life_poster.jpg",
     "image_path": "images/vaccination-mass.jpg",
-    "extract": "Louis Pasteur was a French chemist, pharmacist, and microbiologist renowned for his discoveries of the principles of vaccination, microbial fermentation, and pasteurization, the last of which was named after him. His research in chemistry led to remarkable breakthroughs in the un",
+    "extract": "In food processing, pasteurization (-isation) is a process of food preservation in which packaged foods are treated with mild heat, usually to less than 100 °C (212 °F), to eliminate pathogens and extend shelf life. Pasteurization either destroys or deactivates microorganisms and",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=0.50 override"
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "thermodynamics": {
     "name": "Thermodynamics",
@@ -2976,16 +2976,16 @@
     "reason": "title=0.00 body=0.00 override"
   },
   "gene-sequencing": {
-    "name": "Genome Sequencing",
-    "query": "Human Genome Project",
-    "article": "Frederick Sanger",
-    "page": "https://en.wikipedia.org/wiki/Frederick_Sanger",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Frederick_Sanger2.jpg/330px-Frederick_Sanger2.jpg",
-    "image_path": "images/gene-sequencing.jpg",
-    "extract": "Frederick Sanger was a British biochemist who received the Nobel Prize in Chemistry twice.",
+    "name": "gene-sequencing",
+    "query": "Sanger sequencing",
+    "article": "Sanger sequencing",
+    "page": "https://en.wikipedia.org/wiki/Sanger_sequencing",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Sanger-sequencing.svg/330px-Sanger-sequencing.svg.png",
+    "image_path": "images/gene-sequencing.png",
+    "extract": "Sanger sequencing is a method of DNA sequencing that involves electrophoresis and is based on the random incorporation of chain-terminating dideoxynucleotides by DNA polymerase during in vitro DNA replication. After first being developed by Frederick Sanger and colleagues in 1977",
     "status": "ok",
-    "score": 0.85,
-    "reason": "logo-replacement override"
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "genetic-engineering": {
     "name": "Recombinant DNA",
@@ -3312,88 +3312,88 @@
     "reason": "title=0.00 body=0.67 override"
   },
   "banking-double-entry": {
-    "name": "Double-Entry Banking",
-    "query": "Luca Pacioli",
-    "article": "Luca Pacioli",
-    "page": "https://en.wikipedia.org/wiki/Luca_Pacioli",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Pacioli.jpg/330px-Pacioli.jpg",
+    "name": "banking-double-entry",
+    "query": "Summa de arithmetica",
+    "article": "Summa de arithmetica",
+    "page": "https://en.wikipedia.org/wiki/Summa_de_arithmetica",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Titelbladet_till_%22Summa_de_arithmetica_...%22.jpg/330px-Titelbladet_till_%22Summa_de_arithmetica_...%22.jpg",
     "image_path": "images/banking-double-entry.jpg",
-    "extract": "Luca Bartolomeo de Pacioli, O.F.M. was an Italian mathematician, Franciscan friar, collaborator with Leonardo da Vinci, and an early contributor to the field now known as accounting. He is referred to as the father of accounting and bookkeeping and he was the first person to publ",
+    "extract": "Summa de arithmetica, geometria, proportioni et proportionalita is a book on mathematics written by Luca Pacioli and first published in 1494. It contains a comprehensive summary of Renaissance mathematics, including practical arithmetic, basic algebra, basic geometry and accounti",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=0.67 override"
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "vernacular-literature": {
-    "name": "Vernacular Literature",
-    "query": "Geoffrey Chaucer",
-    "article": "Geoffrey Chaucer",
-    "page": "https://en.wikipedia.org/wiki/Geoffrey_Chaucer",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chaucer_manuscrit_portrait_%28d%C3%A9tail%29.jpeg/330px-Chaucer_manuscrit_portrait_%28d%C3%A9tail%29.jpeg",
-    "image_path": "images/vernacular-literature.jpg",
-    "extract": "Geoffrey Chaucer was an English poet, writer and civil servant best known for The Canterbury Tales. He has been called the 'father of English literature', or alternatively, the 'father of English poetry'. He was the first writer to be buried in what has since become Poets' Corner",
+    "name": "vernacular-literature",
+    "query": "The Canterbury Tales",
+    "article": "The Canterbury Tales",
+    "page": "https://en.wikipedia.org/wiki/The_Canterbury_Tales",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Canterbury_Tales_characters_around_table_%E2%80%94_traced.svg/330px-Canterbury_Tales_characters_around_table_%E2%80%94_traced.svg.png",
+    "image_path": "images/vernacular-literature.png",
+    "extract": "The Canterbury Tales are an anthology of twenty-four short stories written in Middle English by Geoffrey Chaucer between 1387 and 1400. They are mostly in verse, and are presented as part of a fictional storytelling contest held by a group of pilgrims travelling from London to Ca",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=0.50 override"
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "scientific-method": {
-    "name": "Scientific Method",
-    "query": "Galileo Galilei",
-    "article": "Galileo Galilei",
-    "page": "https://en.wikipedia.org/wiki/Galileo_Galilei",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff/lossy-page1-330px-Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff.jpg",
+    "name": "scientific-method",
+    "query": "Sidereus Nuncius",
+    "article": "Sidereus Nuncius",
+    "page": "https://en.wikipedia.org/wiki/Sidereus_Nuncius",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Houghton_IC6.G1333.610s_-_Sidereus_nuncius.jpg/330px-Houghton_IC6.G1333.610s_-_Sidereus_nuncius.jpg",
     "image_path": "images/scientific-method.jpg",
-    "extract": "Galileo di Vincenzo Bonaiuti de' Galilei, commonly referred to as Galileo Galilei, was an Italian astronomer, physicist, and engineer, sometimes described as a polymath. He was born in the city of Pisa, then part of the Duchy of Florence. Galileo has been called the father of obs",
+    "extract": "Sidereus Nuncius is a short astronomical treatise published in Neo-Latin by Galileo Galilei on March 13, 1610. It was the first published scientific work based on observations made through a telescope, and it contains the results of Galileo's early observations of the imperfect a",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=1.00 override"
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "protestant-reformation": {
-    "name": "Protestant Reformation",
-    "query": "Martin Luther",
-    "article": "Martin Luther",
-    "page": "https://en.wikipedia.org/wiki/Martin_Luther",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg/330px-Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg",
-    "image_path": "images/protestant-reformation.jpg",
-    "extract": "Martin Luther was a German priest, theologian, author, hymnwriter, professor, and former Augustinian friar. Luther was the seminal figure of the Protestant Reformation, and his theological beliefs form the basis of Lutheranism. He is considered one of the most influential figures",
+    "name": "protestant-reformation",
+    "query": "Ninety-five Theses",
+    "article": "Ninety-five Theses",
+    "page": "https://en.wikipedia.org/wiki/Ninety-five_Theses",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Luther_95_Thesen.png/330px-Luther_95_Thesen.png",
+    "image_path": "images/protestant-reformation.png",
+    "extract": "The Ninety-five Theses or Disputation on the Power and Efficacy of Indulgences is a list of propositions for an academic disputation written in 1517 by Martin Luther, then a professor of moral theology at the University of Wittenberg, Germany. The Theses are retrospectively consi",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=1.00 override"
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "calculus": {
-    "name": "Calculus",
-    "query": "Isaac Newton",
-    "article": "Isaac Newton",
-    "page": "https://en.wikipedia.org/wiki/Isaac_Newton",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg/330px-Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg",
-    "image_path": "images/calculus.jpg",
-    "extract": "Sir Isaac Newton was an English polymath who was a mathematician, physicist, astronomer, alchemist, theologian, author and inventor. He was a key figure in the Scientific Revolution and the Enlightenment that followed. His book Philosophiæ Naturalis Principia Mathematica, first p",
+    "name": "calculus",
+    "query": "Philosophiæ Naturalis Principia Mathematica",
+    "article": "Philosophiæ Naturalis Principia Mathematica",
+    "page": "https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Newton%27s_Principia_title_page.png/330px-Newton%27s_Principia_title_page.png",
+    "image_path": "images/calculus.png",
+    "extract": "Philosophiæ Naturalis Principia Mathematica, often called simply the Principia, is a book by Sir Isaac Newton that expounds Newton's laws of motion and his law of universal gravitation.",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=1.00 override"
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "modern-bookkeeping": {
-    "name": "Modern Bookkeeping",
-    "query": "Luca Pacioli",
-    "article": "Luca Pacioli",
-    "page": "https://en.wikipedia.org/wiki/Luca_Pacioli",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Pacioli.jpg/330px-Pacioli.jpg",
+    "name": "modern-bookkeeping",
+    "query": "Audit",
+    "article": "Audit",
+    "page": "https://en.wikipedia.org/wiki/Audit",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Audit_Cycle.jpg/330px-Audit_Cycle.jpg",
     "image_path": "images/modern-bookkeeping.jpg",
-    "extract": "Luca Bartolomeo de Pacioli, O.F.M. was an Italian mathematician, Franciscan friar, collaborator with Leonardo da Vinci, and an early contributor to the field now known as accounting. He is referred to as the father of accounting and bookkeeping and he was the first person to publ",
+    "extract": "An audit is an \"independent examination of financial information of any entity, whether profit oriented or not, irrespective of its size or legal form when such an examination is conducted with a view to express an opinion thereon.\" Auditing also attempts to ensure that the books",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=0.50 override"
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "modern-corporation": {
-    "name": "Modern Corporation",
-    "query": "John D. Rockefeller",
-    "article": "John D. Rockefeller",
-    "page": "https://en.wikipedia.org/wiki/John_D._Rockefeller",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Rockefeller%2C_John_D._1910-L_-_DPLA_-_892eb0eaf12fd7ea412021c8b14cfb79.jpg/330px-Rockefeller%2C_John_D._1910-L_-_DPLA_-_892eb0eaf12fd7ea412021c8b14cfb79.jpg",
+    "name": "modern-corporation",
+    "query": "Wall Street",
+    "article": "Wall Street",
+    "page": "https://en.wikipedia.org/wiki/Wall_Street",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Photos_NewYork1_032.jpg/330px-Photos_NewYork1_032.jpg",
     "image_path": "images/modern-corporation.jpg",
-    "extract": "John Davison Rockefeller Sr. was an American businessman and philanthropist. He was one of the wealthiest Americans of all time and one of the richest people in modern history. Rockefeller was born into a large family in Upstate New York who moved several times before eventually ",
+    "extract": "Wall Street is a street in the Financial District of Lower Manhattan in New York City. It runs eight city blocks between Broadway in the west and South Street and the East River in the east with a length of just under 2,000 feet. The term \"Wall Street\" has become a metonym for th",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=0.50 override"
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "dna-structure": {
     "name": "DNA Double Helix",
@@ -3984,16 +3984,16 @@
     "reason": "title=0.00 body=0.50 override"
   },
   "machine-learning": {
-    "name": "Machine Learning",
-    "query": "TensorFlow",
-    "article": "Geoffrey Hinton",
-    "page": "https://en.wikipedia.org/wiki/Geoffrey_Hinton",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Geoffrey_E._Hinton%2C_2024_Nobel_Prize_Laureate_in_Physics_%28cropped1%29.jpg/330px-Geoffrey_E._Hinton%2C_2024_Nobel_Prize_Laureate_in_Physics_%28cropped1%29.jpg",
-    "image_path": "images/machine-learning.jpg",
-    "extract": "Geoffrey Everest Hinton is a British-Canadian computer scientist, cognitive scientist, cognitive psychologist and Nobel Prize laureate known for his work on artificial neural networks, which earned him the title \"the Godfather of AI\". He is University Professor Emeritus at the Un",
+    "name": "machine-learning",
+    "query": "Artificial neural network",
+    "article": "Neural network (machine learning)",
+    "page": "https://en.wikipedia.org/wiki/Neural_network_(machine_learning)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Colored_neural_network.svg/330px-Colored_neural_network.svg.png",
+    "image_path": "images/machine-learning.png",
+    "extract": "In machine learning, a neural network (NN) or neural net, also known as an artificial neural network (ANN), is a computational model inspired by the structure and functions of biological neural networks.",
     "status": "ok",
-    "score": 0.85,
-    "reason": "logo-replacement override"
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "advanced-chip-manufacturing": {
     "name": "Advanced Chip Manufacturing",
@@ -4437,15 +4437,16 @@
     "reason": "manual override"
   },
   "network-state": {
-    "name": "Network State",
-    "article": "Balaji Srinivasan",
-    "page": "https://en.wikipedia.org/wiki/Balaji_Srinivasan",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Balaji_Srinivasan_%28cropped%29.png/330px-Balaji_Srinivasan_%28cropped%29.png",
-    "image_path": "images/network-state.png",
-    "extract": "Balaji S. Srinivasan is an American entrepreneur, scientist, and investor. He is the author of The Network State: How to Start a New Country and the founder of the Network School, a retreat for entrepreneurs and technicians in Malaysia. Previously, he was the co-founder of the ge",
+    "name": "network-state",
+    "query": "Seasteading",
+    "article": "Seasteading",
+    "page": "https://en.wikipedia.org/wiki/Seasteading",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/AndrasGyorfi.jpg/330px-AndrasGyorfi.jpg",
+    "image_path": "images/network-state.jpg",
+    "extract": "Seasteading is the creation of permanent dwellings in international waters, so-called seasteads, that are independent of established governments. No structure on the high seas has yet been created and recognized as a sovereign state. Proposed structures have included modified cru",
     "status": "ok",
     "score": 0.9,
-    "reason": "manual override"
+    "reason": "portrait replacement"
   },
   "ai-governance": {
     "name": "Algorithmic Governance",
@@ -4503,15 +4504,16 @@
     "reason": "manual override"
   },
   "decentralized-autonomous-org": {
-    "name": "Decentralized Autonomous Organization",
-    "article": "Vitalik Buterin",
-    "page": "https://en.wikipedia.org/wiki/Vitalik_Buterin",
-    "status": "ok",
-    "reason": "alternate article",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Vitalik_Buterin_TechCrunch_London_2015_%28cropped%29.jpg/330px-Vitalik_Buterin_TechCrunch_London_2015_%28cropped%29.jpg",
+    "name": "decentralized-autonomous-org",
+    "query": "The DAO",
+    "article": "The DAO",
+    "page": "https://en.wikipedia.org/wiki/The_DAO",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Christoph_Jentzsch.jpg/330px-Christoph_Jentzsch.jpg",
     "image_path": "images/decentralized-autonomous-org.jpg",
-    "extract": "Vitaly Dmitrievich Buterin, better known as Vitalik Buterin, is a Russian-Canadian computer programmer best known for co-founding Ethereum. Buterin became involved with cryptocurrency early in its inception, co-founding Bitcoin Magazine in 2011. In 2015, Buterin deployed the Ethe",
-    "score": 0.8
+    "extract": "The DAO was a digital decentralized autonomous organization and a form of investor-directed venture capital fund. After launching in April 2016 via a token sale, it became one of the largest crowdfunding campaigns in history, but it ceased activity after much of its funds - in th",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "hyperloop": {
     "name": "Hyperloop",
@@ -4550,15 +4552,16 @@
     "reason": "no thumbnail"
   },
   "dna-data-storage": {
-    "name": "DNA Data Storage",
-    "article": "George Church (geneticist)",
-    "page": "https://en.wikipedia.org/wiki/George_Church_(geneticist)",
-    "status": "ok",
-    "reason": "alternate article (multi-pass)",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/George_Church_343263_by_christopher_michel_10-11-23.jpg/330px-George_Church_343263_by_christopher_michel_10-11-23.jpg",
+    "name": "dna-data-storage",
+    "query": "DNA computing",
+    "article": "DNA computing",
+    "page": "https://en.wikipedia.org/wiki/DNA_computing",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/16/DNA_orbit_animated.gif",
     "image_path": "images/dna-data-storage.jpg",
-    "extract": "George McDonald Church is an American geneticist, molecular engineer, chemist, serial entrepreneur, and pioneer in personal genomics and synthetic biology. He is the Robert Winthrop Professor of Genetics at Harvard Medical School, Professor of Health Sciences and Technology at Ha",
-    "score": 0.75
+    "extract": "DNA computing is an emerging branch of unconventional computing which uses DNA, biochemistry, and molecular biology hardware, instead of the traditional electronic computing. Research and development in this area concerns theory, experiments, and applications of DNA computing. Al",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "cancer-cure": {
     "name": "Cancer Cure",
@@ -4693,15 +4696,16 @@
     "reason": "manual override"
   },
   "p-vs-np-resolved": {
-    "name": "P versus NP Resolved",
-    "article": "Stephen Cook",
-    "page": "https://en.wikipedia.org/wiki/Stephen_Cook",
+    "name": "p-vs-np-resolved",
+    "query": "Travelling salesman problem",
+    "article": "Travelling salesman problem",
+    "page": "https://en.wikipedia.org/wiki/Travelling_salesman_problem",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Illustration_of_an_unsolved_travelling_salesman_problem.svg/330px-Illustration_of_an_unsolved_travelling_salesman_problem.svg.png",
+    "image_path": "images/p-vs-np-resolved.png",
+    "extract": "In the theory of computational complexity, the travelling salesman problem (TSP) asks the following question: \"Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin ci",
     "status": "ok",
-    "reason": "alternate (no image on primary)",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Prof.Cook.jpg/330px-Prof.Cook.jpg",
-    "image_path": "images/p-vs-np-resolved.jpg",
-    "extract": "Stephen Arthur Cook is an American-Canadian computer scientist and mathematician who has made significant contributions to the fields of complexity theory and proof complexity. He is a university professor emeritus at the University of Toronto, Department of Computer Science and ",
-    "score": 0.85
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "space-habitat": {
     "name": "Space Habitat",
@@ -4737,15 +4741,16 @@
     "score": 0.85
   },
   "self-replicating-machines": {
-    "name": "Self-Replicating Machines",
-    "article": "John von Neumann",
-    "page": "https://en.wikipedia.org/wiki/John_von_Neumann",
-    "status": "ok",
-    "reason": "alternate",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/JohnvonNeumann-LosAlamos.gif/330px-JohnvonNeumann-LosAlamos.gif",
+    "name": "self-replicating-machines",
+    "query": "Von Neumann universal constructor",
+    "article": "Von Neumann universal constructor",
+    "page": "https://en.wikipedia.org/wiki/Von_Neumann_universal_constructor",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Nobili_Pesavento_2reps.png/330px-Nobili_Pesavento_2reps.png",
     "image_path": "images/self-replicating-machines.png",
-    "extract": "John von Neumann was a Hungarian and American mathematician, physicist, computer scientist and engineer. Von Neumann had perhaps the widest coverage of any mathematician of his time, integrating pure and applied sciences and making major contributions to many fields, including ma",
-    "score": 0.85
+    "extract": "John von Neumann's universal constructor is a self-replicating machine in a cellular automaton (CA) environment. It was designed in the 1940s, without the use of a computer. The fundamental details of the machine were published in von Neumann's book Theory of Self-Reproducing Aut",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "superintelligence": {
     "name": "Superintelligence",
@@ -4836,15 +4841,16 @@
     "score": 0.85
   },
   "substrate-independent-humanity": {
-    "name": "Substrate-Independent Humanity",
-    "article": "Ray Kurzweil",
-    "page": "https://en.wikipedia.org/wiki/Ray_Kurzweil",
+    "name": "substrate-independent-humanity",
+    "query": "Mind uploading",
+    "article": "Mind uploading",
+    "page": "https://en.wikipedia.org/wiki/Mind_uploading",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Mind_upload4.svg/330px-Mind_upload4.svg.png",
+    "image_path": "images/substrate-independent-humanity.png",
+    "extract": "Mind uploading is a hypothetical process of whole brain emulation in which a brain scan is used to completely emulate a person's mental state in a digital computer. The computer would then run a simulation of the brain's information processing, such that it would respond in essen",
     "status": "ok",
-    "reason": "alternate (multi-pass)",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Ray_Kurzweil_%40_SXSW_2017_%2832594766664%29.jpg/330px-Ray_Kurzweil_%40_SXSW_2017_%2832594766664%29.jpg",
-    "image_path": "images/substrate-independent-humanity.jpg",
-    "extract": "Raymond Kurzweil is an American computer scientist, author, entrepreneur, futurist, and inventor. He is involved in fields such as optical character recognition (OCR), text-to-speech synthesis, speech recognition technology and electronic keyboard instruments. He has written book",
-    "score": 0.8
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "antimatter-production": {
     "name": "Antimatter Production",
@@ -5078,15 +5084,16 @@
     "reason": "manual override"
   },
   "memory-editing": {
-    "name": "Memory Editing",
-    "article": "Susumu Tonegawa",
-    "page": "https://en.wikipedia.org/wiki/Susumu_Tonegawa",
-    "status": "ok",
-    "reason": "alternate",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Susumu_Tonegawa_Photo.jpg/330px-Susumu_Tonegawa_Photo.jpg",
+    "name": "memory-editing",
+    "query": "Long-term potentiation",
+    "article": "Long-term potentiation",
+    "page": "https://en.wikipedia.org/wiki/Long-term_potentiation",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/LTP_exemplar.jpg/330px-LTP_exemplar.jpg",
     "image_path": "images/memory-editing.jpg",
-    "extract": "Susumu Tonegawa  is a Japanese scientist who was the sole recipient of the Nobel Prize for Physiology or Medicine in 1987 for his discovery of V(D)J recombination, the genetic mechanism which produces antibody diversity. Although he won the Nobel Prize for his work in immunology,",
-    "score": 0.85
+    "extract": "In neuroscience, long-term potentiation (LTP) is a persistent strengthening of synapses based on recent patterns of activity. These are patterns of synaptic activity that produce a long-lasting increase in signal transmission between two neurons. The opposite of LTP is long-term ",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "portrait replacement"
   },
   "cybernetic-enhancement": {
     "name": "Cybernetic Enhancement",
@@ -5117,6 +5124,150 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Gloucester_smallpox_epidemic%2C_1896%3B_Henry_Wicklin%2C_aged_6_Wellcome_V0031456.jpg/330px-Gloucester_smallpox_epidemic%2C_1896%3B_Henry_Wicklin%2C_aged_6_Wellcome_V0031456.jpg",
     "image_path": "images/universal-disease-eradication.jpg",
     "extract": "The eradication of infectious diseases is the reduction of the prevalence of an infectious disease in the global host population to zero.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "insulin-therapy": {
+    "name": "insulin-therapy",
+    "query": "Insulin (medication)",
+    "article": "Insulin (medication)",
+    "page": "https://en.wikipedia.org/wiki/Insulin_(medication)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Inzul%C3%ADn.jpg/330px-Inzul%C3%ADn.jpg",
+    "image_path": "images/insulin-therapy.jpg",
+    "extract": "As a medication, insulin is any pharmaceutical preparation of the protein hormone insulin that is used to treat high blood glucose. Such conditions include type 1 diabetes, type 2 diabetes, gestational diabetes, and complications of diabetes such as diabetic ketoacidosis and hype",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "continental-drift": {
+    "name": "continental-drift",
+    "query": "Pangaea",
+    "article": "Pangaea",
+    "page": "https://en.wikipedia.org/wiki/Pangaea",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Mollweide_Paleographic_Map_of_Earth%2C_250_Ma_%28Olenekian_Age%29.png/330px-Mollweide_Paleographic_Map_of_Earth%2C_250_Ma_%28Olenekian_Age%29.png",
+    "image_path": "images/continental-drift.png",
+    "extract": "Pangaea or Pangea was a supercontinent that existed during the late Paleozoic and early Mesozoic eras. It assembled from the earlier continental units of Gondwana, Euramerica and Siberia during the Carboniferous period approximately 335 million years ago, and began to break apart",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "portrait replacement"
+  },
+  "radio-broadcasting": {
+    "name": "radio-broadcasting",
+    "query": "Radio broadcasting",
+    "article": "Radio broadcasting",
+    "page": "https://en.wikipedia.org/wiki/Radio_broadcasting",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Tyholt_taarnet.jpg/330px-Tyholt_taarnet.jpg",
+    "image_path": "images/radio-broadcasting.jpg",
+    "extract": "Radio broadcasting is the transmission of signals, especially audio, to receivers using radio waves over a wide area. Listeners require a broadcast radio receiver to receive these signals. \"Terrestrial\" broadcasts come from stations on land, and include AM and FM ; and DAB (digit",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "sound-film": {
+    "name": "sound-film",
+    "query": "The Jazz Singer",
+    "article": "The Jazz Singer",
+    "page": "https://en.wikipedia.org/wiki/The_Jazz_Singer",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/The_Jazz_Singer_1927_Poster.jpg/330px-The_Jazz_Singer_1927_Poster.jpg",
+    "image_path": "images/sound-film.jpg",
+    "extract": "The Jazz Singer is a 1927 American part-talkie musical drama film directed by Alan Crosland and produced by Warner Bros. Pictures. It is the first feature-length motion picture with both synchronized recorded music and lip-synchronous singing and speech. Its release heralded the ",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "big-bang-cosmology": {
+    "name": "big-bang-cosmology",
+    "query": "Cosmic microwave background",
+    "article": "Cosmic microwave background",
+    "page": "https://en.wikipedia.org/wiki/Cosmic_microwave_background",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Cosmic_Microwave_Background_%28CMB%29.jpeg/330px-Cosmic_Microwave_Background_%28CMB%29.jpeg",
+    "image_path": "images/big-bang-cosmology.jpg",
+    "extract": "The cosmic microwave background, or relic radiation, is microwave radiation that fills all space in the observable universe. With a standard optical telescope, the background space between stars and galaxies is almost completely dark. However, a sufficiently sensitive radio teles",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "portrait replacement"
+  },
+  "federal-reserve": {
+    "name": "federal-reserve",
+    "query": "Federal Reserve",
+    "article": "Federal Reserve",
+    "page": "https://en.wikipedia.org/wiki/Federal_Reserve",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Seal_of_the_United_States_Federal_Reserve_System.svg/330px-Seal_of_the_United_States_Federal_Reserve_System.svg.png",
+    "image_path": "images/federal-reserve.png",
+    "extract": "The Federal Reserve System is the central banking system of the United States. It was created on December 23, 1913, with the enactment of the Federal Reserve Act, after a series of financial panics led to the desire for central control of the monetary system in order to alleviate",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "russian-revolution": {
+    "name": "russian-revolution",
+    "query": "October Revolution",
+    "article": "October Revolution",
+    "page": "https://en.wikipedia.org/wiki/October_Revolution",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/After_the_capture_of_the_Winter_Palace_26_October_1917.jpg/330px-After_the_capture_of_the_Winter_Palace_26_October_1917.jpg",
+    "image_path": "images/russian-revolution.jpg",
+    "extract": "The October Revolution, also known as the Great October Socialist Revolution, October coup, Bolshevik coup, Bolshevik Revolution, and occasionally the November Revolution, was the second of two revolutions in Russia in 1917. It was led by Vladimir Lenin's Bolsheviks as part of th",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "fascism": {
+    "name": "fascism",
+    "query": "March on Rome",
+    "article": "March on Rome",
+    "page": "https://en.wikipedia.org/wiki/March_on_Rome",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Naples_Fascist_rally_on_24_October_1922_%282%29.jpg/330px-Naples_Fascist_rally_on_24_October_1922_%282%29.jpg",
+    "image_path": "images/fascism.jpg",
+    "extract": "The March on Rome was an organized mass demonstration in October 1922 which resulted in Benito Mussolini's National Fascist Party ascending to power in the Kingdom of Italy.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "portrait replacement"
+  },
+  "womens-suffrage": {
+    "name": "womens-suffrage",
+    "query": "Women's suffrage",
+    "article": "Women's suffrage",
+    "page": "https://en.wikipedia.org/wiki/Women's_suffrage",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Universal_suffrage_women_lexical%2C_World%2C_2024_%28cropped%29.svg/330px-Universal_suffrage_women_lexical%2C_World%2C_2024_%28cropped%29.svg.png",
+    "image_path": "images/womens-suffrage.png",
+    "extract": "Women's suffrage is the right of women to vote in elections. Historically, women rarely had the right to vote, even in ostensibly democratic systems of government. The 19th century saw many movements advocating \"universal [male] suffrage\", most notably in Europe and North America",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "keynesian-economics": {
+    "name": "keynesian-economics",
+    "query": "The General Theory of Employment, Interest and Money",
+    "article": "The General Theory of Employment, Interest and Money",
+    "page": "https://en.wikipedia.org/wiki/The_General_Theory_of_Employment%2C_Interest_and_Money",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/7/77/General_Theory_cover_%28first_edition%29.jpg",
+    "image_path": "images/keynesian-economics.jpg",
+    "extract": "The General Theory of Employment, Interest and Money is a book by English economist John Maynard Keynes published in February 1936. It caused a profound shift in economic thought, giving macroeconomics a central place in economic theory and contributing much of its terminology – ",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "portrait replacement"
+  },
+  "cryptanalysis-bombe": {
+    "name": "cryptanalysis-bombe",
+    "query": "Bombe",
+    "article": "Bombe",
+    "page": "https://en.wikipedia.org/wiki/Bombe",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Wartime_picture_of_a_Bletchley_Park_Bombe.jpg/330px-Wartime_picture_of_a_Bletchley_Park_Bombe.jpg",
+    "image_path": "images/cryptanalysis-bombe.jpg",
+    "extract": "The bombe was an electro-mechanical device used by British cryptologists to help decipher German Enigma-machine-encrypted secret messages during World War II. The British bombe was developed from the Polish bomba, which had been designed at the Cipher Bureau by cryptologist Maria",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "strategic-bombing": {
+    "name": "strategic-bombing",
+    "query": "Boeing B-29 Superfortress",
+    "article": "Boeing B-29 Superfortress",
+    "page": "https://en.wikipedia.org/wiki/Boeing_B-29_Superfortress",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Boeing_TB-29-70-BW_Superfortress_%E2%80%98469972%E2%80%99_%E2%80%9CDoc%E2%80%9D_%28N69972%29_%2850871638276%29.jpg/330px-Boeing_TB-29-70-BW_Superfortress_%E2%80%98469972%E2%80%99_%E2%80%9CDoc%E2%80%9D_%28N69972%29_%2850871638276%29.jpg",
+    "image_path": "images/strategic-bombing.jpg",
+    "extract": "The Boeing B-29 Superfortress is a retired American four-engined propeller-driven heavy bomber, designed by Boeing and flown primarily by the United States during World War II and the Korean War. Named in allusion to its predecessor, the Boeing B-17 Flying Fortress, the Superfort",
     "status": "ok",
     "score": 0.9,
     "reason": "manual override"

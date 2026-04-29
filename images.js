@@ -249,7 +249,7 @@ window.TECH_IMAGES = {
   "streaming-media": "images/streaming-media.jpg",
   "cloud-computing": "images/cloud-computing.png",
   "gps": "images/gps.jpg",
-  "gene-sequencing": "images/gene-sequencing.jpg",
+  "gene-sequencing": "images/gene-sequencing.png",
   "genetic-engineering": "images/genetic-engineering.png",
   "crispr": "images/crispr.png",
   "mri-imaging": "images/mri-imaging.jpg",
@@ -278,10 +278,10 @@ window.TECH_IMAGES = {
   "scientific-method-proto": "images/scientific-method-proto.jpg",
   "arabic-numerals": "images/arabic-numerals.jpg",
   "banking-double-entry": "images/banking-double-entry.jpg",
-  "vernacular-literature": "images/vernacular-literature.jpg",
+  "vernacular-literature": "images/vernacular-literature.png",
   "scientific-method": "images/scientific-method.jpg",
-  "protestant-reformation": "images/protestant-reformation.jpg",
-  "calculus": "images/calculus.jpg",
+  "protestant-reformation": "images/protestant-reformation.png",
+  "calculus": "images/calculus.png",
   "modern-bookkeeping": "images/modern-bookkeeping.jpg",
   "modern-corporation": "images/modern-corporation.jpg",
   "dna-structure": "images/dna-structure.png",
@@ -333,7 +333,7 @@ window.TECH_IMAGES = {
   "packet-switching": "images/packet-switching.jpg",
   "polished-stone": "images/polished-stone.png",
   "newspaper-mass": "images/newspaper-mass.jpg",
-  "machine-learning": "images/machine-learning.jpg",
+  "machine-learning": "images/machine-learning.png",
   "advanced-chip-manufacturing": "images/advanced-chip-manufacturing.jpg",
   "tank": "images/tank.jpg",
   "aircraft-carrier": "images/aircraft-carrier.jpg",
@@ -374,7 +374,7 @@ window.TECH_IMAGES = {
   "digital-immortality": "images/digital-immortality.png",
   "universal-basic-income": "images/universal-basic-income.jpg",
   "liquid-democracy": "images/liquid-democracy.png",
-  "network-state": "images/network-state.png",
+  "network-state": "images/network-state.jpg",
   "ai-governance": "images/ai-governance.jpg",
   "transhumanism": "images/transhumanism.jpg",
   "longtermism": "images/longtermism.png",
@@ -396,7 +396,7 @@ window.TECH_IMAGES = {
   "gravitational-wave-spectroscopy": "images/gravitational-wave-spectroscopy.png",
   "dark-sector-physics": "images/dark-sector-physics.png",
   "quantum-gravity": "images/quantum-gravity.png",
-  "p-vs-np-resolved": "images/p-vs-np-resolved.jpg",
+  "p-vs-np-resolved": "images/p-vs-np-resolved.png",
   "space-habitat": "images/space-habitat.jpg",
   "artificial-photosynthesis": "images/artificial-photosynthesis.png",
   "genetic-disease-eradication": "images/genetic-disease-eradication.jpg",
@@ -409,7 +409,7 @@ window.TECH_IMAGES = {
   "generation-ship-colony": "images/generation-ship-colony.png",
   "galactic-civilization": "images/galactic-civilization.png",
   "speciation": "images/speciation.jpg",
-  "substrate-independent-humanity": "images/substrate-independent-humanity.jpg",
+  "substrate-independent-humanity": "images/substrate-independent-humanity.png",
   "antimatter-production": "images/antimatter-production.png",
   "warp-drive": "images/warp-drive.png",
   "kardashev-type-ii": "images/kardashev-type-ii.png",
@@ -434,7 +434,19 @@ window.TECH_IMAGES = {
   "memory-editing": "images/memory-editing.jpg",
   "cybernetic-enhancement": "images/cybernetic-enhancement.jpg",
   "orbital-ring": "images/orbital-ring.png",
-  "universal-disease-eradication": "images/universal-disease-eradication.jpg"
+  "universal-disease-eradication": "images/universal-disease-eradication.jpg",
+  "insulin-therapy": "images/insulin-therapy.jpg",
+  "continental-drift": "images/continental-drift.png",
+  "radio-broadcasting": "images/radio-broadcasting.jpg",
+  "sound-film": "images/sound-film.jpg",
+  "big-bang-cosmology": "images/big-bang-cosmology.jpg",
+  "federal-reserve": "images/federal-reserve.png",
+  "russian-revolution": "images/russian-revolution.jpg",
+  "fascism": "images/fascism.jpg",
+  "womens-suffrage": "images/womens-suffrage.png",
+  "keynesian-economics": "images/keynesian-economics.jpg",
+  "cryptanalysis-bombe": "images/cryptanalysis-bombe.jpg",
+  "strategic-bombing": "images/strategic-bombing.jpg"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -934,8 +946,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Lens"
   },
   "spectacles": {
-    "article": "Tommaso da Modena",
-    "url": "https://en.wikipedia.org/wiki/Tommaso_da_Modena"
+    "article": "Glasses",
+    "url": "https://en.wikipedia.org/wiki/Glasses"
   },
   "distillation": {
     "article": "Alembic",
@@ -978,8 +990,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Heliocentrism"
   },
   "algebra-symbolic": {
-    "article": "François Viète",
-    "url": "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Vi%C3%A8te"
+    "article": "Ars Magna (Cardano book)",
+    "url": "https://en.wikipedia.org/wiki/Ars_Magna_(Cardano_book)"
   },
   "anatomy-vesalius": {
     "article": "De Humani Corporis Fabrica Libri Septem",
@@ -1054,12 +1066,12 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Barometer"
   },
   "vaccination": {
-    "article": "Edward Jenner",
-    "url": "https://en.wikipedia.org/wiki/Edward_Jenner"
+    "article": "Smallpox vaccine",
+    "url": "https://en.wikipedia.org/wiki/Smallpox_vaccine"
   },
   "chemistry-modern": {
-    "article": "Antoine Lavoisier",
-    "url": "https://en.wikipedia.org/wiki/Antoine_Lavoisier"
+    "article": "Traité Élémentaire de Chimie",
+    "url": "https://en.wikipedia.org/wiki/Trait%C3%A9_%C3%89l%C3%A9mentaire_de_Chimie"
   },
   "steam-pump": {
     "article": "Newcomen atmospheric engine",
@@ -1070,8 +1082,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Watt_steam_engine"
   },
   "coke-iron": {
-    "article": "Abraham Darby I",
-    "url": "https://en.wikipedia.org/wiki/Abraham_Darby_I"
+    "article": "The Iron Bridge",
+    "url": "https://en.wikipedia.org/wiki/The_Iron_Bridge"
   },
   "canal-system": {
     "article": "Bridgewater Canal",
@@ -1194,16 +1206,16 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Germ_theory_of_disease"
   },
   "antiseptic-surgery": {
-    "article": "Joseph Lister",
-    "url": "https://en.wikipedia.org/wiki/Joseph_Lister"
+    "article": "Antiseptic",
+    "url": "https://en.wikipedia.org/wiki/Antiseptic"
   },
   "anesthesia": {
     "article": "History of general anesthesia",
     "url": "https://en.wikipedia.org/wiki/History_of_general_anesthesia"
   },
   "vaccination-mass": {
-    "article": "Louis Pasteur",
-    "url": "https://en.wikipedia.org/wiki/Louis_Pasteur"
+    "article": "Pasteurization",
+    "url": "https://en.wikipedia.org/wiki/Pasteurization"
   },
   "thermodynamics": {
     "article": "Thermodynamics",
@@ -1430,8 +1442,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Global_Positioning_System"
   },
   "gene-sequencing": {
-    "article": "Frederick Sanger",
-    "url": "https://en.wikipedia.org/wiki/Frederick_Sanger"
+    "article": "Sanger sequencing",
+    "url": "https://en.wikipedia.org/wiki/Sanger_sequencing"
   },
   "genetic-engineering": {
     "article": "Recombinant DNA",
@@ -1542,32 +1554,32 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Liber_Abaci"
   },
   "banking-double-entry": {
-    "article": "Luca Pacioli",
-    "url": "https://en.wikipedia.org/wiki/Luca_Pacioli"
+    "article": "Summa de arithmetica",
+    "url": "https://en.wikipedia.org/wiki/Summa_de_arithmetica"
   },
   "vernacular-literature": {
-    "article": "Geoffrey Chaucer",
-    "url": "https://en.wikipedia.org/wiki/Geoffrey_Chaucer"
+    "article": "The Canterbury Tales",
+    "url": "https://en.wikipedia.org/wiki/The_Canterbury_Tales"
   },
   "scientific-method": {
-    "article": "Galileo Galilei",
-    "url": "https://en.wikipedia.org/wiki/Galileo_Galilei"
+    "article": "Sidereus Nuncius",
+    "url": "https://en.wikipedia.org/wiki/Sidereus_Nuncius"
   },
   "protestant-reformation": {
-    "article": "Martin Luther",
-    "url": "https://en.wikipedia.org/wiki/Martin_Luther"
+    "article": "Ninety-five Theses",
+    "url": "https://en.wikipedia.org/wiki/Ninety-five_Theses"
   },
   "calculus": {
-    "article": "Isaac Newton",
-    "url": "https://en.wikipedia.org/wiki/Isaac_Newton"
+    "article": "Philosophiæ Naturalis Principia Mathematica",
+    "url": "https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica"
   },
   "modern-bookkeeping": {
-    "article": "Luca Pacioli",
-    "url": "https://en.wikipedia.org/wiki/Luca_Pacioli"
+    "article": "Audit",
+    "url": "https://en.wikipedia.org/wiki/Audit"
   },
   "modern-corporation": {
-    "article": "John D. Rockefeller",
-    "url": "https://en.wikipedia.org/wiki/John_D._Rockefeller"
+    "article": "Wall Street",
+    "url": "https://en.wikipedia.org/wiki/Wall_Street"
   },
   "dna-structure": {
     "article": "DNA",
@@ -1766,8 +1778,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/New-York_Tribune"
   },
   "machine-learning": {
-    "article": "Geoffrey Hinton",
-    "url": "https://en.wikipedia.org/wiki/Geoffrey_Hinton"
+    "article": "Neural network (machine learning)",
+    "url": "https://en.wikipedia.org/wiki/Neural_network_(machine_learning)"
   },
   "advanced-chip-manufacturing": {
     "article": "Photolithography",
@@ -1930,8 +1942,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Liquid_democracy"
   },
   "network-state": {
-    "article": "Balaji Srinivasan",
-    "url": "https://en.wikipedia.org/wiki/Balaji_Srinivasan"
+    "article": "Seasteading",
+    "url": "https://en.wikipedia.org/wiki/Seasteading"
   },
   "ai-governance": {
     "article": "Smart city",
@@ -1954,8 +1966,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Metaverse"
   },
   "decentralized-autonomous-org": {
-    "article": "Vitalik Buterin",
-    "url": "https://en.wikipedia.org/wiki/Vitalik_Buterin"
+    "article": "The DAO",
+    "url": "https://en.wikipedia.org/wiki/The_DAO"
   },
   "hyperloop": {
     "article": "Hyperloop",
@@ -1966,8 +1978,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Tissue_engineering"
   },
   "dna-data-storage": {
-    "article": "George Church (geneticist)",
-    "url": "https://en.wikipedia.org/wiki/George_Church_(geneticist)"
+    "article": "DNA computing",
+    "url": "https://en.wikipedia.org/wiki/DNA_computing"
   },
   "cancer-cure": {
     "article": "Cancer immunotherapy",
@@ -2018,8 +2030,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Quantum_gravity"
   },
   "p-vs-np-resolved": {
-    "article": "Stephen Cook",
-    "url": "https://en.wikipedia.org/wiki/Stephen_Cook"
+    "article": "Travelling salesman problem",
+    "url": "https://en.wikipedia.org/wiki/Travelling_salesman_problem"
   },
   "space-habitat": {
     "article": "O'Neill cylinder",
@@ -2034,8 +2046,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Sickle_cell_disease"
   },
   "self-replicating-machines": {
-    "article": "John von Neumann",
-    "url": "https://en.wikipedia.org/wiki/John_von_Neumann"
+    "article": "Von Neumann universal constructor",
+    "url": "https://en.wikipedia.org/wiki/Von_Neumann_universal_constructor"
   },
   "superintelligence": {
     "article": "Nick Bostrom",
@@ -2070,8 +2082,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Adaptive_radiation"
   },
   "substrate-independent-humanity": {
-    "article": "Ray Kurzweil",
-    "url": "https://en.wikipedia.org/wiki/Ray_Kurzweil"
+    "article": "Mind uploading",
+    "url": "https://en.wikipedia.org/wiki/Mind_uploading"
   },
   "antimatter-production": {
     "article": "Antimatter",
@@ -2158,8 +2170,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Colonization_of_the_asteroid_belt"
   },
   "memory-editing": {
-    "article": "Susumu Tonegawa",
-    "url": "https://en.wikipedia.org/wiki/Susumu_Tonegawa"
+    "article": "Long-term potentiation",
+    "url": "https://en.wikipedia.org/wiki/Long-term_potentiation"
   },
   "cybernetic-enhancement": {
     "article": "Cyborg",
@@ -2178,20 +2190,20 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Insulin_(medication)"
   },
   "continental-drift": {
-    "article": "Continental drift",
-    "url": "https://en.wikipedia.org/wiki/Continental_drift"
+    "article": "Pangaea",
+    "url": "https://en.wikipedia.org/wiki/Pangaea"
   },
   "radio-broadcasting": {
     "article": "Radio broadcasting",
     "url": "https://en.wikipedia.org/wiki/Radio_broadcasting"
   },
   "sound-film": {
-    "article": "Sound film",
-    "url": "https://en.wikipedia.org/wiki/Sound_film"
+    "article": "The Jazz Singer",
+    "url": "https://en.wikipedia.org/wiki/The_Jazz_Singer"
   },
   "big-bang-cosmology": {
-    "article": "Big Bang",
-    "url": "https://en.wikipedia.org/wiki/Big_Bang"
+    "article": "Cosmic microwave background",
+    "url": "https://en.wikipedia.org/wiki/Cosmic_microwave_background"
   },
   "federal-reserve": {
     "article": "Federal Reserve",
@@ -2202,23 +2214,23 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/October_Revolution"
   },
   "fascism": {
-    "article": "Fascism",
-    "url": "https://en.wikipedia.org/wiki/Fascism"
+    "article": "March on Rome",
+    "url": "https://en.wikipedia.org/wiki/March_on_Rome"
   },
   "womens-suffrage": {
     "article": "Women's suffrage",
-    "url": "https://en.wikipedia.org/wiki/Women%27s_suffrage"
+    "url": "https://en.wikipedia.org/wiki/Women's_suffrage"
   },
   "keynesian-economics": {
-    "article": "Keynesian economics",
-    "url": "https://en.wikipedia.org/wiki/Keynesian_economics"
+    "article": "The General Theory of Employment, Interest and Money",
+    "url": "https://en.wikipedia.org/wiki/The_General_Theory_of_Employment%2C_Interest_and_Money"
   },
   "cryptanalysis-bombe": {
     "article": "Bombe",
     "url": "https://en.wikipedia.org/wiki/Bombe"
   },
   "strategic-bombing": {
-    "article": "Strategic bombing",
-    "url": "https://en.wikipedia.org/wiki/Strategic_bombing"
+    "article": "Boeing B-29 Superfortress",
+    "url": "https://en.wikipedia.org/wiki/Boeing_B-29_Superfortress"
   }
 };
