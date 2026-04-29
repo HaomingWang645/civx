@@ -7,7 +7,7 @@ window.TECH_IMAGES = {
   "persistence-hunting": "images/persistence-hunting.jpg",
   "fire-use": "images/fire-use.jpg",
   "acheulean": "images/acheulean.png",
-  "windbreaks": "images/windbreaks.jpg",
+  "windbreaks": "images/windbreaks.png",
   "wooden-spear": "images/wooden-spear.jpg",
   "fire-making": "images/fire-making.jpg",
   "cooking": "images/cooking.jpg",
@@ -29,14 +29,14 @@ window.TECH_IMAGES = {
   "oil-lamp": "images/oil-lamp.jpg",
   "microliths": "images/microliths.jpg",
   "shamanism": "images/shamanism.jpg",
-  "trade-networks": "images/trade-networks.png",
+  "trade-networks": "images/trade-networks.jpg",
   "atlatl": "images/atlatl.jpg",
   "lunar-tally": "images/lunar-tally.png",
   "harpoon": "images/harpoon.jpg",
   "dog": "images/dog.jpg",
   "ground-stone": "images/ground-stone.jpg",
   "bow-arrow": "images/bow-arrow.jpg",
-  "mortar-pestle": "images/mortar-pestle.jpg",
+  "mortar-pestle": "images/mortar-pestle.png",
   "sickle-flint": "images/sickle-flint.jpg",
   "fishing-net": "images/fishing-net.jpg",
   "fish-weir": "images/fish-weir.jpg",
@@ -56,7 +56,7 @@ window.TECH_IMAGES = {
   "granary": "images/granary.jpg",
   "sledge-runner": "images/sledge-runner.jpg",
   "sail-primitive": "images/sail-primitive.jpg",
-  "copper-smelting": "images/copper-smelting.jpg",
+  "copper-smelting": "images/copper-smelting.png",
   "proto-writing-tokens": "images/proto-writing-tokens.png",
   "bronze-metallurgy": "images/bronze-metallurgy.jpg",
   "bronze-tools": "images/bronze-tools.jpg",
@@ -77,8 +77,8 @@ window.TECH_IMAGES = {
   "silver-gold-metallurgy": "images/silver-gold-metallurgy.jpg",
   "olive-wine": "images/olive-wine.jpg",
   "linen-textile": "images/linen-textile.jpg",
-  "standing-army": "images/standing-army.jpg",
-  "maritime-trade": "images/maritime-trade.jpg",
+  "standing-army": "images/standing-army.png",
+  "maritime-trade": "images/maritime-trade.png",
   "galley-ship": "images/galley-ship.jpg",
   "pulley-lever": "images/pulley-lever.jpg",
   "trepanation": "images/trepanation.jpg",
@@ -126,7 +126,7 @@ window.TECH_IMAGES = {
   "magnetic-compass-marine": "images/magnetic-compass-marine.jpg",
   "glass-lens": "images/glass-lens.jpg",
   "spectacles": "images/spectacles.jpg",
-  "distillation": "images/distillation.png",
+  "distillation": "images/distillation.jpg",
   "paper-mill": "images/paper-mill.jpg",
   "horizontal-loom": "images/horizontal-loom.jpg",
   "quill-ink": "images/quill-ink.jpg",
@@ -270,9 +270,9 @@ window.TECH_IMAGES = {
   "gestural-communication": "images/gestural-communication.jpg",
   "hide-clothing": "images/hide-clothing.jpg",
   "water-flask": "images/water-flask.jpg",
-  "proto-language": "images/proto-language.jpg",
+  "proto-language": "images/proto-language.png",
   "alphabet-phoenician": "images/alphabet-phoenician.jpg",
-  "iron-tools": "images/iron-tools.jpg",
+  "iron-tools": "images/iron-tools.png",
   "philosophy": "images/philosophy.png",
   "zero-numeral": "images/zero-numeral.jpg",
   "scientific-method-proto": "images/scientific-method-proto.jpg",
@@ -419,16 +419,16 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Acheulean"
   },
   "windbreaks": {
-    "article": "Windbreak",
-    "url": "https://en.wikipedia.org/wiki/Windbreak"
+    "article": "Terra Amata (archaeological site)",
+    "url": "https://en.wikipedia.org/wiki/Terra_Amata_(archaeological_site)"
   },
   "wooden-spear": {
     "article": "Schöningen spears",
     "url": "https://en.wikipedia.org/wiki/Sch%C3%B6ningen_spears"
   },
   "fire-making": {
-    "article": "Fire making",
-    "url": "https://en.wikipedia.org/wiki/Fire_making"
+    "article": "Pyrite",
+    "url": "https://en.wikipedia.org/wiki/Pyrite"
   },
   "cooking": {
     "article": "Cooking",
@@ -451,8 +451,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Birch_bark_tar"
   },
   "shellfishing": {
-    "article": "Shellfish",
-    "url": "https://en.wikipedia.org/wiki/Shellfish"
+    "article": "Midden",
+    "url": "https://en.wikipedia.org/wiki/Midden"
   },
   "pigments": {
     "article": "Pigment",
@@ -507,8 +507,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Shamanism"
   },
   "trade-networks": {
-    "article": "Trade",
-    "url": "https://en.wikipedia.org/wiki/Trade"
+    "article": "Obsidian",
+    "url": "https://en.wikipedia.org/wiki/Obsidian"
   },
   "atlatl": {
     "article": "Spear-thrower",
@@ -523,36 +523,36 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Harpoon"
   },
   "dog": {
-    "article": "Domestication of the dog",
-    "url": "https://en.wikipedia.org/wiki/Domestication_of_the_dog"
+    "article": "Bonn–Oberkassel dog",
+    "url": "https://en.wikipedia.org/wiki/Bonn%E2%80%93Oberkassel_dog"
   },
   "ground-stone": {
     "article": "Ground stone",
     "url": "https://en.wikipedia.org/wiki/Ground_stone"
   },
   "bow-arrow": {
-    "article": "Bow and arrow",
-    "url": "https://en.wikipedia.org/wiki/Bow_and_arrow"
+    "article": "Sibudu Cave",
+    "url": "https://en.wikipedia.org/wiki/Sibudu_Cave"
   },
   "mortar-pestle": {
-    "article": "Mortar and pestle",
-    "url": "https://en.wikipedia.org/wiki/Mortar_and_pestle"
+    "article": "Natufian culture",
+    "url": "https://en.wikipedia.org/wiki/Natufian_culture"
   },
   "sickle-flint": {
-    "article": "Sickle",
-    "url": "https://en.wikipedia.org/wiki/Sickle"
+    "article": "Halaf culture",
+    "url": "https://en.wikipedia.org/wiki/Halaf_culture"
   },
   "fishing-net": {
-    "article": "Fishing net",
-    "url": "https://en.wikipedia.org/wiki/Fishing_net"
+    "article": "Mesolithic",
+    "url": "https://en.wikipedia.org/wiki/Mesolithic"
   },
   "fish-weir": {
     "article": "Fish trap",
     "url": "https://en.wikipedia.org/wiki/Fish_trap"
   },
   "canoe": {
-    "article": "Dugout canoe",
-    "url": "https://en.wikipedia.org/wiki/Dugout_canoe"
+    "article": "Pesse canoe",
+    "url": "https://en.wikipedia.org/wiki/Pesse_canoe"
   },
   "snowshoe-ski": {
     "article": "Snowshoe",
@@ -563,12 +563,12 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Domestication_of_vertebrates"
   },
   "pottery": {
-    "article": "Pottery",
-    "url": "https://en.wikipedia.org/wiki/Pottery"
+    "article": "Jōmon pottery",
+    "url": "https://en.wikipedia.org/wiki/J%C5%8Dmon_pottery"
   },
   "adobe-brick": {
-    "article": "Adobe",
-    "url": "https://en.wikipedia.org/wiki/Adobe"
+    "article": "Çatalhöyük",
+    "url": "https://en.wikipedia.org/wiki/%C3%87atalh%C3%B6y%C3%BCk"
   },
   "megaliths": {
     "article": "Megalith",
@@ -583,16 +583,16 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Potter's_wheel"
   },
   "weaving": {
-    "article": "Weaving",
-    "url": "https://en.wikipedia.org/wiki/Weaving"
+    "article": "Warp-weighted loom",
+    "url": "https://en.wikipedia.org/wiki/Warp-weighted_loom"
   },
   "domesticated-flax": {
     "article": "Flax",
     "url": "https://en.wikipedia.org/wiki/Flax"
   },
   "irrigation": {
-    "article": "Irrigation",
-    "url": "https://en.wikipedia.org/wiki/Irrigation"
+    "article": "Eridu",
+    "url": "https://en.wikipedia.org/wiki/Eridu"
   },
   "millstone": {
     "article": "Millstone",
@@ -607,16 +607,16 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Granary"
   },
   "sledge-runner": {
-    "article": "Sled",
-    "url": "https://en.wikipedia.org/wiki/Sled"
+    "article": "Travois",
+    "url": "https://en.wikipedia.org/wiki/Travois"
   },
   "sail-primitive": {
-    "article": "Sail",
-    "url": "https://en.wikipedia.org/wiki/Sail"
+    "article": "Khufu ship",
+    "url": "https://en.wikipedia.org/wiki/Khufu_ship"
   },
   "copper-smelting": {
-    "article": "Copper extraction",
-    "url": "https://en.wikipedia.org/wiki/Copper_extraction"
+    "article": "Vinča culture",
+    "url": "https://en.wikipedia.org/wiki/Vin%C4%8Da_culture"
   },
   "proto-writing-tokens": {
     "article": "Proto-writing",
@@ -643,8 +643,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Spoke"
   },
   "wheeled-cart": {
-    "article": "Cart",
-    "url": "https://en.wikipedia.org/wiki/Cart"
+    "article": "Standard of Ur",
+    "url": "https://en.wikipedia.org/wiki/Standard_of_Ur"
   },
   "chariot": {
     "article": "Chariot",
@@ -655,8 +655,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Composite_bow"
   },
   "city-state": {
-    "article": "City-state",
-    "url": "https://en.wikipedia.org/wiki/City-state"
+    "article": "Sumer",
+    "url": "https://en.wikipedia.org/wiki/Sumer"
   },
   "cuneiform": {
     "article": "Cuneiform",
@@ -699,16 +699,16 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Linen"
   },
   "standing-army": {
-    "article": "Standing army",
-    "url": "https://en.wikipedia.org/wiki/Standing_army"
+    "article": "Akkadian Empire",
+    "url": "https://en.wikipedia.org/wiki/Akkadian_Empire"
   },
   "maritime-trade": {
-    "article": "Maritime history",
-    "url": "https://en.wikipedia.org/wiki/Maritime_history"
+    "article": "Phoenicia",
+    "url": "https://en.wikipedia.org/wiki/Phoenicia"
   },
   "galley-ship": {
-    "article": "Galley",
-    "url": "https://en.wikipedia.org/wiki/Galley"
+    "article": "Bireme",
+    "url": "https://en.wikipedia.org/wiki/Bireme"
   },
   "pulley-lever": {
     "article": "Pulley",
@@ -763,8 +763,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Roman_aqueduct"
   },
   "arch-vault": {
-    "article": "Arch",
-    "url": "https://en.wikipedia.org/wiki/Arch"
+    "article": "Arch of Titus",
+    "url": "https://en.wikipedia.org/wiki/Arch_of_Titus"
   },
   "concrete-roman": {
     "article": "Roman concrete",
@@ -891,16 +891,16 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Lens"
   },
   "spectacles": {
-    "article": "Glasses",
-    "url": "https://en.wikipedia.org/wiki/Glasses"
+    "article": "Tommaso da Modena",
+    "url": "https://en.wikipedia.org/wiki/Tommaso_da_Modena"
   },
   "distillation": {
-    "article": "Distillation",
-    "url": "https://en.wikipedia.org/wiki/Distillation"
+    "article": "Alembic",
+    "url": "https://en.wikipedia.org/wiki/Alembic"
   },
   "paper-mill": {
-    "article": "Paper mill",
-    "url": "https://en.wikipedia.org/wiki/Paper_mill"
+    "article": "Fabriano",
+    "url": "https://en.wikipedia.org/wiki/Fabriano"
   },
   "horizontal-loom": {
     "article": "Loom",
@@ -1471,16 +1471,16 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Diepkloof_Rock_Shelter"
   },
   "proto-language": {
-    "article": "Sign language",
-    "url": "https://en.wikipedia.org/wiki/Sign_language"
+    "article": "Origin of speech",
+    "url": "https://en.wikipedia.org/wiki/Origin_of_speech"
   },
   "alphabet-phoenician": {
     "article": "Mesha Stele",
     "url": "https://en.wikipedia.org/wiki/Mesha_Stele"
   },
   "iron-tools": {
-    "article": "Iron",
-    "url": "https://en.wikipedia.org/wiki/Iron"
+    "article": "Hallstatt culture",
+    "url": "https://en.wikipedia.org/wiki/Hallstatt_culture"
   },
   "philosophy": {
     "article": "Plato",
@@ -1563,8 +1563,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Venus_figurine"
   },
   "spun-fiber-mat": {
-    "article": "Mat",
-    "url": "https://en.wikipedia.org/wiki/Mat"
+    "article": "Tatami",
+    "url": "https://en.wikipedia.org/wiki/Tatami"
   },
   "basketry": {
     "article": "Basket weaving",
@@ -1591,8 +1591,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/History_of_mathematics"
   },
   "horse-domestication": {
-    "article": "Horse",
-    "url": "https://en.wikipedia.org/wiki/Horse"
+    "article": "Sintashta culture",
+    "url": "https://en.wikipedia.org/wiki/Sintashta_culture"
   },
   "code-of-law": {
     "article": "Code of Hammurabi",

@@ -74,14 +74,14 @@
   "windbreaks": {
     "name": "Windbreaks & Camps",
     "query": "Windbreak",
-    "article": "Windbreak",
-    "page": "https://en.wikipedia.org/wiki/Windbreak",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Shea_Butter_Trees_Planted_Near_Residential_Areas_to_Serve_as_Windbreaks.jpg/330px-Shea_Butter_Trees_Planted_Near_Residential_Areas_to_Serve_as_Windbreaks.jpg",
-    "image_path": "images/windbreaks.jpg",
-    "extract": "A windbreak (shelterbelt) is a planting usually made up of one or more rows of trees or shrubs planted in such a manner as to provide shelter from the wind and to protect soil from erosion. They are commonly planted in hedgerows around the edges of fields on farms. If designed pr",
+    "article": "Terra Amata (archaeological site)",
+    "page": "https://en.wikipedia.org/wiki/Terra_Amata_(archaeological_site)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Terra-Amata-Hut.gif/330px-Terra-Amata-Hut.gif",
+    "image_path": "images/windbreaks.png",
+    "extract": "Terra Amata is an archaeological site in open air located on the slopes of Mount Boron in Nice, at a level 26 meters (85 ft) above the current sea level of the Mediterranean. It was discovered and excavated in 1966 by Henry de Lumley. The site, originally on a prehistoric beach, ",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=0.50 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "wooden-spear": {
     "name": "Wooden Thrusting Spear",
@@ -98,14 +98,14 @@
   "fire-making": {
     "name": "Fire-Making",
     "query": "Fire making",
-    "article": "Fire making",
-    "page": "https://en.wikipedia.org/wiki/Fire_making",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/DirkvdM_tinder_box.jpg/330px-DirkvdM_tinder_box.jpg",
+    "article": "Pyrite",
+    "page": "https://en.wikipedia.org/wiki/Pyrite",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pyrite_-_Huanzala_mine%2C_Huallanca%2C_Bolognesi%2C_Ancash%2C_Peru.jpg/330px-Pyrite_-_Huanzala_mine%2C_Huallanca%2C_Bolognesi%2C_Ancash%2C_Peru.jpg",
     "image_path": "images/fire-making.jpg",
-    "extract": "Fire making, fire lighting or fire craft is the process of artificially starting a fire. It requires completing the fire triangle, usually by heating tinder above its autoignition temperature.",
+    "extract": "The mineral pyrite ( PY-ryte), or iron pyrite, also known as Fool's Gold, is an iron sulfide with the chemical formula FeS2 (iron (II) disulfide). Pyrite is the most abundant sulfide mineral.",
     "status": "ok",
-    "score": 1.0,
-    "reason": "title=1.00 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "cooking": {
     "name": "Cooking",
@@ -170,14 +170,14 @@
   "shellfishing": {
     "name": "Shellfish Gathering",
     "query": "Shellfish",
-    "article": "Shellfish",
-    "page": "https://en.wikipedia.org/wiki/Shellfish",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Oysters_p1040741.jpg/330px-Oysters_p1040741.jpg",
+    "article": "Midden",
+    "page": "https://en.wikipedia.org/wiki/Midden",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Conchero_al_sur_de_Puerto_Deseado.jpg/330px-Conchero_al_sur_de_Puerto_Deseado.jpg",
     "image_path": "images/shellfishing.jpg",
-    "extract": "Shellfish, in colloquial and fisheries usage, are exoskeleton-bearing aquatic invertebrates used as food, including various species of molluscs, crustaceans, and echinoderms. Although most kinds of shellfish are harvested from saltwater environments, some are found in freshwater.",
+    "extract": "A midden is an old dump for domestic waste. It may consist of animal bones, human excrement, botanical material, mollusc shells, potsherds, lithics, and other artifacts and biofacts associated with past human occupation.",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.50 body=0.50 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "pigments": {
     "name": "Pigments & Body Paint",
@@ -338,14 +338,14 @@
   "trade-networks": {
     "name": "Long-Distance Trade",
     "query": "Long-distance trade",
-    "article": "Trade",
-    "page": "https://en.wikipedia.org/wiki/Trade",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Kaufmann-1568.png/330px-Kaufmann-1568.png",
-    "image_path": "images/trade-networks.png",
-    "extract": "Trade involves the transfer of goods and services from one person or entity to another, often in exchange for money. Economists refer to a system or network that allows trade as a market.",
+    "article": "Obsidian",
+    "page": "https://en.wikipedia.org/wiki/Obsidian",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Lipari-Obsidienne_%285%29.jpg/330px-Lipari-Obsidienne_%285%29.jpg",
+    "image_path": "images/trade-networks.jpg",
+    "extract": "Obsidian is a naturally occurring volcanic glass formed when lava extruded from a volcano cools rapidly with minimal crystal growth. It is an igneous rock. Produced from felsic lava, obsidian is rich in the lighter elements such as silicon, oxygen, aluminium, sodium, and potassiu",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.33 body=0.33 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "atlatl": {
     "name": "Spear-Thrower (Atlatl)",
@@ -386,14 +386,14 @@
   "dog": {
     "name": "Dog Domestication",
     "query": "Origin of the domestic dog",
-    "article": "Domestication of the dog",
-    "page": "https://en.wikipedia.org/wiki/Domestication_of_the_dog",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Canis_lupus_howling_on_glacial_erratic.jpg/330px-Canis_lupus_howling_on_glacial_erratic.jpg",
+    "article": "Bonn–Oberkassel dog",
+    "page": "https://en.wikipedia.org/wiki/Bonn%E2%80%93Oberkassel_dog",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Dog_skeleton_oberkassel.jpg/330px-Dog_skeleton_oberkassel.jpg",
     "image_path": "images/dog.jpg",
-    "extract": "The domestication of the dog was the process which led to the domestic dog. This included the dog's genetic divergence from the wolf, its domestication, and the emergence of the first dogs. Genetic studies suggest that all ancient and modern dogs share a common ancestry, descendi",
+    "extract": "The Bonn–Oberkassel dog was a Late Paleolithic dog whose skeletal remains were found buried alongside two humans. Discovered in early 1914 by quarry workers in Oberkassel, Bonn, Germany, the double burial site was analyzed by a team of archaeologists from the University of Bonn. ",
     "status": "ok",
-    "score": 1.0,
-    "reason": "title=1.00 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "ground-stone": {
     "name": "Ground Stone Tools",
@@ -410,50 +410,50 @@
   "bow-arrow": {
     "name": "Bow and Arrow",
     "query": "Bow and arrow",
-    "article": "Bow and arrow",
-    "page": "https://en.wikipedia.org/wiki/Bow_and_arrow",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Guinea_Fowl_Hunter_%2849109425873%29.jpg/330px-Guinea_Fowl_Hunter_%2849109425873%29.jpg",
+    "article": "Sibudu Cave",
+    "page": "https://en.wikipedia.org/wiki/Sibudu_Cave",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Sibudu_cave_KZN_02.JPG/330px-Sibudu_cave_KZN_02.JPG",
     "image_path": "images/bow-arrow.jpg",
-    "extract": "The bow and arrow is a ranged weapon system consisting of an elastic launching device (bow) and long-shafted projectiles (arrows). Humans used bows and arrows for hunting and aggression long before recorded history, and the practice was common to many prehistoric cultures. They w",
+    "extract": "Sibudu Cave is a rock shelter in a sandstone cliff in northern KwaZulu-Natal, South Africa. It is an important Middle Stone Age site occupied, with some gaps, from 77,000 years ago to 38,000 years ago.",
     "status": "ok",
-    "score": 1.0,
-    "reason": "title=1.00 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "mortar-pestle": {
     "name": "Mortar & Pestle",
     "query": "Mortar and pestle",
-    "article": "Mortar and pestle",
-    "page": "https://en.wikipedia.org/wiki/Mortar_and_pestle",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/White-Mortar-and-Pestle.jpg/330px-White-Mortar-and-Pestle.jpg",
-    "image_path": "images/mortar-pestle.jpg",
-    "extract": "A mortar and pestle is a set of two simple tools used to prepare ingredients or substances by crushing and grinding them into a fine paste or powder in the kitchen, laboratory, and pharmacy. The mortar is characteristically a bowl, typically made of hardwood, metal, ceramic, or h",
+    "article": "Natufian culture",
+    "page": "https://en.wikipedia.org/wiki/Natufian_culture",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/NatufianSpread.svg/330px-NatufianSpread.svg.png",
+    "image_path": "images/mortar-pestle.png",
+    "extract": "The Natufian culture is an archaeological culture of the late Epipalaeolithic Near East in West Asia from 15,000–11,500 Before Present. The culture was unusual in that it supported a sedentary or semi-sedentary population even before the introduction of agriculture. Natufian comm",
     "status": "ok",
-    "score": 1.0,
-    "reason": "title=1.00 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "sickle-flint": {
     "name": "Flint Sickle",
     "query": "Sickle",
-    "article": "Sickle",
-    "page": "https://en.wikipedia.org/wiki/Sickle",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Hasiya_krish.jpg/330px-Hasiya_krish.jpg",
+    "article": "Halaf culture",
+    "page": "https://en.wikipedia.org/wiki/Halaf_culture",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mesopotamian_Prehistorical_cultures.jpg/330px-Mesopotamian_Prehistorical_cultures.jpg",
     "image_path": "images/sickle-flint.jpg",
-    "extract": "A sickle, bagging hook, reaping-hook or grasshook is a single-handed agricultural tool designed with variously curved blades and typically used for harvesting or reaping grain crops, or cutting succulent forage chiefly for feeding livestock. Falx was a synonym, but was later used",
+    "extract": "The Halaf culture is a prehistoric period which lasted between about 6100 BC and 5100 BC. The period is a continuous development out of the earlier Pottery Neolithic and is located primarily in the fertile valley of the Khabur River, of south-eastern Turkey, Syria, and northern I",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.50 body=0.50 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "fishing-net": {
     "name": "Fishing Nets",
     "query": "Fishing net",
-    "article": "Fishing net",
-    "page": "https://en.wikipedia.org/wiki/Fishing_net",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/A_fishing_net_in_Brandon_Creek_-_geograph.org.uk_-_921094.jpg/330px-A_fishing_net_in_Brandon_Creek_-_geograph.org.uk_-_921094.jpg",
+    "article": "Mesolithic",
+    "page": "https://en.wikipedia.org/wiki/Mesolithic",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Hunter_gatherer%27s_camp_at_Irish_National_Heritage_Park_-_geograph.org.uk_-_1252699.jpg/330px-Hunter_gatherer%27s_camp_at_Irish_National_Heritage_Park_-_geograph.org.uk_-_1252699.jpg",
     "image_path": "images/fishing-net.jpg",
-    "extract": "A fishing net or fish net is a net used for fishing. Fishing nets work by serving as an improvised fish trap, and some are indeed rigged as traps. They are usually wide open when deployed, and then close off when retrieved to engulf and trap fish and other aquatic animals that ar",
+    "extract": "The Mesolithic is the Old World archaeological period between the Upper Paleolithic and the Neolithic. The term Epipaleolithic is often used synonymously, especially for outside northern Europe, and for the corresponding period in the Levant and Caucasus. The Mesolithic has diffe",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.50 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "fish-weir": {
     "name": "Fish Weirs",
@@ -470,14 +470,14 @@
   "canoe": {
     "name": "Dugout Canoe",
     "query": "Dugout canoe",
-    "article": "Dugout canoe",
-    "page": "https://en.wikipedia.org/wiki/Dugout_canoe",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Boats_at_the_shore_of_the_malawi_lake.jpg/330px-Boats_at_the_shore_of_the_malawi_lake.jpg",
+    "article": "Pesse canoe",
+    "page": "https://en.wikipedia.org/wiki/Pesse_canoe",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Boomstamkano_van_Pesse%2C_Drents_Museum%2C_1955-VIII-2.jpg/330px-Boomstamkano_van_Pesse%2C_Drents_Museum%2C_1955-VIII-2.jpg",
     "image_path": "images/canoe.jpg",
-    "extract": "\nA dugout canoe or simply dugout is a boat made from a hollowed-out tree. Other names for this type of boat are logboat and monoxylon. Monoxylon (μονόξυλον) is Greek – mono- (single) + ξύλον xylon (tree) – and is mostly used in classic Greek texts. In German, they are called Einb",
+    "extract": "The Pesse canoe is the world's oldest-known boat. Carbon dating indicates that the boat was constructed during the early Mesolithic period between 8040 BC and 7510 BC. It is now in the Drents Museum in Assen, Netherlands.",
     "status": "ok",
-    "score": 1.0,
-    "reason": "title=1.00 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "snowshoe-ski": {
     "name": "Snowshoes & Skis",
@@ -506,26 +506,26 @@
   "pottery": {
     "name": "Pottery",
     "query": "Pottery",
-    "article": "Pottery",
-    "page": "https://en.wikipedia.org/wiki/Pottery",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Traditional_pottery_in_Nigeria_%28Ikpu_ite%29_19.jpg/330px-Traditional_pottery_in_Nigeria_%28Ikpu_ite%29_19.jpg",
+    "article": "Jōmon pottery",
+    "page": "https://en.wikipedia.org/wiki/J%C5%8Dmon_pottery",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Jomon_Flame_Style_Pottery%2C_3000_BC.jpg/330px-Jomon_Flame_Style_Pottery%2C_3000_BC.jpg",
     "image_path": "images/pottery.jpg",
-    "extract": "Pottery is the process and the products of forming vessels and other objects with clay and other raw materials, which are fired at high temperatures to give them a hard and durable form. The place where a potter makes such wares is also called a pottery. The definition of pottery",
+    "extract": "The Jōmon pottery  is a type of ancient earthenware pottery which was made during the Jōmon period in Japan. The term \"Jōmon\" (縄文) means \"rope-patterned\" in Japanese, describing the patterns that are pressed into the clay.",
     "status": "ok",
-    "score": 1.0,
-    "reason": "title=1.00 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "adobe-brick": {
     "name": "Adobe Brick",
     "query": "Adobe",
-    "article": "Adobe",
-    "page": "https://en.wikipedia.org/wiki/Adobe",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Adobe_wall_%28detail%29_1.jpg/330px-Adobe_wall_%28detail%29_1.jpg",
+    "article": "Çatalhöyük",
+    "page": "https://en.wikipedia.org/wiki/%C3%87atalh%C3%B6y%C3%BCk",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_08.jpg/330px-%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_08.jpg",
     "image_path": "images/adobe-brick.jpg",
-    "extract": "Adobe is a building material made from loam and organic materials. Adobe is Spanish for mudbrick. In some English-speaking regions of Spanish heritage, such as the Southwestern United States, the term is used to refer to any kind of earthen construction, or various architectural ",
+    "extract": "Çatalhöyük is a tell of a very large Neolithic and Chalcolithic proto-city settlement in southern Anatolia, which existed from approximately 7500 BC to 5600 BC and flourished around 7000 BC. Çatalhöyük overlooks the Konya Plain, southeast of the present-day city of Konya in Turke",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.50 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "megaliths": {
     "name": "Megalithic Monuments",
@@ -566,14 +566,14 @@
   "weaving": {
     "name": "Loom Weaving",
     "query": "Weaving",
-    "article": "Weaving",
-    "page": "https://en.wikipedia.org/wiki/Weaving",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Warp_and_weft_2.jpg/330px-Warp_and_weft_2.jpg",
+    "article": "Warp-weighted loom",
+    "page": "https://en.wikipedia.org/wiki/Warp-weighted_loom",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Warp-weighted_loom_twill.jpg/330px-Warp-weighted_loom_twill.jpg",
     "image_path": "images/weaving.jpg",
-    "extract": "Weaving is a method of textile production in which two distinct sets of yarns or threads are interlaced at right angles to form a fabric or cloth. The longitudinal threads are called the warp and the lateral threads are the weft, woof, or filling. The method in which these thread",
+    "extract": "The warp-weighted loom is a simple and ancient form of loom in which the warp yarns hang freely from a bar, which is supported by upright poles which can be placed at a convenient slant against a wall. Bundles of warp threads are tied to hanging weights called loom weights which ",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.50 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "domesticated-flax": {
     "name": "Flax & Cotton",
@@ -590,14 +590,14 @@
   "irrigation": {
     "name": "Irrigation",
     "query": "Irrigation",
-    "article": "Irrigation",
-    "page": "https://en.wikipedia.org/wiki/Irrigation",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Fields_SW_from_Sevilla.jpg/330px-Fields_SW_from_Sevilla.jpg",
+    "article": "Eridu",
+    "page": "https://en.wikipedia.org/wiki/Eridu",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Ziggurat_at_Eridu_%2830809118442%29.jpg/330px-Ziggurat_at_Eridu_%2830809118442%29.jpg",
     "image_path": "images/irrigation.jpg",
-    "extract": "Irrigation is the practice of applying controlled amounts of water to land to help grow crops, landscape plants, and lawns. Irrigation has been a key aspect of agriculture for over 5,000 years and has been developed by many cultures worldwide. Irrigation helps to grow crops, main",
+    "extract": "Eridu was a Sumerian city located at Tell Abu Shahrain, also Abu Shahrein or Tell Abu Shahrayn, an archaeological site in Lower Mesopotamia. It is located in Dhi Qar Governorate, Iraq, near the modern city of Basra. Eridu is traditionally considered the earliest city in southern ",
     "status": "ok",
-    "score": 1.0,
-    "reason": "title=1.00 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "millstone": {
     "name": "Millstone",
@@ -638,38 +638,38 @@
   "sledge-runner": {
     "name": "Sledge",
     "query": "Sled",
-    "article": "Sled",
-    "page": "https://en.wikipedia.org/wiki/Sled",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Volunteer_Mushing_on_Wonder_Lake_%287065286379%29.jpg/330px-Volunteer_Mushing_on_Wonder_Lake_%287065286379%29.jpg",
+    "article": "Travois",
+    "page": "https://en.wikipedia.org/wiki/Travois",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Cheyenne_using_travois.jpg/330px-Cheyenne_using_travois.jpg",
     "image_path": "images/sledge-runner.jpg",
-    "extract": "A sled, sledge, or sleigh is a vehicle that slides across a surface, usually of ice or snow. It is built with a smooth underside or a separate body supported by runners that reduce friction with the surface. Some designs are pulled by humans, animals, or machines to transport pas",
+    "extract": "A travois is an A-frame structure used to drag loads over land, most notably by the Plains Indians of North America.",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "sail-primitive": {
     "name": "Square Sail",
     "query": "Sail",
-    "article": "Sail",
-    "page": "https://en.wikipedia.org/wiki/Sail",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Chesapeake.jpg/330px-Chesapeake.jpg",
+    "article": "Khufu ship",
+    "page": "https://en.wikipedia.org/wiki/Khufu_ship",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/GEM_Khufus_Boat_front_2025.jpg/330px-GEM_Khufus_Boat_front_2025.jpg",
     "image_path": "images/sail-primitive.jpg",
-    "extract": "A sail is a tensile structure, which is made from fabric or other membrane materials, that uses wind power to propel sailing craft, including sailing ships, sailboats, windsurfers, ice boats, and even sail-powered land vehicles. Sails may be made from a combination of woven mater",
+    "extract": "The Khufu ship is an intact full-size solar barque from ancient Egypt. It was sealed into a pit alongside the Great Pyramid of pharaoh Khufu around 2500 BC, during the Fourth Dynasty of the ancient Egyptian Old Kingdom. Like other buried Ancient Egyptian ships, it was part of the",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.50 body=0.50 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "copper-smelting": {
     "name": "Copper Smelting",
     "query": "Copper extraction",
-    "article": "Copper extraction",
-    "page": "https://en.wikipedia.org/wiki/Copper_extraction",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Chino_copper_mine.jpg/330px-Chino_copper_mine.jpg",
-    "image_path": "images/copper-smelting.jpg",
-    "extract": "Copper extraction is the multi-stage process of obtaining copper from its ores. The conversion of copper ores consists of a series of physical, chemical, and electrochemical processes. Methods have evolved and vary with country depending on the ore source, local environmental reg",
+    "article": "Vinča culture",
+    "page": "https://en.wikipedia.org/wiki/Vin%C4%8Da_culture",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Vin%C4%8Da_culture_locator_map.svg/330px-Vin%C4%8Da_culture_locator_map.svg.png",
+    "image_path": "images/copper-smelting.png",
+    "extract": "The Vinča culture, also known as Turdaș culture or Vinča-Turdaș culture, is a Neolithic archaeological culture of Southeast Europe, dated to the period 5400–4500 BC. It is named for its type site, Vinča-Belo Brdo, a large tell settlement discovered by Serbian archaeologist Miloje",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.50 body=0.50 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "proto-writing-tokens": {
     "name": "Proto-Writing",
@@ -746,14 +746,14 @@
   "wheeled-cart": {
     "name": "Wheeled Cart",
     "query": "Cart",
-    "article": "Cart",
-    "page": "https://en.wikipedia.org/wiki/Cart",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Horse_%26_cart%2C_Town%2C_Beamish_Museum%2C_21_November_2013_%28cropped%29.jpg/330px-Horse_%26_cart%2C_Town%2C_Beamish_Museum%2C_21_November_2013_%28cropped%29.jpg",
+    "article": "Standard of Ur",
+    "page": "https://en.wikipedia.org/wiki/Standard_of_Ur",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Denis_Bourez_-_British_Museum%2C_London_%288747049029%29_%282%29.jpg/330px-Denis_Bourez_-_British_Museum%2C_London_%288747049029%29_%282%29.jpg",
     "image_path": "images/wheeled-cart.jpg",
-    "extract": "A cart is a two-wheeled vehicle designed for transport. It can be pulled by humans or draught animals such as horses, donkeys, mules and oxen, or smaller animals such as goats and large dogs.",
+    "extract": "The Standard of Ur is a Sumerian artifact of the 3rd millennium BC that is now in the collection of the British Museum. It is thought to have decorated the outside of a hollow wooden box measuring 21.59 cm (8.50 in) wide by 49.53 cm (19.50 in) long, inlaid with a mosaic of shell,",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.50 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "chariot": {
     "name": "War Chariot",
@@ -782,14 +782,14 @@
   "city-state": {
     "name": "City-State",
     "query": "City-state",
-    "article": "City-state",
-    "page": "https://en.wikipedia.org/wiki/City-state",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Panorama_von_Monaco-La_Turbie.jpg/330px-Panorama_von_Monaco-La_Turbie.jpg",
+    "article": "Sumer",
+    "page": "https://en.wikipedia.org/wiki/Sumer",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Sumer_satellite_map.jpg/330px-Sumer_satellite_map.jpg",
     "image_path": "images/city-state.jpg",
-    "extract": "A city-state is an independent sovereign city that serves as the primary hub of political, economic, and cultural life within its contiguous territory. This concept stands in contrast to that of a regular state or country, which typically encompasses a capital city and additional",
+    "extract": "Sumer is the earliest known civilization, located in the historical region of southern Mesopotamia, emerging during the Chalcolithic and early Bronze Ages between the 5th and 4th millennium BC. Like nearby Elam, it is one of the cradles of civilization, along with Egypt, the Indu",
     "status": "ok",
-    "score": 1.0,
-    "reason": "title=1.00 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "cuneiform": {
     "name": "Cuneiform",
@@ -914,38 +914,38 @@
   "standing-army": {
     "name": "Standing Army",
     "query": "Standing army",
-    "article": "Standing army",
-    "page": "https://en.wikipedia.org/wiki/Standing_army",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Gari-Melchers-War-Highsmith.jpeg/330px-Gari-Melchers-War-Highsmith.jpeg",
-    "image_path": "images/standing-army.jpg",
-    "extract": "A standing army is a permanent, often professional, army. It is composed of full-time soldiers who may be either career soldiers or conscripts. It differs from army reserves, who are enrolled for the long term, but activated only during wars or natural disasters, and temporary ar",
+    "article": "Akkadian Empire",
+    "page": "https://en.wikipedia.org/wiki/Akkadian_Empire",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Empire_akkad.svg/330px-Empire_akkad.svg.png",
+    "image_path": "images/standing-army.png",
+    "extract": "The Akkadian Empire or the Kingdom of Akkad/Agade was an ancient kingdom established around 2334 BCE, often considered to be the first known empire, succeeding the long-lived city-states of Sumer. Centered on the city of Akkad and its surrounding region in modern-day Iraq, the em",
     "status": "ok",
-    "score": 1.0,
-    "reason": "title=1.00 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "maritime-trade": {
     "name": "Maritime Trade",
     "query": "Maritime history",
-    "article": "Maritime history",
-    "page": "https://en.wikipedia.org/wiki/Maritime_history",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Magic_and_Gracie_off_Castle_Garden.jpg/330px-Magic_and_Gracie_off_Castle_Garden.jpg",
-    "image_path": "images/maritime-trade.jpg",
-    "extract": "Maritime history is the study of human interaction with and activity at sea. It covers a broad thematic element of history that often uses a global approach, although national and regional histories remain predominant. As an academic subject, it often crosses the boundaries of st",
+    "article": "Phoenicia",
+    "page": "https://en.wikipedia.org/wiki/Phoenicia",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Phoenicia_map-en.svg/330px-Phoenicia_map-en.svg.png",
+    "image_path": "images/maritime-trade.png",
+    "extract": "Phoenicians were an ancient Semitic people who inhabited city-states in Canaan along the Levantine coast of the eastern Mediterranean, primarily in present-day Lebanon and parts of coastal Syria. Their maritime civilization expanded and contracted over time, with its cultural cor",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.50 body=0.50 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "galley-ship": {
     "name": "Galley",
     "query": "Galley",
-    "article": "Galley",
-    "page": "https://en.wikipedia.org/wiki/Galley",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Sbonski_de_Passabon-Galere_a_la_voille.jpeg/330px-Sbonski_de_Passabon-Galere_a_la_voille.jpeg",
+    "article": "Bireme",
+    "page": "https://en.wikipedia.org/wiki/Bireme",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Greek_Bireme_500BC.jpg/330px-Greek_Bireme_500BC.jpg",
     "image_path": "images/galley-ship.jpg",
-    "extract": "A galley is a type of ship optimised for propulsion by oars. Galleys were historically used for warfare, trade, and piracy mostly in the seas surrounding Europe. It developed in the Mediterranean world during antiquity and continued to exist in various forms until the early 19th ",
+    "extract": "A bireme is an ancient oared warship (galley) with two superimposed rows of oars on each side. Biremes were long vessels built for military purposes and could achieve relatively high speed. They were invented well before the 6th century BC and were used by the Phoenicians, Assyri",
     "status": "ok",
-    "score": 1.0,
-    "reason": "title=1.00 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "pulley-lever": {
     "name": "Pulley & Lever",
@@ -1106,14 +1106,14 @@
   "arch-vault": {
     "name": "Arch & Vault",
     "query": "Arch",
-    "article": "Arch",
-    "page": "https://en.wikipedia.org/wiki/Arch",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/St_Louis_Gateway_Arch.jpg/330px-St_Louis_Gateway_Arch.jpg",
+    "article": "Arch of Titus",
+    "page": "https://en.wikipedia.org/wiki/Arch_of_Titus",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Arch_Titus%2C_Forum_Romanum%2C_Rome%2C_Italy.jpg/330px-Arch_Titus%2C_Forum_Romanum%2C_Rome%2C_Italy.jpg",
     "image_path": "images/arch-vault.jpg",
-    "extract": "An arch is a curved vertical structure spanning an open space underneath it. Arches may support the load above them, or they may perform a purely decorative role. As a decorative element, the arch dates back to the 4th millennium BC, but structural load-bearing arches became popu",
+    "extract": "The Arch of Titus is a 1st-century AD honorific arch, located on the Via Sacra, Rome, just to the south-east of the Roman Forum. It was constructed in c. 81 AD by Emperor Domitian shortly after the death of his older brother Titus to commemorate Titus's official deification or co",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.50 body=0.50 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "concrete-roman": {
     "name": "Roman Concrete",
@@ -1490,38 +1490,38 @@
   "spectacles": {
     "name": "Spectacles",
     "query": "Glasses",
-    "article": "Glasses",
-    "page": "https://en.wikipedia.org/wiki/Glasses",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/2023_Okulary_korekcyjne.jpg/330px-2023_Okulary_korekcyjne.jpg",
+    "article": "Tommaso da Modena",
+    "page": "https://en.wikipedia.org/wiki/Tommaso_da_Modena",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/AlbertusMagnus.jpg",
     "image_path": "images/spectacles.jpg",
-    "extract": "Glasses, also known as eyeglasses, spectacles, or colloquially as specs, are vision eyewear with clear or tinted lenses mounted in a frame that holds them in front of a person's eyes, typically utilizing a bridge over the nose and hinged arms, known as temples or temple pieces, t",
+    "extract": "Tomaso Barisini, better known as Tommaso da Modena and sometimes called Tomaso Baffini was an Italian painter of the mid-14th century.",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.00 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "distillation": {
     "name": "Distillation",
     "query": "Distillation",
-    "article": "Distillation",
-    "page": "https://en.wikipedia.org/wiki/Distillation",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Simple_distillation_apparatus.svg/330px-Simple_distillation_apparatus.svg.png",
-    "image_path": "images/distillation.png",
-    "extract": "Distillation, also classical distillation, is the process of separating the component substances of a liquid mixture of two or more chemically discrete substances by selective boiling of the mixture and the condensation of the vapors in a still.",
+    "article": "Alembic",
+    "page": "https://en.wikipedia.org/wiki/Alembic",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Alambik1.jpg/330px-Alambik1.jpg",
+    "image_path": "images/distillation.jpg",
+    "extract": "An alembic is an alchemical still consisting of two vessels connected by a tube, used for distillation of liquids.",
     "status": "ok",
-    "score": 1.0,
-    "reason": "title=1.00 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "paper-mill": {
     "name": "Paper Mill",
     "query": "Paper mill",
-    "article": "Paper mill",
-    "page": "https://en.wikipedia.org/wiki/Paper_mill",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Canadian_Kraft_Paper_mill_%28The_Pas%2C_MB%29.jpg/330px-Canadian_Kraft_Paper_mill_%28The_Pas%2C_MB%29.jpg",
+    "article": "Fabriano",
+    "page": "https://en.wikipedia.org/wiki/Fabriano",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Fabriano-Civita02.jpg/330px-Fabriano-Civita02.jpg",
     "image_path": "images/paper-mill.jpg",
-    "extract": "A paper mill is a factory devoted to making paper from vegetable fibers such as wood pulp, old rags, and other ingredients. Before the invention and adoption of the Fourdrinier machine and other types of paper machine that use an endless belt, all paper in a paper mill was made b",
+    "extract": "Fabriano is a town and comune of Ancona province in the Italian region of the Marche, at 325 metres (1,066 ft) above sea level. It lies in the Esino valley 44 kilometres (27 mi) upstream and southwest of Jesi; and 15 kilometres (9 mi) east-northeast of Fossato di Vico and 36 kilo",
     "status": "ok",
-    "score": 1.0,
-    "reason": "title=1.00 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "horizontal-loom": {
     "name": "Horizontal Loom",
@@ -3230,14 +3230,14 @@
   "proto-language": {
     "name": "Proto-Language",
     "query": "Sign language",
-    "article": "Sign language",
-    "page": "https://en.wikipedia.org/wiki/Sign_language",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/ASL_family.jpg/330px-ASL_family.jpg",
-    "image_path": "images/proto-language.jpg",
-    "extract": "Sign languages are languages that use the visual-manual modality to convey meaning rather than spoken words. They are expressed through manual articulation in combination with non-manual markers, and are full-fledged natural languages with their own grammar and lexicon. Sign lang",
+    "article": "Origin of speech",
+    "page": "https://en.wikipedia.org/wiki/Origin_of_speech",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Places_of_articulation.svg/330px-Places_of_articulation.svg.png",
+    "image_path": "images/proto-language.png",
+    "extract": "The origin of speech differs from the origin of language because language is not necessarily spoken; it could equally be written or signed. Speech is a fundamental aspect of human communication and plays a vital role in the everyday lives of humans. It allows them to convey thoug",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.50 body=0.50 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "alphabet-phoenician": {
     "name": "Phoenician Alphabet",
@@ -3254,14 +3254,14 @@
   "iron-tools": {
     "name": "Iron Tools",
     "query": "Iron",
-    "article": "Iron",
-    "page": "https://en.wikipedia.org/wiki/Iron",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Iron_electrolytic_and_1cm3_cube.jpg/330px-Iron_electrolytic_and_1cm3_cube.jpg",
-    "image_path": "images/iron-tools.jpg",
-    "extract": "Iron is a chemical element; it has symbol Fe and atomic number 26. It is a metal that belongs to the first transition series and group 8 of the periodic table. It is, by mass, the most common element on Earth, forming much of Earth's outer and inner core. It is the fourth most ab",
+    "article": "Hallstatt culture",
+    "page": "https://en.wikipedia.org/wiki/Hallstatt_culture",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hallstatt_LaTene.png/330px-Hallstatt_LaTene.png",
+    "image_path": "images/iron-tools.png",
+    "extract": "The Hallstatt culture was the predominant Western and Central European archaeological culture of the Late Bronze Age from the 12th to 8th centuries BC and Early Iron Age Europe from the 8th to 6th centuries BC, developing out of the Urnfield culture of the 12th century BC and fol",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.50 body=0.50 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "philosophy": {
     "name": "Philosophy",
@@ -3506,14 +3506,14 @@
   "spun-fiber-mat": {
     "name": "Mat Weaving",
     "query": "Mat",
-    "article": "Mat",
-    "page": "https://en.wikipedia.org/wiki/Mat",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Welcome_doormat.JPG/330px-Welcome_doormat.JPG",
+    "article": "Tatami",
+    "page": "https://en.wikipedia.org/wiki/Tatami",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Enk%C5%8D-ji%2C_Kyoto_Inside.jpg/330px-Enk%C5%8D-ji%2C_Kyoto_Inside.jpg",
     "image_path": "images/spun-fiber-mat.jpg",
-    "extract": "A mat is a hard or soft floor covering that generally is placed on a floor or other flat surface. Mats serve a range of purposes including:serving to clean items passed over it, such as a doormat, which removes dirt from the soles of shoes\nprotecting that which is above the mat, ",
-    "status": "review",
-    "score": 0.3,
-    "reason": "title=0.50 body=0.00 override (override but weak body match)"
+    "extract": "Tatami (畳) are soft mats used as flooring material in traditional Japanese-style rooms. They are made in standard sizes, twice as long as wide, about 0.9 by 1.8 metres, depending on the region. In martial arts, tatami are used for training in a dojo and for competition.",
+    "status": "ok",
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "basketry": {
     "name": "Basketry",
@@ -3590,14 +3590,14 @@
   "horse-domestication": {
     "name": "Horse Domestication",
     "query": "Horse",
-    "article": "Horse",
-    "page": "https://en.wikipedia.org/wiki/Horse",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Horse_007.jpg/330px-Horse_007.jpg",
+    "article": "Sintashta culture",
+    "page": "https://en.wikipedia.org/wiki/Sintashta_culture",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Sintashta_culture.jpg/330px-Sintashta_culture.jpg",
     "image_path": "images/horse-domestication.jpg",
-    "extract": "The horse is a domesticated, one-toed, hoofed mammal. It belongs to the taxonomic family Equidae and is one of two extant subspecies of Equus ferus. The horse has evolved over the past 45 to 55 million years from a small multi-toed creature, Eohippus, into the large single-toed a",
+    "extract": "The Sintashta culture is a Middle Bronze Age archaeological culture of the Southern Urals, dated to the period c. 2200–1900 BCE. It is the first phase of the Sintashta–Petrovka complex, c. 2200–1750 BCE. The culture is named after the Sintashta archaeological site, in Chelyabinsk",
     "status": "ok",
-    "score": 0.7,
-    "reason": "title=0.50 body=1.00 override"
+    "score": 0.85,
+    "reason": "era-appropriate replacement"
   },
   "code-of-law": {
     "name": "Codified Law",
