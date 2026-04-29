@@ -627,6 +627,7 @@ function showDetail(id) {
   fallback.appendChild(sig);
 
   detailEl.classList.add("open");
+  detailEl.scrollTop = 0; // reset scroll so new tech opens from the top
   detailEl.querySelector(".detail-close").onclick = clearSelection;
   detailEl.querySelectorAll(".detail-link").forEach(el => {
     el.onclick = () => selectNode(el.dataset.id);
