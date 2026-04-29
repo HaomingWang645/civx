@@ -4512,5 +4512,140 @@
     "image_path": "images/decentralized-autonomous-org.jpg",
     "extract": "Vitaly Dmitrievich Buterin, better known as Vitalik Buterin, is a Russian-Canadian computer programmer best known for co-founding Ethereum. Buterin became involved with cryptocurrency early in its inception, co-founding Bitcoin Magazine in 2011. In 2015, Buterin deployed the Ethe",
     "score": 0.8
+  },
+  "hyperloop": {
+    "name": "Hyperloop",
+    "article": "Hyperloop",
+    "page": "https://en.wikipedia.org/wiki/Hyperloop",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Hyperloop_all_cutaway.png/330px-Hyperloop_all_cutaway.png",
+    "image_path": "images/hyperloop.png",
+    "extract": "Hyperloop is a proposed high-speed transportation system for both passengers and freight. In 2013, the concept was published by entrepreneur Elon Musk in a white paper, where the hyperloop was described as a transportation system using capsules supported by an air-bearing surface",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "neuromorphic-chip": {
+    "name": "Neuromorphic Chip",
+    "article": "Neuromorphic computing",
+    "page": "https://en.wikipedia.org/wiki/Neuromorphic_computing",
+    "status": "no_image",
+    "reason": "no thumbnail"
+  },
+  "lab-grown-organs": {
+    "name": "Lab-Grown Organs",
+    "article": "Tissue engineering",
+    "page": "https://en.wikipedia.org/wiki/Tissue_engineering",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Tissue_Engineering.png/330px-Tissue_Engineering.png",
+    "image_path": "images/lab-grown-organs.png",
+    "extract": "Tissue engineering is a biomedical engineering discipline that uses a combination of cells, engineering, materials methods, and suitable biochemical and physicochemical factors to restore, maintain, improve, or replace different types of biological tissues. Tissue engineering oft",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "sentientism": {
+    "name": "Sentientism",
+    "article": "Sentientism",
+    "page": "https://en.wikipedia.org/wiki/Sentientism",
+    "status": "no_image",
+    "reason": "no thumbnail"
+  },
+  "dna-data-storage": {
+    "name": "DNA Data Storage",
+    "article": "George Church (geneticist)",
+    "page": "https://en.wikipedia.org/wiki/George_Church_(geneticist)",
+    "status": "ok",
+    "reason": "alternate article (multi-pass)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/George_Church_343263_by_christopher_michel_10-11-23.jpg/330px-George_Church_343263_by_christopher_michel_10-11-23.jpg",
+    "image_path": "images/dna-data-storage.jpg",
+    "extract": "George McDonald Church is an American geneticist, molecular engineer, chemist, serial entrepreneur, and pioneer in personal genomics and synthetic biology. He is the Robert Winthrop Professor of Genetics at Harvard Medical School, Professor of Health Sciences and Technology at Ha",
+    "score": 0.75
+  },
+  "cancer-cure": {
+    "name": "Cancer Cure",
+    "article": "Cancer immunotherapy",
+    "page": "https://en.wikipedia.org/wiki/Cancer_immunotherapy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Peptide_bound_to_Rituximab_FAB.png/330px-Peptide_bound_to_Rituximab_FAB.png",
+    "image_path": "images/cancer-cure.png",
+    "extract": "Cancer immunotherapy (immuno-oncotherapy) is the stimulation of the immune system to treat cancer, improving the immune system's natural ability to fight the disease. It is an application of the fundamental research of cancer immunology (immuno-oncology) and a growing subspecialt",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "ai-judge": {
+    "name": "Algorithmic Justice",
+    "article": "Algorithmic bias",
+    "page": "https://en.wikipedia.org/wiki/Algorithmic_bias",
+    "status": "ok",
+    "reason": "alternate article (multi-pass)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/02-Sandvig-Seeing-the-Sort-2014-WEB.png/330px-02-Sandvig-Seeing-the-Sort-2014-WEB.png",
+    "image_path": "images/ai-judge.png",
+    "extract": "Algorithmic bias describes systematic and repeatable harmful tendency in a computerized sociotechnical system to create \"unfair\" outcomes, such as \"privileging\" one category over another in ways that may or may not be different from the intended function of the algorithm.",
+    "score": 0.75
+  },
+  "space-based-solar": {
+    "name": "Space-Based Solar Power",
+    "article": "Space-based solar power",
+    "page": "https://en.wikipedia.org/wiki/Space-based_solar_power",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Solar_power_satellite_sandwich_or_abascus_concept.jpg/330px-Solar_power_satellite_sandwich_or_abascus_concept.jpg",
+    "image_path": "images/space-based-solar.jpg",
+    "extract": "Space-based solar power is the concept of collecting solar power in outer space with solar power satellites (SPS) and distributing it to Earth. Its advantages include a higher collection of energy due to the lack of reflection and absorption by the atmosphere, the possibility of ",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "photonic-computing": {
+    "name": "Photonic Computing",
+    "article": "Photonics",
+    "page": "https://en.wikipedia.org/wiki/Photonics",
+    "status": "ok",
+    "reason": "alternate article (multi-pass)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Aphrodita_aculeata_%28Sea_mouse%29.jpg/330px-Aphrodita_aculeata_%28Sea_mouse%29.jpg",
+    "image_path": "images/photonic-computing.jpg",
+    "extract": "Photonics is a branch of optics that involves the application of generation, detection, and manipulation of light in the form of photons through emission, transmission, modulation, signal processing, switching, amplification, and sensing. Even though photonics is a commonly used ",
+    "score": 0.75
+  },
+  "metamaterials": {
+    "name": "Metamaterials",
+    "article": "Metamaterial",
+    "page": "https://en.wikipedia.org/wiki/Metamaterial",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Split-ring_resonator_array_10K_sq_nm.jpg/330px-Split-ring_resonator_array_10K_sq_nm.jpg",
+    "image_path": "images/metamaterials.jpg",
+    "extract": "A metamaterial is an engineered material whose properties arise not from the chemical composition of its base substances, but from their deliberately designed internal structure. These properties are often rare or absent in naturally occurring materials. Metamaterials are typical",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "programmable-matter": {
+    "name": "Programmable Matter",
+    "article": "Soft robotics",
+    "page": "https://en.wikipedia.org/wiki/Soft_robotics",
+    "status": "ok",
+    "reason": "alternate (Soft robotics)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Soft_Robotics_1.jpg/330px-Soft_Robotics_1.jpg",
+    "image_path": "images/programmable-matter.jpg",
+    "extract": "Soft robotics is a subfield of robotics that concerns the design, control, and fabrication of robots composed of compliant materials, instead of rigid links.\nIn contrast to rigid-bodied robots built from metals, ceramics and hard plastics, the compliance of soft robots can improv",
+    "score": 0.7
+  },
+  "interstellar-probe": {
+    "name": "Interstellar Probe",
+    "article": "Interstellar probe",
+    "page": "https://en.wikipedia.org/wiki/Interstellar_probe",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/2023_interstellar_probes_NASA-JPL_eyes.png/330px-2023_interstellar_probes_NASA-JPL_eyes.png",
+    "image_path": "images/interstellar-probe.png",
+    "extract": "An interstellar probe is a space probe that has left—or is expected to leave—the Solar System and enter interstellar space, which is typically defined as the region beyond the heliopause. It also refers to probes capable of reaching other star systems.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
+  },
+  "terraforming-mars": {
+    "name": "Terraforming Mars",
+    "article": "Terraforming of Mars",
+    "page": "https://en.wikipedia.org/wiki/Terraforming_of_Mars",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Terraforming_of_Mars.gif/330px-Terraforming_of_Mars.gif",
+    "image_path": "images/terraforming-mars.png",
+    "extract": "The terraforming of Mars is a hypothetical procedure that would consist of a planetary engineering project or concurrent projects aspiring to transform Mars from a planet hostile to life to one that could sustainably host humans and other lifeforms free of protection or mediation",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "manual override"
   }
 }

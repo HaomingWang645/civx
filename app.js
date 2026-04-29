@@ -218,6 +218,14 @@ function layoutTechs() {
   for (const t of TECHS) eraLevels[t.era] = Math.max(eraLevels[t.era] ?? 0, topoLevel[t.id]);
   for (const era of ERAS) eraLevels[era.id] = Math.max(eraLevels[era.id] ?? 0, 1);
 
+  // Per-era minimum sub-column count (overrides auto-derived). Used to spread
+  // densely-clustered eras (e.g. Future) across more columns so a single year
+  // bucket doesn't pile up into one tall stack.
+  const ERA_MIN_LEVELS = { future: 13 };
+  for (const eraId in ERA_MIN_LEVELS) {
+    eraLevels[eraId] = Math.max(eraLevels[eraId] ?? 0, ERA_MIN_LEVELS[eraId]);
+  }
+
   // Year range per era
   const eraYearMin = {}, eraYearMax = {};
   for (const t of TECHS) {

@@ -1540,4 +1540,87 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "Vitalik Buterin", name_zh: "维塔利克·布特林" },
     { type: "unit", name: "Smart contracts", name_zh: "智能合约" },
   ],
+
+  // ─── Future Age (additional) ───
+  "hyperloop": [
+    { type: "work", name: "Hyperloop white paper (Musk 2013)", name_zh: "超回路列车白皮书" },
+    { type: "org", name: "Virgin Hyperloop", name_zh: "维珍超回路" },
+    { type: "org", name: "HyperloopTT", name_zh: "HyperloopTT" },
+    { type: "org", name: "Boring Company", name_zh: "Boring公司" },
+  ],
+  "neuromorphic-chip": [
+    { type: "unit", name: "Intel Loihi 2", name_zh: "英特尔Loihi 2" },
+    { type: "unit", name: "IBM TrueNorth", name_zh: "IBM TrueNorth" },
+    { type: "unit", name: "SpiNNaker (Manchester)", name_zh: "SpiNNaker(曼彻斯特)" },
+    { type: "person", name: "Carver Mead", name_zh: "卡弗·米德" },
+    { type: "org", name: "BrainChip", name_zh: "BrainChip公司" },
+  ],
+  "lab-grown-organs": [
+    { type: "person", name: "Anthony Atala", name_zh: "安东尼·阿塔拉" },
+    { type: "unit", name: "Lab-grown bladder (2006)", name_zh: "实验室培育膀胱" },
+    { type: "org", name: "United Therapeutics", name_zh: "United Therapeutics" },
+    { type: "unit", name: "Organoid", name_zh: "类器官" },
+  ],
+  "sentientism": [
+    { type: "person", name: "Peter Singer", name_zh: "彼得·辛格" },
+    { type: "work", name: "Animal Liberation (1975)", name_zh: "《动物解放》" },
+    { type: "person", name: "Jeff Sebo", name_zh: "杰夫·塞博" },
+    { type: "person", name: "Donald Watson", name_zh: "唐纳德·沃森" },
+    { type: "org", name: "Open Philanthropy (animal welfare)", name_zh: "Open Philanthropy(动物福利)" },
+  ],
+  "dna-data-storage": [
+    { type: "org", name: "Microsoft Research", name_zh: "微软研究院" },
+    { type: "org", name: "Catalog Technologies", name_zh: "Catalog Technologies" },
+    { type: "org", name: "Twist Bioscience", name_zh: "Twist Bioscience" },
+    { type: "person", name: "George Church", name_zh: "乔治·丘奇" },
+  ],
+  "cancer-cure": [
+    { type: "unit", name: "CAR-T cell therapy", name_zh: "CAR-T细胞疗法" },
+    { type: "unit", name: "Keytruda (pembrolizumab)", name_zh: "Keytruda(派姆单抗)" },
+    { type: "unit", name: "Personalized mRNA cancer vaccine", name_zh: "个性化mRNA癌症疫苗" },
+    { type: "person", name: "James Allison", name_zh: "詹姆斯·艾利森" },
+  ],
+  "ai-judge": [
+    { type: "unit", name: "COMPAS recidivism algorithm", name_zh: "COMPAS再犯预测算法" },
+    { type: "unit", name: "Estonia AI judge (pilot)", name_zh: "爱沙尼亚AI法官(试点)" },
+    { type: "work", name: "Weapons of Math Destruction", name_zh: "《数学杀伤性武器》" },
+    { type: "person", name: "Cathy O'Neil", name_zh: "凯西·奥尼尔" },
+  ],
+  "space-based-solar": [
+    { type: "org", name: "Caltech Space Solar Power Project", name_zh: "加州理工太空太阳能项目" },
+    { type: "work", name: "SOLARIS (ESA)", name_zh: "SOLARIS(欧空局)" },
+    { type: "person", name: "Peter Glaser (concept, 1968)", name_zh: "彼得·格拉泽" },
+    { type: "unit", name: "Microwave power transmission", name_zh: "微波输电" },
+  ],
+  "photonic-computing": [
+    { type: "org", name: "Lightmatter", name_zh: "Lightmatter" },
+    { type: "org", name: "Lightelligence", name_zh: "Lightelligence" },
+    { type: "unit", name: "Photonic tensor core", name_zh: "光子张量核" },
+    { type: "org", name: "PsiQuantum", name_zh: "PsiQuantum" },
+  ],
+  "metamaterials": [
+    { type: "person", name: "John Pendry", name_zh: "约翰·彭德里" },
+    { type: "person", name: "David Smith", name_zh: "大卫·史密斯" },
+    { type: "unit", name: "Cloaking device", name_zh: "隐身斗篷" },
+    { type: "unit", name: "Negative refractive index lens", name_zh: "负折射率透镜" },
+  ],
+  "programmable-matter": [
+    { type: "work", name: "Claytronics (CMU)", name_zh: "Claytronics项目(CMU)" },
+    { type: "unit", name: "M-Blocks (MIT)", name_zh: "M-Blocks机器人模块" },
+    { type: "person", name: "Seth Goldstein", name_zh: "塞斯·戈德斯坦" },
+    { type: "person", name: "Daniela Rus", name_zh: "丹妮拉·罗斯" },
+  ],
+  "interstellar-probe": [
+    { type: "unit", name: "Breakthrough Starshot", name_zh: "突破摄星计划" },
+    { type: "person", name: "Yuri Milner", name_zh: "尤里·米尔纳" },
+    { type: "person", name: "Stephen Hawking", name_zh: "史蒂芬·霍金" },
+    { type: "unit", name: "Project Daedalus (1970s)", name_zh: "代达罗斯计划" },
+    { type: "wonder", name: "Proxima Centauri b", name_zh: "比邻星b" },
+  ],
+  "terraforming-mars": [
+    { type: "person", name: "Carl Sagan", name_zh: "卡尔·萨根" },
+    { type: "person", name: "Robert Zubrin", name_zh: "罗伯特·祖布林" },
+    { type: "work", name: "The Case for Mars", name_zh: "《赶往火星》" },
+    { type: "unit", name: "Paraterraforming (worldhouse)", name_zh: "局部地球化(世界穹顶)" },
+  ],
 };

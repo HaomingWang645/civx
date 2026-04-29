@@ -380,7 +380,18 @@ window.TECH_IMAGES = {
   "longtermism": "images/longtermism.png",
   "generative-art": "images/generative-art.jpg",
   "metaverse": "images/metaverse.jpg",
-  "decentralized-autonomous-org": "images/decentralized-autonomous-org.jpg"
+  "decentralized-autonomous-org": "images/decentralized-autonomous-org.jpg",
+  "hyperloop": "images/hyperloop.png",
+  "lab-grown-organs": "images/lab-grown-organs.png",
+  "dna-data-storage": "images/dna-data-storage.jpg",
+  "cancer-cure": "images/cancer-cure.png",
+  "ai-judge": "images/ai-judge.png",
+  "space-based-solar": "images/space-based-solar.jpg",
+  "photonic-computing": "images/photonic-computing.jpg",
+  "metamaterials": "images/metamaterials.jpg",
+  "programmable-matter": "images/programmable-matter.jpg",
+  "interstellar-probe": "images/interstellar-probe.png",
+  "terraforming-mars": "images/terraforming-mars.png"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -1902,5 +1913,49 @@ window.TECH_IMAGE_CREDITS = {
   "decentralized-autonomous-org": {
     "article": "Vitalik Buterin",
     "url": "https://en.wikipedia.org/wiki/Vitalik_Buterin"
+  },
+  "hyperloop": {
+    "article": "Hyperloop",
+    "url": "https://en.wikipedia.org/wiki/Hyperloop"
+  },
+  "lab-grown-organs": {
+    "article": "Tissue engineering",
+    "url": "https://en.wikipedia.org/wiki/Tissue_engineering"
+  },
+  "dna-data-storage": {
+    "article": "George Church (geneticist)",
+    "url": "https://en.wikipedia.org/wiki/George_Church_(geneticist)"
+  },
+  "cancer-cure": {
+    "article": "Cancer immunotherapy",
+    "url": "https://en.wikipedia.org/wiki/Cancer_immunotherapy"
+  },
+  "ai-judge": {
+    "article": "Algorithmic bias",
+    "url": "https://en.wikipedia.org/wiki/Algorithmic_bias"
+  },
+  "space-based-solar": {
+    "article": "Space-based solar power",
+    "url": "https://en.wikipedia.org/wiki/Space-based_solar_power"
+  },
+  "photonic-computing": {
+    "article": "Photonics",
+    "url": "https://en.wikipedia.org/wiki/Photonics"
+  },
+  "metamaterials": {
+    "article": "Metamaterial",
+    "url": "https://en.wikipedia.org/wiki/Metamaterial"
+  },
+  "programmable-matter": {
+    "article": "Soft robotics",
+    "url": "https://en.wikipedia.org/wiki/Soft_robotics"
+  },
+  "interstellar-probe": {
+    "article": "Interstellar probe",
+    "url": "https://en.wikipedia.org/wiki/Interstellar_probe"
+  },
+  "terraforming-mars": {
+    "article": "Terraforming of Mars",
+    "url": "https://en.wikipedia.org/wiki/Terraforming_of_Mars"
   }
 };

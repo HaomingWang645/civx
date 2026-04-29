@@ -414,4 +414,19 @@ window.TECH_NAMES_ZH = {
   "generative-art": "生成艺术",
   "metaverse": "元宇宙",
   "decentralized-autonomous-org": "去中心化自治组织",
+
+  // ─── Future Age (additional) ───
+  "hyperloop": "超回路列车",
+  "neuromorphic-chip": "神经形态芯片",
+  "lab-grown-organs": "实验室培育器官",
+  "sentientism": "感知主义",
+  "dna-data-storage": "DNA数据存储",
+  "cancer-cure": "癌症治愈",
+  "ai-judge": "算法司法",
+  "space-based-solar": "空间太阳能发电",
+  "photonic-computing": "光子计算",
+  "metamaterials": "超材料",
+  "programmable-matter": "可编程物质",
+  "interstellar-probe": "星际探测器",
+  "terraforming-mars": "火星地球化",
 };
