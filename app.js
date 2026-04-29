@@ -4,6 +4,10 @@
 
 const { ERAS, CATEGORIES, TECHS } = window.TECH_TREE;
 
+const techById = Object.fromEntries(TECHS.map(t => [t.id, t]));
+const childrenById = Object.fromEntries(TECHS.map(t => [t.id, []]));
+for (const t of TECHS) for (const p of t.prereqs) if (childrenById[p]) childrenById[p].push(t.id);
+
 // ───────────── Layout constants ─────────────
 const COL_WIDTH = 280;
 const ROW_HEIGHT = 90;
@@ -240,7 +244,7 @@ function applyHighlights() {
   // Nodes
   document.querySelectorAll(".node").forEach(n => {
     const id = n.dataset.id;
-    const tech = TECHS.find(t => t.id === id);
+    const tech = techById[id];
     const isMuted = muted.has(tech.category);
     const matchesSearch = !search || tech.name.toLowerCase().includes(search);
     const inFocus = !focusId || id === focusId || ancestors.has(id) || descendants.has(id);
@@ -251,8 +255,8 @@ function applyHighlights() {
   // Edges
   document.querySelectorAll(".edge").forEach(e => {
     const from = e.dataset.from, to = e.dataset.to;
-    const fromTech = TECHS.find(t => t.id === from);
-    const toTech = TECHS.find(t => t.id === to);
+    const fromTech = techById[from];
+    const toTech = techById[to];
     const inFocus = !focusId
       || (ancestors.has(from) && (ancestors.has(to) || to === focusId))
       || (descendants.has(to) && (descendants.has(from) || from === focusId))
@@ -264,11 +268,9 @@ function applyHighlights() {
 }
 
 function collect(id, set, direction) {
-  const tech = TECHS.find(t => t.id === id);
+  const tech = techById[id];
   if (!tech) return;
-  const next = direction === "up"
-    ? tech.prereqs
-    : TECHS.filter(t => t.prereqs.includes(id)).map(t => t.id);
+  const next = direction === "up" ? tech.prereqs : childrenById[id];
   for (const nid of next) {
     if (set.has(nid)) continue;
     set.add(nid);
@@ -290,10 +292,10 @@ function clearSelection() {
 }
 
 function showDetail(id) {
-  const t = TECHS.find(x => x.id === id);
+  const t = techById[id];
   const cat = CATEGORIES[t.category];
-  const dependents = TECHS.filter(x => x.prereqs.includes(id));
-  const prereqs = t.prereqs.map(pid => TECHS.find(x => x.id === pid)).filter(Boolean);
+  const dependents = childrenById[id].map(cid => techById[cid]);
+  const prereqs = t.prereqs.map(pid => techById[pid]).filter(Boolean);
 
   detailEl.innerHTML = `
     <button class="detail-close" aria-label="Close">×</button>
