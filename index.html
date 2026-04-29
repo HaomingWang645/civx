@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Human History Tech Tree — Stone Age</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span class="topbar-title">Human History Tech Tree</span>
+        <span class="topbar-sub">· Stone Age</span>
+      </div>
+      <div class="topbar-spacer"></div>
+      <div class="search">
+        <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input id="search-input" type="text" placeholder="Search techs…" />
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <div class="legend-group">
+        <h3>Categories</h3>
+        <div id="category-list"></div>
+      </div>
+      <div class="legend-group">
+        <h3>Eras</h3>
+        <div id="era-list"></div>
+      </div>
+    </aside>
+
+    <main class="canvas-wrap">
+      <svg id="canvas" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <circle cx="0" cy="0" r="1" class="grid-pattern" />
+          </pattern>
+        </defs>
+        <g id="viewport">
+          <rect class="grid-bg" x="-2000" y="-2000" width="6000" height="6000" fill="url(#grid)" />
+          <g id="eras"></g>
+          <g id="edges"></g>
+          <g id="nodes"></g>
+        </g>
+      </svg>
+
+      <aside id="detail" class="detail"></aside>
+
+      <div class="controls">
+        <button class="ctrl-btn" id="zoom-out" title="Zoom out">−</button>
+        <button class="ctrl-btn" id="zoom-fit" title="Fit to view">⊡</button>
+        <button class="ctrl-btn" id="zoom-in" title="Zoom in">+</button>
+      </div>
+      <div class="zoom-level" id="zoom-level">100%</div>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
