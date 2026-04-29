@@ -432,6 +432,43 @@ html, body {
   border-color: var(--line-strong);
 }
 
+/* Unlocks: small flexible chips, one per resource/person/work/etc. */
+.detail-unlocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.unlock-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px 4px 8px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  font-size: 12px;
+  line-height: 1.3;
+  color: var(--text-1);
+  transition: background .15s, border-color .15s, color .15s;
+  cursor: default;
+}
+.unlock-chip:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: var(--line-strong);
+  color: var(--text-0);
+}
+.unlock-chip .unlock-icon {
+  font-size: 14px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.unlock-chip .unlock-zh {
+  color: var(--text-2);
+  font-size: 11.5px;
+  margin-left: 2px;
+  font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
 /* ───────────────────────── Controls ───────────────────────── */
 .controls {
   position: absolute;
@@ -547,3 +584,396 @@ html, body {
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.15); }
+
+/* Theme toggle button (lives in topbar). */
+.theme-toggle {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--line-strong);
+  color: var(--text-1);
+  padding: 6px 14px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  margin-right: 14px;
+  font-family: inherit;
+  transition: background .15s, color .15s, border-color .15s;
+  user-select: none;
+}
+.theme-toggle:hover {
+  background: rgba(255,255,255,0.08);
+  color: var(--text-0);
+  border-color: var(--accent);
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+   RENAISSANCE THEME
+   Parchment background, sepia/burgundy/gold palette, Cinzel + EB Garamond
+   serifs, illuminated border on the detail panel, dropcap on the title.
+   Activated by adding class="theme-renaissance" to <body>.
+   ════════════════════════════════════════════════════════════════════════ */
+body.theme-renaissance {
+  --bg-0: #efe2bc;
+  --bg-1: #e7d8a8;
+  --bg-2: #f6ecca;
+  --line: rgba(80, 50, 20, 0.20);
+  --line-strong: rgba(80, 50, 20, 0.36);
+  --text-0: #3b2614;
+  --text-1: #6b4a26;
+  --text-2: #8a6a3e;
+  --accent: #8c1a1a;          /* Florentine red */
+  --gold: #b8862b;
+  --glow: 0 0 18px rgba(184, 134, 43, 0.45);
+  font-family: "EB Garamond", Georgia, "Songti SC", serif;
+}
+
+/* Subtle paper texture: tiny noise via radial gradients + a couple of
+   illumination spots top-left / bottom-right. */
+body.theme-renaissance .canvas-wrap,
+body.theme-renaissance {
+  background:
+    radial-gradient(1500px 1000px at 12% 4%, rgba(184, 134, 43, 0.18), transparent 55%),
+    radial-gradient(1200px 900px at 88% 96%, rgba(140, 26, 26, 0.10), transparent 55%),
+    repeating-linear-gradient(0deg,
+      rgba(80,50,20,0.025) 0px, rgba(80,50,20,0.025) 1px,
+      transparent 1px, transparent 3px),
+    var(--bg-0);
+}
+
+body.theme-renaissance .topbar {
+  background: linear-gradient(180deg, #e7d6a4 0%, #ddc890 100%);
+  border-bottom: 3px double #8a6a3e;
+  backdrop-filter: none;
+}
+body.theme-renaissance .topbar-title {
+  font-family: "Cinzel", Georgia, serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #3b2614;
+}
+body.theme-renaissance .topbar-sub {
+  font-family: "EB Garamond", Georgia, serif;
+  font-style: italic;
+  font-size: 13px;
+  color: #6b4a26;
+}
+body.theme-renaissance .brand-dot {
+  background: var(--gold);
+  box-shadow: 0 0 12px rgba(184, 134, 43, 0.7);
+}
+
+body.theme-renaissance .theme-toggle {
+  background: rgba(184, 134, 43, 0.10);
+  border: 1px solid #8a6a3e;
+  color: #6b4a26;
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+body.theme-renaissance .theme-toggle:hover {
+  background: rgba(184, 134, 43, 0.22);
+  color: #3b2614;
+  border-color: #8c1a1a;
+}
+
+body.theme-renaissance .search input {
+  background: rgba(255, 250, 230, 0.55);
+  border: 1px solid rgba(80, 50, 20, 0.30);
+  color: #3b2614;
+  font-family: "EB Garamond", serif;
+  font-size: 14px;
+}
+body.theme-renaissance .search input::placeholder { color: #8a6a3e; font-style: italic; }
+body.theme-renaissance .search input:focus {
+  border-color: #8c1a1a;
+  background: rgba(255, 250, 230, 0.92);
+}
+body.theme-renaissance .search-icon { color: #8a6a3e; }
+
+body.theme-renaissance .sidebar {
+  background: linear-gradient(180deg, #ebd9a8, #ddc890);
+  border-right: 3px double #8a6a3e;
+}
+body.theme-renaissance .sidebar h3 {
+  font-family: "Cinzel", serif;
+  color: #6b4a26;
+  letter-spacing: 2.5px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(80,50,20,0.20);
+  padding-bottom: 6px;
+}
+body.theme-renaissance .legend-item,
+body.theme-renaissance .era-item {
+  font-family: "EB Garamond", serif;
+  color: #4b3818;
+  font-size: 14px;
+}
+body.theme-renaissance .legend-item:hover,
+body.theme-renaissance .era-item:hover {
+  background: rgba(184, 134, 43, 0.18);
+  color: #3b2614;
+}
+body.theme-renaissance .era-range {
+  font-style: italic;
+  color: #8a6a3e;
+}
+body.theme-renaissance .legend-swatch { box-shadow: 0 0 6px currentColor; }
+
+/* Era bands and dividers — solid sepia rule + ornate label */
+body.theme-renaissance .era-band {
+  fill: rgba(184, 134, 43, 0.05);
+}
+body.theme-renaissance .era-divider {
+  stroke: rgba(140, 100, 50, 0.50);
+  stroke-width: 1.2;
+  stroke-dasharray: 0;
+}
+body.theme-renaissance .era-label {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2.8px;
+  fill: #6b4a26;
+}
+body.theme-renaissance .era-range-label {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: 11px;
+  fill: #8a6a3e;
+  opacity: 1;
+}
+
+/* Nodes — parchment cards with sepia rule */
+body.theme-renaissance .node-rect {
+  fill: #f6ecca;
+  stroke: rgba(80, 50, 20, 0.42);
+  stroke-width: 1;
+}
+body.theme-renaissance .node:hover .node-rect {
+  fill: #fdf2cf;
+  stroke: #8c1a1a;
+  stroke-width: 1.2;
+  filter: drop-shadow(0 0 8px rgba(184, 134, 43, 0.55));
+}
+body.theme-renaissance .node.selected .node-rect {
+  fill: #fef4d2;
+  stroke: #8c1a1a;
+  stroke-width: 1.6;
+  filter: drop-shadow(0 0 14px rgba(184, 134, 43, 0.75));
+}
+body.theme-renaissance .node-meta {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: 10.5px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  fill: #6b4a26;
+}
+body.theme-renaissance .node-title {
+  font-family: "Cinzel", "EB Garamond", serif;
+  font-weight: 600;
+  font-size: 13px;
+  fill: #3b2614;
+}
+body.theme-renaissance .node-year {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: 11px;
+  fill: #8a6a3e;
+}
+
+/* Edges — like ink on aged paper */
+body.theme-renaissance .edge {
+  stroke: rgba(80, 50, 20, 0.32);
+  stroke-width: 1.2;
+}
+body.theme-renaissance .edge.highlighted {
+  stroke: #8c1a1a;
+  stroke-width: 1.8;
+  filter: drop-shadow(0 0 4px rgba(140, 26, 26, 0.5));
+}
+body.theme-renaissance .edge.dimmed {
+  stroke: rgba(80, 50, 20, 0.10);
+}
+
+/* Detail panel — open vellum with double rule + dropcap */
+body.theme-renaissance .detail {
+  background:
+    radial-gradient(800px 600px at 50% 0%, rgba(184, 134, 43, 0.16), transparent 60%),
+    #f6ecca;
+  border: 1px solid #8a6a3e;
+  outline: 4px double #b8862b;
+  outline-offset: -7px;
+  border-radius: 4px;
+  box-shadow: 0 12px 40px rgba(60, 40, 20, 0.45);
+  backdrop-filter: none;
+}
+body.theme-renaissance .detail-img {
+  border-bottom: 2px solid #8a6a3e;
+}
+body.theme-renaissance .detail-img img {
+  filter: sepia(0.5) contrast(0.95) brightness(0.92);
+}
+body.theme-renaissance .detail-img::after {
+  background:
+    linear-gradient(180deg, transparent 50%, rgba(60, 40, 20, 0.45) 100%),
+    color-mix(in srgb, var(--cat) 22%, transparent);
+}
+body.theme-renaissance .detail-close {
+  background: rgba(184, 134, 43, 0.15);
+  color: #6b4a26;
+  border: 1px solid #8a6a3e;
+}
+body.theme-renaissance .detail-close:hover {
+  background: rgba(184, 134, 43, 0.30);
+  color: #3b2614;
+}
+body.theme-renaissance .detail-cat {
+  font-family: "Cinzel", serif;
+  font-size: 10.5px;
+  letter-spacing: 1.8px;
+}
+body.theme-renaissance .detail-title {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #3b2614;
+  letter-spacing: 0.5px;
+}
+/* Illuminated dropcap on the first letter of the detail title. */
+body.theme-renaissance .detail-title::first-letter {
+  font-family: "Cinzel", "EB Garamond", serif;
+  font-weight: 700;
+  font-size: 1.7em;
+  color: #8c1a1a;
+  margin-right: 2px;
+  text-shadow: 0 1px 0 rgba(184, 134, 43, 0.3);
+}
+body.theme-renaissance .detail-title-zh {
+  font-family: "EB Garamond", "Songti SC", serif;
+  font-style: italic;
+  font-size: 15px;
+  color: #6b4a26;
+  letter-spacing: 1px;
+}
+body.theme-renaissance .detail-year {
+  color: #8c1a1a;
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: 13.5px;
+}
+body.theme-renaissance .detail-desc {
+  color: #3b2614;
+  font-family: "EB Garamond", serif;
+  font-size: 14.5px;
+  line-height: 1.65;
+}
+body.theme-renaissance .detail-section {
+  border-top: 1px solid rgba(80, 50, 20, 0.25);
+  margin-top: 18px;
+  padding-top: 18px;
+}
+/* A small fleuron centered in the rule above each section. */
+body.theme-renaissance .detail-section::before {
+  content: "❦";
+  display: block;
+  text-align: center;
+  color: var(--gold);
+  font-size: 14px;
+  margin-top: -28px;
+  margin-bottom: 8px;
+  background: #f6ecca;
+  width: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -2px;
+}
+body.theme-renaissance .detail-section-title {
+  font-family: "Cinzel", serif;
+  color: #6b4a26;
+  letter-spacing: 1.8px;
+  font-weight: 600;
+}
+body.theme-renaissance .detail-link {
+  background: rgba(184, 134, 43, 0.10);
+  border: 1px solid rgba(80, 50, 20, 0.20);
+  color: #3b2614;
+  font-family: "EB Garamond", serif;
+  font-size: 14px;
+}
+body.theme-renaissance .detail-link:hover {
+  background: rgba(184, 134, 43, 0.22);
+  border-color: #8c1a1a;
+  color: #3b2614;
+}
+body.theme-renaissance .unlock-chip {
+  background: rgba(184, 134, 43, 0.10);
+  border: 1px solid rgba(80, 50, 20, 0.22);
+  color: #3b2614;
+  font-family: "EB Garamond", serif;
+  font-size: 12.5px;
+}
+body.theme-renaissance .unlock-chip:hover {
+  background: rgba(184, 134, 43, 0.22);
+  border-color: #8c1a1a;
+  color: #3b2614;
+}
+body.theme-renaissance .unlock-chip .unlock-zh {
+  color: #8a6a3e;
+  font-style: italic;
+}
+
+/* Controls (zoom buttons, scrollbar) */
+body.theme-renaissance .controls {
+  background: rgba(245, 233, 201, 0.92);
+  border: 1px solid #8a6a3e;
+  backdrop-filter: none;
+}
+body.theme-renaissance .ctrl-btn { color: #6b4a26; }
+body.theme-renaissance .ctrl-btn:hover {
+  background: rgba(184, 134, 43, 0.22);
+  color: #3b2614;
+}
+body.theme-renaissance .zoom-level {
+  background: rgba(245, 233, 201, 0.92);
+  border: 1px solid #8a6a3e;
+  color: #6b4a26;
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+}
+body.theme-renaissance .scrollbar-track {
+  background: rgba(80, 50, 20, 0.12);
+}
+body.theme-renaissance .scrollbar-thumb {
+  background: rgba(140, 100, 50, 0.50);
+}
+body.theme-renaissance .scrollbar-thumb:hover { background: rgba(140, 100, 50, 0.72); }
+body.theme-renaissance .scrollbar-thumb.dragging { background: #8c1a1a; }
+body.theme-renaissance .scrollbar-era-tick {
+  background: rgba(140, 100, 50, 0.62);
+}
+body.theme-renaissance .scrollbar-era-tick:hover {
+  background: #8c1a1a;
+  transform: scaleY(1.3);
+}
+body.theme-renaissance .scrollbar-era-tick::after {
+  background: #f6ecca;
+  border: 1px solid #8a6a3e;
+  color: #3b2614;
+  font-family: "Cinzel", serif;
+}
+
+/* Webkit scrollbar in Renaissance theme */
+body.theme-renaissance ::-webkit-scrollbar-thumb {
+  background: rgba(80, 50, 20, 0.25);
+}
+body.theme-renaissance ::-webkit-scrollbar-thumb:hover {
+  background: rgba(80, 50, 20, 0.45);
+}

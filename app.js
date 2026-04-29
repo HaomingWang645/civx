@@ -163,44 +163,89 @@ const ERA_HEADER_H = 60;
 const PADDING_X = 60;
 const PADDING_Y = 100;
 
+// ───────────── Year parsing ─────────────
+// Parses tech.year strings into a numeric calendar year so we can position
+// techs chronologically. Handles "~3.3 Mya", "~400 kya", "~3300 BCE",
+// "~500 CE", "1453", "1300–1500" (uses first), "12 kya (widespread)".
+function parseYear(s) {
+  if (!s) return null;
+  s = String(s).trim().replace(/^~/, "").replace(/\s*\(.*?\)\s*/g, "").trim();
+  // Range like "1300-1500" or "1300–1500": take first number
+  let m = s.match(/^([\-\d.]+)\s*[–\-]\s*([\-\d.]+)\s*([A-Za-z]*)$/);
+  if (m) s = m[1] + " " + (m[3] || "");
+  m = s.match(/^(-?[\d.]+)\s*([A-Za-z]*)/);
+  if (!m) return null;
+  const num = parseFloat(m[1]);
+  const unit = (m[2] || "").toUpperCase();
+  if (unit === "MYA") return -num * 1_000_000;
+  if (unit === "KYA") return -num * 1000;
+  if (unit === "BCE" || unit === "BC") return -num;
+  return num; // CE, AD, or no unit
+}
+
 // ───────────── Layout: assign each tech an (eraSubcol, rowIdx) ─────────────
-// Each era splits into sub-columns by *in-era prereq depth*: a tech sits in
-// sub-column N+1 iff at least one of its prereqs in the same era is in N.
-// This makes "scavenging → cooking" inside Lower Paleolithic show as left→right
-// rather than stacked. Era widths now vary with depth.
+// Sub-column = chronological bucket inside the era (so x-axis ≈ time).
+// Bucket count per era is set to match the topological depth (so older
+// "depth=N" widths still hold), but tech position within the era is by year:
+//   subcol = round( (year - era_min_year) / (era_max_year - era_min_year) * (N-1) )
+// Then within a bucket, vertical order is by category + barycenter sweep.
 function layoutTechs() {
   const eraIdx = Object.fromEntries(ERAS.map((e, i) => [e.id, i]));
   const techById = Object.fromEntries(TECHS.map(t => [t.id, t]));
 
-  // Compute in-era topological level for each tech
-  const inEraLevel = {};
-  for (const t of TECHS) inEraLevel[t.id] = -1;
+  // (a) Compute in-era topological depth — used only to set per-era width.
+  const topoLevel = {};
+  for (const t of TECHS) topoLevel[t.id] = -1;
   let changed = true, iter = 0;
   while (changed && iter < 50) {
     changed = false; iter++;
     for (const t of TECHS) {
-      if (inEraLevel[t.id] >= 0) continue;
+      if (topoLevel[t.id] >= 0) continue;
       const inEraPrereqs = t.prereqs.filter(p => techById[p] && techById[p].era === t.era);
       if (inEraPrereqs.length === 0) {
-        inEraLevel[t.id] = 0; changed = true;
-      } else if (inEraPrereqs.every(p => inEraLevel[p] >= 0)) {
-        inEraLevel[t.id] = Math.max(...inEraPrereqs.map(p => inEraLevel[p])) + 1;
+        topoLevel[t.id] = 0; changed = true;
+      } else if (inEraPrereqs.every(p => topoLevel[p] >= 0)) {
+        topoLevel[t.id] = Math.max(...inEraPrereqs.map(p => topoLevel[p])) + 1;
         changed = true;
       }
     }
   }
-  // Anything unresolved (shouldn't happen on a DAG) gets level 0
-  for (const t of TECHS) if (inEraLevel[t.id] < 0) inEraLevel[t.id] = 0;
+  for (const t of TECHS) if (topoLevel[t.id] < 0) topoLevel[t.id] = 0;
 
-  // Group by (era, level) into buckets, track each era's max level
+  // (b) Year-based sub-column inside each era. nLevels per era = max(2, topo+1)
+  // so a long-prereq-chain era keeps enough room.
+  const eraLevels = {}; // era_id -> nLevels - 1
+  for (const t of TECHS) eraLevels[t.era] = Math.max(eraLevels[t.era] ?? 0, topoLevel[t.id]);
+  for (const era of ERAS) eraLevels[era.id] = Math.max(eraLevels[era.id] ?? 0, 1);
+
+  // Year range per era
+  const eraYearMin = {}, eraYearMax = {};
+  for (const t of TECHS) {
+    const y = parseYear(t.year);
+    if (y == null) continue;
+    eraYearMin[t.era] = Math.min(eraYearMin[t.era] ?? Infinity, y);
+    eraYearMax[t.era] = Math.max(eraYearMax[t.era] ?? -Infinity, y);
+  }
+
+  const inEraLevel = {};
+  for (const t of TECHS) {
+    const N = eraLevels[t.era] + 1;
+    const y = parseYear(t.year);
+    const yMin = eraYearMin[t.era], yMax = eraYearMax[t.era];
+    if (y == null || yMin == null || yMax == null || yMax === yMin || N <= 1) {
+      inEraLevel[t.id] = 0;
+    } else {
+      const frac = (y - yMin) / (yMax - yMin);
+      inEraLevel[t.id] = Math.max(0, Math.min(N - 1, Math.round(frac * (N - 1))));
+    }
+  }
+
+  // Group by (era, level) into buckets — eraLevels was already set above.
   const buckets = {}; // key "era|level" -> [techs]
-  const eraLevels = {}; // era_id -> max level
   for (const t of TECHS) {
     const key = t.era + "|" + inEraLevel[t.id];
     (buckets[key] ||= []).push(t);
-    eraLevels[t.era] = Math.max(eraLevels[t.era] ?? 0, inEraLevel[t.id]);
   }
-  for (const era of ERAS) eraLevels[era.id] = eraLevels[era.id] ?? 0;
 
   // Era pixel start (variable widths now)
   const eraXStart = {};
@@ -542,6 +587,25 @@ function showDetail(id) {
         <div class="detail-section-title">Leads to</div>
         ${dependents.map(p => `<div class="detail-link" data-id="${p.id}">${p.name}</div>`).join("")}
       </div>` : ""}
+    ${(() => {
+      const unlocks = (window.TECH_UNLOCKS && window.TECH_UNLOCKS[t.id]) || [];
+      const cats = window.TECH_UNLOCK_CATEGORIES || {};
+      if (!unlocks.length) return "";
+      return `
+        <div class="detail-section">
+          <div class="detail-section-title">Unlocks</div>
+          <div class="detail-unlocks">
+            ${unlocks.map(u => {
+              const c = cats[u.type] || { icon: "•", label: u.type };
+              const zh = u.name_zh ? ` <span class="unlock-zh">(${u.name_zh})</span>` : "";
+              return `<span class="unlock-chip" title="${c.label}">
+                <span class="unlock-icon">${c.icon}</span>
+                <span class="unlock-name">${u.name}${zh}</span>
+              </span>`;
+            }).join("")}
+          </div>
+        </div>`;
+    })()}
   `;
 
   // Render the fallback sigil into the .detail-img-fallback div (used when <img> errors).
@@ -804,7 +868,54 @@ window.addEventListener("keydown", (e) => {
 
 window.addEventListener("resize", () => updateScrollbar());
 
+// ───────────── Theme switching ─────────────
+// Two palettes: modern (the original cool pastels) and Renaissance (warm,
+// saturated tones that read well on parchment). Snapshot the modern palette
+// from data.js at load so we can switch back without losing it.
+const CATEGORY_COLORS_MODERN = Object.fromEntries(
+  Object.entries(CATEGORIES).map(([id, c]) => [id, c.color])
+);
+const CATEGORY_COLORS_RENAISSANCE = {
+  tools:         "#3a6678",
+  subsistence:   "#5a7a3a",
+  shelter:       "#b8862b",
+  social:        "#8c2c4b",
+  weapons:       "#8b3a1f",
+  knowledge:     "#3a4a7a",
+  energy:        "#c25b1f",
+  transport:     "#3f7a7a",
+  medicine:      "#4a7a3a",
+  communication: "#a87a1a",
+  economy:       "#6a3a6a",
+};
+
+function applyTheme(name) {
+  document.body.className = "theme-" + name;
+  const palette = name === "renaissance" ? CATEGORY_COLORS_RENAISSANCE : CATEGORY_COLORS_MODERN;
+  for (const id in CATEGORIES) {
+    if (palette[id]) CATEGORIES[id].color = palette[id];
+  }
+  try { localStorage.setItem("techtree-theme", name); } catch(e) {}
+  const btn = document.getElementById("theme-toggle");
+  if (btn) btn.textContent = name === "modern" ? "Renaissance" : "Modern";
+}
+
+const themeBtn = document.getElementById("theme-toggle");
+themeBtn.addEventListener("click", () => {
+  const cur = document.body.classList.contains("theme-renaissance") ? "renaissance" : "modern";
+  const next = cur === "modern" ? "renaissance" : "modern";
+  applyTheme(next);
+  // Re-render so node sigils / category bars pick up the new palette,
+  // preserving the user's current pan + zoom.
+  const saved = { tx: state.tx, ty: state.ty, scale: state.scale };
+  renderSidebar();
+  render();
+  state.tx = saved.tx; state.ty = saved.ty; state.scale = saved.scale;
+  applyTransform();
+});
+
 // ───────────── Boot ─────────────
+applyTheme((function(){ try { return localStorage.getItem("techtree-theme") || "renaissance"; } catch(e) { return "renaissance"; } })());
 renderSidebar();
 render();
 })();
