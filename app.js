@@ -2,16 +2,162 @@
 // Layout: techs are placed in columns by era, rows assigned by a layered topological sort
 // that minimizes edge crossings and groups categories. Edges are drawn as smooth cubic Béziers.
 
+// IIFE so our top-level `const` names don't collide with the same names already
+// declared at top level in data.js (browsers share one script-scoped lexical env).
+(() => {
 const { ERAS, CATEGORIES, TECHS } = window.TECH_TREE;
 
 const techById = Object.fromEntries(TECHS.map(t => [t.id, t]));
 const childrenById = Object.fromEntries(TECHS.map(t => [t.id, []]));
 for (const t of TECHS) for (const p of t.prereqs) if (childrenById[p]) childrenById[p].push(t.id);
 
+// ───────────── Generative sigil ─────────────
+// Deterministic abstract glyph keyed off tech.id. Same image across reloads,
+// distinguishable across techs, unified style across categories.
+function hash32(s) {
+  let h = 2166136261 >>> 0;
+  for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; }
+  return h >>> 0;
+}
+function makeRng(seed) {
+  let s = seed >>> 0 || 1;
+  return () => { s ^= s << 13; s ^= s >>> 17; s ^= s << 5; return ((s >>> 0) % 100000) / 100000; };
+}
+
+// Build a tiny SVG <g> sigil sized to fit a `size`×`size` box. Returns a DOM <g>.
+function buildSigilGroup(techId, color, size) {
+  const r = makeRng(hash32(techId));
+  const cx = size / 2, cy = size / 2;
+  const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+  g.setAttribute("class", "sigil");
+
+  // tinted backdrop disc
+  const back = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  back.setAttribute("cx", cx); back.setAttribute("cy", cy);
+  back.setAttribute("r", size * 0.46);
+  back.setAttribute("fill", color);
+  back.setAttribute("opacity", "0.14");
+  g.appendChild(back);
+
+  const ring = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  ring.setAttribute("cx", cx); ring.setAttribute("cy", cy);
+  ring.setAttribute("r", size * 0.46);
+  ring.setAttribute("fill", "none");
+  ring.setAttribute("stroke", color); ring.setAttribute("stroke-opacity", "0.55");
+  ring.setAttribute("stroke-width", "0.8");
+  g.appendChild(ring);
+
+  const motif = Math.floor(r() * 5);
+  const rot = Math.floor(r() * 360);
+  const inner = document.createElementNS("http://www.w3.org/2000/svg", "g");
+  inner.setAttribute("transform", `rotate(${rot} ${cx} ${cy})`);
+  g.appendChild(inner);
+
+  const stroke = (el, w = 1.1) => {
+    el.setAttribute("fill", "none");
+    el.setAttribute("stroke", color);
+    el.setAttribute("stroke-width", w);
+    el.setAttribute("stroke-linecap", "round");
+    el.setAttribute("stroke-linejoin", "round");
+    el.setAttribute("opacity", "0.92");
+    return el;
+  };
+  const ns = "http://www.w3.org/2000/svg";
+
+  if (motif === 0) {
+    // radial spokes
+    const n = 5 + Math.floor(r() * 5);
+    for (let i = 0; i < n; i++) {
+      const a = (i / n) * Math.PI * 2;
+      const r1 = size * 0.10, r2 = size * (0.28 + r() * 0.12);
+      const ln = document.createElementNS(ns, "line");
+      ln.setAttribute("x1", cx + Math.cos(a) * r1);
+      ln.setAttribute("y1", cy + Math.sin(a) * r1);
+      ln.setAttribute("x2", cx + Math.cos(a) * r2);
+      ln.setAttribute("y2", cy + Math.sin(a) * r2);
+      stroke(ln, 1.0);
+      inner.appendChild(ln);
+    }
+    const dot = document.createElementNS(ns, "circle");
+    dot.setAttribute("cx", cx); dot.setAttribute("cy", cy);
+    dot.setAttribute("r", size * 0.06);
+    dot.setAttribute("fill", color);
+    inner.appendChild(dot);
+  } else if (motif === 1) {
+    // concentric arcs
+    const arcs = 2 + Math.floor(r() * 2);
+    for (let i = 0; i < arcs; i++) {
+      const rad = size * (0.16 + i * 0.10);
+      const start = r() * Math.PI * 2, sweep = Math.PI * (0.7 + r() * 0.9);
+      const x1 = cx + Math.cos(start) * rad, y1 = cy + Math.sin(start) * rad;
+      const x2 = cx + Math.cos(start + sweep) * rad, y2 = cy + Math.sin(start + sweep) * rad;
+      const large = sweep > Math.PI ? 1 : 0;
+      const path = document.createElementNS(ns, "path");
+      path.setAttribute("d", `M ${x1.toFixed(2)} ${y1.toFixed(2)} A ${rad} ${rad} 0 ${large} 1 ${x2.toFixed(2)} ${y2.toFixed(2)}`);
+      stroke(path, 1.1);
+      inner.appendChild(path);
+    }
+  } else if (motif === 2) {
+    // polygon
+    const sides = 3 + Math.floor(r() * 4);
+    let pts = "";
+    for (let i = 0; i < sides; i++) {
+      const a = (i / sides) * Math.PI * 2 + r() * 0.2;
+      const rad = size * (0.26 + r() * 0.08);
+      pts += `${(cx + Math.cos(a) * rad).toFixed(2)},${(cy + Math.sin(a) * rad).toFixed(2)} `;
+    }
+    const poly = document.createElementNS(ns, "polygon");
+    poly.setAttribute("points", pts.trim());
+    stroke(poly, 1.2);
+    inner.appendChild(poly);
+  } else if (motif === 3) {
+    // crossed diagonals + dots
+    const a = r() * Math.PI;
+    for (let k = 0; k < 2; k++) {
+      const ang = a + k * Math.PI / 2;
+      const ln = document.createElementNS(ns, "line");
+      const rad = size * 0.34;
+      ln.setAttribute("x1", cx - Math.cos(ang) * rad); ln.setAttribute("y1", cy - Math.sin(ang) * rad);
+      ln.setAttribute("x2", cx + Math.cos(ang) * rad); ln.setAttribute("y2", cy + Math.sin(ang) * rad);
+      stroke(ln, 1.0); inner.appendChild(ln);
+    }
+    for (let i = 0; i < 3; i++) {
+      const aa = r() * Math.PI * 2;
+      const rr = size * (0.18 + r() * 0.18);
+      const dot = document.createElementNS(ns, "circle");
+      dot.setAttribute("cx", cx + Math.cos(aa) * rr);
+      dot.setAttribute("cy", cy + Math.sin(aa) * rr);
+      dot.setAttribute("r", size * 0.04);
+      dot.setAttribute("fill", color);
+      inner.appendChild(dot);
+    }
+  } else {
+    // sine ribbon
+    let d = "";
+    const amp = size * (0.10 + r() * 0.06);
+    const phase = r() * Math.PI * 2;
+    for (let x = -size * 0.36; x <= size * 0.36; x += size * 0.06) {
+      const y = Math.sin((x / size) * 7 + phase) * amp;
+      d += (d ? " L " : "M ") + (cx + x).toFixed(2) + " " + (cy + y).toFixed(2);
+    }
+    const path = document.createElementNS(ns, "path");
+    path.setAttribute("d", d);
+    stroke(path, 1.2);
+    inner.appendChild(path);
+    // small fixed dot at center
+    const dot = document.createElementNS(ns, "circle");
+    dot.setAttribute("cx", cx); dot.setAttribute("cy", cy);
+    dot.setAttribute("r", size * 0.045);
+    dot.setAttribute("fill", color);
+    inner.appendChild(dot);
+  }
+  return g;
+}
+
 // ───────────── Layout constants ─────────────
-const COL_WIDTH = 280;
+const COL_WIDTH = 300;
 const ROW_HEIGHT = 90;
-const NODE_W = 220;
+const NODE_W = 240;
 const NODE_H = 64;
 const ERA_HEADER_H = 60;
 const PADDING_X = 60;
@@ -181,9 +327,16 @@ function render() {
     bar.setAttribute("rx", 2);
     g.appendChild(bar);
 
+    const SIGIL = 28;
+    const sigil = buildSigilGroup(t.id, cat.color, SIGIL);
+    sigil.setAttribute("transform", `translate(${10}, ${(NODE_H - SIGIL) / 2})`);
+    g.appendChild(sigil);
+
+    const TEXT_X = 10 + SIGIL + 8; // sigil + gap
+
     const meta = document.createElementNS("http://www.w3.org/2000/svg", "text");
     meta.setAttribute("class", "node-meta");
-    meta.setAttribute("x", 16);
+    meta.setAttribute("x", TEXT_X);
     meta.setAttribute("y", 22);
     meta.setAttribute("fill", cat.color);
     meta.textContent = cat.name;
@@ -191,7 +344,7 @@ function render() {
 
     const title = document.createElementNS("http://www.w3.org/2000/svg", "text");
     title.setAttribute("class", "node-title");
-    title.setAttribute("x", 16);
+    title.setAttribute("x", TEXT_X);
     title.setAttribute("y", 42);
     title.textContent = t.name;
     g.appendChild(title);
@@ -297,8 +450,21 @@ function showDetail(id) {
   const dependents = childrenById[id].map(cid => techById[cid]);
   const prereqs = t.prereqs.map(pid => techById[pid]).filter(Boolean);
 
+  // Image slot. images.js maps tech id -> downloaded Wikipedia thumbnail path.
+  // If missing or fails to load, the slot collapses to the larger generative sigil.
+  const imgPath = (window.TECH_IMAGES && window.TECH_IMAGES[t.id]) || null;
+  const imgCredit = (window.TECH_IMAGE_CREDITS && window.TECH_IMAGE_CREDITS[t.id]) || null;
+  const credit = imgCredit
+    ? `<a class="detail-img-credit" href="${imgCredit.url}" target="_blank" rel="noopener">Wikipedia · ${imgCredit.article}</a>`
+    : "";
+
   detailEl.innerHTML = `
     <button class="detail-close" aria-label="Close">×</button>
+    <div class="detail-img${imgPath ? "" : " no-img"}" style="--cat: ${cat.color}">
+      ${imgPath ? `<img src="${imgPath}" alt="${t.name}" onerror="this.parentElement.classList.add('no-img');" />` : ""}
+      <div class="detail-img-fallback" aria-hidden="true"></div>
+      ${credit}
+    </div>
     <div class="detail-cat" style="color: ${cat.color}">
       <span class="detail-cat-dot" style="background: ${cat.color}"></span>
       ${cat.name}
@@ -317,6 +483,17 @@ function showDetail(id) {
         ${dependents.map(p => `<div class="detail-link" data-id="${p.id}">${p.name}</div>`).join("")}
       </div>` : ""}
   `;
+
+  // Render the fallback sigil into the .detail-img-fallback div (used when <img> errors).
+  const fallback = detailEl.querySelector(".detail-img-fallback");
+  const sig = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  sig.setAttribute("viewBox", "0 0 200 200");
+  sig.setAttribute("preserveAspectRatio", "xMidYMid meet");
+  sig.style.width = "100%";
+  sig.style.height = "100%";
+  sig.appendChild(buildSigilGroup(t.id, cat.color, 200));
+  fallback.appendChild(sig);
+
   detailEl.classList.add("open");
   detailEl.querySelector(".detail-close").onclick = clearSelection;
   detailEl.querySelectorAll(".detail-link").forEach(el => {
@@ -452,3 +629,4 @@ window.addEventListener("resize", () => fitToView());
 // ───────────── Boot ─────────────
 renderSidebar();
 render();
+})();

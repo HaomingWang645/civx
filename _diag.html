@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"></head>
+<body>
+<div id="status">loading...</div>
+<div id="canvas"></div>
+<svg id="canvas2"><g id="viewport"></g><g id="eras"></g><g id="edges"></g><g id="nodes"></g></svg>
+<aside id="detail"></aside>
+<button id="zoom-in"></button><button id="zoom-out"></button><button id="zoom-fit"></button>
+<div id="zoom-level"></div>
+<input id="search-input">
+<div id="category-list"></div>
+<div id="era-list"></div>
+<script>
+window.addEventListener("error", (e) => {
+  document.getElementById("status").textContent = "ERR: " + e.message + " @ " + e.filename + ":" + e.lineno;
+});
+</script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script>
+if (document.getElementById("status").textContent === "loading...") {
+  const cl = document.getElementById("category-list");
+  const el = document.getElementById("era-list");
+  document.getElementById("status").textContent =
+    "OK | techs=" + window.TECH_TREE.TECHS.length +
+    " | cat-items=" + cl.children.length +
+    " | era-items=" + el.children.length;
+}
+</script>
+</body></html>

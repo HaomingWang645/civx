@@ -291,8 +291,67 @@ html, body {
   font-size: 14px;
   display: flex; align-items: center; justify-content: center;
   transition: background .15s;
+  z-index: 2;
 }
 .detail-close:hover { background: rgba(255,255,255,0.12); color: var(--text-0); }
+
+/* Detail image slot — unified duotone treatment. Source images can be photos,
+   paintings, woodcuts, schematics; the filter chain forces them into one look. */
+.detail-img {
+  position: relative;
+  width: calc(100% + 40px);
+  margin: -20px -20px 16px;
+  aspect-ratio: 16 / 10;
+  background:
+    radial-gradient(120% 90% at 30% 25%, color-mix(in srgb, var(--cat) 22%, transparent), transparent 60%),
+    linear-gradient(180deg, #11162a, #0a0e1a);
+  overflow: hidden;
+  border-bottom: 1px solid var(--line-strong);
+}
+.detail-img img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  /* Desaturate + slight contrast bump so wildly varied sources read as one set. */
+  filter: grayscale(0.75) contrast(1.05) brightness(0.9);
+  transition: opacity .25s;
+}
+/* Category-color tint laid on top via blend mode. */
+.detail-img::after {
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(180deg, transparent 50%, rgba(10,14,26,0.55) 100%),
+    color-mix(in srgb, var(--cat) 28%, transparent);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+/* When <img> errored, hide it and show the generative SVG fallback. */
+.detail-img.no-img img { display: none; }
+.detail-img-fallback {
+  position: absolute; inset: 0;
+  display: none;
+  align-items: center; justify-content: center;
+  pointer-events: none;
+}
+.detail-img.no-img .detail-img-fallback { display: flex; }
+/* Hide the duotone overlay when we're showing the SVG fallback (it's already on-brand). */
+.detail-img.no-img::after { display: none; }
+
+.detail-img-credit {
+  position: absolute;
+  bottom: 8px; left: 12px;
+  font-size: 10px; letter-spacing: 0.4px;
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  z-index: 1;
+  background: rgba(0,0,0,0.4);
+  padding: 2px 6px;
+  border-radius: 4px;
+  backdrop-filter: blur(6px);
+}
+.detail-img-credit:hover { color: rgba(255,255,255,0.9); }
 
 .detail-cat {
   display: inline-flex;

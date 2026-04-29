@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Tech Image Style — comparison</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg-0: #0a0e1a; --bg-1: #0f1424; --bg-2: #161b30;
+    --line: rgba(255,255,255,0.08); --line-strong: rgba(255,255,255,0.14);
+    --text-0: #e6e9f2; --text-1: #a4acc4; --text-2: #6b7390;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Inter", -apple-system, sans-serif;
+    background: var(--bg-0); color: var(--text-0);
+    padding: 32px 48px;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1 { font-size: 22px; font-weight: 700; margin-bottom: 6px; letter-spacing: -0.2px; }
+  .lede { color: var(--text-1); font-size: 13px; margin-bottom: 32px; max-width: 860px; line-height: 1.5; }
+  .grid {
+    display: grid;
+    grid-template-columns: 220px repeat(3, 1fr);
+    gap: 20px 24px;
+    align-items: start;
+  }
+  .head {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px;
+    color: var(--text-2); padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  .row-label {
+    padding-top: 18px;
+  }
+  .row-label .name { font-weight: 600; font-size: 14px; margin-bottom: 4px; }
+  .row-label .meta { font-size: 11px; color: var(--text-2); text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .cell {
+    background: var(--bg-1);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 16px;
+    display: flex; flex-direction: column; align-items: center; gap: 10px;
+  }
+  .cell .img-frame {
+    width: 100%;
+    aspect-ratio: 1.6 / 1;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .cell .caption { font-size: 11px; color: var(--text-2); }
+
+  /* === Path 1: generative SVG === */
+  .gen-svg { width: 100%; height: 100%; display: block; }
+
+  /* === Path 2: emoji tile === */
+  .emoji-tile {
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 64px; line-height: 1;
+    filter: drop-shadow(0 4px 16px rgba(0,0,0,0.4));
+  }
+
+  /* === Path 3: AI mock === */
+  .ai-mock {
+    width: 100%; height: 100%;
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+    color: rgba(255,255,255,0.55);
+    font-size: 11px; text-align: center; line-height: 1.4;
+    letter-spacing: 0.4px;
+  }
+  .ai-mock .corner {
+    position: absolute; top: 8px; right: 10px;
+    font-size: 9px; color: rgba(255,255,255,0.4);
+    letter-spacing: 0.8px; text-transform: uppercase;
+  }
+
+  /* path notes */
+  .notes {
+    margin-top: 36px;
+    display: grid; grid-template-columns: repeat(3,1fr); gap: 16px;
+    color: var(--text-1); font-size: 12.5px; line-height: 1.55;
+  }
+  .notes h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--text-0); margin-bottom: 8px; }
+  .notes p { margin-bottom: 8px; }
+  .pro { color: #86efac; }
+  .con { color: #fca5a5; }
+</style>
+</head>
+<body>
+  <h1>Detail-panel image styles — three paths</h1>
+  <p class="lede">Same six techs rendered three ways. Each frame is the slot we'd carve out at the top of the detail panel (≈ 16:10 aspect). All 333 techs would use the chosen approach.</p>
+
+  <div class="grid" id="grid">
+    <div></div>
+    <div class="head">1 · Generative SVG</div>
+    <div class="head">2 · Emoji tile</div>
+    <div class="head">3 · AI illustration</div>
+  </div>
+
+  <div class="notes">
+    <div>
+      <h3>1 · Generative SVG</h3>
+      <p>Each tech's id is hashed to seed a deterministic abstract sigil on a category-tinted gradient. All 333 produced in code, no assets to ship.</p>
+      <p class="pro">+ Free, instant, perfectly unified, scales infinitely.</p>
+      <p class="con">− Decorative, not literal — a node for "Plow" doesn't depict a plow.</p>
+    </div>
+    <div>
+      <h3>2 · Emoji tile</h3>
+      <p>Hand-pick the closest emoji per tech, rendered large on a category-tinted gradient with a consistent frame.</p>
+      <p class="pro">+ Free, semi-literal, tiny effort to ship.</p>
+      <p class="con">− 333 manual mappings, ~20% of techs have no good emoji, OS-dependent rendering (looks different on Mac/Windows/Android).</p>
+    </div>
+    <div>
+      <h3>3 · AI illustration</h3>
+      <p>Generate 333 images via DALL-E / Midjourney / SDXL with one shared style prompt; ship as <code>/images/{id}.png</code>. Mocked here as a styled placeholder.</p>
+      <p class="pro">+ Most polished, literal subject, fully art-directed.</p>
+      <p class="con">− $20–50 + a few hours of generation, billing-attached account, needs review/regen for misses.</p>
+    </div>
+  </div>
+
+<script>
+const SAMPLES = [
+  { id: "fire-making",        name: "Fire-Making",        cat: "tools",         color: "#7dd3fc", emoji: "🔥" },
+  { id: "pottery",            name: "Pottery",            cat: "tools",         color: "#7dd3fc", emoji: "🏺" },
+  { id: "bronze-metallurgy",  name: "Bronze Metallurgy",  cat: "tools",         color: "#7dd3fc", emoji: "⚒️" },
+  { id: "printing-press",     name: "Printing Press",     cat: "communication", color: "#facc15", emoji: "🖨️" },
+  { id: "steam-engine-watt",  name: "Watt Steam Engine",  cat: "energy",        color: "#fb923c", emoji: "🚂" },
+  { id: "smartphone",         name: "Smartphone",         cat: "communication", color: "#facc15", emoji: "📱" },
+];
+
+// Tiny string-hash → seeded RNG.
+function hash32(s) {
+  let h = 2166136261 >>> 0;
+  for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; }
+  return h >>> 0;
+}
+function rng(seed) {
+  let s = seed >>> 0 || 1;
+  return () => { s ^= s << 13; s ^= s >>> 17; s ^= s << 5; return ((s >>> 0) % 100000) / 100000; };
+}
+
+// Path 1: deterministic abstract sigil on category-tinted gradient.
+function generativeSVG(tech) {
+  const r = rng(hash32(tech.id));
+  const W = 320, H = 200, cx = W/2, cy = H/2;
+  const c = tech.color;
+  const motif = Math.floor(r() * 4);
+  const rot = Math.floor(r() * 360);
+  const rings = 2 + Math.floor(r() * 3);
+  const dots = 5 + Math.floor(r() * 9);
+
+  let inner = "";
+  if (motif === 0) {
+    // concentric arcs
+    for (let i = 0; i < rings; i++) {
+      const rad = 28 + i * 14;
+      const start = r() * Math.PI * 2, sweep = Math.PI * (0.6 + r() * 1.0);
+      const x1 = cx + Math.cos(start) * rad, y1 = cy + Math.sin(start) * rad;
+      const x2 = cx + Math.cos(start + sweep) * rad, y2 = cy + Math.sin(start + sweep) * rad;
+      const large = sweep > Math.PI ? 1 : 0;
+      inner += `<path d="M ${x1.toFixed(1)} ${y1.toFixed(1)} A ${rad} ${rad} 0 ${large} 1 ${x2.toFixed(1)} ${y2.toFixed(1)}" fill="none" stroke="${c}" stroke-width="${1.2 + r()*1.6}" stroke-linecap="round" opacity="${0.55 + r()*0.4}"/>`;
+    }
+  } else if (motif === 1) {
+    // radial spokes + dots
+    const n = 8 + Math.floor(r() * 8);
+    for (let i = 0; i < n; i++) {
+      const a = (i / n) * Math.PI * 2;
+      const r1 = 12, r2 = 26 + r() * 32;
+      inner += `<line x1="${(cx+Math.cos(a)*r1).toFixed(1)}" y1="${(cy+Math.sin(a)*r1).toFixed(1)}" x2="${(cx+Math.cos(a)*r2).toFixed(1)}" y2="${(cy+Math.sin(a)*r2).toFixed(1)}" stroke="${c}" stroke-width="1.4" stroke-linecap="round" opacity="0.7"/>`;
+      inner += `<circle cx="${(cx+Math.cos(a)*(r2+4)).toFixed(1)}" cy="${(cy+Math.sin(a)*(r2+4)).toFixed(1)}" r="${1.5 + r()*1.5}" fill="${c}" opacity="0.85"/>`;
+    }
+    inner += `<circle cx="${cx}" cy="${cy}" r="6" fill="${c}"/>`;
+  } else if (motif === 2) {
+    // sparse star-field with one big shape
+    for (let i = 0; i < dots; i++) {
+      inner += `<circle cx="${(40 + r()*240).toFixed(1)}" cy="${(30 + r()*140).toFixed(1)}" r="${(0.8 + r()*1.6).toFixed(1)}" fill="${c}" opacity="${0.4 + r()*0.5}"/>`;
+    }
+    const sides = 3 + Math.floor(r() * 4);
+    let pts = "";
+    for (let i = 0; i < sides; i++) {
+      const a = (i / sides) * Math.PI * 2 + (r()*0.3);
+      const rad = 30 + r() * 14;
+      pts += `${(cx+Math.cos(a)*rad).toFixed(1)},${(cy+Math.sin(a)*rad).toFixed(1)} `;
+    }
+    inner += `<polygon points="${pts}" fill="none" stroke="${c}" stroke-width="1.6" stroke-linejoin="round" opacity="0.85"/>`;
+  } else {
+    // wave bands
+    const bands = 4 + Math.floor(r()*3);
+    for (let i = 0; i < bands; i++) {
+      let d = `M 30 ${30 + i*30}`;
+      const amp = 8 + r() * 14;
+      for (let x = 30; x <= W-30; x += 16) {
+        const y = 30 + i*30 + Math.sin((x + r()*200) * 0.04) * amp;
+        d += ` L ${x.toFixed(1)} ${y.toFixed(1)}`;
+      }
+      inner += `<path d="${d}" fill="none" stroke="${c}" stroke-width="${1.2 + r()*0.8}" opacity="${0.5 + r()*0.4}"/>`;
+    }
+  }
+
+  const gradId = "g_" + tech.id.replace(/[^a-z0-9]/gi, "");
+  return `
+    <svg class="gen-svg" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <radialGradient id="${gradId}" cx="50%" cy="40%" r="70%">
+          <stop offset="0%" stop-color="${c}" stop-opacity="0.22"/>
+          <stop offset="55%" stop-color="${c}" stop-opacity="0.06"/>
+          <stop offset="100%" stop-color="#0a0e1a" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="${W}" height="${H}" fill="#0f1424"/>
+      <rect width="${W}" height="${H}" fill="url(#${gradId})"/>
+      <g transform="rotate(${rot} ${cx} ${cy})">${inner}</g>
+      <circle cx="${cx}" cy="${cy}" r="${42 + r()*8}" fill="none" stroke="${c}" stroke-width="0.6" opacity="0.35"/>
+    </svg>
+  `;
+}
+
+function emojiTile(tech) {
+  const c = tech.color;
+  return `
+    <div class="emoji-tile" style="background:
+      radial-gradient(120% 100% at 50% 30%, ${c}33, transparent 60%),
+      linear-gradient(180deg, #181f3a, #0e1326);">
+      <span>${tech.emoji}</span>
+    </div>
+  `;
+}
+
+function aiMock(tech) {
+  const c = tech.color;
+  return `
+    <div class="ai-mock" style="background:
+      radial-gradient(140% 90% at 30% 30%, ${c}22, transparent 55%),
+      radial-gradient(120% 100% at 80% 90%, ${c}11, transparent 65%),
+      linear-gradient(180deg, #11162a, #0a0e1a);
+      border: 1px dashed ${c}55;">
+      <span class="corner">AI · placeholder</span>
+      <div>
+        <div style="color:${c}; font-weight:600; font-size:13px; margin-bottom:6px; letter-spacing:0.3px;">${tech.name}</div>
+        <div>style ref:<br>flat vector · monochrome accent<br>dark bg · soft volumetric light</div>
+      </div>
+    </div>
+  `;
+}
+
+const grid = document.getElementById("grid");
+for (const t of SAMPLES) {
+  grid.insertAdjacentHTML("beforeend", `
+    <div class="row-label">
+      <div class="name">${t.name}</div>
+      <div class="meta" style="color:${t.color}">${t.cat}</div>
+    </div>
+    <div class="cell"><div class="img-frame">${generativeSVG(t)}</div><div class="caption">deterministic, hash(${t.id})</div></div>
+    <div class="cell"><div class="img-frame">${emojiTile(t)}</div><div class="caption">emoji on tile</div></div>
+    <div class="cell"><div class="img-frame">${aiMock(t)}</div><div class="caption">would be a real PNG</div></div>
+  `);
+}
+</script>
+</body>
+</html>
