@@ -29,7 +29,7 @@ python3 -m http.server 8000
 | [index.html](index.html) | Page shell, SVG canvas, script load order |
 | [styles.css](styles.css) | Layout, themes, typography |
 | [app.js](app.js) | Layout algorithm, rendering, interactions |
-| [data.js](data.js) | `ERAS`, `CATEGORIES`, `TECHS` (~346 entries) |
+| [data.js](data.js) | `ERAS`, `CATEGORIES`, `TECHS` (393 techs across 15 eras) |
 | [translations.js](translations.js) | Chinese tech names |
 | [unlocks.js](unlocks.js) | Per-tech unlocked entities |
 | [images.js](images.js) / [images/](images/) | Image references and assets |
@@ -57,3 +57,8 @@ Python helpers used to build and refine the dataset (re-runnable, not needed at 
 - [_expand_descs.py](_expand_descs.py) — rewrite each tech's `desc` with longer historical context.
 - [_apply_fixes.py](_apply_fixes.py) — bulk corrections to [data.js](data.js).
 - [_fetch_images.py](_fetch_images.py) — populate [images/](images/) and the image manifest.
+- [_build_techs_html.py](_build_techs_html.py) — regenerate [techs.html](techs.html) (the static, crawler-friendly index) from [data.js](data.js). Run after edits to data.
+
+## SEO
+
+[index.html](index.html) ships with meta description, canonical, Open Graph, Twitter card, and JSON-LD `WebSite` data. [robots.txt](robots.txt) and [sitemap.xml](sitemap.xml) are at the root. [techs.html](techs.html) is a flat HTML index of all techs so search engines can index every entry without running JS. Drop a 1200×630 PNG at `images/og.png` for share previews.

@@ -429,7 +429,7 @@ const TECHS = [
   { id: "saddle-stirrup", name: "Saddle & Stirrup", era: "classical", category: "transport",
     year: "~400 CE", prereqs: ["horse-domestication", "iron-tools"],
     desc: "Framed saddle (Sarmatian/Roman) and pendant metal foot loops (China, ~300 CE; Avar Europe, ~600 CE) that lock the rider into place during shock combat. The stirrup is small but consequential — it allows the rider to brace against a couched lance and deliver the horse's full momentum at impact. Lynn White famously argued the stirrup made medieval European feudalism possible, an overstatement but with a kernel of truth." },
-  { id: "silk-production", name: "Silk Production", era: "classical", category: "tools",
+  { id: "silk-production", name: "Silk Production", era: "bronze", category: "tools",
     year: "~2700 BCE", prereqs: ["animal-domestication", "weaving"],
     desc: "Sericulture: rearing Bombyx mori silkworms on mulberry leaves, reeling cocoons into long filaments, and weaving them into silk. Chinese cultivation goes back to at least 2700 BCE; the secret was guarded for millennia, with capital punishment for export of eggs or worms. Smuggled to the Byzantine Empire by monks ~550 CE. Silk drove the Eurasian trade route that took its name and made China's Han and Tang economies world-spanning." },
   { id: "paper-making", name: "Paper", era: "classical", category: "communication",

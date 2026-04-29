@@ -585,6 +585,25 @@ html, body {
 ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.15); }
 
+/* Plain-text index link in topbar. */
+.topbar-link {
+  color: var(--text-1);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  padding: 6px 12px;
+  border-radius: 7px;
+  margin-right: 10px;
+  border: 1px solid transparent;
+  transition: color .15s, border-color .15s, background .15s;
+}
+.topbar-link:hover {
+  color: var(--text-0);
+  border-color: var(--line-strong);
+  background: rgba(255,255,255,0.04);
+}
+
 /* Theme toggle button (lives in topbar). */
 .theme-toggle {
   background: rgba(255,255,255,0.04);

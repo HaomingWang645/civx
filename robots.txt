@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://haomingwang645.github.io/civx/sitemap.xml
