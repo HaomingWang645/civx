@@ -653,14 +653,19 @@ function initialView() {
 
 let isPanning = false;
 let panStart = null;
+let panMoved = false;
+const PAN_THRESHOLD = 5; // px before a press counts as a drag rather than a click
 svg.addEventListener("mousedown", (e) => {
-  if (e.target.closest(".node")) return;
   isPanning = true;
-  panStart = { x: e.clientX - state.tx, y: e.clientY - state.ty };
+  panMoved = false;
+  panStart = { x: e.clientX - state.tx, y: e.clientY - state.ty, sx: e.clientX, sy: e.clientY };
   svg.classList.add("dragging");
 });
 window.addEventListener("mousemove", (e) => {
   if (!isPanning) return;
+  if (!panMoved && Math.hypot(e.clientX - panStart.sx, e.clientY - panStart.sy) > PAN_THRESHOLD) {
+    panMoved = true;
+  }
   state.tx = e.clientX - panStart.x;
   state.ty = e.clientY - panStart.y;
   applyTransform();
@@ -669,6 +674,15 @@ window.addEventListener("mouseup", () => {
   isPanning = false;
   svg.classList.remove("dragging");
 });
+
+// Suppress the synthetic click that follows a drag, so pan-from-node doesn't also select.
+svg.addEventListener("click", (e) => {
+  if (panMoved) {
+    e.stopPropagation();
+    e.preventDefault();
+    panMoved = false;
+  }
+}, true);
 
 svg.addEventListener("wheel", (e) => {
   e.preventDefault();
