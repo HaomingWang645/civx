@@ -464,7 +464,32 @@ window.TECH_IMAGES = {
   "femto-engineering": "images/femto-engineering.png",
   "vacuum-energy-extraction": "images/vacuum-energy-extraction.png",
   "strange-quark-matter": "images/strange-quark-matter.jpg",
-  "dark-energy-engineering": "images/dark-energy-engineering.png"
+  "dark-energy-engineering": "images/dark-energy-engineering.png",
+  "abstract-expressionism": "images/abstract-expressionism.jpg",
+  "lp-vinyl-record": "images/lp-vinyl-record.jpg",
+  "color-television": "images/color-television.jpg",
+  "video-games": "images/video-games.jpg",
+  "cgi-cinema": "images/cgi-cinema.jpg",
+  "anime-globalization": "images/anime-globalization.jpg",
+  "synthetic-performers": "images/synthetic-performers.png",
+  "procedural-infinite-worlds": "images/procedural-infinite-worlds.jpg",
+  "mind-linked-collective-art": "images/mind-linked-collective-art.jpg",
+  "engineered-sensory-modalities": "images/engineered-sensory-modalities.png",
+  "ai-native-art-forms": "images/ai-native-art-forms.png",
+  "stellar-scale-spectacle": "images/stellar-scale-spectacle.jpg",
+  "pan-galactic-festival": "images/pan-galactic-festival.jpg",
+  "bio-art": "images/bio-art.jpg",
+  "frankfurt-school": "images/frankfurt-school.png",
+  "universal-human-rights": "images/universal-human-rights.jpg",
+  "cybernetics": "images/cybernetics.png",
+  "neoliberalism": "images/neoliberalism.jpg",
+  "degrowth-economics": "images/degrowth-economics.jpg",
+  "solarpunk": "images/solarpunk.jpg",
+  "constructed-religions": "images/constructed-religions.jpg",
+  "substrate-pluralism": "images/substrate-pluralism.png",
+  "galactic-citizenship": "images/galactic-citizenship.png",
+  "speciation-ethics": "images/speciation-ethics.jpg",
+  "bauhaus": "images/bauhaus.jpg"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -2322,5 +2347,105 @@ window.TECH_IMAGE_CREDITS = {
   "dark-energy-engineering": {
     "article": "Alcubierre drive",
     "url": "https://en.wikipedia.org/wiki/Alcubierre_drive"
+  },
+  "abstract-expressionism": {
+    "article": "No. 5, 1948",
+    "url": "https://en.wikipedia.org/wiki/No._5%2C_1948"
+  },
+  "lp-vinyl-record": {
+    "article": "LP record",
+    "url": "https://en.wikipedia.org/wiki/LP_record"
+  },
+  "color-television": {
+    "article": "Color television",
+    "url": "https://en.wikipedia.org/wiki/Color_television"
+  },
+  "video-games": {
+    "article": "Pong",
+    "url": "https://en.wikipedia.org/wiki/Pong"
+  },
+  "cgi-cinema": {
+    "article": "Computer-generated imagery",
+    "url": "https://en.wikipedia.org/wiki/Computer-generated_imagery"
+  },
+  "anime-globalization": {
+    "article": "Anime",
+    "url": "https://en.wikipedia.org/wiki/Anime"
+  },
+  "synthetic-performers": {
+    "article": "Vocaloid",
+    "url": "https://en.wikipedia.org/wiki/Vocaloid"
+  },
+  "procedural-infinite-worlds": {
+    "article": "No Man's Sky",
+    "url": "https://en.wikipedia.org/wiki/No_Man's_Sky"
+  },
+  "mind-linked-collective-art": {
+    "article": "Brain–computer interface",
+    "url": "https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface"
+  },
+  "engineered-sensory-modalities": {
+    "article": "Synesthesia",
+    "url": "https://en.wikipedia.org/wiki/Synesthesia"
+  },
+  "ai-native-art-forms": {
+    "article": "AI art",
+    "url": "https://en.wikipedia.org/wiki/AI_art"
+  },
+  "stellar-scale-spectacle": {
+    "article": "Stellar engine",
+    "url": "https://en.wikipedia.org/wiki/Stellar_engine"
+  },
+  "pan-galactic-festival": {
+    "article": "Festival",
+    "url": "https://en.wikipedia.org/wiki/Festival"
+  },
+  "bio-art": {
+    "article": "Bioart",
+    "url": "https://en.wikipedia.org/wiki/Bioart"
+  },
+  "frankfurt-school": {
+    "article": "Critical theory",
+    "url": "https://en.wikipedia.org/wiki/Critical_theory"
+  },
+  "universal-human-rights": {
+    "article": "Universal Declaration of Human Rights",
+    "url": "https://en.wikipedia.org/wiki/Universal_Declaration_of_Human_Rights"
+  },
+  "cybernetics": {
+    "article": "Project Cybersyn",
+    "url": "https://en.wikipedia.org/wiki/Project_Cybersyn"
+  },
+  "neoliberalism": {
+    "article": "Reaganomics",
+    "url": "https://en.wikipedia.org/wiki/Reaganomics"
+  },
+  "degrowth-economics": {
+    "article": "Doughnut (economic model)",
+    "url": "https://en.wikipedia.org/wiki/Doughnut_(economic_model)"
+  },
+  "solarpunk": {
+    "article": "Solarpunk",
+    "url": "https://en.wikipedia.org/wiki/Solarpunk"
+  },
+  "constructed-religions": {
+    "article": "Religion of Humanity",
+    "url": "https://en.wikipedia.org/wiki/Religion_of_Humanity"
+  },
+  "substrate-pluralism": {
+    "article": "Mind uploading",
+    "url": "https://en.wikipedia.org/wiki/Mind_uploading"
+  },
+  "galactic-citizenship": {
+    "article": "United Nations",
+    "url": "https://en.wikipedia.org/wiki/United_Nations"
+  },
+  "speciation-ethics": {
+    "article": "Last and First Men",
+    "url": "https://en.wikipedia.org/wiki/Last_and_First_Men"
+  },
+  "bauhaus": {
+    "article": "Bauhaus",
+    "url": "https://en.wikipedia.org/wiki/Bauhaus"
   }
 };

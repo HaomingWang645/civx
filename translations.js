@@ -516,4 +516,35 @@ window.TECH_NAMES_ZH = {
   "vacuum-energy-extraction": "真空能提取",
   "strange-quark-matter": "奇异夸克物质",
   "dark-energy-engineering": "暗能量工程",
+
+  // ─── Arts & Entertainment (atomic / information) ───
+  "abstract-expressionism": "抽象表现主义",
+  "lp-vinyl-record": "黑胶唱片",
+  "color-television": "彩色电视",
+  "video-games": "电子游戏",
+  "cgi-cinema": "计算机生成图像电影",
+  "anime-globalization": "日本动画全球化",
+
+  // ─── Near Future / Far Future arts & entertainment ───
+  "synthetic-performers": "合成表演者",
+  "procedural-infinite-worlds": "程序生成无限世界",
+  "bio-art": "生物艺术",
+  "mind-linked-collective-art": "心智互联集体艺术",
+  "engineered-sensory-modalities": "工程感官模态",
+  "ai-native-art-forms": "AI 原生艺术形式",
+  "stellar-scale-spectacle": "恒星尺度奇观",
+  "pan-galactic-festival": "泛银河庆典",
+
+  // ─── Culture / Philosophy / Sociology ───
+  "bauhaus": "包豪斯",
+  "frankfurt-school": "法兰克福学派",
+  "universal-human-rights": "普世人权",
+  "cybernetics": "控制论",
+  "neoliberalism": "新自由主义",
+  "degrowth-economics": "去增长经济学",
+  "solarpunk": "太阳朋克",
+  "constructed-religions": "构造性宗教",
+  "substrate-pluralism": "基质多元主义",
+  "galactic-citizenship": "银河公民身份",
+  "speciation-ethics": "物种分化伦理学",
 };

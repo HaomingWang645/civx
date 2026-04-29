@@ -620,10 +620,14 @@ function showDetail(id) {
               const c = cats[u.type] || { icon: "•", label: u.type };
               const zh = u.name_zh ? ` <span class="unlock-zh">(${u.name_zh})</span>` : "";
               const inner = `<span class="unlock-icon">${c.icon}</span><span class="unlock-name">${u.name}${zh}</span>`;
-              // u.wiki controls linking:
-              //   false                 → render as a flat (non-link) chip
-              //   "Article Title"       → link directly to that Wikipedia article
-              //   absent / true         → link via Wikipedia search (legacy default)
+              // Linking precedence:
+              //   u.url = "https://..."  → link to that arbitrary URL (use when no good Wikipedia article exists)
+              //   u.wiki = false         → render as a flat (non-link) chip
+              //   u.wiki = "Article"     → link directly to that Wikipedia article
+              //   absent / true          → link via Wikipedia search (legacy default)
+              if (typeof u.url === "string" && u.url) {
+                return `<a class="unlock-chip" href="${u.url}" target="_blank" rel="noopener" title="${c.label} · open source">${inner}</a>`;
+              }
               if (u.wiki === false) {
                 return `<span class="unlock-chip unlock-chip-flat" title="${c.label}">${inner}</span>`;
               }

@@ -1,6 +1,14 @@
 // What each tech historically unlocks: resources, organisms, monuments, military
 // units, creative works, organizations, and named historical figures.
 // Each entry has English name + Chinese translation rendered in parentheses.
+//
+// Linking precedence per entry (see app.js renderer):
+//   url:  "https://..."   → link to that arbitrary URL (use for things with no
+//                            good Wikipedia article — e.g. recent products,
+//                            company sites, mission pages)
+//   wiki: false           → render as a flat non-link chip
+//   wiki: "Article Title" → link directly to that Wikipedia article
+//   (absent)              → default Wikipedia search by name
 
 window.TECH_UNLOCK_CATEGORIES = {
   resource: { icon: "🪨", label: "Resource" },
@@ -16,7 +24,7 @@ window.TECH_UNLOCK_CATEGORIES = {
 window.TECH_UNLOCKS = {
   // ─── Lower Paleolithic ───────────────────────────────────────
   "bipedal-gait": [
-    { type: "person", name: "Australopithecus afarensis (Lucy)", name_zh: "南方古猿阿法种(露西)" },
+    { type: "person", name: "Australopithecus afarensis (Lucy)", name_zh: "南方古猿阿法种(露西)", wiki: "Australopithecus afarensis" },
   ],
   "oldowan": [
     { type: "person", name: "Homo habilis", name_zh: "能人" },
@@ -31,7 +39,7 @@ window.TECH_UNLOCKS = {
     { type: "unit", name: "Schöningen spears", name_zh: "舍宁根矛" },
   ],
   "cooking": [
-    { type: "person", name: "Homo erectus (encephalization)", name_zh: "直立人(脑容量增大)" },
+    { type: "person", name: "Homo erectus (encephalization)", name_zh: "直立人(脑容量增大)", wiki: "Homo erectus" },
   ],
 
   // ─── Middle Paleolithic ──────────────────────────────────────
@@ -41,10 +49,10 @@ window.TECH_UNLOCKS = {
   ],
   "pigments": [
     { type: "resource", name: "Red ochre", name_zh: "红赭石" },
-    { type: "work", name: "Blombos engravings", name_zh: "布隆博斯洞穴刻画" },
+    { type: "work", name: "Blombos engravings", name_zh: "布隆博斯洞穴刻画", wiki: "Blombos Cave" },
   ],
   "burial": [
-    { type: "wonder", name: "Sungir burials", name_zh: "松吉尔遗址墓葬" },
+    { type: "wonder", name: "Sungir burials", name_zh: "松吉尔遗址墓葬", wiki: "Sungir" },
   ],
 
   // ─── Upper Paleolithic ───────────────────────────────────────
@@ -52,7 +60,7 @@ window.TECH_UNLOCKS = {
     { type: "wonder", name: "Chauvet Cave", name_zh: "肖维岩洞" },
     { type: "wonder", name: "Lascaux", name_zh: "拉斯科洞窟" },
     { type: "wonder", name: "Altamira", name_zh: "阿尔塔米拉洞窟" },
-    { type: "wonder", name: "Sulawesi cave paintings", name_zh: "苏拉威西洞穴画" },
+    { type: "wonder", name: "Sulawesi cave paintings", name_zh: "苏拉威西洞穴画", wiki: "Caves in the Maros-Pangkep karst" },
   ],
   "flute": [
     { type: "work", name: "Divje Babe Flute", name_zh: "迪亚布巴贝骨笛" },
@@ -60,21 +68,21 @@ window.TECH_UNLOCKS = {
   ],
   "figurines": [
     { type: "work", name: "Venus of Willendorf", name_zh: "维伦多夫的维纳斯" },
-    { type: "work", name: "Löwenmensch (Lion-man)", name_zh: "狮人雕像" },
+    { type: "work", name: "Löwenmensch (Lion-man)", name_zh: "狮人雕像", wiki: "Lion-man" },
   ],
   "atlatl": [
-    { type: "unit", name: "Atlatl darts", name_zh: "投矛器飞镖" },
+    { type: "unit", name: "Atlatl darts", name_zh: "投矛器飞镖", wiki: "Spear-thrower" },
   ],
   "shamanism": [
     { type: "person", name: "Shaman", name_zh: "萨满" },
   ],
   "rafts": [
-    { type: "wonder", name: "Settlement of Sahul (Australia)", name_zh: "萨胡尔大陆(澳大利亚)的定居" },
+    { type: "wonder", name: "Settlement of Sahul (Australia)", name_zh: "萨胡尔大陆(澳大利亚)的定居", wiki: "Prehistory of Australia" },
   ],
 
   // ─── Mesolithic ──────────────────────────────────────────────
   "dog": [
-    { type: "animal", name: "Dog (Canis lupus familiaris)", name_zh: "家犬" },
+    { type: "animal", name: "Dog (Canis lupus familiaris)", name_zh: "家犬", wiki: "Dog" },
   ],
   "bow-arrow": [
     { type: "unit", name: "Archer", name_zh: "弓箭手" },
@@ -119,14 +127,14 @@ window.TECH_UNLOCKS = {
     { type: "resource", name: "Bronze", name_zh: "青铜" },
   ],
   "spoked-wheel": [
-    { type: "unit", name: "Spoked-wheel cart", name_zh: "辐条轮战车" },
+    { type: "unit", name: "Spoked-wheel cart", name_zh: "辐条轮战车", wiki: "Spoke" },
   ],
   "horse-domestication": [
     { type: "animal", name: "Horse", name_zh: "马" },
   ],
   "chariot": [
     { type: "unit", name: "War chariot", name_zh: "战车" },
-    { type: "unit", name: "Hittite chariotry", name_zh: "赫梯战车队" },
+    { type: "unit", name: "Hittite chariotry", name_zh: "赫梯战车队", wiki: "Battle of Kadesh" },
   ],
   "composite-bow": [
     { type: "unit", name: "Horse archer", name_zh: "弓骑兵" },
@@ -143,7 +151,7 @@ window.TECH_UNLOCKS = {
   ],
   "cuneiform": [
     { type: "work", name: "Epic of Gilgamesh", name_zh: "《吉尔伽美什史诗》" },
-    { type: "person", name: "Enheduanna (earliest named author)", name_zh: "恩赫杜安娜(最早具名作者)" },
+    { type: "person", name: "Enheduanna (earliest named author)", name_zh: "恩赫杜安娜(最早具名作者)", wiki: "Enheduanna" },
   ],
   "hieroglyphics": [
     { type: "work", name: "Pyramid Texts", name_zh: "《金字塔铭文》" },
@@ -154,7 +162,7 @@ window.TECH_UNLOCKS = {
     { type: "work", name: "Mesha Stele", name_zh: "米沙石碑" },
   ],
   "abacus": [
-    { type: "unit", name: "Sumerian abacus", name_zh: "苏美尔算盘" },
+    { type: "unit", name: "Sumerian abacus", name_zh: "苏美尔算盘", wiki: "Abacus" },
   ],
   "astronomy-observation": [
     { type: "work", name: "Enuma Anu Enlil", name_zh: "《埃努玛·阿努·恩利尔》" },
@@ -164,7 +172,7 @@ window.TECH_UNLOCKS = {
     { type: "work", name: "Egyptian civil calendar", name_zh: "埃及民用历" },
   ],
   "monumental-architecture": [
-    { type: "wonder", name: "Stepped temples", name_zh: "阶梯式神庙" },
+    { type: "wonder", name: "Stepped temples", name_zh: "阶梯式神庙", wiki: "Step pyramid" },
   ],
   "pyramid-ziggurat": [
     { type: "wonder", name: "Great Pyramid of Giza", name_zh: "吉萨大金字塔" },
@@ -188,7 +196,7 @@ window.TECH_UNLOCKS = {
     { type: "plant", name: "Flax", name_zh: "亚麻" },
   ],
   "standing-army": [
-    { type: "unit", name: "Akkadian infantry", name_zh: "阿卡德步兵" },
+    { type: "unit", name: "Akkadian infantry", name_zh: "阿卡德步兵", wiki: "Akkadian Empire" },
     { type: "person", name: "Sargon of Akkad", name_zh: "阿卡德的萨尔贡" },
   ],
   "maritime-trade": [
@@ -196,11 +204,11 @@ window.TECH_UNLOCKS = {
     { type: "wonder", name: "Byblos", name_zh: "比布鲁斯" },
   ],
   "galley-ship": [
-    { type: "unit", name: "Phoenician bireme", name_zh: "腓尼基双层桨座船" },
+    { type: "unit", name: "Phoenician bireme", name_zh: "腓尼基双层桨座船", wiki: "Bireme" },
   ],
   "proto-medicine": [
     { type: "work", name: "Edwin Smith Papyrus", name_zh: "《埃德温·史密斯纸草》" },
-    { type: "work", name: "Diagnostic Handbook (Esagil-kin-apli)", name_zh: "《诊断手册》(埃萨吉尔-金-阿普利)" },
+    { type: "work", name: "Diagnostic Handbook (Esagil-kin-apli)", name_zh: "《诊断手册》(埃萨吉尔-金-阿普利)", wiki: "Esagil-kin-apli" },
   ],
 
   // ─── Classical Antiquity ─────────────────────────────────────
@@ -248,7 +256,7 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "Jabir ibn Hayyan", name_zh: "贾比尔·伊本·哈扬" },
   ],
   "coinage": [
-    { type: "resource", name: "Lydian electrum coin", name_zh: "吕底亚琥珀金币" },
+    { type: "resource", name: "Lydian electrum coin", name_zh: "吕底亚琥珀金币", wiki: "Electrum" },
     { type: "person", name: "Croesus", name_zh: "克罗伊索斯" },
   ],
   "democracy": [
@@ -273,7 +281,7 @@ window.TECH_UNLOCKS = {
   ],
   "roads-paved": [
     { type: "wonder", name: "Appian Way", name_zh: "阿庇亚大道" },
-    { type: "wonder", name: "Persian Royal Road", name_zh: "波斯御道" },
+    { type: "wonder", name: "Persian Royal Road", name_zh: "波斯御道", wiki: "Royal Road" },
     { type: "wonder", name: "Silk Road", name_zh: "丝绸之路" },
   ],
   "aqueduct": [
@@ -281,15 +289,15 @@ window.TECH_UNLOCKS = {
     { type: "wonder", name: "Aqua Claudia", name_zh: "克劳狄渡槽" },
   ],
   "arch-vault": [
-    { type: "wonder", name: "Pantheon (dome)", name_zh: "万神殿(穹顶)" },
+    { type: "wonder", name: "Pantheon (dome)", name_zh: "万神殿(穹顶)", wiki: "Pantheon, Rome" },
     { type: "wonder", name: "Colosseum", name_zh: "罗马斗兽场" },
   ],
   "concrete-roman": [
     { type: "resource", name: "Pozzolana cement", name_zh: "火山灰水泥" },
-    { type: "wonder", name: "Pantheon dome", name_zh: "万神殿穹顶" },
+    { type: "wonder", name: "Pantheon dome", name_zh: "万神殿穹顶", wiki: "Pantheon, Rome" },
   ],
   "crossbow": [
-    { type: "unit", name: "Han dynasty crossbowman", name_zh: "汉朝弩兵" },
+    { type: "unit", name: "Han dynasty crossbowman", name_zh: "汉朝弩兵", wiki: "Military of the Han dynasty" },
   ],
   "siege-engine": [
     { type: "unit", name: "Catapult", name_zh: "投石机" },
@@ -298,13 +306,13 @@ window.TECH_UNLOCKS = {
   ],
   "cavalry": [
     { type: "unit", name: "Cataphract", name_zh: "重甲骑兵" },
-    { type: "unit", name: "Persian Immortal", name_zh: "波斯不死军" },
+    { type: "unit", name: "Persian Immortal", name_zh: "波斯不死军", wiki: "Immortals (Achaemenid Empire)" },
   ],
   "saddle-stirrup": [
     { type: "unit", name: "Heavy cavalry", name_zh: "重骑兵" },
   ],
   "silk-production": [
-    { type: "animal", name: "Silkworm (Bombyx mori)", name_zh: "家蚕" },
+    { type: "animal", name: "Silkworm (Bombyx mori)", name_zh: "家蚕", wiki: "Bombyx mori" },
     { type: "plant", name: "Mulberry", name_zh: "桑树" },
   ],
   "paper-making": [
@@ -326,7 +334,7 @@ window.TECH_UNLOCKS = {
   ],
   "library": [
     { type: "wonder", name: "Library of Alexandria", name_zh: "亚历山大图书馆" },
-    { type: "wonder", name: "Library of Pergamon", name_zh: "帕加马图书馆" },
+    { type: "wonder", name: "Library of Pergamon", name_zh: "帕加马图书馆", wiki: "Library of Pergamum" },
     { type: "wonder", name: "Nalanda", name_zh: "那烂陀寺" },
   ],
   "scientific-method-proto": [
@@ -342,7 +350,7 @@ window.TECH_UNLOCKS = {
     { type: "unit", name: "South-pointing chariot", name_zh: "指南车" },
   ],
   "triremes": [
-    { type: "unit", name: "Athenian trireme", name_zh: "雅典三列桨战船" },
+    { type: "unit", name: "Athenian trireme", name_zh: "雅典三列桨战船", wiki: "Trireme" },
     { type: "person", name: "Themistocles", name_zh: "地米斯托克利" },
   ],
   "gear-mechanism": [
@@ -379,13 +387,13 @@ window.TECH_UNLOCKS = {
     { type: "wonder", name: "Kinderdijk windmills", name_zh: "金德代克风车群" },
   ],
   "horse-collar": [
-    { type: "unit", name: "Heavy plow team", name_zh: "重犁畜队" },
+    { type: "unit", name: "Heavy plow team", name_zh: "重犁畜队", wiki: "Carruca" },
   ],
   "university": [
     { type: "wonder", name: "University of Bologna", name_zh: "博洛尼亚大学" },
     { type: "wonder", name: "University of Paris", name_zh: "巴黎大学" },
-    { type: "wonder", name: "Oxford", name_zh: "牛津大学" },
-    { type: "wonder", name: "Al-Qarawiyyin", name_zh: "卡鲁因大学" },
+    { type: "wonder", name: "Oxford", name_zh: "牛津大学", wiki: "University of Oxford" },
+    { type: "wonder", name: "Al-Qarawiyyin", name_zh: "卡鲁因大学", wiki: "University of al-Qarawiyyin" },
   ],
   "scholasticism": [
     { type: "person", name: "Thomas Aquinas", name_zh: "托马斯·阿奎那" },
@@ -403,12 +411,12 @@ window.TECH_UNLOCKS = {
     { type: "wonder", name: "Himeji Castle", name_zh: "姬路城" },
   ],
   "knight-cavalry": [
-    { type: "unit", name: "Knight (man-at-arms)", name_zh: "骑士(重装战士)" },
+    { type: "unit", name: "Knight (man-at-arms)", name_zh: "骑士(重装战士)", wiki: "Man-at-arms" },
     { type: "org", name: "Knights Templar", name_zh: "圣殿骑士团" },
     { type: "org", name: "Knights Hospitaller", name_zh: "医院骑士团" },
   ],
   "longbow": [
-    { type: "unit", name: "English longbowman", name_zh: "英格兰长弓手" },
+    { type: "unit", name: "English longbowman", name_zh: "英格兰长弓手", wiki: "English longbow" },
     { type: "wonder", name: "Battle of Agincourt", name_zh: "阿金库尔战役" },
   ],
   "cannon-early": [
@@ -420,7 +428,7 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "Henry the Navigator", name_zh: "航海家亨利" },
   ],
   "hospital": [
-    { type: "wonder", name: "Bimaristan al-Mansuri", name_zh: "曼苏里医院" },
+    { type: "wonder", name: "Bimaristan al-Mansuri", name_zh: "曼苏里医院", wiki: "Bimaristan" },
   ],
   "guild": [
     { type: "org", name: "Hanseatic League", name_zh: "汉萨同盟" },
@@ -443,7 +451,7 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "Avicenna", name_zh: "阿维森纳(伊本·西那)" },
   ],
   "paper-mill": [
-    { type: "wonder", name: "Fabriano paper mill", name_zh: "法布里亚诺造纸厂" },
+    { type: "wonder", name: "Fabriano paper mill", name_zh: "法布里亚诺造纸厂", wiki: "Paper and Watermark Museum" },
   ],
 
   // ─── Renaissance ─────────────────────────────────────────────
@@ -467,7 +475,7 @@ window.TECH_UNLOCKS = {
   "linear-perspective": [
     { type: "person", name: "Filippo Brunelleschi", name_zh: "菲利波·布鲁内莱斯基" },
     { type: "person", name: "Leon Battista Alberti", name_zh: "莱昂·巴蒂斯塔·阿尔伯蒂" },
-    { type: "work", name: "On Painting (Della pittura)", name_zh: "《论绘画》" },
+    { type: "work", name: "On Painting (Della pittura)", name_zh: "《论绘画》", wiki: "De pictura" },
   ],
   "oil-painting": [
     { type: "person", name: "Jan van Eyck", name_zh: "扬·凡·艾克" },
@@ -545,7 +553,7 @@ window.TECH_UNLOCKS = {
   "new-world-encounter": [
     { type: "person", name: "Christopher Columbus", name_zh: "克里斯托弗·哥伦布" },
     { type: "person", name: "Amerigo Vespucci", name_zh: "亚美利哥·韦斯普奇" },
-    { type: "wonder", name: "Hispaniola landing", name_zh: "伊斯帕尼奥拉岛登陆" },
+    { type: "wonder", name: "Hispaniola landing", name_zh: "伊斯帕尼奥拉岛登陆", wiki: "Hispaniola" },
   ],
   "colonialism": [
     { type: "person", name: "Hernán Cortés", name_zh: "埃尔南·科尔特斯" },
@@ -555,22 +563,22 @@ window.TECH_UNLOCKS = {
     { type: "plant", name: "Potato", name_zh: "马铃薯" },
     { type: "plant", name: "Tomato", name_zh: "番茄" },
     { type: "plant", name: "Maize", name_zh: "玉米" },
-    { type: "plant", name: "Cacao (chocolate)", name_zh: "可可(巧克力)" },
+    { type: "plant", name: "Cacao (chocolate)", name_zh: "可可(巧克力)", wiki: "Theobroma cacao" },
     { type: "plant", name: "Tobacco", name_zh: "烟草" },
     { type: "plant", name: "Chili pepper", name_zh: "辣椒" },
     { type: "plant", name: "Vanilla", name_zh: "香草" },
-    { type: "animal", name: "Horse (to Americas)", name_zh: "马(传入美洲)" },
-    { type: "animal", name: "Cattle (to Americas)", name_zh: "牛(传入美洲)" },
+    { type: "animal", name: "Horse (to Americas)", name_zh: "马(传入美洲)", wiki: "Mustang" },
+    { type: "animal", name: "Cattle (to Americas)", name_zh: "牛(传入美洲)", wiki: "Criollo cattle" },
   ],
   "musket": [
-    { type: "unit", name: "Matchlock musketeer", name_zh: "火绳枪兵" },
+    { type: "unit", name: "Matchlock musketeer", name_zh: "火绳枪兵", wiki: "Matchlock" },
     { type: "unit", name: "Spanish tercio", name_zh: "西班牙方阵" },
   ],
   "artillery": [
-    { type: "unit", name: "Field cannon", name_zh: "野战炮" },
+    { type: "unit", name: "Field cannon", name_zh: "野战炮", wiki: "Field artillery" },
   ],
   "bastion-fortification": [
-    { type: "wonder", name: "Star fort of Naarden", name_zh: "纳尔登星形要塞" },
+    { type: "wonder", name: "Star fort of Naarden", name_zh: "纳尔登星形要塞", wiki: "Naarden" },
     { type: "wonder", name: "Palmanova", name_zh: "帕尔马诺瓦城" },
   ],
 
@@ -610,7 +618,7 @@ window.TECH_UNLOCKS = {
   "chemistry-modern": [
     { type: "person", name: "Antoine Lavoisier", name_zh: "安托万·拉瓦锡" },
     { type: "work", name: "Traité élémentaire de chimie", name_zh: "《化学基础论》" },
-    { type: "resource", name: "Oxygen (named)", name_zh: "氧(命名)" },
+    { type: "resource", name: "Oxygen (named)", name_zh: "氧(命名)", wiki: "Oxygen" },
   ],
   "electricity-static": [
     { type: "person", name: "Benjamin Franklin", name_zh: "本杰明·富兰克林" },
@@ -639,11 +647,11 @@ window.TECH_UNLOCKS = {
     { type: "unit", name: "Seed drill", name_zh: "条播机" },
   ],
   "crop-rotation-norfolk": [
-    { type: "person", name: "Charles Townshend", name_zh: "查尔斯·汤森" },
+    { type: "person", name: "Charles Townshend", name_zh: "查尔斯·汤森", wiki: "Charles Townshend, 2nd Viscount Townshend" },
   ],
   "selective-breeding": [
     { type: "person", name: "Robert Bakewell", name_zh: "罗伯特·贝克韦尔" },
-    { type: "animal", name: "Dishley Leicester sheep", name_zh: "迪希莱-莱斯特绵羊" },
+    { type: "animal", name: "Dishley Leicester sheep", name_zh: "迪希莱-莱斯特绵羊", wiki: "Leicester Longwool" },
   ],
   "enlightenment-philosophy": [
     { type: "person", name: "John Locke", name_zh: "约翰·洛克" },
@@ -773,7 +781,7 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "Joseph Lister", name_zh: "约瑟夫·李斯特" },
   ],
   "anesthesia": [
-    { type: "person", name: "William Morton", name_zh: "威廉·莫顿" },
+    { type: "person", name: "William Morton", name_zh: "威廉·莫顿", wiki: "William T. G. Morton" },
     { type: "resource", name: "Ether", name_zh: "乙醚" },
     { type: "resource", name: "Chloroform", name_zh: "氯仿" },
   ],
@@ -807,7 +815,7 @@ window.TECH_UNLOCKS = {
   ],
   "interchangeable-parts": [
     { type: "person", name: "Eli Whitney", name_zh: "伊莱·惠特尼" },
-    { type: "person", name: "John H. Hall", name_zh: "约翰·H·霍尔" },
+    { type: "person", name: "John H. Hall", name_zh: "约翰·H·霍尔", wiki: "John H. Hall (gunsmith)" },
   ],
   "assembly-line": [
     { type: "person", name: "Henry Ford", name_zh: "亨利·福特" },
@@ -821,11 +829,11 @@ window.TECH_UNLOCKS = {
   ],
   "labor-union": [
     { type: "org", name: "Knights of Labor", name_zh: "劳动骑士团" },
-    { type: "org", name: "American Federation of Labor (AFL)", name_zh: "美国劳工联合会" },
+    { type: "org", name: "American Federation of Labor (AFL)", name_zh: "美国劳工联合会", wiki: "American Federation of Labor" },
     { type: "org", name: "Trades Union Congress", name_zh: "英国职工大会" },
   ],
   "newspaper-mass": [
-    { type: "org", name: "The New York Sun", name_zh: "《纽约太阳报》" },
+    { type: "org", name: "The New York Sun", name_zh: "《纽约太阳报》", wiki: "The Sun (New York City)" },
     { type: "org", name: "Reuters", name_zh: "路透社" },
     { type: "person", name: "Joseph Pulitzer", name_zh: "约瑟夫·普利策" },
   ],
@@ -898,7 +906,7 @@ window.TECH_UNLOCKS = {
     { type: "unit", name: "Little Boy", name_zh: "小男孩原子弹" },
     { type: "unit", name: "Fat Man", name_zh: "胖子原子弹" },
     { type: "person", name: "J. Robert Oppenheimer", name_zh: "罗伯特·奥本海默" },
-    { type: "wonder", name: "Hiroshima & Nagasaki", name_zh: "广岛与长崎" },
+    { type: "wonder", name: "Hiroshima & Nagasaki", name_zh: "广岛与长崎", wiki: "Atomic bombings of Hiroshima and Nagasaki" },
   ],
   "nuclear-power": [
     { type: "wonder", name: "Obninsk Nuclear Power Plant", name_zh: "奥布宁斯克核电站" },
@@ -930,7 +938,7 @@ window.TECH_UNLOCKS = {
   "green-revolution": [
     { type: "person", name: "Norman Borlaug", name_zh: "诺曼·布劳格" },
     { type: "plant", name: "Dwarf wheat", name_zh: "矮秆小麦" },
-    { type: "plant", name: "IR8 rice", name_zh: "IR8水稻" },
+    { type: "plant", name: "IR8 rice", name_zh: "IR8水稻", wiki: "IR8" },
   ],
   "plastic-polymer": [
     { type: "resource", name: "Bakelite", name_zh: "酚醛塑料" },
@@ -956,15 +964,15 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "John von Neumann", name_zh: "约翰·冯·诺依曼" },
     { type: "person", name: "Grace Hopper", name_zh: "葛丽丝·霍普" },
     { type: "unit", name: "ENIAC", name_zh: "埃尼阿克" },
-    { type: "unit", name: "Colossus", name_zh: "巨人计算机" },
+    { type: "unit", name: "Colossus", name_zh: "巨人计算机", wiki: "Colossus computer" },
   ],
   "programming-language": [
     { type: "person", name: "John Backus", name_zh: "约翰·巴科斯" },
     { type: "person", name: "John McCarthy", name_zh: "约翰·麦卡锡" },
     { type: "person", name: "Dennis Ritchie", name_zh: "丹尼斯·里奇" },
     { type: "work", name: "Fortran", name_zh: "Fortran 语言" },
-    { type: "work", name: "Lisp", name_zh: "Lisp 语言" },
-    { type: "work", name: "C", name_zh: "C 语言" },
+    { type: "work", name: "Lisp", name_zh: "Lisp 语言", wiki: "Lisp (programming language)" },
+    { type: "work", name: "C", name_zh: "C 语言", wiki: "C (programming language)" },
   ],
   "mainframe": [
     { type: "unit", name: "IBM System/360", name_zh: "IBM System/360" },
@@ -1040,7 +1048,7 @@ window.TECH_UNLOCKS = {
   ],
   "insulin-therapy": [
     { type: "person", name: "Frederick Banting", name_zh: "弗雷德里克·班廷" },
-    { type: "person", name: "Charles Best", name_zh: "查尔斯·贝斯特" },
+    { type: "person", name: "Charles Best", name_zh: "查尔斯·贝斯特", wiki: "Charles Best (medical scientist)" },
     { type: "person", name: "J.J.R. Macleod", name_zh: "约翰·麦克劳德" },
     { type: "person", name: "James Collip", name_zh: "詹姆斯·科利普" },
     { type: "resource", name: "Insulin", name_zh: "胰岛素" },
@@ -1048,12 +1056,12 @@ window.TECH_UNLOCKS = {
   ],
   "continental-drift": [
     { type: "person", name: "Alfred Wegener", name_zh: "阿尔弗雷德·魏格纳" },
-    { type: "person", name: "Harry Hess", name_zh: "哈里·赫斯" },
+    { type: "person", name: "Harry Hess", name_zh: "哈里·赫斯", wiki: "Harry Hammond Hess" },
     { type: "work", name: "The Origin of Continents and Oceans", name_zh: "《大陆与海洋的起源》" },
     { type: "unit", name: "Pangaea", name_zh: "盘古大陆" },
   ],
   "radio-broadcasting": [
-    { type: "org", name: "KDKA Pittsburgh", name_zh: "匹兹堡KDKA电台" },
+    { type: "org", name: "KDKA Pittsburgh", name_zh: "匹兹堡KDKA电台", wiki: "KDKA (AM)" },
     { type: "org", name: "BBC", name_zh: "英国广播公司" },
     { type: "person", name: "Edward R. Murrow", name_zh: "爱德华·R·默罗" },
     { type: "person", name: "Franklin D. Roosevelt", name_zh: "富兰克林·罗斯福" },
@@ -1069,7 +1077,7 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "Edwin Hubble", name_zh: "埃德温·哈勃" },
     { type: "person", name: "Georges Lemaître", name_zh: "乔治·勒梅特" },
     { type: "person", name: "Arno Penzias", name_zh: "阿诺·彭齐亚斯" },
-    { type: "person", name: "Robert Wilson", name_zh: "罗伯特·威尔逊" },
+    { type: "person", name: "Robert Wilson", name_zh: "罗伯特·威尔逊", wiki: "Robert Woodrow Wilson" },
     { type: "resource", name: "Hubble's Law", name_zh: "哈勃定律" },
     { type: "resource", name: "Cosmic Microwave Background", name_zh: "宇宙微波背景辐射" },
   ],
@@ -1084,7 +1092,7 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "Vladimir Lenin", name_zh: "弗拉基米尔·列宁" },
     { type: "person", name: "Leon Trotsky", name_zh: "列夫·托洛茨基" },
     { type: "person", name: "Joseph Stalin", name_zh: "约瑟夫·斯大林" },
-    { type: "org", name: "Bolshevik Party", name_zh: "布尔什维克党" },
+    { type: "org", name: "Bolshevik Party", name_zh: "布尔什维克党", wiki: "Bolsheviks" },
     { type: "unit", name: "Soviet Union", name_zh: "苏联" },
     { type: "work", name: "State and Revolution", name_zh: "《国家与革命》" },
   ],
@@ -1099,7 +1107,7 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "Emmeline Pankhurst", name_zh: "艾米琳·潘克赫斯特" },
     { type: "person", name: "Susan B. Anthony", name_zh: "苏珊·B·安东尼" },
     { type: "person", name: "Elizabeth Cady Stanton", name_zh: "伊丽莎白·卡迪·斯坦顿" },
-    { type: "work", name: "19th Amendment", name_zh: "美国宪法第十九修正案" },
+    { type: "work", name: "19th Amendment", name_zh: "美国宪法第十九修正案", wiki: "Nineteenth Amendment to the United States Constitution" },
     { type: "org", name: "WSPU", name_zh: "妇女社会与政治联盟" },
     { type: "org", name: "NAWSA", name_zh: "全美妇女选举权协会" },
   ],
@@ -1115,7 +1123,7 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "Marian Rejewski", name_zh: "马里安·雷耶夫斯基" },
     { type: "person", name: "Tommy Flowers", name_zh: "汤米·弗劳尔斯" },
     { type: "unit", name: "Bombe", name_zh: "炸弹机" },
-    { type: "unit", name: "Colossus", name_zh: "巨人计算机" },
+    { type: "unit", name: "Colossus", name_zh: "巨人计算机", wiki: "Colossus computer" },
     { type: "wonder", name: "Bletchley Park", name_zh: "布莱切利庄园" },
   ],
   "strategic-bombing": [
@@ -1141,10 +1149,10 @@ window.TECH_UNLOCKS = {
     { type: "org", name: "NVIDIA", name_zh: "英伟达" },
     { type: "person", name: "Morris Chang", name_zh: "张忠谋" },
     { type: "person", name: "Jensen Huang", name_zh: "黄仁勋" },
-    { type: "unit", name: "EUV scanner (ASML NXE/EXE)", name_zh: "极紫外光刻机(ASML NXE/EXE)" },
+    { type: "unit", name: "EUV scanner (ASML NXE/EXE)", name_zh: "极紫外光刻机(ASML NXE/EXE)" , wiki: "Extreme ultraviolet lithography" },
     { type: "unit", name: "FinFET transistor", name_zh: "鳍式场效应晶体管(FinFET)" },
-    { type: "unit", name: "Apple M-series chip", name_zh: "苹果M系列芯片" },
-    { type: "unit", name: "NVIDIA H100 / Blackwell GPU", name_zh: "英伟达 H100 / Blackwell GPU" },
+    { type: "unit", name: "Apple M-series chip", name_zh: "苹果M系列芯片" , wiki: "Apple silicon" },
+    { type: "unit", name: "NVIDIA H100 / Blackwell GPU", name_zh: "英伟达 H100 / Blackwell GPU" , wiki: "Hopper (microarchitecture)" },
   ],
   "personal-computer": [
     { type: "unit", name: "Apple II", name_zh: "Apple II" },
@@ -1152,7 +1160,7 @@ window.TECH_UNLOCKS = {
     { type: "unit", name: "Commodore 64", name_zh: "康懋达64" },
     { type: "person", name: "Steve Wozniak", name_zh: "史蒂夫·沃兹尼亚克" },
     { type: "person", name: "Steve Jobs", name_zh: "史蒂夫·乔布斯" },
-    { type: "org", name: "Apple", name_zh: "苹果公司" },
+    { type: "org", name: "Apple", name_zh: "苹果公司" , wiki: "Apple Inc." },
     { type: "org", name: "Microsoft", name_zh: "微软" },
   ],
   "gui-mouse": [
@@ -1168,7 +1176,7 @@ window.TECH_UNLOCKS = {
   "arpanet-internet": [
     { type: "person", name: "Vint Cerf", name_zh: "文顿·瑟夫" },
     { type: "person", name: "Robert Kahn", name_zh: "罗伯特·卡恩" },
-    { type: "org", name: "ARPA / DARPA", name_zh: "美国国防高等研究计划署" },
+    { type: "org", name: "ARPA / DARPA", name_zh: "美国国防高等研究计划署" , wiki: "DARPA" },
   ],
   "email": [
     { type: "person", name: "Ray Tomlinson", name_zh: "雷·汤姆林森" },
@@ -1195,14 +1203,14 @@ window.TECH_UNLOCKS = {
   "smartphone": [
     { type: "unit", name: "iPhone", name_zh: "iPhone" },
     { type: "unit", name: "BlackBerry", name_zh: "黑莓" },
-    { type: "unit", name: "Android", name_zh: "安卓" },
+    { type: "unit", name: "Android", name_zh: "安卓" , wiki: "Android (operating system)" },
     { type: "person", name: "Steve Jobs", name_zh: "史蒂夫·乔布斯" },
-    { type: "org", name: "Apple", name_zh: "苹果公司" },
+    { type: "org", name: "Apple", name_zh: "苹果公司" , wiki: "Apple Inc." },
     { type: "org", name: "Google", name_zh: "谷歌" },
   ],
   "social-media": [
-    { type: "org", name: "Facebook (Meta)", name_zh: "Facebook(Meta)" },
-    { type: "org", name: "Twitter (X)", name_zh: "Twitter(X)" },
+    { type: "org", name: "Facebook (Meta)", name_zh: "Facebook(Meta)" , wiki: "Meta Platforms" },
+    { type: "org", name: "Twitter (X)", name_zh: "Twitter(X)" , wiki: "X (social network)" },
     { type: "org", name: "TikTok", name_zh: "TikTok" },
     { type: "org", name: "YouTube", name_zh: "YouTube" },
     { type: "person", name: "Mark Zuckerberg", name_zh: "马克·扎克伯格" },
@@ -1213,7 +1221,7 @@ window.TECH_UNLOCKS = {
     { type: "org", name: "Spotify", name_zh: "Spotify" },
   ],
   "cloud-computing": [
-    { type: "org", name: "Amazon Web Services (AWS)", name_zh: "亚马逊云服务(AWS)" },
+    { type: "org", name: "Amazon Web Services (AWS)", name_zh: "亚马逊云服务(AWS)" , wiki: "Amazon Web Services" },
     { type: "org", name: "Microsoft Azure", name_zh: "微软Azure" },
     { type: "org", name: "Google Cloud", name_zh: "谷歌云" },
   ],
@@ -1235,7 +1243,7 @@ window.TECH_UNLOCKS = {
   "genetic-engineering": [
     { type: "person", name: "Paul Berg", name_zh: "保罗·伯格" },
     { type: "person", name: "Herbert Boyer", name_zh: "赫伯特·博耶" },
-    { type: "person", name: "Stanley N. Cohen", name_zh: "斯坦利·科恩" },
+    { type: "person", name: "Stanley N. Cohen", name_zh: "斯坦利·科恩" , wiki: "Stanley Norman Cohen" },
     { type: "org", name: "Genentech", name_zh: "基因泰克" },
     { type: "resource", name: "Recombinant insulin", name_zh: "重组胰岛素" },
   ],
@@ -1259,7 +1267,7 @@ window.TECH_UNLOCKS = {
     { type: "org", name: "Moderna", name_zh: "莫德纳" },
   ],
   "solar-photovoltaic": [
-    { type: "unit", name: "Photovoltaic cell", name_zh: "光伏电池" },
+    { type: "unit", name: "Photovoltaic cell", name_zh: "光伏电池" , wiki: "Solar cell" },
   ],
   "wind-turbine": [
     { type: "org", name: "Vestas", name_zh: "维斯塔斯" },
@@ -1270,10 +1278,10 @@ window.TECH_UNLOCKS = {
     { type: "resource", name: "Lithium", name_zh: "锂" },
   ],
   "electric-vehicle": [
-    { type: "unit", name: "Tesla Roadster", name_zh: "特斯拉Roadster跑车" },
+    { type: "unit", name: "Tesla Roadster", name_zh: "特斯拉Roadster跑车" , wiki: "Tesla Roadster (first generation)" },
     { type: "unit", name: "Tesla Model S", name_zh: "特斯拉Model S" },
     { type: "person", name: "Elon Musk", name_zh: "埃隆·马斯克" },
-    { type: "org", name: "Tesla, Inc.", name_zh: "特斯拉公司" },
+    { type: "org", name: "Tesla, Inc.", name_zh: "特斯拉公司" , wiki: "Tesla, Inc." },
     { type: "org", name: "BYD", name_zh: "比亚迪" },
   ],
   "machine-learning": [
@@ -1296,18 +1304,18 @@ window.TECH_UNLOCKS = {
   ],
   "cryptocurrency": [
     { type: "resource", name: "Bitcoin", name_zh: "比特币" },
-    { type: "resource", name: "Ether", name_zh: "以太币" },
+    { type: "resource", name: "Ether", name_zh: "以太币" , wiki: "Ethereum" },
     { type: "person", name: "Satoshi Nakamoto", name_zh: "中本聪" },
   ],
   "reusable-rocket": [
     { type: "org", name: "SpaceX", name_zh: "SpaceX" },
     { type: "unit", name: "Falcon 9", name_zh: "猎鹰9号" },
-    { type: "unit", name: "Starship", name_zh: "星舰" },
+    { type: "unit", name: "Starship", name_zh: "星舰" , wiki: "SpaceX Starship" },
     { type: "person", name: "Elon Musk", name_zh: "埃隆·马斯克" },
   ],
   "autonomous-vehicle": [
     { type: "org", name: "Waymo", name_zh: "Waymo" },
-    { type: "org", name: "Cruise", name_zh: "Cruise" },
+    { type: "org", name: "Cruise", name_zh: "Cruise" , wiki: "Cruise (autonomous vehicle)" },
     { type: "org", name: "Tesla Autopilot", name_zh: "特斯拉Autopilot" },
   ],
   "3d-printing": [
@@ -1321,7 +1329,7 @@ window.TECH_UNLOCKS = {
   "quantum-computing": [
     { type: "org", name: "IBM Quantum", name_zh: "IBM量子" },
     { type: "org", name: "Google Quantum AI", name_zh: "谷歌量子AI" },
-    { type: "unit", name: "Sycamore (Google)", name_zh: "悬铃木量子处理器" },
+    { type: "unit", name: "Sycamore (Google)", name_zh: "悬铃木量子处理器" , wiki: "Sycamore (processor)" },
   ],
   "climate-science": [
     { type: "org", name: "IPCC", name_zh: "政府间气候变化专门委员会" },
@@ -1340,14 +1348,14 @@ window.TECH_UNLOCKS = {
   "aircraft-carrier": [
     { type: "unit", name: "USS Langley (CV-1)", name_zh: "美国海军兰利号航空母舰" },
     { type: "unit", name: "USS Enterprise (CV-6)", name_zh: "企业号航空母舰" },
-    { type: "unit", name: "HMS Hermes", name_zh: "赫尔墨斯号航空母舰" },
+    { type: "unit", name: "HMS Hermes", name_zh: "赫尔墨斯号航空母舰" , wiki: "HMS Hermes (95)" },
     { type: "wonder", name: "Battle of Midway", name_zh: "中途岛海战" },
   ],
   "submarine-warfare": [
     { type: "unit", name: "Type VII U-boat", name_zh: "VII型潜艇" },
     { type: "unit", name: "Type XXI U-boat", name_zh: "XXI型潜艇" },
     { type: "person", name: "Karl Dönitz", name_zh: "卡尔·邓尼茨" },
-    { type: "unit", name: "Wolfpack tactics", name_zh: "狼群战术" },
+    { type: "unit", name: "Wolfpack tactics", name_zh: "狼群战术" , wiki: "Wolfpack (naval tactic)" },
   ],
   "thermonuclear-weapon": [
     { type: "unit", name: "Ivy Mike", name_zh: "常春藤·麦克氢弹试验" },
@@ -1359,9 +1367,9 @@ window.TECH_UNLOCKS = {
   ],
   "icbm": [
     { type: "unit", name: "R-7 Semyorka", name_zh: "R-7火箭" },
-    { type: "unit", name: "Atlas missile", name_zh: "宇宙神导弹" },
+    { type: "unit", name: "Atlas missile", name_zh: "宇宙神导弹" , wiki: "SM-65 Atlas" },
     { type: "unit", name: "Minuteman III", name_zh: "民兵III型导弹" },
-    { type: "unit", name: "Polaris (submarine-launched)", name_zh: "北极星导弹" },
+    { type: "unit", name: "Polaris (submarine-launched)", name_zh: "北极星导弹" , wiki: "UGM-27 Polaris" },
   ],
   "nuclear-submarine": [
     { type: "unit", name: "USS Nautilus (SSN-571)", name_zh: "鹦鹉螺号核潜艇" },
@@ -1389,7 +1397,7 @@ window.TECH_UNLOCKS = {
   "stealth-aircraft": [
     { type: "unit", name: "F-117 Nighthawk", name_zh: "F-117夜鹰战斗机" },
     { type: "unit", name: "B-2 Spirit", name_zh: "B-2幽灵轰炸机" },
-    { type: "person", name: "Ben Rich (Skunk Works)", name_zh: "本·里奇(臭鼬工厂)" },
+    { type: "person", name: "Ben Rich (Skunk Works)", name_zh: "本·里奇(臭鼬工厂)" , wiki: "Ben Rich (engineer)" },
     { type: "org", name: "Lockheed Skunk Works", name_zh: "洛克希德臭鼬工厂" },
   ],
   "drone-uav": [
@@ -1411,7 +1419,7 @@ window.TECH_UNLOCKS = {
     { type: "org", name: "Unit 8200", name_zh: "以色列8200部队" },
   ],
   "hypersonic-weapon": [
-    { type: "unit", name: "Avangard", name_zh: "先锋高超音速导弹" },
+    { type: "unit", name: "Avangard", name_zh: "先锋高超音速导弹" , wiki: "Avangard (hypersonic glide vehicle)" },
     { type: "unit", name: "Hwasong-8", name_zh: "火星-8导弹" },
   ],
 
@@ -1423,16 +1431,16 @@ window.TECH_UNLOCKS = {
     { type: "unit", name: "Tokamak", name_zh: "托卡马克装置" },
   ],
   "neuroscience": [
-    { type: "person", name: "Alan Hodgkin & Andrew Huxley", name_zh: "霍奇金与赫胥黎" },
+    { type: "person", name: "Alan Hodgkin & Andrew Huxley", name_zh: "霍奇金与赫胥黎" , wiki: "Alan Hodgkin" },
     { type: "person", name: "Wilder Penfield", name_zh: "怀尔德·彭菲尔德" },
     { type: "person", name: "Eric Kandel", name_zh: "埃里克·坎德尔" },
-    { type: "work", name: "Hodgkin–Huxley model", name_zh: "霍奇金-赫胥黎方程" },
+    { type: "work", name: "Hodgkin–Huxley model", name_zh: "霍奇金-赫胥黎方程" , wiki: "Hodgkin–Huxley model" },
   ],
   "gene-therapy": [
     { type: "person", name: "French Anderson", name_zh: "威廉·法兰奇·安德森" },
     { type: "unit", name: "Luxturna", name_zh: "Luxturna基因疗法" },
     { type: "unit", name: "Zolgensma", name_zh: "Zolgensma基因疗法" },
-    { type: "unit", name: "Casgevy (CRISPR)", name_zh: "Casgevy(CRISPR疗法)" },
+    { type: "unit", name: "Casgevy (CRISPR)", name_zh: "Casgevy(CRISPR疗法)" , wiki: "Exagamglogene autotemcel" },
   ],
   "tissue-engineering": [
     { type: "person", name: "Robert Langer", name_zh: "罗伯特·兰格" },
@@ -1443,7 +1451,7 @@ window.TECH_UNLOCKS = {
   "closed-loop-life-support": [
     { type: "wonder", name: "Biosphere 2", name_zh: "生物圈二号" },
     { type: "unit", name: "ISS ECLSS", name_zh: "国际空间站环境控制系统" },
-    { type: "unit", name: "BIOS-3 (Soviet)", name_zh: "BIOS-3(苏联生命维持系统)" },
+    { type: "unit", name: "BIOS-3 (Soviet)", name_zh: "BIOS-3(苏联生命维持系统)" , wiki: "BIOS-3" },
   ],
   "fusion-power": [
     { type: "org", name: "ITER", name_zh: "国际热核聚变实验堆" },
@@ -1453,10 +1461,10 @@ window.TECH_UNLOCKS = {
     { type: "wonder", name: "National Ignition Facility", name_zh: "国家点火装置" },
   ],
   "humanoid-robot": [
-    { type: "unit", name: "Atlas (Boston Dynamics)", name_zh: "阿特拉斯机器人(波士顿动力)" },
-    { type: "unit", name: "Tesla Optimus", name_zh: "特斯拉Optimus" },
-    { type: "unit", name: "Figure 02", name_zh: "Figure 02机器人" },
-    { type: "unit", name: "Unitree H1", name_zh: "宇树H1机器人" },
+    { type: "unit", name: "Atlas (Boston Dynamics)", name_zh: "阿特拉斯机器人(波士顿动力)" , wiki: "Atlas (robot)" },
+    { type: "unit", name: "Tesla Optimus", name_zh: "特斯拉Optimus" , wiki: "Optimus (robot)" },
+    { type: "unit", name: "Figure 02", name_zh: "Figure 02机器人" , wiki: "Figure AI" },
+    { type: "unit", name: "Unitree H1", name_zh: "宇树H1机器人" , wiki: "Unitree Robotics" },
     { type: "org", name: "Boston Dynamics", name_zh: "波士顿动力" },
   ],
   "agi": [
@@ -1471,7 +1479,7 @@ window.TECH_UNLOCKS = {
     { type: "org", name: "Neuralink", name_zh: "Neuralink" },
     { type: "org", name: "Synchron", name_zh: "Synchron" },
     { type: "unit", name: "Utah array", name_zh: "犹他电极阵列" },
-    { type: "unit", name: "N1 Implant (Neuralink)", name_zh: "N1脑机接口(Neuralink)" },
+    { type: "unit", name: "N1 Implant (Neuralink)", name_zh: "N1脑机接口(Neuralink)" , wiki: "Neuralink" },
     { type: "person", name: "Miguel Nicolelis", name_zh: "米格尔·尼科莱利斯" },
   ],
   "moon-base": [
@@ -1482,42 +1490,42 @@ window.TECH_UNLOCKS = {
   ],
   "mars-colony": [
     { type: "org", name: "SpaceX", name_zh: "SpaceX" },
-    { type: "unit", name: "Starship", name_zh: "星舰" },
+    { type: "unit", name: "Starship", name_zh: "星舰" , wiki: "SpaceX Starship" },
     { type: "person", name: "Elon Musk", name_zh: "埃隆·马斯克" },
     { type: "wonder", name: "Olympus Mons", name_zh: "奥林帕斯山" },
-    { type: "plant", name: "Mars potato (The Martian)", name_zh: "火星马铃薯" },
+    { type: "plant", name: "Mars potato (The Martian)", name_zh: "火星马铃薯" , wiki: false },
   ],
   "asteroid-mining": [
     { type: "unit", name: "OSIRIS-REx mission", name_zh: "OSIRIS-REx任务" },
     { type: "unit", name: "Hayabusa2 mission", name_zh: "隼鸟2号任务" },
     { type: "wonder", name: "Asteroid 16 Psyche", name_zh: "16灵神星" },
     { type: "resource", name: "Platinum-group metals", name_zh: "铂族金属" },
-    { type: "resource", name: "Asteroid water ice", name_zh: "小行星水冰" },
+    { type: "resource", name: "Asteroid water ice", name_zh: "小行星水冰" , wiki: "Asteroidal water" },
   ],
   "anti-aging": [
     { type: "org", name: "Altos Labs", name_zh: "Altos实验室" },
-    { type: "org", name: "Calico (Alphabet)", name_zh: "Calico" },
+    { type: "org", name: "Calico (Alphabet)", name_zh: "Calico" , wiki: "Calico (company)" },
     { type: "person", name: "Aubrey de Grey", name_zh: "奥布里·德格雷" },
     { type: "person", name: "David Sinclair", name_zh: "大卫·辛克莱" },
-    { type: "unit", name: "Yamanaka factors (OSKM)", name_zh: "山中因子(OSKM)" },
+    { type: "unit", name: "Yamanaka factors (OSKM)", name_zh: "山中因子(OSKM)" , wiki: "Induced pluripotent stem cell" },
   ],
   "lab-grown-meat": [
-    { type: "org", name: "Eat Just (GOOD Meat)", name_zh: "Eat Just (GOOD Meat)" },
+    { type: "org", name: "Eat Just (GOOD Meat)", name_zh: "Eat Just (GOOD Meat)" , wiki: "Eat Just" },
     { type: "org", name: "UPSIDE Foods", name_zh: "UPSIDE Foods" },
     { type: "person", name: "Mark Post", name_zh: "马克·波斯特" },
-    { type: "unit", name: "Cultivated chicken", name_zh: "培育鸡肉" },
+    { type: "unit", name: "Cultivated chicken", name_zh: "培育鸡肉" , wiki: "Cultured meat" },
   ],
   "synthetic-biology": [
     { type: "person", name: "Craig Venter", name_zh: "克雷格·文特尔" },
-    { type: "unit", name: "Synthetic Mycoplasma (JCVI-syn3.0)", name_zh: "合成支原体" },
+    { type: "unit", name: "Synthetic Mycoplasma (JCVI-syn3.0)", name_zh: "合成支原体" , wiki: "Mycoplasma laboratorium" },
     { type: "work", name: "AlphaFold", name_zh: "AlphaFold蛋白结构预测" },
     { type: "org", name: "Ginkgo Bioworks", name_zh: "Ginkgo Bioworks" },
-    { type: "unit", name: "ESM3 protein model", name_zh: "ESM3蛋白质模型" },
+    { type: "unit", name: "ESM3 protein model", name_zh: "ESM3蛋白质模型" , url: "https://www.evolutionaryscale.ai/blog/esm3-release" },
   ],
   "room-temp-superconductor": [
     { type: "resource", name: "Lanthanum decahydride (LaH10)", name_zh: "氢化镧(LaH10)" },
     { type: "resource", name: "YBCO superconductor", name_zh: "钇钡铜氧超导体" },
-    { type: "person", name: "Karl Müller", name_zh: "卡尔·米勒" },
+    { type: "person", name: "Karl Müller", name_zh: "卡尔·米勒" , wiki: "K. Alex Müller" },
     { type: "person", name: "J. Georg Bednorz", name_zh: "约翰内斯·贝德诺尔茨" },
   ],
   "nanotechnology": [
@@ -1536,14 +1544,14 @@ window.TECH_UNLOCKS = {
   ],
   "carbon-capture-scale": [
     { type: "org", name: "Climeworks", name_zh: "Climeworks" },
-    { type: "unit", name: "Orca DAC plant", name_zh: "Orca碳捕集工厂" },
-    { type: "unit", name: "Mammoth DAC plant", name_zh: "Mammoth碳捕集工厂" },
+    { type: "unit", name: "Orca DAC plant", name_zh: "Orca碳捕集工厂" , wiki: "Climeworks" },
+    { type: "unit", name: "Mammoth DAC plant", name_zh: "Mammoth碳捕集工厂" , wiki: "Climeworks" },
     { type: "org", name: "Carbon Engineering", name_zh: "Carbon Engineering" },
   ],
   "fusion-rocket": [
     { type: "unit", name: "Direct Fusion Drive", name_zh: "直接聚变驱动" },
-    { type: "unit", name: "Daedalus probe (study)", name_zh: "代达罗斯探测器(研究)" },
-    { type: "unit", name: "PFRC reactor", name_zh: "PFRC聚变反应堆" },
+    { type: "unit", name: "Daedalus probe (study)", name_zh: "代达罗斯探测器(研究)" , wiki: "Project Daedalus" },
+    { type: "unit", name: "PFRC reactor", name_zh: "PFRC聚变反应堆" , wiki: "Princeton field-reversed configuration" },
   ],
   "space-elevator": [
     { type: "person", name: "Konstantin Tsiolkovsky", name_zh: "康斯坦丁·齐奥尔科夫斯基" },
@@ -1554,55 +1562,55 @@ window.TECH_UNLOCKS = {
   "post-scarcity": [
     { type: "person", name: "Peter Diamandis", name_zh: "彼得·迪亚曼迪斯" },
     { type: "work", name: "Abundance (book)", name_zh: "《富足》" },
-    { type: "work", name: "Universal Basic Income", name_zh: "全民基本收入(UBI)" },
-    { type: "person", name: "John Maynard Keynes (1930 essay)", name_zh: "凯恩斯(1930年论文)" },
+    { type: "work", name: "Universal Basic Income", name_zh: "全民基本收入(UBI)" , wiki: "Universal basic income" },
+    { type: "person", name: "John Maynard Keynes (1930 essay)", name_zh: "凯恩斯(1930年论文)" , wiki: "John Maynard Keynes" },
   ],
   "digital-immortality": [
     { type: "person", name: "Hans Moravec", name_zh: "汉斯·莫拉维克" },
     { type: "person", name: "Ray Kurzweil", name_zh: "雷·库兹韦尔" },
     { type: "work", name: "The Singularity Is Near", name_zh: "《奇点临近》" },
-    { type: "unit", name: "Whole-brain emulation", name_zh: "全脑仿真" },
+    { type: "unit", name: "Whole-brain emulation", name_zh: "全脑仿真" , wiki: "Mind uploading" },
   ],
 
   // ─── Future Age (social) ───
   "universal-basic-income": [
     { type: "person", name: "Andrew Yang", name_zh: "杨安泽" },
-    { type: "person", name: "Milton Friedman (negative income tax)", name_zh: "米尔顿·弗里德曼" },
+    { type: "person", name: "Milton Friedman (negative income tax)", name_zh: "米尔顿·弗里德曼" , wiki: "Milton Friedman" },
     { type: "org", name: "GiveDirectly", name_zh: "GiveDirectly" },
     { type: "unit", name: "Alaska Permanent Fund", name_zh: "阿拉斯加永久基金" },
-    { type: "work", name: "Universal Basic Income (book, Van Parijs)", name_zh: "《全民基本收入》(范帕里斯)" },
+    { type: "work", name: "Universal Basic Income (book, Van Parijs)", name_zh: "《全民基本收入》(范帕里斯)" , wiki: "Philippe Van Parijs" },
   ],
   "liquid-democracy": [
-    { type: "person", name: "Audrey Tang (Taiwan Digital Minister)", name_zh: "唐凤(台湾数字部长)" },
+    { type: "person", name: "Audrey Tang (Taiwan Digital Minister)", name_zh: "唐凤(台湾数字部长)" , wiki: "Audrey Tang" },
     { type: "unit", name: "vTaiwan platform", name_zh: "vTaiwan平台" },
     { type: "org", name: "e-Estonia", name_zh: "电子爱沙尼亚" },
     { type: "org", name: "Pirate Party", name_zh: "海盗党" },
-    { type: "work", name: "Liquid Feedback (software)", name_zh: "Liquid Feedback软件" },
+    { type: "work", name: "Liquid Feedback (software)", name_zh: "Liquid Feedback软件" , wiki: "LiquidFeedback" },
   ],
   "network-state": [
     { type: "person", name: "Balaji Srinivasan", name_zh: "巴拉吉·斯里尼瓦桑" },
-    { type: "work", name: "The Network State (book)", name_zh: "《网络国家》" },
-    { type: "unit", name: "Próspera (Honduras ZEDE)", name_zh: "普罗斯佩拉(洪都拉斯特区)" },
-    { type: "unit", name: "Zuzalu (pop-up city)", name_zh: "Zuzalu(实验性城邦)" },
+    { type: "work", name: "The Network State (book)", name_zh: "《网络国家》" , wiki: "Balaji Srinivasan" },
+    { type: "unit", name: "Próspera (Honduras ZEDE)", name_zh: "普罗斯佩拉(洪都拉斯特区)" , wiki: "Próspera" },
+    { type: "unit", name: "Zuzalu (pop-up city)", name_zh: "Zuzalu(实验性城邦)" , wiki: false },
   ],
   "ai-governance": [
-    { type: "unit", name: "Estonia AI judge (pilot)", name_zh: "爱沙尼亚AI法官(试点)" },
+    { type: "unit", name: "Estonia AI judge (pilot)", name_zh: "爱沙尼亚AI法官(试点)" , url: "https://futurism.com/the-byte/estonia-robot-judge" },
     { type: "work", name: "EU AI Act", name_zh: "欧盟人工智能法案" },
-    { type: "org", name: "Singapore Smart Nation", name_zh: "新加坡智慧国家" },
-    { type: "work", name: "Algorithmic Regulation (Tim O'Reilly)", name_zh: "《算法监管》(奥莱利)" },
+    { type: "org", name: "Singapore Smart Nation", name_zh: "新加坡智慧国家" , wiki: "Smart Nation" },
+    { type: "work", name: "Algorithmic Regulation (Tim O'Reilly)", name_zh: "《算法监管》(奥莱利)" , wiki: "Government by algorithm" },
   ],
   "transhumanism": [
     { type: "person", name: "Nick Bostrom", name_zh: "尼克·博斯特罗姆" },
     { type: "person", name: "Ray Kurzweil", name_zh: "雷·库兹韦尔" },
     { type: "person", name: "Max More", name_zh: "马克斯·摩尔" },
     { type: "person", name: "FM-2030", name_zh: "FM-2030" },
-    { type: "org", name: "Humanity+ (WTA)", name_zh: "人类+协会" },
+    { type: "org", name: "Humanity+ (WTA)", name_zh: "人类+协会" , wiki: "Humanity+" },
   ],
   "longtermism": [
     { type: "person", name: "Derek Parfit", name_zh: "德里克·帕菲特" },
     { type: "person", name: "Toby Ord", name_zh: "托比·奥德" },
     { type: "person", name: "William MacAskill", name_zh: "威廉·麦卡斯基尔" },
-    { type: "work", name: "The Precipice (Ord, 2020)", name_zh: "《悬崖》(奥德,2020)" },
+    { type: "work", name: "The Precipice (Ord, 2020)", name_zh: "《悬崖》(奥德,2020)" , wiki: "The Precipice: Existential Risk and the Future of Humanity" },
     { type: "work", name: "What We Owe the Future", name_zh: "《我们欠未来的》" },
     { type: "org", name: "80,000 Hours", name_zh: "80,000 Hours" },
   ],
@@ -1615,7 +1623,7 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "Holly Herndon", name_zh: "霍莉·赫顿" },
   ],
   "metaverse": [
-    { type: "work", name: "Snow Crash (Neal Stephenson)", name_zh: "《雪崩》(尼尔·斯蒂芬森)" },
+    { type: "work", name: "Snow Crash (Neal Stephenson)", name_zh: "《雪崩》(尼尔·斯蒂芬森)" , wiki: "Snow Crash" },
     { type: "work", name: "Ready Player One", name_zh: "《头号玩家》" },
     { type: "org", name: "Meta Reality Labs", name_zh: "Meta现实实验室" },
     { type: "unit", name: "Apple Vision Pro", name_zh: "苹果Vision Pro" },
@@ -1631,10 +1639,10 @@ window.TECH_UNLOCKS = {
 
   // ─── Future Age (additional) ───
   "hyperloop": [
-    { type: "work", name: "Hyperloop white paper (Musk 2013)", name_zh: "超回路列车白皮书" },
+    { type: "work", name: "Hyperloop white paper (Musk 2013)", name_zh: "超回路列车白皮书" , wiki: "Hyperloop" },
     { type: "org", name: "Virgin Hyperloop", name_zh: "维珍超回路" },
     { type: "org", name: "HyperloopTT", name_zh: "HyperloopTT" },
-    { type: "org", name: "Boring Company", name_zh: "Boring公司" },
+    { type: "org", name: "Boring Company", name_zh: "Boring公司" , wiki: "The Boring Company" },
   ],
   "neuromorphic-chip": [
     { type: "unit", name: "Intel Loihi 2", name_zh: "英特尔Loihi 2" },
@@ -1645,16 +1653,16 @@ window.TECH_UNLOCKS = {
   ],
   "lab-grown-organs": [
     { type: "person", name: "Anthony Atala", name_zh: "安东尼·阿塔拉" },
-    { type: "unit", name: "Lab-grown bladder (2006)", name_zh: "实验室培育膀胱" },
+    { type: "unit", name: "Lab-grown bladder (2006)", name_zh: "实验室培育膀胱" , wiki: "Artificial urinary bladder" },
     { type: "org", name: "United Therapeutics", name_zh: "United Therapeutics" },
     { type: "unit", name: "Organoid", name_zh: "类器官" },
   ],
   "sentientism": [
     { type: "person", name: "Peter Singer", name_zh: "彼得·辛格" },
-    { type: "work", name: "Animal Liberation (1975)", name_zh: "《动物解放》" },
+    { type: "work", name: "Animal Liberation (1975)", name_zh: "《动物解放》" , wiki: "Animal Liberation (book)" },
     { type: "person", name: "Jeff Sebo", name_zh: "杰夫·塞博" },
     { type: "person", name: "Donald Watson", name_zh: "唐纳德·沃森" },
-    { type: "org", name: "Open Philanthropy (animal welfare)", name_zh: "Open Philanthropy(动物福利)" },
+    { type: "org", name: "Open Philanthropy (animal welfare)", name_zh: "Open Philanthropy(动物福利)" , wiki: "Open Philanthropy" },
   ],
   "dna-data-storage": [
     { type: "org", name: "Microsoft Research", name_zh: "微软研究院" },
@@ -1670,14 +1678,14 @@ window.TECH_UNLOCKS = {
   ],
   "ai-judge": [
     { type: "unit", name: "COMPAS recidivism algorithm", name_zh: "COMPAS再犯预测算法" },
-    { type: "unit", name: "Estonia AI judge (pilot)", name_zh: "爱沙尼亚AI法官(试点)" },
+    { type: "unit", name: "Estonia AI judge (pilot)", name_zh: "爱沙尼亚AI法官(试点)" , url: "https://futurism.com/the-byte/estonia-robot-judge" },
     { type: "work", name: "Weapons of Math Destruction", name_zh: "《数学杀伤性武器》" },
     { type: "person", name: "Cathy O'Neil", name_zh: "凯西·奥尼尔" },
   ],
   "space-based-solar": [
-    { type: "org", name: "Caltech Space Solar Power Project", name_zh: "加州理工太空太阳能项目" },
-    { type: "work", name: "SOLARIS (ESA)", name_zh: "SOLARIS(欧空局)" },
-    { type: "person", name: "Peter Glaser (concept, 1968)", name_zh: "彼得·格拉泽" },
+    { type: "org", name: "Caltech Space Solar Power Project", name_zh: "加州理工太空太阳能项目" , wiki: "Space-based solar power" },
+    { type: "work", name: "SOLARIS (ESA)", name_zh: "SOLARIS(欧空局)" , wiki: "Solaris (solar power)" },
+    { type: "person", name: "Peter Glaser (concept, 1968)", name_zh: "彼得·格拉泽" , wiki: "Peter Glaser" },
     { type: "unit", name: "Microwave power transmission", name_zh: "微波输电" },
   ],
   "photonic-computing": [
@@ -1722,10 +1730,10 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "Peter Scholze", name_zh: "彼得·朔尔策" },
   ],
   "gravitational-wave-spectroscopy": [
-    { type: "unit", name: "LIGO (advanced)", name_zh: "高级LIGO" },
-    { type: "unit", name: "LISA (ESA-NASA)", name_zh: "LISA(欧空局-NASA)" },
+    { type: "unit", name: "LIGO (advanced)", name_zh: "高级LIGO", wiki: "LIGO" },
+    { type: "unit", name: "LISA (ESA-NASA)", name_zh: "LISA(欧空局-NASA)", wiki: "Laser Interferometer Space Antenna" },
     { type: "unit", name: "Einstein Telescope", name_zh: "爱因斯坦望远镜" },
-    { type: "unit", name: "NANOGrav (pulsar timing)", name_zh: "NANOGrav脉冲星计时阵列" },
+    { type: "unit", name: "NANOGrav (pulsar timing)", name_zh: "NANOGrav脉冲星计时阵列", wiki: "North American Nanohertz Observatory for Gravitational Waves" },
     { type: "person", name: "Kip Thorne", name_zh: "基普·索恩" },
     { type: "person", name: "Rainer Weiss", name_zh: "雷纳·韦斯" },
   ],
@@ -1761,12 +1769,12 @@ window.TECH_UNLOCKS = {
     { type: "unit", name: "Bernal sphere", name_zh: "贝尔纳球" },
     { type: "person", name: "Gerard K. O'Neill", name_zh: "杰拉德·K·奥尼尔" },
     { type: "org", name: "L5 Society", name_zh: "L5协会" },
-    { type: "work", name: "The High Frontier (book)", name_zh: "《高边疆》" },
+    { type: "work", name: "The High Frontier (book)", name_zh: "《高边疆》", wiki: "The High Frontier: Human Colonies in Space" },
   ],
   "artificial-photosynthesis": [
     { type: "person", name: "Daniel Nocera", name_zh: "丹尼尔·诺切拉" },
     { type: "unit", name: "Artificial leaf", name_zh: "人工叶" },
-    { type: "unit", name: "Bionic Leaf 2.0", name_zh: "仿生叶 2.0" },
+    { type: "unit", name: "Bionic Leaf 2.0", name_zh: "仿生叶 2.0", wiki: "Bionic leaf" },
     { type: "org", name: "Twelve (company)", name_zh: "Twelve公司" },
     { type: "org", name: "Synhelion", name_zh: "Synhelion" },
     { type: "org", name: "Air Company", name_zh: "Air Company" },
@@ -1783,12 +1791,12 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "K. Eric Drexler", name_zh: "K·埃里克·德雷克斯勒" },
     { type: "person", name: "Robert Freitas", name_zh: "罗伯特·弗雷塔斯" },
     { type: "unit", name: "Universal constructor", name_zh: "通用构造机" },
-    { type: "work", name: "NASA 1980 study (Lunar self-replicating factory)", name_zh: "NASA 1980年自复制工厂研究" },
+    { type: "work", name: "NASA 1980 study (Lunar self-replicating factory)", name_zh: "NASA 1980年自复制工厂研究", wiki: "Self-replicating machine" },
   ],
   "superintelligence": [
     { type: "person", name: "I.J. Good", name_zh: "I·J·古德" },
     { type: "person", name: "Nick Bostrom", name_zh: "尼克·博斯特罗姆" },
-    { type: "person", name: "Stuart Russell", name_zh: "斯图尔特·罗素" },
+    { type: "person", name: "Stuart Russell", name_zh: "斯图尔特·罗素", wiki: "Stuart J. Russell" },
     { type: "person", name: "Eliezer Yudkowsky", name_zh: "埃利泽·尤德科夫斯基" },
     { type: "work", name: "Superintelligence: Paths, Dangers, Strategies", name_zh: "《超级智能》" },
     { type: "work", name: "AI alignment problem", name_zh: "AI对齐问题" },
@@ -1805,10 +1813,10 @@ window.TECH_UNLOCKS = {
   // ─── Far Future ───
   "dyson-swarm": [
     { type: "person", name: "Freeman Dyson", name_zh: "弗里曼·戴森" },
-    { type: "unit", name: "Statite (solar sail)", name_zh: "光力悬浮卫星" },
+    { type: "unit", name: "Statite (solar sail)", name_zh: "光力悬浮卫星", wiki: "Statite" },
     { type: "work", name: "Kardashev scale", name_zh: "卡尔达肖夫等级" },
     { type: "person", name: "Robert Bradbury", name_zh: "罗伯特·布拉德伯里" },
-    { type: "work", name: "Search for Dyson sphere candidates (Tabby's star)", name_zh: "戴森球候选搜索(塔比之星)" },
+    { type: "work", name: "Search for Dyson sphere candidates (Tabby's star)", name_zh: "戴森球候选搜索(塔比之星)", wiki: "Tabby's Star" },
   ],
   "matrioshka-brain": [
     { type: "person", name: "Robert Bradbury", name_zh: "罗伯特·布拉德伯里" },
@@ -1823,9 +1831,9 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "David Criswell", name_zh: "大卫·克里斯韦尔" },
   ],
   "generation-ship-colony": [
-    { type: "work", name: "Project Hyperion", name_zh: "海泊龙计划" },
-    { type: "work", name: "100 Year Starship initiative", name_zh: "百年星舰计划" },
-    { type: "unit", name: "Rama-class habitat (Clarke)", name_zh: "罗摩级栖息地(克拉克)" },
+    { type: "work", name: "Project Hyperion", name_zh: "海泊龙计划", wiki: "Project Hyperion (interstellar)" },
+    { type: "work", name: "100 Year Starship initiative", name_zh: "百年星舰计划", wiki: "100 Year Starship" },
+    { type: "unit", name: "Rama-class habitat (Clarke)", name_zh: "罗摩级栖息地(克拉克)" , wiki: "Rendezvous with Rama" },
     { type: "wonder", name: "Proxima Centauri b", name_zh: "比邻星b" },
   ],
   "galactic-civilization": [
@@ -1833,14 +1841,14 @@ window.TECH_UNLOCKS = {
     { type: "work", name: "Drake equation", name_zh: "德雷克方程" },
     { type: "work", name: "Fermi paradox", name_zh: "费米悖论" },
     { type: "work", name: "Great Filter", name_zh: "大过滤器" },
-    { type: "person", name: "Carl Sagan (Cosmos)", name_zh: "卡尔·萨根(宇宙)" },
+    { type: "person", name: "Carl Sagan (Cosmos)", name_zh: "卡尔·萨根(宇宙)" , wiki: "Carl Sagan" },
   ],
   "speciation": [
     { type: "person", name: "Stephen Hawking", name_zh: "史蒂芬·霍金" },
     { type: "person", name: "Cixin Liu", name_zh: "刘慈欣" },
     { type: "person", name: "Greg Egan", name_zh: "格雷格·伊根" },
     { type: "work", name: "The Diamond Age (Stephenson)", name_zh: "《钻石时代》" },
-    { type: "work", name: "Cordwainer Smith's Underpeople", name_zh: "考德怀纳·史密斯笔下的下层人" },
+    { type: "work", name: "Cordwainer Smith's Underpeople", name_zh: "考德怀纳·史密斯笔下的下层人" , wiki: "Cordwainer Smith" },
   ],
   "substrate-independent-humanity": [
     { type: "person", name: "Hans Moravec", name_zh: "汉斯·莫拉维克" },
@@ -1861,19 +1869,19 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "Erik Lentz", name_zh: "埃里克·伦茨" },
     { type: "org", name: "NASA Eagleworks", name_zh: "NASA Eagleworks实验室" },
     { type: "work", name: "Krasnikov tube", name_zh: "克拉斯尼科夫管" },
-    { type: "resource", name: "Negative-energy density (exotic matter)", name_zh: "负能量密度(奇异物质)" },
+    { type: "resource", name: "Negative-energy density (exotic matter)", name_zh: "负能量密度(奇异物质)", wiki: "Exotic matter" },
   ],
   "kardashev-type-ii": [
     { type: "person", name: "Nikolai Kardashev", name_zh: "尼古拉·卡尔达肖夫" },
     { type: "work", name: "Kardashev Type I (planetary)", name_zh: "卡尔达肖夫I型(行星级)" },
     { type: "work", name: "Kardashev Type II (stellar)", name_zh: "卡尔达肖夫II型(恒星级)" },
-    { type: "person", name: "Carl Sagan (extension)", name_zh: "卡尔·萨根(扩展)" },
+    { type: "person", name: "Carl Sagan (extension)", name_zh: "卡尔·萨根(扩展)" , wiki: "Carl Sagan" },
   ],
 
   // ─── Far Future (civilizational) ───
   "existential-risk-hedge": [
     { type: "person", name: "Toby Ord", name_zh: "托比·奥德" },
-    { type: "work", name: "The Precipice", name_zh: "《悬崖》" },
+    { type: "work", name: "The Precipice", name_zh: "《悬崖》", wiki: "The Precipice: Existential Risk and the Future of Humanity" },
     { type: "person", name: "Nick Bostrom", name_zh: "尼克·博斯特罗姆" },
     { type: "org", name: "Future of Humanity Institute", name_zh: "人类未来研究所" },
     { type: "org", name: "80,000 Hours", name_zh: "80,000 Hours" },
@@ -1883,7 +1891,7 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "Peter Singer", name_zh: "彼得·辛格" },
     { type: "work", name: "Animal Rights movement", name_zh: "动物权利运动" },
     { type: "work", name: "Integrated Information Theory (IIT)", name_zh: "整合信息论" },
-    { type: "person", name: "Eleanor Roosevelt (UDHR drafter)", name_zh: "埃莉诺·罗斯福" },
+    { type: "person", name: "Eleanor Roosevelt (UDHR drafter)", name_zh: "埃莉诺·罗斯福", wiki: "Eleanor Roosevelt" },
   ],
   "pleistocene-restored": [
     { type: "org", name: "Colossal Biosciences", name_zh: "Colossal Biosciences" },
@@ -1912,8 +1920,8 @@ window.TECH_UNLOCKS = {
     { type: "work", name: "Gene drive", name_zh: "基因驱动" },
     { type: "work", name: "Stratospheric aerosol injection", name_zh: "平流层气溶胶注入" },
     { type: "work", name: "Anthropocene (term)", name_zh: "人类世" },
-    { type: "person", name: "Paul Crutzen (Anthropocene)", name_zh: "保罗·克鲁岑" },
-    { type: "org", name: "IPCC Geoengineering reports", name_zh: "IPCC地球工程报告" },
+    { type: "person", name: "Paul Crutzen (Anthropocene)", name_zh: "保罗·克鲁岑", wiki: "Paul J. Crutzen" },
+    { type: "org", name: "IPCC Geoengineering reports", name_zh: "IPCC地球工程报告", wiki: "Geoengineering" },
   ],
   "interstellar-treaty": [
     { type: "work", name: "Outer Space Treaty (1967)", name_zh: "《外层空间条约》" },
@@ -1937,18 +1945,18 @@ window.TECH_UNLOCKS = {
   ],
   "galactic-ecology": [
     { type: "work", name: "Directed panspermia", name_zh: "定向胚种论" },
-    { type: "person", name: "Carl Sagan (panspermia)", name_zh: "卡尔·萨根(胚种论)" },
-    { type: "person", name: "Francis Crick (panspermia)", name_zh: "弗朗西斯·克里克" },
+    { type: "person", name: "Carl Sagan (panspermia)", name_zh: "卡尔·萨根(胚种论)" , wiki: "Carl Sagan" },
+    { type: "person", name: "Francis Crick (panspermia)", name_zh: "弗朗西斯·克里克" , wiki: "Francis Crick" },
     { type: "work", name: "Eon (Greg Bear)", name_zh: "《永世》(格雷格·贝尔)" },
     { type: "person", name: "Cordwainer Smith", name_zh: "考德怀纳·史密斯" },
   ],
 
   // ─── Future Age (late) ───
   "artificial-womb": [
-    { type: "unit", name: "Biobag (CHOP, 2017)", name_zh: "Biobag生物袋" },
-    { type: "work", name: "EctoLife (concept)", name_zh: "EctoLife概念" },
+    { type: "unit", name: "Biobag (CHOP, 2017)", name_zh: "Biobag生物袋", wiki: "Artificial womb" },
+    { type: "work", name: "EctoLife (concept)", name_zh: "EctoLife概念" , url: "https://www.designboom.com/technology/hashem-al-ghaili-ectolife-the-worlds-first-artificial-womb-facility-12-14-2022/" },
     { type: "work", name: "Brave New World (Huxley)", name_zh: "《美丽新世界》(赫胥黎)" },
-    { type: "person", name: "Aldous Huxley (literary precursor)", name_zh: "奥尔德斯·赫胥黎" },
+    { type: "person", name: "Aldous Huxley (literary precursor)", name_zh: "奥尔德斯·赫胥黎", wiki: "Aldous Huxley" },
   ],
   "closed-cycle-cities": [
     { type: "wonder", name: "NEOM (Saudi Arabia)", name_zh: "NEOM新城" },
@@ -1969,41 +1977,41 @@ window.TECH_UNLOCKS = {
     { type: "org", name: "United Therapeutics", name_zh: "United Therapeutics" },
     { type: "org", name: "Organovo", name_zh: "Organovo" },
     { type: "resource", name: "Bioink", name_zh: "生物墨水" },
-    { type: "person", name: "Anthony Atala (continuation)", name_zh: "安东尼·阿塔拉" },
+    { type: "person", name: "Anthony Atala (continuation)", name_zh: "安东尼·阿塔拉", wiki: "Anthony Atala" },
   ],
   "ai-coordination-treaty": [
-    { type: "work", name: "Bletchley Declaration (2023)", name_zh: "布莱切利宣言" },
+    { type: "work", name: "Bletchley Declaration (2023)", name_zh: "布莱切利宣言", wiki: "AI Safety Summit" },
     { type: "work", name: "EU AI Act", name_zh: "欧盟人工智能法案" },
-    { type: "org", name: "International Atomic Energy Agency (model)", name_zh: "国际原子能机构(模板)" },
-    { type: "person", name: "Stuart Russell", name_zh: "斯图尔特·罗素" },
+    { type: "org", name: "International Atomic Energy Agency (model)", name_zh: "国际原子能机构(模板)", wiki: "International Atomic Energy Agency" },
+    { type: "person", name: "Stuart Russell", name_zh: "斯图尔特·罗素", wiki: "Stuart J. Russell" },
     { type: "person", name: "Yoshua Bengio", name_zh: "约书亚·本吉奥" },
   ],
   "direct-ai-democracy": [
-    { type: "unit", name: "vTaiwan platform", name_zh: "vTaiwan平台" },
-    { type: "unit", name: "Pol.is", name_zh: "Pol.is" },
+    { type: "unit", name: "vTaiwan platform", name_zh: "vTaiwan平台", wiki: "Digital democracy in Taiwan" },
+    { type: "unit", name: "Pol.is", name_zh: "Pol.is", wiki: "Pol.is" },
     { type: "person", name: "Audrey Tang", name_zh: "唐凤" },
-    { type: "person", name: "Colin Megill (Pol.is)", name_zh: "科林·梅吉尔" },
+    { type: "person", name: "Colin Megill (Pol.is)", name_zh: "科林·梅吉尔", wiki: "Pol.is" },
     { type: "work", name: "Deliberative democracy", name_zh: "审议民主" },
   ],
   "lunar-industrial-base": [
-    { type: "resource", name: "Helium-3 (lunar)", name_zh: "氦-3(月球)" },
-    { type: "unit", name: "Mass driver (electromagnetic launch)", name_zh: "电磁质量驱动器" },
+    { type: "resource", name: "Helium-3 (lunar)", name_zh: "氦-3(月球)", wiki: "Helium-3" },
+    { type: "unit", name: "Mass driver (electromagnetic launch)", name_zh: "电磁质量驱动器", wiki: "Mass driver" },
     { type: "resource", name: "Lunar regolith", name_zh: "月壤" },
-    { type: "org", name: "Moon Village (ESA)", name_zh: "月球村(欧空局)" },
-    { type: "work", name: "ISRU (in-situ resource utilization)", name_zh: "原位资源利用" },
+    { type: "org", name: "Moon Village (ESA)", name_zh: "月球村(欧空局)", wiki: "Moonbase" },
+    { type: "work", name: "ISRU (in-situ resource utilization)", name_zh: "原位资源利用", wiki: "In situ resource utilization" },
   ],
   "asteroid-belt-settlement": [
     { type: "wonder", name: "Ceres (dwarf planet)", name_zh: "谷神星" },
     { type: "wonder", name: "4 Vesta", name_zh: "灶神星" },
     { type: "work", name: "The Expanse (Corey, novels)", name_zh: "《苍穹浩瀚》" },
-    { type: "unit", name: "Belters (cultural identity)", name_zh: "带客(文化身份)" },
+    { type: "unit", name: "Belters (cultural identity)", name_zh: "带客(文化身份)" , wiki: false },
   ],
   "memory-editing": [
     { type: "person", name: "Karim Nader", name_zh: "卡里姆·纳德" },
     { type: "person", name: "Susumu Tonegawa", name_zh: "利根川进" },
     { type: "work", name: "Optogenetics", name_zh: "光遗传学" },
     { type: "work", name: "Eternal Sunshine of the Spotless Mind", name_zh: "《暖暖内含光》" },
-    { type: "work", name: "Total Recall (Dick / Verhoeven)", name_zh: "《全面回忆》(迪克 / 范霍文)" },
+    { type: "work", name: "Total Recall (Dick / Verhoeven)", name_zh: "《全面回忆》(迪克 / 范霍文)", wiki: "Total Recall (1990 film)" },
   ],
   "cybernetic-enhancement": [
     { type: "person", name: "Hugh Herr", name_zh: "休·赫尔" },
@@ -2034,15 +2042,15 @@ window.TECH_UNLOCKS = {
     { type: "work", name: "Tallinn Manual", name_zh: "《塔林手册》" , wiki: "Tallinn Manual" },
   ],
   "directed-energy-weapons": [
-    { type: "unit", name: "HELIOS Laser", name_zh: "HELIOS 高能激光" , wiki: "AN/SEQ-3 Laser Weapon System" },
-    { type: "unit", name: "DragonFire", name_zh: "龙火激光武器" , wiki: false },
+    { type: "unit", name: "HELIOS Laser", name_zh: "HELIOS 高能激光" , url: "https://www.lockheedmartin.com/en-us/news/features/2021/more-than-a-laser-helios-is-an-integrated-weapon-system.html" },
+    { type: "unit", name: "DragonFire", name_zh: "龙火激光武器" , url: "https://www.gov.uk/government/news/boost-for-armed-forces-as-new-laser-weapon-takes-down-high-speed-drones" },
     { type: "unit", name: "Iron Beam", name_zh: "铁束激光" , wiki: "Iron Beam" },
     { type: "org", name: "U.S. Naval Research Laboratory", name_zh: "美国海军研究实验室" , wiki: "United States Naval Research Laboratory" },
   ],
   "drone-swarms": [
     { type: "unit", name: "Bayraktar TB2", name_zh: "拜拉克塔尔 TB2" , wiki: "Bayraktar TB2" },
     { type: "unit", name: "Switchblade 600", name_zh: "弹簧刀 600 巡飞弹" , wiki: "AeroVironment Switchblade" },
-    { type: "org", name: "Pentagon Replicator Initiative", name_zh: "五角大楼复制者计划" , wiki: false },
+    { type: "org", name: "Pentagon Replicator Initiative", name_zh: "五角大楼复制者计划" , url: "https://www.diu.mil/latest/implementing-the-department-of-defense-replicator-initiative-to-accelerate" },
     { type: "org", name: "Anduril Industries", name_zh: "Anduril 工业" , wiki: "Anduril Industries" },
   ],
   "anti-satellite-warfare": [
@@ -2053,7 +2061,7 @@ window.TECH_UNLOCKS = {
   ],
   "engineered-pathogen-defense": [
     { type: "org", name: "BARDA", name_zh: "美国生物医学高级研究开发管理局" , wiki: "Biomedical Advanced Research and Development Authority" },
-    { type: "org", name: "DARPA Pandemic Prevention Platform", name_zh: "DARPA 大流行病预防平台" , wiki: false },
+    { type: "org", name: "DARPA Pandemic Prevention Platform", name_zh: "DARPA 大流行病预防平台" , url: "https://www.darpa.mil/program/pandemic-prevention-platform" },
     { type: "resource", name: "Metagenomic biosurveillance", name_zh: "宏基因组生物监测" , wiki: "Metagenomics" },
     { type: "work", name: "Biological Weapons Convention", name_zh: "《禁止生物武器公约》" , wiki: "Biological Weapons Convention" },
   ],
@@ -2128,5 +2136,180 @@ window.TECH_UNLOCKS = {
     { type: "resource", name: "Negative-energy field", name_zh: "负能量场" , wiki: "Negative energy" },
     { type: "resource", name: "Cosmological-constant modulator", name_zh: "宇宙学常数调制器" , wiki: "Cosmological constant" },
     { type: "unit", name: "Alcubierre precursor coil", name_zh: "阿尔库别雷前驱线圈" , wiki: "Alcubierre drive" },
+  ],
+
+  // ─── Arts & Entertainment (atomic / information) ───
+  "abstract-expressionism": [
+    { type: "person", name: "Jackson Pollock", name_zh: "杰克逊·波洛克", wiki: "Jackson Pollock" },
+    { type: "person", name: "Mark Rothko", name_zh: "马克·罗斯科", wiki: "Mark Rothko" },
+    { type: "person", name: "Willem de Kooning", name_zh: "威廉·德·库宁", wiki: "Willem de Kooning" },
+    { type: "work", name: "Number 1A, 1948", name_zh: "《1A 号,1948》", wiki: "Number 1A, 1948" },
+    { type: "org", name: "New York School", name_zh: "纽约画派", wiki: "New York School (art)" },
+  ],
+  "lp-vinyl-record": [
+    { type: "resource", name: "33⅓ rpm microgroove", name_zh: "33⅓ 转长播放唱片", wiki: "LP record" },
+    { type: "resource", name: "45 rpm single", name_zh: "45 转单曲唱片", wiki: "Single (music)" },
+    { type: "org", name: "Columbia Records", name_zh: "哥伦比亚唱片公司", wiki: "Columbia Records" },
+    { type: "work", name: "Sgt. Pepper's Lonely Hearts Club Band", name_zh: "《佩珀军士的孤独之心俱乐部乐队》", wiki: "Sgt. Pepper's Lonely Hearts Club Band" },
+  ],
+  "color-television": [
+    { type: "resource", name: "NTSC standard", name_zh: "NTSC 制式", wiki: "NTSC" },
+    { type: "resource", name: "PAL standard", name_zh: "PAL 制式", wiki: "PAL" },
+    { type: "org", name: "RCA", name_zh: "美国无线电公司", wiki: "RCA" },
+    { type: "unit", name: "RCA CT-100", name_zh: "RCA CT-100 彩色电视机", wiki: "RCA CT-100" },
+  ],
+  "video-games": [
+    { type: "work", name: "Pong", name_zh: "《乓》", wiki: "Pong" },
+    { type: "work", name: "Space Invaders", name_zh: "《太空侵略者》", wiki: "Space Invaders" },
+    { type: "work", name: "Pac-Man", name_zh: "《吃豆人》", wiki: "Pac-Man" },
+    { type: "unit", name: "Magnavox Odyssey", name_zh: "美格福斯奥德赛", wiki: "Magnavox Odyssey" },
+    { type: "unit", name: "Atari 2600", name_zh: "雅达利 2600", wiki: "Atari 2600" },
+    { type: "org", name: "Nintendo", name_zh: "任天堂", wiki: "Nintendo" },
+  ],
+  "cgi-cinema": [
+    { type: "work", name: "Jurassic Park", name_zh: "《侏罗纪公园》", wiki: "Jurassic Park (film)" },
+    { type: "work", name: "Terminator 2: Judgment Day", name_zh: "《终结者2:审判日》", wiki: "Terminator 2: Judgment Day" },
+    { type: "work", name: "Toy Story", name_zh: "《玩具总动员》", wiki: "Toy Story" },
+    { type: "org", name: "Industrial Light & Magic", name_zh: "工业光魔", wiki: "Industrial Light & Magic" },
+    { type: "org", name: "Pixar", name_zh: "皮克斯", wiki: "Pixar" },
+  ],
+  "anime-globalization": [
+    { type: "work", name: "Akira", name_zh: "《阿基拉》", wiki: "Akira (1988 film)" },
+    { type: "work", name: "Spirited Away", name_zh: "《千与千寻》", wiki: "Spirited Away" },
+    { type: "work", name: "Neon Genesis Evangelion", name_zh: "《新世纪福音战士》", wiki: "Neon Genesis Evangelion" },
+    { type: "work", name: "Pokémon", name_zh: "《精灵宝可梦》", wiki: "Pokémon" },
+    { type: "org", name: "Studio Ghibli", name_zh: "吉卜力工作室", wiki: "Studio Ghibli" },
+    { type: "org", name: "Crunchyroll", name_zh: "Crunchyroll", wiki: "Crunchyroll" },
+  ],
+
+  // ─── Near Future / Far Future arts & entertainment ───
+  "synthetic-performers": [
+    { type: "unit", name: "Hatsune Miku", name_zh: "初音未来", wiki: "Hatsune Miku" },
+    { type: "unit", name: "Lil Miquela", name_zh: "Lil Miquela", wiki: "Lil Miquela" },
+    { type: "unit", name: "Kizuna AI", name_zh: "绊爱", wiki: "Kizuna AI" },
+    { type: "resource", name: "Vocaloid", name_zh: "VOCALOID", wiki: "Vocaloid" },
+    { type: "org", name: "Crypton Future Media", name_zh: "克里普敦未来媒体", wiki: "Crypton Future Media" },
+  ],
+  "procedural-infinite-worlds": [
+    { type: "work", name: "No Man's Sky", name_zh: "《无人深空》", wiki: "No Man's Sky" },
+    { type: "work", name: "Minecraft", name_zh: "《我的世界》", wiki: "Minecraft" },
+    { type: "work", name: "Dwarf Fortress", name_zh: "《矮人要塞》", wiki: "Dwarf Fortress" },
+    { type: "resource", name: "Procedural generation", name_zh: "程序化生成", wiki: "Procedural generation" },
+  ],
+  "bio-art": [
+    { type: "person", name: "Eduardo Kac", name_zh: "爱德华多·卡茨", wiki: "Eduardo Kac" },
+    { type: "work", name: "GFP Bunny", name_zh: "《GFP 兔子》", wiki: "GFP Bunny" },
+    { type: "person", name: "Stelarc", name_zh: "斯特拉克", wiki: "Stelarc" },
+    { type: "org", name: "SymbioticA", name_zh: "SymbioticA 实验室", wiki: "SymbioticA" },
+    { type: "resource", name: "Transgenic art", name_zh: "转基因艺术", wiki: "Transgenic art" },
+  ],
+  "mind-linked-collective-art": [
+    { type: "resource", name: "Hive mind", name_zh: "蜂巢思维", wiki: "Hive mind" },
+    { type: "resource", name: "Telepathy", name_zh: "心灵感应", wiki: "Telepathy" },
+    { type: "work", name: "Sleep No More", name_zh: "《不眠之夜》", wiki: "Sleep No More (2011 play)" },
+    { type: "unit", name: "Collective-consciousness installation", name_zh: "集体意识装置", wiki: false },
+  ],
+  "engineered-sensory-modalities": [
+    { type: "resource", name: "Synesthesia", name_zh: "联觉", wiki: "Synesthesia" },
+    { type: "resource", name: "Sensory substitution", name_zh: "感官替代", wiki: "Sensory substitution" },
+    { type: "person", name: "Neil Harbisson", name_zh: "尼尔·哈维森", wiki: "Neil Harbisson" },
+    { type: "unit", name: "Magnetoreception implant", name_zh: "磁感受器植入", wiki: false },
+  ],
+  "ai-native-art-forms": [
+    { type: "resource", name: "AI art", name_zh: "AI 艺术", wiki: "AI art" },
+    { type: "resource", name: "Generative art", name_zh: "生成艺术", wiki: "Generative art" },
+    { type: "unit", name: "Substrate-specific composition", name_zh: "基质特定作品", wiki: false },
+    { type: "work", name: "AI-incomprehensible artwork", name_zh: "AI 不可理解作品", wiki: false },
+  ],
+  "stellar-scale-spectacle": [
+    { type: "resource", name: "Shkadov thruster", name_zh: "什卡多夫推进器", wiki: "Shkadov thruster" },
+    { type: "resource", name: "Variable star", name_zh: "变星", wiki: "Variable star" },
+    { type: "unit", name: "Modulated supergiant performance", name_zh: "调制超巨星表演", wiki: false },
+    { type: "wonder", name: "Galactic light-show installation", name_zh: "银河光秀装置", wiki: false },
+  ],
+  "pan-galactic-festival": [
+    { type: "resource", name: "Cultural festival", name_zh: "文化节", wiki: "Festival" },
+    { type: "unit", name: "Synchronized civilization rite", name_zh: "同步文明仪式", wiki: false },
+    { type: "work", name: "Galactic Anthem", name_zh: "《银河颂歌》", wiki: false },
+    { type: "wonder", name: "Pan-Galactic Coordination Ceremony", name_zh: "泛银河协调典礼", wiki: false },
+  ],
+
+  // ─── Culture / Philosophy / Sociology ───
+  "bauhaus": [
+    { type: "person", name: "Walter Gropius", name_zh: "瓦尔特·格罗皮乌斯", wiki: "Walter Gropius" },
+    { type: "person", name: "László Moholy-Nagy", name_zh: "拉斯洛·莫霍利-纳吉", wiki: "László Moholy-Nagy" },
+    { type: "person", name: "Mies van der Rohe", name_zh: "密斯·凡·德罗", wiki: "Ludwig Mies van der Rohe" },
+    { type: "work", name: "Bauhaus Manifesto", name_zh: "《包豪斯宣言》", wiki: "Bauhaus" },
+    { type: "unit", name: "Wassily Chair", name_zh: "瓦西里椅", wiki: "Wassily Chair" },
+    { type: "org", name: "Bauhaus-Universität Weimar", name_zh: "魏玛包豪斯大学", wiki: "Bauhaus-Universität Weimar" },
+  ],
+  "frankfurt-school": [
+    { type: "person", name: "Theodor Adorno", name_zh: "西奥多·阿多诺", wiki: "Theodor W. Adorno" },
+    { type: "person", name: "Max Horkheimer", name_zh: "马克斯·霍克海默", wiki: "Max Horkheimer" },
+    { type: "person", name: "Herbert Marcuse", name_zh: "赫伯特·马尔库塞", wiki: "Herbert Marcuse" },
+    { type: "person", name: "Walter Benjamin", name_zh: "瓦尔特·本雅明", wiki: "Walter Benjamin" },
+    { type: "person", name: "Jürgen Habermas", name_zh: "于尔根·哈贝马斯", wiki: "Jürgen Habermas" },
+    { type: "work", name: "Dialectic of Enlightenment", name_zh: "《启蒙辩证法》", wiki: "Dialectic of Enlightenment" },
+    { type: "org", name: "Institute for Social Research", name_zh: "社会研究所", wiki: "Institute for Social Research" },
+  ],
+  "universal-human-rights": [
+    { type: "work", name: "Universal Declaration of Human Rights", name_zh: "《世界人权宣言》", wiki: "Universal Declaration of Human Rights" },
+    { type: "person", name: "Eleanor Roosevelt", name_zh: "埃莉诺·罗斯福", wiki: "Eleanor Roosevelt" },
+    { type: "org", name: "United Nations Human Rights Commission", name_zh: "联合国人权委员会", wiki: "United Nations Commission on Human Rights" },
+    { type: "work", name: "International Covenant on Civil and Political Rights", name_zh: "《公民权利和政治权利国际公约》", wiki: "International Covenant on Civil and Political Rights" },
+    { type: "org", name: "Amnesty International", name_zh: "国际特赦组织", wiki: "Amnesty International" },
+  ],
+  "cybernetics": [
+    { type: "person", name: "Norbert Wiener", name_zh: "诺伯特·维纳", wiki: "Norbert Wiener" },
+    { type: "person", name: "Claude Shannon", name_zh: "克劳德·香农", wiki: "Claude Shannon" },
+    { type: "work", name: "Cybernetics: or Control and Communication in the Animal and the Machine", name_zh: "《控制论》", wiki: "Cybernetics: Or Control and Communication in the Animal and the Machine" },
+    { type: "org", name: "Macy Conferences", name_zh: "梅西会议", wiki: "Macy conferences" },
+    { type: "unit", name: "Project Cybersyn", name_zh: "赛博协同工程", wiki: "Project Cybersyn" },
+  ],
+  "neoliberalism": [
+    { type: "person", name: "Milton Friedman", name_zh: "米尔顿·弗里德曼", wiki: "Milton Friedman" },
+    { type: "person", name: "Friedrich Hayek", name_zh: "弗里德里希·哈耶克", wiki: "Friedrich Hayek" },
+    { type: "person", name: "Margaret Thatcher", name_zh: "玛格丽特·撒切尔", wiki: "Margaret Thatcher" },
+    { type: "person", name: "Ronald Reagan", name_zh: "罗纳德·里根", wiki: "Ronald Reagan" },
+    { type: "work", name: "Capitalism and Freedom", name_zh: "《资本主义与自由》", wiki: "Capitalism and Freedom" },
+    { type: "org", name: "Mont Pelerin Society", name_zh: "朝圣山学社", wiki: "Mont Pelerin Society" },
+    { type: "resource", name: "Washington Consensus", name_zh: "华盛顿共识", wiki: "Washington Consensus" },
+  ],
+  "degrowth-economics": [
+    { type: "person", name: "Herman Daly", name_zh: "赫尔曼·戴利", wiki: "Herman Daly" },
+    { type: "person", name: "Nicholas Georgescu-Roegen", name_zh: "尼古拉斯·乔治斯库-罗根", wiki: "Nicholas Georgescu-Roegen" },
+    { type: "person", name: "Jason Hickel", name_zh: "贾森·希克尔", wiki: "Jason Hickel" },
+    { type: "work", name: "Less Is More", name_zh: "《少即是多》", wiki: "Jason Hickel" },
+    { type: "work", name: "Doughnut Economics", name_zh: "《甜甜圈经济学》", wiki: "Doughnut (economic model)" },
+    { type: "resource", name: "Steady-state economy", name_zh: "稳态经济", wiki: "Steady-state economy" },
+  ],
+  "solarpunk": [
+    { type: "resource", name: "Solarpunk aesthetic", name_zh: "太阳朋克美学", wiki: "Solarpunk" },
+    { type: "work", name: "Solarpunk: Ecological and Fantastical Stories", name_zh: "《太阳朋克:生态与奇幻故事集》", wiki: "Solarpunk" },
+    { type: "unit", name: "Photovoltaic façade", name_zh: "光伏外立面", wiki: "Photovoltaics" },
+    { type: "org", name: "Sunrise Movement", name_zh: "日出运动", wiki: "Sunrise Movement" },
+  ],
+  "constructed-religions": [
+    { type: "resource", name: "Religion of Humanity", name_zh: "人性宗教", wiki: "Religion of Humanity" },
+    { type: "org", name: "Bahá'í Faith", name_zh: "巴哈伊信仰", wiki: "Bahá'í Faith" },
+    { type: "resource", name: "New religious movement", name_zh: "新兴宗教运动", wiki: "New religious movement" },
+    { type: "work", name: "Posthuman liturgy", name_zh: "后人类礼仪", wiki: false },
+  ],
+  "substrate-pluralism": [
+    { type: "person", name: "David Chalmers", name_zh: "大卫·查尔默斯", wiki: "David Chalmers" },
+    { type: "person", name: "Susan Schneider", name_zh: "苏珊·施奈德", wiki: "Susan Schneider (philosopher)" },
+    { type: "resource", name: "Substrate independence", name_zh: "基质独立性", wiki: "Substrate independence" },
+    { type: "work", name: "Substrate-pluralism charter", name_zh: "基质多元主义宪章", wiki: false },
+  ],
+  "galactic-citizenship": [
+    { type: "resource", name: "Cosmopolitanism", name_zh: "世界主义", wiki: "Cosmopolitanism" },
+    { type: "work", name: "Galactic Constitution", name_zh: "《银河宪法》", wiki: false },
+    { type: "org", name: "Pan-Galactic Civic Tribunal", name_zh: "泛银河公民法庭", wiki: false },
+  ],
+  "speciation-ethics": [
+    { type: "work", name: "Last and First Men", name_zh: "《最后和最初的人》", wiki: "Last and First Men" },
+    { type: "work", name: "Star Maker", name_zh: "《造星者》", wiki: "Star Maker (novel)" },
+    { type: "resource", name: "Posthuman speciation", name_zh: "后人类物种分化", wiki: "Speciation" },
+    { type: "work", name: "Inter-species moral covenant", name_zh: "种间道德盟约", wiki: false },
   ],
 };
