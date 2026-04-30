@@ -546,7 +546,23 @@ window.TECH_IMAGES = {
   "reinforced-concrete": "images/reinforced-concrete.jpg",
   "suburban-tract-housing": "images/suburban-tract-housing.png",
   "parametric-architecture": "images/parametric-architecture.jpg",
-  "smart-building": "images/smart-building.jpg"
+  "smart-building": "images/smart-building.jpg",
+  "food-preservation": "images/food-preservation.jpg",
+  "beekeeping": "images/beekeeping.jpg",
+  "cheese-dairy-processing": "images/cheese-dairy-processing.jpg",
+  "salt-production": "images/salt-production.jpg",
+  "latifundia": "images/latifundia.png",
+  "sugar-plantation": "images/sugar-plantation.jpg",
+  "canning": "images/canning.jpg",
+  "mechanical-reaper": "images/mechanical-reaper.jpg",
+  "pasteurization": "images/pasteurization.jpg",
+  "refrigerated-transport": "images/refrigerated-transport.jpg",
+  "tractor": "images/tractor.jpg",
+  "synthetic-pesticides": "images/synthetic-pesticides.png",
+  "industrial-aquaculture": "images/industrial-aquaculture.jpg",
+  "frozen-food-supply-chain": "images/frozen-food-supply-chain.jpg",
+  "gmo": "images/gmo.png",
+  "vertical-farming": "images/vertical-farming.jpg"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -2732,5 +2748,69 @@ window.TECH_IMAGE_CREDITS = {
   "smart-building": {
     "article": "Building information modeling",
     "url": "https://en.wikipedia.org/wiki/Building_information_modeling"
+  },
+  "food-preservation": {
+    "article": "Pemmican",
+    "url": "https://en.wikipedia.org/wiki/Pemmican"
+  },
+  "beekeeping": {
+    "article": "Beekeeping",
+    "url": "https://en.wikipedia.org/wiki/Beekeeping"
+  },
+  "cheese-dairy-processing": {
+    "article": "Cheese",
+    "url": "https://en.wikipedia.org/wiki/Cheese"
+  },
+  "salt-production": {
+    "article": "Hallstatt",
+    "url": "https://en.wikipedia.org/wiki/Hallstatt"
+  },
+  "latifundia": {
+    "article": "Cura annonae",
+    "url": "https://en.wikipedia.org/wiki/Cura_annonae"
+  },
+  "sugar-plantation": {
+    "article": "Sugar plantations in the Caribbean",
+    "url": "https://en.wikipedia.org/wiki/Sugar_plantations_in_the_Caribbean"
+  },
+  "canning": {
+    "article": "Steel and tin cans",
+    "url": "https://en.wikipedia.org/wiki/Steel_and_tin_cans"
+  },
+  "mechanical-reaper": {
+    "article": "Reaper",
+    "url": "https://en.wikipedia.org/wiki/Reaper"
+  },
+  "pasteurization": {
+    "article": "Pasteurization",
+    "url": "https://en.wikipedia.org/wiki/Pasteurization"
+  },
+  "refrigerated-transport": {
+    "article": "Refrigerator car",
+    "url": "https://en.wikipedia.org/wiki/Refrigerator_car"
+  },
+  "tractor": {
+    "article": "Fordson",
+    "url": "https://en.wikipedia.org/wiki/Fordson"
+  },
+  "synthetic-pesticides": {
+    "article": "DDT",
+    "url": "https://en.wikipedia.org/wiki/DDT"
+  },
+  "industrial-aquaculture": {
+    "article": "Salmon as food",
+    "url": "https://en.wikipedia.org/wiki/Salmon_as_food"
+  },
+  "frozen-food-supply-chain": {
+    "article": "Frozen meal",
+    "url": "https://en.wikipedia.org/wiki/Frozen_meal"
+  },
+  "gmo": {
+    "article": "Genetically modified crops",
+    "url": "https://en.wikipedia.org/wiki/Genetically_modified_crops"
+  },
+  "vertical-farming": {
+    "article": "Vertical farming",
+    "url": "https://en.wikipedia.org/wiki/Vertical_farming"
   }
 };

@@ -622,4 +622,22 @@ window.TECH_NAMES_ZH = {
   "suburban-tract-housing": "郊区住宅区",
   "parametric-architecture": "参数化建筑",
   "smart-building": "智能建筑",
+
+  // ─── Subsistence & agriculture (gap fill) ───
+  "food-preservation": "食物保存",
+  "beekeeping": "养蜂业",
+  "cheese-dairy-processing": "奶酪与乳制品加工",
+  "salt-production": "盐业生产",
+  "latifundia": "罗马大庄园",
+  "sugar-plantation": "蔗糖种植园",
+  "canning": "罐头食品",
+  "mechanical-reaper": "机械收割机",
+  "pasteurization": "巴氏消毒法",
+  "refrigerated-transport": "冷藏运输",
+  "tractor": "拖拉机",
+  "synthetic-pesticides": "合成农药",
+  "industrial-aquaculture": "工业化水产养殖",
+  "frozen-food-supply-chain": "冷冻食品供应链",
+  "gmo": "转基因作物",
+  "vertical-farming": "垂直农业",
 };
