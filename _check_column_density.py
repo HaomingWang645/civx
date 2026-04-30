@@ -12,7 +12,7 @@ SPARSE_THRESHOLD = 2
 
 ERA_MIN_LEVELS = {
     "bronze": 8, "classical": 9, "medieval": 4, "renaissance": 4,
-    "industrial": 5, "modern": 3, "atomic": 3, "information": 5,
+    "enlightenment": 5, "industrial": 5, "modern": 3, "atomic": 3, "information": 5,
     "future": 13, "far-future": 8,
 }
 

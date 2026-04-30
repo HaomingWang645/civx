@@ -547,4 +547,18 @@ window.TECH_NAMES_ZH = {
   "substrate-pluralism": "基质多元主义",
   "galactic-citizenship": "银河公民身份",
   "speciation-ethics": "物种分化伦理学",
+
+  // ─── More warfare (enlightenment / industrial) ───
+  "linear-infantry-tactics": "线列步兵战术",
+  "standardized-field-artillery": "标准化野战炮",
+  "ironclad-warship": "铁甲舰",
+  "bolt-action-rifle": "栓动步枪",
+  "high-explosives": "高爆炸药",
+  "modern-quick-firing-artillery": "速射火炮",
+  "dreadnought-battleship": "无畏舰",
+
+  // ─── Fusion power decomposition ───
+  "inertial-confinement-fusion": "惯性约束聚变",
+  "magnetic-confinement-fusion": "磁约束聚变",
+  "tritium-breeding": "氚增殖",
 };

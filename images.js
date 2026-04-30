@@ -489,7 +489,17 @@ window.TECH_IMAGES = {
   "substrate-pluralism": "images/substrate-pluralism.png",
   "galactic-citizenship": "images/galactic-citizenship.png",
   "speciation-ethics": "images/speciation-ethics.jpg",
-  "bauhaus": "images/bauhaus.jpg"
+  "bauhaus": "images/bauhaus.jpg",
+  "linear-infantry-tactics": "images/linear-infantry-tactics.jpg",
+  "standardized-field-artillery": "images/standardized-field-artillery.jpg",
+  "ironclad-warship": "images/ironclad-warship.jpg",
+  "bolt-action-rifle": "images/bolt-action-rifle.jpg",
+  "high-explosives": "images/high-explosives.jpg",
+  "modern-quick-firing-artillery": "images/modern-quick-firing-artillery.jpg",
+  "dreadnought-battleship": "images/dreadnought-battleship.jpg",
+  "inertial-confinement-fusion": "images/inertial-confinement-fusion.jpg",
+  "magnetic-confinement-fusion": "images/magnetic-confinement-fusion.png",
+  "tritium-breeding": "images/tritium-breeding.jpg"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -2447,5 +2457,45 @@ window.TECH_IMAGE_CREDITS = {
   "bauhaus": {
     "article": "Bauhaus",
     "url": "https://en.wikipedia.org/wiki/Bauhaus"
+  },
+  "linear-infantry-tactics": {
+    "article": "Line (formation)",
+    "url": "https://en.wikipedia.org/wiki/Line_(formation)"
+  },
+  "standardized-field-artillery": {
+    "article": "Gribeauval system",
+    "url": "https://en.wikipedia.org/wiki/Gribeauval_system"
+  },
+  "ironclad-warship": {
+    "article": "HMS Warrior (1860)",
+    "url": "https://en.wikipedia.org/wiki/HMS_Warrior_(1860)"
+  },
+  "bolt-action-rifle": {
+    "article": "Gewehr 98",
+    "url": "https://en.wikipedia.org/wiki/Gewehr_98"
+  },
+  "high-explosives": {
+    "article": "Dynamite",
+    "url": "https://en.wikipedia.org/wiki/Dynamite"
+  },
+  "modern-quick-firing-artillery": {
+    "article": "Canon de 75 modèle 1897",
+    "url": "https://en.wikipedia.org/wiki/Canon_de_75_mod%C3%A8le_1897"
+  },
+  "dreadnought-battleship": {
+    "article": "HMS Dreadnought (1906)",
+    "url": "https://en.wikipedia.org/wiki/HMS_Dreadnought_(1906)"
+  },
+  "inertial-confinement-fusion": {
+    "article": "National Ignition Facility",
+    "url": "https://en.wikipedia.org/wiki/National_Ignition_Facility"
+  },
+  "magnetic-confinement-fusion": {
+    "article": "Tokamak",
+    "url": "https://en.wikipedia.org/wiki/Tokamak"
+  },
+  "tritium-breeding": {
+    "article": "Tritium",
+    "url": "https://en.wikipedia.org/wiki/Tritium"
   }
 };

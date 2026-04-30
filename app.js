@@ -223,7 +223,7 @@ function layoutTechs() {
   // bucket doesn't pile up into one tall stack.
   const ERA_MIN_LEVELS = {
     bronze: 8, classical: 9, medieval: 4, renaissance: 4,
-    industrial: 5, modern: 3, atomic: 3, information: 5,
+    enlightenment: 5, industrial: 5, modern: 3, atomic: 3, information: 5,
     future: 13, "far-future": 8,
   };
   for (const eraId in ERA_MIN_LEVELS) {
@@ -404,7 +404,9 @@ const layout = layoutTechs();
 const state = {
   selectedId: null,
   hoveredId: null,
-  mutedCategories: new Set(),
+  // Categories the user has clicked to filter on. Empty = show everything.
+  // Non-empty = only techs whose category is in this set are highlighted.
+  selectedCategories: new Set(),
   scale: 1,
   tx: 0,
   ty: 0,
@@ -583,7 +585,8 @@ function edgePath(a, b) {
 // ───────────── Highlights ─────────────
 function applyHighlights() {
   const focusId = state.selectedId || state.hoveredId;
-  const muted = state.mutedCategories;
+  const sel = state.selectedCategories;
+  const filtering = sel.size > 0;
   const search = state.search.trim().toLowerCase();
 
   const ancestors = new Set();
@@ -593,15 +596,15 @@ function applyHighlights() {
     collect(focusId, descendants, "down");
   }
 
-  // Nodes
+  // Nodes — when category filter is active, dim techs outside the set.
   document.querySelectorAll(".node").forEach(n => {
     const id = n.dataset.id;
     const tech = techById[id];
-    const isMuted = muted.has(tech.category);
+    const outOfFilter = filtering && !sel.has(tech.category);
     const matchesSearch = !search || tech.name.toLowerCase().includes(search);
     const inFocus = !focusId || id === focusId || ancestors.has(id) || descendants.has(id);
     n.classList.toggle("selected", id === state.selectedId);
-    n.classList.toggle("dimmed", isMuted || !inFocus || !matchesSearch);
+    n.classList.toggle("dimmed", outOfFilter || !inFocus || !matchesSearch);
   });
 
   // Edges
@@ -613,9 +616,9 @@ function applyHighlights() {
       || (ancestors.has(from) && (ancestors.has(to) || to === focusId))
       || (descendants.has(to) && (descendants.has(from) || from === focusId))
       || from === focusId || to === focusId;
-    const isMuted = muted.has(fromTech.category) || muted.has(toTech.category);
+    const outOfFilter = filtering && (!sel.has(fromTech.category) || !sel.has(toTech.category));
     e.classList.toggle("highlighted", !!focusId && inFocus);
-    e.classList.toggle("dimmed", isMuted || (!!focusId && !inFocus));
+    e.classList.toggle("dimmed", outOfFilter || (!!focusId && !inFocus));
   });
 }
 
@@ -931,24 +934,52 @@ function zoomBy(factor) {
 }
 
 // ───────────── Sidebar ─────────────
+//
+// Category list behavior: clicking a category adds it to a filter set.
+// • Empty filter set → all techs visible (default).
+// • Non-empty filter set → only techs in selected categories are highlighted;
+//   the rest dim out, and so do edges that touch any non-selected category.
+// Clicking a selected category again removes it from the filter (back toward
+// "show all" once the set empties).
 function renderSidebar() {
   const catList = document.getElementById("category-list");
   catList.innerHTML = "";
+
+  const clearBtn = document.getElementById("category-clear");
+  const updateRowStates = () => {
+    const filtering = state.selectedCategories.size > 0;
+    catList.querySelectorAll(".legend-item").forEach(item => {
+      const id = item.dataset.id;
+      item.classList.toggle("active", state.selectedCategories.has(id));
+      item.classList.toggle("muted", filtering && !state.selectedCategories.has(id));
+    });
+    if (clearBtn) clearBtn.hidden = !filtering;
+  };
+  if (clearBtn) {
+    clearBtn.onclick = () => {
+      state.selectedCategories.clear();
+      updateRowStates();
+      applyHighlights();
+    };
+  }
+
   Object.entries(CATEGORIES).forEach(([id, cat]) => {
     const el = document.createElement("div");
     el.className = "legend-item";
+    el.dataset.id = id;
     el.innerHTML = `
       <span class="legend-swatch" style="color: ${cat.color}; background: ${cat.color}"></span>
       <span>${cat.name}</span>
     `;
     el.onclick = () => {
-      if (state.mutedCategories.has(id)) state.mutedCategories.delete(id);
-      else state.mutedCategories.add(id);
-      el.classList.toggle("muted", state.mutedCategories.has(id));
+      if (state.selectedCategories.has(id)) state.selectedCategories.delete(id);
+      else state.selectedCategories.add(id);
+      updateRowStates();
       applyHighlights();
     };
     catList.appendChild(el);
   });
+  updateRowStates();
 
   const eraList = document.getElementById("era-list");
   eraList.innerHTML = "";

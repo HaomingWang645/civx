@@ -2312,4 +2312,75 @@ window.TECH_UNLOCKS = {
     { type: "resource", name: "Posthuman speciation", name_zh: "后人类物种分化", wiki: "Speciation" },
     { type: "work", name: "Inter-species moral covenant", name_zh: "种间道德盟约", wiki: false },
   ],
+
+  // ─── More warfare (enlightenment / industrial) ───
+  "linear-infantry-tactics": [
+    { type: "person", name: "Frederick the Great", name_zh: "腓特烈大帝", wiki: "Frederick the Great" },
+    { type: "unit", name: "Prussian Line Infantry", name_zh: "普鲁士线列步兵", wiki: "Prussian Army" },
+    { type: "work", name: "Reglement of 1743", name_zh: "《1743 年训练条令》", wiki: false },
+    { type: "resource", name: "Volley fire", name_zh: "齐射", wiki: "Volley fire" },
+  ],
+  "standardized-field-artillery": [
+    { type: "person", name: "Jean-Baptiste de Gribeauval", name_zh: "让-巴蒂斯特·德·格里博瓦尔", wiki: "Jean-Baptiste Vaquette de Gribeauval" },
+    { type: "unit", name: "12-pounder field gun", name_zh: "12 磅野战炮", wiki: "12-pounder long gun" },
+    { type: "resource", name: "Gribeauval system", name_zh: "格里博瓦尔体系", wiki: "Gribeauval system" },
+    { type: "org", name: "École d'application de l'artillerie", name_zh: "炮兵应用学校", wiki: false },
+  ],
+  "ironclad-warship": [
+    { type: "unit", name: "HMS Warrior", name_zh: "HMS 勇士号", wiki: "HMS Warrior (1860)" },
+    { type: "unit", name: "USS Monitor", name_zh: "美国海军舰艇监视者号", wiki: "USS Monitor" },
+    { type: "unit", name: "CSS Virginia", name_zh: "CSS 弗吉尼亚号", wiki: "CSS Virginia" },
+    { type: "unit", name: "La Gloire", name_zh: "光荣号", wiki: "French ironclad Gloire" },
+    { type: "work", name: "Battle of Hampton Roads", name_zh: "汉普顿锚地海战", wiki: "Battle of Hampton Roads" },
+  ],
+  "bolt-action-rifle": [
+    { type: "person", name: "Paul Mauser", name_zh: "保罗·毛瑟", wiki: "Paul Mauser" },
+    { type: "unit", name: "Mauser Model 1898", name_zh: "毛瑟 1898 步枪", wiki: "Mauser Model 1898" },
+    { type: "unit", name: "Lee-Enfield", name_zh: "李-恩菲尔德步枪", wiki: "Lee–Enfield" },
+    { type: "unit", name: "Mosin-Nagant", name_zh: "莫辛-纳甘步枪", wiki: "Mosin–Nagant" },
+    { type: "unit", name: "Dreyse Needle Gun", name_zh: "德赖斯针发枪", wiki: "Dreyse needle gun" },
+  ],
+  "high-explosives": [
+    { type: "person", name: "Alfred Nobel", name_zh: "阿尔弗雷德·诺贝尔", wiki: "Alfred Nobel" },
+    { type: "resource", name: "Dynamite", name_zh: "硝化甘油炸药", wiki: "Dynamite" },
+    { type: "resource", name: "TNT", name_zh: "三硝基甲苯", wiki: "TNT" },
+    { type: "resource", name: "Nitroglycerin", name_zh: "硝化甘油", wiki: "Nitroglycerin" },
+    { type: "org", name: "Nobel Industries", name_zh: "诺贝尔工业", wiki: "Nobel Industries" },
+  ],
+  "modern-quick-firing-artillery": [
+    { type: "unit", name: "French 75mm", name_zh: "法国 75 毫米速射炮", wiki: "Canon de 75 modèle 1897" },
+    { type: "unit", name: "Krupp 77mm", name_zh: "克虏伯 77 毫米炮", wiki: "7.7 cm FK 96" },
+    { type: "unit", name: "British 18-pounder", name_zh: "英军 18 磅野战炮", wiki: "Ordnance QF 18-pounder" },
+    { type: "resource", name: "Hydropneumatic recoil", name_zh: "液气缓冲后座装置", wiki: "Recoil" },
+  ],
+  "dreadnought-battleship": [
+    { type: "unit", name: "HMS Dreadnought", name_zh: "HMS 无畏号", wiki: "HMS Dreadnought (1906)" },
+    { type: "unit", name: "SMS Bayern", name_zh: "SMS 巴伐利亚号", wiki: "SMS Bayern" },
+    { type: "unit", name: "USS Texas", name_zh: "USS 德克萨斯号", wiki: "USS Texas (BB-35)" },
+    { type: "work", name: "Battle of Jutland", name_zh: "日德兰海战", wiki: "Battle of Jutland" },
+    { type: "person", name: "John Fisher", name_zh: "约翰·费舍尔", wiki: "John Fisher, 1st Baron Fisher" },
+  ],
+
+  // ─── Fusion power decomposition ───
+  "inertial-confinement-fusion": [
+    { type: "unit", name: "National Ignition Facility", name_zh: "国家点火装置", wiki: "National Ignition Facility" },
+    { type: "org", name: "Lawrence Livermore National Laboratory", name_zh: "劳伦斯利弗莫尔国家实验室", wiki: "Lawrence Livermore National Laboratory" },
+    { type: "resource", name: "Inertial confinement fusion", name_zh: "惯性约束聚变", wiki: "Inertial confinement fusion" },
+    { type: "unit", name: "Laser Mégajoule", name_zh: "兆焦耳激光装置", wiki: "Laser Mégajoule" },
+  ],
+  "magnetic-confinement-fusion": [
+    { type: "unit", name: "ITER", name_zh: "国际热核聚变实验堆", wiki: "ITER" },
+    { type: "unit", name: "Joint European Torus", name_zh: "欧洲联合环", wiki: "Joint European Torus" },
+    { type: "unit", name: "SPARC", name_zh: "SPARC 紧凑型托卡马克", wiki: "SPARC (tokamak)" },
+    { type: "unit", name: "EAST", name_zh: "东方超环", wiki: "Experimental Advanced Superconducting Tokamak" },
+    { type: "resource", name: "Tokamak", name_zh: "托卡马克", wiki: "Tokamak" },
+    { type: "resource", name: "Stellarator", name_zh: "仿星器", wiki: "Stellarator" },
+    { type: "org", name: "Commonwealth Fusion Systems", name_zh: "联邦聚变系统公司", wiki: "Commonwealth Fusion Systems" },
+  ],
+  "tritium-breeding": [
+    { type: "resource", name: "Tritium", name_zh: "氚", wiki: "Tritium" },
+    { type: "resource", name: "Lithium-6", name_zh: "锂-6", wiki: "Lithium-6" },
+    { type: "resource", name: "Tritium breeding ratio", name_zh: "氚增殖比", wiki: "Breeder reactor" },
+    { type: "unit", name: "ITER Test Blanket Module", name_zh: "ITER 试验包层模块", wiki: "ITER" },
+  ],
 };
