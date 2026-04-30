@@ -221,7 +221,11 @@ function layoutTechs() {
   // Per-era minimum sub-column count (overrides auto-derived). Used to spread
   // densely-clustered eras (e.g. Future) across more columns so a single year
   // bucket doesn't pile up into one tall stack.
-  const ERA_MIN_LEVELS = { classical: 13, future: 13, "far-future": 8 };
+  const ERA_MIN_LEVELS = {
+    bronze: 8, classical: 9, medieval: 4, renaissance: 4,
+    industrial: 5, modern: 3, atomic: 3, information: 5,
+    future: 13, "far-future": 8,
+  };
   for (const eraId in ERA_MIN_LEVELS) {
     eraLevels[eraId] = Math.max(eraLevels[eraId] ?? 0, ERA_MIN_LEVELS[eraId]);
   }
@@ -246,6 +250,76 @@ function layoutTechs() {
       const frac = (y - yMin) / (yMax - yMin);
       inEraLevel[t.id] = Math.max(0, Math.min(N - 1, Math.round(frac * (N - 1))));
     }
+  }
+
+  // Compact + balance pass per era:
+  //   1. Drop empty sub-columns (collapse the horizontal space they take).
+  //   2. Merge sparse sub-columns (≤ SPARSE_THRESHOLD techs) into the smaller
+  //      of their two neighbors — but only if the merge keeps the target
+  //      column at ≤ MAX_PER_COLUMN, so we don't trade sparseness for overflow.
+  // A tech tagged `landmark: true` in data.js protects its column from being
+  // merged — use this for century-defining techs that should anchor their slot.
+  const SPARSE_THRESHOLD = 2;
+  const MAX_PER_COLUMN = 12;
+  for (const era of ERAS) {
+    const eraTechs = TECHS.filter(t => t.era === era.id);
+    if (eraTechs.length === 0) continue;
+    const N = eraLevels[era.id] + 1;
+
+    // Disjoint-set-ish: root[i] = root col index that col i has been merged into.
+    const root = Array.from({ length: N }, (_, i) => i);
+    const count = new Array(N).fill(0);
+    for (const t of eraTechs) count[inEraLevel[t.id]]++;
+
+    const activeRoots = () => {
+      const out = [];
+      for (let i = 0; i < N; i++) if (root[i] === i && count[i] > 0) out.push(i);
+      return out;
+    };
+    const mergeInto = (target, source) => {
+      for (let i = 0; i < N; i++) if (root[i] === source) root[i] = target;
+      count[target] += count[source];
+      count[source] = 0;
+    };
+    const groupHasLandmark = (rootIdx) =>
+      eraTechs.some(t => t.landmark && root[inEraLevel[t.id]] === rootIdx);
+
+    // Iteratively absorb sparse groups until none remain (or only one group).
+    let progress = true;
+    while (progress) {
+      progress = false;
+      const groups = activeRoots();
+      if (groups.length <= 1) break;
+      for (let gi = 0; gi < groups.length; gi++) {
+        const r = groups[gi];
+        if (count[r] > SPARSE_THRESHOLD) continue;
+        if (groupHasLandmark(r)) continue;
+        const left  = gi > 0                     ? groups[gi - 1] : null;
+        const right = gi < groups.length - 1     ? groups[gi + 1] : null;
+        // Only consider neighbors that won't overflow MAX_PER_COLUMN.
+        const lOk = left  !== null && count[left]  + count[r] <= MAX_PER_COLUMN;
+        const rOk = right !== null && count[right] + count[r] <= MAX_PER_COLUMN;
+        let target = null;
+        if (lOk && rOk) target = count[left] <= count[right] ? left : right;
+        else if (lOk) target = left;
+        else if (rOk) target = right;
+        // If neither neighbor can absorb without overflow, leave the column
+        // standalone — better a sparse column than a too-dense one.
+        if (target !== null) {
+          mergeInto(target, r);
+          progress = true;
+          break;
+        }
+      }
+    }
+
+    // Renumber surviving groups to 0..K-1 (also drops empty cols by construction).
+    const finalGroups = activeRoots();
+    const finalIdx = new Map(finalGroups.map((g, i) => [g, i]));
+    for (const t of eraTechs) {
+      inEraLevel[t.id] = finalIdx.get(root[inEraLevel[t.id]]);
+    }
+    eraLevels[era.id] = Math.max(0, finalGroups.length - 1);
   }
 
   // Group by (era, level) into buckets — eraLevels was already set above.
