@@ -2455,4 +2455,45 @@ window.TECH_UNLOCKS = {
     { type: "org", name: "TAE Technologies", name_zh: "TAE 技术公司", wiki: "TAE Technologies" },
     { type: "org", name: "Helion Energy", name_zh: "氦聚变能源", wiki: "Helion Energy" },
   ],
+
+  // ─── Interstellar propulsion + quantum precision ───
+  "optical-atomic-clock": [
+    { type: "person", name: "Jun Ye", name_zh: "叶军", wiki: "Jun Ye (physicist)" },
+    { type: "person", name: "David Wineland", name_zh: "戴维·瓦恩兰", wiki: "David J. Wineland" },
+    { type: "resource", name: "Optical lattice clock", name_zh: "光晶格钟", wiki: "Optical lattice" },
+    { type: "unit", name: "Strontium-87 clock", name_zh: "锶-87 光钟", wiki: "Strontium" },
+    { type: "resource", name: "Chronometric geodesy", name_zh: "时频大地测量", wiki: "Chronometric leveling" },
+  ],
+  "quantum-sensing": [
+    { type: "resource", name: "Nitrogen-vacancy center", name_zh: "金刚石氮空位中心", wiki: "Nitrogen-vacancy center" },
+    { type: "resource", name: "Atom interferometry", name_zh: "原子干涉术", wiki: "Atom interferometer" },
+    { type: "resource", name: "Squeezed light", name_zh: "压缩光", wiki: "Squeezed states of light" },
+    { type: "unit", name: "Quantum gravimeter", name_zh: "量子重力仪", wiki: "Gravimeter" },
+    { type: "unit", name: "Quantum magnetometer", name_zh: "量子磁力计", wiki: "Magnetometer" },
+  ],
+  "beamed-sail-propulsion": [
+    { type: "org", name: "Breakthrough Starshot", name_zh: "突破摄星计划", wiki: "Breakthrough Starshot" },
+    { type: "person", name: "Robert L. Forward", name_zh: "罗伯特·L·福沃德", wiki: "Robert L. Forward" },
+    { type: "unit", name: "Lightsail probe", name_zh: "光帆探测器", wiki: "Solar sail" },
+    { type: "resource", name: "Phased laser array", name_zh: "相控阵激光", wiki: "Phased array" },
+  ],
+  "nuclear-pulse-propulsion": [
+    { type: "unit", name: "Project Orion", name_zh: "猎户座计划", wiki: "Project Orion (nuclear propulsion)" },
+    { type: "unit", name: "Project Daedalus", name_zh: "代达罗斯计划", wiki: "Project Daedalus" },
+    { type: "unit", name: "Project Longshot", name_zh: "长射计划", wiki: "Project Longshot" },
+    { type: "person", name: "Freeman Dyson", name_zh: "弗里曼·戴森", wiki: "Freeman Dyson" },
+    { type: "person", name: "Ted Taylor", name_zh: "西奥多·泰勒", wiki: "Ted Taylor (physicist)" },
+  ],
+  "bussard-ramjet": [
+    { type: "person", name: "Robert W. Bussard", name_zh: "罗伯特·W·巴萨德", wiki: "Robert W. Bussard" },
+    { type: "resource", name: "Magnetic ramscoop", name_zh: "磁性冲压舀斗", wiki: false },
+    { type: "work", name: "Catalyzed CNO ramjet", name_zh: "催化 CNO 冲压发动机", wiki: false },
+    { type: "work", name: "Tau Zero", name_zh: "《时间零》", wiki: "Tau Zero" },
+  ],
+  "antimatter-propulsion": [
+    { type: "resource", name: "Antiproton-catalyzed micro-fusion", name_zh: "反质子催化微聚变", wiki: false },
+    { type: "unit", name: "Antimatter rocket", name_zh: "反物质火箭", wiki: "Antimatter rocket" },
+    { type: "person", name: "Robert Frisbee", name_zh: "罗伯特·弗里斯比", wiki: false },
+    { type: "org", name: "NASA Institute for Advanced Concepts", name_zh: "NASA 先进概念研究院", wiki: "NASA Institute for Advanced Concepts" },
+  ],
 };

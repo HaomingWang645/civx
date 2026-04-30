@@ -509,7 +509,13 @@ window.TECH_IMAGES = {
   "higgs-discovery": "images/higgs-discovery.png",
   "higgs-factory": "images/higgs-factory.png",
   "fusion-materials": "images/fusion-materials.jpg",
-  "aneutronic-fusion": "images/aneutronic-fusion.png"
+  "aneutronic-fusion": "images/aneutronic-fusion.png",
+  "optical-atomic-clock": "images/optical-atomic-clock.png",
+  "quantum-sensing": "images/quantum-sensing.png",
+  "beamed-sail-propulsion": "images/beamed-sail-propulsion.jpg",
+  "nuclear-pulse-propulsion": "images/nuclear-pulse-propulsion.jpg",
+  "bussard-ramjet": "images/bussard-ramjet.jpg",
+  "antimatter-propulsion": "images/antimatter-propulsion.png"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -2547,5 +2553,29 @@ window.TECH_IMAGE_CREDITS = {
   "aneutronic-fusion": {
     "article": "Aneutronic fusion",
     "url": "https://en.wikipedia.org/wiki/Aneutronic_fusion"
+  },
+  "optical-atomic-clock": {
+    "article": "Optical lattice",
+    "url": "https://en.wikipedia.org/wiki/Optical_lattice"
+  },
+  "quantum-sensing": {
+    "article": "Nitrogen-vacancy center",
+    "url": "https://en.wikipedia.org/wiki/Nitrogen-vacancy_center"
+  },
+  "beamed-sail-propulsion": {
+    "article": "Breakthrough Starshot",
+    "url": "https://en.wikipedia.org/wiki/Breakthrough_Starshot"
+  },
+  "nuclear-pulse-propulsion": {
+    "article": "Project Daedalus",
+    "url": "https://en.wikipedia.org/wiki/Project_Daedalus"
+  },
+  "bussard-ramjet": {
+    "article": "Bussard ramjet",
+    "url": "https://en.wikipedia.org/wiki/Bussard_ramjet"
+  },
+  "antimatter-propulsion": {
+    "article": "Antimatter propulsion spacecraft",
+    "url": "https://en.wikipedia.org/wiki/Antimatter_propulsion_spacecraft"
   }
 };

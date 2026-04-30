@@ -573,4 +573,12 @@ window.TECH_NAMES_ZH = {
   "higgs-factory": "希格斯工厂",
   "fusion-materials": "聚变材料",
   "aneutronic-fusion": "无中子聚变",
+
+  // ─── Interstellar propulsion + quantum precision ───
+  "optical-atomic-clock": "光学原子钟",
+  "quantum-sensing": "量子传感",
+  "beamed-sail-propulsion": "光帆推进",
+  "nuclear-pulse-propulsion": "核脉冲推进",
+  "bussard-ramjet": "巴萨德冲压发动机",
+  "antimatter-propulsion": "反物质推进",
 };

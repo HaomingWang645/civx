@@ -6027,5 +6027,77 @@
     "status": "ok",
     "score": 0.9,
     "reason": "physics addition"
+  },
+  "optical-atomic-clock": {
+    "name": "optical-atomic-clock",
+    "query": "Optical lattice",
+    "article": "Optical lattice",
+    "page": "https://en.wikipedia.org/wiki/Optical_lattice",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/AtomsInLattice.png/330px-AtomsInLattice.png",
+    "image_path": "images/optical-atomic-clock.png",
+    "extract": "An optical lattice is formed by the interference of counter-propagating laser beams, creating a spatially periodic intensity pattern. The resulting periodic potential may trap neutral atoms via the Stark shift. Atoms are cooled and congregate at the potential extrema. The resulti",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "propulsion/quantum addition"
+  },
+  "quantum-sensing": {
+    "name": "quantum-sensing",
+    "query": "Nitrogen-vacancy center",
+    "article": "Nitrogen-vacancy center",
+    "page": "https://en.wikipedia.org/wiki/Nitrogen-vacancy_center",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Nitrogen-vacancy_center.png",
+    "image_path": "images/quantum-sensing.png",
+    "extract": "The nitrogen-vacancy center is one of numerous photoluminescent point defects in diamond. It consists of a nearest-neighbor pair of a nitrogen atom, which substitutes for a carbon atom, and a lattice vacancy.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "propulsion/quantum addition"
+  },
+  "beamed-sail-propulsion": {
+    "name": "beamed-sail-propulsion",
+    "query": "Breakthrough Starshot",
+    "article": "Breakthrough Starshot",
+    "page": "https://en.wikipedia.org/wiki/Breakthrough_Starshot",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Press_Conference_at_ESO_HQ2.tif/lossy-page1-330px-Press_Conference_at_ESO_HQ2.tif.jpg",
+    "image_path": "images/beamed-sail-propulsion.jpg",
+    "extract": "Breakthrough Starshot was a research and engineering project by the Breakthrough Initiatives program to develop a proof-of-concept fleet of light sail interstellar probes named Starchip, to be capable of making the journey to the Alpha Centauri star system 4.34 light-years away. ",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "propulsion/quantum addition"
+  },
+  "nuclear-pulse-propulsion": {
+    "name": "nuclear-pulse-propulsion",
+    "query": "Project Daedalus",
+    "article": "Project Daedalus",
+    "page": "https://en.wikipedia.org/wiki/Project_Daedalus",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Daedalus_Spaceship_concept.jpg/330px-Daedalus_Spaceship_concept.jpg",
+    "image_path": "images/nuclear-pulse-propulsion.jpg",
+    "extract": "Project Daedalus was a study conducted between 1973 and 1978 by the British Interplanetary Society to design a plausible uncrewed interstellar probe. Intended mainly as a scientific probe, the design criteria specified that the spacecraft had to use existing or near-future techno",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "propulsion/quantum addition"
+  },
+  "bussard-ramjet": {
+    "name": "bussard-ramjet",
+    "query": "Bussard ramjet",
+    "article": "Bussard ramjet",
+    "page": "https://en.wikipedia.org/wiki/Bussard_ramjet",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Bussard_Interstellar_Ramjet_Engine.jpg/330px-Bussard_Interstellar_Ramjet_Engine.jpg",
+    "image_path": "images/bussard-ramjet.jpg",
+    "extract": "The Bussard ramjet is a theoretical method of spacecraft propulsion for interstellar travel. A fast moving spacecraft scoops up hydrogen from the interstellar medium using an enormous funnel-shaped magnetic field ; the hydrogen is compressed until thermonuclear fusion occurs, whi",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "propulsion/quantum addition"
+  },
+  "antimatter-propulsion": {
+    "name": "antimatter-propulsion",
+    "query": "Antimatter rocket",
+    "article": "Antimatter propulsion spacecraft",
+    "page": "https://en.wikipedia.org/wiki/Antimatter_propulsion_spacecraft",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/ElectronPositronAnnihilation.svg/330px-ElectronPositronAnnihilation.svg.png",
+    "image_path": "images/antimatter-propulsion.png",
+    "extract": "Antimatter propulsion spacecraft is a proposed class of space technology that utilize antimatter for power within spacecraft propulsion. There are several designs that attempt to accomplish this goal.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "propulsion/quantum addition"
   }
 }
