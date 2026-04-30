@@ -171,6 +171,13 @@ window.TECH_UNLOCKS = {
   "solar-calendar": [
     { type: "work", name: "Egyptian civil calendar", name_zh: "埃及民用历" },
   ],
+  "cartography": [
+    { type: "wonder", name: "Babylonian World Map", name_zh: "巴比伦世界地图", wiki: "Imago Mundi (Babylonian map)" },
+    { type: "person", name: "Anaximander", name_zh: "阿那克西曼德", wiki: "Anaximander" },
+    { type: "person", name: "Eratosthenes", name_zh: "埃拉托色尼", wiki: "Eratosthenes" },
+    { type: "person", name: "Ptolemy", name_zh: "托勒密", wiki: "Ptolemy" },
+    { type: "work", name: "Geographia (Ptolemy)", name_zh: "《地理学》(托勒密)", wiki: "Geography (Ptolemy)" },
+  ],
   "monumental-architecture": [
     { type: "wonder", name: "Stepped temples", name_zh: "阶梯式神庙", wiki: "Step pyramid" },
   ],
@@ -283,6 +290,13 @@ window.TECH_UNLOCKS = {
     { type: "wonder", name: "Appian Way", name_zh: "阿庇亚大道" },
     { type: "wonder", name: "Persian Royal Road", name_zh: "波斯御道", wiki: "Royal Road" },
     { type: "wonder", name: "Silk Road", name_zh: "丝绸之路" },
+  ],
+  "postal-system": [
+    { type: "org", name: "Persian angarium (Royal Road couriers)", name_zh: "波斯御道驿传", wiki: "Angarium" },
+    { type: "org", name: "Cursus publicus", name_zh: "罗马帝国邮政", wiki: "Cursus publicus" },
+    { type: "org", name: "Mongol Yam", name_zh: "蒙古驿站", wiki: "Yam (route)" },
+    { type: "person", name: "Cyrus the Great", name_zh: "居鲁士大帝", wiki: "Cyrus the Great" },
+    { type: "person", name: "Augustus (cursus publicus founder)", name_zh: "奥古斯都(罗马邮政创立者)", wiki: "Augustus" },
   ],
   "aqueduct": [
     { type: "wonder", name: "Pont du Gard", name_zh: "加尔桥" },
@@ -442,6 +456,13 @@ window.TECH_UNLOCKS = {
   "letter-of-credit": [
     { type: "work", name: "Bill of exchange", name_zh: "汇票" },
   ],
+  "astrolabe": [
+    { type: "person", name: "Hipparchus", name_zh: "喜帕恰斯", wiki: "Hipparchus" },
+    { type: "person", name: "al-Khwarizmi", name_zh: "花剌子米", wiki: "Al-Khwarizmi" },
+    { type: "person", name: "al-Zarqali", name_zh: "扎尔卡利", wiki: "Al-Zarqali" },
+    { type: "unit", name: "Planispheric astrolabe", name_zh: "平面星盘", wiki: "Astrolabe" },
+    { type: "unit", name: "Mariner's astrolabe", name_zh: "航海星盘", wiki: "Mariner's astrolabe" },
+  ],
   "spectacles": [
     { type: "person", name: "Salvino degli Armati", name_zh: "萨尔维诺·德利·阿尔马蒂" },
   ],
@@ -537,6 +558,20 @@ window.TECH_UNLOCKS = {
     { type: "org", name: "Dutch East India Company (VOC)", name_zh: "荷兰东印度公司" },
     { type: "org", name: "English East India Company", name_zh: "英国东印度公司" },
     { type: "org", name: "Hudson's Bay Company", name_zh: "哈德逊湾公司" },
+  ],
+  "patent-system": [
+    { type: "work", name: "Venetian Patent Statute (1474)", name_zh: "《威尼斯专利法》", wiki: "Venetian Patent Statute" },
+    { type: "work", name: "Statute of Monopolies (1624)", name_zh: "《英国垄断法》", wiki: "Statute of Monopolies" },
+    { type: "work", name: "U.S. Patent Act (1790)", name_zh: "《美国专利法》(1790)", wiki: "Patent Act of 1790" },
+    { type: "org", name: "U.S. Patent and Trademark Office", name_zh: "美国专利商标局", wiki: "United States Patent and Trademark Office" },
+    { type: "org", name: "World Intellectual Property Organization", name_zh: "世界知识产权组织", wiki: "World Intellectual Property Organization" },
+  ],
+  "stock-exchange": [
+    { type: "org", name: "Amsterdam Stock Exchange", name_zh: "阿姆斯特丹证券交易所", wiki: "Amsterdam Stock Exchange" },
+    { type: "org", name: "London Stock Exchange", name_zh: "伦敦证券交易所", wiki: "London Stock Exchange" },
+    { type: "org", name: "New York Stock Exchange", name_zh: "纽约证券交易所", wiki: "New York Stock Exchange" },
+    { type: "work", name: "Buttonwood Agreement (1792)", name_zh: "《梧桐树协议》", wiki: "Buttonwood Agreement" },
+    { type: "person", name: "Joseph de la Vega", name_zh: "约瑟夫·德·拉·维加", wiki: "Joseph de la Vega" },
   ],
   "mercantilism": [
     { type: "person", name: "Jean-Baptiste Colbert", name_zh: "让-巴蒂斯特·柯尔贝尔" },
@@ -858,6 +893,14 @@ window.TECH_UNLOCKS = {
     { type: "org", name: "General Electric", name_zh: "通用电气" },
     { type: "org", name: "Westinghouse Electric", name_zh: "西屋电气" },
   ],
+  "aluminum-smelting": [
+    { type: "person", name: "Charles Martin Hall", name_zh: "查尔斯·马丁·霍尔", wiki: "Charles Martin Hall" },
+    { type: "person", name: "Paul Héroult", name_zh: "保罗·埃鲁", wiki: "Paul Héroult" },
+    { type: "resource", name: "Aluminum", name_zh: "铝", wiki: "Aluminium" },
+    { type: "resource", name: "Bauxite", name_zh: "铝土矿", wiki: "Bauxite" },
+    { type: "resource", name: "Cryolite", name_zh: "冰晶石", wiki: "Cryolite" },
+    { type: "org", name: "Alcoa", name_zh: "美国铝业公司", wiki: "Alcoa" },
+  ],
 
   // ─── Modern ──────────────────────────────────────────────────
   "airplane": [
@@ -923,6 +966,14 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "Albert Sabin", name_zh: "阿尔伯特·萨宾" },
     { type: "person", name: "Maurice Hilleman", name_zh: "莫里斯·希勒曼" },
   ],
+  "organ-transplant": [
+    { type: "person", name: "Joseph Murray", name_zh: "约瑟夫·默里", wiki: "Joseph Murray" },
+    { type: "person", name: "Christiaan Barnard", name_zh: "克里斯蒂安·巴纳德", wiki: "Christiaan Barnard" },
+    { type: "person", name: "Alexis Carrel", name_zh: "亚历克西·卡雷尔", wiki: "Alexis Carrel" },
+    { type: "resource", name: "Cyclosporine", name_zh: "环孢素", wiki: "Ciclosporin" },
+    { type: "resource", name: "Tacrolimus", name_zh: "他克莫司", wiki: "Tacrolimus" },
+    { type: "work", name: "HLA matching", name_zh: "人类白细胞抗原配型", wiki: "Human leukocyte antigen" },
+  ],
   "dna-structure": [
     { type: "person", name: "James Watson", name_zh: "詹姆斯·沃森" },
     { type: "person", name: "Francis Crick", name_zh: "弗朗西斯·克里克" },
@@ -977,6 +1028,23 @@ window.TECH_UNLOCKS = {
   "mainframe": [
     { type: "unit", name: "IBM System/360", name_zh: "IBM System/360" },
     { type: "org", name: "IBM", name_zh: "国际商业机器公司" },
+  ],
+  "information-theory": [
+    { type: "person", name: "Claude Shannon", name_zh: "克劳德·香农", wiki: "Claude Shannon" },
+    { type: "work", name: "A Mathematical Theory of Communication", name_zh: "《通信的数学理论》", wiki: "A Mathematical Theory of Communication" },
+    { type: "resource", name: "Bit", name_zh: "比特", wiki: "Bit" },
+    { type: "work", name: "Shannon entropy", name_zh: "香农熵", wiki: "Entropy (information theory)" },
+    { type: "work", name: "Shannon–Hartley theorem", name_zh: "香农-哈特利定理", wiki: "Shannon–Hartley theorem" },
+    { type: "person", name: "Norbert Wiener", name_zh: "诺伯特·维纳", wiki: "Norbert Wiener" },
+  ],
+  "operating-system": [
+    { type: "person", name: "Ken Thompson", name_zh: "肯·汤普森", wiki: "Ken Thompson" },
+    { type: "person", name: "Dennis Ritchie", name_zh: "丹尼斯·里奇", wiki: "Dennis Ritchie" },
+    { type: "person", name: "Linus Torvalds", name_zh: "林纳斯·托瓦兹", wiki: "Linus Torvalds" },
+    { type: "unit", name: "UNIX", name_zh: "UNIX 操作系统", wiki: "Unix" },
+    { type: "unit", name: "Linux", name_zh: "Linux 操作系统", wiki: "Linux" },
+    { type: "unit", name: "Microsoft Windows", name_zh: "微软 Windows", wiki: "Microsoft Windows" },
+    { type: "unit", name: "macOS", name_zh: "macOS", wiki: "MacOS" },
   ],
   "television": [
     { type: "person", name: "Vladimir Zworykin", name_zh: "弗拉基米尔·兹沃利金" },
@@ -1541,6 +1609,15 @@ window.TECH_UNLOCKS = {
     { type: "org", name: "IonQ", name_zh: "IonQ" },
     { type: "unit", name: "Shor's algorithm", name_zh: "秀尔算法" },
     { type: "unit", name: "Grover's algorithm", name_zh: "格罗弗算法" },
+  ],
+  "quantum-internet": [
+    { type: "work", name: "Quantum key distribution", name_zh: "量子密钥分发", wiki: "Quantum key distribution" },
+    { type: "work", name: "Quantum entanglement", name_zh: "量子纠缠", wiki: "Quantum entanglement" },
+    { type: "work", name: "Quantum teleportation", name_zh: "量子隐形传态", wiki: "Quantum teleportation" },
+    { type: "unit", name: "Micius satellite", name_zh: "墨子号量子卫星", wiki: "Micius (satellite)" },
+    { type: "unit", name: "Quantum repeater", name_zh: "量子中继器", wiki: "Quantum repeater" },
+    { type: "person", name: "Stephanie Wehner", name_zh: "斯蒂芬妮·维纳", wiki: "Stephanie Wehner" },
+    { type: "org", name: "Quantum Internet Alliance", name_zh: "量子互联网联盟", wiki: "Quantum Internet Alliance" },
   ],
   "carbon-capture-scale": [
     { type: "org", name: "Climeworks", name_zh: "Climeworks" },
@@ -2826,5 +2903,94 @@ window.TECH_UNLOCKS = {
     { type: "org", name: "AeroFarms", name_zh: "AeroFarms 空中农场", wiki: "AeroFarms" },
     { type: "org", name: "Plenty (company)", name_zh: "Plenty 农业公司", wiki: "Plenty (company)" },
     { type: "resource", name: "Aeroponics", name_zh: "气培", wiki: "Aeroponics" },
+  ],
+
+  // ─── Post-WWI weapons platforms ───
+  "assault-rifle": [
+    { type: "unit", name: "StG 44", name_zh: "StG 44 突击步枪", wiki: "StG 44" },
+    { type: "unit", name: "AK-47", name_zh: "AK-47 突击步枪", wiki: "AK-47" },
+    { type: "unit", name: "M16 rifle", name_zh: "M16 步枪", wiki: "M16 rifle" },
+    { type: "person", name: "Mikhail Kalashnikov", name_zh: "米哈伊尔·卡拉什尼科夫", wiki: "Mikhail Kalashnikov" },
+    { type: "person", name: "Hugo Schmeisser", name_zh: "雨果·施迈瑟", wiki: "Hugo Schmeisser" },
+    { type: "resource", name: "Intermediate cartridge", name_zh: "中间型弹药", wiki: "Intermediate cartridge" },
+  ],
+  "guided-missile-destroyer": [
+    { type: "unit", name: "Arleigh Burke-class destroyer", name_zh: "阿利·伯克级驱逐舰", wiki: "Arleigh Burke-class destroyer" },
+    { type: "unit", name: "USS Charles F. Adams", name_zh: "查尔斯·F·亚当斯号", wiki: "USS Charles F. Adams (DDG-2)" },
+    { type: "unit", name: "Type 052D destroyer", name_zh: "052D 型驱逐舰", wiki: "Type 052D destroyer" },
+    { type: "unit", name: "Aegis Combat System", name_zh: "宙斯盾作战系统", wiki: "Aegis Combat System" },
+    { type: "resource", name: "Tomahawk missile", name_zh: "战斧巡航导弹", wiki: "Tomahawk (missile)" },
+  ],
+
+  // ─── Air defense + military support ───
+  "military-logistics": [
+    { type: "person", name: "Helmuth von Moltke the Elder", name_zh: "老毛奇", wiki: "Helmuth von Moltke the Elder" },
+    { type: "org", name: "German General Staff", name_zh: "德国总参谋部", wiki: "German General Staff" },
+    { type: "work", name: "Berlin Airlift", name_zh: "柏林空运", wiki: "Berlin Blockade" },
+    { type: "unit", name: "Red Ball Express", name_zh: "红球快运", wiki: "Red Ball Express" },
+  ],
+  "anti-aircraft-artillery": [
+    { type: "unit", name: "8.8 cm FlaK 36", name_zh: "88 毫米高射炮", wiki: "8.8 cm Flak 18/36/37/41" },
+    { type: "unit", name: "Bofors 40 mm", name_zh: "博福斯 40 毫米炮", wiki: "Bofors 40 mm gun" },
+    { type: "unit", name: "Phalanx CIWS", name_zh: "密集阵近防系统", wiki: "Phalanx CIWS" },
+    { type: "resource", name: "Proximity fuze", name_zh: "近炸引信", wiki: "Proximity fuze" },
+  ],
+  "combat-medic": [
+    { type: "unit", name: "Mobile Army Surgical Hospital", name_zh: "流动军外科医院", wiki: "Mobile army surgical hospital" },
+    { type: "unit", name: "Bell UH-1 Iroquois", name_zh: "贝尔 UH-1 直升机", wiki: "Bell UH-1 Iroquois" },
+    { type: "resource", name: "Tactical Combat Casualty Care", name_zh: "战术伤员救护", wiki: "Tactical Combat Casualty Care" },
+    { type: "resource", name: "Tourniquet", name_zh: "止血带", wiki: "Tourniquet" },
+    { type: "resource", name: "Golden hour", name_zh: "黄金救援时间", wiki: "Golden hour (medicine)" },
+  ],
+  "spy-satellite": [
+    { type: "unit", name: "KH-1 Corona", name_zh: "KH-1 科罗娜", wiki: "Corona (satellite)" },
+    { type: "unit", name: "KH-11 Kennen", name_zh: "KH-11 凯南", wiki: "KH-11 KENNEN" },
+    { type: "unit", name: "Zenit (satellite)", name_zh: "天顶号侦察卫星", wiki: "Zenit (satellite)" },
+    { type: "org", name: "National Reconnaissance Office", name_zh: "美国国家侦察局", wiki: "National Reconnaissance Office" },
+    { type: "resource", name: "Synthetic-aperture radar", name_zh: "合成孔径雷达", wiki: "Synthetic-aperture radar" },
+  ],
+  "awacs": [
+    { type: "unit", name: "Boeing E-3 Sentry", name_zh: "波音 E-3 哨兵", wiki: "Boeing E-3 Sentry" },
+    { type: "unit", name: "Beriev A-50", name_zh: "别里耶夫 A-50", wiki: "Beriev A-50" },
+    { type: "unit", name: "KJ-2000", name_zh: "空警-2000", wiki: "KJ-2000" },
+    { type: "unit", name: "Lockheed EC-121 Warning Star", name_zh: "EC-121 预警星", wiki: "Lockheed EC-121 Warning Star" },
+    { type: "resource", name: "Rotodome", name_zh: "圆盘形雷达罩", wiki: "Rotodome" },
+  ],
+  "iads": [
+    { type: "unit", name: "S-400 missile system", name_zh: "S-400 防空导弹系统", wiki: "S-400 missile system" },
+    { type: "unit", name: "Patriot missile", name_zh: "爱国者导弹", wiki: "MIM-104 Patriot" },
+    { type: "unit", name: "HQ-9 missile system", name_zh: "红旗-9 防空导弹", wiki: "HQ-9" },
+    { type: "org", name: "PVO Strany", name_zh: "苏联国土防空军", wiki: "Soviet Air Defence Forces" },
+    { type: "resource", name: "Suppression of Enemy Air Defenses", name_zh: "压制敌防空体系", wiki: "Suppression of Enemy Air Defenses" },
+  ],
+
+  // ─── Misc additions ───
+  "cell-theory": [
+    { type: "person", name: "Matthias Schleiden", name_zh: "马蒂亚斯·施莱登", wiki: "Matthias Jakob Schleiden" },
+    { type: "person", name: "Theodor Schwann", name_zh: "泰奥多尔·施旺", wiki: "Theodor Schwann" },
+    { type: "person", name: "Rudolf Virchow", name_zh: "鲁道夫·菲尔绍", wiki: "Rudolf Virchow" },
+    { type: "resource", name: "Cell (biology)", name_zh: "细胞", wiki: "Cell (biology)" },
+    { type: "resource", name: "Mitosis", name_zh: "有丝分裂", wiki: "Mitosis" },
+  ],
+  "modern-olympics": [
+    { type: "person", name: "Pierre de Coubertin", name_zh: "皮埃尔·德·顾拜旦", wiki: "Pierre de Coubertin" },
+    { type: "org", name: "International Olympic Committee", name_zh: "国际奥林匹克委员会", wiki: "International Olympic Committee" },
+    { type: "work", name: "Athens 1896", name_zh: "1896 年雅典奥运会", wiki: "1896 Summer Olympics" },
+    { type: "work", name: "Olympic Charter", name_zh: "《奥林匹克宪章》", wiki: "Olympic Charter" },
+  ],
+  "civil-aviation": [
+    { type: "unit", name: "Douglas DC-3", name_zh: "道格拉斯 DC-3", wiki: "Douglas DC-3" },
+    { type: "unit", name: "Boeing 707", name_zh: "波音 707", wiki: "Boeing 707" },
+    { type: "unit", name: "Boeing 747", name_zh: "波音 747", wiki: "Boeing 747" },
+    { type: "org", name: "KLM", name_zh: "荷兰皇家航空", wiki: "KLM" },
+    { type: "org", name: "Pan American World Airways", name_zh: "泛美航空", wiki: "Pan American World Airways" },
+    { type: "org", name: "International Civil Aviation Organization", name_zh: "国际民用航空组织", wiki: "International Civil Aviation Organization" },
+  ],
+  "mobile-internet": [
+    { type: "unit", name: "i-mode", name_zh: "i-mode 移动数据服务", wiki: "I-mode" },
+    { type: "resource", name: "Wireless Application Protocol", name_zh: "无线应用协议", wiki: "Wireless Application Protocol" },
+    { type: "resource", name: "3G", name_zh: "第三代移动通信", wiki: "3G" },
+    { type: "unit", name: "iPhone (1st generation)", name_zh: "初代 iPhone", wiki: "IPhone (1st generation)" },
+    { type: "unit", name: "Android (operating system)", name_zh: "安卓系统", wiki: "Android (operating system)" },
   ],
 };

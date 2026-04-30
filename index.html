@@ -48,6 +48,7 @@
       </div>
       <div class="topbar-spacer"></div>
       <a class="topbar-link" href="techs.html" title="Plain-text index of every technology">All techs</a>
+      <button class="theme-toggle" id="orient-toggle" title="Toggle horizontal/vertical timeline" type="button">↕</button>
       <button class="theme-toggle" id="theme-toggle" title="Switch UI theme">Renaissance</button>
       <div class="search">
         <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -97,6 +98,13 @@
         </div>
       </div>
       <div class="zoom-level" id="zoom-level">100%</div>
+      <div class="minimap" id="minimap" aria-hidden="true">
+        <button class="minimap-toggle" id="minimap-toggle" type="button" title="Hide minimap">▾</button>
+        <svg class="minimap-svg" id="minimap-svg" preserveAspectRatio="none">
+          <g id="minimap-content"></g>
+          <rect class="minimap-viewport" id="minimap-viewport" />
+        </svg>
+      </div>
     </main>
   </div>
 

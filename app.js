@@ -224,7 +224,7 @@ function layoutTechs() {
   const ERA_MIN_LEVELS = {
     mesolithic: 1,
     bronze: 14, classical: 9, medieval: 4, renaissance: 6,
-    enlightenment: 6, industrial: 6, modern: 4, atomic: 5, information: 5,
+    enlightenment: 6, industrial: 7, modern: 6, atomic: 5, information: 5,
     future: 13, "far-future": 12,
   };
   for (const eraId in ERA_MIN_LEVELS) {
@@ -401,10 +401,20 @@ function barycenter(tech, positions, techById) {
 
 const layout = layoutTechs();
 
+// Vertical mode is implemented as a coordinate flip: every (x, y) becomes
+// (y, x) at render time. The layout function is unchanged. Helper:
+function flipPos(x, y) {
+  return state.vertical ? [y, x] : [x, y];
+}
+function canvasW() { return state.vertical ? layout.totalH : layout.totalW; }
+function canvasH() { return state.vertical ? layout.totalW : layout.totalH; }
+
 // ───────────── State ─────────────
 const state = {
   selectedId: null,
   hoveredId: null,
+  // Time runs left-to-right when false, top-to-bottom when true.
+  vertical: false,
   // Categories the user has clicked to filter on. Empty = show everything.
   // Non-empty = only techs whose category is in this set are highlighted.
   selectedCategories: new Set(),
@@ -430,51 +440,51 @@ function render() {
     const nLevels = layout.eraLevels[era.id] + 1;
     const x = xStart - 20;
     const w = nLevels * COL_WIDTH;
-
     const eraCls = "era-" + era.id;
+
+    // In vertical mode, era bands span horizontally and stack top-to-bottom;
+    // in horizontal mode, they span vertically and stack left-to-right.
+    const [bx, by] = flipPos(x, 30);
+    const [bw, bh] = state.vertical ? [layout.totalH - 30, w] : [w, layout.totalH - 30];
+
     const band = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-    // Zebra-stripe even/odd eras for clearer visual separation.
     band.setAttribute("class", "era-band " + (i % 2 === 0 ? "era-even" : "era-odd") + " " + eraCls);
-    band.setAttribute("x", x);
-    band.setAttribute("y", 30);
-    band.setAttribute("width", w);
-    band.setAttribute("height", layout.totalH - 30);
+    band.setAttribute("x", bx); band.setAttribute("y", by);
+    band.setAttribute("width", bw); band.setAttribute("height", bh);
     eraGroup.appendChild(band);
 
-    // Vertical divider at the era's left edge (skip the first era).
     if (i > 0) {
       const divider = document.createElementNS("http://www.w3.org/2000/svg", "line");
       divider.setAttribute("class", "era-divider " + eraCls);
-      divider.setAttribute("x1", x);
-      divider.setAttribute("y1", 30);
-      divider.setAttribute("x2", x);
-      divider.setAttribute("y2", layout.totalH);
+      const [d1x, d1y] = flipPos(x, 30);
+      const [d2x, d2y] = flipPos(x, layout.totalH);
+      divider.setAttribute("x1", d1x); divider.setAttribute("y1", d1y);
+      divider.setAttribute("x2", d2x); divider.setAttribute("y2", d2y);
       eraGroup.appendChild(divider);
     }
 
-    // Label background pill — stronger era-header presence.
     const labelW = Math.min(220, w - 40);
     const labelBg = document.createElementNS("http://www.w3.org/2000/svg", "rect");
     labelBg.setAttribute("class", "era-label-pill " + (i % 2 === 0 ? "era-even" : "era-odd") + " " + eraCls);
-    labelBg.setAttribute("x", x + (w - labelW) / 2);
-    labelBg.setAttribute("y", 38);
-    labelBg.setAttribute("width", labelW);
-    labelBg.setAttribute("height", 38);
+    const [lbx, lby] = flipPos(x + (w - labelW) / 2, 38);
+    const [lbw, lbh] = state.vertical ? [38, labelW] : [labelW, 38];
+    labelBg.setAttribute("x", lbx); labelBg.setAttribute("y", lby);
+    labelBg.setAttribute("width", lbw); labelBg.setAttribute("height", lbh);
     labelBg.setAttribute("rx", 6);
     eraGroup.appendChild(labelBg);
 
     const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
     label.setAttribute("class", "era-label " + eraCls);
-    label.setAttribute("x", x + w / 2);
-    label.setAttribute("y", 56);
+    const [lx, ly] = flipPos(x + w / 2, 56);
+    label.setAttribute("x", lx); label.setAttribute("y", ly);
     label.setAttribute("text-anchor", "middle");
     label.textContent = era.name;
     eraGroup.appendChild(label);
 
     const range = document.createElementNS("http://www.w3.org/2000/svg", "text");
     range.setAttribute("class", "era-range-label " + eraCls);
-    range.setAttribute("x", x + w / 2);
-    range.setAttribute("y", 72);
+    const [rx, ry] = flipPos(x + w / 2, 72);
+    range.setAttribute("x", rx); range.setAttribute("y", ry);
     range.setAttribute("text-anchor", "middle");
     range.textContent = era.range;
     eraGroup.appendChild(range);
@@ -506,7 +516,8 @@ function render() {
 
     const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
     g.setAttribute("class", "node era-" + t.era);
-    g.setAttribute("transform", `translate(${p.x}, ${p.y})`);
+    const [nx, ny] = flipPos(p.x, p.y);
+    g.setAttribute("transform", `translate(${nx}, ${ny})`);
     g.dataset.id = t.id;
 
     const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
@@ -575,12 +586,21 @@ function render() {
 }
 
 function edgePath(a, b) {
-  const x1 = a.x + NODE_W;
-  const y1 = a.y + NODE_H / 2;
-  const x2 = b.x;
-  const y2 = b.y + NODE_H / 2;
-  const mx = (x1 + x2) / 2;
-  return `M ${x1},${y1} C ${mx},${y1} ${mx},${y2} ${x2},${y2}`;
+  // Compute connection points in horizontal-mode coordinates first…
+  let x1 = a.x + NODE_W, y1 = a.y + NODE_H / 2;
+  let x2 = b.x,          y2 = b.y + NODE_H / 2;
+  // …then flip both endpoints if vertical mode is on.
+  if (state.vertical) {
+    [x1, y1] = [y1, x1];
+    [x2, y2] = [y2, x2];
+  }
+  const isVert = state.vertical;
+  // Bezier handles run along the time axis (x in horizontal mode, y in vertical).
+  const c1x = isVert ? x1               : (x1 + x2) / 2;
+  const c1y = isVert ? (y1 + y2) / 2    : y1;
+  const c2x = isVert ? x2               : (x1 + x2) / 2;
+  const c2y = isVert ? (y1 + y2) / 2    : y2;
+  return `M ${x1},${y1} C ${c1x},${c1y} ${c2x},${c2y} ${x2},${y2}`;
 }
 
 // ───────────── Highlights ─────────────
@@ -743,15 +763,18 @@ function applyTransform() {
   viewport.setAttribute("transform", `translate(${state.tx}, ${state.ty}) scale(${state.scale})`);
   zoomLevelEl.textContent = `${Math.round(state.scale * 100)}%`;
   if (typeof updateScrollbar === "function") updateScrollbar();
+  if (typeof updateMinimapViewport === "function") updateMinimapViewport();
 }
 
 function fitToView() {
   const rect = svg.getBoundingClientRect();
-  const scaleX = rect.width / layout.totalW;
-  const scaleY = rect.height / layout.totalH;
+  const W = state.vertical ? layout.totalH : layout.totalW;
+  const H = state.vertical ? layout.totalW : layout.totalH;
+  const scaleX = rect.width / W;
+  const scaleY = rect.height / H;
   state.scale = Math.min(scaleX, scaleY, 1) * 0.95;
-  state.tx = (rect.width - layout.totalW * state.scale) / 2;
-  state.ty = (rect.height - layout.totalH * state.scale) / 2;
+  state.tx = (rect.width - W * state.scale) / 2;
+  state.ty = (rect.height - H * state.scale) / 2;
   applyTransform();
 }
 
@@ -1079,8 +1102,190 @@ themeBtn.addEventListener("click", () => {
   applyTransform();
 });
 
+// ───────────── Orientation toggle (horizontal / vertical timeline) ─────────────
+const orientBtn = document.getElementById("orient-toggle");
+if (orientBtn) {
+  orientBtn.addEventListener("click", () => {
+    state.vertical = !state.vertical;
+    document.body.classList.toggle("orient-vertical", state.vertical);
+    orientBtn.textContent = state.vertical ? "↔" : "↕";
+    try { localStorage.setItem("techtree-orient", state.vertical ? "vertical" : "horizontal"); } catch(e){}
+    render();
+    if (typeof renderMinimap === "function") renderMinimap();
+    fitToView();
+  });
+}
+
+// ───────────── Minimap ─────────────
+//
+// A tiny scaled-down copy of the canvas in the bottom-right corner with a
+// rectangle indicating the current visible viewport. Click the minimap to pan
+// the main canvas to that location.
+const minimapEl     = document.getElementById("minimap");
+const minimapSvg    = document.getElementById("minimap-svg");
+const minimapContent= document.getElementById("minimap-content");
+const minimapVp     = document.getElementById("minimap-viewport");
+const minimapToggle = document.getElementById("minimap-toggle");
+
+function renderMinimap() {
+  if (!minimapSvg) return;
+  const W = state.vertical ? layout.totalH : layout.totalW;
+  const H = state.vertical ? layout.totalW : layout.totalH;
+  minimapSvg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  minimapContent.innerHTML = "";
+
+  // Era band rectangles
+  ERAS.forEach((era, i) => {
+    const xStart = layout.eraXStart[era.id];
+    const nLevels = layout.eraLevels[era.id] + 1;
+    const x = xStart - 20;
+    const w = nLevels * COL_WIDTH;
+    const r = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    r.setAttribute("class", i % 2 === 0 ? "minimap-era-band-even" : "minimap-era-band-odd");
+    if (state.vertical) {
+      r.setAttribute("x", 0); r.setAttribute("y", x);
+      r.setAttribute("width", H); r.setAttribute("height", w);
+    } else {
+      r.setAttribute("x", x); r.setAttribute("y", 0);
+      r.setAttribute("width", w); r.setAttribute("height", H);
+    }
+    minimapContent.appendChild(r);
+  });
+
+  // One small dot per tech, colored by category
+  for (const t of TECHS) {
+    const p = layout.placed[t.id];
+    const cat = CATEGORIES[t.category];
+    const [x, y] = flipPos(p.x + NODE_W / 2, p.y + NODE_H / 2);
+    const r = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    r.setAttribute("class", "minimap-node");
+    r.setAttribute("x", x - 6); r.setAttribute("y", y - 4);
+    r.setAttribute("width", 12); r.setAttribute("height", 8);
+    r.setAttribute("fill", cat.color);
+    minimapContent.appendChild(r);
+  }
+  updateMinimapViewport();
+}
+
+function updateMinimapViewport() {
+  if (!minimapVp) return;
+  const cw = svg.getBoundingClientRect();
+  const W = state.vertical ? layout.totalH : layout.totalW;
+  const H = state.vertical ? layout.totalW : layout.totalH;
+  // Visible canvas region in canvas coords:
+  //   tx + scale * cx_canvas = cx_viewport  →  cx_canvas = (cx_viewport - tx) / scale
+  const visX = -state.tx / state.scale;
+  const visY = -state.ty / state.scale;
+  const visW = cw.width  / state.scale;
+  const visH = cw.height / state.scale;
+  minimapVp.setAttribute("x", Math.max(0, visX));
+  minimapVp.setAttribute("y", Math.max(0, visY));
+  minimapVp.setAttribute("width",  Math.min(W, visW));
+  minimapVp.setAttribute("height", Math.min(H, visH));
+}
+
+function panToMinimapPoint(clientX, clientY) {
+  const rect = minimapSvg.getBoundingClientRect();
+  const W = state.vertical ? layout.totalH : layout.totalW;
+  const H = state.vertical ? layout.totalW : layout.totalH;
+  const px = (clientX - rect.left) / rect.width  * W;
+  const py = (clientY - rect.top)  / rect.height * H;
+  const cw = svg.getBoundingClientRect();
+  // Center the canvas viewport on (px, py)
+  state.tx = cw.width  / 2 - px * state.scale;
+  state.ty = cw.height / 2 - py * state.scale;
+  applyTransform();
+}
+
+if (minimapSvg) {
+  let dragging = false;
+  minimapSvg.addEventListener("mousedown", (e) => {
+    dragging = true;
+    panToMinimapPoint(e.clientX, e.clientY);
+  });
+  window.addEventListener("mousemove", (e) => {
+    if (dragging) panToMinimapPoint(e.clientX, e.clientY);
+  });
+  window.addEventListener("mouseup", () => { dragging = false; });
+}
+if (minimapToggle) {
+  minimapToggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    minimapEl.classList.toggle("collapsed");
+    minimapToggle.title = minimapEl.classList.contains("collapsed") ? "Show minimap" : "Hide minimap";
+  });
+}
+
+// (applyTransform is wired to call updateMinimapViewport directly inside its
+// own body — see the function definition above.)
+
+// ───────────── Touch handling (mobile pinch-zoom + pan) ─────────────
+let touchPanStart = null;
+let touchPinchStart = null;
+function touchDist(t1, t2) {
+  return Math.hypot(t2.clientX - t1.clientX, t2.clientY - t1.clientY);
+}
+function touchMid(t1, t2) {
+  return { x: (t1.clientX + t2.clientX) / 2, y: (t1.clientY + t2.clientY) / 2 };
+}
+svg.addEventListener("touchstart", (e) => {
+  if (e.touches.length === 1) {
+    const t = e.touches[0];
+    touchPanStart = { x: t.clientX - state.tx, y: t.clientY - state.ty, sx: t.clientX, sy: t.clientY };
+    touchPinchStart = null;
+  } else if (e.touches.length === 2) {
+    const [t1, t2] = e.touches;
+    const m = touchMid(t1, t2);
+    touchPinchStart = {
+      d0: touchDist(t1, t2),
+      scale0: state.scale,
+      mx: m.x, my: m.y,
+      tx0: state.tx, ty0: state.ty,
+    };
+    touchPanStart = null;
+  }
+}, { passive: true });
+
+svg.addEventListener("touchmove", (e) => {
+  if (e.touches.length === 1 && touchPanStart) {
+    const t = e.touches[0];
+    state.tx = t.clientX - touchPanStart.x;
+    state.ty = t.clientY - touchPanStart.y;
+    applyTransform();
+    e.preventDefault();
+  } else if (e.touches.length === 2 && touchPinchStart) {
+    const [t1, t2] = e.touches;
+    const d = touchDist(t1, t2);
+    const newScale = Math.max(0.2, Math.min(3, touchPinchStart.scale0 * (d / touchPinchStart.d0)));
+    const k = newScale / touchPinchStart.scale0;
+    // Anchor zoom around the pinch midpoint at gesture start.
+    const rect = svg.getBoundingClientRect();
+    const ax = touchPinchStart.mx - rect.left;
+    const ay = touchPinchStart.my - rect.top;
+    state.tx = ax - (ax - touchPinchStart.tx0) * k;
+    state.ty = ay - (ay - touchPinchStart.ty0) * k;
+    state.scale = newScale;
+    applyTransform();
+    e.preventDefault();
+  }
+}, { passive: false });
+
+svg.addEventListener("touchend", () => {
+  touchPanStart = null;
+  touchPinchStart = null;
+});
+
 // ───────────── Boot ─────────────
 applyTheme((function(){ try { return localStorage.getItem("techtree-theme") || "renaissance"; } catch(e) { return "renaissance"; } })());
+// Restore vertical preference
+try {
+  if (localStorage.getItem("techtree-orient") === "vertical") {
+    state.vertical = true;
+    document.body.classList.add("orient-vertical");
+    if (orientBtn) orientBtn.textContent = "↔";
+  }
+} catch(e) {}
 renderSidebar();
 render();
+renderMinimap();
 })();

@@ -640,4 +640,22 @@ window.TECH_NAMES_ZH = {
   "frozen-food-supply-chain": "冷冻食品供应链",
   "gmo": "转基因作物",
   "vertical-farming": "垂直农业",
+
+  // ─── Post-WWI weapons platforms ───
+  "assault-rifle": "突击步枪",
+  "guided-missile-destroyer": "导弹驱逐舰",
+
+  // ─── Air defense + military support ───
+  "military-logistics": "军事后勤",
+  "anti-aircraft-artillery": "高射炮",
+  "combat-medic": "战地医护与医疗后送",
+  "spy-satellite": "侦察卫星",
+  "awacs": "空中预警机",
+  "iads": "综合防空系统",
+
+  // ─── Misc additions ───
+  "cell-theory": "细胞学说",
+  "modern-olympics": "现代奥林匹克运动会",
+  "civil-aviation": "民用航空",
+  "mobile-internet": "移动互联网",
 };

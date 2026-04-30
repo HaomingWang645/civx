@@ -562,7 +562,19 @@ window.TECH_IMAGES = {
   "industrial-aquaculture": "images/industrial-aquaculture.jpg",
   "frozen-food-supply-chain": "images/frozen-food-supply-chain.jpg",
   "gmo": "images/gmo.png",
-  "vertical-farming": "images/vertical-farming.jpg"
+  "vertical-farming": "images/vertical-farming.jpg",
+  "assault-rifle": "images/assault-rifle.png",
+  "guided-missile-destroyer": "images/guided-missile-destroyer.jpg",
+  "military-logistics": "images/military-logistics.jpg",
+  "combat-medic": "images/combat-medic.jpg",
+  "spy-satellite": "images/spy-satellite.jpg",
+  "awacs": "images/awacs.jpg",
+  "iads": "images/iads.jpg",
+  "anti-aircraft-artillery": "images/anti-aircraft-artillery.jpg",
+  "cell-theory": "images/cell-theory.jpg",
+  "modern-olympics": "images/modern-olympics.jpg",
+  "civil-aviation": "images/civil-aviation.jpg",
+  "mobile-internet": "images/mobile-internet.jpg"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -2812,5 +2824,53 @@ window.TECH_IMAGE_CREDITS = {
   "vertical-farming": {
     "article": "Vertical farming",
     "url": "https://en.wikipedia.org/wiki/Vertical_farming"
+  },
+  "assault-rifle": {
+    "article": "AK-47",
+    "url": "https://en.wikipedia.org/wiki/AK-47"
+  },
+  "guided-missile-destroyer": {
+    "article": "Arleigh Burke-class destroyer",
+    "url": "https://en.wikipedia.org/wiki/Arleigh_Burke-class_destroyer"
+  },
+  "military-logistics": {
+    "article": "Berlin Blockade",
+    "url": "https://en.wikipedia.org/wiki/Berlin_Blockade"
+  },
+  "combat-medic": {
+    "article": "Mobile Army Surgical Hospital",
+    "url": "https://en.wikipedia.org/wiki/Mobile_Army_Surgical_Hospital"
+  },
+  "spy-satellite": {
+    "article": "CORONA (satellite)",
+    "url": "https://en.wikipedia.org/wiki/CORONA_(satellite)"
+  },
+  "awacs": {
+    "article": "Boeing E-3 Sentry",
+    "url": "https://en.wikipedia.org/wiki/Boeing_E-3_Sentry"
+  },
+  "iads": {
+    "article": "S-400 missile system",
+    "url": "https://en.wikipedia.org/wiki/S-400_missile_system"
+  },
+  "anti-aircraft-artillery": {
+    "article": "Anti-aircraft warfare",
+    "url": "https://en.wikipedia.org/wiki/Anti-aircraft_warfare"
+  },
+  "cell-theory": {
+    "article": "Cell (biology)",
+    "url": "https://en.wikipedia.org/wiki/Cell_(biology)"
+  },
+  "modern-olympics": {
+    "article": "1896 Summer Olympics",
+    "url": "https://en.wikipedia.org/wiki/1896_Summer_Olympics"
+  },
+  "civil-aviation": {
+    "article": "Douglas DC-3",
+    "url": "https://en.wikipedia.org/wiki/Douglas_DC-3"
+  },
+  "mobile-internet": {
+    "article": "Mobile broadband",
+    "url": "https://en.wikipedia.org/wiki/Mobile_broadband"
   }
 };
