@@ -526,7 +526,27 @@ window.TECH_IMAGES = {
   "trans-computable-mathematics": "images/trans-computable-mathematics.png",
   "whole-brain-emulation": "images/whole-brain-emulation.png",
   "knowledge-closure": "images/knowledge-closure.jpg",
-  "subjective-time-compression": "images/subjective-time-compression.jpg"
+  "subjective-time-compression": "images/subjective-time-compression.jpg",
+  "phalanx": "images/phalanx.jpg",
+  "roman-legion": "images/roman-legion.png",
+  "castle-siege-doctrine": "images/castle-siege-doctrine.jpg",
+  "pike-square": "images/pike-square.png",
+  "trench-warfare": "images/trench-warfare.jpg",
+  "combined-arms-warfare": "images/combined-arms-warfare.jpg",
+  "blitzkrieg": "images/blitzkrieg.jpg",
+  "ballistic-missile-defense": "images/ballistic-missile-defense.jpg",
+  "stealth-aircraft-doctrine": "images/stealth-aircraft-doctrine.jpg",
+  "network-centric-warfare": "images/network-centric-warfare.jpg",
+  "layered-air-missile-defense": "images/layered-air-missile-defense.jpg",
+  "ai-decision-loop-compression": "images/ai-decision-loop-compression.png",
+  "mammoth-bone-hut": "images/mammoth-bone-hut.jpg",
+  "roman-insula": "images/roman-insula.jpg",
+  "renaissance-dome": "images/renaissance-dome.jpg",
+  "iron-frame-construction": "images/iron-frame-construction.jpg",
+  "reinforced-concrete": "images/reinforced-concrete.jpg",
+  "suburban-tract-housing": "images/suburban-tract-housing.png",
+  "parametric-architecture": "images/parametric-architecture.jpg",
+  "smart-building": "images/smart-building.jpg"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -2632,5 +2652,85 @@ window.TECH_IMAGE_CREDITS = {
   "subjective-time-compression": {
     "article": "The Age of Em",
     "url": "https://en.wikipedia.org/wiki/The_Age_of_Em"
+  },
+  "phalanx": {
+    "article": "Phalanx",
+    "url": "https://en.wikipedia.org/wiki/Phalanx"
+  },
+  "roman-legion": {
+    "article": "Roman legion",
+    "url": "https://en.wikipedia.org/wiki/Roman_legion"
+  },
+  "castle-siege-doctrine": {
+    "article": "Krak des Chevaliers",
+    "url": "https://en.wikipedia.org/wiki/Krak_des_Chevaliers"
+  },
+  "pike-square": {
+    "article": "Tercio",
+    "url": "https://en.wikipedia.org/wiki/Tercio"
+  },
+  "trench-warfare": {
+    "article": "Trench warfare",
+    "url": "https://en.wikipedia.org/wiki/Trench_warfare"
+  },
+  "combined-arms-warfare": {
+    "article": "Hundred Days Offensive",
+    "url": "https://en.wikipedia.org/wiki/Hundred_Days_Offensive"
+  },
+  "blitzkrieg": {
+    "article": "Blitzkrieg",
+    "url": "https://en.wikipedia.org/wiki/Blitzkrieg"
+  },
+  "ballistic-missile-defense": {
+    "article": "Aegis Combat System",
+    "url": "https://en.wikipedia.org/wiki/Aegis_Combat_System"
+  },
+  "stealth-aircraft-doctrine": {
+    "article": "Lockheed F-117 Nighthawk",
+    "url": "https://en.wikipedia.org/wiki/Lockheed_F-117_Nighthawk"
+  },
+  "network-centric-warfare": {
+    "article": "Network-centric warfare",
+    "url": "https://en.wikipedia.org/wiki/Network-centric_warfare"
+  },
+  "layered-air-missile-defense": {
+    "article": "Iron Dome",
+    "url": "https://en.wikipedia.org/wiki/Iron_Dome"
+  },
+  "ai-decision-loop-compression": {
+    "article": "OODA loop",
+    "url": "https://en.wikipedia.org/wiki/OODA_loop"
+  },
+  "mammoth-bone-hut": {
+    "article": "Dolní Věstonice (archaeological site)",
+    "url": "https://en.wikipedia.org/wiki/Doln%C3%AD_V%C4%9Bstonice_(archaeological_site)"
+  },
+  "roman-insula": {
+    "article": "Insula (building)",
+    "url": "https://en.wikipedia.org/wiki/Insula_(building)"
+  },
+  "renaissance-dome": {
+    "article": "Florence Cathedral",
+    "url": "https://en.wikipedia.org/wiki/Florence_Cathedral"
+  },
+  "iron-frame-construction": {
+    "article": "The Crystal Palace",
+    "url": "https://en.wikipedia.org/wiki/The_Crystal_Palace"
+  },
+  "reinforced-concrete": {
+    "article": "Reinforced concrete",
+    "url": "https://en.wikipedia.org/wiki/Reinforced_concrete"
+  },
+  "suburban-tract-housing": {
+    "article": "Levittown, New York",
+    "url": "https://en.wikipedia.org/wiki/Levittown%2C_New_York"
+  },
+  "parametric-architecture": {
+    "article": "Heydar Aliyev Center",
+    "url": "https://en.wikipedia.org/wiki/Heydar_Aliyev_Center"
+  },
+  "smart-building": {
+    "article": "Building information modeling",
+    "url": "https://en.wikipedia.org/wiki/Building_information_modeling"
   }
 };

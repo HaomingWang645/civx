@@ -223,7 +223,7 @@ function layoutTechs() {
   // bucket doesn't pile up into one tall stack.
   const ERA_MIN_LEVELS = {
     bronze: 8, classical: 9, medieval: 4, renaissance: 4,
-    enlightenment: 5, industrial: 5, modern: 3, atomic: 5, information: 5,
+    enlightenment: 6, industrial: 6, modern: 3, atomic: 5, information: 5,
     future: 13, "far-future": 12,
   };
   for (const eraId in ERA_MIN_LEVELS) {

@@ -598,4 +598,28 @@ window.TECH_NAMES_ZH = {
   "whole-brain-emulation": "全脑仿真",
   "knowledge-closure": "知识封闭",
   "subjective-time-compression": "主观时间压缩",
+
+  // ─── Warfare doctrine & tactics ───
+  "phalanx": "方阵",
+  "roman-legion": "罗马军团",
+  "castle-siege-doctrine": "城堡与攻城学说",
+  "pike-square": "长矛方阵",
+  "trench-warfare": "堑壕战",
+  "combined-arms-warfare": "诸兵种合成战",
+  "blitzkrieg": "闪电战",
+  "ballistic-missile-defense": "弹道导弹防御",
+  "stealth-aircraft-doctrine": "隐身飞机学说",
+  "network-centric-warfare": "网络中心战",
+  "layered-air-missile-defense": "分层防空反导",
+  "ai-decision-loop-compression": "AI 决策环压缩",
+
+  // ─── Shelter & architecture (gap fill) ───
+  "mammoth-bone-hut": "猛犸骨屋",
+  "roman-insula": "罗马公寓楼",
+  "renaissance-dome": "文艺复兴建筑",
+  "iron-frame-construction": "铁框架建筑",
+  "reinforced-concrete": "钢筋混凝土",
+  "suburban-tract-housing": "郊区住宅区",
+  "parametric-architecture": "参数化建筑",
+  "smart-building": "智能建筑",
 };
