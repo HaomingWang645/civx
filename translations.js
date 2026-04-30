@@ -16,6 +16,8 @@ window.TECH_NAMES_ZH = {
   "wooden-spear": "木刺矛",
   "fire-making": "取火术",
   "cooking": "烹饪",
+  "rockshelter-occupation": "洞穴与岩棚居住",
+  "cooperative-hunting": "伏击与协同狩猎",
 
   // ─── Middle Paleolithic ──────────────────────────────────────
   "digging-stick": "掘棒",
@@ -30,6 +32,9 @@ window.TECH_NAMES_ZH = {
   "water-flask": "盛水容器",
   "burial": "刻意埋葬",
   "proto-language": "原始语言",
+  "early-bone-tools": "早期骨器",
+  "sling-stones": "投石索与抛石",
+  "snares-traps": "陷阱与套索",
 
   // ─── Upper Paleolithic ───────────────────────────────────────
   "rafts": "木筏与独木舟",
@@ -49,6 +54,8 @@ window.TECH_NAMES_ZH = {
   "atlatl": "投矛器",
   "lunar-tally": "月历",
   "harpoon": "倒刺鱼叉",
+  "tailored-clothing": "缝制合身衣物",
+  "hide-tents": "兽皮帐篷与可携式住所",
 
   // ─── Mesolithic ──────────────────────────────────────────────
   "dog": "驯化犬",
@@ -86,6 +93,9 @@ window.TECH_NAMES_ZH = {
   "copper-smelting": "炼铜",
   "mathematics-counting": "计数体系",
   "proto-writing-tokens": "原始文字",
+  "wool-textiles": "羊毛与毛织品",
+  "proto-cities": "原始城市",
+  "defensive-walls": "城防墙垣",
 
   // ─── Bronze Age ──────────────────────────────────────────────
   "bronze-metallurgy": "青铜冶金",
@@ -118,6 +128,8 @@ window.TECH_NAMES_ZH = {
   "pulley-lever": "滑轮与杠杆",
   "proto-medicine": "神庙医学",
   "trepanation": "环锯术",
+  "tin-mining": "锡矿开采与贸易",
+  "weights-measures": "标准度量衡",
 
   // ─── Classical Antiquity ─────────────────────────────────────
   "iron-smelting": "炼铁",
@@ -156,6 +168,9 @@ window.TECH_NAMES_ZH = {
   "triremes": "三列桨座战船",
   "gear-mechanism": "齿轮机构",
   "woodblock-printing": "雕版印刷",
+  "parchment-vellum": "羊皮纸与犊皮纸",
+  "theatre-drama": "戏剧",
+  "codex": "册子本",
 
   // ─── Medieval ────────────────────────────────────────────────
   "arabic-numerals": "印度-阿拉伯数字",
@@ -186,6 +201,9 @@ window.TECH_NAMES_ZH = {
   "paper-mill": "造纸厂",
   "horizontal-loom": "水平织机",
   "quill-ink": "羽毛笔与墨水",
+  "polyphony-notation": "复调与五线谱",
+  "plate-armor": "板甲",
+  "crank-connecting-rod": "曲柄连杆机构",
 
   // ─── Renaissance ─────────────────────────────────────────────
   "printing-press": "印刷机",
@@ -285,6 +303,11 @@ window.TECH_NAMES_ZH = {
   "elevator": "安全电梯",
   "machine-gun": "机枪",
   "electrification": "电气化",
+  "electric-lighting": "电灯照明",
+  "submarine": "潜艇",
+  "sewing-machine": "缝纫机",
+  "phonograph": "留声机与声音录制",
+  "impressionism": "印象派",
 
   // ─── Modern ──────────────────────────────────────────────────
   "airplane": "飞机",
@@ -303,8 +326,11 @@ window.TECH_NAMES_ZH = {
   "synthetic-fertilizer": "哈伯-博施法",
   "green-revolution": "绿色革命",
   "plastic-polymer": "塑料",
+  "synthetic-fibers": "合成纤维",
   "transistor": "晶体管",
   "semiconductor": "集成电路",
+  "laser": "激光",
+  "plate-tectonics": "板块构造论",
   "digital-computer": "数字计算机",
   "programming-language": "编程语言",
   "mainframe": "大型机",
@@ -338,6 +364,7 @@ window.TECH_NAMES_ZH = {
   // ─── Information ─────────────────────────────────────────────
   "microprocessor": "微处理器",
   "advanced-chip-manufacturing": "先进芯片制造",
+  "parallel-compute-gpu": "并行计算与图形处理器",
   "personal-computer": "个人计算机",
   "gui-mouse": "图形用户界面",
   "packet-switching": "分组交换",
@@ -658,4 +685,14 @@ window.TECH_NAMES_ZH = {
   "modern-olympics": "现代奥林匹克运动会",
   "civil-aviation": "民用航空",
   "mobile-internet": "移动互联网",
+
+  // ─── Realistic Near / Far Future ───
+  "engineered-microbiome": "工程微生物组",
+  "geothermal-drilling": "深层地热钻探",
+  "senolytic-longevity-therapy": "衰老细胞清除疗法",
+  "brain-brain-communication": "脑脑通信",
+  "theory-of-consciousness": "意识科学理论",
+  "asteroid-capture": "小行星捕获",
+  "bose-einstein-engineering": "玻色-爱因斯坦凝聚态工程",
+  "anti-senescence-cellular-substrate": "抗衰老细胞基质",
 };

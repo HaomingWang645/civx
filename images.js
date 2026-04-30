@@ -574,7 +574,42 @@ window.TECH_IMAGES = {
   "cell-theory": "images/cell-theory.jpg",
   "modern-olympics": "images/modern-olympics.jpg",
   "civil-aviation": "images/civil-aviation.jpg",
-  "mobile-internet": "images/mobile-internet.jpg"
+  "mobile-internet": "images/mobile-internet.jpg",
+  "rockshelter-occupation": "images/rockshelter-occupation.jpg",
+  "cooperative-hunting": "images/cooperative-hunting.jpg",
+  "sling-stones": "images/sling-stones.jpg",
+  "tailored-clothing": "images/tailored-clothing.jpg",
+  "hide-tents": "images/hide-tents.jpg",
+  "wool-textiles": "images/wool-textiles.jpg",
+  "proto-cities": "images/proto-cities.jpg",
+  "defensive-walls": "images/defensive-walls.jpg",
+  "tin-mining": "images/tin-mining.jpg",
+  "weights-measures": "images/weights-measures.png",
+  "parchment-vellum": "images/parchment-vellum.jpg",
+  "theatre-drama": "images/theatre-drama.jpg",
+  "polyphony-notation": "images/polyphony-notation.png",
+  "plate-armor": "images/plate-armor.jpg",
+  "electric-lighting": "images/electric-lighting.png",
+  "submarine": "images/submarine.jpg",
+  "synthetic-fibers": "images/synthetic-fibers.png",
+  "laser": "images/laser.jpg",
+  "parallel-compute-gpu": "images/parallel-compute-gpu.png",
+  "early-bone-tools": "images/early-bone-tools.jpg",
+  "snares-traps": "images/snares-traps.jpg",
+  "engineered-microbiome": "images/engineered-microbiome.jpg",
+  "geothermal-drilling": "images/geothermal-drilling.png",
+  "senolytic-longevity-therapy": "images/senolytic-longevity-therapy.png",
+  "theory-of-consciousness": "images/theory-of-consciousness.png",
+  "asteroid-capture": "images/asteroid-capture.jpg",
+  "bose-einstein-engineering": "images/bose-einstein-engineering.png",
+  "anti-senescence-cellular-substrate": "images/anti-senescence-cellular-substrate.png",
+  "brain-brain-communication": "images/brain-brain-communication.jpg",
+  "codex": "images/codex.jpg",
+  "crank-connecting-rod": "images/crank-connecting-rod.jpg",
+  "sewing-machine": "images/sewing-machine.jpg",
+  "phonograph": "images/phonograph.png",
+  "impressionism": "images/impressionism.jpg",
+  "plate-tectonics": "images/plate-tectonics.png"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -2872,5 +2907,145 @@ window.TECH_IMAGE_CREDITS = {
   "mobile-internet": {
     "article": "Mobile broadband",
     "url": "https://en.wikipedia.org/wiki/Mobile_broadband"
+  },
+  "rockshelter-occupation": {
+    "article": "Rock shelter",
+    "url": "https://en.wikipedia.org/wiki/Rock_shelter"
+  },
+  "cooperative-hunting": {
+    "article": "Schöningen spears",
+    "url": "https://en.wikipedia.org/wiki/Sch%C3%B6ningen_spears"
+  },
+  "sling-stones": {
+    "article": "Sling (weapon)",
+    "url": "https://en.wikipedia.org/wiki/Sling_(weapon)"
+  },
+  "tailored-clothing": {
+    "article": "Sungir",
+    "url": "https://en.wikipedia.org/wiki/Sungir"
+  },
+  "hide-tents": {
+    "article": "Tipi",
+    "url": "https://en.wikipedia.org/wiki/Tipi"
+  },
+  "wool-textiles": {
+    "article": "Wool",
+    "url": "https://en.wikipedia.org/wiki/Wool"
+  },
+  "proto-cities": {
+    "article": "Çatalhöyük",
+    "url": "https://en.wikipedia.org/wiki/%C3%87atalh%C3%B6y%C3%BCk"
+  },
+  "defensive-walls": {
+    "article": "Tower of Jericho",
+    "url": "https://en.wikipedia.org/wiki/Tower_of_Jericho"
+  },
+  "tin-mining": {
+    "article": "Cassiterite",
+    "url": "https://en.wikipedia.org/wiki/Cassiterite"
+  },
+  "weights-measures": {
+    "article": "Indus Valley Civilisation",
+    "url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
+  },
+  "parchment-vellum": {
+    "article": "Parchment",
+    "url": "https://en.wikipedia.org/wiki/Parchment"
+  },
+  "theatre-drama": {
+    "article": "Theatre of ancient Greece",
+    "url": "https://en.wikipedia.org/wiki/Theatre_of_ancient_Greece"
+  },
+  "polyphony-notation": {
+    "article": "Musical notation",
+    "url": "https://en.wikipedia.org/wiki/Musical_notation"
+  },
+  "plate-armor": {
+    "article": "Plate armour",
+    "url": "https://en.wikipedia.org/wiki/Plate_armour"
+  },
+  "electric-lighting": {
+    "article": "Incandescent light bulb",
+    "url": "https://en.wikipedia.org/wiki/Incandescent_light_bulb"
+  },
+  "submarine": {
+    "article": "Submarine",
+    "url": "https://en.wikipedia.org/wiki/Submarine"
+  },
+  "synthetic-fibers": {
+    "article": "Nylon",
+    "url": "https://en.wikipedia.org/wiki/Nylon"
+  },
+  "laser": {
+    "article": "Laser",
+    "url": "https://en.wikipedia.org/wiki/Laser"
+  },
+  "parallel-compute-gpu": {
+    "article": "Graphics processing unit",
+    "url": "https://en.wikipedia.org/wiki/Graphics_processing_unit"
+  },
+  "early-bone-tools": {
+    "article": "Bone tool",
+    "url": "https://en.wikipedia.org/wiki/Bone_tool"
+  },
+  "snares-traps": {
+    "article": "Trapping",
+    "url": "https://en.wikipedia.org/wiki/Trapping"
+  },
+  "engineered-microbiome": {
+    "article": "Human microbiome",
+    "url": "https://en.wikipedia.org/wiki/Human_microbiome"
+  },
+  "geothermal-drilling": {
+    "article": "Enhanced geothermal system",
+    "url": "https://en.wikipedia.org/wiki/Enhanced_geothermal_system"
+  },
+  "senolytic-longevity-therapy": {
+    "article": "Cellular senescence",
+    "url": "https://en.wikipedia.org/wiki/Cellular_senescence"
+  },
+  "theory-of-consciousness": {
+    "article": "Integrated information theory",
+    "url": "https://en.wikipedia.org/wiki/Integrated_information_theory"
+  },
+  "asteroid-capture": {
+    "article": "Asteroid Redirect Mission",
+    "url": "https://en.wikipedia.org/wiki/Asteroid_Redirect_Mission"
+  },
+  "bose-einstein-engineering": {
+    "article": "Bose–Einstein condensate",
+    "url": "https://en.wikipedia.org/wiki/Bose%E2%80%93Einstein_condensate"
+  },
+  "anti-senescence-cellular-substrate": {
+    "article": "Cellular senescence",
+    "url": "https://en.wikipedia.org/wiki/Cellular_senescence"
+  },
+  "brain-brain-communication": {
+    "article": "Brain–computer interface",
+    "url": "https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface"
+  },
+  "codex": {
+    "article": "Codex",
+    "url": "https://en.wikipedia.org/wiki/Codex"
+  },
+  "crank-connecting-rod": {
+    "article": "Crankshaft",
+    "url": "https://en.wikipedia.org/wiki/Crankshaft"
+  },
+  "sewing-machine": {
+    "article": "Sewing machine",
+    "url": "https://en.wikipedia.org/wiki/Sewing_machine"
+  },
+  "phonograph": {
+    "article": "Phonograph",
+    "url": "https://en.wikipedia.org/wiki/Phonograph"
+  },
+  "impressionism": {
+    "article": "Impression, Sunrise",
+    "url": "https://en.wikipedia.org/wiki/Impression%2C_Sunrise"
+  },
+  "plate-tectonics": {
+    "article": "Plate tectonics",
+    "url": "https://en.wikipedia.org/wiki/Plate_tectonics"
   }
 };

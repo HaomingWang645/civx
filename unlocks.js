@@ -41,6 +41,15 @@ window.TECH_UNLOCKS = {
   "cooking": [
     { type: "person", name: "Homo erectus (encephalization)", name_zh: "直立人(脑容量增大)", wiki: "Homo erectus" },
   ],
+  "rockshelter-occupation": [
+    { type: "wonder", name: "Wonderwerk Cave", name_zh: "奇迹洞", wiki: "Wonderwerk Cave" },
+    { type: "wonder", name: "Zhoukoudian", name_zh: "周口店", wiki: "Peking Man Site" },
+    { type: "wonder", name: "Atapuerca", name_zh: "阿塔普埃尔卡", wiki: "Atapuerca Mountains" },
+  ],
+  "cooperative-hunting": [
+    { type: "wonder", name: "Boxgrove rhinoceros kill", name_zh: "博克斯格罗夫犀牛遗址", wiki: "Boxgrove Quarry" },
+    { type: "wonder", name: "Schöningen horse hunt", name_zh: "舍宁根猎马场", wiki: "Schöningen spears" },
+  ],
 
   // ─── Middle Paleolithic ──────────────────────────────────────
   "levallois": [
@@ -53,6 +62,17 @@ window.TECH_UNLOCKS = {
   ],
   "burial": [
     { type: "wonder", name: "Sungir burials", name_zh: "松吉尔遗址墓葬", wiki: "Sungir" },
+  ],
+  "early-bone-tools": [
+    { type: "unit", name: "Lissoir (hide-burnisher)", name_zh: "皮革磨光器", wiki: "Lissoir (tool)" },
+    { type: "wonder", name: "Pech-de-l'Azé site", name_zh: "佩什德拉泽遗址", wiki: "Pech de l'Azé" },
+  ],
+  "sling-stones": [
+    { type: "unit", name: "Slinger", name_zh: "投石手", wiki: "Sling (weapon)" },
+  ],
+  "snares-traps": [
+    { type: "unit", name: "Deadfall trap", name_zh: "压杀陷阱", wiki: "Deadfall trap" },
+    { type: "unit", name: "Pit trap", name_zh: "陷坑", wiki: "Trapping" },
   ],
 
   // ─── Upper Paleolithic ───────────────────────────────────────
@@ -78,6 +98,15 @@ window.TECH_UNLOCKS = {
   ],
   "rafts": [
     { type: "wonder", name: "Settlement of Sahul (Australia)", name_zh: "萨胡尔大陆(澳大利亚)的定居", wiki: "Prehistory of Australia" },
+  ],
+  "tailored-clothing": [
+    { type: "wonder", name: "Sungir beaded garments", name_zh: "松吉尔串珠服饰", wiki: "Sungir" },
+    { type: "wonder", name: "Mal'ta–Buret' culture", name_zh: "马利他–布列季文化", wiki: "Mal'ta–Buret' culture" },
+  ],
+  "hide-tents": [
+    { type: "wonder", name: "Pavlov tent rings", name_zh: "巴甫洛夫帐圈遗址", wiki: "Pavlov (Czech Republic)" },
+    { type: "wonder", name: "Dolní Věstonice site", name_zh: "下维斯特罗尼采遗址", wiki: "Dolní Věstonice (archaeological site)" },
+    { type: "unit", name: "Tipi", name_zh: "圆锥皮屋", wiki: "Tipi" },
   ],
 
   // ─── Mesolithic ──────────────────────────────────────────────
@@ -120,6 +149,19 @@ window.TECH_UNLOCKS = {
   ],
   "fermentation-brewing": [
     { type: "work", name: "Hymn to Ninkasi", name_zh: "宁卡西颂歌" },
+  ],
+  "wool-textiles": [
+    { type: "resource", name: "Wool", name_zh: "羊毛" },
+    { type: "animal", name: "Wool sheep", name_zh: "细毛绵羊", wiki: "Sheep" },
+  ],
+  "proto-cities": [
+    { type: "wonder", name: "Çatalhöyük", name_zh: "加泰土丘", wiki: "Çatalhöyük" },
+    { type: "wonder", name: "Tell es-Sultan (Jericho)", name_zh: "杰里科古城", wiki: "Tell es-Sultan" },
+    { type: "wonder", name: "Mehrgarh", name_zh: "梅赫尔格爾", wiki: "Mehrgarh" },
+  ],
+  "defensive-walls": [
+    { type: "wonder", name: "Tower of Jericho", name_zh: "杰里科塔", wiki: "Tower of Jericho" },
+    { type: "wonder", name: "Walls of Jericho", name_zh: "杰里科城墙", wiki: "Walls of Jericho" },
   ],
 
   // ─── Bronze Age ──────────────────────────────────────────────
@@ -216,6 +258,16 @@ window.TECH_UNLOCKS = {
   "proto-medicine": [
     { type: "work", name: "Edwin Smith Papyrus", name_zh: "《埃德温·史密斯纸草》" },
     { type: "work", name: "Diagnostic Handbook (Esagil-kin-apli)", name_zh: "《诊断手册》(埃萨吉尔-金-阿普利)", wiki: "Esagil-kin-apli" },
+  ],
+  "tin-mining": [
+    { type: "resource", name: "Cassiterite", name_zh: "锡石", wiki: "Cassiterite" },
+    { type: "wonder", name: "Cornwall tin mines", name_zh: "康沃尔锡矿", wiki: "Mining in Cornwall and Devon" },
+    { type: "wonder", name: "Uluburun shipwreck cargo", name_zh: "乌鲁布伦沉船货物", wiki: "Uluburun shipwreck" },
+  ],
+  "weights-measures": [
+    { type: "unit", name: "Indus Valley cubic weights", name_zh: "印度河流域立方砝码", wiki: "Indus Valley civilisation" },
+    { type: "unit", name: "Mesopotamian shekel & mina", name_zh: "美索不达米亚舍客勒与米那", wiki: "Shekel" },
+    { type: "unit", name: "Egyptian deben", name_zh: "古埃及德本", wiki: "Deben (unit)" },
   ],
 
   // ─── Classical Antiquity ─────────────────────────────────────
@@ -374,6 +426,24 @@ window.TECH_UNLOCKS = {
   "woodblock-printing": [
     { type: "work", name: "Diamond Sutra", name_zh: "《金刚经》" },
   ],
+  "parchment-vellum": [
+    { type: "wonder", name: "Library of Pergamon", name_zh: "佩加蒙图书馆", wiki: "Library of Pergamum" },
+    { type: "work", name: "Codex Sinaiticus", name_zh: "《西奈抄本》", wiki: "Codex Sinaiticus" },
+  ],
+  "theatre-drama": [
+    { type: "wonder", name: "Theatre of Dionysus", name_zh: "狄俄尼索斯剧场", wiki: "Theatre of Dionysus" },
+    { type: "person", name: "Aeschylus", name_zh: "埃斯库罗斯", wiki: "Aeschylus" },
+    { type: "person", name: "Sophocles", name_zh: "索福克勒斯", wiki: "Sophocles" },
+    { type: "person", name: "Euripides", name_zh: "欧里庇得斯", wiki: "Euripides" },
+    { type: "person", name: "Aristophanes", name_zh: "阿里斯托芬", wiki: "Aristophanes" },
+    { type: "work", name: "Oresteia", name_zh: "《俄瑞斯忒亚》", wiki: "Oresteia" },
+    { type: "work", name: "Natyasastra", name_zh: "《舞论》", wiki: "Natya Shastra" },
+  ],
+  "codex": [
+    { type: "work", name: "Codex Sinaiticus", name_zh: "《西奈抄本》", wiki: "Codex Sinaiticus" },
+    { type: "work", name: "Codex Vaticanus", name_zh: "《梵蒂冈抄本》", wiki: "Codex Vaticanus" },
+    { type: "work", name: "Vergilius Vaticanus", name_zh: "《梵蒂冈维吉尔抄本》", wiki: "Vergilius Vaticanus" },
+  ],
 
   // ─── Medieval ────────────────────────────────────────────────
   "arabic-numerals": [
@@ -473,6 +543,22 @@ window.TECH_UNLOCKS = {
   ],
   "paper-mill": [
     { type: "wonder", name: "Fabriano paper mill", name_zh: "法布里亚诺造纸厂", wiki: "Paper and Watermark Museum" },
+  ],
+  "polyphony-notation": [
+    { type: "person", name: "Guido of Arezzo", name_zh: "圭多·达莱佐", wiki: "Guido of Arezzo" },
+    { type: "person", name: "Léonin", name_zh: "莱奥南", wiki: "Léonin" },
+    { type: "person", name: "Pérotin", name_zh: "佩罗坦", wiki: "Pérotin" },
+    { type: "work", name: "Magnus Liber Organi", name_zh: "《大奥尔加农曲集》", wiki: "Magnus Liber" },
+  ],
+  "plate-armor": [
+    { type: "unit", name: "Man-at-arms (full plate)", name_zh: "重装板甲骑兵", wiki: "Man-at-arms" },
+    { type: "person", name: "Missaglia armory family", name_zh: "米萨利亚兵器家族", wiki: "Missaglia" },
+    { type: "wonder", name: "Gothic armour", name_zh: "哥特式板甲", wiki: "Gothic plate armour" },
+  ],
+  "crank-connecting-rod": [
+    { type: "unit", name: "Water-powered sawmill", name_zh: "水力锯木机", wiki: "Sawmill" },
+    { type: "unit", name: "Treadle lathe", name_zh: "踏板车床", wiki: "Lathe" },
+    { type: "person", name: "Villard de Honnecourt", name_zh: "维亚尔·德·奥内库尔", wiki: "Villard de Honnecourt" },
   ],
 
   // ─── Renaissance ─────────────────────────────────────────────
@@ -901,6 +987,41 @@ window.TECH_UNLOCKS = {
     { type: "resource", name: "Cryolite", name_zh: "冰晶石", wiki: "Cryolite" },
     { type: "org", name: "Alcoa", name_zh: "美国铝业公司", wiki: "Alcoa" },
   ],
+  "electric-lighting": [
+    { type: "person", name: "Thomas Edison", name_zh: "托马斯·爱迪生", wiki: "Thomas Edison" },
+    { type: "person", name: "Joseph Swan", name_zh: "约瑟夫·斯旺", wiki: "Joseph Swan" },
+    { type: "unit", name: "Incandescent light bulb", name_zh: "白炽灯泡", wiki: "Incandescent light bulb" },
+    { type: "wonder", name: "Pearl Street Station", name_zh: "珍珠街发电站", wiki: "Pearl Street Station" },
+    { type: "org", name: "General Electric", name_zh: "通用电气", wiki: "General Electric" },
+  ],
+  "submarine": [
+    { type: "unit", name: "USS Holland (SS-1)", name_zh: "霍兰号潜艇", wiki: "USS Holland (SS-1)" },
+    { type: "unit", name: "U-boat", name_zh: "U型潜艇", wiki: "U-boat" },
+    { type: "unit", name: "H. L. Hunley", name_zh: "亨利·L·亨利号潜艇", wiki: "H. L. Hunley (submarine)" },
+    { type: "person", name: "John Philip Holland", name_zh: "约翰·菲利普·霍兰", wiki: "John Philip Holland" },
+  ],
+  "sewing-machine": [
+    { type: "person", name: "Elias Howe", name_zh: "伊莱亚斯·豪", wiki: "Elias Howe" },
+    { type: "person", name: "Isaac Singer", name_zh: "艾萨克·辛格", wiki: "Isaac Singer" },
+    { type: "org", name: "Singer Corporation", name_zh: "胜家公司", wiki: "Singer Corporation" },
+    { type: "unit", name: "Lockstitch sewing machine", name_zh: "锁式缝纫机", wiki: "Lockstitch" },
+  ],
+  "phonograph": [
+    { type: "person", name: "Thomas Edison", name_zh: "托马斯·爱迪生", wiki: "Thomas Edison" },
+    { type: "person", name: "Emile Berliner", name_zh: "埃米尔·柏林纳", wiki: "Emile Berliner" },
+    { type: "unit", name: "Tinfoil cylinder phonograph", name_zh: "锡箔圆筒留声机", wiki: "Phonograph cylinder" },
+    { type: "unit", name: "Gramophone disc", name_zh: "圆盘留声机", wiki: "Phonograph record" },
+    { type: "org", name: "Victor Talking Machine Company", name_zh: "胜利留声机公司", wiki: "Victor Talking Machine Company" },
+  ],
+  "impressionism": [
+    { type: "person", name: "Claude Monet", name_zh: "克劳德·莫奈", wiki: "Claude Monet" },
+    { type: "person", name: "Pierre-Auguste Renoir", name_zh: "皮埃尔-奥古斯特·雷诺阿", wiki: "Pierre-Auguste Renoir" },
+    { type: "person", name: "Edgar Degas", name_zh: "埃德加·德加", wiki: "Edgar Degas" },
+    { type: "person", name: "Camille Pissarro", name_zh: "卡米耶·毕沙罗", wiki: "Camille Pissarro" },
+    { type: "person", name: "Berthe Morisot", name_zh: "贝尔特·莫里索", wiki: "Berthe Morisot" },
+    { type: "work", name: "Impression, Sunrise", name_zh: "《日出·印象》", wiki: "Impression, Sunrise" },
+    { type: "work", name: "Water Lilies (Monet series)", name_zh: "《睡莲》系列", wiki: "Water Lilies (Monet series)" },
+  ],
 
   // ─── Modern ──────────────────────────────────────────────────
   "airplane": [
@@ -997,6 +1118,14 @@ window.TECH_UNLOCKS = {
     { type: "resource", name: "PVC", name_zh: "聚氯乙烯" },
     { type: "person", name: "Leo Baekeland", name_zh: "利奥·贝克兰" },
   ],
+  "synthetic-fibers": [
+    { type: "resource", name: "Nylon", name_zh: "尼龙", wiki: "Nylon" },
+    { type: "resource", name: "Rayon", name_zh: "人造丝", wiki: "Rayon" },
+    { type: "resource", name: "Polyester", name_zh: "聚酯纤维", wiki: "Polyester" },
+    { type: "resource", name: "Spandex", name_zh: "氨纶", wiki: "Spandex" },
+    { type: "person", name: "Wallace Carothers", name_zh: "华莱士·卡罗瑟斯", wiki: "Wallace Carothers" },
+    { type: "org", name: "DuPont", name_zh: "杜邦公司", wiki: "DuPont" },
+  ],
   "transistor": [
     { type: "person", name: "John Bardeen", name_zh: "约翰·巴丁" },
     { type: "person", name: "Walter Brattain", name_zh: "沃尔特·布拉顿" },
@@ -1009,6 +1138,21 @@ window.TECH_UNLOCKS = {
     { type: "org", name: "Fairchild Semiconductor", name_zh: "仙童半导体" },
     { type: "org", name: "Intel", name_zh: "英特尔" },
     { type: "org", name: "TSMC", name_zh: "台积电" },
+  ],
+  "laser": [
+    { type: "person", name: "Theodore Maiman", name_zh: "西奥多·梅曼", wiki: "Theodore Maiman" },
+    { type: "person", name: "Charles Townes", name_zh: "查尔斯·汤斯", wiki: "Charles H. Townes" },
+    { type: "unit", name: "Ruby laser", name_zh: "红宝石激光器", wiki: "Ruby laser" },
+    { type: "unit", name: "Helium–neon laser", name_zh: "氦氖激光器", wiki: "Helium–neon laser" },
+    { type: "unit", name: "Semiconductor laser diode", name_zh: "半导体激光二极管", wiki: "Laser diode" },
+  ],
+  "plate-tectonics": [
+    { type: "person", name: "Harry Hess", name_zh: "哈里·赫斯", wiki: "Harry Hammond Hess" },
+    { type: "person", name: "J. Tuzo Wilson", name_zh: "约翰·图佐·威尔逊", wiki: "J. Tuzo Wilson" },
+    { type: "person", name: "Frederick Vine", name_zh: "弗雷德里克·瓦因", wiki: "Frederick Vine" },
+    { type: "person", name: "Drummond Matthews", name_zh: "德拉蒙德·马修斯", wiki: "Drummond Matthews" },
+    { type: "person", name: "W. Jason Morgan", name_zh: "杰森·摩根", wiki: "W. Jason Morgan" },
+    { type: "wonder", name: "Mid-Atlantic Ridge", name_zh: "大西洋中脊", wiki: "Mid-Atlantic Ridge" },
   ],
   "digital-computer": [
     { type: "person", name: "Alan Turing", name_zh: "艾伦·图灵" },
@@ -1221,6 +1365,14 @@ window.TECH_UNLOCKS = {
     { type: "unit", name: "FinFET transistor", name_zh: "鳍式场效应晶体管(FinFET)" },
     { type: "unit", name: "Apple M-series chip", name_zh: "苹果M系列芯片" , wiki: "Apple silicon" },
     { type: "unit", name: "NVIDIA H100 / Blackwell GPU", name_zh: "英伟达 H100 / Blackwell GPU" , wiki: "Hopper (microarchitecture)" },
+  ],
+  "parallel-compute-gpu": [
+    { type: "unit", name: "NVIDIA CUDA platform", name_zh: "英伟达 CUDA 平台", wiki: "CUDA" },
+    { type: "unit", name: "Google TPU", name_zh: "谷歌 TPU", wiki: "Tensor Processing Unit" },
+    { type: "unit", name: "AMD ROCm", name_zh: "AMD ROCm", wiki: "ROCm" },
+    { type: "unit", name: "Cerebras wafer-scale engine", name_zh: "Cerebras 晶圆级处理器", wiki: "Cerebras" },
+    { type: "person", name: "Ian Buck (CUDA)", name_zh: "伊恩·巴克(CUDA)", wiki: "CUDA" },
+    { type: "org", name: "NVIDIA", name_zh: "英伟达", wiki: "Nvidia" },
   ],
   "personal-computer": [
     { type: "unit", name: "Apple II", name_zh: "Apple II" },
@@ -2992,5 +3144,60 @@ window.TECH_UNLOCKS = {
     { type: "resource", name: "3G", name_zh: "第三代移动通信", wiki: "3G" },
     { type: "unit", name: "iPhone (1st generation)", name_zh: "初代 iPhone", wiki: "IPhone (1st generation)" },
     { type: "unit", name: "Android (operating system)", name_zh: "安卓系统", wiki: "Android (operating system)" },
+  ],
+
+  // ─── Realistic Near / Far Future ───
+  "engineered-microbiome": [
+    { type: "resource", name: "Fecal microbiota transplant", name_zh: "粪便微生物群移植", wiki: "Fecal microbiota transplant" },
+    { type: "resource", name: "Human microbiome", name_zh: "人类微生物组", wiki: "Human microbiome" },
+    { type: "org", name: "Seres Therapeutics", name_zh: "Seres Therapeutics 公司", wiki: "Seres Therapeutics" },
+    { type: "resource", name: "Gut-brain axis", name_zh: "肠脑轴", wiki: "Gut–brain axis" },
+  ],
+  "geothermal-drilling": [
+    { type: "org", name: "Quaise Energy", name_zh: "Quaise 能源公司", wiki: false },
+    { type: "resource", name: "Enhanced geothermal system", name_zh: "增强型地热系统", wiki: "Enhanced geothermal system" },
+    { type: "resource", name: "Gyrotron drill", name_zh: "回旋管钻机", wiki: "Gyrotron" },
+    { type: "unit", name: "Eavor-Loop", name_zh: "Eavor 闭环系统", wiki: false },
+  ],
+  "senolytic-longevity-therapy": [
+    { type: "person", name: "David Sinclair", name_zh: "大卫·辛克莱尔", wiki: "David A. Sinclair" },
+    { type: "person", name: "Aubrey de Grey", name_zh: "奥布里·德格雷", wiki: "Aubrey de Grey" },
+    { type: "resource", name: "Senolytic", name_zh: "衰老细胞清除剂", wiki: "Senolytic" },
+    { type: "resource", name: "Cellular senescence", name_zh: "细胞衰老", wiki: "Cellular senescence" },
+    { type: "resource", name: "Yamanaka factors", name_zh: "山中因子", wiki: "Induced pluripotent stem cell" },
+    { type: "org", name: "Unity Biotechnology", name_zh: "Unity 生物技术", wiki: "Unity Biotechnology" },
+  ],
+  "brain-brain-communication": [
+    { type: "person", name: "Miguel Nicolelis", name_zh: "米格尔·尼科勒利斯", wiki: "Miguel Nicolelis" },
+    { type: "resource", name: "Brain-to-brain interface", name_zh: "脑-脑接口", wiki: "Brain-to-brain interface" },
+    { type: "unit", name: "Brainet", name_zh: "脑联网", wiki: false },
+    { type: "org", name: "Neuralink", name_zh: "Neuralink 神经链接", wiki: "Neuralink" },
+  ],
+  "theory-of-consciousness": [
+    { type: "person", name: "Giulio Tononi", name_zh: "朱利奥·托诺尼", wiki: "Giulio Tononi" },
+    { type: "person", name: "Christof Koch", name_zh: "克里斯托夫·科赫", wiki: "Christof Koch" },
+    { type: "person", name: "David Chalmers", name_zh: "大卫·查尔默斯", wiki: "David Chalmers" },
+    { type: "resource", name: "Integrated information theory", name_zh: "整合信息论", wiki: "Integrated information theory" },
+    { type: "resource", name: "Global workspace theory", name_zh: "全局工作空间理论", wiki: "Global workspace theory" },
+    { type: "resource", name: "Hard problem of consciousness", name_zh: "意识难题", wiki: "Hard problem of consciousness" },
+  ],
+  "asteroid-capture": [
+    { type: "unit", name: "Asteroid Redirect Mission", name_zh: "小行星重定向任务", wiki: "Asteroid Redirect Mission" },
+    { type: "resource", name: "Gravity tractor", name_zh: "引力拖船", wiki: "Gravity tractor" },
+    { type: "resource", name: "Lagrange point", name_zh: "拉格朗日点", wiki: "Lagrange point" },
+    { type: "unit", name: "Distant retrograde orbit", name_zh: "远逆行轨道", wiki: "Distant retrograde orbit" },
+  ],
+  "bose-einstein-engineering": [
+    { type: "person", name: "Eric Cornell", name_zh: "埃里克·康奈尔", wiki: "Eric Allin Cornell" },
+    { type: "person", name: "Carl Wieman", name_zh: "卡尔·威曼", wiki: "Carl Wieman" },
+    { type: "resource", name: "Bose–Einstein condensate", name_zh: "玻色-爱因斯坦凝聚态", wiki: "Bose–Einstein condensate" },
+    { type: "resource", name: "Atom laser", name_zh: "原子激光", wiki: "Atom laser" },
+    { type: "resource", name: "Superfluid", name_zh: "超流体", wiki: "Superfluid" },
+  ],
+  "anti-senescence-cellular-substrate": [
+    { type: "resource", name: "Cellular senescence", name_zh: "细胞衰老", wiki: "Cellular senescence" },
+    { type: "resource", name: "Theseus's ship paradox", name_zh: "忒修斯之船悖论", wiki: "Ship of Theseus" },
+    { type: "unit", name: "Hybrid bio-synthetic cell", name_zh: "混合生物-合成细胞", wiki: false },
+    { type: "resource", name: "Molecular nanomedicine", name_zh: "分子纳米医学", wiki: "Nanomedicine" },
   ],
 };

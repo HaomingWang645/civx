@@ -706,6 +706,43 @@ body.orient-vertical .scrollbar-h {
   /* Horizontal scrollbar still works but represents the y-axis in vertical mode. */
 }
 
+/* ───────────────────────── Print / PDF export ─────────────────────────
+   Hide all UI chrome and let the SVG fill the page. The export button
+   sets a viewBox covering the entire tree so the printer auto-scales it
+   to one or more pages with all nodes visible. */
+@media print {
+  @page { margin: 12mm; size: landscape; }
+  html, body { background: #fff !important; height: auto !important; overflow: visible !important; }
+  .app { display: block !important; height: auto !important; }
+  .topbar, .sidebar, .controls, .scrollbar-h, .minimap, .zoom-level, .detail {
+    display: none !important;
+  }
+  .canvas-wrap {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    background: #fff !important;
+    overflow: visible !important;
+  }
+  .canvas-wrap svg {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    cursor: auto !important;
+  }
+  /* Print-friendly colors: light backdrop, dark text + edges. */
+  .node-rect { fill: #fff !important; stroke: #333 !important; }
+  .node-title { fill: #000 !important; }
+  .node-meta, .node-year { fill: #555 !important; }
+  .era-label { fill: #222 !important; }
+  .era-label-pill { fill: #f0f0f0 !important; stroke: #ccc !important; }
+  .era-band { fill: rgba(0,0,0,0.025) !important; }
+  .era-band.era-odd { fill: rgba(0,0,0,0.06) !important; }
+  .edge { stroke: #999 !important; }
+  .grid-bg { display: none !important; }
+}
+
 /* Mobile / touch tweaks. Larger tap targets, looser spacing. */
 @media (hover: none), (pointer: coarse) {
   .ctrl-btn { width: 40px; height: 40px; font-size: 18px; }

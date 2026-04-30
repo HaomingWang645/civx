@@ -223,9 +223,9 @@ function layoutTechs() {
   // bucket doesn't pile up into one tall stack.
   const ERA_MIN_LEVELS = {
     mesolithic: 1,
-    bronze: 14, classical: 9, medieval: 4, renaissance: 6,
-    enlightenment: 6, industrial: 7, modern: 6, atomic: 5, information: 5,
-    future: 13, "far-future": 12,
+    neolithic: 5, bronze: 20, classical: 9, medieval: 4, renaissance: 6,
+    enlightenment: 6, industrial: 9, modern: 6, atomic: 5, information: 6,
+    future: 14, "far-future": 12,
   };
   for (const eraId in ERA_MIN_LEVELS) {
     eraLevels[eraId] = Math.max(eraLevels[eraId] ?? 0, ERA_MIN_LEVELS[eraId]);
@@ -1274,6 +1274,37 @@ svg.addEventListener("touchend", () => {
   touchPanStart = null;
   touchPinchStart = null;
 });
+
+// ───────────── PDF export (via browser print → Save as PDF) ─────────────
+//
+// Strategy: temporarily set the SVG to viewBox the entire layout (so the
+// browser scales it to fit the printable area), reset the pan/zoom state,
+// hide UI chrome via @media print, and trigger window.print(). The user
+// chooses "Save as PDF" in the print dialog. On afterprint we restore.
+const pdfBtn = document.getElementById("export-pdf");
+if (pdfBtn) {
+  pdfBtn.addEventListener("click", () => {
+    const W = state.vertical ? layout.totalH : layout.totalW;
+    const H = state.vertical ? layout.totalW : layout.totalH;
+    const saved = { tx: state.tx, ty: state.ty, scale: state.scale };
+    // Show the entire tree at scale 1 inside the SVG viewBox.
+    svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+    svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
+    state.tx = 0; state.ty = 0; state.scale = 1;
+    applyTransform();
+
+    function restore() {
+      svg.removeAttribute("viewBox");
+      svg.removeAttribute("preserveAspectRatio");
+      state.tx = saved.tx; state.ty = saved.ty; state.scale = saved.scale;
+      applyTransform();
+      window.removeEventListener("afterprint", restore);
+    }
+    window.addEventListener("afterprint", restore);
+    // Defer print() so the layout/render flush before opening the dialog.
+    requestAnimationFrame(() => requestAnimationFrame(() => window.print()));
+  });
+}
 
 // ───────────── Boot ─────────────
 applyTheme((function(){ try { return localStorage.getItem("techtree-theme") || "renaissance"; } catch(e) { return "renaissance"; } })());
