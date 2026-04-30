@@ -561,4 +561,16 @@ window.TECH_NAMES_ZH = {
   "inertial-confinement-fusion": "惯性约束聚变",
   "magnetic-confinement-fusion": "磁约束聚变",
   "tritium-breeding": "氚增殖",
+
+  // ─── Particle physics & fusion engineering ───
+  "cyclotron": "回旋加速器",
+  "synchrotron": "同步加速器",
+  "quantum-electrodynamics": "量子电动力学",
+  "standard-model": "粒子物理标准模型",
+  "string-theory": "弦理论",
+  "lhc": "大型强子对撞机",
+  "higgs-discovery": "希格斯玻色子发现",
+  "higgs-factory": "希格斯工厂",
+  "fusion-materials": "聚变材料",
+  "aneutronic-fusion": "无中子聚变",
 };

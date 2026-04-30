@@ -499,7 +499,17 @@ window.TECH_IMAGES = {
   "dreadnought-battleship": "images/dreadnought-battleship.jpg",
   "inertial-confinement-fusion": "images/inertial-confinement-fusion.jpg",
   "magnetic-confinement-fusion": "images/magnetic-confinement-fusion.png",
-  "tritium-breeding": "images/tritium-breeding.jpg"
+  "tritium-breeding": "images/tritium-breeding.jpg",
+  "cyclotron": "images/cyclotron.jpg",
+  "synchrotron": "images/synchrotron.jpg",
+  "quantum-electrodynamics": "images/quantum-electrodynamics.png",
+  "standard-model": "images/standard-model.png",
+  "string-theory": "images/string-theory.jpg",
+  "lhc": "images/lhc.png",
+  "higgs-discovery": "images/higgs-discovery.png",
+  "higgs-factory": "images/higgs-factory.png",
+  "fusion-materials": "images/fusion-materials.jpg",
+  "aneutronic-fusion": "images/aneutronic-fusion.png"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -2497,5 +2507,45 @@ window.TECH_IMAGE_CREDITS = {
   "tritium-breeding": {
     "article": "Tritium",
     "url": "https://en.wikipedia.org/wiki/Tritium"
+  },
+  "cyclotron": {
+    "article": "Cyclotron",
+    "url": "https://en.wikipedia.org/wiki/Cyclotron"
+  },
+  "synchrotron": {
+    "article": "Tevatron",
+    "url": "https://en.wikipedia.org/wiki/Tevatron"
+  },
+  "quantum-electrodynamics": {
+    "article": "Feynman diagram",
+    "url": "https://en.wikipedia.org/wiki/Feynman_diagram"
+  },
+  "standard-model": {
+    "article": "Standard Model",
+    "url": "https://en.wikipedia.org/wiki/Standard_Model"
+  },
+  "string-theory": {
+    "article": "Calabi–Yau manifold",
+    "url": "https://en.wikipedia.org/wiki/Calabi%E2%80%93Yau_manifold"
+  },
+  "lhc": {
+    "article": "Large Hadron Collider",
+    "url": "https://en.wikipedia.org/wiki/Large_Hadron_Collider"
+  },
+  "higgs-discovery": {
+    "article": "Higgs boson",
+    "url": "https://en.wikipedia.org/wiki/Higgs_boson"
+  },
+  "higgs-factory": {
+    "article": "Future Circular Collider",
+    "url": "https://en.wikipedia.org/wiki/Future_Circular_Collider"
+  },
+  "fusion-materials": {
+    "article": "Tungsten",
+    "url": "https://en.wikipedia.org/wiki/Tungsten"
+  },
+  "aneutronic-fusion": {
+    "article": "Aneutronic fusion",
+    "url": "https://en.wikipedia.org/wiki/Aneutronic_fusion"
   }
 };
