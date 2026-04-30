@@ -166,7 +166,7 @@ const TECHS = [
     desc: "Bone or antler points carved with backward-pointing barbs, often with a detachable head and a line, used to take fish, seals, and large birds. The Katanda harpoons (DR Congo, ~90 kya) push the form back surprisingly early. Barbs prevent the prey from escaping after being struck, and detachable heads mean a thrashing animal can't snap the shaft — a meaningful efficiency gain in fishing and aquatic hunting." },
 
   // ─── Mesolithic ────────────────────────────────────────────────
-  { id: "dog", name: "Dog Domestication", era: "mesolithic", category: "subsistence",
+  { id: "dog", name: "Dog Domestication", era: "mesolithic", category: "subsistence", landmark: true,
     year: "~15 kya", prereqs: ["bone-tools"],
     desc: "Wolves selectively bred toward tameness, smaller size, and reduced fear of humans, becoming hunting partners, sentries, and camp companions. Genetic and archaeological evidence (Bonn-Oberkassel burial, Germany, ~14 kya; Goyet Cave, Belgium, possibly ~36 kya) place domestication in the Late Pleistocene, making the dog the only species domesticated before agriculture. The relationship transformed both species: human hunters with dogs are dramatically more effective, and dogs co-evolved with cooked-food digestion." },
   { id: "ground-stone", name: "Ground Stone Tools", era: "mesolithic", category: "tools",
