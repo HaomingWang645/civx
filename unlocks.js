@@ -2496,4 +2496,21 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "Robert Frisbee", name_zh: "罗伯特·弗里斯比", wiki: false },
     { type: "org", name: "NASA Institute for Advanced Concepts", name_zh: "NASA 先进概念研究院", wiki: "NASA Institute for Advanced Concepts" },
   ],
+
+  // ─── Entropy / thermodynamic computing ───
+  "reversible-computing": [
+    { type: "person", name: "Rolf Landauer", name_zh: "罗尔夫·兰道尔", wiki: "Rolf Landauer" },
+    { type: "person", name: "Charles H. Bennett", name_zh: "查尔斯·H·贝内特", wiki: "Charles H. Bennett (computer scientist)" },
+    { type: "person", name: "Edward Fredkin", name_zh: "爱德华·弗雷德金", wiki: "Edward Fredkin" },
+    { type: "resource", name: "Landauer's principle", name_zh: "兰道尔原理", wiki: "Landauer's principle" },
+    { type: "resource", name: "Toffoli gate", name_zh: "Toffoli 门", wiki: "Toffoli gate" },
+    { type: "resource", name: "Adiabatic logic", name_zh: "绝热逻辑", wiki: "Adiabatic logic" },
+  ],
+  "civilizational-entropy-management": [
+    { type: "person", name: "Freeman Dyson", name_zh: "弗里曼·戴森", wiki: "Freeman Dyson" },
+    { type: "work", name: "Time Without End", name_zh: "《无终之时》", wiki: "Heat death of the universe" },
+    { type: "resource", name: "Black hole thermodynamics", name_zh: "黑洞热力学", wiki: "Black hole thermodynamics" },
+    { type: "resource", name: "Bekenstein bound", name_zh: "贝肯斯坦边界", wiki: "Bekenstein bound" },
+    { type: "unit", name: "Cascaded-temperature compute shell", name_zh: "级联温度计算壳层", wiki: false },
+  ],
 };

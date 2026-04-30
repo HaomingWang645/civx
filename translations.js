@@ -581,4 +581,8 @@ window.TECH_NAMES_ZH = {
   "nuclear-pulse-propulsion": "核脉冲推进",
   "bussard-ramjet": "巴萨德冲压发动机",
   "antimatter-propulsion": "反物质推进",
+
+  // ─── Entropy / thermodynamic computing ───
+  "reversible-computing": "可逆计算",
+  "civilizational-entropy-management": "文明级熵管理",
 };

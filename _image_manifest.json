@@ -6099,5 +6099,29 @@
     "status": "ok",
     "score": 0.9,
     "reason": "propulsion/quantum addition"
+  },
+  "reversible-computing": {
+    "name": "reversible-computing",
+    "query": "Quantum logic gate",
+    "article": "Quantum logic gate",
+    "page": "https://en.wikipedia.org/wiki/Quantum_logic_gate",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Quantum_Logic_Gates.png/330px-Quantum_Logic_Gates.png",
+    "image_path": "images/reversible-computing.png",
+    "extract": "\nIn quantum computing and specifically the quantum circuit model of computation, a quantum logic gate is a basic quantum circuit operating on a small number of qubits. Quantum logic gates are the building blocks of quantum circuits, like classical logic gates are for conventional",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "entropy/reversible-computing addition"
+  },
+  "civilizational-entropy-management": {
+    "name": "civilizational-entropy-management",
+    "query": "Heat death of the universe",
+    "article": "Heat death of the universe",
+    "page": "https://en.wikipedia.org/wiki/Heat_death_of_the_universe",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/WMAP_2012.png/330px-WMAP_2012.png",
+    "image_path": "images/civilizational-entropy-management.png",
+    "extract": "The heat death of the universe is a scientific hypothesis regarding the ultimate fate of the universe which posits the universe will evolve to a state of no thermodynamic free energy and, having reached maximum entropy, will therefore be unable to sustain any further thermodynami",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "entropy/reversible-computing addition"
   }
 }

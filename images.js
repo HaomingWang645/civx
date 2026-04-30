@@ -515,7 +515,9 @@ window.TECH_IMAGES = {
   "beamed-sail-propulsion": "images/beamed-sail-propulsion.jpg",
   "nuclear-pulse-propulsion": "images/nuclear-pulse-propulsion.jpg",
   "bussard-ramjet": "images/bussard-ramjet.jpg",
-  "antimatter-propulsion": "images/antimatter-propulsion.png"
+  "antimatter-propulsion": "images/antimatter-propulsion.png",
+  "reversible-computing": "images/reversible-computing.png",
+  "civilizational-entropy-management": "images/civilizational-entropy-management.png"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -2577,5 +2579,13 @@ window.TECH_IMAGE_CREDITS = {
   "antimatter-propulsion": {
     "article": "Antimatter propulsion spacecraft",
     "url": "https://en.wikipedia.org/wiki/Antimatter_propulsion_spacecraft"
+  },
+  "reversible-computing": {
+    "article": "Quantum logic gate",
+    "url": "https://en.wikipedia.org/wiki/Quantum_logic_gate"
+  },
+  "civilizational-entropy-management": {
+    "article": "Heat death of the universe",
+    "url": "https://en.wikipedia.org/wiki/Heat_death_of_the_universe"
   }
 };
