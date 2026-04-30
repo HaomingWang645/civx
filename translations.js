@@ -585,4 +585,17 @@ window.TECH_NAMES_ZH = {
   // ─── Entropy / thermodynamic computing ───
   "reversible-computing": "可逆计算",
   "civilizational-entropy-management": "文明级熵管理",
+
+  // ─── Mathematics frontier ───
+  "univalent-foundations": "一价基础",
+  "langlands-program-completion": "朗兰兹纲领完成",
+  "beyond-zfc-foundations": "超 ZFC 基础",
+  "continuum-hypothesis-resolution": "连续统假设解决",
+  "hypercomputation": "超图灵计算",
+  "trans-computable-mathematics": "超可计算数学",
+
+  // ─── Superintelligence downstream ───
+  "whole-brain-emulation": "全脑仿真",
+  "knowledge-closure": "知识封闭",
+  "subjective-time-compression": "主观时间压缩",
 };

@@ -2513,4 +2513,73 @@ window.TECH_UNLOCKS = {
     { type: "resource", name: "Bekenstein bound", name_zh: "贝肯斯坦边界", wiki: "Bekenstein bound" },
     { type: "unit", name: "Cascaded-temperature compute shell", name_zh: "级联温度计算壳层", wiki: false },
   ],
+
+  // ─── Mathematics frontier ───
+  "univalent-foundations": [
+    { type: "person", name: "Vladimir Voevodsky", name_zh: "弗拉基米尔·沃埃沃德斯基", wiki: "Vladimir Voevodsky" },
+    { type: "resource", name: "Homotopy type theory", name_zh: "同伦类型论", wiki: "Homotopy type theory" },
+    { type: "resource", name: "Univalence axiom", name_zh: "一价公理", wiki: "Univalent foundations" },
+    { type: "unit", name: "Coq", name_zh: "Coq 证明助手", wiki: "Coq (software)" },
+    { type: "unit", name: "Lean theorem prover", name_zh: "Lean 定理证明器", wiki: "Lean (proof assistant)" },
+  ],
+  "langlands-program-completion": [
+    { type: "person", name: "Robert Langlands", name_zh: "罗伯特·朗兰兹", wiki: "Robert Langlands" },
+    { type: "person", name: "Andrew Wiles", name_zh: "安德鲁·怀尔斯", wiki: "Andrew Wiles" },
+    { type: "person", name: "Peter Scholze", name_zh: "彼得·朔尔策", wiki: "Peter Scholze" },
+    { type: "resource", name: "Langlands program", name_zh: "朗兰兹纲领", wiki: "Langlands program" },
+    { type: "resource", name: "Geometric Langlands", name_zh: "几何朗兰兹对应", wiki: "Geometric Langlands correspondence" },
+    { type: "resource", name: "Perfectoid space", name_zh: "完美空间", wiki: "Perfectoid space" },
+  ],
+  "beyond-zfc-foundations": [
+    { type: "resource", name: "Zermelo–Fraenkel set theory", name_zh: "策梅洛-弗兰克尔集合论", wiki: "Zermelo–Fraenkel set theory" },
+    { type: "resource", name: "Constructive set theory", name_zh: "构造性集合论", wiki: "Constructive set theory" },
+    { type: "resource", name: "New Foundations", name_zh: "新基础", wiki: "New Foundations" },
+    { type: "resource", name: "Tarski–Grothendieck set theory", name_zh: "塔斯基-格罗滕迪克集合论", wiki: "Tarski–Grothendieck set theory" },
+    { type: "person", name: "Saharon Shelah", name_zh: "萨哈龙·谢拉", wiki: "Saharon Shelah" },
+  ],
+  "continuum-hypothesis-resolution": [
+    { type: "resource", name: "Continuum hypothesis", name_zh: "连续统假设", wiki: "Continuum hypothesis" },
+    { type: "person", name: "Kurt Gödel", name_zh: "库尔特·哥德尔", wiki: "Kurt Gödel" },
+    { type: "person", name: "Paul Cohen", name_zh: "保罗·科恩", wiki: "Paul Cohen" },
+    { type: "resource", name: "Forcing", name_zh: "力迫法", wiki: "Forcing (mathematics)" },
+    { type: "resource", name: "Martin's Maximum", name_zh: "马丁极大原理", wiki: "Martin's maximum" },
+    { type: "resource", name: "Large cardinal", name_zh: "大基数", wiki: "Large cardinal" },
+  ],
+  "hypercomputation": [
+    { type: "resource", name: "Hypercomputation", name_zh: "超计算", wiki: "Hypercomputation" },
+    { type: "resource", name: "Oracle machine", name_zh: "神谕机器", wiki: "Oracle machine" },
+    { type: "resource", name: "Zeno machine", name_zh: "芝诺机", wiki: "Zeno machine" },
+    { type: "resource", name: "Malament–Hogarth spacetime", name_zh: "马拉门-霍加思时空", wiki: "Malament–Hogarth spacetime" },
+    { type: "resource", name: "Halting problem", name_zh: "停机问题", wiki: "Halting problem" },
+  ],
+  "trans-computable-mathematics": [
+    { type: "resource", name: "Busy beaver function", name_zh: "繁忙的海狸函数", wiki: "Busy beaver" },
+    { type: "resource", name: "Chaitin's constant", name_zh: "蔡廷常数", wiki: "Chaitin's constant" },
+    { type: "resource", name: "Arithmetical hierarchy", name_zh: "算术层次", wiki: "Arithmetical hierarchy" },
+    { type: "resource", name: "Constructible universe", name_zh: "可构造宇宙", wiki: "Constructible universe" },
+  ],
+
+  // ─── Superintelligence downstream ───
+  "whole-brain-emulation": [
+    { type: "person", name: "Anders Sandberg", name_zh: "安德斯·桑德伯格", wiki: "Anders Sandberg" },
+    { type: "person", name: "Henry Markram", name_zh: "亨利·马克拉姆", wiki: "Henry Markram" },
+    { type: "resource", name: "Connectome", name_zh: "连接组", wiki: "Connectome" },
+    { type: "resource", name: "Connectomics", name_zh: "连接组学", wiki: "Connectomics" },
+    { type: "org", name: "Blue Brain Project", name_zh: "蓝脑计划", wiki: "Blue Brain Project" },
+    { type: "org", name: "OpenWorm", name_zh: "OpenWorm 项目", wiki: "OpenWorm" },
+    { type: "work", name: "Whole Brain Emulation Roadmap", name_zh: "《全脑仿真路线图》", wiki: false },
+  ],
+  "knowledge-closure": [
+    { type: "work", name: "The End of Science", name_zh: "《科学的终结》", wiki: "The End of Science" },
+    { type: "person", name: "John Horgan", name_zh: "约翰·霍根", wiki: "John Horgan (journalist)" },
+    { type: "resource", name: "Theory of everything", name_zh: "万物理论", wiki: "Theory of everything" },
+    { type: "resource", name: "Knowledge graph", name_zh: "知识图谱", wiki: "Knowledge graph" },
+  ],
+  "subjective-time-compression": [
+    { type: "person", name: "Robin Hanson", name_zh: "罗宾·汉森", wiki: "Robin Hanson" },
+    { type: "work", name: "The Age of Em", name_zh: "《时代之我》", wiki: "The Age of Em" },
+    { type: "resource", name: "Time perception", name_zh: "时间知觉", wiki: "Time perception" },
+    { type: "resource", name: "Em (Hanson)", name_zh: "Em (汉森意义上)", wiki: false },
+    { type: "resource", name: "Substrate clock-rate", name_zh: "基质时钟速率", wiki: false },
+  ],
 };

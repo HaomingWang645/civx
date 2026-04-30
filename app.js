@@ -224,7 +224,7 @@ function layoutTechs() {
   const ERA_MIN_LEVELS = {
     bronze: 8, classical: 9, medieval: 4, renaissance: 4,
     enlightenment: 5, industrial: 5, modern: 3, atomic: 5, information: 5,
-    future: 13, "far-future": 8,
+    future: 13, "far-future": 12,
   };
   for (const eraId in ERA_MIN_LEVELS) {
     eraLevels[eraId] = Math.max(eraLevels[eraId] ?? 0, ERA_MIN_LEVELS[eraId]);

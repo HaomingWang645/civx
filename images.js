@@ -517,7 +517,16 @@ window.TECH_IMAGES = {
   "bussard-ramjet": "images/bussard-ramjet.jpg",
   "antimatter-propulsion": "images/antimatter-propulsion.png",
   "reversible-computing": "images/reversible-computing.png",
-  "civilizational-entropy-management": "images/civilizational-entropy-management.png"
+  "civilizational-entropy-management": "images/civilizational-entropy-management.png",
+  "univalent-foundations": "images/univalent-foundations.png",
+  "langlands-program-completion": "images/langlands-program-completion.jpg",
+  "beyond-zfc-foundations": "images/beyond-zfc-foundations.png",
+  "continuum-hypothesis-resolution": "images/continuum-hypothesis-resolution.png",
+  "hypercomputation": "images/hypercomputation.jpg",
+  "trans-computable-mathematics": "images/trans-computable-mathematics.png",
+  "whole-brain-emulation": "images/whole-brain-emulation.png",
+  "knowledge-closure": "images/knowledge-closure.jpg",
+  "subjective-time-compression": "images/subjective-time-compression.jpg"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -2587,5 +2596,41 @@ window.TECH_IMAGE_CREDITS = {
   "civilizational-entropy-management": {
     "article": "Heat death of the universe",
     "url": "https://en.wikipedia.org/wiki/Heat_death_of_the_universe"
+  },
+  "univalent-foundations": {
+    "article": "Homotopy type theory",
+    "url": "https://en.wikipedia.org/wiki/Homotopy_type_theory"
+  },
+  "langlands-program-completion": {
+    "article": "Fermat's Last Theorem",
+    "url": "https://en.wikipedia.org/wiki/Fermat's_Last_Theorem"
+  },
+  "beyond-zfc-foundations": {
+    "article": "Set theory",
+    "url": "https://en.wikipedia.org/wiki/Set_theory"
+  },
+  "continuum-hypothesis-resolution": {
+    "article": "Cantor's diagonal argument",
+    "url": "https://en.wikipedia.org/wiki/Cantor's_diagonal_argument"
+  },
+  "hypercomputation": {
+    "article": "Turing machine",
+    "url": "https://en.wikipedia.org/wiki/Turing_machine"
+  },
+  "trans-computable-mathematics": {
+    "article": "Busy beaver",
+    "url": "https://en.wikipedia.org/wiki/Busy_beaver"
+  },
+  "whole-brain-emulation": {
+    "article": "Connectome",
+    "url": "https://en.wikipedia.org/wiki/Connectome"
+  },
+  "knowledge-closure": {
+    "article": "Theory of everything",
+    "url": "https://en.wikipedia.org/wiki/Theory_of_everything"
+  },
+  "subjective-time-compression": {
+    "article": "The Age of Em",
+    "url": "https://en.wikipedia.org/wiki/The_Age_of_Em"
   }
 };

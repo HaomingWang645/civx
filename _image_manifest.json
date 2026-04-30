@@ -6123,5 +6123,113 @@
     "status": "ok",
     "score": 0.9,
     "reason": "entropy/reversible-computing addition"
+  },
+  "univalent-foundations": {
+    "name": "univalent-foundations",
+    "query": "Homotopy type theory",
+    "article": "Homotopy type theory",
+    "page": "https://en.wikipedia.org/wiki/Homotopy_type_theory",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Hott_book_cover.png",
+    "image_path": "images/univalent-foundations.png",
+    "extract": "In mathematical logic and computer science, homotopy type theory (HoTT) includes various lines of development of intuitionistic type theory, based on the interpretation of types as objects to which the intuition of (abstract) homotopy theory applies.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "math frontier addition"
+  },
+  "langlands-program-completion": {
+    "name": "langlands-program-completion",
+    "query": "Fermat's Last Theorem",
+    "article": "Fermat's Last Theorem",
+    "page": "https://en.wikipedia.org/wiki/Fermat's_Last_Theorem",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Diophantus-II-8-Fermat.jpg/330px-Diophantus-II-8-Fermat.jpg",
+    "image_path": "images/langlands-program-completion.jpg",
+    "extract": "In number theory, Fermat's Last Theorem states that there are no positive integers  with  such that . The cases n = 1 and n = 2 have been known since antiquity to have infinitely many solutions.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "math frontier addition"
+  },
+  "beyond-zfc-foundations": {
+    "name": "beyond-zfc-foundations",
+    "query": "Set theory",
+    "article": "Set theory",
+    "page": "https://en.wikipedia.org/wiki/Set_theory",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Venn_A_intersect_B.svg/330px-Venn_A_intersect_B.svg.png",
+    "image_path": "images/beyond-zfc-foundations.png",
+    "extract": "Set theory is the branch of mathematical logic that studies sets, which can be informally described as collections of objects. Although objects of any kind can be collected into a set, set theory – as a branch of mathematics – is mostly concerned with those that are relevant to m",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "math frontier addition"
+  },
+  "continuum-hypothesis-resolution": {
+    "name": "continuum-hypothesis-resolution",
+    "query": "Cantor's diagonal argument",
+    "article": "Cantor's diagonal argument",
+    "page": "https://en.wikipedia.org/wiki/Cantor's_diagonal_argument",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Diagonal_argument_01_svg.svg/330px-Diagonal_argument_01_svg.svg.png",
+    "image_path": "images/continuum-hypothesis-resolution.png",
+    "extract": "Cantor's diagonal argument is a mathematical proof that there are infinite sets which cannot be put into one-to-one correspondence with the infinite set of natural numbers – informally, that there are sets which in some sense contain more elements than there are positive integers",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "math frontier addition"
+  },
+  "hypercomputation": {
+    "name": "hypercomputation",
+    "query": "Turing machine",
+    "article": "Turing machine",
+    "page": "https://en.wikipedia.org/wiki/Turing_machine",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Turing_Machine_Model_Davey_2012.jpg/330px-Turing_Machine_Model_Davey_2012.jpg",
+    "image_path": "images/hypercomputation.jpg",
+    "extract": "A Turing machine is a mathematical model of computation describing an abstract machine that manipulates symbols on a strip of tape according to a table of rules. Despite the model's simplicity, it is capable of implementing any computer algorithm.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "math frontier addition"
+  },
+  "trans-computable-mathematics": {
+    "name": "trans-computable-mathematics",
+    "query": "Busy beaver",
+    "article": "Busy beaver",
+    "page": "https://en.wikipedia.org/wiki/Busy_beaver",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Busy_Beaver_5_State_2_Color.png/330px-Busy_Beaver_5_State_2_Color.png",
+    "image_path": "images/trans-computable-mathematics.png",
+    "extract": "In theoretical computer science, the busy beaver game aims to find a terminating program of a given size that either produces the most output possible, or runs for the longest number of steps. Since an endlessly looping program producing infinite output or running for infinite ti",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "math frontier addition"
+  },
+  "whole-brain-emulation": {
+    "name": "whole-brain-emulation",
+    "query": "Connectome",
+    "article": "Connectome",
+    "page": "https://en.wikipedia.org/wiki/Connectome",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/White_Matter_Connections_Obtained_with_MRI_Tractography.png/330px-White_Matter_Connections_Obtained_with_MRI_Tractography.png",
+    "image_path": "images/whole-brain-emulation.png",
+    "extract": "A connectome is a comprehensive map of neural connections in the brain, and may be thought of as its \"wiring diagram\". These maps are available in varying levels of detail. A functional connectome shows connections between various brain regions, but not individual neurons. These ",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "SI-downstream addition"
+  },
+  "knowledge-closure": {
+    "name": "knowledge-closure",
+    "query": "Theory of everything",
+    "article": "Theory of everything",
+    "page": "https://en.wikipedia.org/wiki/Theory_of_everything",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/CMS_Higgs-event.jpg/330px-CMS_Higgs-event.jpg",
+    "image_path": "images/knowledge-closure.jpg",
+    "extract": "A theory of everything or final theory is a hypothetical coherent theoretical framework of physics containing all physical principles. The scope of the concept of a \"theory of everything\" varies. The original technical concept referred to unification of the four fundamental inter",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "SI-downstream addition"
+  },
+  "subjective-time-compression": {
+    "name": "subjective-time-compression",
+    "query": "The Age of Em",
+    "article": "The Age of Em",
+    "page": "https://en.wikipedia.org/wiki/The_Age_of_Em",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/2/24/The_Age_of_Em.jpg",
+    "image_path": "images/subjective-time-compression.jpg",
+    "extract": "The Age of Em: Work, Love and Life when Robots Rule the Earth is a 2016 nonfiction book by Robin Hanson.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "SI-downstream addition"
   }
 }
