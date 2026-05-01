@@ -641,7 +641,22 @@ window.TECH_IMAGES = {
   "refrigeration": "images/refrigeration.png",
   "game-theory": "images/game-theory.jpg",
   "public-key-cryptography": "images/public-key-cryptography.png",
-  "cartography": "images/cartography.jpg"
+  "cartography": "images/cartography.jpg",
+  "fluid-dynamics": "images/fluid-dynamics.png",
+  "aerodynamics": "images/aerodynamics.jpg",
+  "statics-strength": "images/statics-strength.png",
+  "mars-landing": "images/mars-landing.jpg",
+  "mars-habitat": "images/mars-habitat.jpg",
+  "counter-stealth-radar": "images/counter-stealth-radar.jpg",
+  "adaptive-cycle-engine": "images/adaptive-cycle-engine.jpg",
+  "collaborative-combat-aircraft": "images/collaborative-combat-aircraft.jpg",
+  "sixth-gen-fighter": "images/sixth-gen-fighter.jpg",
+  "stellar-evolution": "images/stellar-evolution.png",
+  "pulsars-neutron-stars": "images/pulsars-neutron-stars.jpg",
+  "kilonova-merger": "images/kilonova-merger.png",
+  "r-process-astromining": "images/r-process-astromining.png",
+  "pulsar-timing-array": "images/pulsar-timing-array.png",
+  "pulsar-navigation": "images/pulsar-navigation.jpg"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -3207,5 +3222,65 @@ window.TECH_IMAGE_CREDITS = {
   "cartography": {
     "article": "Cartography",
     "url": "https://en.wikipedia.org/wiki/Cartography"
+  },
+  "fluid-dynamics": {
+    "article": "Fluid dynamics",
+    "url": "https://en.wikipedia.org/wiki/Fluid_dynamics"
+  },
+  "aerodynamics": {
+    "article": "Boundary layer",
+    "url": "https://en.wikipedia.org/wiki/Boundary_layer"
+  },
+  "statics-strength": {
+    "article": "Two New Sciences",
+    "url": "https://en.wikipedia.org/wiki/Two_New_Sciences"
+  },
+  "mars-landing": {
+    "article": "Human mission to Mars",
+    "url": "https://en.wikipedia.org/wiki/Human_mission_to_Mars"
+  },
+  "mars-habitat": {
+    "article": "Mars Base Camp",
+    "url": "https://en.wikipedia.org/wiki/Mars_Base_Camp"
+  },
+  "counter-stealth-radar": {
+    "article": "Nebo-M",
+    "url": "https://en.wikipedia.org/wiki/Nebo-M"
+  },
+  "adaptive-cycle-engine": {
+    "article": "General Electric XA100",
+    "url": "https://en.wikipedia.org/wiki/General_Electric_XA100"
+  },
+  "collaborative-combat-aircraft": {
+    "article": "Boeing MQ-28 Ghost Bat",
+    "url": "https://en.wikipedia.org/wiki/Boeing_MQ-28_Ghost_Bat"
+  },
+  "sixth-gen-fighter": {
+    "article": "Next Generation Air Dominance",
+    "url": "https://en.wikipedia.org/wiki/Next_Generation_Air_Dominance"
+  },
+  "stellar-evolution": {
+    "article": "Hertzsprung–Russell diagram",
+    "url": "https://en.wikipedia.org/wiki/Hertzsprung%E2%80%93Russell_diagram"
+  },
+  "pulsars-neutron-stars": {
+    "article": "Pulsar",
+    "url": "https://en.wikipedia.org/wiki/Pulsar"
+  },
+  "kilonova-merger": {
+    "article": "GW170817",
+    "url": "https://en.wikipedia.org/wiki/GW170817"
+  },
+  "r-process-astromining": {
+    "article": "R-process",
+    "url": "https://en.wikipedia.org/wiki/R-process"
+  },
+  "pulsar-timing-array": {
+    "article": "North American Nanohertz Observatory for Gravitational Waves",
+    "url": "https://en.wikipedia.org/wiki/North_American_Nanohertz_Observatory_for_Gravitational_Waves"
+  },
+  "pulsar-navigation": {
+    "article": "Millisecond pulsar",
+    "url": "https://en.wikipedia.org/wiki/Millisecond_pulsar"
   }
 };

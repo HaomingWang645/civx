@@ -427,6 +427,10 @@ window.TECH_NAMES_ZH = {
   "stealth-aircraft": "隐形战机",
   "drone-uav": "无人机",
   "fifth-gen-fighter": "第五代战斗机",
+  "counter-stealth-radar": "反隐身雷达",
+  "adaptive-cycle-engine": "自适应循环发动机",
+  "collaborative-combat-aircraft": "协同作战飞机",
+  "sixth-gen-fighter": "第六代战斗机",
   "cyber-warfare": "网络战",
   "hypersonic-weapon": "高超音速武器",
 
@@ -441,7 +445,9 @@ window.TECH_NAMES_ZH = {
   "agi": "通用人工智能",
   "brain-computer-interface": "脑机接口",
   "moon-base": "月球永久基地",
-  "mars-colony": "火星殖民",
+  "mars-landing": "首次载人登陆火星",
+  "mars-habitat": "火星表面基地",
+  "mars-colony": "自给自足火星殖民地",
   "asteroid-mining": "小行星采矿",
   "anti-aging": "抗衰老医学",
   "lab-grown-meat": "实验室培育肉",
@@ -729,4 +735,17 @@ window.TECH_NAMES_ZH = {
   "flash-memory": "闪存(NAND)",
   "photolithography": "光刻技术",
   "wafer-stepper": "晶圆步进光刻机",
+
+  // ─── Mechanics & Aerodynamics ───
+  "statics-strength": "静力学与材料力学",
+  "fluid-dynamics": "流体力学",
+  "aerodynamics": "空气动力学与边界层",
+
+  // ─── Compact-Object Astrophysics ───
+  "stellar-evolution": "恒星演化与赫罗图",
+  "pulsars-neutron-stars": "脉冲星与中子星",
+  "kilonova-merger": "千新星与中子星合并",
+  "pulsar-navigation": "脉冲星导航(XNAV)",
+  "pulsar-timing-array": "脉冲星计时阵列",
+  "r-process-astromining": "r过程星际采矿",
 };

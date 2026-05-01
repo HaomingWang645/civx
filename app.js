@@ -224,7 +224,7 @@ function layoutTechs() {
   const ERA_MIN_LEVELS = {
     mesolithic: 1,
     neolithic: 5, bronze: 20, classical: 9, medieval: 4, renaissance: 6,
-    enlightenment: 6, industrial: 9, modern: 6, atomic: 5, information: 6,
+    enlightenment: 6, industrial: 9, modern: 6, atomic: 5, information: 8,
     future: 14, "far-future": 12,
   };
   for (const eraId in ERA_MIN_LEVELS) {
