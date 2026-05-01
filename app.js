@@ -471,6 +471,8 @@ function render() {
     labelBg.setAttribute("x", lbx); labelBg.setAttribute("y", lby);
     labelBg.setAttribute("width", lbw); labelBg.setAttribute("height", lbh);
     labelBg.setAttribute("rx", 6);
+    labelBg.style.cursor = "pointer";
+    labelBg.addEventListener("click", (e) => { e.stopPropagation(); showEraDetail(era.id); });
     eraGroup.appendChild(labelBg);
 
     const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
@@ -479,6 +481,8 @@ function render() {
     label.setAttribute("x", lx); label.setAttribute("y", ly);
     label.setAttribute("text-anchor", "middle");
     label.textContent = era.name;
+    label.style.cursor = "pointer";
+    label.addEventListener("click", (e) => { e.stopPropagation(); showEraDetail(era.id); });
     eraGroup.appendChild(label);
 
     const range = document.createElementNS("http://www.w3.org/2000/svg", "text");
@@ -487,6 +491,8 @@ function render() {
     range.setAttribute("x", rx); range.setAttribute("y", ry);
     range.setAttribute("text-anchor", "middle");
     range.textContent = era.range;
+    range.style.cursor = "pointer";
+    range.addEventListener("click", (e) => { e.stopPropagation(); showEraDetail(era.id); });
     eraGroup.appendChild(range);
   });
 
@@ -752,6 +758,60 @@ function showDetail(id) {
 
   detailEl.classList.add("open");
   detailEl.scrollTop = 0; // reset scroll so new tech opens from the top
+  detailEl.querySelector(".detail-close").onclick = clearSelection;
+  detailEl.querySelectorAll(".detail-link").forEach(el => {
+    el.onclick = () => selectNode(el.dataset.id);
+  });
+}
+
+function showEraDetail(eraId) {
+  const era = ERAS.find(e => e.id === eraId);
+  if (!era) return;
+
+  // Techs in this era, grouped by category, year-sorted within each group.
+  const eraTechs = TECHS.filter(t => t.era === eraId);
+  const yearKey = (y) => {
+    const s = String(y || "").replace(/^~/, "").trim();
+    const m = s.match(/(-?\d+(?:\.\d+)?)\s*(kya|Mya|BCE|BC|CE)?/i);
+    if (!m) return 9e9;
+    const n = parseFloat(m[1]); const u = (m[2] || "").toUpperCase();
+    if (u === "MYA") return -n * 1e6;
+    if (u === "KYA") return -n * 1e3;
+    if (u === "BCE" || u === "BC") return -n;
+    return n;
+  };
+  const byCat = {};
+  for (const t of eraTechs) (byCat[t.category] ||= []).push(t);
+  for (const k in byCat) byCat[k].sort((a, b) => yearKey(a.year) - yearKey(b.year));
+  const catOrder = Object.keys(CATEGORIES).filter(c => byCat[c]);
+  const nameZh = era.name_zh ? `<div class="detail-title-zh">${era.name_zh}</div>` : "";
+
+  detailEl.innerHTML = `
+    <button class="detail-close" aria-label="Close">×</button>
+    <div class="detail-cat" style="color: #94a3b8">
+      <span class="detail-cat-dot" style="background: #94a3b8"></span>
+      Era
+    </div>
+    <div class="detail-title">${era.name}</div>
+    ${nameZh}
+    <div class="detail-year">${era.range} · ${eraTechs.length} techs</div>
+    <div class="detail-desc">${era.desc || ""}</div>
+    ${catOrder.map(cid => {
+      const cat = CATEGORIES[cid];
+      const list = byCat[cid];
+      return `
+        <div class="detail-section">
+          <div class="detail-section-title" style="color: ${cat.color}">
+            <span class="detail-cat-dot" style="background: ${cat.color}"></span>
+            ${cat.name} <span style="opacity:.6;font-weight:400">· ${list.length}</span>
+          </div>
+          ${list.map(t => `<div class="detail-link" data-id="${t.id}">${t.name} <span style="opacity:.55;font-size:.85em">${t.year}</span></div>`).join("")}
+        </div>`;
+    }).join("")}
+  `;
+
+  detailEl.classList.add("open");
+  detailEl.scrollTop = 0;
   detailEl.querySelector(".detail-close").onclick = clearSelection;
   detailEl.querySelectorAll(".detail-link").forEach(el => {
     el.onclick = () => selectNode(el.dataset.id);

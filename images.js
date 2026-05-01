@@ -356,7 +356,7 @@ window.TECH_IMAGES = {
   "closed-loop-life-support": "images/closed-loop-life-support.jpg",
   "fusion-power": "images/fusion-power.jpg",
   "humanoid-robot": "images/humanoid-robot.jpg",
-  "agi": "images/agi.jpg",
+  "agi": "images/agi.png",
   "brain-computer-interface": "images/brain-computer-interface.jpg",
   "moon-base": "images/moon-base.jpg",
   "mars-colony": "images/mars-colony.jpg",
@@ -375,15 +375,17 @@ window.TECH_IMAGES = {
   "universal-basic-income": "images/universal-basic-income.jpg",
   "liquid-democracy": "images/liquid-democracy.png",
   "network-state": "images/network-state.jpg",
-  "ai-governance": "images/ai-governance.jpg",
+  "ai-governance": "images/ai-governance.png",
   "transhumanism": "images/transhumanism.jpg",
   "longtermism": "images/longtermism.png",
   "generative-art": "images/generative-art.jpg",
   "metaverse": "images/metaverse.jpg",
   "decentralized-autonomous-org": "images/decentralized-autonomous-org.jpg",
   "hyperloop": "images/hyperloop.png",
+  "neuromorphic-chip": "images/neuromorphic-chip.jpg",
   "lab-grown-organs": "images/lab-grown-organs.png",
-  "dna-data-storage": "images/dna-data-storage.jpg",
+  "sentientism": "images/sentientism.jpg",
+  "dna-data-storage": "images/dna-data-storage.png",
   "cancer-cure": "images/cancer-cure.png",
   "ai-judge": "images/ai-judge.png",
   "space-based-solar": "images/space-based-solar.jpg",
@@ -392,14 +394,14 @@ window.TECH_IMAGES = {
   "programmable-matter": "images/programmable-matter.jpg",
   "interstellar-probe": "images/interstellar-probe.png",
   "terraforming-mars": "images/terraforming-mars.png",
-  "formal-mathematics": "images/formal-mathematics.jpg",
+  "formal-mathematics": "images/formal-mathematics.png",
   "gravitational-wave-spectroscopy": "images/gravitational-wave-spectroscopy.png",
   "dark-sector-physics": "images/dark-sector-physics.png",
   "quantum-gravity": "images/quantum-gravity.png",
   "p-vs-np-resolved": "images/p-vs-np-resolved.png",
   "space-habitat": "images/space-habitat.jpg",
   "artificial-photosynthesis": "images/artificial-photosynthesis.png",
-  "genetic-disease-eradication": "images/genetic-disease-eradication.jpg",
+  "genetic-disease-eradication": "images/genetic-disease-eradication.png",
   "self-replicating-machines": "images/self-replicating-machines.png",
   "superintelligence": "images/superintelligence.jpg",
   "seti-first-contact": "images/seti-first-contact.jpg",
@@ -428,7 +430,7 @@ window.TECH_IMAGES = {
   "personalized-medicine": "images/personalized-medicine.png",
   "printable-organs-on-demand": "images/printable-organs-on-demand.jpg",
   "ai-coordination-treaty": "images/ai-coordination-treaty.jpg",
-  "direct-ai-democracy": "images/direct-ai-democracy.jpg",
+  "direct-ai-democracy": "images/direct-ai-democracy.png",
   "lunar-industrial-base": "images/lunar-industrial-base.jpg",
   "asteroid-belt-settlement": "images/asteroid-belt-settlement.jpg",
   "memory-editing": "images/memory-editing.jpg",
@@ -522,7 +524,7 @@ window.TECH_IMAGES = {
   "langlands-program-completion": "images/langlands-program-completion.jpg",
   "beyond-zfc-foundations": "images/beyond-zfc-foundations.png",
   "continuum-hypothesis-resolution": "images/continuum-hypothesis-resolution.png",
-  "hypercomputation": "images/hypercomputation.jpg",
+  "hypercomputation": "images/hypercomputation.png",
   "trans-computable-mathematics": "images/trans-computable-mathematics.png",
   "whole-brain-emulation": "images/whole-brain-emulation.png",
   "knowledge-closure": "images/knowledge-closure.jpg",
@@ -2111,8 +2113,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Humanoid_robot"
   },
   "agi": {
-    "article": "Robot",
-    "url": "https://en.wikipedia.org/wiki/Robot"
+    "article": "ChatGPT",
+    "url": "https://en.wikipedia.org/wiki/ChatGPT"
   },
   "brain-computer-interface": {
     "article": "Brain–computer interface",
@@ -2167,8 +2169,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Space_elevator"
   },
   "post-scarcity": {
-    "article": "Universal basic income",
-    "url": "https://en.wikipedia.org/wiki/Universal_basic_income"
+    "article": "3D food printing",
+    "url": "https://en.wikipedia.org/wiki/3D_food_printing"
   },
   "digital-immortality": {
     "article": "Mind uploading",
@@ -2183,12 +2185,12 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Liquid_democracy"
   },
   "network-state": {
-    "article": "Seasteading",
-    "url": "https://en.wikipedia.org/wiki/Seasteading"
+    "article": "Próspera",
+    "url": "https://en.wikipedia.org/wiki/Pr%C3%B3spera"
   },
   "ai-governance": {
-    "article": "Smart city",
-    "url": "https://en.wikipedia.org/wiki/Smart_city"
+    "article": "Government by algorithm",
+    "url": "https://en.wikipedia.org/wiki/Government_by_algorithm"
   },
   "transhumanism": {
     "article": "Transhumanism",
@@ -2214,21 +2216,29 @@ window.TECH_IMAGE_CREDITS = {
     "article": "Hyperloop",
     "url": "https://en.wikipedia.org/wiki/Hyperloop"
   },
+  "neuromorphic-chip": {
+    "article": "Memristor",
+    "url": "https://en.wikipedia.org/wiki/Memristor"
+  },
   "lab-grown-organs": {
     "article": "Tissue engineering",
     "url": "https://en.wikipedia.org/wiki/Tissue_engineering"
   },
+  "sentientism": {
+    "article": "Animal rights",
+    "url": "https://en.wikipedia.org/wiki/Animal_rights"
+  },
   "dna-data-storage": {
-    "article": "DNA computing",
-    "url": "https://en.wikipedia.org/wiki/DNA_computing"
+    "article": "Oligonucleotide synthesis",
+    "url": "https://en.wikipedia.org/wiki/Oligonucleotide_synthesis"
   },
   "cancer-cure": {
     "article": "Cancer immunotherapy",
     "url": "https://en.wikipedia.org/wiki/Cancer_immunotherapy"
   },
   "ai-judge": {
-    "article": "Algorithmic bias",
-    "url": "https://en.wikipedia.org/wiki/Algorithmic_bias"
+    "article": "COMPAS (software)",
+    "url": "https://en.wikipedia.org/wiki/COMPAS_(software)"
   },
   "space-based-solar": {
     "article": "Space-based solar power",
@@ -2255,8 +2265,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Terraforming_of_Mars"
   },
   "formal-mathematics": {
-    "article": "Terence Tao",
-    "url": "https://en.wikipedia.org/wiki/Terence_Tao"
+    "article": "Rocq",
+    "url": "https://en.wikipedia.org/wiki/Rocq"
   },
   "gravitational-wave-spectroscopy": {
     "article": "Gravitational-wave astronomy",
@@ -2271,8 +2281,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Quantum_gravity"
   },
   "p-vs-np-resolved": {
-    "article": "Travelling salesman problem",
-    "url": "https://en.wikipedia.org/wiki/Travelling_salesman_problem"
+    "article": "P versus NP problem",
+    "url": "https://en.wikipedia.org/wiki/P_versus_NP_problem"
   },
   "space-habitat": {
     "article": "O'Neill cylinder",
@@ -2283,16 +2293,16 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Photosynthesis"
   },
   "genetic-disease-eradication": {
-    "article": "Sickle cell disease",
-    "url": "https://en.wikipedia.org/wiki/Sickle_cell_disease"
+    "article": "Gene therapy",
+    "url": "https://en.wikipedia.org/wiki/Gene_therapy"
   },
   "self-replicating-machines": {
     "article": "Von Neumann universal constructor",
     "url": "https://en.wikipedia.org/wiki/Von_Neumann_universal_constructor"
   },
   "superintelligence": {
-    "article": "Nick Bostrom",
-    "url": "https://en.wikipedia.org/wiki/Nick_Bostrom"
+    "article": "Superintelligence: Paths, Dangers, Strategies",
+    "url": "https://en.wikipedia.org/wiki/Superintelligence%3A_Paths%2C_Dangers%2C_Strategies"
   },
   "seti-first-contact": {
     "article": "Search for extraterrestrial intelligence",
@@ -2399,8 +2409,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/AI_Safety_Summit_2023"
   },
   "direct-ai-democracy": {
-    "article": "Audrey Tang",
-    "url": "https://en.wikipedia.org/wiki/Audrey_Tang"
+    "article": "E-democracy",
+    "url": "https://en.wikipedia.org/wiki/E-democracy"
   },
   "lunar-industrial-base": {
     "article": "Colonization of the Moon",
@@ -2411,8 +2421,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Colonization_of_the_asteroid_belt"
   },
   "memory-editing": {
-    "article": "Long-term potentiation",
-    "url": "https://en.wikipedia.org/wiki/Long-term_potentiation"
+    "article": "Optogenetics",
+    "url": "https://en.wikipedia.org/wiki/Optogenetics"
   },
   "cybernetic-enhancement": {
     "article": "Cyborg",
@@ -2483,8 +2493,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Laser_weapon"
   },
   "drone-swarms": {
-    "article": "Baykar Bayraktar TB2",
-    "url": "https://en.wikipedia.org/wiki/Baykar_Bayraktar_TB2"
+    "article": "Swarm robotics",
+    "url": "https://en.wikipedia.org/wiki/Swarm_robotics"
   },
   "anti-satellite-warfare": {
     "article": "Anti-satellite weapon",
@@ -2507,8 +2517,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test"
   },
   "relativistic-kinetic-weapon": {
-    "article": "Project Orion (nuclear propulsion)",
-    "url": "https://en.wikipedia.org/wiki/Project_Orion_(nuclear_propulsion)"
+    "article": "Railgun",
+    "url": "https://en.wikipedia.org/wiki/Railgun"
   },
   "antimatter-weapon": {
     "article": "Antimatter weapon",
@@ -2751,8 +2761,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Antimatter_propulsion_spacecraft"
   },
   "reversible-computing": {
-    "article": "Quantum logic gate",
-    "url": "https://en.wikipedia.org/wiki/Quantum_logic_gate"
+    "article": "Maxwell's demon",
+    "url": "https://en.wikipedia.org/wiki/Maxwell's_demon"
   },
   "civilizational-entropy-management": {
     "article": "Heat death of the universe",
@@ -2775,8 +2785,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Cantor's_diagonal_argument"
   },
   "hypercomputation": {
-    "article": "Turing machine",
-    "url": "https://en.wikipedia.org/wiki/Turing_machine"
+    "article": "Oracle machine",
+    "url": "https://en.wikipedia.org/wiki/Oracle_machine"
   },
   "trans-computable-mathematics": {
     "article": "Busy beaver",
@@ -3311,8 +3321,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/North_American_Nanohertz_Observatory_for_Gravitational_Waves"
   },
   "pulsar-navigation": {
-    "article": "Millisecond pulsar",
-    "url": "https://en.wikipedia.org/wiki/Millisecond_pulsar"
+    "article": "Pulsar",
+    "url": "https://en.wikipedia.org/wiki/Pulsar"
   },
   "rock-art-petroglyphs": {
     "article": "Petroglyph",

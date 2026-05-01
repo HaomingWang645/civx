@@ -233,9 +233,11 @@ html, body {
   fill: rgba(255,255,255,0.05);
   stroke: rgba(255,255,255,0.10);
   stroke-width: 1;
+  transition: fill 0.15s, stroke 0.15s;
 }
 .era-label-pill.era-even { fill: rgba(255,255,255,0.04); }
 .era-label-pill.era-odd  { fill: rgba(255,255,255,0.08); }
+.era-label-pill:hover { fill: rgba(255,255,255,0.18); stroke: rgba(255,255,255,0.35); }
 .era-label {
   font-size: 11px;
   font-weight: 600;

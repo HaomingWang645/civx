@@ -4239,15 +4239,16 @@
     "reason": "manual override"
   },
   "agi": {
-    "name": "Artificial General Intelligence",
-    "article": "Robot",
-    "page": "https://en.wikipedia.org/wiki/Robot",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/HONDA_ASIMO.jpg/330px-HONDA_ASIMO.jpg",
-    "image_path": "images/agi.jpg",
-    "extract": "A robot is a machine, especially one programmable via a computer, capable of automatically carrying out a complex series of actions. A robot can be guided by an external or internal control device. Robots may be humanoid, but most are task-performing machines prioritizing functio",
+    "name": "agi",
+    "query": "ChatGPT",
+    "article": "ChatGPT",
+    "page": "https://en.wikipedia.org/wiki/ChatGPT",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/OpenAI_logo_2025_%28symbol%29.svg/330px-OpenAI_logo_2025_%28symbol%29.svg.png",
+    "image_path": "images/agi.png",
+    "extract": "ChatGPT is a generative artificial intelligence chatbot developed by OpenAI. It was released in November 2022. It uses large language models—specifically generative pre-trained transformers (GPTs)—to generate text, speech, and images in response to user prompts. It is credited wi",
     "status": "ok",
-    "score": 0.85,
-    "reason": "logo-replacement override"
+    "score": 0.9,
+    "reason": "future realign batch (May 2026)"
   },
   "brain-computer-interface": {
     "name": "Brain-Computer Interface",
@@ -4393,15 +4394,16 @@
     "reason": "manual override"
   },
   "post-scarcity": {
-    "name": "Post-Scarcity Economy",
-    "article": "Universal basic income",
-    "page": "https://en.wikipedia.org/wiki/Universal_basic_income",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Basic_Income%2C_a_new_human_right.webm/330px--Basic_Income%2C_a_new_human_right.webm.jpg",
+    "name": "post-scarcity",
+    "query": "3D food printing",
+    "article": "3D food printing",
+    "page": "https://en.wikipedia.org/wiki/3D_food_printing",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/3D_Printed_Chocolate.jpg/330px-3D_Printed_Chocolate.jpg",
     "image_path": "images/post-scarcity.jpg",
-    "extract": "Universal basic income (UBI) is a social welfare proposal in which all members of a given population regularly receive a minimum income in the form of an unconditional transfer payment, i.e., without a means test or need to perform work. In contrast, a guaranteed minimum income (",
+    "extract": "3D food printing is the process of manufacturing food products using a variety of additive manufacturing techniques. Most commonly, food grade syringes hold the printing material, which is then deposited through a food grade nozzle layer by layer. The most advanced 3D food printe",
     "status": "ok",
-    "score": 0.85,
-    "reason": "alternate article (no image on primary)"
+    "score": 0.9,
+    "reason": "future realign batch (May 2026)"
   },
   "digital-immortality": {
     "name": "Mind Uploading",
@@ -4438,26 +4440,27 @@
   },
   "network-state": {
     "name": "network-state",
-    "query": "Seasteading",
-    "article": "Seasteading",
-    "page": "https://en.wikipedia.org/wiki/Seasteading",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/AndrasGyorfi.jpg/330px-AndrasGyorfi.jpg",
+    "query": "Próspera",
+    "article": "Próspera",
+    "page": "https://en.wikipedia.org/wiki/Pr%C3%B3spera",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Beta_Building_%28Pr%C3%B3spera_ZEDE%2C_Honduras%29_2.jpg/330px-Beta_Building_%28Pr%C3%B3spera_ZEDE%2C_Honduras%29_2.jpg",
     "image_path": "images/network-state.jpg",
-    "extract": "Seasteading is the creation of permanent dwellings in international waters, so-called seasteads, that are independent of established governments. No structure on the high seas has yet been created and recognized as a sovereign state. Proposed structures have included modified cru",
+    "extract": "Próspera, officially known as Próspera ZEDE, is a charter city on the island of Roatán, Honduras. It is one of three Zones for Employment and Economic Development (ZEDEs) in the country, operating under a distinct fiscal, legal and regulatory framework that grants it autonomy fro",
     "status": "ok",
     "score": 0.9,
-    "reason": "portrait replacement"
+    "reason": "future realign batch (May 2026)"
   },
   "ai-governance": {
-    "name": "Algorithmic Governance",
-    "article": "Smart city",
-    "page": "https://en.wikipedia.org/wiki/Smart_city",
+    "name": "ai-governance",
+    "query": "Government by algorithm",
+    "article": "Government by algorithm",
+    "page": "https://en.wikipedia.org/wiki/Government_by_algorithm",
+    "image_url": "(media-list fallback)",
+    "image_path": "images/ai-governance.png",
+    "extract": "Government by algorithm encompasses a range of approaches involving the application of computer algorithms to aspects of society and governance. This term, also referred to as algorithmic regulation, regulation by algorithms, algorithmic governance, algocratic governance, algorit",
     "status": "ok",
-    "reason": "alternate article",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Clean_mobility_instead_of_dirty_traffic.jpg/330px-Clean_mobility_instead_of_dirty_traffic.jpg",
-    "image_path": "images/ai-governance.jpg",
-    "extract": "A smart city is an urban model that leverages technology, human capital, and governance to improve sustainability, efficiency, and social inclusion, which are considered goals for cities of the future. Smart cities use digital technology to collect data and operate services. Data",
-    "score": 0.8
+    "score": 0.9,
+    "reason": "future realign batch (May 2026) [media-list]"
   },
   "transhumanism": {
     "name": "Transhumanism",
@@ -4527,11 +4530,16 @@
     "reason": "manual override"
   },
   "neuromorphic-chip": {
-    "name": "Neuromorphic Chip",
-    "article": "Neuromorphic computing",
-    "page": "https://en.wikipedia.org/wiki/Neuromorphic_computing",
-    "status": "no_image",
-    "reason": "no thumbnail"
+    "name": "neuromorphic-chip",
+    "query": "Neuromorphic engineering",
+    "article": "Memristor",
+    "page": "https://en.wikipedia.org/wiki/Memristor",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Memristor_%2850665029093%29_%28cropped%29.jpg/330px-Memristor_%2850665029093%29_%28cropped%29.jpg",
+    "image_path": "images/neuromorphic-chip.jpg",
+    "extract": "A memristor is a non-linear two-terminal electrical component relating electric charge and magnetic flux linkage. It was described and named in 1971 by Leon Chua, completing a theoretical quartet of fundamental electrical components which also comprises the resistor, capacitor an",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "future realign batch (May 2026) [fallback after: ['Neuromorphic engineering']]"
   },
   "lab-grown-organs": {
     "name": "Lab-Grown Organs",
@@ -4545,23 +4553,28 @@
     "reason": "manual override"
   },
   "sentientism": {
-    "name": "Sentientism",
-    "article": "Sentientism",
-    "page": "https://en.wikipedia.org/wiki/Sentientism",
-    "status": "no_image",
-    "reason": "no thumbnail"
+    "name": "sentientism",
+    "query": "Animal rights",
+    "article": "Animal rights",
+    "page": "https://en.wikipedia.org/wiki/Animal_rights",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Shanghai_man_with_monkey_%28cropped%29.jpg/330px-Shanghai_man_with_monkey_%28cropped%29.jpg",
+    "image_path": "images/sentientism.jpg",
+    "extract": "Animal rights is the philosophy according to which many or all sentient animals have moral worth independent of their utility to humans, and their most basic interests—such as avoiding suffering—should be afforded the same consideration as similar interests of human beings. The a",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "future realign batch (May 2026)"
   },
   "dna-data-storage": {
     "name": "dna-data-storage",
-    "query": "DNA computing",
-    "article": "DNA computing",
-    "page": "https://en.wikipedia.org/wiki/DNA_computing",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/16/DNA_orbit_animated.gif",
-    "image_path": "images/dna-data-storage.jpg",
-    "extract": "DNA computing is an emerging branch of unconventional computing which uses DNA, biochemistry, and molecular biology hardware, instead of the traditional electronic computing. Research and development in this area concerns theory, experiments, and applications of DNA computing. Al",
+    "query": "DNA digital data storage",
+    "article": "Oligonucleotide synthesis",
+    "page": "https://en.wikipedia.org/wiki/Oligonucleotide_synthesis",
+    "image_url": "(media-list fallback)",
+    "image_path": "images/dna-data-storage.png",
+    "extract": "Oligonucleotide synthesis is the chemical synthesis of relatively short fragments of nucleic acids with defined chemical structure (sequence). The technique is extremely useful in current laboratory practice because it provides a rapid and inexpensive access to custom-made oligon",
     "status": "ok",
     "score": 0.9,
-    "reason": "portrait replacement"
+    "reason": "future realign batch (May 2026) [media-list] [fallback after: ['DNA digital data storage']]"
   },
   "cancer-cure": {
     "name": "Cancer Cure",
@@ -4575,15 +4588,16 @@
     "reason": "manual override"
   },
   "ai-judge": {
-    "name": "Algorithmic Justice",
-    "article": "Algorithmic bias",
-    "page": "https://en.wikipedia.org/wiki/Algorithmic_bias",
-    "status": "ok",
-    "reason": "alternate article (multi-pass)",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/02-Sandvig-Seeing-the-Sort-2014-WEB.png/330px-02-Sandvig-Seeing-the-Sort-2014-WEB.png",
+    "name": "ai-judge",
+    "query": "COMPAS (software)",
+    "article": "COMPAS (software)",
+    "page": "https://en.wikipedia.org/wiki/COMPAS_(software)",
+    "image_url": "(media-list fallback)",
     "image_path": "images/ai-judge.png",
-    "extract": "Algorithmic bias describes systematic and repeatable harmful tendency in a computerized sociotechnical system to create \"unfair\" outcomes, such as \"privileging\" one category over another in ways that may or may not be different from the intended function of the algorithm.",
-    "score": 0.75
+    "extract": "Correctional Offender Management Profiling for Alternative Sanctions (COMPAS) is a case management and decision support software developed and owned by Northpointe, used by U.S. courts to assess the likelihood of a defendant becoming a recidivist.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "future realign batch (May 2026) [media-list]"
   },
   "space-based-solar": {
     "name": "Space-Based Solar Power",
@@ -4652,15 +4666,16 @@
     "reason": "manual override"
   },
   "formal-mathematics": {
-    "name": "Machine-Verified Mathematics",
-    "article": "Terence Tao",
-    "page": "https://en.wikipedia.org/wiki/Terence_Tao",
+    "name": "formal-mathematics",
+    "query": "Coq (software)",
+    "article": "Rocq",
+    "page": "https://en.wikipedia.org/wiki/Rocq",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Coq_8.5_stdlib_proof.png/330px-Coq_8.5_stdlib_proof.png",
+    "image_path": "images/formal-mathematics.png",
+    "extract": "The Rocq Prover is an interactive theorem prover first released in 1989. It allows the expression of mathematical assertions, mechanical checking of proofs of these assertions, assists in finding formal proofs using proof automation routines and extraction of a certified program ",
     "status": "ok",
-    "reason": "alternate (no image on primary)",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Terence_Tao%2C_PCAST_Member_%28cropped%29.jpg/330px-Terence_Tao%2C_PCAST_Member_%28cropped%29.jpg",
-    "image_path": "images/formal-mathematics.jpg",
-    "extract": "Terence Chi-Shen Tao is an Australian and American mathematician who was awarded the Fields Medal in 2006 for his contributions to partial differential equations, combinatorics, harmonic analysis, and additive number theory. He is a professor of mathematics at the University of C",
-    "score": 0.85
+    "score": 0.9,
+    "reason": "future realign batch (May 2026)"
   },
   "gravitational-wave-spectroscopy": {
     "name": "Gravitational-Wave Spectroscopy",
@@ -4697,15 +4712,15 @@
   },
   "p-vs-np-resolved": {
     "name": "p-vs-np-resolved",
-    "query": "Travelling salesman problem",
-    "article": "Travelling salesman problem",
-    "page": "https://en.wikipedia.org/wiki/Travelling_salesman_problem",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Illustration_of_an_unsolved_travelling_salesman_problem.svg/330px-Illustration_of_an_unsolved_travelling_salesman_problem.svg.png",
+    "query": "P versus NP problem",
+    "article": "P versus NP problem",
+    "page": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
+    "image_url": "(media-list fallback)",
     "image_path": "images/p-vs-np-resolved.png",
-    "extract": "In the theory of computational complexity, the travelling salesman problem (TSP) asks the following question: \"Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin ci",
+    "extract": "The P versus NP problem is a major unsolved problem in theoretical computer science. Informally, it asks whether every problem whose solution can be quickly verified can also be quickly solved.",
     "status": "ok",
     "score": 0.9,
-    "reason": "portrait replacement"
+    "reason": "future realign batch (May 2026) [media-list]"
   },
   "space-habitat": {
     "name": "Space Habitat",
@@ -4730,15 +4745,16 @@
     "score": 0.85
   },
   "genetic-disease-eradication": {
-    "name": "Genetic Disease Eradication",
-    "article": "Sickle cell disease",
-    "page": "https://en.wikipedia.org/wiki/Sickle_cell_disease",
+    "name": "genetic-disease-eradication",
+    "query": "Gene therapy",
+    "article": "Gene therapy",
+    "page": "https://en.wikipedia.org/wiki/Gene_therapy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Genetic_engineering_logo.png/330px-Genetic_engineering_logo.png",
+    "image_path": "images/genetic-disease-eradication.png",
+    "extract": "Gene therapy is medical technology that aims to produce a therapeutic effect through the manipulation of gene expression or through altering the biological properties of living cells.",
     "status": "ok",
-    "reason": "alternate",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Sickle_cell_01.jpg/330px-Sickle_cell_01.jpg",
-    "image_path": "images/genetic-disease-eradication.jpg",
-    "extract": "Sickle cell disease (SCD), also simply called sickle cell, is a group of inherited hemoglobin-related blood disorders. The most common type is known as sickle cell anaemia. Sickle cell anaemia results in an abnormality in the oxygen-carrying protein haemoglobin found in red blood",
-    "score": 0.85
+    "score": 0.9,
+    "reason": "future realign batch (May 2026)"
   },
   "self-replicating-machines": {
     "name": "self-replicating-machines",
@@ -4753,15 +4769,16 @@
     "reason": "portrait replacement"
   },
   "superintelligence": {
-    "name": "Superintelligence",
-    "article": "Nick Bostrom",
-    "page": "https://en.wikipedia.org/wiki/Nick_Bostrom",
-    "status": "ok",
-    "reason": "alternate",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Prof_Nick_Bostrom_324-1.jpg/330px-Prof_Nick_Bostrom_324-1.jpg",
+    "name": "superintelligence",
+    "query": "Superintelligence: Paths, Dangers, Strategies",
+    "article": "Superintelligence: Paths, Dangers, Strategies",
+    "page": "https://en.wikipedia.org/wiki/Superintelligence%3A_Paths%2C_Dangers%2C_Strategies",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/4/45/Superintelligence.jpg",
     "image_path": "images/superintelligence.jpg",
-    "extract": "Nick Bostrom is a philosopher known for his work on existential risk, the anthropic principle, human enhancement ethics, whole brain emulation, superintelligence risks, and the reversal test. He was the founding director of the later defunct Future of Humanity Institute at the Un",
-    "score": 0.85
+    "extract": "Superintelligence: Paths, Dangers, Strategies is a 2014 book by the philosopher Nick Bostrom. It explores how superintelligence could be created and what its features and motivations might be. It argues that superintelligence, if created, would be difficult to control, and that i",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "future realign batch (May 2026)"
   },
   "seti-first-contact": {
     "name": "Detection of Extraterrestrial Intelligence",
@@ -5051,15 +5068,16 @@
     "reason": "manual override"
   },
   "direct-ai-democracy": {
-    "name": "Direct AI-Mediated Democracy",
-    "article": "Audrey Tang",
-    "page": "https://en.wikipedia.org/wiki/Audrey_Tang",
+    "name": "direct-ai-democracy",
+    "query": "Pol.is",
+    "article": "E-democracy",
+    "page": "https://en.wikipedia.org/wiki/E-democracy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Internet_map_1024_-_transparent%2C_inverted.png/330px-Internet_map_1024_-_transparent%2C_inverted.png",
+    "image_path": "images/direct-ai-democracy.png",
+    "extract": "E-democracy, also known as digital democracy or Internet democracy, uses information and communication technology (ICT) in political and governance processes. While offering new tools for transparency and participation, e-democracy also faces growing challenges such as misinforma",
     "status": "ok",
-    "reason": "alternate",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Portrait_Audrey_Tang_%2825915794061%2C_cropped%29.jpg/330px-Portrait_Audrey_Tang_%2825915794061%2C_cropped%29.jpg",
-    "image_path": "images/direct-ai-democracy.jpg",
-    "extract": "Tang Feng, also known by her English name Audrey, is a Taiwanese politician and free software programmer who served as the first Minister of Digital Affairs of Taiwan from August 2022 to May 2024. She has been described as one of the \"ten greatest Taiwanese computing personalitie",
-    "score": 0.85
+    "score": 0.9,
+    "reason": "future realign batch (May 2026) [fallback after: ['Pol.is']]"
   },
   "lunar-industrial-base": {
     "name": "Lunar Industrial Base",
@@ -5085,15 +5103,15 @@
   },
   "memory-editing": {
     "name": "memory-editing",
-    "query": "Long-term potentiation",
-    "article": "Long-term potentiation",
-    "page": "https://en.wikipedia.org/wiki/Long-term_potentiation",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/LTP_exemplar.jpg/330px-LTP_exemplar.jpg",
+    "query": "Optogenetics",
+    "article": "Optogenetics",
+    "page": "https://en.wikipedia.org/wiki/Optogenetics",
+    "image_url": "(media-list fallback)",
     "image_path": "images/memory-editing.jpg",
-    "extract": "In neuroscience, long-term potentiation (LTP) is a persistent strengthening of synapses based on recent patterns of activity. These are patterns of synaptic activity that produce a long-lasting increase in signal transmission between two neurons. The opposite of LTP is long-term ",
+    "extract": "Optogenetics is a biological technique used to characterize and manipulate the activity of neurons or other cell types with light. This is achieved by expression of light-sensitive ion channels, pumps or enzymes in the target brain cells.",
     "status": "ok",
     "score": 0.9,
-    "reason": "portrait replacement"
+    "reason": "future realign batch (May 2026) [media-list]"
   },
   "cybernetic-enhancement": {
     "name": "Cybernetic Enhancement",
@@ -5298,15 +5316,15 @@
   },
   "drone-swarms": {
     "name": "drone-swarms",
-    "query": "Bayraktar TB2",
-    "article": "Baykar Bayraktar TB2",
-    "page": "https://en.wikipedia.org/wiki/Baykar_Bayraktar_TB2",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Bayraktar_TB2_Runway.jpg/330px-Bayraktar_TB2_Runway.jpg",
+    "query": "Swarm robotics",
+    "article": "Swarm robotics",
+    "page": "https://en.wikipedia.org/wiki/Swarm_robotics",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/RechargingSwarm.jpg/330px-RechargingSwarm.jpg",
     "image_path": "images/drone-swarms.jpg",
-    "extract": "Bayraktar TB2 is a family of medium-altitude long-endurance (MALE) unmanned combat aerial vehicles (UCAV) capable of remotely controlled or autonomous flight operations. It is manufactured by the Turkish company Baykar for the Turkish Armed Forces and export markets. The aircraft",
+    "extract": "Swarm robotics is the study of how to design independent systems of robots without centralized control. The emerging swarming behavior of robotic swarms is created through the interactions between individual robots and the environment. This idea emerged on the field of artificial",
     "status": "ok",
     "score": 0.9,
-    "reason": "weapons addition"
+    "reason": "future realign batch (May 2026)"
   },
   "anti-satellite-warfare": {
     "name": "anti-satellite-warfare",
@@ -5370,15 +5388,15 @@
   },
   "relativistic-kinetic-weapon": {
     "name": "relativistic-kinetic-weapon",
-    "query": "Project Orion (nuclear propulsion)",
-    "article": "Project Orion (nuclear propulsion)",
-    "page": "https://en.wikipedia.org/wiki/Project_Orion_(nuclear_propulsion)",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/NASA-project-orion-artist.jpg/330px-NASA-project-orion-artist.jpg",
+    "query": "Kinetic bombardment",
+    "article": "Railgun",
+    "page": "https://en.wikipedia.org/wiki/Railgun",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Railgun_usnavy_2008.jpg/330px-Railgun_usnavy_2008.jpg",
     "image_path": "images/relativistic-kinetic-weapon.jpg",
-    "extract": "Project Orion was a study conducted in the 1950s and 1960s by the United States Air Force, DARPA, and NASA into the viability of a nuclear pulse spaceship that would be directly propelled by a series of atomic explosions behind the craft. Following preliminary ideas in the 1940s ",
+    "extract": "A railgun or rail gun, sometimes referred to as a rail cannon, is a linear motor device, typically designed as a ranged weapon, that uses electromagnetic force to launch high-velocity projectiles. The projectile normally does not contain explosives, instead relying on the project",
     "status": "ok",
     "score": 0.9,
-    "reason": "weapons addition"
+    "reason": "future realign batch (May 2026) [fallback after: ['Kinetic bombardment']]"
   },
   "antimatter-weapon": {
     "name": "antimatter-weapon",
@@ -6102,15 +6120,15 @@
   },
   "reversible-computing": {
     "name": "reversible-computing",
-    "query": "Quantum logic gate",
-    "article": "Quantum logic gate",
-    "page": "https://en.wikipedia.org/wiki/Quantum_logic_gate",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Quantum_Logic_Gates.png/330px-Quantum_Logic_Gates.png",
+    "query": "Reversible computing",
+    "article": "Maxwell's demon",
+    "page": "https://en.wikipedia.org/wiki/Maxwell's_demon",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Maxwell%27s_demon.svg/330px-Maxwell%27s_demon.svg.png",
     "image_path": "images/reversible-computing.png",
-    "extract": "\nIn quantum computing and specifically the quantum circuit model of computation, a quantum logic gate is a basic quantum circuit operating on a small number of qubits. Quantum logic gates are the building blocks of quantum circuits, like classical logic gates are for conventional",
+    "extract": "Maxwell's demon is a thought experiment that appears to disprove the second law of thermodynamics. It was proposed by the physicist James Clerk Maxwell in 1867. In his first letter, Maxwell referred to the entity as a \"finite being\" or a \"being who can play a game of skill with t",
     "status": "ok",
     "score": 0.9,
-    "reason": "entropy/reversible-computing addition"
+    "reason": "future realign batch (May 2026) [fallback after: ['Reversible computing', \"Landauer's principle\"]]"
   },
   "civilizational-entropy-management": {
     "name": "civilizational-entropy-management",
@@ -6174,15 +6192,15 @@
   },
   "hypercomputation": {
     "name": "hypercomputation",
-    "query": "Turing machine",
-    "article": "Turing machine",
-    "page": "https://en.wikipedia.org/wiki/Turing_machine",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Turing_Machine_Model_Davey_2012.jpg/330px-Turing_Machine_Model_Davey_2012.jpg",
-    "image_path": "images/hypercomputation.jpg",
-    "extract": "A Turing machine is a mathematical model of computation describing an abstract machine that manipulates symbols on a strip of tape according to a table of rules. Despite the model's simplicity, it is capable of implementing any computer algorithm.",
+    "query": "Hypercomputation",
+    "article": "Oracle machine",
+    "page": "https://en.wikipedia.org/wiki/Oracle_machine",
+    "image_url": "(media-list fallback)",
+    "image_path": "images/hypercomputation.png",
+    "extract": "In complexity theory and computability theory, an oracle machine is an abstract machine that can query a black box called an oracle, which is able to give an answer to any instance of a certain problem ⁠⁠ in a single operation. The problem ⁠⁠ can be of any complexity class, or it",
     "status": "ok",
     "score": 0.9,
-    "reason": "math frontier addition"
+    "reason": "future realign batch (May 2026) [media-list] [fallback after: ['Hypercomputation', 'Halting problem']]"
   },
   "trans-computable-mathematics": {
     "name": "trans-computable-mathematics",
@@ -7782,15 +7800,15 @@
   },
   "pulsar-navigation": {
     "name": "pulsar-navigation",
-    "query": "Millisecond pulsar",
-    "article": "Millisecond pulsar",
-    "page": "https://en.wikipedia.org/wiki/Millisecond_pulsar",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Millisecond_Pulsar.jpg/330px-Millisecond_Pulsar.jpg",
+    "query": "X-ray pulsar-based navigation",
+    "article": "Pulsar",
+    "page": "https://en.wikipedia.org/wiki/Pulsar",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/PIA18848-PSRB1509-58-ChandraXRay-WiseIR-20141023.jpg/330px-PIA18848-PSRB1509-58-ChandraXRay-WiseIR-20141023.jpg",
     "image_path": "images/pulsar-navigation.jpg",
-    "extract": "A millisecond pulsar (MSP) is a pulsar with a rotational period less than about 10 milliseconds. Millisecond pulsars have been detected in radio, X-ray, and gamma ray portions of the electromagnetic spectrum. The leading hypothesis for the origin of millisecond pulsars is that th",
+    "extract": "A pulsar is a highly magnetized rotating neutron star that emits beams of electromagnetic radiation out of its magnetic poles. This radiation can be observed only when a beam of emission is pointing toward Earth, and is responsible for the pulsed appearance of emission. Neutron s",
     "status": "ok",
     "score": 0.9,
-    "reason": "realism-audit addition"
+    "reason": "future realign batch (May 2026) [fallback after: ['X-ray pulsar-based navigation']]"
   },
   "rock-art-petroglyphs": {
     "name": "rock-art-petroglyphs",
