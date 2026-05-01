@@ -2725,6 +2725,31 @@ window.TECH_UNLOCKS = {
     { type: "person", name: "Robert Frisbee", name_zh: "罗伯特·弗里斯比", wiki: false },
     { type: "org", name: "NASA Institute for Advanced Concepts", name_zh: "NASA 先进概念研究院", wiki: "NASA Institute for Advanced Concepts" },
   ],
+  "von-neumann-probe": [
+    { type: "person", name: "John von Neumann", name_zh: "约翰·冯·诺伊曼", wiki: "John von Neumann" },
+    { type: "person", name: "Frank J. Tipler", name_zh: "弗兰克·J·蒂普勒", wiki: "Frank J. Tipler" },
+    { type: "person", name: "Robert Freitas", name_zh: "罗伯特·弗赖塔斯", wiki: "Robert Freitas" },
+    { type: "unit", name: "Self-replicating probe", name_zh: "自我复制探测器", wiki: "Self-replicating spacecraft" },
+    { type: "work", name: "Fermi paradox", name_zh: "费米悖论", wiki: "Fermi paradox" },
+  ],
+  "cryogenic-hibernation": [
+    { type: "org", name: "Alcor Life Extension Foundation", name_zh: "阿尔科生命延续基金会", wiki: "Alcor Life Extension Foundation" },
+    { type: "org", name: "Cryonics Institute", name_zh: "人体冷冻研究所", wiki: "Cryonics Institute" },
+    { type: "resource", name: "Vitrification cryoprotectant", name_zh: "玻璃化冷冻保护剂", wiki: "Vitrification" },
+    { type: "animal", name: "Wood frog (freeze-tolerant)", name_zh: "林蛙(耐冻)", wiki: "Wood frog" },
+    { type: "animal", name: "Arctic ground squirrel", name_zh: "北极地松鼠", wiki: "Arctic ground squirrel" },
+  ],
+  "kugelblitz-drive": [
+    { type: "resource", name: "Microscopic black hole", name_zh: "微型黑洞", wiki: "Micro black hole" },
+    { type: "unit", name: "Hawking-radiation engine", name_zh: "霍金辐射引擎", wiki: "Hawking radiation" },
+    { type: "person", name: "John Archibald Wheeler", name_zh: "约翰·惠勒", wiki: "John Archibald Wheeler" },
+    { type: "person", name: "Stephen Hawking", name_zh: "斯蒂芬·霍金", wiki: "Stephen Hawking" },
+  ],
+  "cosmic-string-ftl": [
+    { type: "person", name: "J. Richard Gott", name_zh: "J·理查德·戈特", wiki: "J. Richard Gott" },
+    { type: "resource", name: "Cosmic string", name_zh: "宇宙弦", wiki: "Cosmic string" },
+    { type: "work", name: "Closed timelike curve", name_zh: "闭合类时曲线", wiki: "Closed timelike curve" },
+  ],
 
   // ─── Entropy / thermodynamic computing ───
   "reversible-computing": [

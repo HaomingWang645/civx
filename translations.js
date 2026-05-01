@@ -608,6 +608,10 @@ window.TECH_NAMES_ZH = {
   "nuclear-pulse-propulsion": "核脉冲推进",
   "bussard-ramjet": "巴萨德冲压发动机",
   "antimatter-propulsion": "反物质推进",
+  "von-neumann-probe": "自我复制探测器",
+  "cryogenic-hibernation": "低温休眠",
+  "kugelblitz-drive": "球状闪电黑洞引擎",
+  "cosmic-string-ftl": "宇宙弦超光速几何",
 
   // ─── Entropy / thermodynamic computing ───
   "reversible-computing": "可逆计算",

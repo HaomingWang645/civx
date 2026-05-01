@@ -609,7 +609,11 @@ window.TECH_IMAGES = {
   "sewing-machine": "images/sewing-machine.jpg",
   "phonograph": "images/phonograph.png",
   "impressionism": "images/impressionism.jpg",
-  "plate-tectonics": "images/plate-tectonics.png"
+  "plate-tectonics": "images/plate-tectonics.png",
+  "von-neumann-probe": "images/von-neumann-probe.png",
+  "cryogenic-hibernation": "images/cryogenic-hibernation.jpg",
+  "kugelblitz-drive": "images/kugelblitz-drive.jpg",
+  "cosmic-string-ftl": "images/cosmic-string-ftl.png"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -3047,5 +3051,21 @@ window.TECH_IMAGE_CREDITS = {
   "plate-tectonics": {
     "article": "Plate tectonics",
     "url": "https://en.wikipedia.org/wiki/Plate_tectonics"
+  },
+  "von-neumann-probe": {
+    "article": "Self-replicating machine",
+    "url": "https://en.wikipedia.org/wiki/Self-replicating_machine"
+  },
+  "cryogenic-hibernation": {
+    "article": "Cryonics",
+    "url": "https://en.wikipedia.org/wiki/Cryonics"
+  },
+  "kugelblitz-drive": {
+    "article": "Black hole",
+    "url": "https://en.wikipedia.org/wiki/Black_hole"
+  },
+  "cosmic-string-ftl": {
+    "article": "Wormhole",
+    "url": "https://en.wikipedia.org/wiki/Wormhole"
   }
 };

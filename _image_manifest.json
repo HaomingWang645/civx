@@ -7227,5 +7227,53 @@
     "status": "ok",
     "score": 0.9,
     "reason": "round 2 batch (Apr 2026)"
+  },
+  "von-neumann-probe": {
+    "name": "von-neumann-probe",
+    "query": "Self-replicating machine",
+    "article": "Self-replicating machine",
+    "page": "https://en.wikipedia.org/wiki/Self-replicating_machine",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Self-replicating_machine.png/330px-Self-replicating_machine.png",
+    "image_path": "images/von-neumann-probe.png",
+    "extract": "A self-replicating machine is a type of autonomous robot that is capable of reproducing itself autonomously using raw materials found in the environment, thus exhibiting self-replication in a way analogous to that found in nature. The concept of self-replicating machines has been",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "galaxy-travel batch (Apr 2026)"
+  },
+  "cryogenic-hibernation": {
+    "name": "cryogenic-hibernation",
+    "query": "Cryonics",
+    "article": "Cryonics",
+    "page": "https://en.wikipedia.org/wiki/Cryonics",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Cryo_surgery.jpg/330px-Cryo_surgery.jpg",
+    "image_path": "images/cryogenic-hibernation.jpg",
+    "extract": "Cryonics is the low-temperature freezing and storage of human remains in the hope that resurrection may be possible in the future. Cryonics is regarded with skepticism by the mainstream scientific community. It is generally viewed as a pseudoscience, and its practice has been cha",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "galaxy-travel batch (Apr 2026)"
+  },
+  "kugelblitz-drive": {
+    "name": "kugelblitz-drive",
+    "query": "Black hole",
+    "article": "Black hole",
+    "page": "https://en.wikipedia.org/wiki/Black_hole",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg/330px-Black_hole_-_Messier_87_crop_max_res.jpg",
+    "image_path": "images/kugelblitz-drive.jpg",
+    "extract": "A black hole is an astronomical body so compact that its gravity prevents anything, including light, from escaping. Albert Einstein's theory of general relativity, which describes gravitation as the curvature of spacetime, predicts that any sufficiently compact mass will form a b",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "galaxy-travel batch (Apr 2026)"
+  },
+  "cosmic-string-ftl": {
+    "name": "cosmic-string-ftl",
+    "query": "Wormhole",
+    "article": "Wormhole",
+    "page": "https://en.wikipedia.org/wiki/Wormhole",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Einstein-rosen-bridge-model.png/330px-Einstein-rosen-bridge-model.png",
+    "image_path": "images/cosmic-string-ftl.png",
+    "extract": "A wormhole is a hypothetical structure that connects disparate points in spacetime. It can be visualized as a tunnel with two ends at separate points in spacetime. Wormholes are based on a special solution of the Einstein field equations.\nWormholes are consistent with the general",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "galaxy-travel batch (Apr 2026)"
   }
 }
