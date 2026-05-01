@@ -387,7 +387,6 @@ window.TECH_IMAGES = {
   "sentientism": "images/sentientism.jpg",
   "dna-data-storage": "images/dna-data-storage.png",
   "cancer-cure": "images/cancer-cure.png",
-  "ai-judge": "images/ai-judge.png",
   "space-based-solar": "images/space-based-solar.jpg",
   "photonic-computing": "images/photonic-computing.jpg",
   "metamaterials": "images/metamaterials.jpg",
@@ -2235,10 +2234,6 @@ window.TECH_IMAGE_CREDITS = {
   "cancer-cure": {
     "article": "Cancer immunotherapy",
     "url": "https://en.wikipedia.org/wiki/Cancer_immunotherapy"
-  },
-  "ai-judge": {
-    "article": "COMPAS (software)",
-    "url": "https://en.wikipedia.org/wiki/COMPAS_(software)"
   },
   "space-based-solar": {
     "article": "Space-based solar power",

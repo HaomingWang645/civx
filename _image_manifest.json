@@ -4589,15 +4589,10 @@
   },
   "ai-judge": {
     "name": "ai-judge",
-    "query": "COMPAS (software)",
-    "article": "COMPAS (software)",
-    "page": "https://en.wikipedia.org/wiki/COMPAS_(software)",
-    "image_url": "(media-list fallback)",
-    "image_path": "images/ai-judge.png",
-    "extract": "Correctional Offender Management Profiling for Alternative Sanctions (COMPAS) is a case management and decision support software developed and owned by Northpointe, used by U.S. courts to assess the likelihood of a defendant becoming a recidivist.",
-    "status": "ok",
-    "score": 0.9,
-    "reason": "future realign batch (May 2026) [media-list]"
+    "status": "ai_generation_queued",
+    "reason": "icon collision with ai-governance; queued for AI-generated image (May 2026)",
+    "previous_article": "COMPAS (software)",
+    "previous_page": "https://en.wikipedia.org/wiki/COMPAS_(software)"
   },
   "space-based-solar": {
     "name": "Space-Based Solar Power",

@@ -35,7 +35,7 @@ TARGETS = [
     ("post-scarcity",                ["3D food printing", "Replicator (Star Trek)", "Post-scarcity"]),
     ("network-state",                ["Próspera", "Charter city", "Seasteading"]),
     ("dna-data-storage",             ["DNA digital data storage", "Oligonucleotide synthesis", "DNA microarray", "Synthetic biology"]),
-    ("ai-judge",                     ["COMPAS (software)", "Predictive policing", "Risk assessment"]),
+    # ai-judge: removed from this batch — queued for AI generation (icon collision with ai-governance).
     ("memory-editing",               ["Optogenetics"]),
     ("drone-swarms",                 ["Swarm robotics"]),
     ("pulsar-navigation",            ["X-ray pulsar-based navigation", "Pulsar", "Crab Pulsar"]),

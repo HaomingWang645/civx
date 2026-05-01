@@ -634,17 +634,25 @@ function applyHighlights() {
     n.classList.toggle("dimmed", outOfFilter || !inFocus || !matchesSearch);
   });
 
-  // Edges
+  // Edges — three tiers:
+  //   • highlighted-requires: direct edge where the focused tech is the consumer (to === focusId)
+  //   • highlighted-leads-to: direct edge where the focused tech is the producer (from === focusId)
+  //   • highlighted (indirect): transitively in the ancestor/descendant chain but not directly attached
   document.querySelectorAll(".edge").forEach(e => {
     const from = e.dataset.from, to = e.dataset.to;
     const fromTech = techById[from];
     const toTech = techById[to];
+    const isRequires = !!focusId && to === focusId;
+    const isLeadsTo  = !!focusId && from === focusId;
+    const isDirect   = isRequires || isLeadsTo;
     const inFocus = !focusId
+      || isDirect
       || (ancestors.has(from) && (ancestors.has(to) || to === focusId))
-      || (descendants.has(to) && (descendants.has(from) || from === focusId))
-      || from === focusId || to === focusId;
+      || (descendants.has(to) && (descendants.has(from) || from === focusId));
     const outOfFilter = filtering && (!sel.has(fromTech.category) || !sel.has(toTech.category));
-    e.classList.toggle("highlighted", !!focusId && inFocus);
+    e.classList.toggle("highlighted-requires", isRequires && !outOfFilter);
+    e.classList.toggle("highlighted-leads-to", isLeadsTo && !outOfFilter);
+    e.classList.toggle("highlighted", !!focusId && inFocus && !isDirect);
     e.classList.toggle("dimmed", outOfFilter || (!!focusId && !inFocus));
   });
 }

@@ -259,9 +259,21 @@ html, body {
   transition: stroke .2s, stroke-width .2s;
 }
 .edge.highlighted {
-  stroke: var(--accent);
-  stroke-width: 2;
-  filter: drop-shadow(0 0 6px rgba(139, 159, 255, 0.6));
+  stroke: rgba(139, 159, 255, 0.45);
+  stroke-width: 1.4;
+  opacity: 0.65;
+}
+/* "Requires" — incoming prereq edges (focused tech is the consumer). Cool teal/blue. */
+.edge.highlighted-requires {
+  stroke: #5eead4;
+  stroke-width: 3;
+  filter: drop-shadow(0 0 8px rgba(94, 234, 212, 0.75));
+}
+/* "Leads to" — outgoing edges (focused tech is the producer). Warm orange/amber. */
+.edge.highlighted-leads-to {
+  stroke: #fb923c;
+  stroke-width: 3;
+  filter: drop-shadow(0 0 8px rgba(251, 146, 60, 0.75));
 }
 .edge.dimmed { stroke: rgba(255,255,255,0.04); }
 
@@ -997,9 +1009,24 @@ body.theme-renaissance .edge {
   stroke-width: 1.2;
 }
 body.theme-renaissance .edge.highlighted {
+  stroke: rgba(80, 50, 20, 0.35);
+  stroke-width: 1.2;
+  opacity: 0.7;
+  filter: none;
+}
+/* Requires — deep ink-blue (cool, foundational) */
+body.theme-renaissance .edge.highlighted-requires {
+  stroke: #1e4a7a;
+  stroke-width: 2.6;
+  opacity: 1;
+  filter: drop-shadow(0 0 5px rgba(30, 74, 122, 0.55));
+}
+/* Leads to — vermillion red (warm, advancing) */
+body.theme-renaissance .edge.highlighted-leads-to {
   stroke: #8c1a1a;
-  stroke-width: 1.8;
-  filter: drop-shadow(0 0 4px rgba(140, 26, 26, 0.5));
+  stroke-width: 2.6;
+  opacity: 1;
+  filter: drop-shadow(0 0 5px rgba(140, 26, 26, 0.7));
 }
 body.theme-renaissance .edge.dimmed {
   stroke: rgba(80, 50, 20, 0.10);
@@ -1247,8 +1274,24 @@ body.theme-eras .sidebar {
 /* Edges: faint, era-neutral. */
 body.theme-eras .edge { stroke: rgba(255, 255, 255, 0.14); }
 body.theme-eras .edge.highlighted {
+  stroke: rgba(212, 175, 55, 0.40);
+  stroke-width: 1.4;
+  opacity: 0.65;
+  filter: none;
+}
+/* Requires — cool blue */
+body.theme-eras .edge.highlighted-requires {
+  stroke: #6db8ff;
+  stroke-width: 3;
+  opacity: 1;
+  filter: drop-shadow(0 0 8px rgba(109, 184, 255, 0.7));
+}
+/* Leads to — warm gold (the era theme's accent) */
+body.theme-eras .edge.highlighted-leads-to {
   stroke: var(--accent);
-  filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.55));
+  stroke-width: 3;
+  opacity: 1;
+  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.8));
 }
 
 /* ── Default node look (overridden per era below) ── */
