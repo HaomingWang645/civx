@@ -8176,5 +8176,65 @@
     "status": "ok",
     "score": 0.9,
     "reason": "capitalism arc batch (May 2026)"
+  },
+  "geometric-microlith-weapons": {
+    "name": "geometric-microlith-weapons",
+    "query": "Microlith",
+    "article": "Microlith",
+    "page": "https://en.wikipedia.org/wiki/Microlith",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Kebaran_culture_microliths_22000-18000_BP.jpg/330px-Kebaran_culture_microliths_22000-18000_BP.jpg",
+    "image_path": "images/geometric-microlith-weapons.jpg",
+    "extract": "A microlith is a small stone tool usually made of flint or chert and typically several centimeters in length and half a centimetre wide. They were made by humans from at least the Upper Paleolithic, across Africa, Europe, Asia and Australia. The microliths were used in spear poin",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "coverage gap fill (May 2026)"
+  },
+  "neolithic-mace": {
+    "name": "neolithic-mace",
+    "query": "Mace (bludgeon)",
+    "article": "Mace (bludgeon)",
+    "page": "https://en.wikipedia.org/wiki/Mace_(bludgeon)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Various_Indo-Persian_maces.jpg/330px-Various_Indo-Persian_maces.jpg",
+    "image_path": "images/neolithic-mace.jpg",
+    "extract": "A mace is a blunt weapon, a type of club or virge that uses a heavy head on the end of a handle to deliver powerful strikes. A mace typically consists of a strong, heavy, wooden or metal shaft, often reinforced with metal, featuring a head made of stone, bone, copper, bronze, iro",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "coverage gap fill (May 2026)"
+  },
+  "chiefdom": {
+    "name": "chiefdom",
+    "query": "Chiefdom",
+    "article": "Chiefdom",
+    "page": "https://en.wikipedia.org/wiki/Chiefdom",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/La_chefferie_d%E2%80%99Afare%C3%AFtu_%C3%A0_Moor%C3%A9a.jpg/330px-La_chefferie_d%E2%80%99Afare%C3%AFtu_%C3%A0_Moor%C3%A9a.jpg",
+    "image_path": "images/chiefdom.jpg",
+    "extract": "A chiefdom is a political organization of people represented or governed by a chief. Chiefdoms have been discussed, depending on their scope, as a stateless, state analogue or early state system or institution.",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "coverage gap fill (May 2026)"
+  },
+  "early-newspaper": {
+    "name": "early-newspaper",
+    "query": "The Daily Courant",
+    "article": "The Daily Courant",
+    "page": "https://en.wikipedia.org/wiki/The_Daily_Courant",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/The_Daily_Courant.png/330px-The_Daily_Courant.png",
+    "image_path": "images/early-newspaper.png",
+    "extract": "The Daily Courant, initially published on [O.S. 11 March] 1702, was the first British daily newspaper. It was produced by Elizabeth Mallet at her premises next to the King's Arms tavern at Fleet Bridge in London. The newspaper consisted of a single page, with advertisements on th",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "coverage gap fill (May 2026)"
+  },
+  "international-style": {
+    "name": "international-style",
+    "query": "International Style (architecture)",
+    "article": "International Style",
+    "page": "https://en.wikipedia.org/wiki/International_Style",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Lovell_House%2C_Los_Angeles%2C_California.JPG/330px-Lovell_House%2C_Los_Angeles%2C_California.JPG",
+    "image_path": "images/international-style.jpg",
+    "extract": "The International Style is a major architectural style and movement that began in western Europe in the 1920s and dominated modern architecture until the 1970s. It is defined by strict adherence to functional and utilitarian designs and construction methods, typically expressed t",
+    "status": "ok",
+    "score": 0.9,
+    "reason": "coverage gap fill (May 2026)"
   }
 }

@@ -688,7 +688,12 @@ window.TECH_IMAGES = {
   "whale-oil": "images/whale-oil.jpg",
   "property-rights": "images/property-rights.jpg",
   "industrial-capitalism": "images/industrial-capitalism.jpg",
-  "globalization": "images/globalization.png"
+  "globalization": "images/globalization.png",
+  "geometric-microlith-weapons": "images/geometric-microlith-weapons.jpg",
+  "neolithic-mace": "images/neolithic-mace.jpg",
+  "chiefdom": "images/chiefdom.jpg",
+  "early-newspaper": "images/early-newspaper.png",
+  "international-style": "images/international-style.jpg"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -3442,5 +3447,25 @@ window.TECH_IMAGE_CREDITS = {
   "globalization": {
     "article": "World Trade Organization",
     "url": "https://en.wikipedia.org/wiki/World_Trade_Organization"
+  },
+  "geometric-microlith-weapons": {
+    "article": "Microlith",
+    "url": "https://en.wikipedia.org/wiki/Microlith"
+  },
+  "neolithic-mace": {
+    "article": "Mace (bludgeon)",
+    "url": "https://en.wikipedia.org/wiki/Mace_(bludgeon)"
+  },
+  "chiefdom": {
+    "article": "Chiefdom",
+    "url": "https://en.wikipedia.org/wiki/Chiefdom"
+  },
+  "early-newspaper": {
+    "article": "The Daily Courant",
+    "url": "https://en.wikipedia.org/wiki/The_Daily_Courant"
+  },
+  "international-style": {
+    "article": "International Style",
+    "url": "https://en.wikipedia.org/wiki/International_Style"
   }
 };
