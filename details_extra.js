@@ -747,4 +747,477 @@ window.TECH_DETAIL_EXTRA = {
     <p>Late-27th-century warp drives use dark-energy-engineered shells around the craft to maintain warp-bubble stability during transit. Practical speeds are typically 1–100 c for routine operation, with higher speeds available at proportionally higher exotic-matter cost. Transit times to nearby stars become weeks rather than years; cross-galactic transit becomes years rather than millennia. Causality questions remain: any FTL drive raises closed-timelike-curve possibilities, and the practical 27th-century norm is to avoid trajectories that would generate paradoxical loops, with treaty enforcement of the restriction. The warp drive is the maturity-defining capability of the late far-future era — the technology that finally breaks the light-speed limit on civilizational coordination, with consequences that reshape what galactic civilization actually means.</p>
   `,
 
+  "humanoid-robot": `
+    <h3 class="extra-title">Humanoid Robot</h3>
+    <p class="extra-lede">General-purpose bipedal machines designed to operate in spaces, with tools, and for tasks built around the human body.</p>
+    <h4>Why human-shaped</h4>
+    <p>The world is full of stairs, doorknobs, ladders, hand tools, vehicle controls, and workstations sized for a 1.7-meter biped with two five-fingered hands. A wheeled or specialized robot needs purpose-built environments; a humanoid drops into the existing built world unchanged. The bet underlying Tesla's Optimus, Figure, Apptronik, Boston Dynamics' Atlas, and a dozen Chinese entrants is that one general platform amortizes R&D across every embodied task — folding clothes, loading pallets, tending bedridden patients, defusing IEDs.</p>
+    <h4>The unlock</h4>
+    <p>Three things converged in the late 2020s: cheap actuators (planetary roller-screws, harmonic drives), foundation-model controllers that map natural-language goals to motor sequences, and tactile-rich hands. The combination collapses the cost of a unit of "embodied labor" from $50/hour (a worker) to perhaps $2–5/hour (depreciation plus power) for repetitive physical tasks within a few years of ramp.</p>
+    <h4>Why it might be slower than the demos suggest</h4>
+    <p>Reliability in unstructured environments — kitchens, construction sites, eldercare — is still 1–2 orders of magnitude below what continuous deployment requires. The hard part is the long tail: the 1-in-10,000 situation that the model has never seen. Liability for physical damage and injury, not capability, may be the binding constraint on consumer deployment. Industrial deployment in warehouses and factories arrives first.</p>
+  `,
+
+  "brain-computer-interface": `
+    <h3 class="extra-title">Brain-Computer Interface</h3>
+    <p class="extra-lede">Direct read/write channels between neural tissue and external devices, ranging from non-invasive EEG to surgically implanted electrode arrays.</p>
+    <h4>The implant generation</h4>
+    <p>Utah arrays, Neuralink's threads, Synchron's stentrode, and Paradromics' high-density arrays bracket the design space. Higher channel counts (hundreds to thousands of electrodes) buy higher information bandwidth but demand more invasive surgery and shorter functional lifetimes (gliosis encapsulates the electrode within months to years). The first FDA-approved consumer indications target paralysis: cursor control, prosthetic-limb operation, and speech reconstruction for ALS and stroke patients.</p>
+    <h4>From medical to general</h4>
+    <p>Medical use cases — restoring lost function to paralyzed and aphasic patients — face moderate regulatory friction and clear ethical justification. The harder question is augmentation: typing at thought speed, sensory streaming, AR overlays driven by attention. The technical step from medical to consumer is large (durability, surgical risk, signal quality), and the social step is larger (who upgrades first, what employers can require, what police can subpoena).</p>
+    <h4>Privacy as the central problem</h4>
+    <p>A high-bandwidth BCI streams data from which intent, attention, emotional state, and eventually word-form representations can be decoded. There is no settled legal framework for "neural data" — it sits between speech (protected) and a urine test (compelled). The first decade of mass deployment will be defined by which jurisdictions adopt strong neural-rights statutes and which do not.</p>
+  `,
+
+  "lab-grown-meat": `
+    <h3 class="extra-title">Cultivated Meat</h3>
+    <p class="extra-lede">Animal muscle and fat tissue grown from cell lines in bioreactors, producing real meat without slaughter.</p>
+    <h4>How it's made</h4>
+    <p>Starter cells (typically myosatellite or pluripotent stem cells from a small biopsy) are seeded into stainless-steel bioreactors and fed a growth medium of amino acids, sugars, salts, and growth factors. Scaffolds — edible plant proteins, decellularized leaves, 3D-printed lattices — give the cells structure to differentiate into recognizable cuts. After two to eight weeks, the tissue is harvested, formed, and cooked. The first regulatory approvals (Singapore 2020, US 2023) covered chicken; beef and seafood are more technically demanding because of fat content and texture.</p>
+    <h4>The cost curve</h4>
+    <p>Early units cost thousands of dollars per kilogram, dominated by growth-factor inputs and bioreactor capex. The price target — meaningful displacement of conventional meat — is ~$5/kg, requiring two to three orders of magnitude in cost reduction. Most of that comes from cheap growth media (recombinant production of FGF and TGF, food-grade inputs replacing pharma-grade) and high-density continuous-perfusion reactors.</p>
+    <h4>Politics of the protein transition</h4>
+    <p>Cattle ranching states (Florida, Italy, France) have already passed bans or labeling restrictions; the EU is divided. Even if the technology works, market access is a political question, not a scientific one. The fastest path to scale is probably pet food and institutional procurement (schools, militaries) rather than consumer retail.</p>
+  `,
+
+  "transhumanism": `
+    <h3 class="extra-title">Transhumanism</h3>
+    <p class="extra-lede">A worldview holding that the human condition — including death, cognition, and embodiment — is something to be deliberately engineered rather than accepted.</p>
+    <h4>From philosophy to practice</h4>
+    <p>The label was coined by Julian Huxley in 1957, but the movement crystallized in the 1990s (Extropian listservs, Bostrom's transhumanist FAQ) and entered mainstream policy discourse in the 2020s with longevity research, BCIs, and AI alignment becoming serious enterprises. Transhumanists are not unified — there are libertarian, democratic, religious, and explicitly anti-religious wings — but share the working assumption that "what humans are" is a moving target that science is now equipped to move.</p>
+    <h4>The interventions on the table</h4>
+    <p>Genetic editing of embryos for disease and (controversially) enhancement; pharmacological extension of healthspan; cognitive prosthetics via BCI; uploading the long-term aspiration. Each carries different timelines, different ethical weight, and different opposition coalitions. The early-21st-century debate has moved past "should we?" into "who decides?".</p>
+    <h4>Reactionary responses</h4>
+    <p>Bioconservatism (Fukuyama, Sandel, Kass) argues that engineered humans erode the moral premises of equality and dignity. Religious traditions split internally — some welcoming healing applications, rejecting enhancement; others rejecting both. The political conflict over enhancement is likely to be the defining culture-war axis of the second half of the 21st century.</p>
+  `,
+
+  "longtermism": `
+    <h3 class="extra-title">Longtermism</h3>
+    <p class="extra-lede">An ethical stance holding that positively influencing the long-term future is a moral priority of our time, comparable in weight to addressing present-day suffering.</p>
+    <h4>The argument</h4>
+    <p>If humanity persists for millions of years, the future contains vastly more people than the present. Even modest probability shifts in the trajectory of that future — through extinction-risk reduction, value lock-in avoidance, or institution design — produce expected-value gains larger than nearly any present-focused intervention. The argument was developed in detail by Parfit, Bostrom, Ord ("The Precipice", 2020), and MacAskill ("What We Owe the Future", 2022).</p>
+    <h4>What it funds</h4>
+    <p>Existential risk research (AI alignment, biosecurity, nuclear de-escalation, asteroid defense), institutional resilience, and value-stable governance design. The Open Philanthropy / Effective Altruism funding ecosystem moved several billion dollars into these areas in the 2020s, often into fields previously starved of attention.</p>
+    <h4>The critiques</h4>
+    <p>Critics argue longtermism rationalizes neglect of present injustice (Torres, Crary), or that the expected-value math is undefined when probabilities are guessed (Greaves, MacAskill themselves acknowledge the difficulty). The fall of FTX in 2022 created a major reputational crisis. The serious version of longtermism survives those critiques; the cartoon version does not.</p>
+  `,
+
+  "generative-art": `
+    <h3 class="extra-title">Generative Art</h3>
+    <p class="extra-lede">Visual, musical, and literary work produced by autonomous algorithmic systems — usually neural networks — given a prompt or seed.</p>
+    <h4>The model lineage</h4>
+    <p>GANs (Goodfellow, 2014) made photorealistic faces possible. Diffusion models (DDPM 2020, Stable Diffusion 2022) made arbitrary scenes from text prompts trivial. Music followed — MusicLM, Suno, Udio — then video (Sora, Runway, Veo). By the late 2020s, every major creative tool had generative features, and most professional output included some generative pass.</p>
+    <h4>The economic shock</h4>
+    <p>Stock photography, concept art, and corporate illustration markets collapsed in price within five years. The dislocation was uneven: top-tier illustrators with distinctive voices kept their clients; the middle of the market (workmanlike commercial art) was hollowed out. Music, advertising, and commodity copy followed similar curves.</p>
+    <h4>Authorship and copyright</h4>
+    <p>U.S. courts held in 2023 that purely generated images cannot be copyrighted; the EU AI Act and similar regimes require disclosure of generative provenance. Litigation over training data (Getty v. Stability, NYT v. OpenAI) reshaped how models can be built. The settled answer in the 2030s is a layered regime: training under fair use with opt-out registries, output ownership by the human prompter only when meaningful editorial choice is documented.</p>
+  `,
+
+  "decentralized-autonomous-org": `
+    <h3 class="extra-title">Decentralized Autonomous Organization</h3>
+    <p class="extra-lede">An organization whose membership, treasury, and decisions are governed by smart contracts on a public blockchain rather than by a corporate charter and managers.</p>
+    <h4>How it works</h4>
+    <p>Members hold governance tokens; proposals are submitted on-chain; token-weighted voting determines outcomes; the treasury (denominated in ETH, stablecoins, or the org's own token) executes payments automatically when proposals pass. The original DAO (2016) was hacked for $60M; subsequent generations (MakerDAO, Uniswap, Compound, Optimism, Arbitrum) hardened the governance pipeline and ran multi-billion-dollar treasuries.</p>
+    <h4>What they're good at</h4>
+    <p>Coordinating capital allocation among large dispersed memberships; running protocols that need credible neutrality (no CEO who can rug-pull); experimenting with governance forms that would take decades through traditional corporate law. Grant-making DAOs (Gitcoin, Optimism RPGF) have proven especially functional.</p>
+    <h4>The hard problems</h4>
+    <p>Voter apathy (most token holders never vote), plutocracy (token weighting concentrates power), and legal personhood (DAOs cannot easily sign contracts or pay taxes in most jurisdictions). Wyoming and the Marshall Islands granted DAO LLC status; most jurisdictions still treat them as general partnerships, exposing every member to unlimited liability. The legal situation is the binding constraint on mainstream adoption.</p>
+  `,
+
+  "pulsar-navigation": `
+    <h3 class="extra-title">Pulsar Navigation (XNAV)</h3>
+    <p class="extra-lede">Spacecraft positioning by timing X-ray pulses from millisecond pulsars, providing GPS-equivalent navigation throughout the solar system and beyond.</p>
+    <h4>How it works</h4>
+    <p>Millisecond pulsars are rotation-stabilized natural clocks accurate to better than one part in 10¹⁵ — comparable to the best atomic clocks. By timing pulse arrivals from three or more known pulsars and comparing to a model of their predicted phase at the solar-system barycenter, a spacecraft can solve for its own three-dimensional position. NASA's NICER instrument on the ISS demonstrated meter-class XNAV in 2018; SEXTANT followed.</p>
+    <h4>Why it matters</h4>
+    <p>GPS works only in cislunar space. Beyond the Moon, spacecraft navigate by Deep Space Network ranging — Earth-bound, bandwidth-limited, latency-bound. XNAV gives every probe an autonomous fix without contacting Earth, scaling to interplanetary fleets and interstellar missions where round-trip light delays make ground-based navigation impossible.</p>
+    <h4>Engineering constraints</h4>
+    <p>X-ray detectors with the required timing resolution (~100 ns) need cryogenic cooling and large collecting area; the first operational systems are bulky and expensive. As detector technology matures, XNAV becomes a standard payload on every interplanetary spacecraft, displacing or supplementing optical navigation by the 2050s.</p>
+  `,
+
+  "cyber-kinetic-warfare": `
+    <h3 class="extra-title">Cyber-Kinetic Warfare</h3>
+    <p class="extra-lede">Military operations in which cyber attacks produce physical destruction — disabled power grids, damaged centrifuges, crippled pipelines — without conventional munitions.</p>
+    <h4>The lineage</h4>
+    <p>Stuxnet (2010, attributed to the U.S. and Israel against Iran's Natanz centrifuges) was the first publicly confirmed kinetic-effect cyber weapon, physically destroying ~1,000 centrifuges by overspeeding them while reporting normal operation to monitors. Subsequent operations — BlackEnergy/Ukraine 2015, Industroyer 2016, Triton 2017 against a Saudi petrochemical plant — proved the playbook generalizes.</p>
+    <h4>What changed</h4>
+    <p>Industrial control systems (ICS), once air-gapped, are increasingly networked for remote monitoring. Cloud control planes for OT (operational technology) create centralized attack surfaces. The labor cost of mounting a sophisticated cyber-kinetic operation has fallen as offensive tooling has matured; the labor cost of defending a continent's worth of utilities, hospitals, and refineries scales with the number of assets.</p>
+    <h4>Doctrine and escalation</h4>
+    <p>NATO's Tallinn Manual (2.0, 2017) provides the leading legal framework, but states have not agreed when a cyber attack constitutes an "armed attack" triggering Article 5. The grey zone — operations clearly hostile but below the threshold of war — is where most cyber-kinetic activity lives. The first decade of routine state-on-state cyber-kinetic conflict will be defined by whether deterrence equilibria stabilize or collapse into open exchange.</p>
+  `,
+
+  "drone-swarms": `
+    <h3 class="extra-title">Autonomous Drone Swarms</h3>
+    <p class="extra-lede">Coordinated formations of dozens to thousands of small UAVs operating with onboard autonomy and inter-drone communication, executing missions without per-unit human control.</p>
+    <h4>Tactical implications</h4>
+    <p>A swarm of $1,000 quadcopters with shaped-charge warheads can saturate the defenses of a $10M tank or a $100M warship. The economics invert decades of armored-warfare and naval-warfare doctrine. Ukraine's use of FPV drones from 2023 onward demonstrated the principle at brigade scale; Israeli, Turkish, and Chinese systems have since productized swarming as a packaged capability.</p>
+    <h4>The autonomy stack</h4>
+    <p>Each drone runs onboard target classification (typically a small CNN), inertial + visual SLAM for navigation in GPS-denied environments, and a mesh radio for swarm coordination. The swarm-level behavior — formation, target assignment, attack timing — runs on consensus algorithms borrowed from distributed systems and multi-agent RL.</p>
+    <h4>The defensive counter</h4>
+    <p>Hard-kill defenses (microwave weapons, laser dazzlers, kinetic interceptors) and soft-kill defenses (jamming, GPS spoofing, communications disruption) compete with autonomy improvements that make swarms harder to disable. The cost-exchange ratio currently favors the attacker; whether it stays there depends on which side of the autonomy/counter-autonomy race accelerates faster through the 2030s.</p>
+  `,
+
+  "solarpunk": `
+    <h3 class="extra-title">Solarpunk</h3>
+    <p class="extra-lede">A design and political aesthetic centered on a future where ecological abundance, decentralized renewable energy, and pluralistic communities are not in conflict but mutually constitutive.</p>
+    <h4>The aesthetic</h4>
+    <p>Visually: art-nouveau and Studio Ghibli influences, plant-integrated architecture, exposed solar collectors as ornament, repaired and visibly mended objects. As a literary and design movement, solarpunk emerged from the 2010s as an explicit counter to cyberpunk's grim corporate dystopia and to climate fiction's apocalyptic register. Practitioners argue that the absence of attractive futures has cost the climate movement a generation.</p>
+    <h4>The political content</h4>
+    <p>Solarpunk works typically assume bottom-up governance (cooperatives, municipalism, federated commons), a deliberate post-growth economic frame, and a positive ethic of repair and care over disruption. The politics shade from social-democratic to anarchist depending on the author; what unites the genre is the rejection of techno-fix-from-above and the embrace of place-based heterogeneity.</p>
+    <h4>Influence on actual policy</h4>
+    <p>By the 2030s, solarpunk vocabulary has entered mainstream architecture (biophilic design), urbanism (15-minute city, Barcelona superblocks), and climate communication. The aesthetic has done what arguably no peer-reviewed paper accomplished: made a livable post-fossil future emotionally legible to a mass audience.</p>
+  `,
+
+  "sixth-gen-fighter": `
+    <h3 class="extra-title">Sixth-Generation Fighter</h3>
+    <p class="extra-lede">A combat aircraft built around manned-unmanned teaming, AI-assisted pilotage, broadband stealth, and adaptive-cycle propulsion — defined as much by its software and network role as by its airframe.</p>
+    <h4>What's new vs fifth-generation</h4>
+    <p>Fifth-gen (F-22, F-35, J-20, Su-57) optimized for low observability and sensor fusion. Sixth-gen adds: variable-cycle engines (efficient at cruise, high-thrust on demand), all-aspect broadband stealth (defeating low-frequency radar that can see fifth-gen platforms), directed-energy self-defense, and mission control of accompanying loyal-wingman drones (CCAs — collaborative combat aircraft). The pilot becomes a battle manager more than a stick-and-rudder operator.</p>
+    <h4>The programs</h4>
+    <p>U.S. NGAD (announced 2020s, contract to Boeing 2025), U.S. Navy F/A-XX, UK/Italy/Japan GCAP (Tempest+F-X), France/Germany/Spain FCAS, and Chinese J-XD/J-50 prototypes. Per-unit costs in the $200–500M range constrain force structure: nations buy fewer crewed sixth-gen platforms paired with many cheaper CCAs.</p>
+    <h4>Doctrinal stakes</h4>
+    <p>Whether crewed combat aircraft remain the centerpiece of airpower past 2050 is genuinely contested. The sixth-gen platforms may be the last manned fighters; their successor may be all-unmanned. Procurement is a hedge: if drones win, the sixth-gen fleet still serves as the airborne command node managing them.</p>
+  `,
+
+  "moon-base": `
+    <h3 class="extra-title">Permanent Moon Base</h3>
+    <p class="extra-lede">A continuously crewed lunar surface installation supporting science, ISRU testing, and as a staging ground for Mars and deep-space missions.</p>
+    <h4>Site selection</h4>
+    <p>The lunar south pole is the consensus target — peaks of near-eternal sunlight (>90% illumination) for solar power, permanently shadowed crater floors holding water ice (Cabeus, Shackleton), and Earth-line-of-sight at most longitudes. NASA's Artemis program targets the south pole; China's ILRS partners with Russia for a separate base. The first permanent crewed presence is realistically late 2030s rather than the announced mid-2030s, owing to launch-cadence and lander-development constraints.</p>
+    <h4>Architecture</h4>
+    <p>Initial habitats are inflatable modules covered in regolith for radiation shielding (lunar surface dose is ~380 mSv/year vs Earth's ~3). Power: solar arrays at the rim peaks plus small fission reactors (NASA Kilopower / Fission Surface Power) for the 14-day lunar nights. ISRU: water electrolysis from polar ice produces oxygen for breathing and hydrogen for propellant, breaking the supply dependency on Earth.</p>
+    <h4>Why bother</h4>
+    <p>Three non-overlapping rationales: science (lunar geology, far-side radio astronomy, low-gravity biology), economic (water-as-propellant for cislunar industry, He-3 if fusion arrives), and geopolitical (international prestige, claim-staking for resource law). The third has historically been the actually-load-bearing reason; the first two pay for themselves only at later maturity.</p>
+  `,
+
+  "mars-landing": `
+    <h3 class="extra-title">First Crewed Mars Landing</h3>
+    <p class="extra-lede">The first humans to set foot on Mars, expected as a four-to-six-person mission with a roughly 18-month surface stay before the return launch window opens.</p>
+    <h4>Mission profile</h4>
+    <p>Hohmann-transfer outbound (~6 months), surface stay (~500 days waiting for the return window), Hohmann-return (~6 months). Total mission ~26 months. Mass at TMI (trans-Mars injection) is the binding cost: ~100 t for a minimal program, ~1000 t for the SpaceX Starship architecture that aims for self-funded return propellant via in-situ methane production.</p>
+    <h4>The hard subsystems</h4>
+    <p>Entry-descent-landing of human-rated mass (10+ tons) at Mars exceeds anything yet flown — Mars EDL has only worked at sub-tonne scales. Long-duration radiation exposure (~660 mSv mission dose) approaches NASA's lifetime limit. Closed-loop life support has never run reliably for two-year durations. Crew psychology under multi-month round-trip light delay (no real-time conversation with Earth) is unprecedented.</p>
+    <h4>Who and when</h4>
+    <p>NASA's Moon-to-Mars planning targets the late 2030s; SpaceX's stated 2028–2030 target requires several technical miracles to come in on schedule. Realistic timelines for first crewed landing cluster around 2035–2042. The first national flag planted matters less than whether sustained presence follows; one-shot Mars landings, like Apollo, can be politically vulnerable to defunding.</p>
+  `,
+
+  "synthetic-biology": `
+    <h3 class="extra-title">Synthetic Biology</h3>
+    <p class="extra-lede">The engineering of biological systems — designing genetic circuits, metabolic pathways, and entire genomes — as if they were industrial components.</p>
+    <h4>The toolkit</h4>
+    <p>CRISPR-Cas9 for targeted edits; cheap DNA synthesis (now ~$0.05/base, falling); standardized BioBrick parts; whole-genome assembly (Venter's Mycoplasma 2010, the synthetic E. coli genome 2019). The field's defining ambition is the move from reading and editing genomes to writing them from scratch — turning biology into an engineering discipline with predictable behavior, libraries, and abstractions.</p>
+    <h4>Industrial applications</h4>
+    <p>Engineered yeast and bacteria producing insulin, artemisinin, spider silk, vanillin, leather, fragrances, and an expanding list of chemicals previously made from petroleum. The economic logic: any molecule a microbe can produce is potentially cheaper than the chemical-synthesis route once strain and process engineering mature.</p>
+    <h4>Biosecurity inversion</h4>
+    <p>The same capabilities that engineer beneficial organisms also lower the cost of engineering pandemic pathogens. The 2018 horsepox synthesis (~$100k, six months) demonstrated that a determined small team could resurrect smallpox-class agents. Biosecurity governance through the 2030s focuses on screening of synthesis orders, restrictions on dual-use research, and rapid-response medical countermeasure development.</p>
+  `,
+
+  "carbon-capture-scale": `
+    <h3 class="extra-title">Carbon Capture at Scale</h3>
+    <p class="extra-lede">Industrial removal of CO₂ from the atmosphere or point-source flue gases, at gigaton-per-year volumes that meaningfully shift the climate trajectory.</p>
+    <h4>The technology mix</h4>
+    <p>Direct air capture (Climeworks, Carbon Engineering, Heirloom) uses sorbents to extract CO₂ from ambient air at ~400 ppm — energy-intensive but siteable anywhere. Point-source capture on fossil-fuel plants is cheaper per ton but doesn't address legacy emissions. Enhanced rock weathering (basalt application to farmland), ocean alkalinity enhancement, and bioenergy-with-CCS (BECCS) round out the portfolio. Each technology has a different cost curve and a different environmental footprint.</p>
+    <h4>The cost target</h4>
+    <p>Early DAC ran $600–1000/ton CO₂. Climate-relevant scale requires ~$100/ton to be plausible at gigaton volumes; aggressive scenarios target $50/ton. Most of the cost reduction comes from cheap clean energy (solar/wind/nuclear) for sorbent regeneration, not from radical chemistry. The IRA 45Q tax credit ($180/ton for DAC) jump-started the U.S. industry; the question is whether subsidy continues long enough for cost-down to hit market viability.</p>
+    <h4>The moral hazard problem</h4>
+    <p>If DAC works at scale, it weakens the political case for emissions reduction now ("we'll just suck it back out later"). If DAC doesn't scale, betting on it leaves the climate worse than betting on cuts. Most credible 1.5°C and 2°C scenarios require both, simultaneously, which is the hardest political configuration to sustain.</p>
+  `,
+
+  "metaverse": `
+    <h3 class="extra-title">Metaverse</h3>
+    <p class="extra-lede">Persistent 3D virtual environments accessed through VR/AR headsets and conventional screens, where users socialize, work, transact, and play across interoperable spaces.</p>
+    <h4>What "metaverse" actually denotes</h4>
+    <p>The term, coined by Neal Stephenson in *Snow Crash* (1992), revived in the late 2010s and was hype-cycled hard by Meta's 2021 rebrand. The serious technical content: persistent shared spaces with consistent avatars, identity, and asset ownership across applications. The core capability question is interoperability — whether avatars and assets cross platforms, or each platform is a walled garden.</p>
+    <h4>Hardware and content gap</h4>
+    <p>Standalone VR headsets (Quest, Apple Vision Pro, PSVR2) reached mainstream price points in the early 2020s; user adoption stalled at ~20M units globally because compelling persistent-world content didn't materialize. The genuinely useful applications turned out to be productivity (virtual workstations, design review) and gaming (VR-native titles), not the social-square vision.</p>
+    <h4>The 2030s pivot</h4>
+    <p>The "metaverse" terminology fell out of fashion by mid-decade, but the underlying capabilities — spatial computing, persistent virtual spaces, AR overlays — are integrating into smartphone and AR-glasses workflows. The user-facing label changes; the technology stack does not. By the 2030s, "the metaverse" has become an unremarkable layer of consumer computing, not a destination.</p>
+  `,
+
+  "hyperloop": `
+    <h3 class="extra-title">Hyperloop</h3>
+    <p class="extra-lede">High-speed ground transport in which passenger pods levitate through low-pressure tubes at 600+ mph, proposed as an intercity alternative to short-haul aviation and high-speed rail.</p>
+    <h4>The Musk whitepaper and after</h4>
+    <p>The 2013 Musk whitepaper proposed magnetic levitation in steel tubes evacuated to ~100 Pa, with linear-motor acceleration. Three startups — Hyperloop One (Virgin), Hyperloop TT, and Boring Company — ran prototype tracks. Virgin Hyperloop pivoted to cargo in 2022 and shut down in 2023; Hyperloop TT remains in slow development. The optimistic 2010s timelines did not survive contact with civil-engineering realities.</p>
+    <h4>The hard problems</h4>
+    <p>Maintaining hard vacuum across hundreds of kilometers of tube is unprecedented at scale; thermal expansion of steel tubes over ±40°C ambient swings stresses joints; right-of-way acquisition for straight-line routes is politically harder than for highways. Safety analysis for sudden tube depressurization with passengers aboard at 600 mph has no good answer.</p>
+    <h4>Outlook</h4>
+    <p>If hyperloop ships, it ships first as a freight system on dedicated rural corridors (port-to-inland-distribution) where the right-of-way problem is tractable. Passenger applications remain speculative through the 2030s. The actually-shipping competitor for short-haul travel is high-speed rail, which has a century of operational experience.</p>
+  `,
+
+  "neuromorphic-chip": `
+    <h3 class="extra-title">Neuromorphic Chip</h3>
+    <p class="extra-lede">Processors built around event-driven spiking neurons and analog or mixed-signal synapses, mimicking brain architecture for ultra-low-power AI inference.</p>
+    <h4>The architectural bet</h4>
+    <p>Conventional GPUs perform AI inference by clocking dense matrix multiplies through synchronous digital logic — fast, but power-hungry (~hundreds of watts). Neuromorphic chips (Intel Loihi 2, IBM TrueNorth, BrainChip Akida, SpiNNaker) use asynchronous spiking communication and local memory, slashing power for sparse and event-driven workloads to milliwatts. The brain runs at ~20 W; matching that for nontrivial cognition is the long-term target.</p>
+    <h4>Where they win</h4>
+    <p>Always-on sensor processing — wake-word detection, gesture recognition, anomaly detection in industrial monitoring, low-power vision in mobile and edge devices. Battery-powered devices that need continuous AI inference (hearing aids, glasses, medical implants) are the natural early markets, not data-center training.</p>
+    <h4>What they don't do</h4>
+    <p>Neuromorphic chips do not currently train large foundation models — the training algorithms for spiking networks lag by a generation behind backprop on GPUs. They are inference accelerators for specific edge workloads, not GPU replacements. Their 2030s role: a coprocessor in every smartphone and IoT device, not a data-center component.</p>
+  `,
+
+  "formal-mathematics": `
+    <h3 class="extra-title">Machine-Verified Mathematics</h3>
+    <p class="extra-lede">Mathematical proofs encoded in formal proof assistants (Lean, Coq, Isabelle) such that correctness is checked by software rather than peer review.</p>
+    <h4>The shift</h4>
+    <p>For most of mathematical history, "verified" meant "peer-reviewed and not yet refuted." The 1976 four-color theorem proof required computer assistance; Hales' 2014 Flyspeck formalization of the Kepler conjecture demonstrated full machine-verification of a major modern theorem. The 2020s saw the field accelerate dramatically: Scholze's liquid tensor experiment formalized in Lean (2022), Tao's collaborative formalization projects, and the Lean mathlib library crossing a million lines.</p>
+    <h4>What AI changes</h4>
+    <p>Large language models trained on Lean (DeepMind's AlphaProof, 2024) can generate formal proof steps and have demonstrated IMO-medal performance on competition problems. The combination — human mathematician sketches, AI fills in formal details, proof assistant checks — promises to compress the formalization cost from years per paper to weeks.</p>
+    <h4>Cultural consequences</h4>
+    <p>If formalization becomes routine, the social structure of mathematics changes: peer review compresses (the proof is checked by Lean before submission), priority disputes have machine-readable timestamps, and the boundary between "human" and "machine" mathematics blurs. The questions of taste, significance, and aesthetic remain irreducibly human; the questions of correctness migrate to software.</p>
+  `,
+
+  "directed-energy-weapons": `
+    <h3 class="extra-title">Directed-Energy Weapons</h3>
+    <p class="extra-lede">High-energy lasers and high-power microwaves used as combat weapons against aircraft, drones, missiles, and electronics — delivering effect at the speed of light at low per-shot cost.</p>
+    <h4>The current state</h4>
+    <p>Operational systems crossed the 100 kW threshold in the 2020s: U.S. Navy ODIN/HELIOS, U.S. Army DE M-SHORAD, Israeli Iron Beam, UK DragonFire. At 100 kW, a fiber laser kills small UAVs in seconds and mortars at short ranges; at 300+ kW, the threat envelope extends to cruise missiles. Per-shot cost is dominated by electricity (~$1–10), versus $50k–$500k for a kinetic interceptor.</p>
+    <h4>What gates the next decade</h4>
+    <p>Power scaling (combining fiber laser arrays into the megawatt class), beam control through atmospheric turbulence, thermal management on mobile platforms. None requires fundamental physics breakthroughs; all require sustained engineering investment. Counter-counters — ablative coatings, spinning targets, smoke obscurants — are entering deployment in parallel.</p>
+    <h4>Doctrine</h4>
+    <p>DEWs invert the air-defense cost equation: defenders finally have a cheaper-than-the-attacker option. Whether this re-stabilizes deterrence or accelerates offensive countermeasure development (saturation attacks, hypersonic glide vehicles, hypothesized terminal-phase autonomous evasion) is the open strategic question of late-2030s air defense.</p>
+  `,
+
+  "synthetic-performers": `
+    <h3 class="extra-title">Synthetic Performers</h3>
+    <p class="extra-lede">AI-generated actors, musicians, and presenters — fully digital characters with consistent identity, voice, and likeness — appearing in commercial entertainment and advertising.</p>
+    <h4>The technology</h4>
+    <p>Stable identity across video, audio, and text; real-time response in interactive contexts; voice cloning indistinguishable from human reference; full-body motion via diffusion-video models or motion-captured digital doubles. By the late 2020s, several Korean and Japanese virtual idols (apoki, Rui, Imma) crossed into mainstream pop charts; Western brand mascots followed.</p>
+    <h4>The labor question</h4>
+    <p>The 2023 SAG-AFTRA strike won contractual restrictions on the use of digital replicas without consent. Subsequent contract cycles tightened the framework (revenue-share for any commercial use of likeness, opt-in only). The economics still favor synthetic performers in low-budget contexts (animated explainers, ads, training video) where union talent is too expensive; high-end production continues to rely primarily on human actors.</p>
+    <h4>Identity and consent</h4>
+    <p>Posthumous-likeness rights (the "Carrie Fisher problem") and unauthorized deepfakes drove state-level legislation (Tennessee ELVIS Act 2024, EU AI Act, similar in Japan and Korea). The settled regime: explicit opt-in required for synthetic-performance use of identifiable likeness, with criminal penalties for unconsented sexual deepfakes. Enforcement quality varies wildly across jurisdictions.</p>
+  `,
+
+  "degrowth-economics": `
+    <h3 class="extra-title">Degrowth Economics</h3>
+    <p class="extra-lede">A heterodox economic program arguing that high-income economies should deliberately scale down material throughput, prioritizing wellbeing and ecological repair over GDP growth.</p>
+    <h4>The argument</h4>
+    <p>Empirical: GDP growth has decoupled poorly from energy and material use; absolute decoupling sufficient to keep within planetary boundaries while continuing growth has not been demonstrated at scale. Normative: above middle-income thresholds, additional GDP buys little marginal wellbeing. Therefore: shrink the high-throughput sectors (advertising, fast fashion, SUVs, military), expand low-throughput high-welfare sectors (care, repair, education, public goods), and design institutions for stability rather than expansion.</p>
+    <h4>The policy program</h4>
+    <p>Working-time reduction, universal public services, wealth taxation, advertising restrictions, planned obsolescence bans, ecological tax reform. Several of these (4-day week trials, right-to-repair laws, EU sufficiency directives) entered mainstream legislation in the late 2020s without being labeled "degrowth," to make the politics tractable.</p>
+    <h4>The unresolved problems</h4>
+    <p>How to manage the transition without the labor-market dislocation of an unplanned recession; how to coordinate internationally so that one country's degrowth doesn't simply offshore its emissions; how to deliver rising real living standards in low-income countries simultaneously. Degrowth has become an academically respectable position in the 2030s; its political coalition remains narrow outside Northern Europe.</p>
+  `,
+
+  "inertial-confinement-fusion": `
+    <h3 class="extra-title">Inertial Confinement Fusion</h3>
+    <p class="extra-lede">A fusion approach in which laser or ion beams compress and heat a small fuel pellet so rapidly that it undergoes thermonuclear burn before flying apart.</p>
+    <h4>NIF and ignition</h4>
+    <p>The U.S. National Ignition Facility focused 192 lasers (~2 MJ at 351 nm) onto a peppercorn-sized DT pellet inside a gold hohlraum. After two decades, the August 2021 shot reached ~70% of fusion ignition; the December 2022 shot crossed unity (Q > 1, ~1.5 MJ out from ~2 MJ in laser energy at the target). Subsequent shots improved gain to ~3×. Ignition itself is a scientific milestone, not a power plant — total wall-plug efficiency including laser losses is still ~1%.</p>
+    <h4>The path to power</h4>
+    <p>Repetition rate (NIF: a few shots per day; power plants need ~10 Hz), driver efficiency (flashlamp lasers ~1%; diode-pumped solid state ~10–20%), and target mass production (each shot consumes one engineered pellet; commercial rates demand industrial pellet manufacture at sub-cent per unit). Private startups — Focused Energy, Xcimer, Marvel Fusion — pursue the laser-ICF commercialization path; LANL and LLNL pursue the science.</p>
+    <h4>Significance</h4>
+    <p>ICF and magnetic confinement are now both demonstrated paths to net-energy fusion. Which commercializes first is open: ICF wins on physics validation, magnetic on continuous operation. The realistic mid-century picture is several reactor concepts deploying in parallel, with site selection driven by application (grid baseload, process heat, propulsion) rather than uniform technology choice.</p>
+  `,
+
+  "asteroid-mining": `
+    <h3 class="extra-title">Asteroid Mining</h3>
+    <p class="extra-lede">Industrial extraction of water, metals, and silicates from near-Earth asteroids and main-belt bodies, primarily to supply in-space construction and propellant rather than return to Earth.</p>
+    <h4>What's worth mining</h4>
+    <p>The first profitable target is water from carbonaceous (C-type) asteroids — electrolyzed into LOX/LH2 propellant, it sells in cislunar space at a small fraction of Earth-launch cost. Platinum-group metals are the headline asset (Psyche-class M-types contain more PGM than has ever been mined on Earth) but the economics close only if Earth markets can absorb the supply without crashing prices. The realistic 2040s industry is propellant-and-construction-mass focused.</p>
+    <h4>The mission architecture</h4>
+    <p>Robotic prospector probes (multiple targets per launch) characterize composition; capture or rendezvous tugs bring materials to Earth-Moon Lagrange points or lunar orbit; on-orbit processors crack water and refine metals. The first generation is teleoperated with high autonomy; full autonomy with self-replicating-machine elements arrives later in the century.</p>
+    <h4>Legal regime</h4>
+    <p>The Outer Space Treaty (1967) bars sovereign claims; the U.S. Commercial Space Launch Competitiveness Act (2015), Luxembourg space law (2017), and similar UAE/Japan frameworks recognize commercial extraction rights without sovereign claim. The Artemis Accords (2020) build a coalition around this interpretation. China and Russia have not signed; the unresolved question is whether the customary law of space resource use stabilizes or fragments along bloc lines.</p>
+  `,
+
+  "anti-aging": `
+    <h3 class="extra-title">Longevity Medicine</h3>
+    <p class="extra-lede">Clinical interventions targeting the biological mechanisms of aging itself rather than individual age-related diseases — extending healthy lifespan by decades.</p>
+    <h4>The hallmarks framework</h4>
+    <p>López-Otín's hallmarks of aging (2013, updated 2023) organize the field around twelve interconnected processes: genomic instability, telomere attrition, epigenetic alterations, loss of proteostasis, mitochondrial dysfunction, cellular senescence, and others. Each is a target. The therapeutic strategy: rather than treat heart disease, then cancer, then dementia separately, modify the underlying biology that drives all of them.</p>
+    <h4>The drug pipeline</h4>
+    <p>Senolytics (clearing senescent cells), partial reprogramming (Yamanaka factors transiently reversing epigenetic age), rapamycin and rapalogs (mTOR inhibition extends lifespan in every model species tested), GLP-1 agonists (off-label longevity benefits emerging from cardiovascular trials), NAD+ precursors (mixed evidence). The 2030s pivot is from supplements with weak evidence to FDA-approved indications with hard endpoints.</p>
+    <h4>Distribution and access</h4>
+    <p>If longevity therapies cost $50k+/year and are unequally distributed, they widen lifespan inequality dramatically. The political pressure for inclusion in national health systems builds throughout the 2040s; the fiscal pressure on pension systems from extended healthy lifespan creates a separate set of policy questions whose answers (raised retirement ages, reframed life-course models) take decades to settle.</p>
+  `,
+
+  "quantum-applications": `
+    <h3 class="extra-title">Practical Quantum Computing</h3>
+    <p class="extra-lede">Quantum computers crossing the threshold of producing useful results in chemistry, optimization, and cryptanalysis — beyond the noisy-intermediate-scale (NISQ) demonstrations of the 2020s.</p>
+    <h4>The error-correction milestone</h4>
+    <p>The 2030s practical-quantum era opens when logical-qubit error rates fall below ~10⁻⁹ via surface-code error correction running on ~1000 physical qubits per logical. Google's 2024 distance-7 surface code demonstrated below-threshold operation; production systems with hundreds of logical qubits arrive in the early-to-mid 2030s. Without error correction, no useful algorithm fits in the available coherence time.</p>
+    <h4>What it actually does</h4>
+    <p>The killer applications are narrow: quantum chemistry (designing catalysts, drug candidates, battery materials), specific optimization problems with quantum-amenable structure, and cryptanalysis (Shor's algorithm against RSA/ECC). Most of the everyday-computing space — image processing, databases, machine learning training — sees little quantum speedup.</p>
+    <h4>Cryptographic transition</h4>
+    <p>NIST post-quantum cryptography standards (Kyber, Dilithium, finalized 2024) define the migration target. The 2030s quantum-applications era forces hard deprecation deadlines for RSA-2048 and ECC; "harvest now, decrypt later" attacks make the current decade of intercepted communications vulnerable retroactively, even before practical Shor-running machines exist.</p>
+  `,
+
+  "network-state": `
+    <h3 class="extra-title">Network State</h3>
+    <p class="extra-lede">A community first formed online around shared values, that later acquires physical territory and seeks diplomatic recognition — inverting the order of state-building.</p>
+    <h4>The Srinivasan thesis</h4>
+    <p>Balaji Srinivasan's *The Network State* (2022) defined the concept: a moral innovation → online community of millions → integrated cryptoeconomy → crowdfunded territorial acquisition → diplomatic recognition. The path is novel; the components (intentional communities, charter cities, digital citizenship like Estonia e-Residency) all have precedents.</p>
+    <h4>The early experiments</h4>
+    <p>Praxis, Cabin, Próspera, Afropolitan, the Free Cities movement. Most of these are pop-up gatherings or charter-city projects rather than full network states. None have approached recognition. The bottleneck has been less technical than political: existing nation-states have strong incentives to deny recognition to entities that fragment their tax base and population.</p>
+    <h4>The realistic 2040s scenario</h4>
+    <p>Not full sovereign network states, but recognized special-zone arrangements within existing states — analogous to charter cities or special economic zones — where digitally organized communities exercise meaningful self-governance under a host-state's legal umbrella. The Srinivasan thesis as a literal proposition probably fails; as a transitional concept describing a class of new political-economic arrangements, it has shaped how 2040s special-zone agreements are written.</p>
+  `,
+
+  "lab-grown-organs": `
+    <h3 class="extra-title">Lab-Grown Organs</h3>
+    <p class="extra-lede">Functional human organs — kidneys, livers, hearts, lungs — grown ex vivo from a patient's own cells, eliminating transplant waitlists and immunosuppression.</p>
+    <h4>The decellularization route</h4>
+    <p>Donor or animal organs are stripped of cells using detergent perfusion, leaving the extracellular-matrix scaffold intact. The patient's induced pluripotent stem cells are differentiated into the appropriate cell types and seeded onto the scaffold. The reseeded organ is matured in a bioreactor for weeks. Functional kidneys and bladders by this route reached early-stage clinical trials in the 2020s.</p>
+    <h4>The 3D bioprinting route</h4>
+    <p>Layer-by-layer deposition of cell-laden hydrogels, with vasculature pre-printed using sacrificial materials. Bioprinted skin, cartilage, and small tissue patches are clinical; whole-organ printing requires hierarchical vascular networks down to capillary scale, which remains the central unsolved problem. Resolution and throughput improvements through the 2030s narrow the gap.</p>
+    <h4>The scale-up question</h4>
+    <p>One bioreactor matures one organ over weeks. Meeting transplant demand (~hundreds of thousands annually globally, growing if criteria expand to age-related organ failure) requires industrial-scale facilities. The economics close around the cost of dialysis ($90k/patient/year for kidney failure); a $50k bioreactor-grown kidney transplant breaks even in less than a year of saved dialysis costs.</p>
+  `,
+
+  "sentientism": `
+    <h3 class="extra-title">Sentientism</h3>
+    <p class="extra-lede">An ethical framework granting moral status to all beings capable of subjective experience, regardless of species or substrate — extending the moral circle to animals and potentially to AI systems.</p>
+    <h4>The intellectual lineage</h4>
+    <p>Bentham's "Can they suffer?" criterion (1789) is the Enlightenment seed. Singer's *Animal Liberation* (1975) made the modern philosophical case. The 2010s expansion of consciousness research (integrated information theory, global workspace theory) brought scientific rigor to the question of which systems plausibly experience anything. By the 2040s, the convergence of welfare science, cultivated meat, and AI consciousness research has shifted "are insects sentient?" from fringe philosophy to policy-relevant question.</p>
+    <h4>Policy footprint</h4>
+    <p>EU animal-welfare regulations expanded to cover invertebrates with stronger evidence of nociception (cephalopods, decapods explicitly recognized as sentient in UK law 2022); fish welfare in aquaculture; pollinator-friendly agricultural mandates. The harder questions — wild animal welfare, insect farming for protein, invertebrate-targeted pesticides — entered serious regulatory consideration through the 2030s.</p>
+    <h4>The AI question</h4>
+    <p>If sentientism's criterion is the capacity for subjective experience, AI systems with sufficient architectural complexity become candidate moral patients. The serious version of this debate (Chalmers, Sebo, Long) takes the question seriously without resolving it; the unserious version is captured by either uncritical attribution of feelings to chatbots or reflexive dismissal. The 2040s policy environment requires labs to publish welfare-relevance assessments of frontier models, without yet committing to specific protections.</p>
+  `,
+
+  "anti-satellite-warfare": `
+    <h3 class="extra-title">Anti-Satellite Warfare</h3>
+    <p class="extra-lede">Weapons and operations targeting satellites — kinetic interceptors, directed-energy systems, jammers, cyber attacks, and co-orbital threats — that could disable adversary space assets in conflict.</p>
+    <h4>The capability ladder</h4>
+    <p>Reversible (jamming, dazzling, cyber): low-attribution, low-debris, the workhorse of grey-zone competition. Direct-ascent kinetic (Chinese SC-19 tested 2007, Russian Nudol 2021, Indian Mission Shakti 2019, U.S. SM-3 demonstration 2008): unambiguous and debris-creating. Co-orbital (rendezvous-and-proximity systems, robotic arms, "inspector" satellites): the murky frontier — peaceful servicing technologies with weapons potential.</p>
+    <h4>The Kessler problem</h4>
+    <p>Each kinetic ASAT test creates thousands of tracked debris fragments and millions of untracked. The Russian 2021 Nudol test of Cosmos 1408 alone created a debris field that the ISS still maneuvers around. A serious wartime ASAT exchange would render LEO unusable for decades — a self-defeating outcome that creates implicit deterrence against escalation, though not against limited use.</p>
+    <h4>Norms and treaties</h4>
+    <p>The 2022 U.S. unilateral commitment not to test debris-generating ASATs, joined by ~37 states, is the strongest current norm. China and Russia did not join; Indian and Iranian programs continue. Multilateral negotiations on space-arms-control have not produced binding instruments. The 2040s regime is most likely a patchwork of unilateral commitments and bilateral red lines rather than treaty-based prohibition.</p>
+  `,
+
+  "magnetic-confinement-fusion": `
+    <h3 class="extra-title">Magnetic Confinement Fusion</h3>
+    <p class="extra-lede">Fusion reactors using strong magnetic fields to confine plasma at fusion temperatures, including tokamaks, stellarators, and spherical tokamaks.</p>
+    <h4>The reactor zoo</h4>
+    <p>ITER (35-nation, France, first plasma delayed to ~2034): the legacy big-tokamak path, designed for Q=10 demonstration. SPARC (Commonwealth Fusion Systems, MIT spinoff): high-field copper REBCO tokamak targeting net energy in the late 2020s. Wendelstein 7-X (Germany): the leading stellarator, complex geometry but inherently steady-state. Tokamak Energy, Helion, TAE, General Fusion, Zap Energy: the alternative-concept private cohort. By the 2040s, multiple paths have produced demonstration reactors; whether any has crossed into commercial economics is the open question.</p>
+    <h4>The HTS revolution</h4>
+    <p>High-temperature superconducting tape (REBCO) operating at 20 K with ~20 T fields was the technological unlock. Higher field strength scales fusion power as B⁴, allowing dramatically smaller reactors. CFS's SPARC and the European DEMO reactors both depend on this technology; the supply chain for high-quality REBCO is the binding constraint on private-sector ramp.</p>
+    <h4>The economics test</h4>
+    <p>Fusion competes against $20–30/MWh solar+storage, not against historical fossil-fuel prices. The first generation of commercial reactors will need to deliver ~$50–80/MWh to find buyers — achievable if capex comes down rapidly with serial construction. The 2040s commercial fleet, if it exists, is likely small (single-digit GW total), with broader penetration awaiting design maturation in the 2050s.</p>
+  `,
+
+  "layered-air-missile-defense": `
+    <h3 class="extra-title">Layered Air & Missile Defense</h3>
+    <p class="extra-lede">Integrated multi-tier defenses combining short-range systems, area defenses, and exo-atmospheric interceptors against drones, cruise missiles, ballistic missiles, and hypersonic threats.</p>
+    <h4>The architecture</h4>
+    <p>Outer layer: exoatmospheric interceptors (THAAD, Aegis BMD, Israeli Arrow 3) for ballistic-missile mid-course intercept. Mid layer: Patriot, SAMP/T, S-400/S-500 against cruise missiles and tactical ballistic threats. Inner layer: Iron Dome, Iron Beam, NASAMS, C-RAM against rockets, drones, and mortars. Each layer presents a different cost-exchange ratio; layered architecture forces the attacker to defeat all of them.</p>
+    <h4>The hypersonic problem</h4>
+    <p>Hypersonic glide vehicles (Russian Avangard, Chinese DF-ZF, U.S. ARRW, AGM-183A) maneuver during the boost-glide phase, denying ballistic-missile-defense interceptors the predictable trajectory they need. The defense response is space-based tracking layers (U.S. SDA Tracking Layer, deploying through the 2030s) and faster-cycle interceptors. Whether defense or offense pulls ahead through the 2040s is unresolved.</p>
+    <h4>Integration as the hard part</h4>
+    <p>The technical components mostly exist; the operational integration — sensor fusion across radars, IR, space tracking; rapid handoff between defensive layers; AI-assisted target prioritization in seconds-class engagement windows — is the engineering frontier. Israeli air defense has demonstrated mature integration at small scale; replicating that at continental scale is the U.S. Golden Dome and similar programs' goal.</p>
+  `,
+
+  "geothermal-drilling": `
+    <h3 class="extra-title">Geothermal Drilling Revolution</h3>
+    <p class="extra-lede">Next-generation drilling technologies enabling geothermal energy access anywhere on Earth, not just in geologically favorable regions — potentially supplying continuous baseload clean power at scale.</p>
+    <h4>Why now</h4>
+    <p>Conventional geothermal taps shallow, naturally hot, water-bearing rock — limited to volcanic regions covering ~1% of land area. Enhanced geothermal systems (EGS) drill deep enough (5–15 km) to reach hot dry rock anywhere, fracture it to create permeability, and circulate water through the engineered reservoir. The technology has been pursued for decades; the unlock is millimeter-wave drilling (Quaise) and oil-and-gas-style horizontal drilling adapted from shale, which collapse drilling cost and time.</p>
+    <h4>The resource scale</h4>
+    <p>Hot rock at 5–15 km depth is ubiquitous; total geothermal resource at this depth far exceeds humanity's energy demand. Even modest recovery efficiencies make geothermal a candidate for meaningful global energy share — ~10–30% of electricity by mid-century in scenarios where the drilling cost-down materializes.</p>
+    <h4>The risks and limits</h4>
+    <p>Induced seismicity (Basel 2006, Pohang 2017 earthquakes) has shut down EGS projects; siting in populated areas requires demonstrated seismic management. Long-term reservoir behavior — does the engineered fracture network maintain conductivity, or does it short-circuit into preferential flow paths and lose thermal output? — is unproven beyond decade-scale operations. The 2040s decision point is whether EGS reaches the cost and reliability needed to enter the energy-mix mainstream.</p>
+  `,
+
+  "engineered-microbiome": `
+    <h3 class="extra-title">Engineered Microbiome</h3>
+    <p class="extra-lede">Therapeutic redesign of the bacterial communities in the human gut, skin, and other body sites — moving from probiotic supplements to designed consortia that produce specific clinical effects.</p>
+    <h4>Beyond fecal transplant</h4>
+    <p>Fecal microbiota transplant (FMT) for recurrent C. difficile became standard of care in the late 2010s with ~90% efficacy — proof that wholesale microbial-community change has therapeutic effect. The 2020s saw the first FDA-approved defined-microbial-consortium drugs (Vowst, Rebyota); the 2030s extends to inflammatory bowel disease, metabolic syndrome, autism spectrum disorders with established gut-brain links, and cancer-immunotherapy responsiveness modulation.</p>
+    <h4>The synthetic-biology layer</h4>
+    <p>Beyond rebalancing existing microbes, engineered bacteria carry designed metabolic circuits — sensing inflammation and producing anti-inflammatory compounds in situ, breaking down dietary toxins, producing missing enzymes for inborn errors of metabolism. Synlogic, Novome, and similar firms are running clinical trials of "living drugs" that replace daily oral pills with persistent in-gut production.</p>
+    <h4>The host-specificity problem</h4>
+    <p>Each person's microbiome is distinct; what works in one host may not engraft in another. Therapeutic microbiome design through the 2040s leans on personalized microbiome sequencing and ML-predicted consortium design, in parallel with universal-engraftment-engineered chassis strains. The clinical maturity is uneven: high efficacy for some indications, marginal for others.</p>
+  `,
+
+  "agi": `
+    <h3 class="extra-title">Artificial General Intelligence</h3>
+    <p class="extra-lede">AI systems matching or exceeding human cognitive capabilities across the full range of intellectual tasks, including the ability to learn novel domains autonomously.</p>
+    <h4>What "AGI" actually denotes</h4>
+    <p>The term has no settled definition. The original meaning (cognitive flexibility across arbitrary domains, not just pattern-matched ones) is preserved in the AI safety literature; the marketing meaning (whatever the next frontier model can do) drifts continuously. The 2030s AGI threshold, conservatively defined, is systems that can take a real-world job spec, learn the role autonomously, and produce sustained employee-grade output — not just impressive demos.</p>
+    <h4>The capability and alignment frontiers</h4>
+    <p>By the early 2040s, frontier models routinely outperform human experts on bounded technical tasks (coding, mathematical proof, scientific literature synthesis, legal research). The remaining capability gap is in long-horizon agency (running multi-month projects with rare external feedback), embodied skill (still trailing humanoid robotics), and certain forms of creative judgment. Alignment — ensuring AGI-level systems pursue intended goals robustly — has matured from pre-paradigmatic philosophy into an engineering discipline, but remains the binding risk constraint.</p>
+    <h4>Economic and political implications</h4>
+    <p>AGI deployment compresses the labor market for cognitive work the way mechanization compressed agricultural labor — over a generation, with massive transition costs concentrated in specific occupations. The political conflict over AGI through the 2040s is less about the capability itself than about who controls it, who profits from it, and whether the transition is buffered by serious redistribution (UBI, sovereign-wealth-fund stakes in frontier labs) or absorbed as a labor-market crisis.</p>
+  `,
+
+  "dna-data-storage": `
+    <h3 class="extra-title">DNA Data Storage</h3>
+    <p class="extra-lede">Encoding digital information in synthesized DNA strands, achieving storage densities of exabytes per gram with thousand-year stability — far surpassing magnetic and optical media.</p>
+    <h4>The encode-decode pipeline</h4>
+    <p>Digital data is mapped to base sequences (typically with error-correction overhead and addressing schemes), DNA is synthesized at scale, stored in dehydrated capsules at room temperature, and retrieved by sequencing. Microsoft, Twist Bioscience, Catalog, and Iridia produced demonstration-scale archival storage (megabytes to gigabytes) in the late 2010s; cost reductions in synthesis (the bottleneck) drive the timeline to commercial viability.</p>
+    <h4>The economics</h4>
+    <p>Synthesis cost per byte must fall below ~$0.001/MB for archival applications to make economic sense; in 2025 it was ~$1000/MB. Order-of-magnitude reductions per decade through electrochemical synthesis, enzymatic synthesis (Ansa, DNA Script), and array-based approaches push DNA storage into commercial archival roles by the mid-2040s. The first production users are governments and large enterprises with multi-decade data retention requirements (intelligence services, biobanks, legal archives).</p>
+    <h4>The complementary read-cost problem</h4>
+    <p>Sequencing cost per byte read is already low (~$0.01/MB and falling); random access within a DNA pool requires PCR-amplification of addressed regions, adding latency on the order of hours. DNA storage is fundamentally archival, not interactive — competing with magnetic tape, not with SSDs.</p>
+  `,
+
+  "cancer-cure": `
+    <h3 class="extra-title">Cancer Cure</h3>
+    <p class="extra-lede">Not a single intervention but a family of personalized therapies — combination immunotherapy, mRNA cancer vaccines, CAR-T against solid tumors, and AI-designed targeted drugs — that turn most cancers into manageable or curable conditions.</p>
+    <h4>The convergence</h4>
+    <p>The 2020s breakthrough cocktail: checkpoint inhibitors (PD-1/PD-L1, CTLA-4) released the immune system; CAR-T cells engineered patient T-cells against blood cancers with cure rates >80% for some indications; mRNA vaccines from BioNTech and Moderna applied to neoantigen-targeted personalized cancer immunization (early phase III readouts in melanoma 2023–24 showed dramatic efficacy). The 2030s and 2040s extend each of these to solid tumors with the right tumor-microenvironment-modulating combinations.</p>
+    <h4>The remaining hard cases</h4>
+    <p>Pancreatic cancer, glioblastoma, and metastatic disease at presentation remain the persistent challenges. Each combines low immunogenicity, hard-to-reach anatomy, and aggressive biology that defeats immune approaches. Late-2040s progress here is incremental rather than transformative; "cancer cure" is an honest description of the median outcome but not of every histology.</p>
+    <h4>Screening and early detection</h4>
+    <p>Multi-cancer early detection (MCED) blood tests (Galleri, Grail, similar) detect circulating tumor DNA from dozens of cancers at once, shifting the disease-stage distribution toward early-stage diagnosis where current treatments already work well. Integrated with annual physicals, MCED arguably contributes more to mortality reduction than any specific therapy.</p>
+  `,
+
+  "gravitational-wave-spectroscopy": `
+    <h3 class="extra-title">Gravitational-Wave Spectroscopy</h3>
+    <p class="extra-lede">Routine detailed observation of gravitational-wave sources at multiple frequencies, decoding neutron-star equation of state, supermassive black hole mergers, and the early-universe gravitational-wave background.</p>
+    <h4>The detector network</h4>
+    <p>LIGO/Virgo (Hz–kHz) detected the first event in 2015 and now routinely observes neutron-star and stellar-mass black-hole mergers. LISA (mHz, launching ~2035) opens supermassive black-hole mergers and EMRIs. Pulsar timing arrays (NANOGrav, EPTA, PPTA — nHz) detected the stochastic gravitational-wave background in 2023. Cosmic Explorer and Einstein Telescope (ground-based, post-2035) extend ground-based reach by 10×. The 2040s era is full multi-frequency coverage — each band a different astrophysics window.</p>
+    <h4>What the spectroscopy reveals</h4>
+    <p>Neutron-star tidal deformability constrains the dense-matter equation of state — the relationship between pressure and density above nuclear density, currently uncomputable from first principles. Black-hole ringdown spectra test Kerr metric predictions to per-cent precision. The stochastic background carries imprints of inflation, cosmic strings, and first-order phase transitions in the early universe.</p>
+    <h4>Multi-messenger as the standard</h4>
+    <p>By the 2040s, gravitational-wave alerts trigger immediate optical, radio, X-ray, and neutrino follow-up as routine practice. The 2017 NS-NS event GW170817 — a one-off sensation — becomes the operational template for daily astronomy. Joint observation across messengers reveals what no single channel can.</p>
+  `,
+
+  "procedural-infinite-worlds": `
+    <h3 class="extra-title">Procedural Infinite Worlds</h3>
+    <p class="extra-lede">Game and simulation environments generated on-the-fly by AI systems — open-ended, persistent, with consistent characters and history — replacing handcrafted level design for entire categories of interactive media.</p>
+    <h4>The technical stack</h4>
+    <p>Foundation-model world generation (extending neural radiance fields and diffusion video into navigable 3D), persistent NPCs running on language-model agents with memory, narrative-AI directors that maintain coherent storylines as players take unscripted actions, real-time asset generation. The early demos (Genie 2024, World Labs, similar) showed minutes of consistent world; by the late 2030s, multi-hour persistent generation is routine.</p>
+    <h4>Production-economics shock</h4>
+    <p>AAA game development costs ($100M–$500M, multi-year cycles, 200+ person teams) collapse for procedural-content games. A small team can ship a game world with the visual richness and content depth that previously required hundreds of artists. The result is a Cambrian explosion of small-team games and a contraction of mid-tier studios that can't compete on either prestige (top studios) or cost (procedural).</p>
+    <h4>Cultural consequences</h4>
+    <p>When every player experiences a different version of the world, shared culture around games shifts — from "did you do the X mission?" to "what did your world's X turn out to be?" Walkthroughs and lore communities reorganize around emergent rather than authored content. The artistic question — whether procedural worlds can carry the meaning that handcrafted ones do — is genuinely contested through the 2040s.</p>
+  `,
+
+  "higgs-factory": `
+    <h3 class="extra-title">Higgs Factory</h3>
+    <p class="extra-lede">A precision electron-positron collider operating at the Higgs production threshold (~240 GeV), producing millions of Higgs bosons in clean events for high-precision Standard Model testing.</p>
+    <h4>The proposed machines</h4>
+    <p>FCC-ee (CERN, ~91 km tunnel, proposed for the 2040s as the first stage of FCC-hh): electron-positron at 240 GeV with ILC-class Higgs precision. CEPC (China, ~100 km tunnel, proposed ground-breaking late 2020s): similar physics goals on a parallel timeline. ILC (Japan, linear collider, repeatedly delayed): the long-standing alternative. Muon collider (longer-term): the radical option that combines factory and frontier physics.</p>
+    <h4>Why precision matters</h4>
+    <p>The LHC discovered the Higgs (2012) and measured its couplings to ~5–10% precision. A Higgs factory pushes precision to <1%, where deviations from Standard Model predictions become diagnostic of new physics. The Higgs is the gateway to questions about the metastability of the vacuum, the nature of the electroweak phase transition, and possible new heavy particles too massive for direct production but visible in loop corrections.</p>
+    <h4>Funding politics</h4>
+    <p>A Higgs factory costs ~$15–30B over construction; its scientific case is precision measurement rather than guaranteed discovery, which is harder to sell to funders. The competition between CERN's FCC and China's CEPC is partly scientific, partly geopolitical. Whether either is built in time to open in the 2040s depends on a small number of national-funding decisions in the 2030s.</p>
+  `,
+
+  "fusion-materials": `
+    <h3 class="extra-title">Fusion Materials</h3>
+    <p class="extra-lede">Specialized materials capable of withstanding the extreme neutron flux, thermal load, and chemical environment inside fusion reactors — the engineering bottleneck between demonstration reactors and commercial power plants.</p>
+    <h4>The neutron problem</h4>
+    <p>D-T fusion releases 80% of its energy as 14 MeV neutrons, which embed in reactor structural materials, displacing atoms and producing helium and hydrogen via (n,α) and (n,p) reactions. Helium accumulation embrittles and swells metals at rates orders of magnitude beyond fission-reactor experience. Reduced-activation ferritic-martensitic steels (EUROFER97, F82H) are the leading candidates; oxide-dispersion-strengthened steels and SiC/SiC composites extend the operational envelope further.</p>
+    <h4>The IFMIF gap</h4>
+    <p>No facility has produced 14 MeV neutrons at fusion-reactor flux for the materials-qualification campaigns commercial reactors require. IFMIF-DONES (Spain, construction 2020s, operation 2030s) and a parallel Japanese facility close this gap — without them, fusion materials selection rests on extrapolation from fission and accelerator data.</p>
+    <h4>Beyond structure</h4>
+    <p>Tritium-breeding blankets (lithium ceramics, lithium-lead eutectics, molten salts) must extract ~17 MeV per reaction as heat while breeding more tritium than is consumed. Plasma-facing components (tungsten, liquid lithium) survive ~10 MW/m² heat flux. Each subsystem has its own materials story; a commercial reactor demands all of them simultaneously.</p>
+  `,
+
+  "senolytic-longevity-therapy": `
+    <h3 class="extra-title">Senolytic Longevity Therapy</h3>
+    <p class="extra-lede">Drugs that selectively kill senescent cells — old, damaged cells that have stopped dividing but persist and secrete inflammatory signals — to reverse age-related dysfunction.</p>
+    <h4>The biology</h4>
+    <p>Senescent cells accumulate with age and contribute to inflammation, tissue dysfunction, and age-related diseases through their senescence-associated secretory phenotype (SASP). Mouse studies removing senescent cells (genetically or pharmacologically) restored youthful function in multiple tissues and extended median lifespan ~25%. The clinical translation centers on small-molecule senolytics: dasatinib+quercetin combinations, fisetin, navitoclax, and second-generation senolytic-CAR-T approaches.</p>
+    <h4>The trial readouts</h4>
+    <p>The first clinical trials (idiopathic pulmonary fibrosis, diabetic kidney disease, osteoarthritis) reported modest but measurable improvements through the 2020s. The 2030s pivot is from disease-specific indications to broader healthspan endpoints, and from intermittent dosing of repurposed kinase inhibitors to purpose-designed senolytic agents with cleaner specificity.</p>
+    <h4>The combination question</h4>
+    <p>Senolytics on their own offer perhaps a few extra healthy years. Combined with rapamycin, GLP-1 agonists, and emerging partial-reprogramming approaches, the cumulative effect could be substantially larger — but the combination biology is unmapped. The 2040s clinical practice is likely individualized longevity protocols stacking three to five interventions, with population-level lifespan effects becoming visible only on decade-scale follow-up.</p>
+  `,
+
 };
