@@ -656,7 +656,38 @@ window.TECH_IMAGES = {
   "kilonova-merger": "images/kilonova-merger.png",
   "r-process-astromining": "images/r-process-astromining.png",
   "pulsar-timing-array": "images/pulsar-timing-array.png",
-  "pulsar-navigation": "images/pulsar-navigation.jpg"
+  "pulsar-navigation": "images/pulsar-navigation.jpg",
+  "rock-art-petroglyphs": "images/rock-art-petroglyphs.jpg",
+  "mural-fresco": "images/mural-fresco.jpg",
+  "cristallo-glass": "images/cristallo-glass.jpg",
+  "slide-rule": "images/slide-rule.jpg",
+  "mining-metallurgy": "images/mining-metallurgy.jpg",
+  "court-ensemble-music": "images/court-ensemble-music.jpg",
+  "divine-kingship": "images/divine-kingship.png",
+  "funerary-cult": "images/funerary-cult.jpg",
+  "chivalric-code": "images/chivalric-code.jpg",
+  "mendicant-orders": "images/mendicant-orders.jpg",
+  "courtly-love-romance": "images/courtly-love-romance.jpg",
+  "public-sphere": "images/public-sphere.jpg",
+  "novel": "images/novel.jpg",
+  "abolitionism": "images/abolitionism.jpg",
+  "hydroelectric-power": "images/hydroelectric-power.jpg",
+  "uranium-enrichment": "images/uranium-enrichment.png",
+  "charcoal-production": "images/charcoal-production.jpg",
+  "realism-naturalism": "images/realism-naturalism.jpg",
+  "spectator-sports": "images/spectator-sports.jpg",
+  "modern-retail": "images/modern-retail.png",
+  "mass-tourism": "images/mass-tourism.jpg",
+  "existentialism": "images/existentialism.jpg",
+  "rock-and-roll": "images/rock-and-roll.jpg",
+  "suburbanization": "images/suburbanization.png",
+  "mass-higher-education": "images/mass-higher-education.png",
+  "postmodernism": "images/postmodernism.jpg",
+  "bellows": "images/bellows.png",
+  "whale-oil": "images/whale-oil.jpg",
+  "property-rights": "images/property-rights.jpg",
+  "industrial-capitalism": "images/industrial-capitalism.jpg",
+  "globalization": "images/globalization.png"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -3282,5 +3313,129 @@ window.TECH_IMAGE_CREDITS = {
   "pulsar-navigation": {
     "article": "Millisecond pulsar",
     "url": "https://en.wikipedia.org/wiki/Millisecond_pulsar"
+  },
+  "rock-art-petroglyphs": {
+    "article": "Petroglyph",
+    "url": "https://en.wikipedia.org/wiki/Petroglyph"
+  },
+  "mural-fresco": {
+    "article": "Fresco",
+    "url": "https://en.wikipedia.org/wiki/Fresco"
+  },
+  "cristallo-glass": {
+    "article": "Cristallo",
+    "url": "https://en.wikipedia.org/wiki/Cristallo"
+  },
+  "slide-rule": {
+    "article": "Slide rule",
+    "url": "https://en.wikipedia.org/wiki/Slide_rule"
+  },
+  "mining-metallurgy": {
+    "article": "De re metallica",
+    "url": "https://en.wikipedia.org/wiki/De_re_metallica"
+  },
+  "court-ensemble-music": {
+    "article": "Lyres of Ur",
+    "url": "https://en.wikipedia.org/wiki/Lyres_of_Ur"
+  },
+  "divine-kingship": {
+    "article": "Pharaoh",
+    "url": "https://en.wikipedia.org/wiki/Pharaoh"
+  },
+  "funerary-cult": {
+    "article": "Ancient Egyptian funerary practices",
+    "url": "https://en.wikipedia.org/wiki/Ancient_Egyptian_funerary_practices"
+  },
+  "chivalric-code": {
+    "article": "Chivalry",
+    "url": "https://en.wikipedia.org/wiki/Chivalry"
+  },
+  "mendicant-orders": {
+    "article": "Mendicant orders",
+    "url": "https://en.wikipedia.org/wiki/Mendicant_orders"
+  },
+  "courtly-love-romance": {
+    "article": "Courtly love",
+    "url": "https://en.wikipedia.org/wiki/Courtly_love"
+  },
+  "public-sphere": {
+    "article": "Public sphere",
+    "url": "https://en.wikipedia.org/wiki/Public_sphere"
+  },
+  "novel": {
+    "article": "Robinson Crusoe",
+    "url": "https://en.wikipedia.org/wiki/Robinson_Crusoe"
+  },
+  "abolitionism": {
+    "article": "Abolitionism in the United Kingdom",
+    "url": "https://en.wikipedia.org/wiki/Abolitionism_in_the_United_Kingdom"
+  },
+  "hydroelectric-power": {
+    "article": "Hydroelectricity",
+    "url": "https://en.wikipedia.org/wiki/Hydroelectricity"
+  },
+  "uranium-enrichment": {
+    "article": "Gas centrifuge",
+    "url": "https://en.wikipedia.org/wiki/Gas_centrifuge"
+  },
+  "charcoal-production": {
+    "article": "Charcoal",
+    "url": "https://en.wikipedia.org/wiki/Charcoal"
+  },
+  "realism-naturalism": {
+    "article": "Realism (arts)",
+    "url": "https://en.wikipedia.org/wiki/Realism_(arts)"
+  },
+  "spectator-sports": {
+    "article": "Spectator sport",
+    "url": "https://en.wikipedia.org/wiki/Spectator_sport"
+  },
+  "modern-retail": {
+    "article": "Le Bon Marché",
+    "url": "https://en.wikipedia.org/wiki/Le_Bon_March%C3%A9"
+  },
+  "mass-tourism": {
+    "article": "Thomas Cook & Son",
+    "url": "https://en.wikipedia.org/wiki/Thomas_Cook_%26_Son"
+  },
+  "existentialism": {
+    "article": "Being and Nothingness",
+    "url": "https://en.wikipedia.org/wiki/Being_and_Nothingness"
+  },
+  "rock-and-roll": {
+    "article": "British Invasion",
+    "url": "https://en.wikipedia.org/wiki/British_Invasion"
+  },
+  "suburbanization": {
+    "article": "Levittown, New York",
+    "url": "https://en.wikipedia.org/wiki/Levittown%2C_New_York"
+  },
+  "mass-higher-education": {
+    "article": "G.I. Bill",
+    "url": "https://en.wikipedia.org/wiki/G.I._Bill"
+  },
+  "postmodernism": {
+    "article": "Postmodern architecture",
+    "url": "https://en.wikipedia.org/wiki/Postmodern_architecture"
+  },
+  "bellows": {
+    "article": "Bellows",
+    "url": "https://en.wikipedia.org/wiki/Bellows"
+  },
+  "whale-oil": {
+    "article": "Whaling",
+    "url": "https://en.wikipedia.org/wiki/Whaling"
+  },
+  "property-rights": {
+    "article": "Two Treatises of Government",
+    "url": "https://en.wikipedia.org/wiki/Two_Treatises_of_Government"
+  },
+  "industrial-capitalism": {
+    "article": "The Wealth of Nations",
+    "url": "https://en.wikipedia.org/wiki/The_Wealth_of_Nations"
+  },
+  "globalization": {
+    "article": "World Trade Organization",
+    "url": "https://en.wikipedia.org/wiki/World_Trade_Organization"
   }
 };

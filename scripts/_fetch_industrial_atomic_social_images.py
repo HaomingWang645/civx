@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-"""Fetch Wikipedia thumbnails for the 15 audit-batch nodes added during the
-realism review (energy, medicine, navigation, materials, computing, lithography)."""
+"""Fetch Wikipedia thumbnails for the 5 social/culture techs added to fill
+gaps in Industrial and Atomic eras (May 2026).
+Picks scene / iconic-work / institutional articles per the no-portraits rule.
+"""
 
 import json, time, urllib.request, urllib.parse, urllib.error
 from pathlib import Path
@@ -11,40 +13,11 @@ MANIFEST = ROOT / "_image_manifest.json"
 UA = "TechTreeImageFetcher/1.0 (personal project; contact: pittisl112@gmail.com)"
 
 TARGETS = [
-    ("electric-generator",         "Electric generator"),
-    ("stethoscope",                "Stethoscope"),
-    ("endocrinology",              "Endocrinology"),
-    ("synthetic-pharmaceuticals",  "Aspirin"),
-    ("blood-typing",               "Blood type"),
-    ("celestial-navigation",       "Celestial navigation"),
-    ("portland-cement",            "Portland cement"),
-    ("vulcanized-rubber",          "Vulcanization"),
-    ("ac-power-transformer",       "Transformer"),
-    ("relational-database",        "Database"),
-    ("hard-disk-drive",            "Hard disk drive"),
-    ("dram-memory",                "Dynamic random-access memory"),
-    ("flash-memory",               "Flash memory"),
-    ("photolithography",           "Photolithography"),
-    ("wafer-stepper",              "Stepper"),
-    ("statics-strength",           "Two New Sciences"),
-    ("fluid-dynamics",             "Fluid dynamics"),
-    ("aerodynamics",               "Boundary layer"),
-    ("stellar-evolution",          "Hertzsprung–Russell diagram"),
-    ("pulsars-neutron-stars",      "Pulsar"),
-    ("kilonova-merger",            "GW170817"),
-    ("pulsar-navigation",          "Millisecond pulsar"),
-    ("pulsar-timing-array",        "NANOGrav"),
-    ("r-process-astromining",      "R-process"),
-    ("rock-art-petroglyphs",       "Petroglyph"),
-    ("mural-fresco",               "Fresco"),
-    ("cristallo-glass",            "Cristallo"),
-    ("slide-rule",                 "Slide rule"),
-    ("mining-metallurgy",          "De re metallica"),
-    ("hydroelectric-power",        "Hydroelectricity"),
-    ("uranium-enrichment",         "Gas centrifuge"),
-    ("charcoal-production",        "Charcoal"),
-    ("bellows",                    "Bellows"),
-    ("whale-oil",                  "Whaling"),
+    ("realism-naturalism",  "Realism (arts)"),
+    ("spectator-sports",    "Spectator sport"),
+    ("modern-retail",       "Le Bon Marché"),
+    ("mass-tourism",        "Thomas Cook & Son"),
+    ("existentialism",      "Being and Nothingness"),
 ]
 
 
@@ -82,12 +55,12 @@ def main():
     manifest = json.loads(MANIFEST.read_text())
     failed = []
     for tid, article in TARGETS:
-        if manifest.get(tid, {}).get("status") == "ok" and any((IMG_DIR / f"{tid}{e}").exists() for e in (".jpg", ".png")):
-            print(f"  [cached]   {tid}"); continue
+        if manifest.get(tid, {}).get("status") == "ok" and any((IMG_DIR / f"{tid}{e}").exists() for e in (".jpg",".png")):
+            print(f"  [cached] {tid}"); continue
         try:
             img_path, art, page, err, summary = fetch_one(tid, article)
             if err:
-                print(f"  [no-image] {tid:30} ({art})")
+                print(f"  [no-image] {tid:25} ({art})")
                 failed.append((tid, article, err))
                 manifest[tid] = {"name": tid, "query": article, "article": art, "page": page,
                                  "status": "no_image", "reason": err}
@@ -97,9 +70,9 @@ def main():
                 "image_url": (summary.get("thumbnail") or {}).get("source"),
                 "image_path": str(img_path.relative_to(ROOT)),
                 "extract": (summary.get("extract") or "")[:280],
-                "status": "ok", "score": 0.9, "reason": "realism-audit addition",
+                "status": "ok", "score": 0.9, "reason": "industrial/atomic social batch (May 2026)",
             }
-            print(f"  [ok]       {tid:30} -> {art}")
+            print(f"  [ok]       {tid:25} -> {art}")
         except Exception as e:
             print(f"  [err]      {tid}: {e}")
             failed.append((tid, article, str(e)))
@@ -119,9 +92,8 @@ def main():
         f.write("window.TECH_IMAGE_CREDITS = " + json.dumps(attribution, indent=2, ensure_ascii=False) + ";\n")
     print(f"\nimages.js: {len(entries)} entries")
     if failed:
-        print("\nFailed:")
         for tid, art, err in failed:
-            print(f"  {tid}: {art} ({err})")
+            print(f"  failed: {tid}: {art} ({err})")
 
 
 if __name__ == "__main__":

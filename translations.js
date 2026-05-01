@@ -269,6 +269,8 @@ window.TECH_NAMES_ZH = {
   "naval-warship": "战列舰",
   "modern-bookkeeping": "近代簿记",
   "central-bank": "中央银行",
+  "property-rights": "现代产权制度",
+  "industrial-capitalism": "工业资本主义",
 
   // ─── Industrial ──────────────────────────────────────────────
   "bessemer-steel": "贝塞麦炼钢法",
@@ -585,8 +587,14 @@ window.TECH_NAMES_ZH = {
   "bauhaus": "包豪斯",
   "frankfurt-school": "法兰克福学派",
   "universal-human-rights": "普世人权",
+  "existentialism": "存在主义",
+  "rock-and-roll": "摇滚乐",
+  "suburbanization": "郊区化",
+  "mass-higher-education": "高等教育大众化",
+  "postmodernism": "后现代主义",
   "cybernetics": "控制论",
   "neoliberalism": "新自由主义",
+  "globalization": "全球化",
   "degrowth-economics": "去增长经济学",
   "solarpunk": "太阳朋克",
   "constructed-religions": "构造性宗教",
@@ -706,6 +714,10 @@ window.TECH_NAMES_ZH = {
   // ─── Misc additions ───
   "cell-theory": "细胞学说",
   "modern-olympics": "现代奥林匹克运动会",
+  "realism-naturalism": "现实主义与自然主义文学",
+  "spectator-sports": "观赏性体育与职业联赛",
+  "modern-retail": "百货商店",
+  "mass-tourism": "大众旅游",
   "civil-aviation": "民用航空",
   "mobile-internet": "移动互联网",
 
@@ -748,4 +760,29 @@ window.TECH_NAMES_ZH = {
   "pulsar-navigation": "脉冲星导航(XNAV)",
   "pulsar-timing-array": "脉冲星计时阵列",
   "r-process-astromining": "r过程星际采矿",
+
+  // ─── Representational Art Lineage ───
+  "rock-art-petroglyphs": "岩画与刻石",
+  "mural-fresco": "壁画与湿壁画",
+  "court-ensemble-music": "宫廷与神庙合奏音乐",
+  "divine-kingship": "神权王权",
+  "funerary-cult": "丧葬礼制与来世信仰",
+  "chivalric-code": "骑士精神",
+  "mendicant-orders": "托钵修会",
+  "courtly-love-romance": "宫廷爱与骑士传奇",
+  "public-sphere": "公共领域",
+  "novel": "现代小说",
+  "abolitionism": "废奴运动",
+
+  // ─── Renaissance Tools & Materials ───
+  "cristallo-glass": "Cristallo水晶玻璃(穆拉诺)",
+  "slide-rule": "计算尺",
+  "mining-metallurgy": "采矿与冶金学(《论冶金》)",
+
+  // ─── Energy: Hydro & Nuclear ───
+  "hydroelectric-power": "水力发电",
+  "uranium-enrichment": "铀浓缩",
+  "charcoal-production": "木炭烧制",
+  "bellows": "鼓风风箱与强制通风冶炼",
+  "whale-oil": "鲸油与油灯燃料",
 };
