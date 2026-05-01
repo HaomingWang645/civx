@@ -613,7 +613,35 @@ window.TECH_IMAGES = {
   "von-neumann-probe": "images/von-neumann-probe.png",
   "cryogenic-hibernation": "images/cryogenic-hibernation.jpg",
   "kugelblitz-drive": "images/kugelblitz-drive.jpg",
-  "cosmic-string-ftl": "images/cosmic-string-ftl.png"
+  "cosmic-string-ftl": "images/cosmic-string-ftl.png",
+  "electric-generator": "images/electric-generator.jpg",
+  "stethoscope": "images/stethoscope.png",
+  "endocrinology": "images/endocrinology.png",
+  "synthetic-pharmaceuticals": "images/synthetic-pharmaceuticals.jpg",
+  "blood-typing": "images/blood-typing.png",
+  "celestial-navigation": "images/celestial-navigation.png",
+  "portland-cement": "images/portland-cement.jpg",
+  "vulcanized-rubber": "images/vulcanized-rubber.jpg",
+  "ac-power-transformer": "images/ac-power-transformer.jpg",
+  "hard-disk-drive": "images/hard-disk-drive.jpg",
+  "dram-memory": "images/dram-memory.jpg",
+  "flash-memory": "images/flash-memory.jpg",
+  "photolithography": "images/photolithography.jpg",
+  "wafer-stepper": "images/wafer-stepper.jpg",
+  "relational-database": "images/relational-database.png",
+  "postal-system": "images/postal-system.jpg",
+  "astrolabe": "images/astrolabe.jpg",
+  "patent-system": "images/patent-system.png",
+  "stock-exchange": "images/stock-exchange.jpg",
+  "aluminum-smelting": "images/aluminum-smelting.jpg",
+  "information-theory": "images/information-theory.jpg",
+  "operating-system": "images/operating-system.png",
+  "organ-transplant": "images/organ-transplant.jpg",
+  "quantum-internet": "images/quantum-internet.png",
+  "refrigeration": "images/refrigeration.png",
+  "game-theory": "images/game-theory.jpg",
+  "public-key-cryptography": "images/public-key-cryptography.png",
+  "cartography": "images/cartography.jpg"
 };
 window.TECH_IMAGE_CREDITS = {
   "bipedal-gait": {
@@ -3067,5 +3095,117 @@ window.TECH_IMAGE_CREDITS = {
   "cosmic-string-ftl": {
     "article": "Wormhole",
     "url": "https://en.wikipedia.org/wiki/Wormhole"
+  },
+  "electric-generator": {
+    "article": "Electric generator",
+    "url": "https://en.wikipedia.org/wiki/Electric_generator"
+  },
+  "stethoscope": {
+    "article": "Stethoscope",
+    "url": "https://en.wikipedia.org/wiki/Stethoscope"
+  },
+  "endocrinology": {
+    "article": "Endocrinology",
+    "url": "https://en.wikipedia.org/wiki/Endocrinology"
+  },
+  "synthetic-pharmaceuticals": {
+    "article": "Aspirin",
+    "url": "https://en.wikipedia.org/wiki/Aspirin"
+  },
+  "blood-typing": {
+    "article": "Blood type",
+    "url": "https://en.wikipedia.org/wiki/Blood_type"
+  },
+  "celestial-navigation": {
+    "article": "Celestial navigation",
+    "url": "https://en.wikipedia.org/wiki/Celestial_navigation"
+  },
+  "portland-cement": {
+    "article": "Portland cement",
+    "url": "https://en.wikipedia.org/wiki/Portland_cement"
+  },
+  "vulcanized-rubber": {
+    "article": "Vulcanization",
+    "url": "https://en.wikipedia.org/wiki/Vulcanization"
+  },
+  "ac-power-transformer": {
+    "article": "Transformer",
+    "url": "https://en.wikipedia.org/wiki/Transformer"
+  },
+  "hard-disk-drive": {
+    "article": "Hard disk drive",
+    "url": "https://en.wikipedia.org/wiki/Hard_disk_drive"
+  },
+  "dram-memory": {
+    "article": "Dynamic random-access memory",
+    "url": "https://en.wikipedia.org/wiki/Dynamic_random-access_memory"
+  },
+  "flash-memory": {
+    "article": "Flash memory",
+    "url": "https://en.wikipedia.org/wiki/Flash_memory"
+  },
+  "photolithography": {
+    "article": "Photolithography",
+    "url": "https://en.wikipedia.org/wiki/Photolithography"
+  },
+  "wafer-stepper": {
+    "article": "Stepper",
+    "url": "https://en.wikipedia.org/wiki/Stepper"
+  },
+  "relational-database": {
+    "article": "Database",
+    "url": "https://en.wikipedia.org/wiki/Database"
+  },
+  "postal-system": {
+    "article": "Cursus publicus",
+    "url": "https://en.wikipedia.org/wiki/Cursus_publicus"
+  },
+  "astrolabe": {
+    "article": "Astrolabe",
+    "url": "https://en.wikipedia.org/wiki/Astrolabe"
+  },
+  "patent-system": {
+    "article": "Venetian Patent Statute",
+    "url": "https://en.wikipedia.org/wiki/Venetian_Patent_Statute"
+  },
+  "stock-exchange": {
+    "article": "Euronext Amsterdam",
+    "url": "https://en.wikipedia.org/wiki/Euronext_Amsterdam"
+  },
+  "aluminum-smelting": {
+    "article": "Aluminium smelting",
+    "url": "https://en.wikipedia.org/wiki/Aluminium_smelting"
+  },
+  "information-theory": {
+    "article": "A Mathematical Theory of Communication",
+    "url": "https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication"
+  },
+  "operating-system": {
+    "article": "Unix",
+    "url": "https://en.wikipedia.org/wiki/Unix"
+  },
+  "organ-transplant": {
+    "article": "Transplantation (medicine)",
+    "url": "https://en.wikipedia.org/wiki/Transplantation_(medicine)"
+  },
+  "quantum-internet": {
+    "article": "Quantum entanglement",
+    "url": "https://en.wikipedia.org/wiki/Quantum_entanglement"
+  },
+  "refrigeration": {
+    "article": "Vapor-compression refrigeration",
+    "url": "https://en.wikipedia.org/wiki/Vapor-compression_refrigeration"
+  },
+  "game-theory": {
+    "article": "Theory of Games and Economic Behavior",
+    "url": "https://en.wikipedia.org/wiki/Theory_of_Games_and_Economic_Behavior"
+  },
+  "public-key-cryptography": {
+    "article": "Public-key cryptography",
+    "url": "https://en.wikipedia.org/wiki/Public-key_cryptography"
+  },
+  "cartography": {
+    "article": "Cartography",
+    "url": "https://en.wikipedia.org/wiki/Cartography"
   }
 };
