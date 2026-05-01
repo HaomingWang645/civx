@@ -428,6 +428,25 @@ const state = {
 const svg = document.getElementById("canvas");
 const viewport = document.getElementById("viewport");
 const detailEl = document.getElementById("detail");
+const detailExtraEl = document.getElementById("detail-extra");
+const detailExpandBtnEl = document.getElementById("detail-expand-btn");
+
+function setExtraContent(html) {
+  if (!detailExtraEl) return;
+  if (html) {
+    detailExtraEl.innerHTML = `<button class="extra-close" aria-label="Close">×</button>${html}`;
+    if (detailExpandBtnEl) detailExpandBtnEl.style.display = "";
+    const close = detailExtraEl.querySelector(".extra-close");
+    if (close) close.onclick = () => {
+      document.body.classList.remove("extra-open");
+      if (detailExpandBtnEl) { detailExpandBtnEl.textContent = "‹"; detailExpandBtnEl.title = "Show extended notes"; }
+    };
+  } else {
+    detailExtraEl.innerHTML = "";
+    document.body.classList.remove("extra-open");
+    if (detailExpandBtnEl) { detailExpandBtnEl.style.display = "none"; detailExpandBtnEl.textContent = "‹"; detailExpandBtnEl.title = "Show extended notes"; }
+  }
+}
 const zoomLevelEl = document.getElementById("zoom-level");
 
 // ───────────── Render ─────────────
@@ -678,6 +697,8 @@ function selectNode(id) {
 function clearSelection() {
   state.selectedId = null;
   detailEl.classList.remove("open");
+  document.body.classList.remove("detail-open", "extra-open");
+  setExtraContent(null);
   applyHighlights();
 }
 
@@ -765,6 +786,8 @@ function showDetail(id) {
   fallback.appendChild(sig);
 
   detailEl.classList.add("open");
+  document.body.classList.add("detail-open");
+  setExtraContent((window.TECH_DETAIL_EXTRA && window.TECH_DETAIL_EXTRA[t.id]) || null);
   detailEl.scrollTop = 0; // reset scroll so new tech opens from the top
   detailEl.querySelector(".detail-close").onclick = clearSelection;
   detailEl.querySelectorAll(".detail-link").forEach(el => {
@@ -819,6 +842,8 @@ function showEraDetail(eraId) {
   `;
 
   detailEl.classList.add("open");
+  document.body.classList.add("detail-open");
+  setExtraContent((window.ERA_DETAIL_EXTRA && window.ERA_DETAIL_EXTRA[era.id]) || null);
   detailEl.scrollTop = 0;
   detailEl.querySelector(".detail-close").onclick = clearSelection;
   detailEl.querySelectorAll(".detail-link").forEach(el => {
@@ -1281,6 +1306,18 @@ if (minimapToggle) {
     e.stopPropagation();
     minimapEl.classList.toggle("collapsed");
     minimapToggle.title = minimapEl.classList.contains("collapsed") ? "Show minimap" : "Hide minimap";
+  });
+}
+
+// Detail-extra panel toggle. The button is anchored to the left edge of the
+// detail panel and is only interactive while the detail panel itself is open.
+const detailExpandBtn = document.getElementById("detail-expand-btn");
+if (detailExpandBtn) {
+  detailExpandBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const open = document.body.classList.toggle("extra-open");
+    detailExpandBtn.textContent = open ? "›" : "‹";
+    detailExpandBtn.title = open ? "Hide extended notes" : "Show extended notes";
   });
 }
 
