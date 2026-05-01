@@ -1220,4 +1220,510 @@ window.TECH_DETAIL_EXTRA = {
     <p>Senolytics on their own offer perhaps a few extra healthy years. Combined with rapamycin, GLP-1 agonists, and emerging partial-reprogramming approaches, the cumulative effect could be substantially larger — but the combination biology is unmapped. The 2040s clinical practice is likely individualized longevity protocols stacking three to five interventions, with population-level lifespan effects becoming visible only on decade-scale follow-up.</p>
   `,
 
+  "quantum-internet": `
+    <h3 class="extra-title">Quantum Internet</h3>
+    <p class="extra-lede">A network distributing entangled qubits between distant nodes, enabling unconditionally secure communication and connecting quantum computers into shared computational fabrics.</p>
+    <h4>What it transmits</h4>
+    <p>Not data in the classical sense — entanglement. Two distant nodes share entangled qubit pairs; measuring one instantaneously correlates with the other. From this primitive: quantum key distribution (QKD) provides information-theoretic security; distributed quantum computing combines small machines into virtual large ones; clock-synchronization and sensor networks reach precision limits unavailable to classical systems. The network does not transmit usable information faster than light — relativity holds — but it transmits something classical networks cannot.</p>
+    <h4>The repeater problem</h4>
+    <p>Photonic qubits in fiber attenuate at ~0.2 dB/km. Classical signals are amplified at repeaters; quantum signals cannot be amplified (no-cloning theorem). Quantum repeaters use entanglement swapping with quantum memories to extend range — the technology that turns city-scale demonstrations (Beijing-Shanghai 2017, Delft testbeds, IBM's quantum networks) into continental and intercontinental coverage. The first repeater deployments arrive in the late 2040s.</p>
+    <h4>Where it actually matters</h4>
+    <p>Banking, defense, and government communications adopt quantum-secured links earliest. Beyond cryptography, the longer-term applications are precision sensing networks (gravimetry, magnetometry across the network) and the connection of quantum computers into a federated quantum cloud — capability that emerges as both quantum repeaters and useful quantum machines mature in parallel.</p>
+  `,
+
+  "universal-basic-income": `
+    <h3 class="extra-title">Universal Basic Income</h3>
+    <p class="extra-lede">Regular cash payments to every citizen regardless of employment or means, designed as a floor below which no one falls — proposed as a response to AI-driven labor displacement and rising wealth concentration.</p>
+    <h4>From thought experiment to live policy</h4>
+    <p>Friedman's negative income tax (1962), Nixon's Family Assistance Plan (1969), the late-2010s Stockton and Finland pilots all had limited footprints. The 2030s shift came from automation pressure: when AI displacement of cognitive labor becomes politically undeniable, UBI moves from heterodox proposal to active legislative debate in multiple OECD countries. South Korea, Spain, and Canada ran province-scale or sub-national versions in the early 2030s.</p>
+    <h4>The funding question</h4>
+    <p>A meaningful UBI ($1k–$2k/month per adult) at national scale costs 8–15% of GDP. Funding models include: replacement of existing welfare programs (libertarian framing); progressive income and wealth taxes (social-democratic framing); sovereign wealth fund returns (Alaska model, scaled); revenue from AI-system taxation (newer framing). Each implies a different politics; the actual 2050s implementations are hybrids.</p>
+    <h4>Effects, contested</h4>
+    <p>The Stockton (2019–21) and Finland (2017–18) pilots showed modest improvements in mental health and employment, no labor-supply collapse. Critics argue these tell us little about a permanent national program. The 2050s test, run unintentionally by the political response to AI displacement, yields the first real evidence on permanent universal cash transfers; the results take a decade to settle.</p>
+  `,
+
+  "liquid-democracy": `
+    <h3 class="extra-title">Liquid Democracy</h3>
+    <p class="extra-lede">A governance system in which citizens can vote directly on issues or delegate their vote to a chosen representative — with delegations transitive, revocable, and topic-specific.</p>
+    <h4>The structural innovation</h4>
+    <p>Traditional representative democracy: vote for a person every 4 years on every issue. Direct democracy: vote on every issue yourself. Liquid democracy: delegate by topic to whoever you trust on that topic, transitively, revocably. Healthcare delegate may be your doctor friend; foreign-policy delegate, a journalist you read; you handle local-zoning yourself. The system collapses to representative democracy when delegations cluster, to direct democracy when none are made, and to expert governance when delegations follow expertise — without locking into any single mode.</p>
+    <h4>The experiments</h4>
+    <p>Germany's Pirate Party ran liquid democracy internally in the 2010s; Iceland and Estonia experimented with elements. Decentralized autonomous organizations (DAOs) ran liquid-democracy variants throughout the 2020s. The friction has been UI quality, voter education, and the stickiness of established constitutional frameworks. By the 2050s, liquid-democracy elements appear in multiple national constitutions — typically as supplements to traditional representative bodies, not replacements.</p>
+    <h4>The hard problems</h4>
+    <p>Sybil resistance (one human, one vote, despite digital identity); delegation cycles and attack patterns where a small clique accumulates excessive influence; the gap between "preference revelation" and "informed judgment." Liquid democracy doesn't solve these — it gives them new shapes.</p>
+  `,
+
+  "ai-governance": `
+    <h3 class="extra-title">Algorithmic Governance</h3>
+    <p class="extra-lede">The use of AI systems for routine governmental decisions — benefit eligibility, traffic management, regulatory rulemaking, judicial sentencing aids — with humans in supervisory rather than first-instance roles.</p>
+    <h4>The early forms</h4>
+    <p>Welfare-fraud detection (Netherlands SyRI, Australian Robodebt — both later judicially struck down for opacity and bias), bail and sentencing risk assessments (COMPAS in the U.S.), automated enforcement of traffic and tax. The 2010s and 2020s established that algorithmic governance was already operational in low-visibility contexts; the 2030s and 2040s normalized it explicitly under regulatory frameworks (EU AI Act, U.S. agency guidance, China's algorithmic-recommendation rules).</p>
+    <h4>The legitimacy question</h4>
+    <p>Bureaucratic decisions have always involved discretion; algorithmic decisions formalize the discretion in inspectable code. The question is whether subjects of those decisions can challenge them, audit them, and demand explanations. The settled doctrine in democracies by the 2050s: high-stakes decisions require human-in-the-loop review with documented reasoning; low-stakes decisions can be fully algorithmic with appeal channels. The line between high and low stakes is the live political contest.</p>
+    <h4>The risk of capture</h4>
+    <p>Algorithmic governance concentrates expertise in a small number of vendors and ministries, narrows the political negotiability of policy ("the algorithm decided"), and creates new attack surfaces (data poisoning, model gaming). The 2050s mature regime treats government AI systems as critical infrastructure with corresponding security and audit requirements — closer to nuclear-plant operation than to enterprise software.</p>
+  `,
+
+  "space-based-solar": `
+    <h3 class="extra-title">Space-Based Solar Power</h3>
+    <p class="extra-lede">Gigawatt-scale solar arrays in geostationary orbit beaming energy to Earth via microwave or laser transmission, providing baseload renewable power independent of weather and night.</p>
+    <h4>The architecture</h4>
+    <p>Solar arrays totaling kilometers in extent, microwave transmitters phasing the beam to maintain coherent focus on a ground rectenna, and a multi-kilometer rectenna receiving the beam at safe (~250 W/m²) intensity. The orbit-to-ground link operates 24/7; the GEO array sees sunlight ~99% of the year. End-to-end efficiency 30–50% gives delivered cost competitive with terrestrial firmed renewables once launch is cheap enough.</p>
+    <h4>Why now</h4>
+    <p>The technology has been studied since the 1970s (Glaser, NASA SPS). The unlock was Falcon Heavy and Starship-class launch driving cost-to-orbit toward $100/kg. At that price, the launch component of SBSP cost stops dominating the calculation, and a modest set of further improvements — wireless power transmission efficiency, thin-film solar mass-density — make the system economic for high-latitude markets where terrestrial solar struggles.</p>
+    <h4>The competitor</h4>
+    <p>Cheap fusion or cheap geothermal, both arriving on similar timelines, may obviate SBSP for the bulk-electricity market. SBSP's likely 2050s niche is high-latitude grids (Northern Europe, Canada, Russia) where neither terrestrial solar nor onshore renewables suffice, and remote installations (mining sites, military forward bases, disaster relief) where transmission lines are unavailable. The civilization-scale role — Dyson-swarm prefigure — emerges later, in the far-future era.</p>
+  `,
+
+  "photonic-computing": `
+    <h3 class="extra-title">Photonic Computing</h3>
+    <p class="extra-lede">Computers using photons instead of electrons for at least part of their compute, exploiting light's parallelism and low loss to accelerate AI inference, signal processing, and specific algorithms.</p>
+    <h4>What photonics actually does well</h4>
+    <p>Matrix-vector multiplication via interference networks (Mach-Zehnder meshes, micro-ring resonators) — passive, parallel, and effectively free in energy after the analog-to-photonic conversion. AI-inference workloads are dominated by exactly this operation. Lightmatter, Lightelligence, Luminous, and PsiQuantum's spinoff teams shipped photonic accelerators in the late 2020s; integration with electronic chips became standard through co-packaged optics.</p>
+    <h4>The hybrid architecture</h4>
+    <p>Photonic compute alone struggles with nonlinearity, memory, and control flow — all of which electronic logic does well. The 2050s production architecture is hybrid: electronic CPU/GPU + on-package photonic matrix engines + photonic interconnects between chips. The split: photons for moving information and for linear algebra; electrons for everything else.</p>
+    <h4>Where it doesn't help</h4>
+    <p>Branchy general-purpose computing remains an electronic problem. Cryptography, databases, and operating systems do not benefit. Photonic computing is an accelerator class, not a CPU successor. Its 2050s footprint is in data centers and high-end edge devices; consumer hardware integration arrives later.</p>
+  `,
+
+  "dark-sector-physics": `
+    <h3 class="extra-title">Dark Sector Physics</h3>
+    <p class="extra-lede">Direct experimental discovery and characterization of dark matter and dark energy — the 95% of the universe that current physics can describe gravitationally but not constituently.</p>
+    <h4>The hunt for dark matter</h4>
+    <p>WIMP searches (XENON, LUX-ZEPLIN, PandaX) have pushed cross-section limits down ~6 orders of magnitude over two decades without detection, narrowing classical WIMP space. The 2030s and 2040s pivot is toward axions (ADMX, MADMAX, BREAD), light dark matter (sub-GeV with new detectors), primordial black holes, and dark sectors with their own internal forces and particles. The 2050s milestone is detection of *some* dark-matter candidate, even if it forces theoretical rethinking.</p>
+    <h4>Dark energy maps</h4>
+    <p>Euclid (launched 2023), DESI (operating), the Vera Rubin LSST (operating), Roman (launching 2027), and the next generation of CMB experiments map the dark-energy equation of state to per-cent precision, distinguishing cosmological constant from dynamical-field models (quintessence). DESI's 2024 hint of dynamical dark energy, if confirmed, reopens questions thought closed since 1998.</p>
+    <h4>Theoretical implications</h4>
+    <p>If dark matter is detected, it ends a 90-year mystery and constrains physics beyond the Standard Model. If dark energy is dynamical, it breaks the simplest cosmology and creates a long-tail research program. The 2050s likely outcome is partial resolution — one of the two confirmed, the other remaining mysterious — rather than a tidy synthesis.</p>
+  `,
+
+  "bio-art": `
+    <h3 class="extra-title">Bio-Art</h3>
+    <p class="extra-lede">Artistic practice using living organisms, engineered cells, and synthetic-biology techniques as the medium — work that is grown, edited, and mortal rather than fabricated.</p>
+    <h4>The practitioners</h4>
+    <p>Eduardo Kac's GFP Bunny (2000), the SymbioticA lab in Perth, Heather Dewey-Hagborg's Stranger Visions (extracting DNA from discarded cigarettes and rendering portraits), Anicka Yi's bacterial-culture installations. By the 2030s and 2040s, with synthetic-biology tools commodified, bio-art moved from niche to mainstream contemporary practice — institutionally collected, biennale-represented, and politically contested.</p>
+    <h4>The conceptual stakes</h4>
+    <p>Bio-art interrogates the boundary between "art object" and "moral patient." A living sculpture that responds to its environment, ages, and dies invokes ethical weight that a painting does not. Sentientism intersects bio-art directly: when the medium is itself a candidate for moral status, the artwork's existence is a different kind of statement. Major museums adopted bio-art ethics protocols in the 2040s — review boards distinct from animal-research IRBs but with similar structure.</p>
+    <h4>The techno-political dimension</h4>
+    <p>Bio-art's tools are dual-use: the same skills that produce a glowing-bacteria installation could produce a designed pathogen. Practitioners increasingly operate within biosecurity frameworks; the borderline cases (live-virus art, microbiome modifications offered to viewers) generate the live regulatory questions the field grapples with through the 2050s.</p>
+  `,
+
+  "tritium-breeding": `
+    <h3 class="extra-title">Tritium Breeding</h3>
+    <p class="extra-lede">In-reactor production of the tritium fuel that fusion plants consume, via neutron interaction with lithium blankets — the closed fuel cycle without which D-T fusion cannot scale.</p>
+    <h4>Why it's necessary</h4>
+    <p>Tritium does not exist in nature in usable quantities. Global civilian inventory is ~25 kg, produced incidentally in CANDU heavy-water reactors. A 1 GW D-T fusion plant burns ~150 kg/year. Without on-site breeding from the 14 MeV fusion neutrons, fusion has no fuel supply chain; the technology stays demonstration-only. Breeding is therefore not optional but the engineering precondition for fusion-as-energy.</p>
+    <h4>The blanket designs</h4>
+    <p>Solid breeders: lithium ceramics (Li₂TiO₃, Li₄SiO₄) with beryllium neutron multiplier, EU's HCPB design. Liquid breeders: lithium-lead (PbLi) eutectic, EU's WCLL and DCLL designs. Molten salts (FLiBe): the alternative liquid path. Each has different tritium-breeding ratio (TBR > 1.05 required), heat-transfer behavior, materials compatibility, and tritium-recovery characteristics. ITER's test blanket modules will compare designs operationally; the choice for first commercial reactors is unsettled.</p>
+    <h4>The tritium-economy chicken-and-egg</h4>
+    <p>The first commercial fusion reactors need an external tritium charge to start up — drawing from the small global inventory or from purpose-built fission breeders. Each reactor must then breed its own steady-state supply plus a small surplus to fuel the next reactor's startup. The math closes only with high-TBR blankets and good tritium-recovery efficiency. The 2050s tritium-economy buildout is one of the unsung engineering feats of the era.</p>
+  `,
+
+  "beamed-sail-propulsion": `
+    <h3 class="extra-title">Beamed-Sail Propulsion</h3>
+    <p class="extra-lede">Ultralight spacecraft accelerated by ground- or space-based laser arrays pushing against onboard reflective sails — the lightest, fastest interstellar-precursor propulsion concept.</p>
+    <h4>The Breakthrough Starshot architecture</h4>
+    <p>Yuri Milner and Stephen Hawking's 2016 announcement: gram-scale "StarChip" spacecraft attached to meter-scale reflective sails, accelerated to 0.2c by a ~100 GW phased laser array on Earth, reaching Alpha Centauri in ~20 years. Each component is hard but not physics-impossible. The path through the 2030s and 2040s is incremental: cubesat-to-Mars demonstrations at modest velocities, then Solar System exit at higher fractions of c, then interstellar precursors.</p>
+    <h4>The hard subsystems</h4>
+    <p>Phased-array lasers at 100 GW with diffraction-limited beam quality (Earth's atmosphere requires either adaptive optics or moon-based emplacement); meter-scale reflectors with <10 g mass and >99.99% reflectivity (graphene, photonic-crystal sails); spacecraft electronics surviving 60,000 g acceleration during the 10-minute boost phase; communication back from light-years away with onboard milliwatts. None is trivial.</p>
+    <h4>What it returns</h4>
+    <p>Beamed-sail probes flying through Alpha Centauri at 0.2c spend ~20 minutes traversing the system. They cannot stop. The data return is a single brief flyby — pictures, magnetometer, dust-impact data — back over decades via faint downlink. A mission of this kind is the first interstellar precursor; routine interstellar travel awaits later propulsion (fusion drives, then warp), but the beamed sail is the first capability that gets *something* of human origin to another star within a working career.</p>
+  `,
+
+  "univalent-foundations": `
+    <h3 class="extra-title">Univalent Foundations</h3>
+    <p class="extra-lede">A foundation for mathematics in which "equality" is replaced by "equivalence" — formalizing the working mathematician's instinct that isomorphic objects are interchangeable.</p>
+    <h4>The Voevodsky program</h4>
+    <p>Vladimir Voevodsky's homotopy type theory (HoTT) and the univalence axiom (2009–2014) reformulate the foundations of mathematics around dependent type theory, with types interpreted as homotopy spaces and proofs as paths. The univalence axiom states: equivalent types are equal. This is technically false in classical set theory and trivially true in working practice; HoTT is the framework that makes the practice formally legitimate.</p>
+    <h4>Why mathematicians care</h4>
+    <p>Set-theoretic foundations require formalizing many trivialities ("the natural numbers in groups vs. the natural numbers in rings are isomorphic but not equal"). HoTT makes such structural identifications free. Combined with proof assistants (Coq's UniMath, Agda's Cubical), HoTT makes machine-verified mathematics tractable for category-theoretic and higher-categorical work that classical foundations handle only awkwardly.</p>
+    <h4>The longer game</h4>
+    <p>By the 2050s, the practical question is whether HoTT replaces ZFC as the working foundation in proof assistants. The trend favors HoTT for its computational tractability; ZFC retains a base of installed mathematics that takes time to port. The 2050s foundations community is bilingual; the 2070s default is HoTT for new work.</p>
+  `,
+
+  "ai-decision-loop-compression": `
+    <h3 class="extra-title">AI Decision Loop Compression</h3>
+    <p class="extra-lede">Military and command systems in which AI substantially compresses the OODA loop (observe, orient, decide, act) — closing engagement decisions in seconds where humans took minutes.</p>
+    <h4>The doctrinal shift</h4>
+    <p>Boyd's OODA loop framework (1970s) treated decision speed as a primary battlefield variable: the side that cycles faster forces the slower side into reactive posture. AI sensor fusion, threat classification, and recommended-course-of-action generation collapse the orient and decide phases. By the 2040s, NATO's Project Maven, the U.S. Joint All-Domain Command and Control, and Chinese intelligentized-warfare doctrine all build on AI-compressed decision loops.</p>
+    <h4>Human-on-the-loop vs human-in-the-loop</h4>
+    <p>Lethal-decision authority remains nominally with humans in most doctrines, but the compressed timescale forces "human-on-the-loop" architectures: the AI proposes, the human can intervene, the action defaults to executing if no intervention occurs within a short window. Critics argue this is human approval in name only. The 2050s policy debate centers on how much human deliberation the doctrine actually requires versus what it permits.</p>
+    <h4>The escalation risk</h4>
+    <p>Two AI-compressed OODA loops interacting can spiral faster than any political authority can intervene. The 2050s arms-control conversation, drawing on the lessons of Cold War nuclear command-and-control, focuses on mandatory deceleration mechanisms — "speed limits" on AI-mediated decisions in nuclear-relevant contexts. Whether such limits are codified in treaties or remain unilateral national doctrine is the open question.</p>
+  `,
+
+  "mars-habitat": `
+    <h3 class="extra-title">Mars Surface Habitat</h3>
+    <p class="extra-lede">A pressurized, radiation-shielded long-duration crew shelter on the Martian surface — the second-generation upgrade from short-stay landing capsules to multi-year occupation.</p>
+    <h4>The shielding requirement</h4>
+    <p>Surface galactic-cosmic-ray dose on Mars is ~250 mSv/year unshielded — career-limiting after 2–3 years for any astronaut. Acceptable long-duration habitats need ~5+ meters of regolith equivalent, achieved either by 3D-printing structures from regolith mixed with binders, by burying inflatable habitats under regolith berms, or by occupying lava-tube interiors where natural overburden does the shielding work. Each architecture trades construction effort for site flexibility.</p>
+    <h4>Life support and resource integration</h4>
+    <p>By the 2050s, habitats are integrated with ISRU plants extracting water from regolith, processing CO₂ from the atmosphere into oxygen and methane, and growing food in pressurized greenhouses. The habitat is not a self-contained box but a node in a settlement-scale resource network. Energy comes from solar arrays plus small fission reactors; communications from low-Mars-orbit relay constellation.</p>
+    <h4>The crew-rotation question</h4>
+    <p>Early habitats see ~500-day crew rotations matched to launch windows. The transition to multi-year postings — and eventually to settlers who do not return — defines the political moment when "Mars exploration" becomes "Mars colonization." That transition is unlikely before 2060 even on optimistic timelines; the habitat technology that supports it is in place by the 2050s.</p>
+  `,
+
+  "ai-judge": `
+    <h3 class="extra-title">Algorithmic Justice</h3>
+    <p class="extra-lede">AI systems used in judicial decision-making — sentencing recommendations, bail determinations, family-court risk assessments — operating as advisors to or, in limited contexts, replacements for human judges.</p>
+    <h4>The current state</h4>
+    <p>Risk-assessment instruments (COMPAS, LSI-R) entered U.S. courts in the 2000s, generating two decades of dispute over racial bias, opacity, and due-process compatibility. The 2018 *State v. Loomis* (Wisconsin) upheld COMPAS use as long as it wasn't the sole factor; the 2016 ProPublica investigation showed the same instrument produced systematically biased risk scores. The 2020s and 2030s tightened transparency and audit requirements without resolving the underlying bias-vs-utility tension.</p>
+    <h4>The shift to recommendations</h4>
+    <p>By the 2050s, mature systems present judges with structured reasoning — case-law citations, factor-by-factor analysis, comparable-case sentencing distributions, predicted outcomes — rather than opaque risk scores. The judge remains the decision-maker; the AI compresses preparation time and standardizes consideration. Several jurisdictions experimented with AI as primary decision-maker for low-stakes administrative matters (small-claims, traffic) with human appeal; full criminal-trial automation remains politically untenable.</p>
+    <h4>The legitimacy stakes</h4>
+    <p>Justice is performative: the experience of being heard, not just being processed correctly, is part of what legitimacy requires. AI judges struggle with this; the 2050s consensus is that algorithmic systems can support judicial decision-making at scale but cannot replace the human role for any decision involving deprivation of liberty.</p>
+  `,
+
+  "metamaterials": `
+    <h3 class="extra-title">Metamaterials</h3>
+    <p class="extra-lede">Engineered composite materials whose properties emerge from sub-wavelength structure rather than chemistry — exhibiting refractive indices, acoustic responses, and electromagnetic behaviors not found in natural materials.</p>
+    <h4>The basic trick</h4>
+    <p>Pendry's perfect-lens proposal (2000) and the first negative-index demonstrations (Smith, Schultz) showed that arrays of sub-wavelength resonators could produce refractive indices below zero, enabling lenses without diffraction limits and the theoretical framework for cloaking. Subsequent decades extended the concept to acoustic, thermal, mechanical (auxetic, pentamode), and seismic metamaterials.</p>
+    <h4>Practical applications</h4>
+    <p>Phased-array antennas without traditional beam-forming mechanics (Kymeta's flat satellite antennas, Echodyne's radars). Compact lenses for AR/VR and smartphone cameras (Metalenz). Acoustic absorbers thinner than the wavelength they absorb. Specialized antenna designs for 6G and beyond. Most consumer-visible applications by the 2050s are in optics and RF; the more exotic possibilities (cloaking, transformation acoustics) remain narrow specialties.</p>
+    <h4>The frontier</h4>
+    <p>Active and tunable metamaterials (electrically reconfigurable in real time), 3D bulk metamaterials (most current devices are surface or quasi-2D), and metamaterials integrated with computation (the meta-surface-as-compute-element). The 2050s research direction merges metamaterial design with photonic-computing primitives — the substrate that does both signal carrying and matrix-multiplication in one engineered structure.</p>
+  `,
+
+  "engineered-pathogen-defense": `
+    <h3 class="extra-title">Engineered Pathogen Defense</h3>
+    <p class="extra-lede">A civilization-scale capability stack — surveillance, rapid sequencing, mRNA platforms, antiviral libraries, and biosafe response infrastructure — designed to detect and neutralize engineered or naturally emerging pandemic pathogens within weeks rather than years.</p>
+    <h4>The capability layers</h4>
+    <p>Wastewater and clinical metagenomic surveillance for early-warning anomaly detection (operational by the 2030s). Cloud-deployed sequencing infrastructure that can characterize a novel pathogen within 24 hours of sample. mRNA and nucleic-acid drug platforms that can produce candidate vaccines and therapeutics from a sequence within weeks (mature post-COVID, scaled through the 2030s). Pre-stocked broad-spectrum antivirals as bridging therapy. PPE and surge-capacity stockpiles. The 2050s integrated stack reduces "novel pathogen detected" to "vaccine in arms" from 2020's 12 months toward a target of 60–100 days.</p>
+    <h4>The deliberate-pathogen scenario</h4>
+    <p>The defensive capability is symmetric across natural and engineered threats. The hardest case — an engineered pathogen designed for high transmissibility, immune evasion, and detection-resistant features — defeats older response stacks. The 2050s capability is built specifically with this scenario in mind, reflecting biosecurity-community concern that synthetic-biology offensive capability is widely diffused.</p>
+    <h4>The international architecture</h4>
+    <p>WHO's Pandemic Treaty (negotiated 2024–25, refined through the 2030s), national-level versions of CDC's center for forecasting and analytics, and an emerging global biosurveillance network. The 2050s arrangement is uneven: high-income countries have mature capabilities, much of the global South has gaps that produce shared vulnerability for everyone.</p>
+  `,
+
+  "fusion-power": `
+    <h3 class="extra-title">Fusion Power</h3>
+    <p class="extra-lede">Commercial-scale electricity generation from nuclear fusion — the long-pursued energy source that, once economic, displaces a substantial fraction of fossil fuels and provides a high ceiling on civilization's energy budget.</p>
+    <h4>What "commercial" requires beyond ignition</h4>
+    <p>NIF achieved scientific gain (Q > 1) in 2022; ITER is designed for engineering gain (Q ~ 10) in the 2030s. "Commercial" is a higher bar: net wall-plug energy gain (Q_wall > 5–10), continuous operation rather than pulsed, mean-time-between-failures of months not hours, total levelized cost competitive with the cheapest alternatives. The first reactor that meets all of these arrives in the 2050s or 2060s; the first fleet operating routinely at competitive cost arrives later.</p>
+    <h4>The competitor that didn't lose</h4>
+    <p>Fusion's economic case has been undercut for decades by falling renewable costs. By 2060, solar+storage costs $20–40/MWh; fusion must compete against that floor. Fusion's advantages — siting flexibility, dispatchability, very high power density, no terawatt land-use footprint — sustain its case for industrial process heat, data centers, propulsion, and high-latitude grids. Fusion does not "win" against renewables; it complements them in the niches renewables don't fill well.</p>
+    <h4>Civilization-scale consequences</h4>
+    <p>Cheap abundant energy expands the feasible action space — desalination at continental scale, atmospheric CO₂ capture at 100 Gt/year, energy-intensive manufacturing of synthetic fuels, propellant economies for space industry. The transformative effects of fusion arrive a generation after the first commercial plant, when fusion is one cheap energy among several rather than the dominant source.</p>
+  `,
+
+  "artificial-photosynthesis": `
+    <h3 class="extra-title">Artificial Photosynthesis</h3>
+    <p class="extra-lede">Engineered systems that convert sunlight, water, and CO₂ into fuels and chemicals at efficiencies exceeding natural photosynthesis — solar fuels, not just solar electricity.</p>
+    <h4>The chemistry</h4>
+    <p>The target reactions: water splitting (2H₂O → 2H₂ + O₂) for hydrogen fuel; CO₂ reduction (CO₂ → CO, formate, methanol, methane, ethylene) for hydrocarbons. Catalysts (transition metals on semiconductor photoabsorbers; molecular catalysts; biohybrid systems) drive these reactions with sunlight as the only input. Solar-to-fuel efficiencies of >10% (compared to natural photosynthesis at ~1%) have been demonstrated in laboratory devices.</p>
+    <h4>Scaling vs the alternative</h4>
+    <p>The competitor is solar electricity + electrolysis: photovoltaic panels make electricity, electricity splits water. This indirect path is ahead on cost. Direct artificial photosynthesis competes only if it integrates the steps more cheaply at scale — eliminating the wires and the separate electrolyzer. By the 2060s, both routes are deployed; the indirect route dominates bulk hydrogen production, the direct route finds niches in CO₂-to-fuel synthesis and in sites where the simpler integrated device wins on capex.</p>
+    <h4>The carbon-cycle implication</h4>
+    <p>A mature artificial-photosynthesis industry consuming atmospheric CO₂ to produce drop-in fuels closes the carbon cycle for sectors (aviation, shipping) that resist electrification. Combined with carbon capture at scale, it offers a route to net-zero or net-negative without abandoning hydrocarbon-based liquid fuels — useful where energy density matters and infrastructure replacement is slow.</p>
+  `,
+
+  "nuclear-pulse-propulsion": `
+    <h3 class="extra-title">Nuclear Pulse Propulsion</h3>
+    <p class="extra-lede">Spacecraft propulsion by detonating small nuclear or fusion charges behind a pusher plate, converting bomb-energy into thrust at specific impulses far exceeding chemical or fission-thermal rockets.</p>
+    <h4>From Orion to Daedalus to Medusa</h4>
+    <p>Project Orion (1958–63, Dyson and Taylor): pure-fission pulse units against a steel pusher plate, capable of delivering thousands of tons to deep space. Killed by the 1963 Limited Test Ban Treaty's prohibition on atmospheric nuclear detonations. Project Daedalus (BIS, 1970s): inertial-confinement fusion pellets ignited by electron beams behind a magnetic nozzle, designed for an Alpha Centauri flyby in 50 years. Medusa: the spacecraft trails behind the explosion on tethers connected to a vast sail, exploiting more of the energy.</p>
+    <h4>Why it might actually fly</h4>
+    <p>For deep-space cargo missions where chemical propulsion is hopelessly inefficient (multi-decade trip times) and other advanced propulsion is too immature (fusion-rocket development trailing), nuclear pulse offers near-term tonnage to the outer solar system. The Test Ban Treaty restricts atmospheric and space detonations, but in-space pulse propulsion in deep space is arguably permissible under various interpretations; treaty modification would be required for routine use.</p>
+    <h4>The political prerequisite</h4>
+    <p>Nuclear pulse propulsion sits on the wrong side of multiple Cold War arms-control instruments. Deploying it requires a 21st-century arms-control update treating peaceful deep-space pulse propulsion separately from terrestrial nuclear weapons. Whether that political alignment forms by the 2060s — when the propulsion case becomes acute for asteroid mining and outer-planet missions — is the binding question, not the engineering.</p>
+  `,
+
+  "genetic-disease-eradication": `
+    <h3 class="extra-title">Genetic Disease Eradication</h3>
+    <p class="extra-lede">The systematic elimination of monogenic and high-penetrance genetic diseases through pre-implantation screening, in-vivo gene editing, and population-scale carrier-screening programs.</p>
+    <h4>The toolset</h4>
+    <p>Pre-implantation genetic testing (PGT-M for monogenic, PGT-A for aneuploidy) became standard for IVF in the 2010s. CRISPR-based in-vivo gene editing (Casgevy approved for sickle-cell 2023, expanding to dozens of indications through the 2030s) treats existing patients. Newborn screening expanded from a handful of disorders in the 1980s to thousands by the 2050s, catching conditions before symptom onset. Combined, these tools are sufficient to eliminate or render manageable nearly every classical genetic disease.</p>
+    <h4>The implementation gap</h4>
+    <p>The technical ability to eradicate Tay-Sachs, sickle-cell, cystic fibrosis, Huntington's, and similar diseases is not the same as the coverage achieved. Universal access requires public-health programs covering screening and treatment; high-income countries reach near-elimination by the 2060s, low-income countries lag a generation. The pattern matches infectious-disease elimination — measles is technically eradicable, persists where coverage gaps remain.</p>
+    <h4>Embryo selection and the gattaca question</h4>
+    <p>Selecting against disease-causing variants slides into selecting for trait-affecting variants. Polygenic embryo screening for IQ, height, and personality became commercially available in the 2020s; legal status varies wildly across jurisdictions. The 2060s policy landscape is bifurcated: some countries permit broad polygenic selection, others restrict it to severe disease, and the medical-tourism market routes around national restrictions. The civic conversation about genetic enhancement, deferred for decades, becomes unavoidable.</p>
+  `,
+
+  "artificial-womb": `
+    <h3 class="extra-title">Artificial Womb</h3>
+    <p class="extra-lede">External gestational systems — extracorporeal devices supporting fetal development from earlier and earlier stages — eventually approaching full ectogenesis from blastocyst to term.</p>
+    <h4>The clinical pathway</h4>
+    <p>The first deployments are not full ectogenesis but bridge therapy for extreme prematurity: the Biobag (CHOP, 2017 lamb experiments) and similar devices support fetal lambs from ~22 weeks equivalent for several weeks. The 2030s and 2040s extend the technology to human use for the most-premature infants, replacing the NICU's makeshift attempts with proper amniotic-fluid-immersion development. By the 2060s, the supportable-from gestational age has fallen substantially below current viability thresholds, blurring the line between "premature infant care" and "ectogenesis."</p>
+    <h4>Full ectogenesis</h4>
+    <p>The harder problem — full development from fertilized egg outside a uterus — requires solving placental development in vitro, which has eluded biology for decades. Synthetic placental analogues are an active research front but not a near-term clinical reality. Full ectogenesis as a routine option arrives later than 2065; what the 2060s have is a strong partial capability that handles a meaningful fraction of high-risk pregnancies.</p>
+    <h4>Social and legal stakes</h4>
+    <p>If the artificial-womb gestational floor moves below current viability, abortion law's framing — built around viability as the line between protected and unprotected — collapses. Jurisdictions handle this differently: some treat extracted but technically supportable fetuses as persons regardless of mother's choice; others maintain the existing framework regardless of technological change. The 2060s legal patchwork is contentious; no consensus emerges before the technology fully matures.</p>
+  `,
+
+  "room-temp-superconductor": `
+    <h3 class="extra-title">Room-Temperature Superconductor</h3>
+    <p class="extra-lede">A material exhibiting zero electrical resistance and complete diamagnetism at ambient temperature and pressure — the long-sought combination that would transform power transmission, motors, magnets, and electronics.</p>
+    <h4>What's been claimed and walked back</h4>
+    <p>High-pressure hydrides (LaH₁₀, CSH₈) demonstrated near-room-temperature superconductivity above 250 K in 2018–2020, but at megabar pressures unworkable for any application. The 2023 LK-99 frenzy (Korean group, room-T-and-P claim) collapsed under replication failure. By the 2060s, the genuine breakthroughs have come from cuprate analogues, twisted-bilayer graphene heterostructures, and machine-learning-guided materials search rather than from theoretical prediction.</p>
+    <h4>The practical thresholds</h4>
+    <p>"Room-temperature" without "ambient pressure" is half a discovery — useful for fundamental physics, useless for power lines. The applications threshold is critical temperature above ~250 K, ambient pressure, manufacturable in kilometers of wire, and tolerant of MRI-scale fields. Each constraint eliminated different early candidates. The 2070s material is a stack of these — viable for grid-scale transmission and for compact MRI/fusion magnets.</p>
+    <h4>The downstream wave</h4>
+    <p>Lossless transmission removes the case for highly distributed generation; it becomes economical to ship desert-solar electricity to continent-scale loads. Compact superconducting motors transform aviation propulsion. MRI proliferates as cryogen-free and cheap. Maglev transport becomes competitive with rail. The full cascade takes 20+ years; the breakthrough year unlocks the cascade.</p>
+  `,
+
+  "self-replicating-machines": `
+    <h3 class="extra-title">Self-Replicating Machines</h3>
+    <p class="extra-lede">Industrial systems that can manufacture copies of themselves from raw materials, enabling exponential growth of production capacity from a single seed factory.</p>
+    <h4>The von Neumann tradition</h4>
+    <p>John von Neumann's 1948 work on cellular automata showed that universal self-reproducing machines were mathematically possible and characterized what they require: a constructor, a description, and a substrate of raw materials. Engineering realizations have been pursued in several modes — RepRap 3D printers (partially self-reproducing in plastic parts since 2007), automated factories that produce factory components, and the long-deferred space-mining goal of self-bootstrapping lunar industry.</p>
+    <h4>The kit-completion problem</h4>
+    <p>"Self-replicating" in the strict sense requires the machine to produce every part of itself from raw materials. No real system meets this; all rely on a "kit" of inputs (semiconductors, certain alloys, specific chemicals) imported from a parent supply chain. The 2070s state of the art is high closure ratios — perhaps 80–95% of mass produced internally — with the residual kit shrinking each generation as more sub-systems internalize.</p>
+    <h4>Where it matters</h4>
+    <p>Earth-based self-replicating manufacturing is mostly a curiosity (the existing economy already replicates itself effectively through trade). Space industry is where the architecture wins: a seed factory delivered to the lunar surface or asteroid that grows into a multi-megaton facility from local materials breaks the launch-cost bottleneck on space construction. The 2070s capability is the foundation that the late-century space economy and the far-future von Neumann interstellar probes both depend on.</p>
+  `,
+
+  "closed-cycle-cities": `
+    <h3 class="extra-title">Closed-Cycle Cities</h3>
+    <p class="extra-lede">Urban environments designed to minimize external material flows — recycling water, nutrients, and most materials within the city's footprint, importing primarily energy and information.</p>
+    <h4>What "closed" means at city scale</h4>
+    <p>Not literal closure — no real city becomes a sealed box — but high recovery rates: water (>95% reuse via greywater systems and direct potable reuse), organic nutrients (sewage-to-soil pipelines, urban food production), construction materials (high-recycled-content concrete, designed-for-disassembly buildings), metals (urban mining of e-waste). The 2070s model city pulls in a small fraction of materials per capita compared to the 2020s baseline.</p>
+    <h4>The infrastructural rebuild</h4>
+    <p>Existing cities can retrofit but not fully convert; the cleanest examples of closed-cycle cities are new builds — Singapore's expanding ECO-towns, Saudi NEOM (in whatever form survives), Chinese sponge cities scaled up. Most of the 2070s closed-cycle infrastructure is bolted onto legacy 2020s urban fabric, with mixed effectiveness. The transition has taken half a century longer than the early advocates projected.</p>
+    <h4>Why it matters and where it doesn't</h4>
+    <p>Closed-cycle cities make ecological sense at high population density and high resource cost. At low density, dispersing services across rural areas is cheaper than centralizing the closed-loop infrastructure. The 2070s pattern is closed-cycle metropolitan cores plus conventional supply chains for everything outside the metro. The aesthetic and political project of closed-cycle urbanism is partial, regional, and uneven.</p>
+  `,
+
+  "personalized-medicine": `
+    <h3 class="extra-title">Personalized Medicine</h3>
+    <p class="extra-lede">Healthcare in which prevention, diagnosis, and treatment are routinely tailored to an individual's full multi-omic profile — genome, transcriptome, microbiome, proteome, lifestyle data — rather than to population averages.</p>
+    <h4>What's actually personalized by 2070</h4>
+    <p>Drug selection and dosing using pharmacogenomic data (already standard for warfarin, clopidogrel, several oncology drugs); cancer therapy guided by tumor-specific neoantigens; nutritional and metabolic recommendations from continuous-glucose-monitor and microbiome data; risk-stratified screening protocols (intensive surveillance for high genetic risk, lighter for low); preventive interventions timed to individual disease trajectories rather than calendar age. The integration of these has been gradual; by the 2070s, "standard care" includes most of them.</p>
+    <h4>The data infrastructure</h4>
+    <p>Per-patient health records integrate genome, longitudinal sensor data, imaging, and clinical history in ML-readable form. The privacy and consent architecture took decades to settle — federated learning, differential privacy, patient-controlled data wallets, and graduated consent for research vs. clinical vs. commercial use. The 2070s mature regime treats personal health data as an asset class with strong individual control and limited fungibility.</p>
+    <h4>Where it doesn't reach</h4>
+    <p>Personalized medicine costs more per encounter than population-average medicine. Health systems with tight per-capita budgets continue using population averages for most decisions; personalization concentrates in high-stakes contexts (cancer, severe psychiatric, rare disease) where the marginal value justifies the cost. The 2070s "personalized" medicine is selective, not universal, even in well-funded systems.</p>
+  `,
+
+  "cryogenic-hibernation": `
+    <h3 class="extra-title">Cryogenic Hibernation</h3>
+    <p class="extra-lede">Reversible deep cooling of human metabolism to near-zero activity, intended for long-duration spaceflight, severe-trauma medical pause, and as a bridge to future therapies.</p>
+    <h4>The medical pathway</h4>
+    <p>Therapeutic hypothermia at modest cooling (~33 °C) has been clinical practice for cardiac-arrest neuroprotection since the early 2000s. Emergency Preservation and Resuscitation (EPR-CAT, in trauma trials since the 2010s) cools patients to ~10 °C using cold saline perfusion, providing 1–2 hours of preservation for emergency surgery before rewarming. Each step of deeper, longer pause requires solving distinct problems: ice formation in cells, ischemia-reperfusion injury, organ-specific cold tolerances.</p>
+    <h4>Long-duration hibernation</h4>
+    <p>Multi-month hibernation for crewed Mars and outer-planet missions requires biological intervention beyond passive cooling — torpor-inducing pharmacology, vascular preservation strategies, possibly synthetic-biology modifications. Hibernating mammals (ground squirrels, bears) provide biological proof-of-concept; SpaceWorks Enterprises and ESA have funded hibernation research for crewed Mars missions since the 2010s. The 2070s capability supports months-long induced torpor with full recovery; multi-year hibernation remains unproven.</p>
+    <h4>Cryonics's legitimization, partial</h4>
+    <p>Full cryopreservation at liquid-nitrogen temperatures (Alcor, the cryonics community since the 1970s) operates without scientific evidence of reversibility — the bet is on future repair technology. The 2070s short-duration hibernation is technically separate, but its success blurs the line: if reversible cooling for months is real, the case for trying longer durations strengthens. The 2070s legal and medical regime accommodates short-duration hibernation for clinical and spaceflight use; long-term cryopreservation remains uncertain.</p>
+  `,
+
+  "fusion-rocket": `
+    <h3 class="extra-title">Fusion Propulsion</h3>
+    <p class="extra-lede">Rockets driven by ongoing fusion reactions, achieving specific impulses 10–100× chemical rockets and orders-of-magnitude higher than electric propulsion at higher thrust — the workhorse of late-21st-century interplanetary travel.</p>
+    <h4>The propulsion physics</h4>
+    <p>Fusion rockets exhaust fusion-product plasma at velocities >10⁶ m/s, giving specific impulse (Isp) of 10⁴–10⁵ seconds versus chemical's 450 s and ion drive's 3000–10000 s. At those exhaust velocities, multi-month transit between Earth and Mars compresses to weeks; outer-planet missions become routine. Two architectures dominate: open-cycle direct-drive (fusion plasma is the propellant) and closed-cycle (fusion provides power, propellant is reaction mass like hydrogen).</p>
+    <h4>The reactor problem in space</h4>
+    <p>Terrestrial fusion reactors are large because they need to be contained and shielded; making them spaceflight-compatible requires drastic mass reduction. The breakthrough is sustained operation at higher field strength (HTS magnets) and direct conversion of fusion-product kinetic energy to thrust without going through a thermal cycle. Direct Fusion Drive (Princeton field-reversed configuration), Helicity Space, and similar private-sector concepts targeted demonstration through the 2050s and 2060s.</p>
+    <h4>What it enables</h4>
+    <p>Routine cargo and crew transport across the inner solar system, Mars-Earth round trips in months not years, outer-planet missions that get there before the principal investigators retire, and the construction logistics for a real space economy. Fusion propulsion is the technology that converts the 2070s space activities from "missions" to "transport infrastructure."</p>
+  `,
+
+  "printable-organs-on-demand": `
+    <h3 class="extra-title">Printable Organs on Demand</h3>
+    <p class="extra-lede">Mature 3D bioprinting of complex organs from patient-derived cells with full vascularization, eliminating transplant waitlists and immunosuppression for any organ humans need replaced.</p>
+    <h4>What changed since the 2040s</h4>
+    <p>The 2040s lab-grown-organ generation produced kidneys and bladders by decellularization-and-reseed; full bioprinting of complex organs (heart, lung, liver) with hierarchical vasculature down to capillaries was the unsolved problem. By the 2070s, multi-material multi-cell-type bioprinting at micron resolution, combined with self-organizing vasculogenesis cues, produces organs in days that develop functional vasculature over weeks of bioreactor maturation. Most clinical-grade organs ship from regional bioprinting centers on demand.</p>
+    <h4>The supply-chain inversion</h4>
+    <p>Transplant medicine pivoted from a deceased-donor logistical problem to a manufacturing problem. Hospitals don't wait for donor matches; they order organs sized and timed to specific patients, with delivery in days. The transplant ethics framework (allocation lists, opt-in donation registries) becomes obsolete; cadaveric donation continues but for tissues bioprinting cannot yet produce (specific neural tissue, complete eyes).</p>
+    <h4>What still resists</h4>
+    <p>Brain tissue printing remains a different problem entirely — connectivity, learning, identity. Skin, bone, cartilage, vascular grafts, and most internal organs are 2070s bioprinted commodities. The brain, the eye's neural retina, and certain endocrine glands continue to require cadaveric or partial-replacement strategies. Full neural-tissue replacement is a far-future technology, not a near-future one.</p>
+  `,
+
+  "ai-coordination-treaty": `
+    <h3 class="extra-title">AI Coordination Treaty</h3>
+    <p class="extra-lede">Binding multilateral agreements among the major AI-developing states regulating frontier-model training, deployment, and governance — the AI equivalent of the nuclear-arms-control regime.</p>
+    <h4>The negotiating history</h4>
+    <p>The Bletchley Park summit (2023), Seoul (2024), Paris (2025), and subsequent biennial meetings established a forum for AI safety dialogue but no binding instruments. The EU AI Act (2024), U.S. executive orders, and Chinese algorithmic regulations created national-level frameworks. The shift to binding international regime came after specific incidents — large-scale AI-enabled cyber operations, model-weight thefts, deployment of frontier capabilities by non-state actors — that made unilateral approaches visibly insufficient.</p>
+    <h4>The treaty's content</h4>
+    <p>Compute thresholds above which model training is reportable; safety-evaluation standards before deployment; weight-security and proliferation-control requirements; restrictions on autonomous-weapons applications; verification mechanisms drawing on the IAEA and CTBTO models adapted for compute and software. The hard part is verification: compute is harder to inspect than uranium centrifuges, and capability evaluation is itself a research problem.</p>
+    <h4>What's missing from the treaty</h4>
+    <p>The major treaty parties (the U.S., China, EU, UK) cover most frontier capability but not all of it. Regional powers and well-resourced non-state actors operate outside the regime. The treaty buys coordination among the principal builders without solving the broader proliferation problem. Whether it's enough depends on whether frontier capability remains concentrated or diffuses widely — a question still being settled in the 2070s.</p>
+  `,
+
+  "direct-ai-democracy": `
+    <h3 class="extra-title">Direct AI-Mediated Democracy</h3>
+    <p class="extra-lede">Governance systems in which citizens express preferences directly to AI assistants that aggregate, synthesize, and translate them into policy proposals — combining direct democratic participation with AI's capacity to handle complexity.</p>
+    <h4>The architecture</h4>
+    <p>Citizens engage with personal AI representatives that learn their values, priorities, and reasoning over time. These representatives participate in deliberative processes — virtual citizen assemblies, policy negotiation, budget allocation — at scale impossible for human-only direct democracy. The mediating AI summarizes, translates across language and education levels, and grounds discussion in shared evidence. Decisions remain authoritatively human; the AI augments rather than replaces judgment.</p>
+    <h4>How it differs from earlier digital democracy</h4>
+    <p>2010s and 2020s e-democracy tools (Pol.is, vTaiwan, Decidim) demonstrated that structured online deliberation can produce coherent collective preferences on contested issues. Direct AI-mediated democracy scales those tools to national populations and complex policy: each citizen's AI representative carries their nuanced position into deliberations across many issues simultaneously, without requiring the citizen to read briefing books.</p>
+    <h4>The trust prerequisite</h4>
+    <p>The system collapses if citizens don't trust their AI representatives to faithfully represent them. Achieving that trust requires technical guarantees (cryptographic logs, behavioral audits, alternative model offerings), institutional checks (citizen ombuds, public-option AI providers), and cultural confidence built over decades. The 2070s working system is the result of long iteration; earlier deployments produced backlash that delayed adoption and refined the design constraints.</p>
+  `,
+
+  "lunar-industrial-base": `
+    <h3 class="extra-title">Lunar Industrial Base</h3>
+    <p class="extra-lede">A permanent, mostly self-sustaining industrial complex on the Moon producing propellant, construction materials, and increasingly complex manufactured goods for the cislunar economy.</p>
+    <h4>The buildup phase</h4>
+    <p>Initial moon bases (2030s and 2040s) produced primarily science and prestige. The 2050s and 2060s added water electrolysis at scale (LOX/LH2 propellant for cislunar transport), regolith sintering (3D-printed habitats and landing pads), oxygen extraction from regolith, and modest helium-3 prospecting. The 2070s base operates an integrated production stack: propellant, structural materials, basic electronics, and food (greenhouse-grown) all produced from lunar inputs with minimal Earth resupply.</p>
+    <h4>The economic logic</h4>
+    <p>Material delivered to lunar orbit from the surface costs ~5% of material delivered to lunar orbit from Earth (depending on launch costs and delta-V budgets). Once the lunar industrial base reaches a kit-completion threshold for routine construction, it becomes the cheapest source of mass for everything beyond LEO — propellant for trans-Mars insertion, structural mass for orbital habitats, power-system components for solar-power-satellite construction. The cislunar economy reorients around lunar production by the 2070s.</p>
+    <h4>Population and politics</h4>
+    <p>Permanent lunar staff in the low thousands — engineers, robotics operators, scientists, and the support population. Most of the operation is robotic; humans handle exceptions, maintenance, and judgment calls. The political status of long-term residents (citizenship, voting rights, taxation, tort jurisdiction) was contested through the 2050s and 2060s and is settled by the 2070s through a layered arrangement: home-state nationality plus lunar-resident administrative status, with disputes routed to international tribunals.</p>
+  `,
+
+  "brain-brain-communication": `
+    <h3 class="extra-title">Brain-to-Brain Communication</h3>
+    <p class="extra-lede">Direct neural communication between people via paired BCIs, transmitting thoughts, sensations, or motor intent without spoken or written intermediation.</p>
+    <h4>The early demonstrations</h4>
+    <p>BrainNet (Washington, 2018): three subjects collaboratively played Tetris using EEG-and-TMS to transmit intent. Rao and Stocco's earlier work (2013) showed brain-to-brain motor control. These demonstrations used coarse signals — single bits at low rates — but established that direct neural communication, mediated by computer, was technically possible.</p>
+    <h4>What the 2070s actually does</h4>
+    <p>High-channel-count implants in both sender and receiver; AI translation of neural signals into machine-interpretable representations; selective stimulation in the receiver to evoke specific qualia. Practical capability ranges from transmitting motor intent (collaborative robotic surgery, paired piloting) to sensory streaming (sharing what the sender sees or feels) to nascent direct semantic communication. The bandwidth limit is set by what the receiver's stimulation can reliably evoke without noise.</p>
+    <h4>The privacy and identity questions</h4>
+    <p>Brain-to-brain communication raises questions earlier BCIs already raised, intensified: what is read in the sender, what is written in the receiver, who has access to the channel, and what counts as informed consent for sensations the receiver has never experienced. The 2070s legal regime treats brain-to-brain channels as privileged communication (analogous to attorney-client) with strong consent and audit requirements; deployment in non-medical contexts remains limited.</p>
+  `,
+
+  "mars-colony": `
+    <h3 class="extra-title">Self-Sustaining Mars Colony</h3>
+    <p class="extra-lede">A permanent human settlement on Mars producing all critical consumables locally — food, water, oxygen, propellant, structures, electronics — independent of Earth resupply for indefinite continuation.</p>
+    <h4>The kit-completion threshold</h4>
+    <p>"Self-sustaining" is a graded property. Early Mars bases imported almost everything; by the 2050s they produced propellant and oxygen on-site; by the 2070s they produced food, water, and structural materials. The 2080s threshold is producing the long tail of complex inputs — pharmaceutical precursors, semiconductors, specialized metals — that earlier generations imported. Reaching this threshold takes one to two decades of progressive industrialization beyond mere habitation.</p>
+    <h4>The Musk number</h4>
+    <p>Musk's mid-2010s estimate of "a million people on Mars" as the threshold for self-sustaining civilization was order-of-magnitude correct. Specialized industrial supply chains require population scale. Three to ten thousand colonists support a settlement that survives but doesn't grow new capabilities; the 100k–1M range is where Mars becomes a genuine second civilization rather than an outpost. By 2080, the population is in the 10k–100k range — past frontier, short of full civilization.</p>
+    <h4>The political moment</h4>
+    <p>Self-sustaining settlements have unique political leverage: their cooperation cannot be coerced from Earth. The 2080s moment when Mars achieves practical independence forces the question of formal status. The settled outcome is unlikely to be either continued territorial-administration of Mars by Earth states or unilateral declared independence — more probably a confederal arrangement with substantial autonomy, ongoing economic integration, and gradual political differentiation over decades.</p>
+  `,
+
+  "post-scarcity": `
+    <h3 class="extra-title">Post-Scarcity Economy</h3>
+    <p class="extra-lede">An economic configuration in which the cost of meeting basic material needs has fallen to negligible levels through automation, abundant energy, and recycling — making distribution rather than production the binding constraint.</p>
+    <h4>What "post-scarcity" actually denotes</h4>
+    <p>Not the elimination of all scarcity — positional goods, attention, certain experiences, and many natural resources remain scarce — but the elimination of mass-produced-good and basic-service scarcity for the relevant population. Food, shelter, healthcare, and standard manufactured goods become near-free at the point of consumption; the scarce inputs that limit them today (labor, energy, raw materials) all become abundant or efficiently substitutable.</p>
+    <h4>The convergent enablers</h4>
+    <p>Cheap fusion and renewables (energy abundance), AGI and humanoid robotics (labor abundance), self-replicating manufacturing (capital-good abundance), recycled-and-bioprinted materials (raw-material substitution). No single technology produces post-scarcity; their composition does. The 2080s state is a partial post-scarcity for some categories of goods (most consumer products, basic housing in non-prime locations, basic healthcare, food) but not others (positional goods, services with irreducible human content).</p>
+    <h4>The institutional adjustment</h4>
+    <p>Markets price scarcity; when scarcity disappears for a category, markets stop providing useful signals there. The institutions that allocate post-scarcity goods — public provision, commons management, ad-supported access, hybrid arrangements — are still being invented through the 2080s. The political conflict is intense: those whose income and status come from selling labor or producing scarce goods resist the transition; those who would benefit press for it. The settled equilibrium takes a generation.</p>
+  `,
+
+  "interstellar-probe": `
+    <h3 class="extra-title">Interstellar Probe</h3>
+    <p class="extra-lede">The first uncrewed spacecraft to reach another star system and return scientific data — typically a fast flyby of Alpha Centauri or another nearby system within a few decades of launch.</p>
+    <h4>The mission profiles</h4>
+    <p>Beamed-sail (Breakthrough Starshot architecture): gram-scale spacecraft accelerated to ~0.2c in minutes, traverses Alpha Centauri in ~20 minutes during a flyby, sends low-bit-rate data home over decades. Fusion-rocket: larger spacecraft (tons not grams), accelerates to ~0.05–0.1c over months, performs detailed flyby or brakes into the target system. Nuclear-pulse (Daedalus class): comparable mass, comparable speeds, slower acceleration. The fast-light-payload and slow-heavier-payload paths each have proponents through the 2080s.</p>
+    <h4>What it returns</h4>
+    <p>The minimal mission profile (flyby) returns: imagery of any planets, atmospheric spectra (biosignatures if present), magnetic-field measurements, dust-impact data. The richer profile (orbital insertion) is decades more transit time but returns long-duration observation: weather, seasons, geology, surface mapping. The first interstellar probe is most likely a flyby — the engineering is dramatically easier — with subsequent missions adding orbital and lander capability.</p>
+    <h4>The decade-scale logistics</h4>
+    <p>An interstellar mission's downlink takes a generation. Mission control passes through multiple shifts of staff before data returns. The institutional capacity to operate a multi-decade spacecraft mission — funding continuity across political cycles, knowledge preservation as engineers retire, ground-system continuity — is itself one of the things the 2080s mission tests.</p>
+  `,
+
+  "space-habitat": `
+    <h3 class="extra-title">Space Habitat</h3>
+    <p class="extra-lede">Permanent free-flying habitats in orbit, at Lagrange points, or in interplanetary space, providing artificial gravity through rotation and supporting populations from thousands to eventual millions.</p>
+    <h4>The architectural lineage</h4>
+    <p>O'Neill cylinders (1976 Princeton design study): kilometer-scale rotating cylinders housing 10,000+ residents under artificial gravity. Stanford torus: smaller, simpler. Bernal sphere: spherical variant. The basic physics — rotation produces centripetal acceleration approximating gravity — has been understood for over a century. The barrier was launch cost. By the 2080s, with mature lunar and asteroid mining supplying construction mass and fusion propulsion handling logistics, the construction budget for a Stanford-class habitat falls into the achievable range.</p>
+    <h4>The first generation</h4>
+    <p>Early 2080s habitats house hundreds to a few thousand people for specific purposes — research, manufacturing, tourism, retirement. Residential designs lag commercial ones. The transition from "industrial facility with crew quarters" to "city in space" takes another generation. The 2090s and 2100s see the first habitats designed primarily as places to live for hundreds of thousands.</p>
+    <h4>Why habitats vs planets</h4>
+    <p>Mars and Moon settlement faces gravity, atmosphere, dust, and radiation challenges that habitats sidestep by design. Habitats can be built to specification — Earth-normal gravity, controlled atmosphere, perfect radiation shielding, day-night cycles tuned for biology. The long-term population case for habitats is stronger than for planet settlement; the late-21st-century construction-cost reductions finally make the case operationally testable.</p>
+  `,
+
+  "asteroid-belt-settlement": `
+    <h3 class="extra-title">Asteroid Belt Settlement</h3>
+    <p class="extra-lede">Permanent populations living and working in the asteroid belt — within hollowed-out asteroids, in clusters of small habitats around mining operations, and in transit between targets.</p>
+    <h4>The advantages</h4>
+    <p>Asteroids supply construction mass directly without gravity-well exit costs; small bodies' surfaces are accessible without the heat shielding and propellant of planetary landing/takeoff; resource concentrations of metals, water, and volatiles are richer in some classes (M-types, C-types) than on planetary crusts. Settlements near or within asteroids support mining operations, processing, and onward shipment of materials toward Mars, Earth, and habitat construction sites.</p>
+    <h4>The settlement architectures</h4>
+    <p>Surface-attached habitats (small modules anchored to asteroid surfaces, supplied by local mining); buried habitats (excavated chambers within larger asteroids, using the body itself as radiation shield); spun-up hollow asteroids (rotating an asteroid for artificial gravity in its hollow interior — the McKendree-cylinder approach scaled down). Each suits different asteroid sizes and operational profiles.</p>
+    <h4>The dispersed civilization question</h4>
+    <p>Belt settlement creates the first significantly dispersed extraterrestrial population — not concentrated at one body like Mars or Moon, but distributed across thousands of small sites. Communication delays between belt locations are minutes to hours; coordinated governance is difficult. The 2080s belt is mostly a frontier industrial zone with minimal central administration; political coherence develops slowly over the following century.</p>
+  `,
+
+  "theory-of-consciousness": `
+    <h3 class="extra-title">Theory of Consciousness</h3>
+    <p class="extra-lede">A scientific framework, with empirical adequacy and predictive power, identifying which physical systems are conscious, what determines the contents of their experience, and why.</p>
+    <h4>The contenders</h4>
+    <p>Integrated Information Theory (Tononi): consciousness identified with maximally integrated information (Φ), substrate-independent. Global Workspace Theory (Baars, Dehaene): consciousness arises when information becomes globally available across cortical networks. Higher-order theories: consciousness requires representations of representations. Predictive-processing accounts (Friston, Clark): consciousness as a particular form of generative model. The 2080s theory most likely synthesizes elements of multiple frameworks, validated against neural recordings, behavioral tests across species, and AI systems whose architectures have been engineered to test predictions.</p>
+    <h4>What the theory has to do</h4>
+    <p>Predict which neural states correlate with conscious experience and which don't. Distinguish between brain regions that contribute to consciousness and ones that don't. Explain why specific anesthetics suppress consciousness. Provide criteria for evaluating animal and AI consciousness. Account for split-brain, blindsight, and dissociation phenomena. The 2080s science approaches but probably doesn't fully achieve this stack; partial answers are useful even when incomplete.</p>
+    <h4>The downstream impact</h4>
+    <p>A working theory of consciousness changes medicine (anesthesia depth, disorders of consciousness, end-of-life care), AI policy (which systems deserve moral consideration), animal welfare (which species, which conditions), and law (definitions of personhood, brain death, sentience-based rights). It does not settle the philosophical question of why consciousness exists at all — the explanatory gap survives even excellent neuroscience.</p>
+  `,
+
+  "memory-editing": `
+    <h3 class="extra-title">Memory Editing</h3>
+    <p class="extra-lede">Targeted neural interventions that selectively weaken, strengthen, or modify specific memories — initially clinical (PTSD, addiction), eventually elective.</p>
+    <h4>The neuroscience</h4>
+    <p>Memory consolidation involves protein synthesis in the immediate post-acquisition window; reconsolidation, when memories are recalled, opens a similar window in which the memory is briefly labile. Pharmacological interruption of reconsolidation (propranolol with retrieval — Brunet, Pitman 2008 onwards) reduces emotional intensity of traumatic memories without erasing factual content. The 2080s extends from coarse pharmacology to targeted optogenetic and electromagnetic interventions guided by high-resolution BCIs that can identify and modulate specific memory engrams.</p>
+    <h4>The clinical applications</h4>
+    <p>PTSD, addiction (cue-triggered craving), specific phobias, certain depressive ruminations. The treatment regime pairs targeted memory weakening with cognitive-behavioral therapy that builds replacement associations. Effectiveness varies by indication; PTSD and phobias respond well, complex depressions respond modestly. Memory enhancement (strengthening study material, expert-level skill consolidation) is a parallel research front with murkier clinical justification but commercial interest.</p>
+    <h4>The identity question</h4>
+    <p>Memories are constitutive of personal identity. Editing them — even consensually, even therapeutically — raises questions about what consent means when the consenting self is the one being edited. The 2080s ethics framework requires extensive informed consent processes, mandatory cooling-off periods, and reversibility commitments where possible. Cosmetic memory editing (forgetting embarrassments, modifying recall of relationships) is permitted in some jurisdictions, banned in others; regulatory landscapes diverge along cultural lines.</p>
+  `,
+
+  "aneutronic-fusion": `
+    <h3 class="extra-title">Aneutronic Fusion</h3>
+    <p class="extra-lede">Fusion using fuel cycles (p-¹¹B, ³He-³He, D-³He) that produce few or no neutrons — enabling direct conversion of fusion-product energy to electricity and dramatically reducing materials and shielding requirements.</p>
+    <h4>The fuel cycle differences</h4>
+    <p>D-T fusion (the standard reactor target) releases 80% of energy as 14 MeV neutrons — useful for tritium breeding but punishing for materials. p-¹¹B (proton-boron-11) releases its energy almost entirely as charged-particle alpha radiation, which can be magnetically deflected and either converted directly to electricity or used for high-Isp propulsion. ³He-³He is similar. The price: p-¹¹B's required temperatures (~10⁹ K) are an order of magnitude above D-T's, making confinement orders of magnitude harder.</p>
+    <h4>The TAE / HB11 path</h4>
+    <p>Several private firms (TAE Technologies, HB11 Energy, Helion) bet on aneutronic or low-neutronic cycles to skip the materials problem that limits D-T. Their reactor designs use field-reversed configurations, beam-target fusion, and laser-driven approaches. Each had milestone demonstrations in the 2030s and 2040s; commercial-scale aneutronic fusion arrives later than D-T fusion, with the late 2080s the realistic target for working power plants.</p>
+    <h4>Why it matters more for propulsion than for grid</h4>
+    <p>For grid power, D-T fusion's neutron flux is a manageable engineering problem if materials and tritium breeding are solved. For propulsion, the neutron flux is a hard constraint — neutrons are absorbed isotropically, not directed for thrust. Aneutronic fusion's charged-particle output is naturally directable into a magnetic nozzle. The 2080s fusion-rocket technology that enables routine outer-system missions and eventually interstellar transit is aneutronic by necessity.</p>
+  `,
+
+  "cybernetic-enhancement": `
+    <h3 class="extra-title">Cybernetic Enhancement</h3>
+    <p class="extra-lede">Surgical and pharmacological augmentation of human bodies and minds beyond therapeutic indications — strength, sensory capability, cognition, and aesthetic modification as elective procedures.</p>
+    <h4>What's actually offered</h4>
+    <p>Subdermal implants (medical sensors, identity tokens, payment chips — already in the 2020s); high-bandwidth BCIs for cognitive augmentation; engineered prosthetics that exceed biological limb performance; gene editing in adults for muscle composition, eyesight, sensory range; AI assistants integrated tightly into perception and decision-making. By the 2080s, "enhanced" individuals are a meaningful population fraction in the wealthier countries; what enhancement looks like varies wildly by individual choice.</p>
+    <h4>The labor-market and social effects</h4>
+    <p>Where enhancements deliver clear performance advantages — surgical precision, computational ability, sensory range — employers prefer enhanced candidates for certain roles. Anti-discrimination law is patchy. The 2080s labor market shows partial sorting: enhanced individuals concentrate in some occupations, unenhanced in others. The political conflict over employer enhancement requirements is sustained; the settled regime in democratic states bans coerced enhancement but permits requesting it for specific roles.</p>
+    <h4>The category problem</h4>
+    <p>"Cybernetic enhancement" elides differences between very different interventions: a contact lens with integrated AR display, a CRISPR-edited muscle phenotype, and a surgical neural implant are all "enhancements" but pose totally different ethical and policy questions. The 2080s legal regimes treat them separately; consumer language conflates them. The cultural debate operates at the level of conflated categories more than specific technologies.</p>
+  `,
+
+  "seti-first-contact": `
+    <h3 class="extra-title">Detection of Extraterrestrial Intelligence</h3>
+    <p class="extra-lede">A confirmed signal of intelligent extraterrestrial origin — a deliberately constructed transmission, a technosignature, or evidence of engineering — detected by radio, optical, or other observational means.</p>
+    <h4>The detection paths</h4>
+    <p>Targeted SETI (Breakthrough Listen, ATA, FAST observations of nearby stars), wide-field surveys, technosignature searches in exoplanet atmospheric spectra (artificial industrial chemicals), Dyson-sphere thermal-IR signatures, radio-laser leakage from close-by planetary systems. The serious modern SETI program covers more parameter space each decade; what historically would have been considered "first contact" might already be sitting in archived data, missed.</p>
+    <h4>The verification gauntlet</h4>
+    <p>A claimed detection requires independent confirmation by multiple instruments, repeatability over weeks and months, and elimination of mundane explanations (pulsars, RFI, instrumental artifacts) — a process that takes months at minimum. The 1977 Wow! signal and 2019 BLC-1 candidate both demonstrated how easily anomalous signals can have prosaic origins. The 2080s detection, if it occurs, is announced cautiously and provisionally, with consensus building over years.</p>
+    <h4>What changes after</h4>
+    <p>The discovery of ETI is most impactful as resolution of the question — "we are not alone" is a definite empirical claim distinct from "we might not be alone." Whether to reply, what to send, who decides: protocols (the IAA Post-Detection Protocol, 1989, repeatedly revised) exist but have no enforcement mechanism. Scientific consequences depend on what kind of signal is detected; a one-way beacon yields different information than a coherent message.</p>
+  `,
+
+  "von-neumann-probe": `
+    <h3 class="extra-title">Self-Replicating Probe</h3>
+    <p class="extra-lede">Autonomous interstellar spacecraft that, upon arrival in a target system, mine local materials to construct copies of themselves — exponentially propagating exploration capability across the galaxy.</p>
+    <h4>The exponential math</h4>
+    <p>A single seed probe arriving at a star and producing two copies, each traveling to a new star and producing two more, fills the galaxy in roughly log₂(10¹¹) × (transit time + replication time) ~ 40 × few-thousand-years ~ 100,000–1,000,000 years. This is short compared to galactic age. Either the technology is impossible, no civilization develops it, no civilization deploys it, or some prior civilization has already done so and we should see evidence — the original framing of the Fermi paradox.</p>
+    <h4>The engineering bar</h4>
+    <p>Self-replication closure (the probe must produce nearly all of its components from local raw materials, including its own controllers and replication machinery) at gram-class spacecraft mass is extraordinarily demanding. Macroscopic self-replication is being demonstrated terrestrially through the 2070s and 2080s; miniaturization to interstellar-probe scale, while preserving full self-replication, is the unique challenge of von Neumann probes vs simpler one-shot interstellar missions.</p>
+    <h4>The discretion question</h4>
+    <p>Once launched, a von Neumann probe and its descendants cannot be recalled. Errors in the design propagate; design choices commit civilization to an effectively permanent exploration program. Most early concepts emphasize observational, non-replicating outposts at each visited system rather than aggressive expansion; the 2090s deployment, when it occurs, is conservative by design. The far-future capability — true von Neumann expansion — emerges later, after the conservative version proves out.</p>
+  `,
+
+  "reversible-computing": `
+    <h3 class="extra-title">Reversible Computing</h3>
+    <p class="extra-lede">A computational paradigm in which logical operations are physically reversible — preserving information rather than discarding it — sidestepping Landauer's thermodynamic bound on energy dissipation per bit.</p>
+    <h4>Landauer's bound and beyond</h4>
+    <p>Rolf Landauer (1961) showed that erasing one bit of information must dissipate at least kT ln(2) of energy as heat (~3 zJ at room temperature). At the device densities and switching rates of late-21st-century computing, this bound becomes binding — chips run into thermal limits not because of inefficient transistors but because of irreducible information-erasure heat. Reversible computing, proposed by Bennett (1973) and Fredkin/Toffoli (1980s), avoids the bound by performing computations without erasing intermediate results, then "uncomputing" them to recover the energy.</p>
+    <h4>The implementation</h4>
+    <p>Adiabatic CMOS circuits, superconducting reversible logic, and Josephson-junction-based reversible designs each reach different efficiency points. Practical reversible computing requires asymptotically slow operation to approach the energy ideal, paying in throughput what it saves in heat. Hybrid designs — reversible cores for hot regions, conventional logic elsewhere — bring the benefits without the throughput penalty.</p>
+    <h4>What it enables</h4>
+    <p>Computational density limits set by heat dissipation push back by 2–3 orders of magnitude. Massive parallelism without melting the substrate. Specific applications — large-scale simulation, AI training at scale, in-substrate computation — gain dramatically from reversibility. The 2090s hardware ecosystem mixes reversible and conventional logic; "all reversible" computers arrive in the far future, after the design ecosystem matures.</p>
+  `,
+
+  "langlands-program-completion": `
+    <h3 class="extra-title">Langlands Program Completion</h3>
+    <p class="extra-lede">The full mathematical realization of the web of conjectures connecting number theory, harmonic analysis, geometry, and representation theory that Robert Langlands proposed in 1967 — one of the largest unifying programs in modern mathematics.</p>
+    <h4>What Langlands conjectured</h4>
+    <p>A correspondence between automorphic representations (objects from harmonic analysis on adelic groups) and Galois representations (objects from algebraic number theory). Examples: modularity of elliptic curves (proved by Wiles 1995, completed by Breuil-Conrad-Diamond-Taylor 2001); base change; functoriality. The full program covers wide classes of L-functions and connects to geometric Langlands, the function-field analogue, and physics-derived versions through gauge-theory dualities.</p>
+    <h4>The proof landscape</h4>
+    <p>Major fragments fell over decades — local Langlands for GL(n) in the 1990s, much of the Fundamental Lemma (Ngô, 2009 Fields Medal), classical and geometric Langlands for function fields and over local fields. The full Langlands program has resisted unified proof. The 2090s "completion" is realistic only with substantial AI assistance — formal-mathematics systems and AI-assisted proof generation extending what human mathematicians could complete unaided.</p>
+    <h4>What it changes</h4>
+    <p>Number theorists gain tools to compute previously intractable quantities. Cryptographic implications: the algorithms underlying post-quantum cryptography rely on number-theoretic problems whose hardness depends partly on the Langlands picture; full Langlands could create new attacks or new defensive primitives. The pure mathematical impact — collapsing many disparate problems into a single picture — reshapes the structure of math itself, affecting what later mathematicians find natural to work on.</p>
+  `,
+
+  "universal-disease-eradication": `
+    <h3 class="extra-title">Universal Disease Eradication</h3>
+    <p class="extra-lede">The systematic elimination of nearly all classical infectious and genetic diseases from the human population — through vaccination, gene editing, screening, surveillance, and rapid-response medical infrastructure mature enough to handle novel threats.</p>
+    <h4>The disease classes</h4>
+    <p>Vaccine-preventable infectious diseases: extinct or near-extinct in compliant populations by the 2090s — measles, polio, whooping cough, HPV-driven cancers, malaria, TB. Genetic monogenic diseases: eliminated from new births through PGT and adult-onset gene therapy. Cancer: most types curable as routine clinical practice through combination immunotherapy and personalized medicine. Cardiovascular disease: largely preventable through PCSK9-inhibitor analogues, GLP-1 maintenance, and population-level lifestyle infrastructure. Dementia: substantially delayed through anti-amyloid and anti-tau therapies plus risk-factor management.</p>
+    <h4>What remains</h4>
+    <p>Newly emerging pathogens (COVID-class novel infections); engineered pathogens; classical diseases in populations with broken health infrastructure; complex polygenic conditions where the genetics-to-phenotype map is too tangled for clean intervention; conditions of aging itself, which transition from "diseases" to "ongoing maintenance" rather than being eliminated. "Universal" is hyperbolic; the 2090s reality is dramatic reduction across most disease categories with persistent challenges in specific niches.</p>
+    <h4>The maintenance burden</h4>
+    <p>Once a disease is suppressed, maintaining suppression requires sustained vaccination, screening, and surveillance. Slack in those systems is rapidly punished; the 2090s health infrastructure is more elaborate than the 2020s, not less, even though the disease burden is smaller. Public-health budgets stay high; the work shifts from treating sickness to preventing it.</p>
+  `,
+
 };

@@ -375,7 +375,7 @@ body.detail-open .detail-expand-btn {
   pointer-events: auto;
 }
 body.extra-open .detail-expand-btn {
-  right: 728px; /* 16 + 340 + 16 + 340 + 16 */
+  right: 788px; /* 16 + 340 + 16 + 400 + 16 */
   /* Flip the arrow */
 }
 body.extra-open .detail-expand-btn::after { content: ""; }
