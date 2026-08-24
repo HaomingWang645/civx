@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""Build semantically aligned SVG figures for abstract future concepts.
+"""Build fallbacks and manifest entries for abstract future concepts.
 
-Wikipedia lead images often illustrate an adjacent topic, a book cover, or a
-historical precursor. These deliberately schematic figures avoid implying that
-speculative systems have already been photographed. They share a visual grammar
-and are credited in the UI as conceptual illustrations.
+Speculative milestones use AI-generated editorial PNGs when a reviewed asset is
+available. Purpose-built SVGs remain as deterministic fallbacks so rebuilding
+the manifest never leaves a technology without a figure.
 """
 
 from __future__ import annotations
@@ -16,6 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "images" / "concepts"
+GENERATED = ROOT / "images" / "generated"
 MANIFEST = ROOT / "_image_manifest.json"
 IMAGES_JS = ROOT / "images.js"
 
@@ -213,20 +213,31 @@ def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     manifest = json.loads(MANIFEST.read_text())
     for tech_id, (title, subtitle, kind) in TARGETS.items():
-        path = OUT / f"{tech_id}.svg"
-        path.write_text(build_svg(title, subtitle, kind))
+        fallback_path = OUT / f"{tech_id}.svg"
+        fallback_path.write_text(build_svg(title, subtitle, kind))
+        generated_path = GENERATED / f"{tech_id}.png"
+        has_generated_figure = generated_path.is_file()
+        selected_path = generated_path if has_generated_figure else fallback_path
         manifest[tech_id] = {
             "name": title.title(),
             "query": "",
             "article": "",
             "page": "",
             "image_url": "",
-            "image_path": str(path.relative_to(ROOT)),
+            "image_path": str(selected_path.relative_to(ROOT)),
             "extract": subtitle,
             "status": "ok",
             "score": 1.0,
-            "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-            "credit_label": "CIVX · conceptual illustration",
+            "reason": (
+                "Reviewed CIVX AI-generated editorial illustration for a speculative milestone."
+                if has_generated_figure
+                else "Purpose-built CIVX conceptual diagram fallback."
+            ),
+            "credit_label": (
+                "CIVX · AI-generated editorial illustration"
+                if has_generated_figure
+                else "CIVX · conceptual illustration"
+            ),
         }
     MANIFEST.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n")
 
@@ -246,7 +257,11 @@ def main() -> None:
         "window.TECH_IMAGES = " + json.dumps(entries, indent=2, ensure_ascii=False) + ";\n"
         "window.TECH_IMAGE_CREDITS = " + json.dumps(credits, indent=2, ensure_ascii=False) + ";\n"
     )
-    print(f"wrote {len(TARGETS)} conceptual SVGs; images.js now has {len(entries)} entries")
+    generated_count = sum((GENERATED / f"{tech_id}.png").is_file() for tech_id in TARGETS)
+    print(
+        f"wrote {len(TARGETS)} SVG fallbacks; selected {generated_count} generated PNGs; "
+        f"images.js now has {len(entries)} entries"
+    )
 
 
 if __name__ == "__main__":

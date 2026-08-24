@@ -4244,12 +4244,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/agi.svg",
+    "image_path": "images/generated/agi.png",
     "extract": "transfer · planning · uncertainty",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "brain-computer-interface": {
     "name": "Brain-Computer Interface",
@@ -4268,12 +4268,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/moon-base.svg",
+    "image_path": "images/generated/moon-base.png",
     "extract": "continuous occupancy · local resources · maintainable life support",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "mars-colony": {
     "name": "Self-Reliant Mars Settlement",
@@ -4281,12 +4281,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/mars-colony.svg",
+    "image_path": "images/generated/mars-colony.png",
     "extract": "critical-loop closure · local industry · institutional continuity",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "asteroid-mining": {
     "name": "Asteroid Mining",
@@ -4294,12 +4294,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/asteroid-mining.svg",
+    "image_path": "images/generated/asteroid-mining.png",
     "extract": "prospect · extract · process · deliver useful material",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "anti-aging": {
     "name": "Longevity Medicine",
@@ -4307,12 +4307,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/anti-aging.svg",
+    "image_path": "images/generated/anti-aging.png",
     "extract": "human evidence · healthspan · long-term safety",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "lab-grown-meat": {
     "name": "Cultivated Meat At Scale",
@@ -4320,12 +4320,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/lab-grown-meat.svg",
+    "image_path": "images/generated/lab-grown-meat.png",
     "extract": "food-grade cells · bioreactors · cost and lifecycle parity",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "synthetic-biology": {
     "name": "Synthetic Biology",
@@ -4366,12 +4366,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/quantum-applications.svg",
+    "image_path": "images/generated/quantum-applications.png",
     "extract": "logical qubits · error correction · verified useful workload",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "carbon-capture-scale": {
     "name": "Carbon Capture at Scale",
@@ -4401,12 +4401,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/space-elevator.svg",
+    "image_path": "images/generated/space-elevator.png",
     "extract": "high-specific-strength tether · climbers · orbital dynamics",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "post-scarcity": {
     "name": "Abundance Scenario",
@@ -4414,12 +4414,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/post-scarcity.svg",
+    "image_path": "images/generated/post-scarcity.png",
     "extract": "automation · energy · distribution",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "digital-immortality": {
     "name": "Mind Uploading",
@@ -4460,12 +4460,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/network-state.svg",
+    "image_path": "images/generated/network-state.png",
     "extract": "digital membership · territorial law · external recognition",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "ai-governance": {
     "name": "Auditable Public Administration",
@@ -4473,12 +4473,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/ai-governance.svg",
+    "image_path": "images/generated/ai-governance.png",
     "extract": "traceable authority · appeal · human accountability",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "transhumanism": {
     "name": "Clinical Human Augmentation",
@@ -4486,12 +4486,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/transhumanism.svg",
+    "image_path": "images/generated/transhumanism.png",
     "extract": "restoration and enhancement · consent · reversibility",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "longtermism": {
     "name": "Long-Term Governance",
@@ -4499,12 +4499,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/longtermism.svg",
+    "image_path": "images/generated/longtermism.png",
     "extract": "future generations · institutional continuity · uncertainty",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "generative-art": {
     "name": "Ai-Native Co-Creation",
@@ -4512,12 +4512,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/generative-art.svg",
+    "image_path": "images/generated/generative-art.png",
     "extract": "human direction · generative models · provenance",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "metaverse": {
     "name": "Metaverse",
@@ -4536,12 +4536,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/decentralized-autonomous-org.svg",
+    "image_path": "images/generated/decentralized-autonomous-org.png",
     "extract": "on-chain coordination · legal wrapper · accountable governance",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "hyperloop": {
     "name": "Hyperloop",
@@ -4583,12 +4583,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/sentientism.svg",
+    "image_path": "images/generated/sentientism.png",
     "extract": "moral consideration by capacity for experience",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "dna-data-storage": {
     "name": "dna-data-storage",
@@ -4608,12 +4608,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/cancer-cure.svg",
+    "image_path": "images/generated/cancer-cure.png",
     "extract": "prevention · early detection · multimodal treatment · access",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "ai-judge": {
     "name": "Ai-Assisted Courts",
@@ -4621,12 +4621,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/ai-judge.svg",
+    "image_path": "images/generated/ai-judge.png",
     "extract": "sources · audit · appeal · human authority",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "space-based-solar": {
     "name": "Space-Based Solar Power",
@@ -4645,12 +4645,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/photonic-computing.svg",
+    "image_path": "images/generated/photonic-computing.png",
     "extract": "optical interconnects · computation · electro-optic integration",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "metamaterials": {
     "name": "Metamaterials",
@@ -4669,12 +4669,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/programmable-matter.svg",
+    "image_path": "images/generated/programmable-matter.png",
     "extract": "reconfigure shape · stiffness · function",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "interstellar-probe": {
     "name": "Interstellar Probe",
@@ -4693,12 +4693,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/terraforming-mars.svg",
+    "image_path": "images/generated/terraforming-mars.png",
     "extract": "enclosed pressure · managed climate · engineered ecology",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "formal-mathematics": {
     "name": "formal-mathematics",
@@ -4729,12 +4729,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/dark-sector-physics.svg",
+    "image_path": "images/generated/dark-sector-physics.png",
     "extract": "gravitational evidence · laboratory tests · cosmological constraints",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "quantum-gravity": {
     "name": "Quantum Gravity",
@@ -4753,12 +4753,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/p-vs-np-resolved.svg",
+    "image_path": "images/generated/p-vs-np-resolved.png",
     "extract": "formal proof · complexity classes · practical consequences",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "space-habitat": {
     "name": "Space Habitat",
@@ -4777,12 +4777,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/artificial-photosynthesis.svg",
+    "image_path": "images/generated/artificial-photosynthesis.png",
     "extract": "sunlight + CO₂ + H₂O → fuel",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "genetic-disease-eradication": {
     "name": "genetic-disease-eradication",
@@ -4814,12 +4814,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/superintelligence.svg",
+    "image_path": "images/generated/superintelligence.png",
     "extract": "capability · control · governance",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "seti-first-contact": {
     "name": "Detection of Extraterrestrial Intelligence",
@@ -4849,12 +4849,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/matrioshka-brain.svg",
+    "image_path": "images/generated/matrioshka-brain.png",
     "extract": "nested computing shells · outward heat flow",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "stellar-engineering": {
     "name": "Stellar Engineering",
@@ -4895,12 +4895,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/speciation.svg",
+    "image_path": "images/generated/speciation.png",
     "extract": "divergent bodies · reproductive isolation · shared rights",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "substrate-independent-humanity": {
     "name": "Substrate-Independent Humanity",
@@ -4908,12 +4908,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/substrate-independent-humanity.svg",
+    "image_path": "images/generated/substrate-independent-humanity.png",
     "extract": "biological continuity · emulation · synthetic embodiment",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "antimatter-production": {
     "name": "Antimatter Production",
@@ -4943,12 +4943,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/kardashev-type-ii.svg",
+    "image_path": "images/generated/kardashev-type-ii.png",
     "extract": "stellar-scale power · distributed collectors · waste heat",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "existential-risk-hedge": {
     "name": "Existential-Risk Hedge",
@@ -4956,12 +4956,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/existential-risk-hedge.svg",
+    "image_path": "images/generated/existential-risk-hedge.png",
     "extract": "redundancy · prevention · recovery · distributed resilience",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "universal-sentient-rights": {
     "name": "Sentient Rights",
@@ -4969,12 +4969,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/universal-sentient-rights.svg",
+    "image_path": "images/generated/universal-sentient-rights.png",
     "extract": "capacity · legal standing · enforceable protections",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "pleistocene-restored": {
     "name": "Pleistocene Restored",
@@ -4993,12 +4993,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/lingua-galactica.svg",
+    "image_path": "images/generated/lingua-galactica.png",
     "extract": "translation · delay · error correction",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "post-human-aesthetics": {
     "name": "Post-Human Aesthetics",
@@ -5006,12 +5006,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/post-human-aesthetics.svg",
+    "image_path": "images/generated/post-human-aesthetics.png",
     "extract": "new bodies · senses · media · authorship",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "engineered-planetary-biosphere": {
     "name": "Engineered Biosphere",
@@ -5019,12 +5019,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/engineered-planetary-biosphere.svg",
+    "image_path": "images/generated/engineered-planetary-biosphere.png",
     "extract": "closed cycles · monitoring · adaptive control",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "interstellar-treaty": {
     "name": "Interstellar Treaty",
@@ -5032,12 +5032,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/interstellar-treaty.svg",
+    "image_path": "images/generated/interstellar-treaty.png",
     "extract": "autonomous systems · delayed consent · durable protocol",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "time-dilation-cultures": {
     "name": "Time-Dilation Cultures",
@@ -5045,12 +5045,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/time-dilation-cultures.svg",
+    "image_path": "images/generated/time-dilation-cultures.png",
     "extract": "divergent subjective rates · synchronization · consent",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "end-time-philosophy": {
     "name": "End-Time Philosophy",
@@ -5058,12 +5058,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/end-time-philosophy.svg",
+    "image_path": "images/generated/end-time-philosophy.png",
     "extract": "finite resources · deep time · value under cosmic limits",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "galactic-ecology": {
     "name": "Interstellar Ecology",
@@ -5071,12 +5071,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/galactic-ecology.svg",
+    "image_path": "images/generated/galactic-ecology.png",
     "extract": "biospheres · exchange · containment",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "artificial-womb": {
     "name": "Artificial Womb",
@@ -5095,12 +5095,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/closed-cycle-cities.svg",
+    "image_path": "images/generated/closed-cycle-cities.png",
     "extract": "water · materials · energy loops · equitable access",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "personalized-medicine": {
     "name": "Personalized Medicine",
@@ -5130,12 +5130,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/ai-coordination-treaty.svg",
+    "image_path": "images/generated/ai-coordination-treaty.png",
     "extract": "compute monitoring · safety standards · verification",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "direct-ai-democracy": {
     "name": "Ai-Supported Participation",
@@ -5143,12 +5143,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/direct-ai-democracy.svg",
+    "image_path": "images/generated/direct-ai-democracy.png",
     "extract": "translation · deliberation · plural channels · audit",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "lunar-industrial-base": {
     "name": "Lunar Industrial Base",
@@ -5167,12 +5167,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/asteroid-belt-settlement.svg",
+    "image_path": "images/generated/asteroid-belt-settlement.png",
     "extract": "distributed habitats · local material · long-delay autonomy",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "memory-editing": {
     "name": "memory-editing",
@@ -5192,12 +5192,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/cybernetic-enhancement.svg",
+    "image_path": "images/generated/cybernetic-enhancement.png",
     "extract": "integrated prostheses · feedback · consent · maintenance",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "orbital-ring": {
     "name": "Orbital Ring",
@@ -5205,12 +5205,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/orbital-ring.svg",
+    "image_path": "images/generated/orbital-ring.png",
     "extract": "fast orbital cable · stationary tethers · active stabilization",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "universal-disease-eradication": {
     "name": "Global Disease Suppression",
@@ -5218,12 +5218,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/universal-disease-eradication.svg",
+    "image_path": "images/generated/universal-disease-eradication.png",
     "extract": "surveillance · countermeasures · delivery · durable institutions",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "insulin-therapy": {
     "name": "insulin-therapy",
@@ -5375,12 +5375,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/cyber-kinetic-warfare.svg",
+    "image_path": "images/generated/cyber-kinetic-warfare.png",
     "extract": "sensors · autonomous systems · cyber effects · human control",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "directed-energy-weapons": {
     "name": "directed-energy-weapons",
@@ -5400,12 +5400,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/drone-swarms.svg",
+    "image_path": "images/generated/drone-swarms.png",
     "extract": "distributed sensing · coordination · graceful degradation",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "anti-satellite-warfare": {
     "name": "Non-Debris Counterspace",
@@ -5413,12 +5413,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/anti-satellite-warfare.svg",
+    "image_path": "images/generated/anti-satellite-warfare.png",
     "extract": "reversible effects · attribution · debris avoidance",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "engineered-pathogen-defense": {
     "name": "Rapid Biological Countermeasures",
@@ -5426,12 +5426,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/engineered-pathogen-defense.svg",
+    "image_path": "images/generated/engineered-pathogen-defense.png",
     "extract": "detect · characterize · design · manufacture · distribute",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "strategic-memetic-warfare": {
     "name": "Strategic Memetic Warfare",
@@ -5439,12 +5439,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/strategic-memetic-warfare.svg",
+    "image_path": "images/generated/strategic-memetic-warfare.png",
     "extract": "narrative targeting · network propagation · attribution",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "self-replicating-combat-drones": {
     "name": "Self-Replicating Combat Drones",
@@ -5452,12 +5452,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/self-replicating-combat-drones.svg",
+    "image_path": "images/generated/self-replicating-combat-drones.png",
     "extract": "resource capture · reproduction · containment failure",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "planetary-defense-system": {
     "name": "planetary-defense-system",
@@ -5477,12 +5477,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/relativistic-kinetic-weapon.svg",
+    "image_path": "images/generated/relativistic-kinetic-weapon.png",
     "extract": "0.1c example · interstellar scale",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "antimatter-weapon": {
     "name": "Antimatter Weapon",
@@ -5490,12 +5490,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/antimatter-weapon.svg",
+    "image_path": "images/generated/antimatter-weapon.png",
     "extract": "energy accounting · containment · catastrophic release",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "black-hole-engineering": {
     "name": "black-hole-engineering",
@@ -5515,12 +5515,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/galactic-communication-network.svg",
+    "image_path": "images/generated/galactic-communication-network.png",
     "extract": "laser links · store-and-forward · years of latency",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "pre-warp-interstellar-trade": {
     "name": "Local Interstellar Trade",
@@ -5528,12 +5528,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/pre-warp-interstellar-trade.svg",
+    "image_path": "images/generated/pre-warp-interstellar-trade.png",
     "extract": "high-value exchange · long transit · autonomous contracts",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "pan-galactic-coordination-ai": {
     "name": "pan-galactic-coordination-ai",
@@ -5553,12 +5553,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/femto-engineering.svg",
+    "image_path": "images/generated/femto-engineering.png",
     "extract": "isomers · nuclei · controlled transitions",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "vacuum-energy-extraction": {
     "name": "vacuum-energy-extraction",
@@ -5578,12 +5578,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/strange-quark-matter.svg",
+    "image_path": "images/generated/strange-quark-matter.png",
     "extract": "quark phases under extreme pressure",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "dark-energy-engineering": {
     "name": "Dark-Energy Hypothesis",
@@ -5591,12 +5591,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/dark-energy-engineering.svg",
+    "image_path": "images/generated/dark-energy-engineering.png",
     "extract": "cosmological observation · no demonstrated local control",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "abstract-expressionism": {
     "name": "abstract-expressionism",
@@ -5676,12 +5676,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/synthetic-performers.svg",
+    "image_path": "images/generated/synthetic-performers.png",
     "extract": "generated voice · motion · accountable identity",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "procedural-infinite-worlds": {
     "name": "Ai-Responsive Procedural Worlds",
@@ -5689,12 +5689,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/procedural-infinite-worlds.svg",
+    "image_path": "images/generated/procedural-infinite-worlds.png",
     "extract": "persistent state · authorial control · player agency",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "mind-linked-collective-art": {
     "name": "Mind-Linked Collective Art",
@@ -5702,12 +5702,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/mind-linked-collective-art.svg",
+    "image_path": "images/generated/mind-linked-collective-art.png",
     "extract": "consenting neural channels · shared timing · authorship",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "engineered-sensory-modalities": {
     "name": "Engineered Senses",
@@ -5715,12 +5715,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/engineered-sensory-modalities.svg",
+    "image_path": "images/generated/engineered-sensory-modalities.png",
     "extract": "new sensors mapped into neural codes",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "ai-native-art-forms": {
     "name": "Ai-Native Art Forms",
@@ -5728,12 +5728,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/ai-native-art-forms.svg",
+    "image_path": "images/generated/ai-native-art-forms.png",
     "extract": "adaptive media · model agency · human curation",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "stellar-scale-spectacle": {
     "name": "Stellar-Scale Spectacle",
@@ -5741,12 +5741,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/stellar-scale-spectacle.svg",
+    "image_path": "images/generated/stellar-scale-spectacle.png",
     "extract": "astronomical energy · deliberate signal · deep-time audience",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "pan-galactic-festival": {
     "name": "Asynchronous Cultural Exchange",
@@ -5754,12 +5754,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/pan-galactic-festival.svg",
+    "image_path": "images/generated/pan-galactic-festival.png",
     "extract": "art and ritual across light-year delays",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "bio-art": {
     "name": "bio-art",
@@ -5827,12 +5827,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/degrowth-economics.svg",
+    "image_path": "images/generated/degrowth-economics.png",
     "extract": "well-being within material and ecological limits",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "solarpunk": {
     "name": "solarpunk",
@@ -5864,12 +5864,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/substrate-pluralism.svg",
+    "image_path": "images/generated/substrate-pluralism.png",
     "extract": "biological · synthetic · hybrid persons",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "galactic-citizenship": {
     "name": "Interstellar Civic Framework",
@@ -5877,12 +5877,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/galactic-citizenship.svg",
+    "image_path": "images/generated/galactic-citizenship.png",
     "extract": "rights across autonomous star systems",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "speciation-ethics": {
     "name": "Speciation Ethics",
@@ -5890,12 +5890,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/speciation-ethics.svg",
+    "image_path": "images/generated/speciation-ethics.png",
     "extract": "divergence · consent · shared rights",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "bauhaus": {
     "name": "bauhaus",
@@ -5999,12 +5999,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/inertial-confinement-fusion.svg",
+    "image_path": "images/generated/inertial-confinement-fusion.png",
     "extract": "high-gain targets · repetition rate · wall-plug balance",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "magnetic-confinement-fusion": {
     "name": "magnetic-confinement-fusion",
@@ -6132,12 +6132,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/fusion-materials.svg",
+    "image_path": "images/generated/fusion-materials.png",
     "extract": "neutrons · heat · transmutation · maintenance",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "aneutronic-fusion": {
     "name": "aneutronic-fusion",
@@ -6181,12 +6181,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/beamed-sail-propulsion.svg",
+    "image_path": "images/generated/beamed-sail-propulsion.png",
     "extract": "remote laser array · light sail · precise beam control",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "nuclear-pulse-propulsion": {
     "name": "Nuclear-Pulse Spacecraft",
@@ -6194,12 +6194,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/nuclear-pulse-propulsion.svg",
+    "image_path": "images/generated/nuclear-pulse-propulsion.png",
     "extract": "pusher plate · shock absorbers · pulse units",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "bussard-ramjet": {
     "name": "bussard-ramjet",
@@ -6219,12 +6219,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/antimatter-propulsion.svg",
+    "image_path": "images/generated/antimatter-propulsion.png",
     "extract": "production · containment · controlled annihilation · thrust",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "reversible-computing": {
     "name": "Reversible Computing",
@@ -6232,12 +6232,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/reversible-computing.svg",
+    "image_path": "images/generated/reversible-computing.png",
     "extract": "preserve information · uncompute intermediates",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "civilizational-entropy-management": {
     "name": "Civilizational Entropy Management",
@@ -6245,12 +6245,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/civilizational-entropy-management.svg",
+    "image_path": "images/generated/civilizational-entropy-management.png",
     "extract": "useful work · waste heat · long-term efficiency",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "univalent-foundations": {
     "name": "univalent-foundations",
@@ -6270,12 +6270,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/langlands-program-completion.svg",
+    "image_path": "images/generated/langlands-program-completion.png",
     "extract": "number theory ↔ representation theory",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "beyond-zfc-foundations": {
     "name": "Beyond-Zfc Foundations",
@@ -6283,12 +6283,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/beyond-zfc-foundations.svg",
+    "image_path": "images/generated/beyond-zfc-foundations.png",
     "extract": "alternative axioms · translation · explicit assumptions",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "continuum-hypothesis-resolution": {
     "name": "Post-Zfc Consensus",
@@ -6296,12 +6296,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/continuum-hypothesis-resolution.svg",
+    "image_path": "images/generated/continuum-hypothesis-resolution.png",
     "extract": "independence · added axioms · plural foundations",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "hypercomputation": {
     "name": "Physical Hypercomputation",
@@ -6309,12 +6309,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/hypercomputation.svg",
+    "image_path": "images/generated/hypercomputation.png",
     "extract": "idealized spacetime · infinite precision · falsifiable limits",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "trans-computable-mathematics": {
     "name": "trans-computable-mathematics",
@@ -6346,12 +6346,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/knowledge-closure.svg",
+    "image_path": "images/generated/knowledge-closure.png",
     "extract": "hypothesis · experiment · model update · bounded scope",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "subjective-time-compression": {
     "name": "Subjective Time Compression",
@@ -6359,12 +6359,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/subjective-time-compression.svg",
+    "image_path": "images/generated/subjective-time-compression.png",
     "extract": "accelerated cognition · synchronization · psychological continuity",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "phalanx": {
     "name": "phalanx",
@@ -6492,12 +6492,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/layered-air-missile-defense.svg",
+    "image_path": "images/generated/layered-air-missile-defense.png",
     "extract": "sensors · interceptors · command network",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "ai-decision-loop-compression": {
     "name": "ai-decision-loop-compression",
@@ -7237,12 +7237,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/theory-of-consciousness.svg",
+    "image_path": "images/generated/theory-of-consciousness.png",
     "extract": "competing models · discriminating tests",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "asteroid-capture": {
     "name": "asteroid-capture",
@@ -7274,12 +7274,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/anti-senescence-cellular-substrate.svg",
+    "image_path": "images/generated/anti-senescence-cellular-substrate.png",
     "extract": "integration · repair · failure containment",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "brain-brain-communication": {
     "name": "Neural Person-To-Person Signaling",
@@ -7287,12 +7287,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/brain-brain-communication.svg",
+    "image_path": "images/generated/brain-brain-communication.png",
     "extract": "encoded intent · measured bandwidth · consent",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "codex": {
     "name": "codex",
@@ -7384,12 +7384,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/cryogenic-hibernation.svg",
+    "image_path": "images/generated/cryogenic-hibernation.png",
     "extract": "cooling · perfusion · controlled rewarming",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "kugelblitz-drive": {
     "name": "Kugelblitz Drive",
@@ -7397,12 +7397,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/kugelblitz-drive.svg",
+    "image_path": "images/generated/kugelblitz-drive.png",
     "extract": "manufactured micro black hole · radiation · thrust",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "cosmic-string-ftl": {
     "name": "Cosmic-String Chronology",
@@ -7410,12 +7410,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/cosmic-string-ftl.svg",
+    "image_path": "images/generated/cosmic-string-ftl.png",
     "extract": "idealized strings · closed timelike curves",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "electric-generator": {
     "name": "electric-generator",
@@ -7795,12 +7795,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/mars-landing.svg",
+    "image_path": "images/generated/mars-landing.png",
     "extract": "interplanetary transit · entry and descent · safe return",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "mars-habitat": {
     "name": "Mars Surface Habitat",
@@ -7808,12 +7808,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/mars-habitat.svg",
+    "image_path": "images/generated/mars-habitat.png",
     "extract": "radiation shielding · ISRU · long-duration habitation",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "counter-stealth-radar": {
     "name": "counter-stealth-radar",
@@ -7929,12 +7929,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/pulsar-navigation.svg",
+    "image_path": "images/generated/pulsar-navigation.png",
     "extract": "X-ray pulsars · timing · position estimate",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "rock-art-petroglyphs": {
     "name": "rock-art-petroglyphs",
@@ -8374,12 +8374,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/long-duration-energy-storage.svg",
+    "image_path": "images/generated/long-duration-energy-storage.png",
     "extract": "hours to days · full-system cost · grid resilience",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "advanced-fission-systems": {
     "name": "Advanced Fission Systems",
@@ -8387,12 +8387,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/advanced-fission-systems.svg",
+    "image_path": "images/generated/advanced-fission-systems.png",
     "extract": "passive safety · repeatable construction · safeguards",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "green-hydrogen-electrofuels": {
     "name": "Green Hydrogen + Electrofuels",
@@ -8400,12 +8400,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/green-hydrogen-electrofuels.svg",
+    "image_path": "images/generated/green-hydrogen-electrofuels.png",
     "extract": "clean power → molecules for hard-to-electrify uses",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "point-source-carbon-capture": {
     "name": "Industrial Carbon Capture",
@@ -8413,12 +8413,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/point-source-carbon-capture.svg",
+    "image_path": "images/generated/point-source-carbon-capture.png",
     "extract": "concentrated source · transport · durable storage",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "enhanced-weathering": {
     "name": "Enhanced Weathering",
@@ -8426,12 +8426,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/enhanced-weathering.svg",
+    "image_path": "images/generated/enhanced-weathering.png",
     "extract": "mineral reaction · lifecycle accounting · monitoring",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "ocean-carbon-removal": {
     "name": "Ocean Carbon Removal",
@@ -8439,12 +8439,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/ocean-carbon-removal.svg",
+    "image_path": "images/generated/ocean-carbon-removal.png",
     "extract": "chemistry · ecology · verification",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "climate-adaptation-infrastructure": {
     "name": "Climate-Adaptation Infrastructure",
@@ -8452,12 +8452,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/climate-adaptation-infrastructure.svg",
+    "image_path": "images/generated/climate-adaptation-infrastructure.png",
     "extract": "heat · flood · fire · drought resilience",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "advanced-water-reuse": {
     "name": "Advanced Water Reuse",
@@ -8465,12 +8465,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/advanced-water-reuse.svg",
+    "image_path": "images/generated/advanced-water-reuse.png",
     "extract": "treatment · desalination · aquifer recharge",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "autonomous-laboratories": {
     "name": "Autonomous Laboratories",
@@ -8478,12 +8478,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/autonomous-laboratories.svg",
+    "image_path": "images/generated/autonomous-laboratories.png",
     "extract": "hypothesis → experiment → evidence → update",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "precision-fermentation-agriculture": {
     "name": "Precision Bioproduction",
@@ -8491,12 +8491,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/precision-fermentation-agriculture.svg",
+    "image_path": "images/generated/precision-fermentation-agriculture.png",
     "extract": "fermentation · edited crops · field evidence",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "xenotransplantation-organ-preservation": {
     "name": "Organ Supply Platform",
@@ -8504,12 +8504,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/xenotransplantation-organ-preservation.svg",
+    "image_path": "images/generated/xenotransplantation-organ-preservation.png",
     "extract": "preservation · perfusion · xenotransplantation",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "pandemic-surveillance-platform": {
     "name": "Pandemic Early Warning",
@@ -8517,12 +8517,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/pandemic-surveillance-platform.svg",
+    "image_path": "images/generated/pandemic-surveillance-platform.png",
     "extract": "genomics · wastewater · confirmatory response",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "orbital-servicing-refueling": {
     "name": "Orbital Servicing",
@@ -8530,12 +8530,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/orbital-servicing-refueling.svg",
+    "image_path": "images/generated/orbital-servicing-refueling.png",
     "extract": "inspect · repair · refuel · remove debris",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "lunar-isru-logistics": {
     "name": "Lunar Isru + Logistics",
@@ -8543,12 +8543,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/lunar-isru-logistics.svg",
+    "image_path": "images/generated/lunar-isru-logistics.png",
     "extract": "water · oxygen · shielding · propellant transfer",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "nuclear-space-propulsion": {
     "name": "Nuclear Space Propulsion",
@@ -8556,12 +8556,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/nuclear-space-propulsion.svg",
+    "image_path": "images/generated/nuclear-space-propulsion.png",
     "extract": "thermal thrust · electric efficiency · heat rejection",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "integrated-space-networks": {
     "name": "Integrated Space Networks",
@@ -8569,12 +8569,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/integrated-space-networks.svg",
+    "image_path": "images/generated/integrated-space-networks.png",
     "extract": "terrestrial · orbital · resilient routing",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "post-cmos-integration": {
     "name": "Post-Cmos Integration",
@@ -8582,12 +8582,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/post-cmos-integration.svg",
+    "image_path": "images/generated/post-cmos-integration.png",
     "extract": "chiplets · 3D stacking · optical interconnects",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "autonomous-built-environment": {
     "name": "Autonomous Construction + Agriculture",
@@ -8595,12 +8595,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/autonomous-built-environment.svg",
+    "image_path": "images/generated/autonomous-built-environment.png",
     "extract": "outdoor robotics · safety · repairability",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "solar-gravitational-lens-observatory": {
     "name": "Solar Gravitational Lens",
@@ -8608,12 +8608,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/solar-gravitational-lens-observatory.svg",
+    "image_path": "images/generated/solar-gravitational-lens-observatory.png",
     "extract": "550+ AU · Einstein ring · reconstruction",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "beamed-interstellar-probe": {
     "name": "Beamed Interstellar Probe",
@@ -8621,12 +8621,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/beamed-interstellar-probe.svg",
+    "image_path": "images/generated/beamed-interstellar-probe.png",
     "extract": "remote energy · light sail · deep-space link",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "stellar-material-extraction": {
     "name": "Star Lifting + Stellar Propulsion",
@@ -8634,12 +8634,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/stellar-material-extraction.svg",
+    "image_path": "images/generated/stellar-material-extraction.png",
     "extract": "mass flow · momentum · deep-time control",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "interstellar-shielding-deceleration": {
     "name": "Interstellar Shielding + Braking",
@@ -8647,12 +8647,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/interstellar-shielding-deceleration.svg",
+    "image_path": "images/generated/interstellar-shielding-deceleration.png",
     "extract": "dust defense · magnetic sail · arrival",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "deep-time-archives": {
     "name": "Deep-Time Archives",
@@ -8660,12 +8660,12 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/deep-time-archives.svg",
+    "image_path": "images/generated/deep-time-archives.png",
     "extract": "redundancy · primers · repair · provenance",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   },
   "heat-limited-computing": {
     "name": "Heat-Limited Computing",
@@ -8673,11 +8673,11 @@
     "article": "",
     "page": "",
     "image_url": "",
-    "image_path": "images/concepts/heat-limited-computing.svg",
+    "image_path": "images/generated/heat-limited-computing.png",
     "extract": "reversible logic · cryogenics · radiators",
     "status": "ok",
     "score": 1.0,
-    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
-    "credit_label": "CIVX · conceptual illustration"
+    "reason": "Reviewed CIVX AI-generated editorial illustration for a speculative milestone.",
+    "credit_label": "CIVX · AI-generated editorial illustration"
   }
 }
