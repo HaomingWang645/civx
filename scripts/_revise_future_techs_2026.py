@@ -123,7 +123,7 @@ REVISIONS = {
         "name": "Detection of Extraterrestrial Technology",
         "year": "2090",
         "prereqs": ["telescope", "radio-wireless", "large-language-model"],
-        "desc": "A independently confirmed observation best explained by extraterrestrial technology: a structured radio or optical signal, an artificial atmospheric pollutant, anomalous waste heat, or another technosignature that survives instrumental and natural explanations. Detection could occur at any time and does not require an interstellar probe. Confirmation would require repeated observations, independent instruments, transparent data, and careful separation of detection from communication or physical contact. The node should therefore have an unknown horizon rather than a scheduled 2090 date.",
+        "desc": "An independently confirmed observation best explained by extraterrestrial technology: a structured radio or optical signal, an artificial atmospheric pollutant, anomalous waste heat, or another technosignature that survives instrumental and natural explanations. Detection could occur at any time and does not require an interstellar probe. Confirmation would require repeated observations, independent instruments, transparent data, and careful separation of detection from communication or physical contact. The node should therefore have an unknown horizon rather than a scheduled 2090 date.",
     },
     "universal-disease-eradication": {
         "name": "Global Disease Suppression Infrastructure",
@@ -778,14 +778,18 @@ def add_forecast_metadata(src: str) -> str:
         block = match.group(0)
         if 'era: "future"' not in block and 'era: "far-future"' not in block:
             return block
-        # Metadata is intentionally stored on one line. Remove that complete
-        # line before reinserting it so rerunning this script cannot duplicate
-        # forecastType/confidence properties.
-        block = re.sub(r'\n    horizon: "[^"]+"[^\n]*', "", block)
+        # Metadata is intentionally stored on one line. Match only the three
+        # metadata properties: the old broad ``[^\n]*`` suffix also consumed a
+        # prereqs array when both happened to share the line after insertion.
+        block = re.sub(
+            r'\n    horizon: "[^"]+", forecastType: "[^"]+", confidence: "[^"]+",?',
+            "",
+            block,
+        )
         block = re.sub(r'\n    (?:forecastType|confidence): "[^"]+",?', "", block)
         horizon, forecast_type, confidence = forecast_values(block)
         return re.sub(
-            r'(\n    year: "[^"]+",)',
+            r'(\n    year: "[^"]+", prereqs: \[[^\]]*\],)',
             r'\1\n    horizon: ' + q(horizon) + ', forecastType: ' + q(forecast_type) + ', confidence: ' + q(confidence) + ',',
             block,
             count=1,
@@ -844,6 +848,14 @@ def update_data() -> None:
         src = src.replace(marker, block + marker)
     src = add_forecast_metadata(src)
     src = normalize_description_quotes(src)
+    malformed = [
+        match.group("id")
+        for match in TECH_PATTERN.finditer(src)
+        if ('era: "future"' in match.group(0) or 'era: "far-future"' in match.group(0))
+        and not re.search(r'\n    year: "[^"]+", prereqs: \[[^\]]*\],', match.group(0))
+    ]
+    if malformed:
+        raise RuntimeError("future techs missing prereqs arrays: " + ", ".join(malformed))
     DATA.write_text(src)
 
 

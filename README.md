@@ -66,6 +66,7 @@ Python helpers used to build and refine the dataset (re-runnable, not needed at 
 - [_build_og_image.py](_build_og_image.py) — regenerate [images/og.png](images/og.png), the 1200×630 social-share card.
 - [`scripts/_revise_future_techs_2026.py`](scripts/_revise_future_techs_2026.py) — apply the evidence-based future-section revision and keep all linked metadata synchronized.
 - [`scripts/_build_future_concept_diagrams.py`](scripts/_build_future_concept_diagrams.py) — regenerate the purpose-built conceptual SVGs used where a stock photograph would be misleading.
+- [`scripts/_smoke_test_runtime.mjs`](scripts/_smoke_test_runtime.mjs) — execute the data and renderer against a minimal DOM and fail if startup, sidebar, or node rendering breaks.
 
 ## SEO
 

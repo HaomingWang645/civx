@@ -7,6 +7,16 @@
 (() => {
 const { ERAS, CATEGORIES, TECHS } = window.TECH_TREE;
 
+// Keep a single malformed record from taking down the entire application.
+// Data-generation checks should prevent this, but an explicit fallback leaves
+// the tree usable and makes the problem discoverable in the browser console.
+for (const tech of TECHS) {
+  if (!Array.isArray(tech.prereqs)) {
+    console.error(`Tech ${tech.id} is missing a prereqs array; using an empty list.`);
+    tech.prereqs = [];
+  }
+}
+
 const techById = Object.fromEntries(TECHS.map(t => [t.id, t]));
 const childrenById = Object.fromEntries(TECHS.map(t => [t.id, []]));
 for (const t of TECHS) for (const p of t.prereqs) if (childrenById[p]) childrenById[p].push(t.id);
