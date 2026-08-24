@@ -358,47 +358,47 @@ window.TECH_IMAGES = {
   "humanoid-robot": "images/humanoid-robot.jpg",
   "agi": "images/concepts/agi.svg",
   "brain-computer-interface": "images/brain-computer-interface.jpg",
-  "moon-base": "images/moon-base.jpg",
-  "mars-colony": "images/mars-colony.jpg",
-  "asteroid-mining": "images/asteroid-mining.png",
-  "anti-aging": "images/anti-aging.jpg",
-  "lab-grown-meat": "images/lab-grown-meat.jpg",
+  "moon-base": "images/concepts/moon-base.svg",
+  "mars-colony": "images/concepts/mars-colony.svg",
+  "asteroid-mining": "images/concepts/asteroid-mining.svg",
+  "anti-aging": "images/concepts/anti-aging.svg",
+  "lab-grown-meat": "images/concepts/lab-grown-meat.svg",
   "synthetic-biology": "images/synthetic-biology.jpg",
   "room-temp-superconductor": "images/room-temp-superconductor.jpg",
   "nanotechnology": "images/nanotechnology.png",
-  "quantum-applications": "images/quantum-applications.png",
+  "quantum-applications": "images/concepts/quantum-applications.svg",
   "carbon-capture-scale": "images/carbon-capture-scale.jpg",
   "fusion-rocket": "images/fusion-rocket.png",
-  "space-elevator": "images/space-elevator.jpg",
+  "space-elevator": "images/concepts/space-elevator.svg",
   "post-scarcity": "images/concepts/post-scarcity.svg",
   "digital-immortality": "images/digital-immortality.png",
   "universal-basic-income": "images/universal-basic-income.jpg",
   "liquid-democracy": "images/liquid-democracy.png",
-  "network-state": "images/network-state.jpg",
-  "ai-governance": "images/ai-governance.png",
-  "transhumanism": "images/transhumanism.jpg",
-  "longtermism": "images/longtermism.png",
-  "generative-art": "images/generative-art.jpg",
+  "network-state": "images/concepts/network-state.svg",
+  "ai-governance": "images/concepts/ai-governance.svg",
+  "transhumanism": "images/concepts/transhumanism.svg",
+  "longtermism": "images/concepts/longtermism.svg",
+  "generative-art": "images/concepts/generative-art.svg",
   "metaverse": "images/metaverse.jpg",
-  "decentralized-autonomous-org": "images/decentralized-autonomous-org.jpg",
+  "decentralized-autonomous-org": "images/concepts/decentralized-autonomous-org.svg",
   "hyperloop": "images/hyperloop.png",
   "neuromorphic-chip": "images/neuromorphic-chip.jpg",
   "lab-grown-organs": "images/lab-grown-organs.png",
-  "sentientism": "images/sentientism.jpg",
+  "sentientism": "images/concepts/sentientism.svg",
   "dna-data-storage": "images/dna-data-storage.png",
-  "cancer-cure": "images/cancer-cure.png",
+  "cancer-cure": "images/concepts/cancer-cure.svg",
   "ai-judge": "images/concepts/ai-judge.svg",
   "space-based-solar": "images/space-based-solar.jpg",
-  "photonic-computing": "images/photonic-computing.jpg",
+  "photonic-computing": "images/concepts/photonic-computing.svg",
   "metamaterials": "images/metamaterials.jpg",
   "programmable-matter": "images/concepts/programmable-matter.svg",
   "interstellar-probe": "images/interstellar-probe.png",
-  "terraforming-mars": "images/terraforming-mars.png",
+  "terraforming-mars": "images/concepts/terraforming-mars.svg",
   "formal-mathematics": "images/formal-mathematics.png",
   "gravitational-wave-spectroscopy": "images/gravitational-wave-spectroscopy.png",
-  "dark-sector-physics": "images/dark-sector-physics.png",
+  "dark-sector-physics": "images/concepts/dark-sector-physics.svg",
   "quantum-gravity": "images/quantum-gravity.png",
-  "p-vs-np-resolved": "images/p-vs-np-resolved.png",
+  "p-vs-np-resolved": "images/concepts/p-vs-np-resolved.svg",
   "space-habitat": "images/space-habitat.jpg",
   "artificial-photosynthesis": "images/concepts/artificial-photosynthesis.svg",
   "genetic-disease-eradication": "images/genetic-disease-eradication.png",
@@ -410,33 +410,33 @@ window.TECH_IMAGES = {
   "stellar-engineering": "images/stellar-engineering.jpg",
   "generation-ship-colony": "images/generation-ship-colony.png",
   "galactic-civilization": "images/galactic-civilization.png",
-  "speciation": "images/speciation.jpg",
-  "substrate-independent-humanity": "images/substrate-independent-humanity.png",
+  "speciation": "images/concepts/speciation.svg",
+  "substrate-independent-humanity": "images/concepts/substrate-independent-humanity.svg",
   "antimatter-production": "images/antimatter-production.png",
   "warp-drive": "images/warp-drive.png",
-  "kardashev-type-ii": "images/kardashev-type-ii.png",
-  "existential-risk-hedge": "images/existential-risk-hedge.jpg",
-  "universal-sentient-rights": "images/universal-sentient-rights.jpg",
+  "kardashev-type-ii": "images/concepts/kardashev-type-ii.svg",
+  "existential-risk-hedge": "images/concepts/existential-risk-hedge.svg",
+  "universal-sentient-rights": "images/concepts/universal-sentient-rights.svg",
   "pleistocene-restored": "images/pleistocene-restored.jpg",
   "lingua-galactica": "images/concepts/lingua-galactica.svg",
-  "post-human-aesthetics": "images/post-human-aesthetics.jpg",
+  "post-human-aesthetics": "images/concepts/post-human-aesthetics.svg",
   "engineered-planetary-biosphere": "images/concepts/engineered-planetary-biosphere.svg",
-  "interstellar-treaty": "images/interstellar-treaty.png",
-  "time-dilation-cultures": "images/time-dilation-cultures.jpg",
-  "end-time-philosophy": "images/end-time-philosophy.png",
+  "interstellar-treaty": "images/concepts/interstellar-treaty.svg",
+  "time-dilation-cultures": "images/concepts/time-dilation-cultures.svg",
+  "end-time-philosophy": "images/concepts/end-time-philosophy.svg",
   "galactic-ecology": "images/concepts/galactic-ecology.svg",
   "artificial-womb": "images/artificial-womb.jpg",
-  "closed-cycle-cities": "images/closed-cycle-cities.jpg",
+  "closed-cycle-cities": "images/concepts/closed-cycle-cities.svg",
   "personalized-medicine": "images/personalized-medicine.png",
   "printable-organs-on-demand": "images/printable-organs-on-demand.jpg",
-  "ai-coordination-treaty": "images/ai-coordination-treaty.jpg",
-  "direct-ai-democracy": "images/direct-ai-democracy.png",
+  "ai-coordination-treaty": "images/concepts/ai-coordination-treaty.svg",
+  "direct-ai-democracy": "images/concepts/direct-ai-democracy.svg",
   "lunar-industrial-base": "images/lunar-industrial-base.jpg",
-  "asteroid-belt-settlement": "images/asteroid-belt-settlement.jpg",
+  "asteroid-belt-settlement": "images/concepts/asteroid-belt-settlement.svg",
   "memory-editing": "images/memory-editing.jpg",
-  "cybernetic-enhancement": "images/cybernetic-enhancement.jpg",
-  "orbital-ring": "images/orbital-ring.png",
-  "universal-disease-eradication": "images/universal-disease-eradication.jpg",
+  "cybernetic-enhancement": "images/concepts/cybernetic-enhancement.svg",
+  "orbital-ring": "images/concepts/orbital-ring.svg",
+  "universal-disease-eradication": "images/concepts/universal-disease-eradication.svg",
   "insulin-therapy": "images/insulin-therapy.jpg",
   "continental-drift": "images/continental-drift.png",
   "radio-broadcasting": "images/radio-broadcasting.jpg",
@@ -449,24 +449,24 @@ window.TECH_IMAGES = {
   "keynesian-economics": "images/keynesian-economics.jpg",
   "cryptanalysis-bombe": "images/cryptanalysis-bombe.jpg",
   "strategic-bombing": "images/strategic-bombing.jpg",
-  "cyber-kinetic-warfare": "images/cyber-kinetic-warfare.jpg",
+  "cyber-kinetic-warfare": "images/concepts/cyber-kinetic-warfare.svg",
   "directed-energy-weapons": "images/directed-energy-weapons.jpg",
-  "drone-swarms": "images/drone-swarms.jpg",
-  "anti-satellite-warfare": "images/anti-satellite-warfare.jpg",
-  "engineered-pathogen-defense": "images/engineered-pathogen-defense.jpg",
-  "strategic-memetic-warfare": "images/strategic-memetic-warfare.jpg",
-  "self-replicating-combat-drones": "images/self-replicating-combat-drones.jpg",
+  "drone-swarms": "images/concepts/drone-swarms.svg",
+  "anti-satellite-warfare": "images/concepts/anti-satellite-warfare.svg",
+  "engineered-pathogen-defense": "images/concepts/engineered-pathogen-defense.svg",
+  "strategic-memetic-warfare": "images/concepts/strategic-memetic-warfare.svg",
+  "self-replicating-combat-drones": "images/concepts/self-replicating-combat-drones.svg",
   "planetary-defense-system": "images/planetary-defense-system.jpg",
   "relativistic-kinetic-weapon": "images/concepts/relativistic-kinetic-weapon.svg",
-  "antimatter-weapon": "images/antimatter-weapon.png",
+  "antimatter-weapon": "images/concepts/antimatter-weapon.svg",
   "black-hole-engineering": "images/black-hole-engineering.png",
-  "galactic-communication-network": "images/galactic-communication-network.png",
-  "pre-warp-interstellar-trade": "images/pre-warp-interstellar-trade.png",
+  "galactic-communication-network": "images/concepts/galactic-communication-network.svg",
+  "pre-warp-interstellar-trade": "images/concepts/pre-warp-interstellar-trade.svg",
   "pan-galactic-coordination-ai": "images/pan-galactic-coordination-ai.png",
   "femto-engineering": "images/concepts/femto-engineering.svg",
   "vacuum-energy-extraction": "images/vacuum-energy-extraction.png",
   "strange-quark-matter": "images/concepts/strange-quark-matter.svg",
-  "dark-energy-engineering": "images/dark-energy-engineering.png",
+  "dark-energy-engineering": "images/concepts/dark-energy-engineering.svg",
   "abstract-expressionism": "images/abstract-expressionism.jpg",
   "lp-vinyl-record": "images/lp-vinyl-record.jpg",
   "color-television": "images/color-television.jpg",
@@ -474,11 +474,11 @@ window.TECH_IMAGES = {
   "cgi-cinema": "images/cgi-cinema.jpg",
   "anime-globalization": "images/anime-globalization.jpg",
   "synthetic-performers": "images/concepts/synthetic-performers.svg",
-  "procedural-infinite-worlds": "images/procedural-infinite-worlds.jpg",
-  "mind-linked-collective-art": "images/mind-linked-collective-art.jpg",
+  "procedural-infinite-worlds": "images/concepts/procedural-infinite-worlds.svg",
+  "mind-linked-collective-art": "images/concepts/mind-linked-collective-art.svg",
   "engineered-sensory-modalities": "images/concepts/engineered-sensory-modalities.svg",
-  "ai-native-art-forms": "images/ai-native-art-forms.png",
-  "stellar-scale-spectacle": "images/stellar-scale-spectacle.jpg",
+  "ai-native-art-forms": "images/concepts/ai-native-art-forms.svg",
+  "stellar-scale-spectacle": "images/concepts/stellar-scale-spectacle.svg",
   "pan-galactic-festival": "images/concepts/pan-galactic-festival.svg",
   "bio-art": "images/bio-art.jpg",
   "frankfurt-school": "images/frankfurt-school.png",
@@ -488,7 +488,7 @@ window.TECH_IMAGES = {
   "degrowth-economics": "images/concepts/degrowth-economics.svg",
   "solarpunk": "images/solarpunk.jpg",
   "constructed-religions": "images/constructed-religions.jpg",
-  "substrate-pluralism": "images/substrate-pluralism.png",
+  "substrate-pluralism": "images/concepts/substrate-pluralism.svg",
   "galactic-citizenship": "images/concepts/galactic-citizenship.svg",
   "speciation-ethics": "images/concepts/speciation-ethics.svg",
   "bauhaus": "images/bauhaus.jpg",
@@ -499,7 +499,7 @@ window.TECH_IMAGES = {
   "high-explosives": "images/high-explosives.jpg",
   "modern-quick-firing-artillery": "images/modern-quick-firing-artillery.jpg",
   "dreadnought-battleship": "images/dreadnought-battleship.jpg",
-  "inertial-confinement-fusion": "images/inertial-confinement-fusion.jpg",
+  "inertial-confinement-fusion": "images/concepts/inertial-confinement-fusion.svg",
   "magnetic-confinement-fusion": "images/magnetic-confinement-fusion.png",
   "tritium-breeding": "images/tritium-breeding.jpg",
   "cyclotron": "images/cyclotron.jpg",
@@ -514,21 +514,21 @@ window.TECH_IMAGES = {
   "aneutronic-fusion": "images/aneutronic-fusion.png",
   "optical-atomic-clock": "images/optical-atomic-clock.png",
   "quantum-sensing": "images/quantum-sensing.png",
-  "beamed-sail-propulsion": "images/beamed-sail-propulsion.jpg",
+  "beamed-sail-propulsion": "images/concepts/beamed-sail-propulsion.svg",
   "nuclear-pulse-propulsion": "images/concepts/nuclear-pulse-propulsion.svg",
   "bussard-ramjet": "images/bussard-ramjet.jpg",
-  "antimatter-propulsion": "images/antimatter-propulsion.png",
+  "antimatter-propulsion": "images/concepts/antimatter-propulsion.svg",
   "reversible-computing": "images/concepts/reversible-computing.svg",
-  "civilizational-entropy-management": "images/civilizational-entropy-management.png",
+  "civilizational-entropy-management": "images/concepts/civilizational-entropy-management.svg",
   "univalent-foundations": "images/univalent-foundations.png",
   "langlands-program-completion": "images/concepts/langlands-program-completion.svg",
-  "beyond-zfc-foundations": "images/beyond-zfc-foundations.png",
+  "beyond-zfc-foundations": "images/concepts/beyond-zfc-foundations.svg",
   "continuum-hypothesis-resolution": "images/concepts/continuum-hypothesis-resolution.svg",
-  "hypercomputation": "images/hypercomputation.png",
+  "hypercomputation": "images/concepts/hypercomputation.svg",
   "trans-computable-mathematics": "images/trans-computable-mathematics.png",
   "whole-brain-emulation": "images/whole-brain-emulation.png",
-  "knowledge-closure": "images/knowledge-closure.jpg",
-  "subjective-time-compression": "images/subjective-time-compression.jpg",
+  "knowledge-closure": "images/concepts/knowledge-closure.svg",
+  "subjective-time-compression": "images/concepts/subjective-time-compression.svg",
   "phalanx": "images/phalanx.jpg",
   "roman-legion": "images/roman-legion.png",
   "castle-siege-doctrine": "images/castle-siege-doctrine.jpg",
@@ -604,8 +604,8 @@ window.TECH_IMAGES = {
   "theory-of-consciousness": "images/concepts/theory-of-consciousness.svg",
   "asteroid-capture": "images/asteroid-capture.jpg",
   "bose-einstein-engineering": "images/bose-einstein-engineering.png",
-  "anti-senescence-cellular-substrate": "images/anti-senescence-cellular-substrate.png",
-  "brain-brain-communication": "images/brain-brain-communication.jpg",
+  "anti-senescence-cellular-substrate": "images/concepts/anti-senescence-cellular-substrate.svg",
+  "brain-brain-communication": "images/concepts/brain-brain-communication.svg",
   "codex": "images/codex.jpg",
   "crank-connecting-rod": "images/crank-connecting-rod.jpg",
   "sewing-machine": "images/sewing-machine.jpg",
@@ -614,7 +614,7 @@ window.TECH_IMAGES = {
   "plate-tectonics": "images/plate-tectonics.png",
   "von-neumann-probe": "images/von-neumann-probe.png",
   "cryogenic-hibernation": "images/concepts/cryogenic-hibernation.svg",
-  "kugelblitz-drive": "images/kugelblitz-drive.jpg",
+  "kugelblitz-drive": "images/concepts/kugelblitz-drive.svg",
   "cosmic-string-ftl": "images/concepts/cosmic-string-ftl.svg",
   "electric-generator": "images/electric-generator.jpg",
   "stethoscope": "images/stethoscope.png",
@@ -647,8 +647,8 @@ window.TECH_IMAGES = {
   "fluid-dynamics": "images/fluid-dynamics.png",
   "aerodynamics": "images/aerodynamics.jpg",
   "statics-strength": "images/statics-strength.png",
-  "mars-landing": "images/mars-landing.jpg",
-  "mars-habitat": "images/mars-habitat.jpg",
+  "mars-landing": "images/concepts/mars-landing.svg",
+  "mars-habitat": "images/concepts/mars-habitat.svg",
   "counter-stealth-radar": "images/counter-stealth-radar.jpg",
   "adaptive-cycle-engine": "images/adaptive-cycle-engine.jpg",
   "collaborative-combat-aircraft": "images/collaborative-combat-aircraft.jpg",
@@ -2150,24 +2150,24 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface"
   },
   "moon-base": {
-    "article": "Moonbase",
-    "url": "https://en.wikipedia.org/wiki/Moonbase"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "mars-colony": {
-    "article": "Colonization of Mars",
-    "url": "https://en.wikipedia.org/wiki/Colonization_of_Mars"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "asteroid-mining": {
-    "article": "Asteroid mining",
-    "url": "https://en.wikipedia.org/wiki/Asteroid_mining"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "anti-aging": {
-    "article": "Life extension",
-    "url": "https://en.wikipedia.org/wiki/Life_extension"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "lab-grown-meat": {
-    "article": "Cultured meat",
-    "url": "https://en.wikipedia.org/wiki/Cultured_meat"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "synthetic-biology": {
     "article": "Synthetic biology",
@@ -2182,8 +2182,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Molecular_nanotechnology"
   },
   "quantum-applications": {
-    "article": "Quantum computing",
-    "url": "https://en.wikipedia.org/wiki/Quantum_computing"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "carbon-capture-scale": {
     "article": "Direct air capture",
@@ -2194,8 +2194,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Fusion_rocket"
   },
   "space-elevator": {
-    "article": "Space elevator",
-    "url": "https://en.wikipedia.org/wiki/Space_elevator"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "post-scarcity": {
     "label": "CIVX · conceptual illustration",
@@ -2214,32 +2214,32 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Liquid_democracy"
   },
   "network-state": {
-    "article": "Próspera",
-    "url": "https://en.wikipedia.org/wiki/Pr%C3%B3spera"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "ai-governance": {
-    "article": "Government by algorithm",
-    "url": "https://en.wikipedia.org/wiki/Government_by_algorithm"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "transhumanism": {
-    "article": "Transhumanism",
-    "url": "https://en.wikipedia.org/wiki/Transhumanism"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "longtermism": {
-    "article": "Longtermism",
-    "url": "https://en.wikipedia.org/wiki/Longtermism"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "generative-art": {
-    "article": "Generative art",
-    "url": "https://en.wikipedia.org/wiki/Generative_art"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "metaverse": {
     "article": "Metaverse",
     "url": "https://en.wikipedia.org/wiki/Metaverse"
   },
   "decentralized-autonomous-org": {
-    "article": "The DAO",
-    "url": "https://en.wikipedia.org/wiki/The_DAO"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "hyperloop": {
     "article": "Hyperloop",
@@ -2254,16 +2254,16 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Tissue_engineering"
   },
   "sentientism": {
-    "article": "Animal rights",
-    "url": "https://en.wikipedia.org/wiki/Animal_rights"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "dna-data-storage": {
     "article": "Oligonucleotide synthesis",
     "url": "https://en.wikipedia.org/wiki/Oligonucleotide_synthesis"
   },
   "cancer-cure": {
-    "article": "Cancer immunotherapy",
-    "url": "https://en.wikipedia.org/wiki/Cancer_immunotherapy"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "ai-judge": {
     "label": "CIVX · conceptual illustration",
@@ -2274,8 +2274,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Space-based_solar_power"
   },
   "photonic-computing": {
-    "article": "Photonics",
-    "url": "https://en.wikipedia.org/wiki/Photonics"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "metamaterials": {
     "article": "Metamaterial",
@@ -2290,8 +2290,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Interstellar_probe"
   },
   "terraforming-mars": {
-    "article": "Terraforming of Mars",
-    "url": "https://en.wikipedia.org/wiki/Terraforming_of_Mars"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "formal-mathematics": {
     "article": "Rocq",
@@ -2302,16 +2302,16 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Gravitational-wave_astronomy"
   },
   "dark-sector-physics": {
-    "article": "Dark matter",
-    "url": "https://en.wikipedia.org/wiki/Dark_matter"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "quantum-gravity": {
     "article": "Quantum gravity",
     "url": "https://en.wikipedia.org/wiki/Quantum_gravity"
   },
   "p-vs-np-resolved": {
-    "article": "P versus NP problem",
-    "url": "https://en.wikipedia.org/wiki/P_versus_NP_problem"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "space-habitat": {
     "article": "O'Neill cylinder",
@@ -2358,12 +2358,12 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Kardashev_scale"
   },
   "speciation": {
-    "article": "Adaptive radiation",
-    "url": "https://en.wikipedia.org/wiki/Adaptive_radiation"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "substrate-independent-humanity": {
-    "article": "Mind uploading",
-    "url": "https://en.wikipedia.org/wiki/Mind_uploading"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "antimatter-production": {
     "article": "Antimatter",
@@ -2374,16 +2374,16 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Alcubierre_drive"
   },
   "kardashev-type-ii": {
-    "article": "Kardashev scale",
-    "url": "https://en.wikipedia.org/wiki/Kardashev_scale"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "existential-risk-hedge": {
-    "article": "Global catastrophic risk",
-    "url": "https://en.wikipedia.org/wiki/Global_catastrophic_risk"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "universal-sentient-rights": {
-    "article": "Universal Declaration of Human Rights",
-    "url": "https://en.wikipedia.org/wiki/Universal_Declaration_of_Human_Rights"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "pleistocene-restored": {
     "article": "Pleistocene Park",
@@ -2394,24 +2394,24 @@ window.TECH_IMAGE_CREDITS = {
     "url": ""
   },
   "post-human-aesthetics": {
-    "article": "Posthumanism",
-    "url": "https://en.wikipedia.org/wiki/Posthumanism"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "engineered-planetary-biosphere": {
     "label": "CIVX · conceptual illustration",
     "url": ""
   },
   "interstellar-treaty": {
-    "article": "Outer Space Treaty",
-    "url": "https://en.wikipedia.org/wiki/Outer_Space_Treaty"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "time-dilation-cultures": {
-    "article": "The Age of Em",
-    "url": "https://en.wikipedia.org/wiki/The_Age_of_Em"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "end-time-philosophy": {
-    "article": "Heat death of the universe",
-    "url": "https://en.wikipedia.org/wiki/Heat_death_of_the_universe"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "galactic-ecology": {
     "label": "CIVX · conceptual illustration",
@@ -2422,8 +2422,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Artificial_womb"
   },
   "closed-cycle-cities": {
-    "article": "Sustainable city",
-    "url": "https://en.wikipedia.org/wiki/Sustainable_city"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "personalized-medicine": {
     "article": "Personalized medicine",
@@ -2434,36 +2434,36 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/3D_bioprinting"
   },
   "ai-coordination-treaty": {
-    "article": "AI Safety Summit 2023",
-    "url": "https://en.wikipedia.org/wiki/AI_Safety_Summit_2023"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "direct-ai-democracy": {
-    "article": "E-democracy",
-    "url": "https://en.wikipedia.org/wiki/E-democracy"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "lunar-industrial-base": {
     "article": "Colonization of the Moon",
     "url": "https://en.wikipedia.org/wiki/Colonization_of_the_Moon"
   },
   "asteroid-belt-settlement": {
-    "article": "Colonization of the asteroid belt",
-    "url": "https://en.wikipedia.org/wiki/Colonization_of_the_asteroid_belt"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "memory-editing": {
     "article": "Optogenetics",
     "url": "https://en.wikipedia.org/wiki/Optogenetics"
   },
   "cybernetic-enhancement": {
-    "article": "Cyborg",
-    "url": "https://en.wikipedia.org/wiki/Cyborg"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "orbital-ring": {
-    "article": "Orbital ring",
-    "url": "https://en.wikipedia.org/wiki/Orbital_ring"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "universal-disease-eradication": {
-    "article": "Eradication of infectious diseases",
-    "url": "https://en.wikipedia.org/wiki/Eradication_of_infectious_diseases"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "insulin-therapy": {
     "article": "Insulin (medication)",
@@ -2514,32 +2514,32 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Boeing_B-29_Superfortress"
   },
   "cyber-kinetic-warfare": {
-    "article": "Cyberwarfare",
-    "url": "https://en.wikipedia.org/wiki/Cyberwarfare"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "directed-energy-weapons": {
     "article": "Laser weapon",
     "url": "https://en.wikipedia.org/wiki/Laser_weapon"
   },
   "drone-swarms": {
-    "article": "Swarm robotics",
-    "url": "https://en.wikipedia.org/wiki/Swarm_robotics"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "anti-satellite-warfare": {
-    "article": "Anti-satellite weapon",
-    "url": "https://en.wikipedia.org/wiki/Anti-satellite_weapon"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "engineered-pathogen-defense": {
-    "article": "Biosafety level",
-    "url": "https://en.wikipedia.org/wiki/Biosafety_level"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "strategic-memetic-warfare": {
-    "article": "Disinformation",
-    "url": "https://en.wikipedia.org/wiki/Disinformation"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "self-replicating-combat-drones": {
-    "article": "Lethal autonomous weapon",
-    "url": "https://en.wikipedia.org/wiki/Lethal_autonomous_weapon"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "planetary-defense-system": {
     "article": "Double Asteroid Redirection Test",
@@ -2550,20 +2550,20 @@ window.TECH_IMAGE_CREDITS = {
     "url": ""
   },
   "antimatter-weapon": {
-    "article": "Antimatter weapon",
-    "url": "https://en.wikipedia.org/wiki/Antimatter_weapon"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "black-hole-engineering": {
     "article": "Penrose process",
     "url": "https://en.wikipedia.org/wiki/Penrose_process"
   },
   "galactic-communication-network": {
-    "article": "NASA Deep Space Network",
-    "url": "https://en.wikipedia.org/wiki/NASA_Deep_Space_Network"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "pre-warp-interstellar-trade": {
-    "article": "Generation ship",
-    "url": "https://en.wikipedia.org/wiki/Generation_ship"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "pan-galactic-coordination-ai": {
     "article": "Multi-agent system",
@@ -2582,8 +2582,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": ""
   },
   "dark-energy-engineering": {
-    "article": "Alcubierre drive",
-    "url": "https://en.wikipedia.org/wiki/Alcubierre_drive"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "abstract-expressionism": {
     "article": "No. 5, 1948",
@@ -2614,24 +2614,24 @@ window.TECH_IMAGE_CREDITS = {
     "url": ""
   },
   "procedural-infinite-worlds": {
-    "article": "No Man's Sky",
-    "url": "https://en.wikipedia.org/wiki/No_Man's_Sky"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "mind-linked-collective-art": {
-    "article": "Brain–computer interface",
-    "url": "https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "engineered-sensory-modalities": {
     "label": "CIVX · conceptual illustration",
     "url": ""
   },
   "ai-native-art-forms": {
-    "article": "AI art",
-    "url": "https://en.wikipedia.org/wiki/AI_art"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "stellar-scale-spectacle": {
-    "article": "Stellar engine",
-    "url": "https://en.wikipedia.org/wiki/Stellar_engine"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "pan-galactic-festival": {
     "label": "CIVX · conceptual illustration",
@@ -2670,8 +2670,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Religion_of_Humanity"
   },
   "substrate-pluralism": {
-    "article": "Mind uploading",
-    "url": "https://en.wikipedia.org/wiki/Mind_uploading"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "galactic-citizenship": {
     "label": "CIVX · conceptual illustration",
@@ -2714,8 +2714,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/HMS_Dreadnought_(1906)"
   },
   "inertial-confinement-fusion": {
-    "article": "National Ignition Facility",
-    "url": "https://en.wikipedia.org/wiki/National_Ignition_Facility"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "magnetic-confinement-fusion": {
     "article": "Tokamak",
@@ -2774,8 +2774,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Nitrogen-vacancy_center"
   },
   "beamed-sail-propulsion": {
-    "article": "Breakthrough Starshot",
-    "url": "https://en.wikipedia.org/wiki/Breakthrough_Starshot"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "nuclear-pulse-propulsion": {
     "label": "CIVX · conceptual illustration",
@@ -2786,16 +2786,16 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Bussard_ramjet"
   },
   "antimatter-propulsion": {
-    "article": "Antimatter propulsion spacecraft",
-    "url": "https://en.wikipedia.org/wiki/Antimatter_propulsion_spacecraft"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "reversible-computing": {
     "label": "CIVX · conceptual illustration",
     "url": ""
   },
   "civilizational-entropy-management": {
-    "article": "Heat death of the universe",
-    "url": "https://en.wikipedia.org/wiki/Heat_death_of_the_universe"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "univalent-foundations": {
     "article": "Homotopy type theory",
@@ -2806,16 +2806,16 @@ window.TECH_IMAGE_CREDITS = {
     "url": ""
   },
   "beyond-zfc-foundations": {
-    "article": "Set theory",
-    "url": "https://en.wikipedia.org/wiki/Set_theory"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "continuum-hypothesis-resolution": {
     "label": "CIVX · conceptual illustration",
     "url": ""
   },
   "hypercomputation": {
-    "article": "Oracle machine",
-    "url": "https://en.wikipedia.org/wiki/Oracle_machine"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "trans-computable-mathematics": {
     "article": "Busy beaver",
@@ -2826,12 +2826,12 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Connectome"
   },
   "knowledge-closure": {
-    "article": "Theory of everything",
-    "url": "https://en.wikipedia.org/wiki/Theory_of_everything"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "subjective-time-compression": {
-    "article": "The Age of Em",
-    "url": "https://en.wikipedia.org/wiki/The_Age_of_Em"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "phalanx": {
     "article": "Phalanx",
@@ -3134,12 +3134,12 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Bose%E2%80%93Einstein_condensate"
   },
   "anti-senescence-cellular-substrate": {
-    "article": "Cellular senescence",
-    "url": "https://en.wikipedia.org/wiki/Cellular_senescence"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "brain-brain-communication": {
-    "article": "Brain–computer interface",
-    "url": "https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "codex": {
     "article": "Codex",
@@ -3174,8 +3174,8 @@ window.TECH_IMAGE_CREDITS = {
     "url": ""
   },
   "kugelblitz-drive": {
-    "article": "Black hole",
-    "url": "https://en.wikipedia.org/wiki/Black_hole"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "cosmic-string-ftl": {
     "label": "CIVX · conceptual illustration",
@@ -3306,12 +3306,12 @@ window.TECH_IMAGE_CREDITS = {
     "url": "https://en.wikipedia.org/wiki/Two_New_Sciences"
   },
   "mars-landing": {
-    "article": "Human mission to Mars",
-    "url": "https://en.wikipedia.org/wiki/Human_mission_to_Mars"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "mars-habitat": {
-    "article": "Mars Base Camp",
-    "url": "https://en.wikipedia.org/wiki/Mars_Base_Camp"
+    "label": "CIVX · conceptual illustration",
+    "url": ""
   },
   "counter-stealth-radar": {
     "article": "Nebo-M",

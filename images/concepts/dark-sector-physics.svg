@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Dark-Sector Physics</title>
+  <desc id="desc">Conceptual diagram: gravitational evidence · laboratory tests · cosmological constraints</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081522"/><stop offset="1" stop-color="#211334"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#b9dfff" stroke-opacity=".055"/></pattern>
+  </defs>
+  <rect width="640" height="360" rx="18" fill="url(#bg)"/>
+  <rect width="640" height="360" rx="18" fill="url(#grid)"/>
+  <g transform="translate(0 8)"><g stroke="#79dcff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="245" cy="160" r="78"/><circle cx="375" cy="160" r="78"/><path d="M310 82v156"/></g><g stroke="#d7a6ff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M210 145h70M340 145h70M225 178h40M355 178h40"/><circle cx="310" cy="160" r="18"/></g></g>
+  <rect x="34" y="292" width="572" height="1" fill="#79dcff" opacity=".28"/>
+  <text x="34" y="321" fill="#f1f8ff" font-family="system-ui, sans-serif" font-size="19" font-weight="650" letter-spacing="1.5">DARK-SECTOR PHYSICS</text>
+  <text x="34" y="343" fill="#a7bdd0" font-family="system-ui, sans-serif" font-size="12" letter-spacing=".55">gravitational evidence · laboratory tests · cosmological constraints</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Cybernetic Enhancement</title>
+  <desc id="desc">Conceptual diagram: integrated prostheses · feedback · consent · maintenance</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081522"/><stop offset="1" stop-color="#211334"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#b9dfff" stroke-opacity=".055"/></pattern>
+  </defs>
+  <rect width="640" height="360" rx="18" fill="url(#bg)"/>
+  <rect width="640" height="360" rx="18" fill="url(#grid)"/>
+  <g transform="translate(0 8)"><g stroke="#79dcff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M280 220q-55-45-25-110 22-48 80-35 55 12 55 75 0 45-40 65"/><circle cx="315" cy="135" r="20"/><path d="M335 135h72M255 125h-70M255 160h-88"/></g><g stroke="#d7a6ff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M405 115q40 20 0 40M425 100q65 35 0 70M185 105l-20 20 20 20M170 150l-24 18 24 18"/></g></g>
+  <rect x="34" y="292" width="572" height="1" fill="#79dcff" opacity=".28"/>
+  <text x="34" y="321" fill="#f1f8ff" font-family="system-ui, sans-serif" font-size="19" font-weight="650" letter-spacing="1.5">CYBERNETIC ENHANCEMENT</text>
+  <text x="34" y="343" fill="#a7bdd0" font-family="system-ui, sans-serif" font-size="12" letter-spacing=".55">integrated prostheses · feedback · consent · maintenance</text>
+</svg>
