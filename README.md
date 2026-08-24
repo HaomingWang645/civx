@@ -1,6 +1,6 @@
 # Human History Tech Tree
 
-An interactive visualization of human technological development, from the Lower Paleolithic (~3.3 Mya) through the Information Age. Techs are laid out as a directed graph by era and prerequisite, with categories, descriptions, generated sigils, and what each tech historically unlocked (resources, organisms, wonders, units, works, organizations, people).
+An interactive visualization of human technological development, from the Lower Paleolithic (~3.3 Mya) through the Information Age and into explicitly labeled future scenarios. Techs are laid out as a directed graph by era and prerequisite, with categories, descriptions, generated sigils, and what each tech historically unlocked (resources, organisms, wonders, units, works, organizations, people).
 
 ## Run
 
@@ -29,7 +29,7 @@ python3 -m http.server 8000
 | [index.html](index.html) | Page shell, SVG canvas, script load order |
 | [styles.css](styles.css) | Layout, themes, typography |
 | [app.js](app.js) | Layout algorithm, rendering, interactions |
-| [data.js](data.js) | `ERAS`, `CATEGORIES`, `TECHS` (393 techs across 15 eras) |
+| [data.js](data.js) | `ERAS`, `CATEGORIES`, `TECHS` (718 techs across 16 eras) |
 | [translations.js](translations.js) | Chinese tech names |
 | [unlocks.js](unlocks.js) | Per-tech unlocked entities |
 | [images.js](images.js) / [images/](images/) | Image references and assets |
@@ -50,6 +50,11 @@ Each tech in [data.js](data.js):
 }
 ```
 
+For Near Future and Far Future entries, `year` is an internal layout anchor.
+The interface displays a broader `horizon` and also shows `forecastType` and
+`confidence` so an engineering milestone, social scenario, and hypothesis that
+requires new physics are not presented with the same certainty.
+
 ## Maintenance scripts
 
 Python helpers used to build and refine the dataset (re-runnable, not needed at runtime):
@@ -59,6 +64,8 @@ Python helpers used to build and refine the dataset (re-runnable, not needed at 
 - [_fetch_images.py](_fetch_images.py) — populate [images/](images/) and the image manifest.
 - [_build_techs_html.py](_build_techs_html.py) — regenerate [techs.html](techs.html) (the static, crawler-friendly index) from [data.js](data.js). Run after edits to data.
 - [_build_og_image.py](_build_og_image.py) — regenerate [images/og.png](images/og.png), the 1200×630 social-share card.
+- [`scripts/_revise_future_techs_2026.py`](scripts/_revise_future_techs_2026.py) — apply the evidence-based future-section revision and keep all linked metadata synchronized.
+- [`scripts/_build_future_concept_diagrams.py`](scripts/_build_future_concept_diagrams.py) — regenerate the purpose-built conceptual SVGs used where a stock photograph would be misleading.
 
 ## SEO
 

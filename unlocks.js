@@ -3764,4 +3764,148 @@ window.TECH_UNLOCKS = {
     { type: "resource", name: "Try-pots (whale-blubber rendering)", name_zh: "炼鲸油锅", wiki: "Try pot" },
     { type: "unit", name: "Sperm whale", name_zh: "抹香鲸", wiki: "Sperm whale" },
   ],
+
+  "long-duration-energy-storage": [
+    { type: "resource", name: "Long-Duration Energy Storage", name_zh: "长时储能", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "advanced-fission-systems": [
+    { type: "resource", name: "Advanced Fission Systems", name_zh: "先进裂变系统", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "green-hydrogen-electrofuels": [
+    { type: "resource", name: "Green Hydrogen and Electrofuels", name_zh: "绿氢与电合成燃料", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "point-source-carbon-capture": [
+    { type: "resource", name: "Industrial Point-Source Carbon Capture", name_zh: "工业点源碳捕集", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "enhanced-weathering": [
+    { type: "resource", name: "Verified Enhanced Weathering", name_zh: "可核证增强风化", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "ocean-carbon-removal": [
+    { type: "resource", name: "Monitored Ocean Carbon Removal", name_zh: "受监测海洋碳移除", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "climate-adaptation-infrastructure": [
+    { type: "resource", name: "Climate-Adaptation Infrastructure", name_zh: "气候适应基础设施", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "advanced-water-reuse": [
+    { type: "resource", name: "Advanced Desalination and Water Reuse", name_zh: "先进海水淡化与水回用", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "autonomous-laboratories": [
+    { type: "resource", name: "Autonomous Scientific Laboratories", name_zh: "自主科学实验室", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "precision-fermentation-agriculture": [
+    { type: "resource", name: "Precision Fermentation and Gene-Edited Crops", name_zh: "精准发酵与基因编辑作物", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "xenotransplantation-organ-preservation": [
+    { type: "resource", name: "Xenotransplantation and Organ Preservation", name_zh: "异种移植与器官保存", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "pandemic-surveillance-platform": [
+    { type: "resource", name: "Genomic and Wastewater Pandemic Surveillance", name_zh: "基因组与污水疫情监测", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "orbital-servicing-refueling": [
+    { type: "resource", name: "Orbital Servicing, Refueling, and Debris Removal", name_zh: "在轨服务、加注与碎片清除", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "lunar-isru-logistics": [
+    { type: "resource", name: "Lunar ISRU and Cislunar Logistics", name_zh: "月球原位资源利用与地月物流", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "nuclear-space-propulsion": [
+    { type: "resource", name: "Nuclear Thermal and Electric Space Propulsion", name_zh: "核热与核电推进", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "integrated-space-networks": [
+    { type: "resource", name: "Integrated Terrestrial-Satellite Networks", name_zh: "天地融合通信网络", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "post-cmos-integration": [
+    { type: "resource", name: "Post-CMOS Integration and Optical Interconnects", name_zh: "后CMOS集成与光互连", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "autonomous-built-environment": [
+    { type: "resource", name: "Autonomous Construction and Agriculture", name_zh: "自主建造与农业", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "solar-gravitational-lens-observatory": [
+    { type: "resource", name: "Solar Gravitational-Lens Observatory", name_zh: "太阳引力透镜观测站", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "beamed-interstellar-probe": [
+    { type: "resource", name: "Beamed Relativistic Probe", name_zh: "束能相对论探测器", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "stellar-material-extraction": [
+    { type: "resource", name: "Star Lifting and Stellar Propulsion", name_zh: "恒星物质提取与恒星推进", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "interstellar-shielding-deceleration": [
+    { type: "resource", name: "Interstellar Shielding and Deceleration", name_zh: "星际防护与减速", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "deep-time-archives": [
+    { type: "resource", name: "Deep-Time Civilizational Archives", name_zh: "深时文明档案", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
+
+  "heat-limited-computing": [
+    { type: "resource", name: "Heat-Limited Computing Infrastructure", name_zh: "热极限计算基础设施", wiki: false },
+    { type: "resource", name: "Verification standard", name_zh: "核证标准", wiki: false },
+    { type: "org", name: "Public-interest test program", name_zh: "公共利益测试计划", wiki: false },
+  ],
 };

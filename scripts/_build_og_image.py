@@ -98,12 +98,12 @@ ox, oy = W // 2, cy
 draw.polygon([(ox, oy - 6), (ox + 8, oy), (ox, oy + 6), (ox - 8, oy)], fill=ACCENT)
 
 # Subtitle (italic)
-SUB = "Pleistocene  to  Information Age"
+SUB = "Pleistocene  to  Future Scenarios"
 sw = text_w(SUB, f_sub)
 draw.text(((W - sw) // 2, 250), SUB, font=f_sub, fill=TEXT_1)
 
 # Stats line
-STAT = "393 TECHNOLOGIES  ·  15 ERAS  ·  3.3 MILLION YEARS"
+STAT = "718 TECHNOLOGIES + SCENARIOS  ·  16 ERAS"
 sw = spaced_w(STAT, f_stat, spacing=3)
 draw_spaced(STAT, (W - sw) // 2, 320, f_stat, TEXT_0, spacing=3)
 

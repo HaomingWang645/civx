@@ -22,10 +22,56 @@ def grab_block(name):
 # data.js is JS, not JSON: keys are unquoted, strings use double quotes, trailing
 # commas are allowed. Normalize to JSON.
 def js_to_json(s):
-    # strip line comments
-    s = re.sub(r"//[^\n]*", "", s)
-    # quote keys: { id: "..." } -> { "id": "..." }
-    s = re.sub(r'([{,]\s*)([A-Za-z_][A-Za-z0-9_]*)\s*:', r'\1"\2":', s)
+    # Strip comments and quote object keys only while outside string literals.
+    # The previous regex-only implementation also rewrote ordinary prose such
+    # as ", capacity:" inside descriptions and therefore generated invalid JSON.
+    out = []
+    i = 0
+    in_string = False
+    escaped = False
+    while i < len(s):
+        ch = s[i]
+        if in_string:
+            out.append(ch)
+            if escaped:
+                escaped = False
+            elif ch == "\\":
+                escaped = True
+            elif ch == '"':
+                in_string = False
+            i += 1
+            continue
+        if ch == '"':
+            in_string = True
+            out.append(ch)
+            i += 1
+            continue
+        if ch == "/" and i + 1 < len(s) and s[i + 1] == "/":
+            while i < len(s) and s[i] != "\n":
+                i += 1
+            continue
+        if ch in "{,":
+            out.append(ch)
+            i += 1
+            while i < len(s) and s[i].isspace():
+                out.append(s[i])
+                i += 1
+            key = re.match(r"[A-Za-z_][A-Za-z0-9_]*", s[i:])
+            if key:
+                end = i + len(key.group(0))
+                cursor = end
+                while cursor < len(s) and s[cursor].isspace():
+                    cursor += 1
+                if cursor < len(s) and s[cursor] == ":":
+                    out.append(json.dumps(key.group(0)))
+                    out.append(s[end:cursor])
+                    out.append(":")
+                    i = cursor + 1
+                    continue
+            continue
+        out.append(ch)
+        i += 1
+    s = "".join(out)
     # remove trailing commas before } or ]
     s = re.sub(r",(\s*[}\]])", r"\1", s)
     return s
@@ -60,7 +106,7 @@ out.append("""<!DOCTYPE html>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>All Technologies — Human History Tech Tree</title>
-<meta name="description" content="Plain-text index of every technology in the Human History Tech Tree, from the Paleolithic to the Information Age, with era, year, prerequisites, and historical description." />
+<meta name="description" content="Plain-text index of every technology and future scenario in the Human History Tech Tree, from the Paleolithic onward, with era, horizon, prerequisites, and description." />
 <link rel="canonical" href="%stechs.html" />
 <link rel="stylesheet" href="styles.css" />
 <style>
@@ -80,7 +126,7 @@ out.append("""<!DOCTYPE html>
 <body>
 <a class="home" href="./">&larr; Interactive tech tree</a>
 <h1>All Technologies</h1>
-<p>A flat, searchable index of every technology in the <a href="./">Human History Tech Tree</a> &mdash; %d entries across %d eras, from the Lower Paleolithic to the Information Age.</p>
+<p>A flat, searchable index of every technology and scenario in the <a href="./">Human History Tech Tree</a> &mdash; %d entries across %d eras, from the Lower Paleolithic onward.</p>
 """ % (SITE, len(techs), len(eras)))
 
 current_era = None
@@ -99,9 +145,12 @@ for t in techs_sorted:
             pname = tech_by_id.get(p, {}).get("name", p)
             links.append(f'<a href="#tech-{esc(p)}">{esc(pname)}</a>')
         prereq_html = f'<p class="prereqs"><strong>Builds on:</strong> {", ".join(links)}</p>'
+    forecast_bits = [t.get("forecastType"), t.get("confidence")]
+    forecast = " &middot; ".join(esc(x) for x in forecast_bits if x)
+    forecast_html = f" &middot; {forecast}" if forecast else ""
     out.append(f"""<article id="tech-{esc(t['id'])}">
 <h3>{esc(t['name'])} {zh_html}</h3>
-<p class="meta">{esc(cat)} &middot; {esc(t.get('year',''))} &middot; {esc(era_name.get(t['era'], t['era']))}</p>
+<p class="meta">{esc(cat)} &middot; {esc(t.get('horizon') or t.get('year',''))} &middot; {esc(era_name.get(t['era'], t['era']))}{forecast_html}</p>
 <p>{esc(t.get('desc',''))}</p>
 {prereq_html}
 </article>""")

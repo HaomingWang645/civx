@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Post-Cmos Integration</title>
+  <desc id="desc">Conceptual diagram: chiplets · 3D stacking · optical interconnects</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081522"/><stop offset="1" stop-color="#211334"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#b9dfff" stroke-opacity=".055"/></pattern>
+  </defs>
+  <rect width="640" height="360" rx="18" fill="url(#bg)"/>
+  <rect width="640" height="360" rx="18" fill="url(#grid)"/>
+  <g transform="translate(0 8)"><g stroke="#79dcff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="210" y="118" width="75" height="84" rx="10"/><rect x="345" y="118" width="75" height="84" rx="10"/><path d="M160 145h50M285 145h60M420 145h50M470 175h-50M345 175h-60M210 175h-50"/></g><path d="M235 160l25-18v36zM395 160l-25-18v36z" stroke="#d7a6ff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <rect x="34" y="292" width="572" height="1" fill="#79dcff" opacity=".28"/>
+  <text x="34" y="321" fill="#f1f8ff" font-family="system-ui, sans-serif" font-size="19" font-weight="650" letter-spacing="1.5">POST-CMOS INTEGRATION</text>
+  <text x="34" y="343" fill="#a7bdd0" font-family="system-ui, sans-serif" font-size="12" letter-spacing=".55">chiplets · 3D stacking · optical interconnects</text>
+</svg>

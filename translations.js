@@ -443,22 +443,22 @@ window.TECH_NAMES_ZH = {
   "tissue-engineering": "组织工程",
   "closed-loop-life-support": "闭环生命维持系统",
   "fusion-power": "可控核聚变",
-  "humanoid-robot": "人形机器人",
+  "humanoid-robot": "通用机器人劳动",
   "agi": "通用人工智能",
-  "brain-computer-interface": "脑机接口",
+  "brain-computer-interface": "高带宽双向神经假体",
   "moon-base": "月球永久基地",
   "mars-landing": "首次载人登陆火星",
   "mars-habitat": "火星表面基地",
   "mars-colony": "自给自足火星殖民地",
   "asteroid-mining": "小行星采矿",
   "anti-aging": "抗衰老医学",
-  "lab-grown-meat": "实验室培育肉",
-  "synthetic-biology": "合成生物学",
+  "lab-grown-meat": "达到成本与规模平价的培养肉",
+  "synthetic-biology": "可预测的全基因组生物工程",
   "room-temp-superconductor": "室温超导体",
   "nanotechnology": "纳米技术",
-  "quantum-applications": "实用量子计算",
+  "quantum-applications": "容错量子优势",
   "quantum-internet": "量子互联网",
-  "carbon-capture-scale": "大规模碳捕集",
+  "carbon-capture-scale": "直接空气碳移除",
   "fusion-rocket": "聚变火箭",
   "space-elevator": "太空电梯",
   "post-scarcity": "后稀缺经济",
@@ -481,14 +481,14 @@ window.TECH_NAMES_ZH = {
   "lab-grown-organs": "实验室培育器官",
   "sentientism": "感知主义",
   "dna-data-storage": "DNA数据存储",
-  "cancer-cure": "癌症治愈",
-  "ai-judge": "算法司法",
+  "cancer-cure": "广谱癌症控制",
+  "ai-judge": "人工智能辅助司法行政",
   "space-based-solar": "空间太阳能发电",
   "photonic-computing": "光子计算",
-  "metamaterials": "超材料",
+  "metamaterials": "规模化主动超表面",
   "programmable-matter": "可编程物质",
   "interstellar-probe": "星际探测器",
-  "terraforming-mars": "火星地球化",
+  "terraforming-mars": "火星局部环境地球化",
 
   // ─── Future Age (physics & math) ───
   "formal-mathematics": "形式化数学",
@@ -498,9 +498,9 @@ window.TECH_NAMES_ZH = {
   "p-vs-np-resolved": "P/NP问题解决",
 
   // ─── Future Age (mid-century) ───
-  "space-habitat": "太空居住舱",
+  "space-habitat": "大型旋转太空聚居地",
   "artificial-photosynthesis": "人工光合作用",
-  "genetic-disease-eradication": "遗传病根除",
+  "genetic-disease-eradication": "单基因疾病的常规预防与治疗",
   "self-replicating-machines": "自我复制机器",
   "superintelligence": "超级智能",
   "seti-first-contact": "地外文明探测",
@@ -510,11 +510,11 @@ window.TECH_NAMES_ZH = {
   "matrioshka-brain": "套娃式大脑",
   "stellar-engineering": "恒星工程",
   "generation-ship-colony": "世代飞船殖民",
-  "galactic-civilization": "银河文明",
+  "galactic-civilization": "近邻多恒星文明",
   "speciation": "物种分化",
   "substrate-independent-humanity": "基底无关人类",
   "antimatter-production": "反物质生产",
-  "warp-drive": "曲速引擎",
+  "warp-drive": "曲率时空可行性检验",
   "kardashev-type-ii": "卡尔达肖夫II型文明",
 
   // ─── Far Future (civilizational) ───
@@ -532,7 +532,7 @@ window.TECH_NAMES_ZH = {
   // ─── Future Age (late) ───
   "artificial-womb": "人工子宫",
   "closed-cycle-cities": "闭环循环城市",
-  "personalized-medicine": "个性化医疗",
+  "personalized-medicine": "实时多组学医学",
   "printable-organs-on-demand": "按需打印器官",
   "ai-coordination-treaty": "人工智能协调条约",
   "direct-ai-democracy": "AI辅助直接民主",
@@ -541,7 +541,7 @@ window.TECH_NAMES_ZH = {
   "memory-editing": "记忆编辑",
   "cybernetic-enhancement": "赛博格增强",
   "orbital-ring": "轨道环",
-  "universal-disease-eradication": "普遍疾病根除",
+  "universal-disease-eradication": "全球疾病抑制基础设施",
 
   // ─── Future / Far-Future weapons ───
   "cyber-kinetic-warfare": "网络-动能战争",
@@ -557,13 +557,13 @@ window.TECH_NAMES_ZH = {
 
   // ─── Far Future (2500-2700 fill) ───
   "black-hole-engineering": "黑洞工程",
-  "galactic-communication-network": "银河通信网络",
+  "galactic-communication-network": "星际中继网络",
   "pre-warp-interstellar-trade": "亚光速星际贸易",
   "pan-galactic-coordination-ai": "泛银河协调智能",
   "femto-engineering": "飞米工程",
-  "vacuum-energy-extraction": "真空能提取",
+  "vacuum-energy-extraction": "量子真空能量边界",
   "strange-quark-matter": "奇异夸克物质",
-  "dark-energy-engineering": "暗能量工程",
+  "dark-energy-engineering": "可控暗能量假说",
 
   // ─── Arts & Entertainment (atomic / information) ───
   "abstract-expressionism": "抽象表现主义",
@@ -612,7 +612,7 @@ window.TECH_NAMES_ZH = {
   "dreadnought-battleship": "无畏舰",
 
   // ─── Fusion power decomposition ───
-  "inertial-confinement-fusion": "惯性约束聚变",
+  "inertial-confinement-fusion": "高重复率惯性聚变能源",
   "magnetic-confinement-fusion": "磁约束聚变",
   "tritium-breeding": "氚增殖",
 
@@ -638,7 +638,7 @@ window.TECH_NAMES_ZH = {
   "von-neumann-probe": "自我复制探测器",
   "cryogenic-hibernation": "低温休眠",
   "kugelblitz-drive": "球状闪电黑洞引擎",
-  "cosmic-string-ftl": "宇宙弦超光速几何",
+  "cosmic-string-ftl": "宇宙弦年代学模型",
 
   // ─── Entropy / thermodynamic computing ───
   "reversible-computing": "可逆计算",
@@ -654,7 +654,7 @@ window.TECH_NAMES_ZH = {
 
   // ─── Superintelligence downstream ───
   "whole-brain-emulation": "全脑仿真",
-  "knowledge-closure": "知识封闭",
+  "knowledge-closure": "特定领域自动化科学",
   "subjective-time-compression": "主观时间压缩",
 
   // ─── Warfare doctrine & tactics ───
@@ -726,9 +726,9 @@ window.TECH_NAMES_ZH = {
   "geothermal-drilling": "深层地热钻探",
   "senolytic-longevity-therapy": "衰老细胞清除疗法",
   "brain-brain-communication": "脑脑通信",
-  "theory-of-consciousness": "意识科学理论",
+  "theory-of-consciousness": "意识状态预测科学",
   "asteroid-capture": "小行星捕获",
-  "bose-einstein-engineering": "玻色-爱因斯坦凝聚态工程",
+  "bose-einstein-engineering": "工业超冷物质工程",
   "anti-senescence-cellular-substrate": "抗衰老细胞基质",
 
   // ─── Realism Audit additions (energy / medicine / navigation / materials / computing / lithography) ───
@@ -759,7 +759,7 @@ window.TECH_NAMES_ZH = {
   "kilonova-merger": "千新星与中子星合并",
   "pulsar-navigation": "脉冲星导航(XNAV)",
   "pulsar-timing-array": "脉冲星计时阵列",
-  "r-process-astromining": "r过程星际采矿",
+  "r-process-astromining": "恒星遗迹资源测绘",
 
   // ─── Representational Art Lineage ───
   "rock-art-petroglyphs": "岩画与刻石",
@@ -785,4 +785,52 @@ window.TECH_NAMES_ZH = {
   "charcoal-production": "木炭烧制",
   "bellows": "鼓风风箱与强制通风冶炼",
   "whale-oil": "鲸油与油灯燃料",
+
+  "long-duration-energy-storage": "长时储能",
+
+  "advanced-fission-systems": "先进裂变系统",
+
+  "green-hydrogen-electrofuels": "绿氢与电合成燃料",
+
+  "point-source-carbon-capture": "工业点源碳捕集",
+
+  "enhanced-weathering": "可核证增强风化",
+
+  "ocean-carbon-removal": "受监测海洋碳移除",
+
+  "climate-adaptation-infrastructure": "气候适应基础设施",
+
+  "advanced-water-reuse": "先进海水淡化与水回用",
+
+  "autonomous-laboratories": "自主科学实验室",
+
+  "precision-fermentation-agriculture": "精准发酵与基因编辑作物",
+
+  "xenotransplantation-organ-preservation": "异种移植与器官保存",
+
+  "pandemic-surveillance-platform": "基因组与污水疫情监测",
+
+  "orbital-servicing-refueling": "在轨服务、加注与碎片清除",
+
+  "lunar-isru-logistics": "月球原位资源利用与地月物流",
+
+  "nuclear-space-propulsion": "核热与核电推进",
+
+  "integrated-space-networks": "天地融合通信网络",
+
+  "post-cmos-integration": "后CMOS集成与光互连",
+
+  "autonomous-built-environment": "自主建造与农业",
+
+  "solar-gravitational-lens-observatory": "太阳引力透镜观测站",
+
+  "beamed-interstellar-probe": "束能相对论探测器",
+
+  "stellar-material-extraction": "恒星物质提取与恒星推进",
+
+  "interstellar-shielding-deceleration": "星际防护与减速",
+
+  "deep-time-archives": "深时文明档案",
+
+  "heat-limited-computing": "热极限计算基础设施",
 };

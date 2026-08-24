@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Advanced Fission Systems</title>
+  <desc id="desc">Conceptual diagram: passive safety · repeatable construction · safeguards</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081522"/><stop offset="1" stop-color="#211334"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#b9dfff" stroke-opacity=".055"/></pattern>
+  </defs>
+  <rect width="640" height="360" rx="18" fill="url(#bg)"/>
+  <rect width="640" height="360" rx="18" fill="url(#grid)"/>
+  <g transform="translate(0 8)"><g stroke="#79dcff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="310" cy="160" r="82"/><circle cx="285" cy="145" r="24"/><circle cx="335" cy="145" r="24"/><circle cx="310" cy="185" r="24"/></g><g stroke="#d7a6ff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M310 55v35M310 230v35M205 160h35M380 160h35"/><path d="M420 95l-25 25M225 200l-25 25"/></g></g>
+  <rect x="34" y="292" width="572" height="1" fill="#79dcff" opacity=".28"/>
+  <text x="34" y="321" fill="#f1f8ff" font-family="system-ui, sans-serif" font-size="19" font-weight="650" letter-spacing="1.5">ADVANCED FISSION SYSTEMS</text>
+  <text x="34" y="343" fill="#a7bdd0" font-family="system-ui, sans-serif" font-size="12" letter-spacing=".55">passive safety · repeatable construction · safeguards</text>
+</svg>

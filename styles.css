@@ -647,7 +647,33 @@ body.theme-eras .detail-expand-btn {
 .detail-year {
   font-size: 13px;
   color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.detail-forecast {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
   margin-bottom: 16px;
+}
+
+.forecast-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 3px 8px;
+  border: 1px solid color-mix(in srgb, var(--accent) 38%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 9%, transparent);
+  color: var(--text-1);
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: .35px;
+}
+
+.forecast-confidence {
+  border-style: dashed;
+  color: var(--accent);
 }
 
 .detail-desc {

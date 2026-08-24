@@ -4239,16 +4239,17 @@
     "reason": "manual override"
   },
   "agi": {
-    "name": "agi",
-    "query": "ChatGPT",
-    "article": "ChatGPT",
-    "page": "https://en.wikipedia.org/wiki/ChatGPT",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/OpenAI_logo_2025_%28symbol%29.svg/330px-OpenAI_logo_2025_%28symbol%29.svg.png",
-    "image_path": "images/agi.png",
-    "extract": "ChatGPT is a generative artificial intelligence chatbot developed by OpenAI. It was released in November 2022. It uses large language models—specifically generative pre-trained transformers (GPTs)—to generate text, speech, and images in response to user prompts. It is credited wi",
+    "name": "General Intelligence",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/agi.svg",
+    "extract": "transfer · planning · uncertainty",
     "status": "ok",
-    "score": 0.9,
-    "reason": "future realign batch (May 2026)"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "brain-computer-interface": {
     "name": "Brain-Computer Interface",
@@ -4394,16 +4395,17 @@
     "reason": "manual override"
   },
   "post-scarcity": {
-    "name": "post-scarcity",
-    "query": "3D food printing",
-    "article": "3D food printing",
-    "page": "https://en.wikipedia.org/wiki/3D_food_printing",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/3D_Printed_Chocolate.jpg/330px-3D_Printed_Chocolate.jpg",
-    "image_path": "images/post-scarcity.jpg",
-    "extract": "3D food printing is the process of manufacturing food products using a variety of additive manufacturing techniques. Most commonly, food grade syringes hold the printing material, which is then deposited through a food grade nozzle layer by layer. The most advanced 3D food printe",
+    "name": "Abundance Scenario",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/post-scarcity.svg",
+    "extract": "automation · energy · distribution",
     "status": "ok",
-    "score": 0.9,
-    "reason": "future realign batch (May 2026)"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "digital-immortality": {
     "name": "Mind Uploading",
@@ -4588,11 +4590,17 @@
     "reason": "manual override"
   },
   "ai-judge": {
-    "name": "ai-judge",
-    "status": "ai_generation_queued",
-    "reason": "icon collision with ai-governance; queued for AI-generated image (May 2026)",
-    "previous_article": "COMPAS (software)",
-    "previous_page": "https://en.wikipedia.org/wiki/COMPAS_(software)"
+    "name": "Ai-Assisted Courts",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/ai-judge.svg",
+    "extract": "sources · audit · appeal · human authority",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "space-based-solar": {
     "name": "Space-Based Solar Power",
@@ -4629,14 +4637,16 @@
   },
   "programmable-matter": {
     "name": "Programmable Matter",
-    "article": "Soft robotics",
-    "page": "https://en.wikipedia.org/wiki/Soft_robotics",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/programmable-matter.svg",
+    "extract": "reconfigure shape · stiffness · function",
     "status": "ok",
-    "reason": "alternate (Soft robotics)",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Soft_Robotics_1.jpg/330px-Soft_Robotics_1.jpg",
-    "image_path": "images/programmable-matter.jpg",
-    "extract": "Soft robotics is a subfield of robotics that concerns the design, control, and fabrication of robots composed of compliant materials, instead of rigid links.\nIn contrast to rigid-bodied robots built from metals, ceramics and hard plastics, the compliance of soft robots can improv",
-    "score": 0.7
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "interstellar-probe": {
     "name": "Interstellar Probe",
@@ -4730,14 +4740,16 @@
   },
   "artificial-photosynthesis": {
     "name": "Artificial Photosynthesis",
-    "article": "Photosynthesis",
-    "page": "https://en.wikipedia.org/wiki/Photosynthesis",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/artificial-photosynthesis.svg",
+    "extract": "sunlight + CO₂ + H₂O → fuel",
     "status": "ok",
-    "reason": "alternate",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Photosynthesis_en.svg/330px-Photosynthesis_en.svg.png",
-    "image_path": "images/artificial-photosynthesis.png",
-    "extract": "Photosynthesis is a system of biological processes by which photopigment-bearing autotrophic organisms, such as most plants, algae and cyanobacteria, convert light energy — typically from sunlight — into the chemical energy necessary to fuel their metabolism. The term photosynthe",
-    "score": 0.85
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "genetic-disease-eradication": {
     "name": "genetic-disease-eradication",
@@ -4764,16 +4776,17 @@
     "reason": "portrait replacement"
   },
   "superintelligence": {
-    "name": "superintelligence",
-    "query": "Superintelligence: Paths, Dangers, Strategies",
-    "article": "Superintelligence: Paths, Dangers, Strategies",
-    "page": "https://en.wikipedia.org/wiki/Superintelligence%3A_Paths%2C_Dangers%2C_Strategies",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/4/45/Superintelligence.jpg",
-    "image_path": "images/superintelligence.jpg",
-    "extract": "Superintelligence: Paths, Dangers, Strategies is a 2014 book by the philosopher Nick Bostrom. It explores how superintelligence could be created and what its features and motivations might be. It argues that superintelligence, if created, would be difficult to control, and that i",
+    "name": "Superintelligence Scenario",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/superintelligence.svg",
+    "extract": "capability · control · governance",
     "status": "ok",
-    "score": 0.9,
-    "reason": "future realign batch (May 2026)"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "seti-first-contact": {
     "name": "Detection of Extraterrestrial Intelligence",
@@ -4799,14 +4812,16 @@
   },
   "matrioshka-brain": {
     "name": "Matrioshka Brain",
-    "article": "Megastructure",
-    "page": "https://en.wikipedia.org/wiki/Megastructure",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/matrioshka-brain.svg",
+    "extract": "nested computing shells · outward heat flow",
     "status": "ok",
-    "reason": "alternate (multi-pass)",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/GreatWallNearBeijingWinter.jpg/330px-GreatWallNearBeijingWinter.jpg",
-    "image_path": "images/matrioshka-brain.jpg",
-    "extract": "A megastructure is a very large artificial object, although the limits of precisely how large vary considerably. Some apply the term to any especially large or tall building. Some sources define a megastructure as an enormous self-supporting artificial construct. The products of ",
-    "score": 0.8
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "stellar-engineering": {
     "name": "Stellar Engineering",
@@ -4931,15 +4946,17 @@
     "reason": "manual override"
   },
   "lingua-galactica": {
-    "name": "Lingua Galactica",
-    "article": "Esperanto",
-    "page": "https://en.wikipedia.org/wiki/Esperanto",
+    "name": "Interstellar Contact Protocol",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/lingua-galactica.svg",
+    "extract": "translation · delay · error correction",
     "status": "ok",
-    "reason": "alternate",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Esperanto.svg/330px-Flag_of_Esperanto.svg.png",
-    "image_path": "images/lingua-galactica.png",
-    "extract": "Esperanto is the world's most widely spoken constructed auxiliary language. Created by L. L. Zamenhof in 1887 as \"the International Language\", it is intended to be a universal second language for international communication. He described the language in Dr. Esperanto's Internatio",
-    "score": 0.85
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "post-human-aesthetics": {
     "name": "Post-Human Aesthetics",
@@ -4953,15 +4970,17 @@
     "reason": "manual override"
   },
   "engineered-planetary-biosphere": {
-    "name": "Engineered Planetary Biosphere",
-    "article": "Geoengineering",
-    "page": "https://en.wikipedia.org/wiki/Geoengineering",
+    "name": "Engineered Biosphere",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/engineered-planetary-biosphere.svg",
+    "extract": "closed cycles · monitoring · adaptive control",
     "status": "ok",
-    "reason": "alternate",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Illustration_different_solar_climate_intervention_techniques.png/330px-Illustration_different_solar_climate_intervention_techniques.png",
-    "image_path": "images/engineered-planetary-biosphere.png",
-    "extract": "Geoengineering is the deliberate large-scale interventions in the Earth’s climate system intended to counteract human-caused climate change. The term commonly encompasses two broad categories: large-scale carbon dioxide removal (CDR) and solar radiation modification (SRM). CDR in",
-    "score": 0.85
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "interstellar-treaty": {
     "name": "Interstellar Treaty",
@@ -4997,15 +5016,17 @@
     "reason": "manual override"
   },
   "galactic-ecology": {
-    "name": "Galactic Ecology",
-    "article": "Panspermia",
-    "page": "https://en.wikipedia.org/wiki/Panspermia",
+    "name": "Interstellar Ecology",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/galactic-ecology.svg",
+    "extract": "biospheres · exchange · containment",
     "status": "ok",
-    "reason": "alternate",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Panspermie.svg/330px-Panspermie.svg.png",
-    "image_path": "images/galactic-ecology.png",
-    "extract": "Panspermia is the hypothesis that life exists throughout the universe, distributed by cosmic dust, meteoroids, asteroids, comets, and planetoids, as well as by spacecraft carrying unintended contamination by microorganisms, known as directed panspermia. The theory argues that lif",
-    "score": 0.85
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "artificial-womb": {
     "name": "Artificial Womb",
@@ -5382,16 +5403,17 @@
     "reason": "weapons addition"
   },
   "relativistic-kinetic-weapon": {
-    "name": "relativistic-kinetic-weapon",
-    "query": "Kinetic bombardment",
-    "article": "Railgun",
-    "page": "https://en.wikipedia.org/wiki/Railgun",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Railgun_usnavy_2008.jpg/330px-Railgun_usnavy_2008.jpg",
-    "image_path": "images/relativistic-kinetic-weapon.jpg",
-    "extract": "A railgun or rail gun, sometimes referred to as a rail cannon, is a linear motor device, typically designed as a ranged weapon, that uses electromagnetic force to launch high-velocity projectiles. The projectile normally does not contain explosives, instead relying on the project",
+    "name": "Relativistic Projectile",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/relativistic-kinetic-weapon.svg",
+    "extract": "0.1c example · interstellar scale",
     "status": "ok",
-    "score": 0.9,
-    "reason": "future realign batch (May 2026) [fallback after: ['Kinetic bombardment']]"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "antimatter-weapon": {
     "name": "antimatter-weapon",
@@ -5454,16 +5476,17 @@
     "reason": "far-future 2500-2700 fill"
   },
   "femto-engineering": {
-    "name": "femto-engineering",
-    "query": "Nuclear isomer",
-    "article": "Nuclear isomer",
-    "page": "https://en.wikipedia.org/wiki/Nuclear_isomer",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/NuclearReaction.svg/330px-NuclearReaction.svg.png",
-    "image_path": "images/femto-engineering.png",
-    "extract": "A nuclear isomer is a metastable state of an atomic nucleus in which one or more nucleons occupy excited state levels. \"Metastable\" describes nuclei whose excited states have half-lives of 10−9 seconds or longer, 100 to 1000 times longer than the half-lives of the excited nuclear",
+    "name": "Nuclear-Scale Engineering",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/femto-engineering.svg",
+    "extract": "isomers · nuclei · controlled transitions",
     "status": "ok",
-    "score": 0.9,
-    "reason": "far-future 2500-2700 fill"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "vacuum-energy-extraction": {
     "name": "vacuum-energy-extraction",
@@ -5478,16 +5501,17 @@
     "reason": "far-future 2500-2700 fill"
   },
   "strange-quark-matter": {
-    "name": "strange-quark-matter",
-    "query": "Neutron star",
-    "article": "Neutron star",
-    "page": "https://en.wikipedia.org/wiki/Neutron_star",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Moving_heart_of_the_Crab_Nebula.jpg/330px-Moving_heart_of_the_Crab_Nebula.jpg",
-    "image_path": "images/strange-quark-matter.jpg",
-    "extract": "A neutron star is the gravitationally collapsed core of a massive supergiant star. It results from the supernova explosion of a massive star—combined with gravitational collapse—that compresses the core past white dwarf star density to that of atomic nuclei. Surpassed only by bla",
+    "name": "Dense Qcd Matter",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/strange-quark-matter.svg",
+    "extract": "quark phases under extreme pressure",
     "status": "ok",
-    "score": 0.9,
-    "reason": "far-future 2500-2700 fill"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "dark-energy-engineering": {
     "name": "dark-energy-engineering",
@@ -5574,16 +5598,17 @@
     "reason": "arts addition"
   },
   "synthetic-performers": {
-    "name": "synthetic-performers",
-    "query": "Vocaloid",
-    "article": "Vocaloid",
-    "page": "https://en.wikipedia.org/wiki/Vocaloid",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/14/VOCALOID_6.png/330px-VOCALOID_6.png",
-    "image_path": "images/synthetic-performers.png",
-    "extract": "Vocaloid  is a singing voice synthesizer software product. Its signal processing part was developed through a joint research project between Yamaha Corporation and the Music Technology Group at Pompeu Fabra University, Barcelona. The software was ultimately developed into the com",
+    "name": "Synthetic Performers",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/synthetic-performers.svg",
+    "extract": "generated voice · motion · accountable identity",
     "status": "ok",
-    "score": 0.9,
-    "reason": "future arts addition"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "procedural-infinite-worlds": {
     "name": "procedural-infinite-worlds",
@@ -5610,16 +5635,17 @@
     "reason": "future arts addition"
   },
   "engineered-sensory-modalities": {
-    "name": "engineered-sensory-modalities",
-    "query": "Synesthesia",
-    "article": "Synesthesia",
-    "page": "https://en.wikipedia.org/wiki/Synesthesia",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Synesthesia.svg/330px-Synesthesia.svg.png",
-    "image_path": "images/engineered-sensory-modalities.png",
-    "extract": "Synesthesia or synaesthesia is a perceptual phenomenon in which stimulation of one sensory or cognitive pathway leads to involuntary experiences in other sensory or cognitive pathways. Synesthesia can manifest as a bridge between the five traditional senses, though it can also in",
+    "name": "Engineered Senses",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/engineered-sensory-modalities.svg",
+    "extract": "new sensors mapped into neural codes",
     "status": "ok",
-    "score": 0.9,
-    "reason": "future arts addition"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "ai-native-art-forms": {
     "name": "ai-native-art-forms",
@@ -5646,16 +5672,17 @@
     "reason": "future arts addition"
   },
   "pan-galactic-festival": {
-    "name": "pan-galactic-festival",
-    "query": "Festival",
-    "article": "Festival",
-    "page": "https://en.wikipedia.org/wiki/Festival",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Holi_Festival_of_Colors_Utah%2C_United_States_2013.jpg/330px-Holi_Festival_of_Colors_Utah%2C_United_States_2013.jpg",
-    "image_path": "images/pan-galactic-festival.jpg",
-    "extract": "A festival is an event celebrated by a community and centering on some characteristics aspect or aspects of that community and its religion or cultures. It is often marked as an indigenous or national holiday, mela, or Eid. A festival constitutes typical cases of glocalization, a",
+    "name": "Asynchronous Cultural Exchange",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/pan-galactic-festival.svg",
+    "extract": "art and ritual across light-year delays",
     "status": "ok",
-    "score": 0.9,
-    "reason": "future arts addition"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "bio-art": {
     "name": "bio-art",
@@ -5718,16 +5745,17 @@
     "reason": "culture/philosophy addition"
   },
   "degrowth-economics": {
-    "name": "degrowth-economics",
-    "query": "Doughnut (economic model)",
-    "article": "Doughnut (economic model)",
-    "page": "https://en.wikipedia.org/wiki/Doughnut_(economic_model)",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Doughnut_%28economic_model%29.jpg/330px-Doughnut_%28economic_model%29.jpg",
-    "image_path": "images/degrowth-economics.jpg",
-    "extract": "The Doughnut, or Doughnut economics, is a visual framework for sustainable development – shaped like a doughnut or lifebelt – combining the concept of planetary boundaries with the complementary concept of social boundaries. The name derives from the shape of the diagram, i.e. a ",
+    "name": "Post-Growth Policy",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/degrowth-economics.svg",
+    "extract": "well-being within material and ecological limits",
     "status": "ok",
-    "score": 0.9,
-    "reason": "culture/philosophy addition"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "solarpunk": {
     "name": "solarpunk",
@@ -5766,28 +5794,30 @@
     "reason": "culture/philosophy addition"
   },
   "galactic-citizenship": {
-    "name": "galactic-citizenship",
-    "query": "United Nations",
-    "article": "United Nations",
-    "page": "https://en.wikipedia.org/wiki/United_Nations",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_the_United_Nations.svg/330px-Flag_of_the_United_Nations.svg.png",
-    "image_path": "images/galactic-citizenship.png",
-    "extract": "The United Nations (UN) is a global intergovernmental organization established by the signing of the UN Charter on 26 June 1945 with the articulated mission of maintaining international peace and security, to develop friendly relations among states, to promote international coope",
+    "name": "Interstellar Civic Framework",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/galactic-citizenship.svg",
+    "extract": "rights across autonomous star systems",
     "status": "ok",
-    "score": 0.9,
-    "reason": "culture/philosophy addition"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "speciation-ethics": {
-    "name": "speciation-ethics",
-    "query": "Last and First Men",
-    "article": "Last and First Men",
-    "page": "https://en.wikipedia.org/wiki/Last_and_First_Men",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/7/74/Lastandfirstmen_firstedition.jpg",
-    "image_path": "images/speciation-ethics.jpg",
-    "extract": "Last and First Men: A Story of the Near and Far Future is a \"future history\" science fiction novel written in 1930 by the British author Olaf Stapledon. A work of unprecedented scale in the genre, it describes the history of humanity from the present onwards across two billion ye",
+    "name": "Speciation Ethics",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/speciation-ethics.svg",
+    "extract": "divergence · consent · shared rights",
     "status": "ok",
-    "score": 0.9,
-    "reason": "culture/philosophy addition"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "bauhaus": {
     "name": "bauhaus",
@@ -6018,16 +6048,17 @@
     "reason": "physics addition"
   },
   "fusion-materials": {
-    "name": "fusion-materials",
-    "query": "Tungsten",
-    "article": "Tungsten",
-    "page": "https://en.wikipedia.org/wiki/Tungsten",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wolfram_evaporated_crystals_and_1cm3_cube.jpg/330px-Wolfram_evaporated_crystals_and_1cm3_cube.jpg",
-    "image_path": "images/fusion-materials.jpg",
-    "extract": "Tungsten is a chemical element which has the symbol W and atomic number 74. It is a metal found naturally on Earth almost exclusively in compounds with other elements. It was identified as a distinct element in 1781 and first isolated as a metal in 1783. Its important ores includ",
+    "name": "Fusion Materials",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/fusion-materials.svg",
+    "extract": "neutrons · heat · transmutation · maintenance",
     "status": "ok",
-    "score": 0.9,
-    "reason": "physics addition"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "aneutronic-fusion": {
     "name": "aneutronic-fusion",
@@ -6078,16 +6109,17 @@
     "reason": "propulsion/quantum addition"
   },
   "nuclear-pulse-propulsion": {
-    "name": "nuclear-pulse-propulsion",
-    "query": "Project Daedalus",
-    "article": "Project Daedalus",
-    "page": "https://en.wikipedia.org/wiki/Project_Daedalus",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Daedalus_Spaceship_concept.jpg/330px-Daedalus_Spaceship_concept.jpg",
-    "image_path": "images/nuclear-pulse-propulsion.jpg",
-    "extract": "Project Daedalus was a study conducted between 1973 and 1978 by the British Interplanetary Society to design a plausible uncrewed interstellar probe. Intended mainly as a scientific probe, the design criteria specified that the spacecraft had to use existing or near-future techno",
+    "name": "Nuclear-Pulse Spacecraft",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/nuclear-pulse-propulsion.svg",
+    "extract": "pusher plate · shock absorbers · pulse units",
     "status": "ok",
-    "score": 0.9,
-    "reason": "propulsion/quantum addition"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "bussard-ramjet": {
     "name": "bussard-ramjet",
@@ -6114,16 +6146,17 @@
     "reason": "propulsion/quantum addition"
   },
   "reversible-computing": {
-    "name": "reversible-computing",
-    "query": "Reversible computing",
-    "article": "Maxwell's demon",
-    "page": "https://en.wikipedia.org/wiki/Maxwell's_demon",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Maxwell%27s_demon.svg/330px-Maxwell%27s_demon.svg.png",
-    "image_path": "images/reversible-computing.png",
-    "extract": "Maxwell's demon is a thought experiment that appears to disprove the second law of thermodynamics. It was proposed by the physicist James Clerk Maxwell in 1867. In his first letter, Maxwell referred to the entity as a \"finite being\" or a \"being who can play a game of skill with t",
+    "name": "Reversible Computing",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/reversible-computing.svg",
+    "extract": "preserve information · uncompute intermediates",
     "status": "ok",
-    "score": 0.9,
-    "reason": "future realign batch (May 2026) [fallback after: ['Reversible computing', \"Landauer's principle\"]]"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "civilizational-entropy-management": {
     "name": "civilizational-entropy-management",
@@ -6150,16 +6183,17 @@
     "reason": "math frontier addition"
   },
   "langlands-program-completion": {
-    "name": "langlands-program-completion",
-    "query": "Fermat's Last Theorem",
-    "article": "Fermat's Last Theorem",
-    "page": "https://en.wikipedia.org/wiki/Fermat's_Last_Theorem",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Diophantus-II-8-Fermat.jpg/330px-Diophantus-II-8-Fermat.jpg",
-    "image_path": "images/langlands-program-completion.jpg",
-    "extract": "In number theory, Fermat's Last Theorem states that there are no positive integers  with  such that . The cases n = 1 and n = 2 have been known since antiquity to have infinitely many solutions.",
+    "name": "Langlands Program",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/langlands-program-completion.svg",
+    "extract": "number theory ↔ representation theory",
     "status": "ok",
-    "score": 0.9,
-    "reason": "math frontier addition"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "beyond-zfc-foundations": {
     "name": "beyond-zfc-foundations",
@@ -6174,16 +6208,17 @@
     "reason": "math frontier addition"
   },
   "continuum-hypothesis-resolution": {
-    "name": "continuum-hypothesis-resolution",
-    "query": "Cantor's diagonal argument",
-    "article": "Cantor's diagonal argument",
-    "page": "https://en.wikipedia.org/wiki/Cantor's_diagonal_argument",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Diagonal_argument_01_svg.svg/330px-Diagonal_argument_01_svg.svg.png",
-    "image_path": "images/continuum-hypothesis-resolution.png",
-    "extract": "Cantor's diagonal argument is a mathematical proof that there are infinite sets which cannot be put into one-to-one correspondence with the infinite set of natural numbers – informally, that there are sets which in some sense contain more elements than there are positive integers",
+    "name": "Post-Zfc Consensus",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/continuum-hypothesis-resolution.svg",
+    "extract": "independence · added axioms · plural foundations",
     "status": "ok",
-    "score": 0.9,
-    "reason": "math frontier addition"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "hypercomputation": {
     "name": "hypercomputation",
@@ -6366,16 +6401,17 @@
     "reason": "doctrine addition"
   },
   "layered-air-missile-defense": {
-    "name": "layered-air-missile-defense",
-    "query": "Iron Dome",
-    "article": "Iron Dome",
-    "page": "https://en.wikipedia.org/wiki/Iron_Dome",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/IDF_Iron_Dome_2021.jpg/330px-IDF_Iron_Dome_2021.jpg",
-    "image_path": "images/layered-air-missile-defense.jpg",
-    "extract": "The Iron Dome is an Israeli mobile all-weather air defense system, developed by Rafael Advanced Defense Systems and Israel Aerospace Industries. The system is designed to intercept and destroy short-range rockets and artillery shells fired from distances of 4 to 70 kilometres (2–",
+    "name": "Layered Air Defense",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/layered-air-missile-defense.svg",
+    "extract": "sensors · interceptors · command network",
     "status": "ok",
-    "score": 0.9,
-    "reason": "doctrine addition"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "ai-decision-loop-compression": {
     "name": "ai-decision-loop-compression",
@@ -7110,16 +7146,17 @@
     "reason": "realistic-future addition"
   },
   "theory-of-consciousness": {
-    "name": "theory-of-consciousness",
-    "query": "Integrated information theory",
-    "article": "Integrated information theory",
-    "page": "https://en.wikipedia.org/wiki/Integrated_information_theory",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Phi-iit-symbol.svg/330px-Phi-iit-symbol.svg.png",
-    "image_path": "images/theory-of-consciousness.png",
-    "extract": "Integrated information theory (IIT) proposes a mathematical model for the consciousness of a system. It comprises a framework ultimately intended to explain why some physical systems are conscious, and to be capable of providing a concrete inference about whether any physical sys",
+    "name": "Conscious-State Science",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/theory-of-consciousness.svg",
+    "extract": "competing models · discriminating tests",
     "status": "ok",
-    "score": 0.9,
-    "reason": "realistic-future addition"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "asteroid-capture": {
     "name": "asteroid-capture",
@@ -7254,16 +7291,17 @@
     "reason": "galaxy-travel batch (Apr 2026)"
   },
   "cryogenic-hibernation": {
-    "name": "cryogenic-hibernation",
-    "query": "Cryonics",
-    "article": "Cryonics",
-    "page": "https://en.wikipedia.org/wiki/Cryonics",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Cryo_surgery.jpg/330px-Cryo_surgery.jpg",
-    "image_path": "images/cryogenic-hibernation.jpg",
-    "extract": "Cryonics is the low-temperature freezing and storage of human remains in the hope that resurrection may be possible in the future. Cryonics is regarded with skepticism by the mainstream scientific community. It is generally viewed as a pseudoscience, and its practice has been cha",
+    "name": "Reversible Torpor",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/cryogenic-hibernation.svg",
+    "extract": "cooling · perfusion · controlled rewarming",
     "status": "ok",
-    "score": 0.9,
-    "reason": "galaxy-travel batch (Apr 2026)"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "kugelblitz-drive": {
     "name": "kugelblitz-drive",
@@ -7278,16 +7316,17 @@
     "reason": "galaxy-travel batch (Apr 2026)"
   },
   "cosmic-string-ftl": {
-    "name": "cosmic-string-ftl",
-    "query": "Wormhole",
-    "article": "Wormhole",
-    "page": "https://en.wikipedia.org/wiki/Wormhole",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Einstein-rosen-bridge-model.png/330px-Einstein-rosen-bridge-model.png",
-    "image_path": "images/cosmic-string-ftl.png",
-    "extract": "A wormhole is a hypothetical structure that connects disparate points in spacetime. It can be visualized as a tunnel with two ends at separate points in spacetime. Wormholes are based on a special solution of the Einstein field equations.\nWormholes are consistent with the general",
+    "name": "Cosmic-String Chronology",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/cosmic-string-ftl.svg",
+    "extract": "idealized strings · closed timelike curves",
     "status": "ok",
-    "score": 0.9,
-    "reason": "galaxy-travel batch (Apr 2026)"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "electric-generator": {
     "name": "electric-generator",
@@ -7794,16 +7833,17 @@
     "reason": "realism-audit addition"
   },
   "pulsar-navigation": {
-    "name": "pulsar-navigation",
-    "query": "X-ray pulsar-based navigation",
-    "article": "Pulsar",
-    "page": "https://en.wikipedia.org/wiki/Pulsar",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/PIA18848-PSRB1509-58-ChandraXRay-WiseIR-20141023.jpg/330px-PIA18848-PSRB1509-58-ChandraXRay-WiseIR-20141023.jpg",
-    "image_path": "images/pulsar-navigation.jpg",
-    "extract": "A pulsar is a highly magnetized rotating neutron star that emits beams of electromagnetic radiation out of its magnetic poles. This radiation can be observed only when a beam of emission is pointing toward Earth, and is responsible for the pulsed appearance of emission. Neutron s",
+    "name": "Autonomous Xnav",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/pulsar-navigation.svg",
+    "extract": "X-ray pulsars · timing · position estimate",
     "status": "ok",
-    "score": 0.9,
-    "reason": "future realign batch (May 2026) [fallback after: ['X-ray pulsar-based navigation']]"
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   },
   "rock-art-petroglyphs": {
     "name": "rock-art-petroglyphs",
@@ -8236,5 +8276,317 @@
     "status": "ok",
     "score": 0.9,
     "reason": "coverage gap fill (May 2026)"
+  },
+  "long-duration-energy-storage": {
+    "name": "Long-Duration Storage",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/long-duration-energy-storage.svg",
+    "extract": "hours to days · full-system cost · grid resilience",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "advanced-fission-systems": {
+    "name": "Advanced Fission Systems",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/advanced-fission-systems.svg",
+    "extract": "passive safety · repeatable construction · safeguards",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "green-hydrogen-electrofuels": {
+    "name": "Green Hydrogen + Electrofuels",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/green-hydrogen-electrofuels.svg",
+    "extract": "clean power → molecules for hard-to-electrify uses",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "point-source-carbon-capture": {
+    "name": "Industrial Carbon Capture",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/point-source-carbon-capture.svg",
+    "extract": "concentrated source · transport · durable storage",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "enhanced-weathering": {
+    "name": "Enhanced Weathering",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/enhanced-weathering.svg",
+    "extract": "mineral reaction · lifecycle accounting · monitoring",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "ocean-carbon-removal": {
+    "name": "Ocean Carbon Removal",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/ocean-carbon-removal.svg",
+    "extract": "chemistry · ecology · verification",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "climate-adaptation-infrastructure": {
+    "name": "Climate-Adaptation Infrastructure",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/climate-adaptation-infrastructure.svg",
+    "extract": "heat · flood · fire · drought resilience",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "advanced-water-reuse": {
+    "name": "Advanced Water Reuse",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/advanced-water-reuse.svg",
+    "extract": "treatment · desalination · aquifer recharge",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "autonomous-laboratories": {
+    "name": "Autonomous Laboratories",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/autonomous-laboratories.svg",
+    "extract": "hypothesis → experiment → evidence → update",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "precision-fermentation-agriculture": {
+    "name": "Precision Bioproduction",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/precision-fermentation-agriculture.svg",
+    "extract": "fermentation · edited crops · field evidence",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "xenotransplantation-organ-preservation": {
+    "name": "Organ Supply Platform",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/xenotransplantation-organ-preservation.svg",
+    "extract": "preservation · perfusion · xenotransplantation",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "pandemic-surveillance-platform": {
+    "name": "Pandemic Early Warning",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/pandemic-surveillance-platform.svg",
+    "extract": "genomics · wastewater · confirmatory response",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "orbital-servicing-refueling": {
+    "name": "Orbital Servicing",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/orbital-servicing-refueling.svg",
+    "extract": "inspect · repair · refuel · remove debris",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "lunar-isru-logistics": {
+    "name": "Lunar Isru + Logistics",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/lunar-isru-logistics.svg",
+    "extract": "water · oxygen · shielding · propellant transfer",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "nuclear-space-propulsion": {
+    "name": "Nuclear Space Propulsion",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/nuclear-space-propulsion.svg",
+    "extract": "thermal thrust · electric efficiency · heat rejection",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "integrated-space-networks": {
+    "name": "Integrated Space Networks",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/integrated-space-networks.svg",
+    "extract": "terrestrial · orbital · resilient routing",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "post-cmos-integration": {
+    "name": "Post-Cmos Integration",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/post-cmos-integration.svg",
+    "extract": "chiplets · 3D stacking · optical interconnects",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "autonomous-built-environment": {
+    "name": "Autonomous Construction + Agriculture",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/autonomous-built-environment.svg",
+    "extract": "outdoor robotics · safety · repairability",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "solar-gravitational-lens-observatory": {
+    "name": "Solar Gravitational Lens",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/solar-gravitational-lens-observatory.svg",
+    "extract": "550+ AU · Einstein ring · reconstruction",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "beamed-interstellar-probe": {
+    "name": "Beamed Interstellar Probe",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/beamed-interstellar-probe.svg",
+    "extract": "remote energy · light sail · deep-space link",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "stellar-material-extraction": {
+    "name": "Star Lifting + Stellar Propulsion",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/stellar-material-extraction.svg",
+    "extract": "mass flow · momentum · deep-time control",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "interstellar-shielding-deceleration": {
+    "name": "Interstellar Shielding + Braking",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/interstellar-shielding-deceleration.svg",
+    "extract": "dust defense · magnetic sail · arrival",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "deep-time-archives": {
+    "name": "Deep-Time Archives",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/deep-time-archives.svg",
+    "extract": "redundancy · primers · repair · provenance",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
+  },
+  "heat-limited-computing": {
+    "name": "Heat-Limited Computing",
+    "query": "",
+    "article": "",
+    "page": "",
+    "image_url": "",
+    "image_path": "images/concepts/heat-limited-computing.svg",
+    "extract": "reversible logic · cryogenics · radiators",
+    "status": "ok",
+    "score": 1.0,
+    "reason": "Purpose-built CIVX conceptual diagram; avoids misleading photographic implication.",
+    "credit_label": "CIVX · conceptual illustration"
   }
 }

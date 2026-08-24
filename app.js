@@ -588,7 +588,7 @@ function render() {
     year.setAttribute("class", "node-year");
     year.setAttribute("x", NODE_W - 14);
     year.setAttribute("y", NODE_H - 12);
-    year.textContent = t.year;
+    year.textContent = t.horizon || t.year;
     g.appendChild(year);
 
     g.addEventListener("click", (e) => {
@@ -712,8 +712,18 @@ function showDetail(id) {
   // If missing or fails to load, the slot collapses to the larger generative sigil.
   const imgPath = (window.TECH_IMAGES && window.TECH_IMAGES[t.id]) || null;
   const imgCredit = (window.TECH_IMAGE_CREDITS && window.TECH_IMAGE_CREDITS[t.id]) || null;
-  const credit = imgCredit
-    ? `<a class="detail-img-credit" href="${imgCredit.url}" target="_blank" rel="noopener">Wikipedia · ${imgCredit.article}</a>`
+  const creditLabel = imgCredit?.label || (imgCredit?.article ? `Wikipedia · ${imgCredit.article}` : "");
+  const credit = creditLabel
+    ? (imgCredit?.url
+      ? `<a class="detail-img-credit" href="${imgCredit.url}" target="_blank" rel="noopener">${creditLabel}</a>`
+      : `<span class="detail-img-credit">${creditLabel}</span>`)
+    : "";
+  const sourceUrl = imgCredit?.url || `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(t.name)}&go=Go`;
+  const forecastMeta = (t.forecastType || t.confidence)
+    ? `<div class="detail-forecast">
+        ${t.forecastType ? `<span class="forecast-chip">${t.forecastType}</span>` : ""}
+        ${t.confidence ? `<span class="forecast-chip forecast-confidence">${t.confidence}</span>` : ""}
+      </div>`
     : "";
 
   detailEl.innerHTML = `
@@ -727,9 +737,10 @@ function showDetail(id) {
       <span class="detail-cat-dot" style="background: ${cat.color}"></span>
       ${cat.name}
     </div>
-    <a class="detail-title" href="${imgCredit?.url || `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(t.name)}&go=Go`}" target="_blank" rel="noopener" title="Open source on Wikipedia">${t.name}</a>
+    <a class="detail-title" href="${sourceUrl}" target="_blank" rel="noopener" title="Open source">${t.name}</a>
     ${(window.TECH_NAMES_ZH && window.TECH_NAMES_ZH[t.id]) ? `<div class="detail-title-zh">${window.TECH_NAMES_ZH[t.id]}</div>` : ""}
-    <div class="detail-year">${t.year} · ${ERAS.find(e => e.id === t.era).name}</div>
+    <div class="detail-year">${t.horizon || t.year} · ${ERAS.find(e => e.id === t.era).name}</div>
+    ${forecastMeta}
     <div class="detail-desc">${t.desc}</div>
     ${prereqs.length ? `
       <div class="detail-section">
@@ -836,7 +847,7 @@ function showEraDetail(eraId) {
             <span class="detail-cat-dot" style="background: ${cat.color}"></span>
             ${cat.name} <span style="opacity:.6;font-weight:400">· ${list.length}</span>
           </div>
-          ${list.map(t => `<div class="detail-link" data-id="${t.id}">${t.name} <span style="opacity:.55;font-size:.85em">${t.year}</span></div>`).join("")}
+          ${list.map(t => `<div class="detail-link" data-id="${t.id}">${t.name} <span style="opacity:.55;font-size:.85em">${t.horizon || t.year}</span></div>`).join("")}
         </div>`;
     }).join("")}
   `;
