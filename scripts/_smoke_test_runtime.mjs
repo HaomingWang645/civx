@@ -61,7 +61,7 @@ const document = {
   removeEventListener() {},
 };
 
-const window = { addEventListener() {}, removeEventListener() {}, print() {} };
+const window = { CIVX_TEST_MODE: true, addEventListener() {}, removeEventListener() {}, print() {} };
 const context = vm.createContext({
   window,
   document,
@@ -72,7 +72,7 @@ const context = vm.createContext({
   console,
 });
 
-for (const file of ["data.js", "images.js", "translations.js", "unlocks.js", "details_extra.js"]) {
+for (const file of ["data.js", "images.js", "translations.js", "unlocks.js", "details_extra.js", "future_content.js"]) {
   new vm.Script(fs.readFileSync(path.join(root, file), "utf8"), { filename: file }).runInContext(context);
 }
 
@@ -82,6 +82,28 @@ for (const tech of TECHS) {
   if (!Array.isArray(tech.prereqs)) throw new Error(`${tech.id} is missing its prereqs array`);
   for (const prereq of tech.prereqs) {
     if (!ids.has(prereq)) throw new Error(`${tech.id} references unknown prerequisite ${prereq}`);
+  }
+}
+
+const futureTechs = TECHS.filter(tech => tech.era === "future" || tech.era === "far-future");
+const wordCount = text => (String(text).trim().match(/\b[\w’'-]+\b/g) || []).length;
+for (const tech of futureTechs) {
+  const context = window.FUTURE_RESEARCH_CONTEXT?.[tech.id];
+  if (!context?.frontier || !context?.pathway || !context.refs?.length) {
+    throw new Error(`${tech.id} is missing its Future Age evidence context`);
+  }
+  if (!window.TECH_DETAIL_EXTRA?.[tech.id]) {
+    throw new Error(`${tech.id} is missing expanded Future Age content`);
+  }
+  const introWords = wordCount(tech.desc);
+  if (introWords < 55 || introWords > 125) {
+    throw new Error(`${tech.id} intro is ${introWords} words; expected 55–125`);
+  }
+  for (const refId of context.refs) {
+    const ref = window.FUTURE_RESEARCH_SOURCES?.[refId];
+    if (!ref?.label || !/^https:\/\//.test(ref.url)) {
+      throw new Error(`${tech.id} references missing or invalid source ${refId}`);
+    }
   }
 }
 
@@ -98,4 +120,16 @@ if (elements.get("nodes").children.length !== TECHS.length) {
   throw new Error("technology nodes did not render");
 }
 
-console.log(`runtime smoke test passed: ${TECHS.length} techs, ${ERAS.length} eras`);
+// Exercise the detail composition itself. This catches missing script order,
+// blank expanded content, and regression to the old misleading unlock labels.
+window.CIVX_TEST_API.showDetail("interstellar-treaty");
+const detailHtml = elements.get("detail").innerHTML;
+const extraHtml = elements.get("detail-extra").innerHTML;
+if (!detailHtml.includes("Directly unlocks") || !detailHtml.includes("Research landmarks &amp; precedents") && !detailHtml.includes("Research landmarks & precedents")) {
+  throw new Error("Future Age detail panel did not render the revised unlock semantics");
+}
+for (const heading of ["Research frontier · 2026", "Future pathway", "Connections in this tree", "References"]) {
+  if (!extraHtml.includes(heading)) throw new Error(`expanded Future Age content is missing ${heading}`);
+}
+
+console.log(`runtime smoke test passed: ${TECHS.length} techs, ${ERAS.length} eras, ${futureTechs.length} future entries audited`);

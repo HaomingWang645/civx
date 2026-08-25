@@ -451,11 +451,67 @@ function setExtraContent(html) {
       document.body.classList.remove("extra-open");
       if (detailExpandBtnEl) { detailExpandBtnEl.textContent = "‹"; detailExpandBtnEl.title = "Show extended notes"; }
     };
+    detailExtraEl.querySelectorAll(".extra-tech-link").forEach(el => {
+      el.onclick = () => selectNode(el.dataset.id);
+    });
   } else {
     detailExtraEl.innerHTML = "";
     document.body.classList.remove("extra-open");
     if (detailExpandBtnEl) { detailExpandBtnEl.style.display = "none"; detailExpandBtnEl.textContent = "‹"; detailExpandBtnEl.title = "Show extended notes"; }
   }
+}
+
+function buildFutureExtra(t, baseHtml, prereqs, dependents) {
+  if (t.era !== "future" && t.era !== "far-future") return baseHtml;
+
+  const context = window.FUTURE_RESEARCH_CONTEXT && window.FUTURE_RESEARCH_CONTEXT[t.id];
+  const sources = window.FUTURE_RESEARCH_SOURCES || {};
+  if (!context) return baseHtml;
+
+  const techLink = tech => `<button class="extra-tech-link" type="button" data-id="${tech.id}">${tech.name}</button>`;
+  const requires = prereqs.length
+    ? `Builds on ${prereqs.map(techLink).join(", ")}.`
+    : "This node begins a new forecast branch rather than requiring another Future Age technology.";
+  const unlocks = dependents.length
+    ? `It directly unlocks ${dependents.map(techLink).join(", ")} in this tree.`
+    : "It is currently an endpoint in the tree; no later technology depends on it directly.";
+
+  const refs = (context.refs || [])
+    .map(id => sources[id])
+    .filter(Boolean);
+  const researchHtml = `
+    <section class="extra-evidence" aria-label="Current research and future pathway">
+      <h4>Research frontier · 2026</h4>
+      <p>${context.frontier}</p>
+      <h4>Future pathway</h4>
+      <p>${context.pathway}</p>
+    </section>`;
+  const connectionHtml = `
+    <section class="extra-connections" aria-label="Connections in this technology tree">
+      <h4>Connections in this tree</h4>
+      <p>${requires} ${unlocks}</p>
+    </section>`;
+  const referencesHtml = refs.length ? `
+    <section class="extra-references" aria-label="References">
+      <h4>References</h4>
+      <ol>${refs.map(ref => `<li><a href="${ref.url}" target="_blank" rel="noopener">${ref.label}</a></li>`).join("")}</ol>
+    </section>` : "";
+
+  let html = baseHtml || `
+    <h3 class="extra-title">${t.name}</h3>
+    <p class="extra-lede">Evidence, milestone, and future implications.</p>`;
+
+  // Put the empirical baseline immediately after the lede so readers can tell
+  // where demonstrated research ends and scenario-building begins.
+  const ledeStart = html.indexOf("extra-lede");
+  const ledeEnd = ledeStart >= 0 ? html.indexOf("</p>", ledeStart) : -1;
+  if (ledeEnd >= 0) {
+    const insertion = ledeEnd + 4;
+    html = `${html.slice(0, insertion)}${researchHtml}${html.slice(insertion)}`;
+  } else {
+    html = `${researchHtml}${html}`;
+  }
+  return `${html}${connectionHtml}${referencesHtml}`;
 }
 const zoomLevelEl = document.getElementById("zoom-level");
 
@@ -717,6 +773,7 @@ function showDetail(id) {
   const cat = CATEGORIES[t.category];
   const dependents = childrenById[id].map(cid => techById[cid]);
   const prereqs = t.prereqs.map(pid => techById[pid]).filter(Boolean);
+  const isFuture = t.era === "future" || t.era === "far-future";
 
   // Image slot. images.js maps tech id -> downloaded Wikipedia thumbnail path.
   // If missing or fails to load, the slot collapses to the larger generative sigil.
@@ -759,7 +816,7 @@ function showDetail(id) {
       </div>` : ""}
     ${dependents.length ? `
       <div class="detail-section">
-        <div class="detail-section-title">Leads to</div>
+        <div class="detail-section-title">${isFuture ? "Directly unlocks" : "Leads to"}</div>
         ${dependents.map(p => `<div class="detail-link" data-id="${p.id}">${p.name}</div>`).join("")}
       </div>` : ""}
     ${(() => {
@@ -768,7 +825,7 @@ function showDetail(id) {
       if (!unlocks.length) return "";
       return `
         <div class="detail-section">
-          <div class="detail-section-title">Unlocks</div>
+          <div class="detail-section-title">${isFuture ? "Research landmarks & precedents" : "Unlocks"}</div>
           <div class="detail-unlocks">
             ${unlocks.map(u => {
               const c = cats[u.type] || { icon: "•", label: u.type };
@@ -808,7 +865,8 @@ function showDetail(id) {
 
   detailEl.classList.add("open");
   document.body.classList.add("detail-open");
-  setExtraContent((window.TECH_DETAIL_EXTRA && window.TECH_DETAIL_EXTRA[t.id]) || null);
+  const baseExtra = (window.TECH_DETAIL_EXTRA && window.TECH_DETAIL_EXTRA[t.id]) || null;
+  setExtraContent(buildFutureExtra(t, baseExtra, prereqs, dependents));
   detailEl.scrollTop = 0; // reset scroll so new tech opens from the top
   detailEl.querySelector(".detail-close").onclick = clearSelection;
   detailEl.querySelectorAll(".detail-link").forEach(el => {
@@ -1433,6 +1491,7 @@ if (pdfBtn) {
 }
 
 // ───────────── Boot ─────────────
+if (window.CIVX_TEST_MODE) window.CIVX_TEST_API = { showDetail, buildFutureExtra };
 applyTheme((function(){ try { return localStorage.getItem("techtree-theme") || "renaissance"; } catch(e) { return "renaissance"; } })());
 // Restore vertical preference
 try {
